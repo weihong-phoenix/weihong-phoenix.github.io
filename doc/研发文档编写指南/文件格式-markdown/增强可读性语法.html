@@ -77,9 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h3 id="增强可读性语法">增强可读性语法</h3>
+<h1 id="增强可读性语法">增强可读性语法</h1>
 
-<h4 id="警示信息alert">警示信息（Alert）</h4>
+<h2 id="警示信息alert">警示信息（Alert）</h2>
 <p>使用不同的警示信息将会在文档中呈现不同的颜色标记，以此用来区分警示信息的重要程度。Typora编辑器则不能够直接显示预览效果，使用VSCode可以预览效果或者通过Docfx转换后的文档则可以显示。</p>
 <p><strong>特别提示</strong></p>
 <div class="NOTE"><h5>Note</h5><p>即使是略读也应该关注的特别信息。（Information the user should notice even if skimming.）</p>
@@ -111,7 +111,10 @@
     }
 </code></pre><h2 id="尖括号">尖括号</h2>
 <p>如果在文件中的文本里使用尖括号（例如要表示占位符），则需要对尖括号手动编码。 否则，Markdown 会认为它们是一个 HTML 标记。</p>
-<p>例如，将 <script name=""></script></article>
+<pre><code class="lang-html">例如，将 &lt;script name&gt; 编码为 &amp;lt;script name&amp;gt; 或 \&lt;script name&gt;。
+
+尖括号无需在格式为内联代码的文本中或在代码块中进行转义。
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
