@@ -80,7 +80,30 @@
 <h1 id="docfx-工具">Docfx 工具</h1>
 
 <h2 id="简介">简介</h2>
+<p>DocFx是微软推出的一款一个可扩展和可扩展的静态文档生成器。 它使您可以非常轻松地从各种来源生成具有登录页面、API 参考和概念文档的开发人员中心。</p>
+<p>参考 ：<a href="https://dotnet.github.io/docfx/">https://dotnet.github.io/docfx/</a></p>
+<p>github : <a href="https://github.com/dotnet/docfx">https://github.com/dotnet/docfx</a></p>
 <h2 id="使用">使用</h2>
+<p>具体如何使用请参见官方文档：<a href="https://dotnet.github.io/docfx/">https://dotnet.github.io/docfx/</a></p>
+<p>公司的研发文档会结合模板使用， 本文着重说下注意点：</p>
+<h3 id="docfxjson文件相关">docfx.json文件相关</h3>
+<p>具体模板见：<a href="https://github.com/weihong-phoenix/DevDocContribute/blob/main/docfx.json">https://github.com/weihong-phoenix/DevDocContribute/blob/main/docfx.json</a>
+build/template节点：除了添加默认的（default）， 还需要增加我们自定义模板的路径（相对docfx.json文件）。
+pdf/template节点： 他的默认模板为pdf.default。</p>
+<h3 id="运行相关">运行相关</h3>
+<p>前置条件：
+安装 choco 工具， <a href="https://chocolatey.org/install">参考这里</a></p>
+<p>Step 1: 安装docfx</p>
+<pre><code class="lang-powershell">choco install docfx
+</code></pre><p>Step 2: 编译站点
+切换当前目录到仓库根目录</p>
+<pre><code class="lang-powershell">docfx build
+</code></pre><div class="NOTE"><h5>Note</h5><p>由于mermaid的展示及pdf导出需要使用到plugin， 当您运行docfx build时， 可能会提示目录没有权限。 这时， 需要将终端采用管理员运行即可。</p>
+</div>
+<p>Step 3: 运行web服务
+切换当前目录到仓库根目录。 该命令仅仅将_site目录作为web站点发布。</p>
+<pre><code class="lang-powershell">docfx serve _site
+</code></pre><p>Step 4: 打开浏览器， 输入：<a href="http://localhost:8080/">http://localhost:8080/</a></p>
 </article>
           </div>
           
