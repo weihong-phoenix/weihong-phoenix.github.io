@@ -227,19 +227,19 @@ svg:hover path {
   content:"\FF12"
 }
 
-/*  改变docfx的版面大小 */
+/*  支持宽屏模式 */
 @media (min-width:1900px){
-  .container{width:1800px}
-}
-.container {
-  margin-left:20px;
-  margin-right:20px;
-}
+  .container{
+    width:1800px;
+    margin-left:20px;
+    margin-right:20px;
+  }
 
-.sidefilter, .sidetoc{
-  width:350px;
-}
+  .sidefilter, .sidetoc{
+    width:350px;
+  }
 
-.article.grid-right {
-  margin-left: 350px;
+  .article.grid-right {
+    margin-left: 350px;
+  }
 }
