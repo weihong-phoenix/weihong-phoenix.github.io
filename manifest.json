@@ -2136,6 +2136,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "index.html",
+      "output": {
+        "resource": {
+          "relative_path": "index.html"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
