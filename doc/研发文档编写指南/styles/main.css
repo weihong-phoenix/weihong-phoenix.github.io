@@ -228,3 +228,20 @@ blockquote {
 .WARNING h5:before {
   content:"\FF12"
 }
+
+/*  支持宽屏模式 */
+@media (min-width:1900px){
+  .container{
+    width:1800px;
+    margin-left:20px;
+    margin-right:20px;
+  }
+
+  .sidefilter, .sidetoc{
+    width:350px;
+  }
+
+  .article.grid-right {
+    margin-left: 350px;
+  }
+}
