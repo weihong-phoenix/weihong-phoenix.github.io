@@ -1,0 +1,2213 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/docfx_build/docfx_build",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "CVEuJFR9ZUsDLV9gPGcMDLmdTFLftbvHbMDdFYgzcLE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/docfx.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/docfx.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.css",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.multi.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.multi.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.stemmer.support.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.stemmer.support.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.zhcn.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.zhcn.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/main.css",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/main.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/mermaid.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/mermaid.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/mermaid.min.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/mermaid.min.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/require.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/require.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/search-worker.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/search-worker.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/tinyseg.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/tinyseg.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "doc/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "doc/toc.html",
+          "hash": "oy7v+eNtb7wTigL17mcVKL9H1YHZ1tbA4nZ8Ye+uc/A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/md文件格式/基本语法.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/md文件格式/基本语法.html",
+          "hash": "t/N/Y2t3b8daZgsPVDLnx/ix9CjOM5dpu0IchuTszlA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/md文件格式/增强可读性语法.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/md文件格式/增强可读性语法.html",
+          "hash": "F7q+SsBEYneTbr1QB25rSx97Vlg/fbCvNcpukkcl16U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/Docfx.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/Docfx.html",
+          "hash": "6R4QIfpUqINYifnBjD8nLUOhxQ9pXRrF54BiNFxObiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.html",
+          "hash": "gra8P3VNRMmIbRg/7MHy4EjQIKDXGByI2zyjoGhr2ao="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/git&github.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/git&github.html",
+          "hash": "crj0Rux95mNN7qfo4P2JSKmsdSyzDwQARqXFyP7nIrY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/images/github-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/github-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-3.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-快捷键.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-快捷键.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体章节编写参考/SRS-编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体章节编写参考/SRS-编写指导.html",
+          "hash": "H8E5IIyFaACbdo7Wan6wt071AOf/g4D4hT731eC9VlE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体章节编写参考/技术方案编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体章节编写参考/技术方案编写指导.html",
+          "hash": "laxHbVPxd7rzea79Q+/g0H5iQOsDstak/L2MQiZJdeY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体章节编写参考/用户手册编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体章节编写参考/用户手册编写指导.html",
+          "hash": "m+LlY2HxC+/vh7dG3FH7k6PV574j6utkZWEsJinQCgU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/布局及格式/元数据.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/布局及格式/元数据.html",
+          "hash": "BCHqeKyC3zJrPx5PEHsx/x5tKt9RABfqoWj4p49oWoY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/布局及格式/标题.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/布局及格式/标题.html",
+          "hash": "sXdl4BleyZ7UEtazhfDZNEV2igpIPdt+o0ZA9Q4Gkpk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/布局及格式/正文格式.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/布局及格式/正文格式.html",
+          "hash": "6j/SnCGKhdWYViR+uNRFRP/X3mNDZ0TrRNXQQ8GlX3w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/布局及格式/过程批注.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/布局及格式/过程批注.html",
+          "hash": "fMTC/3qPNfTe48AtPeNsNZKVfuZ7LSepLk33Aknk2tU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/引言/用词说明.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/引言/用词说明.html",
+          "hash": "JP5Q8E0v88MWm18mkMbdWffhZHDRSbshbyg9muk80NU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/引言/目的.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/引言/目的.html",
+          "hash": "GshL3tcpghtlJbDEqdlyOWH6GQ6CfOLTMeRuUENs6xM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/引言/范围.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/引言/范围.html",
+          "hash": "QShf/KOwJZc1oR/LJByDY/34hhOTHqbMjpwNGuJuYws="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/img/1章节.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/img/1章节.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/img/2章节.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/img/2章节.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/img/toc.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/img/toc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/目录命名.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/目录命名.html",
+          "hash": "+DzhgHa57C6RjP4lzXySHlxcJRLB0oiJEbzgsmlHwFg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/目录的组织.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/目录的组织.html",
+          "hash": "CzaAsaYIjE2PBD6yZbyHzLyrP3f4Z0jOZdbD8onORjk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/目录规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/目录规范.html",
+          "hash": "xDjwgS5cE2THyny4qhWfCzgw7VBJ4FhvdF2+Gpq7Vjk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/章节顺序.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/章节顺序.html",
+          "hash": "iZEIv+l45NiN50knKSKZyIQWMLJm+y++lOsiNfB/mNg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/研发文档编写规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/研发文档编写规范.html",
+          "hash": "NuCz7n8D8T350eZHMEt0gBMtAJcrlf3yBRkC01C0WVY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/表达风格/注意细节.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/表达风格/注意细节.html",
+          "hash": "rwjWLzB72w+pOjp7T+8Jggzf3EL+Vc/ZzkIk5Yv9GN8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/表达风格/表达原则.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/表达风格/表达原则.html",
+          "hash": "CFB8C03RukIY2MzDP2oCIVuJXLlvgRXFgM05KrdZOfQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Bug严重级别处理规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Bug严重级别处理规范.html",
+          "hash": "vN5ySPryRIpfXAbwCELB7YWz0vLw9JzZALtNlxyJP0A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Bug基本属性定义-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Bug基本属性定义-R1.html",
+          "hash": "cdJc9zG7URaPus8rdFhZcatkv9qCPtDqwErft0qUS2g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/CAD迭代工作流程.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/CAD迭代工作流程.html",
+          "hash": "5I5A1Nik14SYrZ2fwk7Dj8F/+OaIoWNK70QHwOG/SI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程&过程规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程&过程规范-R1.html",
+          "hash": "ldGCU9PB1B7jUPeEnR45xnGvem1f7HN3g17RphWwmss="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/CNC平台-软件测试流程&过程规范-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/CNC平台-软件测试流程&过程规范-R3.html",
+          "hash": "B6hpjh7WiqHpBVTB7g1DEag+t8avmggpicBaQOZ6e2E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Commit message 编写规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Commit message 编写规范-R1.html",
+          "hash": "ZhOPteyK2LaJG6BKzfdFCIf3fM79itsbhxGgzXx6tT0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Phoenix 源码分支工作流-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Phoenix 源码分支工作流-R2.html",
+          "hash": "aq6iY5BIuwpvhi+vJOz5OSrDz3YZdICb4fYsbi/UB0A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Phoenix 组件发行工作流.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Phoenix 组件发行工作流.html",
+          "hash": "Um0TJyaz7Gmbj5MOLzIUygvnXUd1GG1T2xF0ExtEZX8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Phoenix 组件版本管理规则.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Phoenix 组件版本管理规则.html",
+          "hash": "9ayVWtCtz016CJCmmHb4MHDtw8zZ9+rIfH+yGsNrk34="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/docfx.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/docfx.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/docfx.vendor.css",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/docfx.vendor.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/docfx.vendor.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/docfx.vendor.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.multi.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.multi.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.stemmer.support.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.stemmer.support.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.zhcn.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/lunr.zhcn.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/main.css",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/main.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/mermaid.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/mermaid.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/mermaid.min.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/mermaid.min.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/require.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/require.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/search-worker.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/search-worker.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/tinyseg.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/docfx_templates/custom_template/styles/tinyseg.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/CAD开发工作流程.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/CAD开发工作流程.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/CNC-bug跟踪流程图.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/CNC-bug跟踪流程图.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/MSDN-SendMessage-FunctionInformation.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/MSDN-SendMessage-FunctionInformation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/MSDN-SetEvent-Requirements.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/MSDN-SetEvent-Requirements.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/MSDN-__forceinline.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/MSDN-__forceinline.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/MSDN-__super.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/MSDN-__super.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/NuGet-Feed-Linux.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/NuGet-Feed-Linux.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/NuGet-JogIssuer.1.401.0.0-Linux2.nupkg-Files.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/NuGet-JogIssuer.1.401.0.0-Linux2.nupkg-Files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/NuGet-JogIssuer.1.401.0.0.nupkg-Files.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/NuGet-JogIssuer.1.401.0.0.nupkg-Files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/clip_image002-16514843066001.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/clip_image002-16514843066001.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/clip_image002-16514849124841.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/clip_image002-16514849124841.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/clip_image002-16514855017311.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/clip_image002-16514855017311.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/clip_image002.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/clip_image002.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/component-version-001.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/component-version-001.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/component-version-002.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/component-version-002.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/component-version-003.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/component-version-003.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/component-version-004.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/component-version-004.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/cross-dev-property.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/cross-dev-property.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/cross-dev-struct.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/cross-dev-struct.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-01-overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-01-overview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-02-history.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-02-history.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-03-feature.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-03-feature.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-04-bugfix.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-04-bugfix.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-05-release.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-05-release.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-06-release-fix.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-06-release-fix.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-07-step1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-07-step1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-multi-master.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-multi-master.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-release-cycle-8maryprepsrelease.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-release-cycle-8maryprepsrelease.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-svn-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-svn-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/history-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/history-example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/history-incompatible.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/history-incompatible.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/history-item.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/history-item.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/history-terms.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/history-terms.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/ldoc-config-desc.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/ldoc-config-desc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/ldoc-effect.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/ldoc-effect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/ldoc-tags.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/ldoc-tags.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/publish-component-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/publish-component-workflow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-01.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-02.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-03.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-04.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-05.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-06.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-07.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/tag-08.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/tag-08.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16513731056531.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16513731056531.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16513752408419.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16513752408419.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514079899140.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514079899140.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514105494473.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514105494473.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_1651411027142-16514111235481.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_1651411027142-16514111235481.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_1651411027142.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_1651411027142.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514709215050.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514709215050.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514710079300.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514710079300.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514756929295.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514756929295.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514758928709.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514758928709.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514761324766.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514761324766.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514770282104.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514770282104.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514809474140.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514809474140.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514811037957.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514811037957.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514838942691.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16514838942691.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/includes/设计中.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/includes/设计中.html",
+          "hash": "Bvxt8bThL+k8Pp8UFYJft9oL0zUof8Hp4Li/eQNrhk4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品II部Bug流程-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品II部Bug流程-R3.html",
+          "hash": "6tikcVYrB3u3W7XkWdpIy67EvQ3O136hCL1G4bFfEPI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品II部TFS工作项命名规范-R5.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品II部TFS工作项命名规范-R5.html",
+          "hash": "qwAFuFQJg9Bc/w3G7QJXcyEfR1gaYFW51ePY5R8JCqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品II部研发流程-R2.1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品II部研发流程-R2.1.html",
+          "hash": "Gzade5lU//MEMpckTk+lj8s3sg8DkRY1AsgAFIG4Qa0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品Ⅰ部运维工作流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品Ⅰ部运维工作流程-R1.html",
+          "hash": "yH4lvJqsujYT5uZZFTvSOjIrKlbLJoSkg7w6VhMezEg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.html",
+          "hash": "am2ndZ0ckrlQD7Qa2VP/YpyNbA/YZfnhBLHixpjHk8A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/images/fig4-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/images/fig4-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发术语.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发术语.html",
+          "hash": "rwSFi+VuBhrYz1GQg73TTf2BfZ6pt8ZeGhET+g25QiY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidInclude"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度.html",
+          "hash": "yjISdVkwKPMqcCQj8b5bhRcMB8D0arXsHqum+/V5OTU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度指导书.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度指导书.html",
+          "hash": "LSORtIsnPQtC/ZMyHcR3tir6WHK7dpr/a97mB4MVKxM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/关于平台软件兼容性问题例外活动流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/关于平台软件兼容性问题例外活动流程-R1.html",
+          "hash": "5Sp+8P4nvK+nwFTn1klMUaqF9yhwtkbCMSxOqTMtzuQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/功能规格设计活动流程&规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/功能规格设计活动流程&规范-R1.html",
+          "hash": "E6M0ljYjMSPaMDHv8zIVxKiwXRxVNU9VsFJ6U1s/+HI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/包历史记录填写规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/包历史记录填写规范-R1.html",
+          "hash": "ukMb76m0asvQO6bLVdtLfQi3VBQlr7Jrl70Pyh/Usk0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/子产品管理制度（试行）-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/子产品管理制度（试行）-R2.html",
+          "hash": "cbfJzRVB74js1KOZMibzF7ZPtjzc0HVjBam+JFXhj4E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/平台软件发布规范-R3（试用）.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/平台软件发布规范-R3（试用）.html",
+          "hash": "v2XZsPza9D9K1WlU+AItkTP30Y0UfcjRg1a+grNc8nk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/插件管理规范-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/插件管理规范-R2.html",
+          "hash": "xV3oLuuBJSv5X2GTuOQ1a/gCa/M9qRRxfU5V/c4SLLA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/方案设计汇报和评审指导书/images/fig1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/方案设计汇报和评审指导书/images/fig1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/方案设计汇报和评审指导书/方案设计汇报和评审指导书-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/方案设计汇报和评审指导书/方案设计汇报和评审指导书-R1.html",
+          "hash": "fO+JIE3+oQWwaGshLafRJu5rlQ/k9suyOcyROzSX+sU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/方案设计汇报和评审流程/images/fig1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/方案设计汇报和评审流程/images/fig1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/方案设计汇报和评审流程/方案设计汇报和评审流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/方案设计汇报和评审流程/方案设计汇报和评审流程-R1.html",
+          "hash": "qspmmOUUMnQWdwkQX1TtEeyrGbWSeAlpaGG4X+xD3nk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/木工&广告产品线代码审核要求-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/木工&广告产品线代码审核要求-R2.html",
+          "hash": "vfiyWXSFYRKxRC5QBBbnb0r5hvolFiqPcYTz/hPDS7o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/木工&广告产品线开发评审制度-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/木工&广告产品线开发评审制度-R1.html",
+          "hash": "fOEJYtvNnO25RGLmcaR2C4Hu/Kls/z3wVKJ4q96y/Iw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/RobotFramework自动化测试框架使用指导书-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/RobotFramework自动化测试框架使用指导书-R1.html",
+          "hash": "CilKmgx4ay189EN2ouasaityErRFVszBVlMC9SXl550="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20211227195350513.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20211227195350513.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20211228164448499.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20211228164448499.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105144707179.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105144707179.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105174302160.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105174302160.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105180137494.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105180137494.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105181711655.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105181711655.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105183208811.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105183208811.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105183944760.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105183944760.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105185618186.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105185618186.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105190618036.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105190618036.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105190722487.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220105190722487.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220106110358935.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220106110358935.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220106111135212.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220106111135212.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220112142600127.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20220112142600127.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image2021-8-18_16-22-19.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/images/image2021-8-18_16-22-19.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/RobotFramework自动化测试框架使用指导书-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/RobotFramework自动化测试框架使用指导书-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/手工测试用例编写指导书-基于RobotFramework-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/手工测试用例编写指导书-基于RobotFramework-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/自动化测试管理规范-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/自动化测试管理规范-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试用例设计规范-R3.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试用例设计规范-R3.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework-R1.html",
+          "hash": "2AtRajYNt+eVWpeWJKHelCsNsbRRtRmiu0xleQinEiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/模板文件/测试计划(模板)-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/模板文件/测试计划(模板)-R1.html",
+          "hash": "BgGZAj0O4VjpNovj28LcL/yUsBBUBs/md9O90PbwA/A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/自动化测试管理规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/自动化测试管理规范-R1.html",
+          "hash": "a07CG7qn3qm9uJ82niK1nmaENnrb5Qr8KTcwUlqSHQU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/软件测试流程&过程规范-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试流程&过程规范-R3.html",
+          "hash": "eVqG94CD3UXas4ncZv1dTV+B1Q5lmxpFNSwsfqXmjv0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/软件测试用例设计规范-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试用例设计规范-R3.html",
+          "hash": "482oxXRG3fH0InHXZ+AE1cmziUFinwM2hfdiamZu5Ys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/软件测试规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试规范.html",
+          "hash": "wwmX6QZh46hfpsCnqh9xJtPsu7SMD7wZplX4k3w3Zmw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/激光线软件发行规定-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/激光线软件发行规定-R3.html",
+          "hash": "edBamtIwWdxRhhnd2hvaTLXKO7D2OLYF+MwRHXIeQ4Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/研发部产品方案汇报与处理流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/研发部产品方案汇报与处理流程-R1.html",
+          "hash": "EeA1nCiTT2BfNI5EYAE0QdWts72kz20fXW7y+dSrRZE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/缺陷跟踪流程-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/缺陷跟踪流程-R2.html",
+          "hash": "VPJMPa6lh4nPcjRpQ8mVI/7qQzr/jM80qMttJpjp99s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/软件命名及版本方案说明-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/软件命名及版本方案说明-R3.html",
+          "hash": "c6Za5wZmpXL8bzw2F1Mf9I7XE97kFqXqtHywe57HfvM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/软件平台-遗留缺陷发布标准-R1.2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/软件平台-遗留缺陷发布标准-R1.2.html",
+          "hash": "Npf+kiY/zEG4h2RZoj+fACS54DGGePal1B+q33pg+B4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/软件测试流程&过程规范-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/软件测试流程&过程规范-R2.html",
+          "hash": "+VtldtgtIO0Kpc/I1Np6oUe/3UOkl7FdBFDYVDUOc7Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/软件测试需求分解指导书-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/软件测试需求分解指导书-R2.html",
+          "hash": "7ApvGBho0YhkUQz0rrj8FQgkdTiHS08pjTgMM81xc5c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/软件编程规范-R5.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/软件编程规范-R5.html",
+          "hash": "JZLKWytdKu89PRob4ZZmizu5Xvmx8usiAphZDPZElnM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.html",
+          "hash": "qtL1g/fYtVFRTaIyEUNGEyDBnCLftYP4PC7/U4Vy7bY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "HWSY2LqWqRWC5TxCFT60s7k7txdIfcinxMUW5+fAFl4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "nIMcO8gLipuIBMnHC63D0jvfZ2oAICqcJrsbIyMPu3s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 68,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

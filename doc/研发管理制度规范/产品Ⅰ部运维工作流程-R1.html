@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20135;&#21697;&#8544;&#37096;&#36816;&#32500;&#24037;&#20316;&#27969;&#31243; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20135;&#21697;&#8544;&#37096;&#36816;&#32500;&#24037;&#20316;&#27969;&#31243; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="产品ⅰ部运维工作流程">产品Ⅰ部运维工作流程</h1>
+
+<pre><code>版次：2021年8月12日 第1版
+类型：程序文件
+部门：产品Ⅰ部
+上海维宏电子科技股份有限公司 版权所有
+</code></pre>&lt;现结合产品Ⅰ部情况， 归纳总结适合本部门的运维工作流程。 流程中涉及的沟通渠道，除特殊
+指明，否则皆默认为 RTX&gt;
+
+<table>
+<thead>
+<tr>
+<th>文件 版本</th>
+<th>修改前 文件版本</th>
+<th>主要修订内容</th>
+<th>修订人</th>
+<th>修订日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>无</td>
+<td>初版发布。</td>
+<td>汤飞碧</td>
+<td>2021.08.12</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-适用范围">1 适用范围</h1>
+<p>此文档适用于产品Ⅰ部所有基于 TFS 的开发工作，包括但不限于外部申请（客户或技术员反馈）
+的工作项和内部要求（公司内部要求） 的工作项。
+此文档不适用于： 1） 工作项的衍生 BUG； 2） 项目。</p>
+<h1 id="2-职责">2 职责</h1>
+<ul>
+<li>副经理：负责确认是否执行 OA 需求单。</li>
+<li>开发科科长：负责审批发布内容、变更申请。</li>
+<li>测试科科长：负责审批测试软件外发申请。</li>
+<li>应用科科长： 负责安排应用工程师。</li>
+<li>开发科组长：负责安排开发工程师。</li>
+<li>测试科组长：负责安排测试工程师。</li>
+<li>开发工程师</li>
+</ul>
+<p>1） 功能规格编写人员：负责编写功能规格；
+        2） 方案设计人员：负责设计开发方案；
+        3） 方案审核人员：负责审核开发方案的合理性和可行性；
+        4） 代码实现人员（工作项负责人，以下简称负责人）：负责按照开发方案进行代码编程并自测，发行软件，负责工作项的进度；
+        5） 代码审核人员：负责审核代码。</p>
+<ul>
+<li>测试工程师：</li>
+</ul>
+<p>1） 用例设计人员：负责根据开发方案编写测试用例；
+        2） 测试执行人员：负责按照测试用例执行测试动作， 编写测试执行表；
+        3） 测试审核人员：负责审核测试用例与测试执行表。</p>
+<ul>
+<li><p>应用工程师：负责分析用户需求并将其转化成产品需求， 提交工作项。</p>
+</li>
+<li><p>助理：负责外发测试版软件， 交付正式版软件。</p>
+</li>
+</ul>
+<h1 id="3-评估需求">3 评估需求</h1>
+<p>1、 应用科科长分配 OA 需求单；
+        2、 应用工程师应在收到 OA 需求单当日分析需求；
+        3、 评估完成后，提交副经理确认；
+        4、 副经理确认后， 应用工程师提交工作项。
+说明：</p>
+<ul>
+<li>若应用工程师当日无法完成需求评估，需在应用群中提交延期申请。</li>
+<li>所有附件统一归档至“运维管理-测试软件”目录下。</li>
+</ul>
+<h1 id="4-提交工作项">4 提交工作项</h1>
+<p>1、 提交人提交工作项后， 通知开发科科长/组长、测试科科长/组长、 全体应用工程师及助理。
+        2、 助理更新《运维工作一览表》。</p>
+<h1 id="5-部署">5 部署</h1>
+<p>1、 开发科组长指定开发人员并及时更新 TFS， 通知内容含：
+           \1) 人员安排： XXX（功能规格编写、 方案设计、方案审核、代码实现、代码审核）
+           \2) 截止日期： YYY
+        2、 测试科组长指定测试人员并及时更新 TFS， 通知内容含：
+           \1) 人员安排： XXX（用例设计、测试执行、测试审核）
+           \2) 截止日期： YYY
+           \3) 测试输出： 测试规格书/测试点、测试执行记录表</p>
+<p>说明：</p>
+<ul>
+<li>部署时， 被通知人员包含相关开发/测试/应用工程师及助理。</li>
+</ul>
+<h1 id="6-开发测试">6 开发测试</h1>
+<h2 id="61-功能规格编写">6.1 功能规格编写</h2>
+<p>1、 功能规格编写人员根据需求内容编写《功能规格》。
+        2、 编写完成后， 功能规格编写人员发起评审，评审团队需包含开发、测试、应用三方以及产品经理。
+        3、 评审通过后，开发工程师将《功能规格》归档到“运维管理-测试软件”目录下。</p>
+<p>说明：</p>
+<ul>
+<li>新功能及重点功能需要编写《功能规格》。</li>
+</ul>
+<h2 id="62-方案设计">6.2 方案设计</h2>
+<p>1、 负责人根据《功能规格》 编写《开发方案》，并提交方案审核人审核。
+        2、 审核人员需在 TFS 提交“方案审核说明”，只需记录最后一次审核结论。
+        3、 审核通过后， 负责人将文档归档到“运维管理-测试软件”目录下，并通知代码实现人员和用例设计人员。</p>
+<p>说明：</p>
+<ul>
+<li>“方案审核说明”格式要求，见《工作项开发记录（模板）》。</li>
+</ul>
+<h2 id="63-测试需求分析与用例设计">6.3 测试需求分析与用例设计</h2>
+<p>1、 用例设计人员根据《功能规格》 编写《测试规格书》。
+        2、 用例设计人员将标注“待审核”字样的文档提交至“运维管理-测试软件”目录下并通知测</p>
+<p>3、 测试审核人员需在 TFS 提交“测试审核说明”。
+        4、 审核通过后，用例设计人员将最终版《测试规格书》 上传至工作项附件中，并通知代码实现人员、测试执行人员。</p>
+<p>说明：</p>
+<ul>
+<li>若无《功能规格》，用例设计人员需根据需求内容编写《测试规格书》。</li>
+<li>“测试审核说明” 格式要求，见《工作项测试记录（模板）》。</li>
+</ul>
+<h2 id="64-代码实现">6.4 代码实现</h2>
+<p>1、 代码实现人员在编码结束后， 根据《测试规格书》 进行自测，编写《开发自测表》，并将文档上传至工作项附件中。
+       2、 自测通过后，代码实现人员通知代码审核人审核。
+       3、 代码审核人员需在 TFS 上提交“代码审核说明”，只需记录最后一次审核结论。
+       4、 代码审核通过后， 代码实现人员将测试软件放到“运维管理-测试软件”目录下， 在 TFS 上提交“开发说明”， 并通知测试执行人员。</p>
+<p>说明：</p>
+<ul>
+<li>代码实现人员必须按审核意见进行修改，若不修改则需做出解释并与审核人达成共识。</li>
+<li>相关开发记录格式要求，见《工作项开发记录（模板）》。</li>
+<li>每一次提测， 代码实现人员均需在 TFS 上提交“开发说明”。</li>
+</ul>
+<h2 id="65-测试执行">6.5 测试执行</h2>
+<p>1、 测试执行人员对照《测试规格书》 按优先级逐条进行测试执行，并对应记录结论，形成《测试执行记录表》。 每完成一次测试， 测试执行人员需在 TFS 上提交测试执行结果，并在测试结束时确保《测试执行记录表》提交至工作项附件。
+        2、 测试结束， 测试执行人员通知测试审核人审核。
+        3、 测试审核人员在 TFS 提交“测试审核说明”。
+        4、 审核通过后，测试执行人员通知代码实现人员。</p>
+<p>说明：</p>
+<ul>
+<li>相关测试记录格式要求， 见《工作项测试记录（模板）》。</li>
+</ul>
+<h2 id="66-软件发布">6.6 软件发布</h2>
+<p>1、 工作项执行人员确保完成 TFS 更新（包含： 开发/测试/审核工期、实际开始/结束时间、预计/实际提交测试版时间、一测开始时间、回归次数、发行版本数）。
+        2、 负责人更新《软件发布记录表》， 截图提交开发科科长审核，并通知全体组员。
+        3、 负责人更新《功能规格书》 与《三级功能规格表》，提交开发科科长审核与产品经理审批，
+并通知全体组员。
+        4、 负责人通知助理将正式版软件放到服务器的 NcStudio 目录下。
+        5、 负责人将使用说明文档放到指定目录下。</p>
+<p>说明：</p>
+<ul>
+<li>《软件发布记录表》审核要求： ① 发布记录表内容完整、正确； ② TFS 填写完整（除文档外）。</li>
+<li><p>当涉及级别为“严重”的 BUG 工作项时，需对相关软件进行注销，更新《软件注销记录》并通知全体组员。</p>
+</li>
+<li><p>链接为测试方的 BUG，若不处理或暂缓处理，必须由开发科组长确认； 如果测试工程师不认可此结果，可提出异议，最终以应用工程师意见为准。</p>
+</li>
+<li>当没有发行正式版软件时，除软件归档步骤，其它步骤照常执行。</li>
+</ul>
+<h1 id="7-验收与交付">7 验收与交付</h1>
+<p>1、 助理审核以下内容：
+           \1) 软件发布记录表（包括： 软件类型、版本、用户、工作项 ID、文档名称） 填写是否正确。
+           \2) 相关路径下是否已更新软件、 文档（包括： 开发方案、使用说明文档、测试规格书、测试执行记录表、功能规格表、 发布记录表、 产品平台客户软件一览表）。
+           \3) 工作项（包括： 状态栏、 实际工期、 测试投入栏、 审核记录、缺陷分析、 衍生 BUG） 是否已更新。
+           \4) 软件发布数量是否符合。
+        2、 审核通过后， 助理关闭任务工作项， 并更新《运维工作一览表》。
+        3、 助理外发邮件通知技术员，并同步更新维宏云盘。</p>
+<p>说明：</p>
+<ul>
+<li>BUG 工作项，由测试工程师关闭。</li>
+</ul>
+<h1 id="8-异常情况处理">8 异常情况处理</h1>
+<h2 id="81-需求变更">8.1 需求变更</h2>
+<p>1、 应用工程师同开发/测试工程师线下确认需求变更（包括原始需求变更、解决方案变更）。
+        2、 应用工程师更新 TFS（包括内容与截止时间）并通知工作项相关人员及开发/测试组长。</p>
+<p>说明：</p>
+<ul>
+<li>若开发工程师同技术员确认需求变更，则应及时在 TFS“详细信息”处（非“历史记录”），注明变更后的内容，并通知工作项相关人员。</li>
+</ul>
+<h2 id="82-截止时间变更">8.2 截止时间变更</h2>
+<p>1、 发现有超期风险，负责人需提前同测试/应用工程师沟通并商定新的截止时间。
+        2、 沟通完成后，负责人提交变更申请，格式如下：
+ID： 28331；
+标题：浙江高光-NK300CX-定制预估加工时间功能；
+原截止时间： 2019.12.10；
+新截止时间： 2019.12.17；
+变更原因： XXX；
+计划安排： YYY。
+        3、 开发科长审批通过后，助理更新 TFS 和《运维工作一览表》。</p>
+<p>说明：</p>
+<ul>
+<li>无法确认新的截止时间，则应申请变更，提交预估的截止时间，且该次不计入变更次数。如：</li>
+</ul>
+<p>ID： 28099
+        标题：广东科拓-NK260\NK280-修改全部清零功能等功能定制-黄六考
+        原截止时间： 2019.11.30
+        新截止时间（估）： NK280B 升级磨刀机结束日期（12.20） +5 天
+        变更原因： XXX。</p>
+<h2 id="83-测试软件外发">8.3 测试软件外发</h2>
+<p>1、 发生测试软件外发需求时，负责人通过邮件提交“测试版软件外发申请”，填写内容包括：“基础信息、申请理由、修改内容及风险点说明”，邮件发送至测试人员；同时，负责人将测试软件上传至指定目录下，并填写《测试版软件外发记录表》。
+        2、 测试人员在邮件中补充风险点说明，并提交测试科长审批。
+        3、 审批通过后，助理外发测试版软件。</p>
+<h1 id="9-流程图">9 流程图</h1>
+<h2 id="91-总流程图">9.1 总流程图</h2>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16514809474140.png" alt="img"></p>
+<h2 id="92-开发测试流程图">9.2 开发测试流程图</h2>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16514811037957.png" alt="img"></p>
+<h1 id="10附录">10附录</h1>
+<h2 id="101-相关文件">10.1 相关文件</h2>
+<p>1、 文档模板： \file01.weihong.com\02.各部门受限\02.产品 I 部\02.部门管理\02.模板\01.运维管理
+        2、 《功能规格》归档目录： \172.16.10.88\02.各部门受限\02.产品 I 部\07.运维管理\01.功能规格
+        3、 《开发方案》归档目录： \file01.weihong.com\02.各部门受限\02.产品 I 部\07.运维管理\03.开发方案</p>
+<p>4、 所有运维过程文件、 测试软件目录： \file01.weihong.com\02.各部门受限\02.产品 I 部\07.运维管理\02.测试软件
+        5、 《工作项开发记录（模板）》 ： \file01.weihong.com\02.各部门受限\02.产品 I 部\03.研发科\01.制度规范
+        6、 《工作项测试记录（模板）》 ： \file01.weihong.com\02.各部门受限\02.产品 I 部\04.测试科\00.制度规范_测试体系 2.0
+        7、 《使用说明书》归档目录： \file01.weihong.com\02.各部门受限\02.产品 I 部\07.运维管理\04.使用说明书</p>
+<h2 id="102-相关记录文件">10.2 相关记录文件</h2>
+<p>1、 《运维工作一览表》（外网） ： 微盘\产品Ⅰ部-（内部资料室） \2.计划
+        2、 软件发布路径、《软件发布记录表》、《软件注销记录》 ： \file01.weihong.com\06.NcStudio\产品Ⅰ部\1. 发布记录表（不同步到云盘）
+        3、 《功能规格表》 ： \172.16.10.88\02.各部门受限\02.产品 I 部\07.运维管理\01.功能规格
+        4、 《测试版软件外发记录表》、外发测试软件目录： \file01.weihong.com\02.各部门受限\02.产品I 部\07.运维管理\02.测试软件\01.测试外发</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#20135;&#21697;&#8544;&#37096;&#36816;&#32500;&#24037;&#20316;&#27969;&#31243;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

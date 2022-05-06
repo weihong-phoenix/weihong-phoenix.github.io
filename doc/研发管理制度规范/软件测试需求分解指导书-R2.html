@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#36719;&#20214;&#27979;&#35797;&#38656;&#27714;&#20998;&#35299;&#25351;&#23548;&#20070; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#36719;&#20214;&#27979;&#35797;&#38656;&#27714;&#20998;&#35299;&#25351;&#23548;&#20070; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="软件测试需求分解指导书">软件测试需求分解指导书</h1>
+
+<pre><code>版次：2015年10月27日　第1版
+文件类型：技术文件
+上海维宏电子科技股份有限公司　版权所有 
+</code></pre><table>
+<thead>
+<tr>
+<th><strong>修改历史</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件版本</strong></td>
+<td><strong>修改前文件版本</strong></td>
+<td><strong>主要修订内容和原因</strong></td>
+<td><strong>修订人</strong></td>
+<td><strong>修订日期</strong></td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>汪腾霞</td>
+<td>2015.10.27</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>增加章节2</td>
+<td>汪腾霞</td>
+<td>2017.09. 01</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>本文主要是从黑盒测试的层面进行指导。</p>
+<p>根据软件的定义，软件包括程序、数据、文档，故软件测试即程序、数据、文档的测试。</p>
+<h1 id="1---需求获取">1   需求获取</h1>
+<p>接到测试任务后可以从以下途径获取、理解需求：</p>
+<p>u 工作项任务信息；</p>
+<p>u 开发需求分析或设计文档；</p>
+<p>u 与开发人员沟通；</p>
+<p>u 提出需求的销售人员或最终客户。</p>
+<p> 沟通的方式有很多种，根据情况选择，目的是正确、清晰的理解<strong>用户需求</strong>的本质（而非客户需求），<strong>即该需求是为解决什么生产问题而产生的</strong>；同时尽量降低沟通成本。</p>
+<h1 id="2---需求确认">2   需求确认</h1>
+<p>用户需求是否被正确描述，并转化为恰当的开发设计需求，可以从以下方面去分析、评估：</p>
+<p>u 需求的清晰性、完备性、正确性；</p>
+<p>u 需求的一致性；</p>
+<p>u 需求的可行性、易测试性；</p>
+<p>u 需求的兼容性；</p>
+<p>u 需求的健壮性。</p>
+<p>【特别说明】</p>
+<p>\1)    需求是否具有可测试性，需要测试人员结合自身的经验和理解进行审核评估。</p>
+<p>\2)    不可测试的需求不能成为一个需求。</p>
+<h1 id="3---需求分类">3   需求分类</h1>
+<p>在了解任务需求时，可从以下几个方面去分解测试需求，进行测试计划和测试设计。</p>
+<p>1、  <strong>功能需求</strong>（如上下料功能、排转功能）</p>
+<p>2、  <strong>易用性需求</strong>（如界面、提示信息、说明性文档）</p>
+<p>3、  <strong>效率需求</strong>（如页面刷新速度、按钮响应时间、刀路加载时长、刀路加工效率）</p>
+<p>4、  <strong>兼容性需求</strong>（如前后版本兼容、格式兼容、硬件环境兼容、软件环境兼容）</p>
+<p>5、  <strong>可靠性需求</strong>（如长时间运行，表现的一种性）</p>
+<p>6、  <strong>安全性需求</strong>（此项属于功能需求的一部分，但是为了特别凸显强调，特单独提出，如权限控制安全性、操作安全性）</p>
+<h1 id="4---需求细化">4   需求细化</h1>
+<p>所有需求都有显式和隐式之分，显式即被明确提出的，隐式即暗含的、默认的、常识性的。测试中要特别注意隐式需求的挖掘。</p>
+<p>以下就测试中可进一步做需求分解的点进行说明。</p>
+<h2 id="41--功能需求">4.1  功能需求</h2>
+<p>功能需求测试包括业务流程测试和功能点测试，一般都需要进行正面测试和负面测试。</p>
+<p>正面测试就是测试系统是否完成了它应该完成的工作；负面测试就是测试系统是否不执行它不应该完成的操作。比如：</p>
+<p>1、  <strong>功能入口</strong>控制有效；</p>
+<p>2、  <strong>正常状态</strong>下，功能实现正确；</p>
+<p>3、  各<strong>异常状态</strong>下，功能表现可接受，具有可恢复性或容错性；</p>
+<p>4、  功能相关的<strong>参数输入检查</strong>合理，比如刀库容量参数应该是一个正整数，若允许输入负数或小数则算是Bug；</p>
+<p>5、  功能相关的<strong>端口控制</strong>正确；</p>
+<p>6、  实际表现与操作提示一致；</p>
+<p>7、  多次重复操作，<strong>功能表现的一致性</strong></p>
+<p>8、  与相关功能<strong>交互操作</strong>后，表现正确性。比如清零动作会自动修改工件偏置，但是若进行清零动作后就不能手动修改工件偏置或手动设置成功但不作用于工件坐标的计算，则属于Bug，任何时候手动修改工件偏置都应该能正确作用于工件坐标的计算。</p>
+<h2 id="42--易用性需求">4.2  易用性需求</h2>
+<p>易用性包括三部分，按主次依次为：产品执行用户所需的功能；快速安全的执行该功能；易于理解、方便使用。</p>
+<p>主要考虑界面接口、辅助图示或说明文档，使用户易学、易操作。比如做界面测试时：</p>
+<p>1、 <strong>界面元素要符合通用标准</strong>。一般认为在Windows上运行的软件要符合微软公司提供的一套界面设计规范，比如颜色、风格、位置、大小、语言一致，避免各界面之间存在较强的逻辑关系。如果不符合，则认为是Bug。</p>
+<p>2、 <strong>界面尺寸的改变。</strong>如控件是否需要成比例缩放、位置是否会重新排列、界面刷新是否正常等。</p>
+<p>3、 <strong>操作系统层次上的不同外观设置。</strong>考虑软件是否适应不同的外观设置。</p>
+<p>4、 <strong>不同分辨率。</strong>因为硬件条件或个人喜好，软件在不同分辨率下显示是否完整。</p>
+<p>5、 <strong>焦点的设置。</strong>每个界面都有焦点设置，默认焦点是否合适，执行功能操作后，焦点变化是否正确，焦点跳变顺序（Tab）是否正确。</p>
+<p>6、 <strong>对静态文本、图片或动画的检查。</strong>比如文字不能有错别字、语法错误，不能有违反法律的文字或图片存在；</p>
+<p>7、 <strong>快捷。</strong>常用操作是否快捷比如提供快捷键、入口显示在主界面或可立即生效的参数就不应该设为重启后生效； </p>
+<p>8、 <strong>醒目。</strong>重点关注点或异常情况是否醒目显示。</p>
+<h2 id="43--效率需求">4.3  效率需求</h2>
+<p>效率测试要监控如下指标：响应时间、吞吐量、CPU占用率、占用内存数和内存占用率，比如：</p>
+<p>1、 一次按键、操作的及时响应能力；</p>
+<p>2、 反复按键、操作响应能力的一致性；</p>
+<p>3、 界面一次、反复刷新显示的流畅性、及时性；</p>
+<p>4、 高负载下，操作表现的一致性，比如程序文件列表下文件很多与无文件时刷新界面；</p>
+<p>5、 存在并发访问或并发操作时的负载能力测试，比如同时访问一台机器上的共享文件；</p>
+<p>6、 存在检索操作时的及时响应能力比如选刀加工、选择加工。</p>
+<h2 id="44--兼容性需求">4.4  兼容性需求</h2>
+<p>1、 功能所依赖的运行环境（硬件或软件）可变、可选择时，需考虑不同环境配置时，功能表现的一致性如安装功能；</p>
+<p>2、 需要进行数据编辑或会产生数据时，需考虑同类软件数据的兼容性、新旧版本数据的兼容性；</p>
+<p>3、 与其他常用应用软件、工具同时工作时，是否产生不兼容的情况。</p>
+<h2 id="45--可靠性需求">4.5  可靠性需求</h2>
+<p>一般做系统测试或新增功能测试时需要考虑</p>
+<p>1、  多次重复同一操作，监测是否存在占用资源未释放，比如监控内存的递增情况、图片资源GDI对象、句柄数Handle Count、CPU利用率等；</p>
+<p>2、  加重负载(大量数据的处理)，观察系统运行的稳定性和可恢复性，比如加载一个比较大的文件，查看系统是否能加载，加载完成后是否可继续进行其他操作；</p>
+<p>3、  多个功能交互使用时，功能实现的稳定性；</p>
+<p>4、  长时间运行，系统的稳定性。</p>
+<h2 id="46--安全性需求">4.6  安全性需求</h2>
+<p>安全性主要指权限的控制以及破坏性操作的安全防护能力。一般可能存在危害人身安全、损害用户财产的操作都需要考虑安全性。</p>
+<p>对于权限控制上又分不同的安全级别，如一次性授权、重启软件前的永久授权或注册后的完全授权等。比如：</p>
+<p>1、 参数是否根据安全性分级，对其访问、修改权限限制；</p>
+<p>2、 端口修改设置是否安全性考虑；</p>
+<p>3、 权限控制的安全级别是否恰当；</p>
+<p>4、 是否存在安全性漏洞，比如权限校验被非预期注销、加密方式被破解；</p>
+<p>5、 可能损害数据、设备的操作是否存在确认操作；</p>
+<p>6、 正常操作时，安全性检测设置是否恰当比如多Z轴联动，超行程检测；</p>
+<p>7、 异常情况下，是否存在安全预防能力比如换刀时，刀库门没打开，是否终止换刀。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#36719;&#20214;&#27979;&#35797;&#38656;&#27714;&#20998;&#35299;&#25351;&#23548;&#20070;-R2.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

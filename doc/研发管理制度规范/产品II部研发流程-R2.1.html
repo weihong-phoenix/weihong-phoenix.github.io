@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20135;&#21697;II&#37096;&#30740;&#21457;&#27969;&#31243; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20135;&#21697;II&#37096;&#30740;&#21457;&#27969;&#31243; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="产品ii部研发流程">产品II部研发流程</h1>
+
+<pre><code>版次：2021年07月15日　第1版
+文件类型：程序文件
+上海维宏电子科技股份有限公司　版权所有
+</code></pre><table>
+<thead>
+<tr>
+<th><strong>修改历史</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件版本</strong></td>
+<td><strong>修改前文件版本</strong></td>
+<td><strong>主要修订内容和原因</strong></td>
+<td><strong>修订人</strong></td>
+<td><strong>修订日期</strong></td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>唐涛、穆冬华</td>
+<td>2021-7-15</td>
+</tr>
+<tr>
+<td>R1.1</td>
+<td>R1</td>
+<td>1. 需求分析阶段，建议测试、开发都参加</td>
+<td>唐涛</td>
+<td>2021-7-23</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1.1</td>
+<td>添加开发自测报告要求、添加测试具体测试记录要求</td>
+<td>骆玲</td>
+<td>2021-8-18</td>
+</tr>
+<tr>
+<td>R2.1</td>
+<td>R2</td>
+<td>添加平面发布自动化要求</td>
+<td>骆玲</td>
+<td>2021-11-9</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1---引言">1   引言</h1>
+<h2 id="11--编写目的">1.1  编写目的</h2>
+<p>为指导和规范产品II部在研发过程中的任务流转，特编写此流程。</p>
+<h2 id="12--读者对象">1.2  读者对象</h2>
+<p>产品II部应用、开发、测试。</p>
+<h2 id="13--参考文档">1.3  参考文档</h2>
+<p>《TFS工作项命名规范》</p>
+<p>《TFS工作项填写规范》</p>
+<p>《长沙Wiki使用指南.md》</p>
+<h1 id="2---研发流程">2   研发流程</h1>
+<p>根据软件研发和实际工作，研发流程分为如下阶段：</p>
+<p>1） 需求分析</p>
+<p>2） 需求审核</p>
+<p>3） 规格制定</p>
+<p>4） 规格评审</p>
+<p>5） 功能设计</p>
+<p>6） 设计评审</p>
+<p>7） 实现、自测</p>
+<p>8） 代码审核</p>
+<p>9） 测试&amp;回归</p>
+<p>10） 合并</p>
+<p>11） 文档整理</p>
+<h2 id="21--流程图">2.1  流程图</h2>
+<p><img src="C:\Users\xiaoshiyu\Desktop\markdown\激光\images\clip_image002.gif" alt="img"></p>
+<h2 id="22--流程详解">2.2  流程详解</h2>
+<h3 id="221--需求分析"><strong>2.2.1</strong>  需求分析</h3>
+<p>针对技术销售工程师、客户提出的功能需求，对初步的需求进行需求分析，了解需求的背景、要解决的问题，评估需求的合理性，并对需求从功能、性能方面进行全面的分析。针对需求进行竞品研究，了解行业中同类需求的解决办法。</p>
+<p>需求的核心是：<strong>定义问题</strong> </p>
+<ol>
+<li><p>需求分析之后，如果软件中已经具备功能，则不进入研发流程</p>
+</li>
+<li><p>需求分析完成之后，建立工作项，并通知产品总工</p>
+</li>
+<li><p>需求分析文档以附件的形式链接到工作项中</p>
+</li>
+<li><p>此阶段由应用工程师负责，必要时总工、开发工程师协助分析问题</p>
+</li>
+</ol>
+<p>需求分析完成，建立TFS Task，关键内容：</p>
+<p> <strong>完成时间：</strong>需要跟开发经理或总工协商；<strong>发行项</strong>所带任务完成时间要<strong>提前两个工作日</strong></p>
+<p> <strong>标题：</strong>要符合《产品II部TFS工作项命名规范.md》</p>
+<p><strong>最佳实践：</strong>在讨论需求、进行需求分析时，将测试人员、开发人员一起拉入需求讨论组，这样需求的讨论会更加充分，最大限度减少返工的可能性。</p>
+<h3 id="222--需求审核"><strong>2.2.2</strong>  需求审核</h3>
+<p>由产品总工负责对需求进行审核，从如下几个维度对需求进行审核：</p>
+<ul>
+<li>需求的合理性</li>
+<li>需求是否有价值</li>
+<li>是否是共性需求</li>
+<li>现有功能规格是否符合需求</li>
+<li>需求是否可以通过其他功能实现</li>
+<li>需求是否需要写功能规格、设计方案</li>
+<li>Task完成时间的合理性：如果不合理，需要跟应用、销售、客户协商确定好时间</li>
+</ul>
+<p>需求审核：TFS工作项审核字段改为“通过”；需求审核完成，需将Task告知开发经理(组长)、测试负责人、应用工程师</p>
+<p> 审核历史记录：</p>
+<p>   结论：通过 or 不通过</p>
+<p>   说明：<em>是否需要写规格方案，工作项要注意的点，其他说明</em></p>
+<h3 id="223--规格制定"><strong>2.2.3</strong>  规格制定</h3>
+<p>规格制定分为两种情况：</p>
+<ol>
+<li><p>现有规格不满足需求：由系统工程师对原有规格进行扩展，并修改出完整的新规格。</p>
+</li>
+<li><p>制定全新规格：进行竞品分析，结合需求制定全新的规格</p>
+</li>
+</ol>
+<p>规格由系统工程师制定</p>
+<p>规格文档必须包括：背景分析、竞品分析，功能规格，性能规格</p>
+<p>功能规格产出文档：功能规格说明书</p>
+<p>功能规格模板：<a href="http://172.16.1.7:9999/#!维宏研发/设计阶段/模板/[团队名称]-[功能名称]-功能规格-模板-R1.md">http://172.16.1.7:9999/#!维宏研发/设计阶段/模板/[团队名称]-[功能名称]-功能规格-模板-R1.md</a> </p>
+<p>规格的核心：<strong>描述通过什么功能解决问题</strong></p>
+<h3 id="224--规格评审"><strong>2.2.4</strong>  规格评审</h3>
+<p>规格评审原则：</p>
+<ol>
+<li><p>凡是规格的变化必须通过评审</p>
+</li>
+<li><p>规格评审<strong>必须</strong>有：开发、测试、应用参加</p>
+</li>
+<li><p>全新规格需要经过公司评审</p>
+</li>
+<li><p>评审完成，<strong>将评审记录，写入功能规格最后一章：评审记录中</strong></p>
+</li>
+<li><p>评审通过，由总工负责，将功能规格放到三级规格中：<a href="http://yfmis.weihong.com/View">http://yfmis.weihong.com/View</a></p>
+</li>
+</ol>
+<h3 id="225--功能设计测试用例设计"><strong>2.2.5</strong>  功能设计&amp;测试用例设计</h3>
+<p><strong>功能设计：</strong>由系统工程师执行</p>
+<ol>
+<li><p>首先要评估自己的知识技能是否能够做出符合功能规格的设计；如果评估不够，先要及时反馈，并对缺失的内容进行弥补</p>
+</li>
+<li><p>接下来，要找出设计的核心问题；并判断出此次设计是增量式设计还是颠覆式设计，尽量避免重复造轮子</p>
+</li>
+<li><p>整理自己的思路，并说明核心设计内容</p>
+</li>
+<li><p>进行详细设计，以设计文档为主体；将对功能的设计清晰的表述到设计文档中</p>
+</li>
+<li><p>对于改动量大，设计复杂的方案，<strong>建议系统工程师与开发工程师一起写详细设计方案</strong></p>
+</li>
+</ol>
+<p>功能设计的核心：<strong>如何实现功能</strong></p>
+<p>设计文档模板：设计方案模板：<a href="http://172.16.1.7:9999/#!维宏研发/设计阶段/模板/[团队名称]-[XXX方案设计]-模板-R1.md">http://172.16.1.7:9999/#!维宏研发/设计阶段/模板/[团队名称]-[XXX方案设计]-模板-R1.md</a></p>
+<p><strong>测试用例设计：</strong>由用例设计负责人执行</p>
+<p>   1.首先接到需求后就开始进行需求分析，从专业角度对需求进行理解、纠错、补充。</p>
+<p>需求分析中可咨询包括但不限于：需求责任人、开发负责人、测试主管、测试组长。</p>
+<ol>
+<li>接到规格后开始进行测试分析，常用的测试分析法：质量模型分析法、场景分析法。</li>
+</ol>
+<p>制定测试计划，主要从时间、人员、任务量、设备等方面着手，并进行适当的风险预估。</p>
+<p>测试分析产出：测试分析文档。</p>
+<p>推荐工具：OneNote、思维导图。</p>
+<ol>
+<li>运用黑盒测试用例设计方法进行用例设计。</li>
+</ol>
+<p>测试用例设计产出：测试用例。</p>
+<p>注意：测试用例设计时需考虑用例的可重复利用性、自动化脚本编写便利性。</p>
+<h3 id="226--设计评审测试用例评审"><strong>2.2.6</strong>  设计评审&amp;测试用例评审</h3>
+<p><strong>设计评审：</strong>由产品总工负责，系统工程师、开发工程师参与</p>
+<ol>
+<li><p>首先按照《技术文档写作指南_内容-R1.1.md》对文档书写内容进行规范化</p>
+</li>
+<li><p>确定评审相关的人员，并组织评审会议</p>
+</li>
+<li><p>评审完成，<strong>将评审记录，写入方案设计最后一章：评审记录中</strong></p>
+</li>
+<li><p>根据评审会议结果修改设计文档</p>
+</li>
+<li><p>评审决议要求复评，准备下一次评审</p>
+</li>
+</ol>
+<p><strong>测试用例评审：</strong>由测试审核人负责</p>
+<ol>
+<li><p>测试用例修改后必须进行审核</p>
+</li>
+<li><p>由测试主管/测试组长指定测试审核人</p>
+</li>
+<li><p>确定评审相关的人员，并组织评审</p>
+</li>
+<li><p>评审完成，根据评审结果修改测试用例</p>
+</li>
+<li><p>评审决议要求复评，准备下一次评审</p>
+</li>
+</ol>
+<h3 id="227--实现自测"><strong>2.2.7</strong>  实现、自测</h3>
+<ol>
+<li><p>根据设计文档进行代码模块的编写</p>
+</li>
+<li><p>需要对每一个功能分支进行调试</p>
+</li>
+<li><p>需要对每一行代码进行单步调试</p>
+</li>
+<li><p>自测需要写自测说明，如下：</p>
+</li>
+</ol>
+<p>【自测说明】</p>
+<p>是否自测：是</p>
+<p>测试方法：手工\自动化、以及其他测试方法</p>
+<p>测试范围：工作项需要提交《自测报告》</p>
+<p>建议测试范围：此处填写工作项影响范围，请根据代码修改情况充分评估影响范围，要求测试范围具体、准确，比如，影响哪些功能的哪些部分。</p>
+<h3 id="228--代码审核"><strong>2.2.8</strong>  代码审核</h3>
+<p><strong>代码审核原则</strong>：</p>
+<ol>
+<li><p>每一行代码都必须评审</p>
+</li>
+<li><p>签入的每一行代码都必须通过编码规范审核</p>
+</li>
+</ol>
+<p><strong>代码审核制度：</strong></p>
+<ol>
+<li><p>凡是代码签入，必须要经过评审；审核通过才能签入</p>
+</li>
+<li><p>审核发现三处编码规范问题，可直接退回，修改后重新提交评审；因此而产生的工作项延期，由被审核人承担</p>
+</li>
+<li><p>代码审核提交后，截图以RTX通知审核者</p>
+</li>
+<li><p>代码审核完成之后，截图以RTX通知申请人</p>
+</li>
+<li><p>多个审核人，有一个审核通过即可签入代码</p>
+</li>
+<li><p>对于代码改动量大，改动范围广的修改；<strong>建议开代码评审会议</strong></p>
+</li>
+</ol>
+<p><em>以上所说的代码，指的是</em><em>非</em>**<strong><em>Dev\</em></strong><strong><em>分支\</em></strong><em>代码。</em></p>
+<h3 id="229--测试"><strong>2.2.9</strong>  测试</h3>
+<p>测试工程师按照测试流程，以功能规格为样本，制定测试用例，执行测试。测试过程中发现的问题建立bug项。</p>
+<p><strong>准入准则：</strong></p>
+<ol>
+<li><p>开发已完成自测并提交自测报告到TFS工作项；</p>
+</li>
+<li><p>冒烟测试：功能基本流程实现符合需求；</p>
+</li>
+<li><p>冒烟测试：功能涉及到的参数、端口配置符合需求；</p>
+</li>
+<li><p>冒烟测试：无致命Bug比如内存泄漏、崩溃、卡死，影响系统稳定性或者影响加工安全性的问题；</p>
+</li>
+</ol>
+<p>注意：<strong>发现开发质量低，列出证据，拒绝进一步测试。</strong></p>
+<p> <strong>准出准则：</strong></p>
+<ol>
+<li><p>需完善的测试用例已完善；</p>
+</li>
+<li><p>确认需执行的测试用例，已100%完成测试执行；</p>
+</li>
+<li><p>确认需修改的Bug均已回归测试通过。</p>
+</li>
+<li><p>如果有本次发行没有解决的内部BUG，需要把标题的内部测试改成BUG维护。</p>
+</li>
+</ol>
+<p>提交测试记录：</p>
+<p>第*次测试情况说明：</p>
+<p>测试结论：（通过）/（不通过）</p>
+<p>自动化执行结果：（通过）/（不通过）（平面发布时需填写，且执行后的的测试报告与测试日志附在<strong>TFS</strong><strong>的对应工作项</strong>）</p>
+<p>测试环境：</p>
+<p>测试版本：</p>
+<p>测试范围：</p>
+<p>是否检查开发自测说明：</p>
+<p>是否检查Checklist：</p>
+<p>测试资料是否归档：归档了写地址，未归档写待归档，不需要写不需要原因</p>
+<h3 id="2210-分支合并"><strong>2.2.10</strong> 分支合并</h3>
+<p>分支合并由开发工程师负责：</p>
+<ol>
+<li><p>开发工程师根据工作项的范围，确定要合并到的插件 or 集成项目分支</p>
+</li>
+<li><p>判断本次合并的范围，如果合并有较高风险，需要与测试沟通，发合并任务测试</p>
+</li>
+<li><p>所有合并完成之后，将工作项标签中的【未合并】删除</p>
+</li>
+</ol>
+<p>注意：<strong>合并的质量由开发工程师保证</strong></p>
+<h3 id="2211--整理文档"><strong>2.2.11</strong>  整理文档</h3>
+<p>这一阶段功能已经测试通过，代码也已经提交；回过头去重新审视规格文档，设计文档，查找那些和代码实现不匹配的地方。主要工作：</p>
+<ol>
+<li><p>根据代码修改设计文档，使之一致</p>
+</li>
+<li><p>对文档进行润色。一些模棱两可的叙述可能给今后的阅读者造成困惑，都应该做修改</p>
+</li>
+<li><p>明示方案的边界、局限性和缺陷</p>
+<p><strong>4.</strong> <strong>将工作项相关的文档最新版本都上传到工作项附录中</strong></p>
+</li>
+<li><p>将文档整理好之后，规格文档上传三级规格，设计文档上传Wiki中</p>
+</li>
+<li><p>以功能二次开发、使用为目标，给团队中的成员做一次分享</p>
+</li>
+<li><p>将刀路、测试分析文档、测试用例归档到对应的库中。</p>
+</li>
+</ol>
+<h1 id="3-----附录">3     附录</h1>
+<p><strong>产品技术架构设计：</strong><a href="http://172.16.1.7:9999/#!维宏研发/DesignPhase.md">http://172.16.1.7:9999/#!维宏研发/DesignPhase.md</a></p>
+<p>长沙Wiki使用指南：<a href="http://172.16.1.7:85/%23!ChangSha_tm/00.使用指南/Wiki使用指南.md">http://172.16.1.7:85/#!ChangSha_tm/00.使用指南/Wiki使用指南.md</a></p>
+<p><strong>编制：</strong>    <strong>唐涛</strong>                  <strong>审核：</strong>                <strong>批准：</strong> </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#20135;&#21697;II&#37096;&#30740;&#21457;&#27969;&#31243;-R2.1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

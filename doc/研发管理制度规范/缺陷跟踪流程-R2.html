@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#32570;&#38519;&#36319;&#36394;&#27969;&#31243; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#32570;&#38519;&#36319;&#36394;&#27969;&#31243; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="缺陷跟踪流程">缺陷跟踪流程</h1>
+
+<pre><code>版次：2021年03月22日　第2版
+文件类型：程序文件
+上海维宏电子科技股份有限公司　版权所有
+</code></pre><table>
+<thead>
+<tr>
+<th><strong>修改历史</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件版本</strong></td>
+<td><strong>修改前文件版本</strong></td>
+<td><strong>主要修订内容和原因</strong></td>
+<td><strong>修订人</strong></td>
+<td><strong>修订日期</strong></td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>杨银</td>
+<td>2017.08.21</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>更新2.2 章节的“严重级别”</td>
+<td>余晓霞</td>
+<td>2021.03.22</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="1-----引言">1     引言</h1>
+<h2 id="11--编写目的">1.1  编写目的</h2>
+<p>为规范缺陷的提交和跟踪过程，特制定此流程。</p>
+<h2 id="12--读者对象">1.2  读者对象</h2>
+<p>维宏电子科技股份有限公司所有从事产品软件测试及相关人员。</p>
+<h2 id="13--引用标准">1.3  引用标准</h2>
+<p>无。</p>
+<h1 id="2-----术语定义">2     术语/定义</h1>
+<h2 id="21--缺陷术语解析">2.1  缺陷术语解析</h2>
+<p>为了统一认识，此处给出公司关于测试过程中，相关术语的定义。</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>定义</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>缺陷</td>
+<td>所谓缺陷，就是产品（包含程序、数据、文档、硬件）中不符合用户需求的问题，通常又叫Bug。  经过一步或多步操作后，软件实际运行结果与预期结果不符合，即定义为一个Bug。若已知不同Bug现象产生的本质原因相同可归类为一个Bug。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>缺陷跟踪</td>
+<td>从缺陷提交至缺陷关闭的整个过程的跟踪，包括缺陷提交、评估、指派、修复、验证、关闭。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>外部缺陷</td>
+<td>客户或销售人员在使用过程中发现的Bug，称之为外部缺陷或外部Bug。</td>
+</tr>
+</tbody>
+</table>
+<p>表格1 缺陷术语</p>
+<h2 id="22--缺陷基本属性解析">2.2  缺陷基本属性解析</h2>
+<table>
+<thead>
+<tr>
+<th><strong>字段</strong></th>
+<th><strong>解释</strong></th>
+<th><strong>规则</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标题</td>
+<td>Bug现象、存在范围的简述，如哪个客户、平台、功能，Bug主要现象等。同时可以加入提交人（即Bug发现人或销售联系人）。</td>
+<td><strong>格式：客户名-</strong><strong>平台名-</strong><strong>功能名-Bug</strong><strong>简述-</strong><strong>提交人</strong>  <strong>其中平台名和Bug</strong><strong>简述是必不可少项。客户名省略则为通用bug</strong><strong>。</strong>  <em>例：深圳大宇-NK260-</em><em>硬件端口-</em><em>测试开测试关时无密码确认-</em><em>江亲明</em></td>
+</tr>
+<tr>
+<td>缺陷类别</td>
+<td>Bug所属类型。</td>
+<td>1.      <strong>需求缺陷</strong>：由需求的获取、理解或转换导致缺陷。  2.      <strong>设计缺陷</strong>：需求没问题，但设计方案不足导致缺陷。  3.      <strong>编码缺陷</strong>：需求、方案正确，但编码出错导致缺陷。  4.      <strong>界面缺陷</strong>：实现界面的绘制/编码导致的缺陷。</td>
+</tr>
+<tr>
+<td>严重级别</td>
+<td>指该 Bug 在多大程度上影响产品的正常使用</td>
+<td>详细内容见: <em>Bug</em> <em>严重级别处理规范</em></td>
+</tr>
+<tr>
+<td>Bug描述</td>
+<td>记录Bug现象、Bug重现步骤、期望结果、测试环境及分析建议，若Bug非每次出现，可补充说明出现的概率。</td>
+<td><em>===</em><em>格式要求==============</em>  <strong>【测试环境】</strong>     <strong>【Bug</strong><strong>步骤】</strong>  1. /<em>描述Bug重现的详细步骤，尽量保证每步仅做一个操作</em>/；  2.……     <strong>【实际结果】</strong>     <strong>【预期结果】</strong>  <em>====</em><em>完毕================</em></td>
+</tr>
+</tbody>
+</table>
+<p>表格2 缺陷基本属性</p>
+<h1 id="3-----bug跟踪流程">3     Bug跟踪流程</h1>
+<p>结合公司的测试过程，缺陷跟踪流程分为如下阶段：</p>
+<p>1） 缺陷提交</p>
+<p>2） 缺陷评估</p>
+<p>3） 缺陷指派</p>
+<p>4） 缺陷修复</p>
+<p>5） 缺陷验证</p>
+<p>6） 缺陷关闭</p>
+<h2 id="31--流程图">3.1  流程图</h2>
+<p><img src="C:\Users\xiaoshiyu\Desktop\markdown\软件部\images\clip_image002-16514849124841.gif" alt="img"></p>
+<h2 id="32--流程详解">3.2  流程详解</h2>
+<h3 id="321-缺陷提交"><strong>3.2.1</strong> 缺陷提交</h3>
+<p>在内部测试、使用、调试、销售产品过程中，对发现的问题在指定缺陷管理系统中进行记录，以上报给相关人。 </p>
+<ol>
+<li>Bug提交分为：新建Bug与激活已有Bug。</li>
+</ol>
+<ul>
+<li>Bug新建： Bug在Bug库中不存在，则新建Bug。</li>
+<li>Bug激活： Bug在Bug库中已经存在且为非活动状态，则重新激活该Bug，并确定是否需要关联相关任务项。</li>
+</ul>
+<ol>
+<li><p>Bug以Bug工作项形式提交。具体填写要求可参照具体的项目管理工具，如《TFS工具使用指导书-Rn.doc》</p>
+</li>
+<li><p>一个Bug一个工作项。</p>
+</li>
+<li><p>在工作项测试过程中发现的问题，直接在当前工作项的“链接”页面新建Bug工作项（链接类型可以视情况选择，一般为“测试方”）；随机测试发现的Bug，在对应区域创建Bug工作项。</p>
+</li>
+</ol>
+<h3 id="322-缺陷评估"><strong>3.2.2</strong> 缺陷评估</h3>
+<p>提交至缺陷管理系统中的缺陷，需评定其后续的处理措施。</p>
+<ol>
+<li><p>若为外部Bug，Bug提交后由测试组长安排人员进行Bug重现并记录重现结果。根据重现结果由产品总工进行评估。</p>
+</li>
+<li><p>Bug提交后，若为当前任务项测试出的Bug，由开发责任人进行评估，否则由产品总工进行评估。</p>
+</li>
+<li><p>经评估后，在缺陷管理系统中给出该缺陷的处理措施。</p>
+</li>
+</ol>
+<h3 id="323-缺陷指派"><strong>3.2.3</strong> 缺陷指派</h3>
+<p>缺陷评估后若需要进行调查、处理，则分配相应人员进入缺陷修复过程。</p>
+<p>若为当前任务项测试出的Bug，则直接由当前开发负责人修复，当前测试人员进行回归，否则由产品总工指派开发负责人，测试组长指派测试负责人。</p>
+<h3 id="324-缺陷修复"><strong>3.2.4</strong> 缺陷修复</h3>
+<p>由指派的开发责任人对缺陷进行定位分析、修复处理。</p>
+<ol>
+<li><p>Bug修复后开发人员需进行自测，确保缺陷得以修复。</p>
+</li>
+<li><p>Bug修复后开发人员需提交原因分析及处理说明。</p>
+</li>
+<li><p>缺陷定位分析过程中，发现Bug难以修复或影响范围太大，综合Bug修改成本、影响程度等原因评估不处理的，重新修改Bug处理意见为不处理，进入缺陷关闭阶段。</p>
+</li>
+<li><p>缺陷定位分析过程中，发现Bug修改比较复杂，综合Bug影响程度等原因评估暂缓处理的，重新修改Bug处理意见为暂缓处理。</p>
+</li>
+</ol>
+<h3 id="325-缺陷验证"><strong>3.2.5</strong> 缺陷验证</h3>
+<p>对标记为“已修复”的Bug进行回归测试。</p>
+<ol>
+<li><p>经验证，当前Bug不存在，且未引入新的Bug，则认为验证通过。</p>
+</li>
+<li><p>经验证，若原有Bug仍然存在，则激活本Bug；</p>
+</li>
+<li><p>经验证，原有Bug不存在，但引入了新的Bug，则提交新的Bug。</p>
+</li>
+<li><p>回归测试通过后，需确保Bug对应用例已更新至对应功能的测试用例中。</p>
+</li>
+</ol>
+<h3 id="326-缺陷关闭"><strong>3.2.6</strong> 缺陷关闭</h3>
+<p>经分析，不需处理或已修复且验证通过的Bug可关闭。</p>
+<ol>
+<li><p>不管缺陷如何处理，缺陷关闭需由测试工程师验证后关闭；</p>
+</li>
+<li><p>若已指派测试工程师则由当前指派的测试工程师负责，若未指派则由测试组长负责。</p>
+</li>
+</ol>
+<p><strong>编制：</strong>    <strong>杨银</strong>                  <strong>审核：陈豫</strong>               <strong>批准：郑之开</strong> </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#32570;&#38519;&#36319;&#36394;&#27969;&#31243;-R2.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

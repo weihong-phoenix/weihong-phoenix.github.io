@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#21253;&#21382;&#21490;&#35760;&#24405;&#22635;&#20889;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#21253;&#21382;&#21490;&#35760;&#24405;&#22635;&#20889;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="包历史记录填写规范">包历史记录填写规范</h1>
+
+<p>============================</p>
+<pre><code>版次：2018年4月26日 第1.0版
+类型：程序文件
+作者：Phoenix 架构平台
+上海维宏电子科技有限公司　版权所有
+</code></pre><h2 id="1-目的及适用范围">1. 目的及适用范围</h2>
+<ul>
+<li>编写本规范的目的是为了统一 Phoenix 打包时的历史记录的编写风格，提高历史记录的一致性和可读性；</li>
+<li>方便使用工具将包中的历史记录抽出作为 markdown 保存起来。</li>
+</ul>
+<h2 id="2-术语和定义">2. 术语和定义</h2>
+<p>下列术语和定义适用于本规范：</p>
+<ul>
+<li><code>Add (shelveset Id)</code> 指添加的功能 &lt;<code>不兼容</code>&gt;；</li>
+<li><code>Mod (shelveset Id)</code> 指修改的功能 &lt;<code>不兼容</code>&gt;；</li>
+<li><code>Del (shelveset Id)</code> 指删除的功能 &lt;<code>不兼容</code>&gt;；</li>
+<li><code>Fix(bugId)(shelveset Id)</code> 指修复的bug &lt;<code>不兼容</code>&gt;<ul>
+<li><strong>【注意】</strong> <code>shelveset Id</code> 为按需添加；<ul>
+<li><strong>【注意】</strong> &lt;<code>不兼容</code>&gt; 为按需添加，不写默认为兼容。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="21-术语说明">2.1 术语说明</h3>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>shelveset Id</strong></td>
+<td>提交代码后在 TFS 中的 ID， 方便查找 Code&lt;<code>若有多个id，以逗号分隔向后添加</code>&gt;</td>
+</tr>
+<tr>
+<td><strong>bug id</strong></td>
+<td>修改的 bug ID</td>
+</tr>
+<tr>
+<td><strong>Add</strong></td>
+<td>功能的添加。例如添加一个查询功能就属于 Add</td>
+</tr>
+<tr>
+<td><strong>Mod</strong></td>
+<td>功能的修改。例如修改了查询功能的实现方式或者接口命名就属于 Mod</td>
+</tr>
+<tr>
+<td><strong>Del</strong></td>
+<td>功能的删除。例如删除了查询功能就属于 Del</td>
+</tr>
+<tr>
+<td><strong>Fix</strong></td>
+<td>表示修改了哪个 bug</td>
+</tr>
+<tr>
+<td><strong>&lt;<code>不兼容</code>&gt;</strong></td>
+<td>表示与其他版本不兼容。需要明确标注出来，默认是兼容<br><strong>注意：</strong><br>- 如果功能和其他版本不兼容必须在后面明确标注，并在下方<strong>写出详细说明和升级指导</strong>。<br>- 详细说明包括接口更改与接口删除等不兼容原因。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-术语示例">2.2 术语示例</h3>
+<p>   <img src="images/history-terms.png" alt="术语示例" title="术语示例"></p>
+<h2 id="3-文件名称">3. 文件名称</h2>
+<p>历史记录文件名称是 <strong>history.md</strong>。</p>
+<ul>
+<li>文件名后缀为 <code>.md</code>，表明是 markdown 文件。</li>
+<li>记录内容要求 <code>UTF-8</code> 字符编码。</li>
+<li>history.md 文件必须放在打包的根目录下。如果在项目其他目录下，生成项目时要求复制到根目录。
+### 3.1 文件名示例
+<code>history.md</code></li>
+</ul>
+<h2 id="4-题目命名">4. 题目命名</h2>
+<p>题目由版本号和更新时间构成 。</p>
+<h3 id="41-题目示例">4.1 题目示例</h3>
+<p>   <img src="images/history-item.png" alt="题目示例" title="题目示例"></p>
+<h2 id="5-内容">5. 内容</h2>
+<p>内容以 <code>[*]</code> 作为序号分隔符填写， 每一个内容代表一个更改。</p>
+<h3 id="51-内容示例">5.1 内容示例</h3>
+<p>   <img src="images/history-terms.png" alt="术语示例.png" title="术语示例"></p>
+<h2 id="6-不兼容与升级指导格式说明">6. 不兼容与升级指导格式说明</h2>
+<p>不兼容与升级建议里需要包含不兼容的接口，功能等不兼容原因，并给出解决方案或升级指导。</p>
+<h3 id="61-不兼容示例">6.1 不兼容示例</h3>
+<p><img src="images/history-incompatible.PNG" alt="不兼容示例" title="不兼容示例"></p>
+<h2 id="7-完整示例">7. 完整示例</h2>
+<p><img src="images/history-example.png" alt="完整示例" title="完整示例"></p>
+<p>完整代码示例：</p>
+<pre><code>
+`[1.502.2.0] - [2018.4.26]` 
+============================
+
+  * Add(30638)： 添加G寻址功能
+  * Mod(5544)： 将NC.DoBeforeLoop改名为NV.BeforeLoop(`不兼容`)
+  * Del(33696)： 将注册功能从模块中移除（`不兼容`）
+  * Fix(6831) (22387)：修复总线的脉冲轴运动不正确的bug 
+
+`不兼容功能与升级指导：`
+  * Mod(55448)： 将NC.DoBeforeLoop改名为NV.BeforeLoop(`不兼容`)
+    * 修改内容： 将NC.DoBeforeLoop改名为NV.BeforeLoop，命名不规范
+    * 升级指导： 将用到NC.DoBeforeLoop改名为NV.BeforeLoop
+
+  * Del(33676)： 将注册功能从模块中移除（`不兼容`）
+    * 修改内容： 当前组件删除注册功能，按需求将其放入SignIn组件中
+    * 升级指导： 改用SignIn组件中的注册功能
+
+`[1.402.1.0] - [2018.4.23]` 
+============================
+
+  * Mod(30618)： 将MAuto改为AutoInfo(`不兼容`)
+  * Mod(30628)： 目前Lua子程序中除条件运动外，所有涉及到X，Y，Z的全部换成使用索引0，1，2(`不兼容`) 
+  * Del(33676)： 删除总线限位功能
+  * Fix(6836) (22387)：修复总线的脉冲轴运动过快的bug 
+
+`不兼容功能与升级指导：`
+  * Mod(30618)： 将MAuto改为AutoInfo(`不兼容`)
+    * 修改内容： 将MAuto改为AutoInfo，名称的更改使名字表达的意思更加的清晰
+    * 升级指导： 将所有用到MAuto改为AutoInfo
+
+  * Mod(30628)： 目前Lua子程序中除条件运动外，所有涉及到X，Y，Z的全部换成使用索引0，1，2(`不兼容`) 
+    * 修改内容： 将MoveTo(X=，Y=，...)改为MoveTo {{0} =，{1} =}
+    * 升级指导： 将所有用到MoveTo(X=，Y=，...)改为MoveTo {{0} =，{1} =}
+</code></pre><h2 id="版本信息">版本信息</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>修改人</th>
+<th>修改内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2018/4/26</td>
+<td>Phoenix 架构平台</td>
+<td>初版建立</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#21253;&#21382;&#21490;&#35760;&#24405;&#22635;&#20889;&#35268;&#33539;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

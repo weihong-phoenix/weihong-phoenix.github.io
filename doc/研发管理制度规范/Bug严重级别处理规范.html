@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bug &#20005;&#37325;&#32423;&#21035;&#22788;&#29702;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bug &#20005;&#37325;&#32423;&#21035;&#22788;&#29702;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bug-严重级别处理规范">Bug 严重级别处理规范</h1>
+
+<blockquote><p>版次：2021年3月16日　第4版
+类型：程序文件
+部门：软件部
+上海维宏电子科技股份有限公司　版权所有</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>文件版本</th>
+<th>修改前文件版本</th>
+<th>主要修订内容和原因</th>
+<th>修订人</th>
+<th>修订日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>1.  修改范例。</td>
+<td>汪腾霞</td>
+<td>2018/11/8</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>R2</td>
+<td>1.  重新划分 Bug 严重级别，增加“致命”、“建议”，并对所有级别重新定义。 <br>2.  根据新定义修改【范例】内容。</td>
+<td>谷艳艳</td>
+<td>2020/4/15</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>R3</td>
+<td>1.   标题从《Bug 严重级别处理说明》修改为《Bug 严重级别处理规范》。<br>2.  Bug 严重级别重新定义；去掉“轻微”级别。<br>3.  增加目的、适用范围。<br>4.  更新【范例】内容。</td>
+<td>余晓霞</td>
+<td>2021/3/16</td>
+</tr>
+</tbody>
+</table>
+<h2 id="目的">目的</h2>
+<ul>
+<li>合理的定义 Bug 严重级别有助于修复者确认该 Bug 的重要性，帮助修复团队更合理的安排时间进行修复。</li>
+<li>使 Bug 严重级别的定义在部门内达成统一共识，减少 Bug 严重级别定义产生的歧义。</li>
+<li>合理的定义 Bug 严重级别可以为产品的质量分析提供合理可靠的事实数据。</li>
+</ul>
+<h2 id="适用范围">适用范围</h2>
+<p>适用公司研发体系所有软件产品的 Bug 严重级别定义。</p>
+<h2 id="bug-严重级别定义">Bug 严重级别定义</h2>
+<p>Bug 严重级别（Severity）是指该 Bug 在多大程度上影响产品的正常使用。Bug 的严重级别分为四个等级，从高到低依次为：致命、严重、一般、建议。</p>
+<p>原则：所有bug的严重等级判断都是从高到低判断， 优先匹配高等级。</p>
+<h3 id="致命">致命</h3>
+<p>【定义】该类 Bug 可能导致安全问题、设备损坏、软件异常关闭、无法正常加工和非临时数据损坏或丢失。</p>
+<p>【要求】该类 Bug 需立即安排修复。</p>
+<p>【范例】</p>
+<ul>
+<li>导致人员安全和软件信息安全的问题，如：紧停无效、抱闸无效、主轴开启/关闭不受控制、越权操作等。</li>
+<li>导致设备（横梁、刀具、切割头等）损坏。如：<ul>
+<li>校平分中Z轴上台不够导致撞切割头。</li>
+<li>固件升级之后，Z轴异常下扎。</li>
+<li>正常加工时频繁出现的机床震动。</li>
+<li>由于偏位，造成设备损坏。</li>
+<li>加工时出现乱跑现象。</li>
+</ul>
+</li>
+<li>导致软件异常关闭。如：<ul>
+<li>操作系统崩溃，例如：被测软件导致操作系统死机、蓝屏等。</li>
+<li>软件崩溃、卡死（不可恢复正常使用）等。</li>
+</ul>
+</li>
+<li>导致客户无法正常加工。如：<ul>
+<li>偏位等造成加工轨迹不正确。</li>
+</ul>
+</li>
+<li>导致非临时数据损坏或丢失。非临时数据是指软件自身运行的依赖文件及用户加工依赖的文件，如：端口配置文件、lua 脚本、用户加工文件等文件被损坏和丢失。</li>
+</ul>
+<h3 id="严重">严重</h3>
+<p>【定义】该类 Bug 导致无法完成功能（操作和输入数据正确的情况下）、动态数据损坏或丢失。</p>
+<p>【要求】该类 Bug 需排在高优先级修复。</p>
+<p>【范例】</p>
+<ul>
+<li>输入正确的数据，无法完成功能，如：<ul>
+<li>对外提供的函数、接口不可用或实现错误，例如：通过平台函数  access.TryGetOwnerObject(out object obj)，获取不到obj对象。</li>
+<li>输入有效的数据，无法完成功能，例如：滤波输入的数据类型是正整数，输入5，提交保存失败。</li>
+</ul>
+</li>
+<li>操作正常，无法完成功能，如：<ul>
+<li>设备通信问题，例如：软件正常重启或断电重启之后，设备连接不上。</li>
+<li>加工操作时或加工过程，直接抛出代码异常信息，例如：操作开始、停止或断点继续时，抛出代码异常信息。</li>
+<li>当加工期间，由于过程结果不符合预期，即使最后可完成加工，也可称之为错误的输出，例如：加工过程出现卡顿，之后可以自恢复。</li>
+<li>无法完成业务功能。例如：完成对刀过程，禁止暂停抬刀功能失效。</li>
+</ul>
+</li>
+<li>操作正常， 出现性能问题， 如：<ul>
+<li>低于功能规格中约定的性能。</li>
+<li>低于之前版本的性能（除非该性能指标通过研发评审会确认）。</li>
+<li>无功能规格及无之前版本情况下， 由于性能问题严重影响用户使用软件的。</li>
+</ul>
+</li>
+<li>导致动态数据损坏或丢失。动态数据是指软件运行过程中产生的数据，这里的动态数据仅限于客户关心的数据和恢复正常加工的必需数据。例如：重启之后，加工任务列表中的加工任务状态错误；或加工工件数量被清零。</li>
+</ul>
+<h3 id="一般">一般</h3>
+<p>【定义】该类 Bug 在非常规操作或输入数据不正确时导致功能失效或不影响功能的显示性缺陷。</p>
+<p>【要求】该类Bug建议在正式发布版前修复。</p>
+<p>【范例】</p>
+<ul>
+<li>输入数据不正确，导致功能失效，如：<ul>
+<li>当端口映射表中存在错误或无效、空端口时，在拓扑配置中替换朗达控制器会产生未处理的异常。</li>
+<li>由于用户特定操作系统等环境因素导致软件功能失效。 例如：客户安装过程过程，被某杀毒软件拦截。</li>
+</ul>
+</li>
+<li>非常规操作，导致功能失效，如：<ul>
+<li>苛刻或极端的特定条件下，造成软件功能出错，例如：软件连续重启2661次后，重启失败。</li>
+</ul>
+</li>
+<li>不影响功能的显示性缺陷，如：<ul>
+<li>界面出现不影响功能的界面设计类问题，例如：样式差异、错别字、显示值不统一、操作控件定位不准确等。</li>
+<li>功能的完成需要长时间处理， 而期间未给出合理提示。</li>
+</ul>
+</li>
+</ul>
+<h3 id="建议">建议</h3>
+<p>【定义】该类 Bug 是对产品功能提出的建议或意见，使其向更加良好、积极的方向发展。</p>
+<p>【要求】该建议可根据组内安排进行优化。</p>
+<p>【范例】</p>
+<ul>
+<li><p>提示信息优化，更加友好且有指导性；例如：对于复杂的功能操作，每一步都有明确的提示信息。</p>
+</li>
+<li><p>产品功能设计不易于测试人员和开发人员测试。</p>
+</li>
+</ul>
+<p>  编制：汪腾霞                             审核：胡凯烽、陈豫                              批准：郑之开</p>
+<p>  审批链接：</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/Bug&#20005;&#37325;&#32423;&#21035;&#22788;&#29702;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>
