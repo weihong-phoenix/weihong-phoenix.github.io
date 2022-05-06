@@ -148,7 +148,9 @@ svg:hover path {
   }
 }
 
-
+blockquote {
+  font-size: 14px;  
+}
 
 /* 为了跟docs.microsoft.com风格提示一致 */
 @font-face {
