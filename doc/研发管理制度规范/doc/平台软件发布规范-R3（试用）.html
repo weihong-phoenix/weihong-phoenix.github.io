@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#24179;&#21488;&#36719;&#20214;&#21457;&#24067;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#24179;&#21488;&#36719;&#20214;&#21457;&#24067;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="平台软件发布规范">平台软件发布规范</h1>
+
+<pre><code>版次：2020年07月30日　第3版
+类型：程序文件
+部门：软件部
+上海维宏电子科技股份有限公司　版权所有
+</code></pre><table>
+<thead>
+<tr>
+<th><strong>文件版本</strong></th>
+<th><strong>修改前文件版本</strong></th>
+<th><strong>主要修订内容和原因</strong></th>
+<th><strong>修订人</strong></th>
+<th><strong>修订日期</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td></td>
+<td>初版</td>
+<td>汪腾霞</td>
+<td>2016.08.17</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>1、将“5 发布版撤销”中的涉及“撤销“二字的，都改为作废；  2、“发布公告收件人列表“中新增抄送：软件开发工程师，并将《【审批】平台软件发布公告（软件名称）-模板-Rn.oft》中的收件人更新成和规范中的一致；  3、相关文件存放路径更新成服务器路径一致；  4、在“流程详解”下的软件开发需提交的发布材料一栏，新增还需提交发布checklist表。</td>
+<td>王娟娟</td>
+<td>2017.8.1、2017.11.7</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>R2</td>
+<td>1、 修改“2 适用范围”内容：，将“特别说明”中的软件版本说明放置“6  附录”中，并去掉“2个及以上团队” 的要求。  2、 修改“3 职责”内容：去掉“软件部门经理”的职责，重新定义其他人员职责。  3、 修改“4 发布流程” 内容：去掉“软件部门经理”审核环节，修改各环节责任人以及环节要求，修改“发布公告范围”。  4、 发布材料中增加《XX不兼容性分析报告》  5、 修改“5 发布版作废”内容：增加wiki、Nuget等作废要求。  6、 增加“6.2  发布材料归档位置”。</td>
+<td>谷艳艳</td>
+<td>2020.4.23、2020.7.30</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="1---目的">1   目的</h1>
+<p>本规范用于规范软件平台团队软件发布的流程。</p>
+<h1 id="2---适用范围">2   适用范围</h1>
+<p>本规范适用于以下情况：由软件平台开发且会交付给平台外部或内部其他团队使用的软件产品（以下称“平台软件”）。</p>
+<h1 id="3---流程涉及人员">3   流程涉及人员</h1>
+<h2 id="31--发布申请人">3.1  发布申请人</h2>
+<ul>
+<li>负责平台软件发布材料的收集和整理。</li>
+<li>负责平台软件发布材料清单的编制和修改。</li>
+<li>负责平台软件发布公告的编制和修改。</li>
+<li>在wiki中登记产品发布公告。</li>
+<li>邮件发送发布通知。</li>
+</ul>
+<h2 id="32--团队总工">3.2  团队总工</h2>
+<ul>
+<li>负责平台软件实现方案的审核。</li>
+<li>负责平台软件发布材料内容的恰当性、完整性进行审核。</li>
+<li>负责平台软件发布公告的审核。</li>
+</ul>
+<h2 id="33--研发总监">3.3  研发总监</h2>
+<ul>
+<li>负责平台软件发布公告的批准。</li>
+</ul>
+<h2 id="34--研发助理">3.4  研发助理</h2>
+<ul>
+<li>协助归档发布材料。</li>
+</ul>
+<h1 id="4---发布流程">4   发布流程</h1>
+<h2 id="41--流程图">4.1  流程图</h2>
+<p><img src="C:\Users\xiaoshiyu\Desktop\markdown\软件部\images\clip_image002-16514843066001.gif" alt="img"></p>
+<p>图 1 发布流程图</p>
+<h2 id="42--流程详解">4.2  流程详解</h2>
+<p>表1 流程活动</p>
+<table>
+<thead>
+<tr>
+<th><strong>序号</strong></th>
+<th><strong>活动名称</strong></th>
+<th><strong>活动描述</strong></th>
+<th><strong>负责人</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>准备发布材料及清单</td>
+<td>整理、修订待发布产品（组件或库）相关材料及材料清单。</td>
+<td>发布申请人</td>
+<td>1.  待发布产品提测后，开发人员可提前开始准备发布材料；  2.  发布材料详见表2 发布材料。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>发布申请</td>
+<td>待发布产品（组件或库）测试通过后，可提起发布申请，申请中需明确：  1)      待发布的相关材料；  2)      计划发布的范围。（根据发布对象涉及的团队确定）</td>
+<td>发布申请人</td>
+<td>见表3 发布公告范围</td>
+</tr>
+<tr>
+<td>3</td>
+<td>审核</td>
+<td>对团队内提起的发布材料、清单及发布范围进行审核。</td>
+<td>团队总工</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>批准</td>
+<td>对发布请求进行批准。</td>
+<td>研发总监</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>登记发布信息</td>
+<td>将软件发布信息更新至团队的MDwiki中。</td>
+<td>发布申请人</td>
+<td>见表2 发布材料</td>
+</tr>
+<tr>
+<td>6</td>
+<td>归档发布材料</td>
+<td>将发布材料放置在各团队指定位置，具体见章节6.1。</td>
+<td>发布申请人/研发助理</td>
+<td>驱动与固件组的材料可以由研发助理协助归档。</td>
+</tr>
+<tr>
+<td>7</td>
+<td>发布通知</td>
+<td>通过公司Outlook邮箱（外网）发送发布通知，将发布公告作为附件同时发送，需确保发送成功。</td>
+<td>发布申请人</td>
+<td>可视情况，增加其他的通知形式以便引起相关团队对发布信息的重视，比如RTX、产品发布会等，由<strong>发布申请人</strong>决定。</td>
+</tr>
+</tbody>
+</table>
+<p>表2 发布材料</p>
+<table>
+<thead>
+<tr>
+<th><strong>序号</strong></th>
+<th><strong>发布材料</strong></th>
+<th><strong>说明</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>软件开发</td>
+<td><strong>功能规格书</strong><strong>（软件名称）\</strong>*</td>
+<td>针对本次维护或新增功能的软件功能规格书。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>设计说明书(软件名称)</td>
+<td>1)   对需求规格实现给出的设计方案；  2)   若需求简单，可不提供设计说明书(由团队总工指定是否需要设计说明书)。</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>使用说明书 (软件名称)</td>
+<td>1)   发布工具类软件时，提供工具的使用方法、使用要求；新增功能特性时，须完善已有的使用说明；  2)   发布代码库时，对代码库的变更及代码库的使用要求进行说明。</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>XX不兼容分析报告</td>
+<td>针对本次发布中不兼容的组件进行特别说明，主要包含：不兼容原因、造成的影响分析以及解决方案等。</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>发布对象</strong>*****</td>
+<td>直接的开发产物，如代码库、工具或软件。</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>软件测试</td>
+<td>测试用例（软件名称）</td>
+<td>计划用于软件测试的用例。</td>
+</tr>
+<tr>
+<td>7</td>
+<td>测试执行记录（TFS ID）</td>
+<td>软件测试执行过程的记录，包括使用环境、输入和结论。</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>测试总结报告（软件名称）\</strong>*</td>
+<td>针对本次软件测试情况的总结。</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>发布公告</td>
+<td><strong>发布公告内容</strong>*****</td>
+<td>发布公告中包含内容详见《平台软件-XX发布公告-模板》</td>
+</tr>
+</tbody>
+</table>
+<p>说明：表2 发布材料中“*”标记项为必备项。</p>
+<p>表3 发布公告范围</p>
+<table>
+<thead>
+<tr>
+<th>涉及范围</th>
+<th>默认通知人员</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品体系</td>
+<td>产品线经理、产品线总工、产品线测试组长。</td>
+</tr>
+<tr>
+<td>软件平台</td>
+<td>总工、平台测试主管。</td>
+</tr>
+<tr>
+<td>硬件平台</td>
+<td>总工、硬件部门经理、硬件测试主管。</td>
+</tr>
+<tr>
+<td>供应链</td>
+<td>供应链总监、仓储部经理、品管部经理、品质工程主管。</td>
+</tr>
+<tr>
+<td>物联网研发</td>
+<td>研发中心主任。</td>
+</tr>
+<tr>
+<td>固定抄送</td>
+<td>司令部、研发总监、产品总监、软件部门经理、软件部测试主管、发布申请人。</td>
+</tr>
+</tbody>
+</table>
+<p>说明：</p>
+<p>Ø 以上表格中除“固定抄送”，其他为若有涉及才加入公告通知范围，比如产品I部、产品II部。</p>
+<p>Ø 以上涉及团队有列出默认通知人员，若需通知其他相关人员需特别指出。</p>
+<h1 id="5---发布版作废">5   发布版作废</h1>
+<p>若已发布版本在使用过程中出现问题，经调查须立即终止该版本的使用，由发布方及时发起作废。作废动作包括：</p>
+<ul>
+<li><p>向发布审批人发出作废申请，申请通过后通过邮件、RTX等方式通知发布版的接收方和其他相关方，作废公告内容包括：作废项、作废原因、紧急应对措施；</p>
+</li>
+<li><p>将作废的软件\模块版本以及相关文档、资料标明作废处理：</p>
+</li>
+</ul>
+<p>\1)   在wiki的发布公告以及其他相关资料中标记“作废”字样；</p>
+<p>\2)   若使用文档服务器管理存放发布版和相关资料，则在发布项名称上追加“作废”，并移至“作废”文件夹中；</p>
+<p>\3)   若使用NuGget服务器管理存放发布版和相关资料，则将作发布的作废版本进行删除，不允许再进行下载使用。</p>
+<h1 id="6---附录">6   附录</h1>
+<h2 id="61--版本使用说明">6.1  版本使用说明</h2>
+<p>平台软件分Alpha版本、Beta版本、Release版本：</p>
+<p>Ø Alpha（α）版本：为内部调试、 测试版，此版本为初步完成品。</p>
+<p>Ø Beta（β）版本：外部测试版，此版本消除了严重的错误，但还是存在一些缺陷，需经过大规模的发布测试来进一步消除。产品线拿到现场调试的软件至少是此版本。</p>
+<p>Ø Release（R）版本：最终完成版。</p>
+<p><strong>接收方不得私自使用α版作为发布版本。理论上α版不可流到客户现场，如有特殊情况，产线应收集相关风险，并承担风险造成的后果。</strong></p>
+<h2 id="62--发布材料归档位置">6.2  发布材料归档位置</h2>
+<table>
+<thead>
+<tr>
+<th>团队</th>
+<th>归档位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phoenix</td>
+<td><a href="http://phoenix.weihong.com:90/#!docs/Public/Public.md">http://phoenix.weihong.com:90/#!docs/Public/Public.md</a></td>
+</tr>
+<tr>
+<td>驱动固件</td>
+<td>\172.16.10.66\NWfile02\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\受控文件</td>
+</tr>
+<tr>
+<td>运动控制算法</td>
+<td>\172.16.10.66\NWfile02\01.安全内网文件夹\01.研发部文件\01.各组文件\12.运动控制算法平台\12.发布材料</td>
+</tr>
+<tr>
+<td>CAD</td>
+<td>172.16.10.101:8080/tfs/sp/cadcam/</td>
+</tr>
+<tr>
+<td>其他</td>
+<td>发布内容涉及研发体系以外人员如供应链，须在“\172.16.1.111\05.研发部文件\产品文件”对应目录下创建相关文件夹并做材料归档</td>
+</tr>
+</tbody>
+</table>
+<h2 id="63--相关文件模板">6.3  相关文件模板</h2>
+<p>《功能首字母-测试规格书-功能名-TFSID-姓名(通用)-Rn.xlt》</p>
+<p>《测试总结报告(XXX)-模板-Rn.dot》</p>
+<p>《平台软件-XX发布公告-模板-Rn.md》</p>
+<p>《【审批】平台软件发布公告（软件名称）-模板-Rn.oft》</p>
+<p>《使用说明书（软件名称）-模板-Rn.dot》</p>
+<p>《平台软件发布登记表-模板-Rn.xlt》</p>
+<p>《【审批】平台软件作废公告（软件名称）-模板-Rn.oft》</p>
+<p>相关文件存放路径为：</p>
+<p>外网路径：<a href="file:///\172.16.1.111\01.各部门文件\B1.软件部\03.模板">\172.16.1.111\01.各部门文件\B1.软件部\03.模板 </a></p>
+<p>内网路径：<a href="file:///\172.16.10.66\NWfile02\01.安全内网文件夹\01.研发部文件\01.各组文件\01.软件部\07.模板"> \172.16.10.88\01.部门共享\09.软件部\07.模板</a> </p>
+<p><strong>编制：谷艳艳</strong>                 <strong>审核：陈豫</strong>               <strong>批准：</strong></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/&#24179;&#21488;&#36719;&#20214;&#21457;&#24067;&#35268;&#33539;-R3&#65288;&#35797;&#29992;&#65289;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

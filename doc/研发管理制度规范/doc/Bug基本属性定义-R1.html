@@ -1,0 +1,674 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bug&#22522;&#26412;&#23646;&#24615;&#23450;&#20041; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bug&#22522;&#26412;&#23646;&#24615;&#23450;&#20041; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bug基本属性定义">Bug基本属性定义</h1>
+
+<blockquote><p>版次：2021年1月6日　第1版
+类型：技术文件
+部门：软件部
+上海维宏电子科技股份有限公司　版权所有</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>基本属性</th>
+<th>TFS对应字段</th>
+<th>前置条件</th>
+<th>分类</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bug状态</td>
+<td>State</td>
+<td></td>
+<td>活动的</td>
+<td>指Bug处于等待部署或开发活动中。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>已解决</td>
+<td>指开发已处理完成，等待测试验证。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>已关闭</td>
+<td>指测试验证通过，或无效、重复、不处理的Bug。</td>
+</tr>
+<tr>
+<td>原因</td>
+<td>Reason</td>
+<td>State：活动的</td>
+<td>新的</td>
+<td>新建Bug。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>State：活动动-&gt;已解决</td>
+<td>已修复</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>已过时</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>保留原样</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>无法重现</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>重复提交</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>已推迟</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>无效Bug</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>已解决-&gt;已关闭</td>
+<td>测试通过</td>
+<td>Bug修复并验证通过。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>已确认</td>
+<td>测试与开发对于Bug的处理意见一致。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>已解决-&gt;活动的</td>
+<td>测试不通过</td>
+<td>Bug验证不通过。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>已拒绝</td>
+<td>不同意开发对于Bug的处理原因</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>已关闭-&gt;活动的</td>
+<td>重新激活</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>错误关闭</td>
+<td></td>
+</tr>
+<tr>
+<td>严重级别</td>
+<td>Severity</td>
+<td></td>
+<td><a href="Bug%E4%B8%A5%E9%87%8D%E7%BA%A7%E5%88%AB%E5%A4%84%E7%90%86%E8%A7%84%E8%8C%83.html">Bug严重级别处理规范</a></td>
+<td></td>
+</tr>
+<tr>
+<td>Bug类型</td>
+<td>Bug Type</td>
+<td></td>
+<td>需求-需求缺陷</td>
+<td><a href="http://www.wiki.org:81/%E8%BF%87%E7%A8%8B%E5%B7%A5%E5%85%B7/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%8C%87%E5%AF%BC/TFS%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf">TFS 工具使用指导书 - 4.2章节</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>需求-需求变更</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>规格-功能规格缺陷</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>规格-非功能规格缺陷</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>方案-功能模块设计缺陷</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>方案-兼容性设计缺陷</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>方案-约束性设计缺陷</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>方案-算法设计缺陷</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>编码-编码错误</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>编码-自测问题</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>编码-第三方库问题</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>发行-代码签入问题</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>发行-编译/发行问题</td>
+<td></td>
+</tr>
+<tr>
+<td>发现阶段</td>
+<td>The Dis. Phase</td>
+<td></td>
+<td>1.需求阶段</td>
+<td>需求分析阶段发现的需求不合理或漏考虑项。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>2.设计阶段</td>
+<td>方案设计阶段或测试设计阶段发现的需求不合理、错误、漏考虑的Bug。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>3.编码阶段</td>
+<td>编码阶段发现的Bug，一般是需求、设计阶段引入的Bug，开发人员在编码时发现的问题。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>4.冒烟测试</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>5.第一次测试</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>6.回归测试</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>7.发布后</td>
+<td>软件发布后在软件中发现的Bug，包括客户反馈、公司内部其他团队反馈、本团队内部反馈（非本次维护的功能）。</td>
+</tr>
+<tr>
+<td>引入者</td>
+<td>Imported by</td>
+<td></td>
+<td></td>
+<td>引入Bug的人员。</td>
+</tr>
+<tr>
+<td>来源</td>
+<td>From</td>
+<td></td>
+<td>开发</td>
+<td>开发人员发现的本团队产品中的Bug。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>测试</td>
+<td>软件测试人员或产品应用测试发现的本团队产品中的Bug。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>客户</td>
+<td>市场人员或客户反馈的Bug。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>其他</td>
+<td>不属于以上三类的其他人员发的Bug，如其他软件团队人员发现的本团队的Bug。</td>
+</tr>
+<tr>
+<td>创建时间</td>
+<td>Created Date</td>
+<td></td>
+<td></td>
+<td>新建Bug的时间。</td>
+</tr>
+<tr>
+<td>关闭时间</td>
+<td>Closed  Date</td>
+<td></td>
+<td></td>
+<td>Bug关闭的时间。</td>
+</tr>
+<tr>
+<td>漏测者</td>
+<td>Omited By</td>
+<td></td>
+<td></td>
+<td>漏测Bug的人员（仅针对于外部反馈的 Bug）。</td>
+</tr>
+<tr>
+<td>漏测原因</td>
+<td>Omittance Cause</td>
+<td></td>
+<td>01.需求了解不透彻</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>02.用户场景测试设计遗漏</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>03.用例粗犷，描述不清晰</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>04.黑河测试难以覆盖</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>05.未按用例执行</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>06.回归测试策略问题</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>07.测试环境未能模拟真实环境</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>08.测试资源限制，导致场景未覆盖</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>09.内部Bug未处理</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>10.未进测试流程</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>11.历史Bug</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>12.第三方库引入</td>
+<td></td>
+</tr>
+<tr>
+<td>激活次数</td>
+<td>Activate  No.</td>
+<td></td>
+<td></td>
+<td>Bug由“已解决”或“已关闭”变为“活动的”的次数。</td>
+</tr>
+<tr>
+<td>优先级</td>
+<td>Priority</td>
+<td></td>
+<td>1</td>
+<td>高</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>2</td>
+<td>中</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>3</td>
+<td>低</td>
+</tr>
+<tr>
+<td>Bug引入原因</td>
+<td>Root  Cause</td>
+<td></td>
+<td>由各团队自定义</td>
+<td>引入Bug的根本原因</td>
+</tr>
+<tr>
+<td>团队</td>
+<td>Team</td>
+<td></td>
+<td></td>
+<td>Bug归属团队</td>
+</tr>
+<tr>
+<td>项目</td>
+<td>Project</td>
+<td></td>
+<td>非项目</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Project</td>
+<td></td>
+<td>项目</td>
+<td></td>
+</tr>
+<tr>
+<td>漏测分析和预防</td>
+<td>Analysis And Precaution</td>
+<td></td>
+<td></td>
+<td>漏测Bug的原因分析和预防。</td>
+</tr>
+<tr>
+<td>测试评审意见</td>
+<td>Tester Review Opinion</td>
+<td></td>
+<td></td>
+<td>对漏测Bug的原因和预防措施的审核意见。</td>
+</tr>
+<tr>
+<td>原因分析和解决措施</td>
+<td>Analysis  And Correction</td>
+<td></td>
+<td></td>
+<td>开发人员对Bug引入原因分析及解决措施。</td>
+</tr>
+<tr>
+<td>预防措施</td>
+<td>Prevention Measures</td>
+<td></td>
+<td></td>
+<td>开发预防措施。</td>
+</tr>
+<tr>
+<td>开发评审意见</td>
+<td>Dev.  Review Opinion</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>迭代路径</td>
+<td>Iteration</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>De-grade</td>
+<td>De-grade</td>
+<td></td>
+<td>是</td>
+<td>因为修改、添加功能，将已有功能改坏而引入的Bug</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>否</td>
+<td></td>
+</tr>
+<tr>
+<td>引入版本</td>
+<td>Imported Ver.</td>
+<td></td>
+<td></td>
+<td>引入Bug的软件\模块版本号</td>
+</tr>
+<tr>
+<td>截止日期</td>
+<td>Deadline</td>
+<td></td>
+<td></td>
+<td>截止日期</td>
+</tr>
+</tbody>
+</table>
+<p>[]: </p>
+<p>编制：谷艳艳                     审核：胡凯烽</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/Bug&#22522;&#26412;&#23646;&#24615;&#23450;&#20041;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

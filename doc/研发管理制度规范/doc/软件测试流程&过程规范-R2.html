@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#36719;&#20214;&#27979;&#35797;&#27969;&#31243;&amp;&#36807;&#31243;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#36719;&#20214;&#27979;&#35797;&#27969;&#31243;&amp;&#36807;&#31243;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="软件测试流程过程规范">软件测试流程&amp;过程规范</h1>
+
+<pre><code>版次：2018年12月23日　第2版
+文件类型：程序文件
+上海维宏电子科技股份有限公司　版权所有
+</code></pre><table>
+<thead>
+<tr>
+<th><strong>修改历史</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件版本</strong></td>
+<td><strong>修改前文件版本</strong></td>
+<td><strong>主要修订内容和原因</strong></td>
+<td><strong>修订人</strong></td>
+<td><strong>修订日期</strong></td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>汪腾霞</td>
+<td>2017.07.10</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>1）加入测试任务提前审核的相关要求；  2）准入、准出准则直接放在各活动后面，冒烟测试准出单独定义；  3）   对部分要求过细的规则，进行修调，以便更合理实施。  4）   增加“通用测试制定原则”章节。</td>
+<td>汪腾霞</td>
+<td>2018.12.23</td>
+</tr>
+</tbody>
+</table>
+<h1 id="1---引言">1   引言</h1>
+<h2 id="11--编写目的">1.1  编写目的</h2>
+<p>测试作为公司产品开发的重要环节，明确的测试过程、规范的测试行为，可以提高软件开发工作的质量和效率。</p>
+<h2 id="12--读者对象">1.2  读者对象</h2>
+<p>软件部对接的业务线或软件平台的测试团队。</p>
+<h1 id="2-----术语定义">2     术语/定义</h1>
+<p>为了统一认识，此处给出公司内部关于测试过程中的相关术语的定义。</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>名称</strong></th>
+<th><strong>定义</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>测试流程</td>
+<td>从接收任务到任务测试结束经历的一系列有序的测试活动，即为测试流程。包括测试需求分析&amp;计划、测试设计、测试准备、测试执行、测试评估、测试结束，部分活动可能会交替、反复。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>测试执行阶段</td>
+<td>指在成型的产品上，按一定的输入/操作要求进行执行，以比对实际结果与预期结果是否一致的过程。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>输入</td>
+<td>开展特定测试活动需要的程序、文档、数据、软件、硬件。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>输出</td>
+<td>某一测试活动结束需提供的产出。</td>
+</tr>
+<tr>
+<td>5</td>
+<td>输入准则</td>
+<td>测试活动的输入，需满足的条件。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>输出准则</td>
+<td>标记特定测试活动完成的条件。</td>
+</tr>
+<tr>
+<td>7</td>
+<td>测试点</td>
+<td>根据测试范围以相对抽象的形式描述测试思路和预期。不要求提供详细的操作步骤或操作细节。常用Excel表格的形式编制。</td>
+</tr>
+<tr>
+<td>8</td>
+<td>测试用例</td>
+<td>如果说测试点比较抽象，那测试用例就明确规定了测试的前提条件、操作步骤、输入数据以及预期结果。不同的人根据同一测试用例执行结果应该能达到80%的相同效果。</td>
+</tr>
+<tr>
+<td>9</td>
+<td>测试执行记录</td>
+<td>测试用例/测试点在实际的软件上执行的结果记录。</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>测试版软件</strong></td>
+<td>即为开发编码完成后直接在本开发机上发行的Release版软件。</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>发布版软件</strong></td>
+<td>即为从发行库中Get代码，在指定发行机上发行的Release版软件。</td>
+</tr>
+<tr>
+<td>12</td>
+<td>通用测试</td>
+<td>即软件中常用/基本业务功能的正向操作测试，或典型异常操作测试，通常外发类软件版本都需要进行此项测试。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-----测试流程">3     测试流程</h1>
+<h2 id="31--流程图">3.1  流程图</h2>
+<p><img src="C:\Users\xiaoshiyu\Desktop\markdown\软件部\images\clip_image002-16514855017311.gif" alt="img"></p>
+<h2 id="32--过程详解">3.2  过程详解</h2>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>过程名</strong></th>
+<th><strong>描述</strong></th>
+<th><strong>负责人</strong></th>
+<th><strong>审核人</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>测试需求分析&amp;计划</td>
+<td>1.    结合开发需求分析和原始用户需求，进行测试需求分析。  2.    分析中可咨询包括但不限于：开发负责人、测试组长、需求提出人。  3.    主要从时间、熟练度、任务量、设备等方面进行测试计划，并进行适当的风险预估。  4.    测试计划输出内容至少包括：<strong>测试需求、工期、人员安排及输出要求</strong>等。呈现形式不定，可在工作项历史记录中。</td>
+<td>测试工程师</td>
+<td>测试组长  开发负责人</td>
+<td>测试需求分析见《软件测试需求分解指导书-R1.doc》</td>
+</tr>
+<tr>
+<td>2</td>
+<td>测试设计</td>
+<td>1.    根据测试范围进行测试点编写/测试用例设计。  2.    完成后<strong>提交开发负责人确认，测试组长评审。</strong>  3.    须注意<strong>用例的可复用性</strong>。</td>
+<td>测试工程师</td>
+<td>测试组长  开发负责人</td>
+<td>详见《软件测试用例设计指导书-R1.doc》</td>
+</tr>
+<tr>
+<td>3</td>
+<td>测试准备</td>
+<td>1.    根据测试计划搭建测试环境，尽可能模拟真实工作环境。  2.    对开发提交的待测软件进行冒烟测试。</td>
+<td>测试工程师</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>测试执行</td>
+<td>1.    确保充分理解测试用例。  2.    一般优先执行本次维护功能、基本场景的测试用例。  3.    <strong>各业务线，一般要求在测试版软件测试执行通过后，再做发布版软件的测试执行。</strong>  4.    所有bug一律通过TFS中Bug工作项进行跟踪。</td>
+<td>测试工程师</td>
+<td>-</td>
+<td>Bug提交跟踪详见《缺陷跟踪流程-R1  .doc》</td>
+</tr>
+<tr>
+<td>5</td>
+<td>测试评估</td>
+<td>1.    发布版测试通过即提交评审。  2.    评审包括但不限于：<strong>用例执行完整性、缺陷处理合理性、测试记录规范性</strong>。  3.    评审不通过需修订后再次评审。</td>
+<td>测试组长</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>测试结束</td>
+<td>1.    评估通过，则测试任务完成。  2.    归档本次测试相关资料，以便后续查证或使用。  3.    对测试环境进行检查和必要复位。</td>
+<td>测试工程师</td>
+<td>-</td>
+<td>归档材料及路径祥见表格2 文档及路径</td>
+</tr>
+</tbody>
+</table>
+<p>表格1 测试过程释义</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>材料名称</strong></th>
+<th><strong>路径</strong></th>
+<th><strong>备注</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>测试刀路</td>
+<td>\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\03.刀路文件</td>
+<td>测试过程中使用的刀路文件，如客户刀路、特殊刀路等；</td>
+</tr>
+<tr>
+<td>2</td>
+<td>软件密码/关键字</td>
+<td>\172.16.10.116\TestManager\TCM\Doc Manager\CMD&amp;Func Doc（TFS）</td>
+<td>1.      执行操作需输入的密码（常用的制造商密码：64038574、33587550、weihong、NcStudio）；  2.      软件操作中需使用的关键字，如仿真软件（homecomputer）。</td>
+</tr>
+</tbody>
+</table>
+<p>表格2 文档及路径</p>
+<h1 id="4-----测试过程规范细则">4     测试过程规范细则</h1>
+<h2 id="41-----测试需求分析计划">4.1     测试需求分析&amp;计划</h2>
+<p>² <strong>输入</strong>：TFS工作项、用户/开发需求分析（/+产品规格书、/+概要设计说明），及相关文档说明。</p>
+<p>² <strong>输出</strong>：测试说明书/测试计划。</p>
+<p>² <strong>输出准则：</strong></p>
+<p>1）  项目类型的测试任务，需提供测试方案/测试计划，可参见《测试说明书-模板.dot》or《测试计划表.xlt》。</p>
+<h2 id="42-----测试设计">4.2     测试设计</h2>
+<p>² <strong>输入</strong>：测试需求、测试计划及相关文档说明。</p>
+<p>² <strong>输出</strong>：测试用例/测试点。</p>
+<p>² <strong>输出准则：</strong></p>
+<p>1）  本次新增功能，需提供可复用测试用例。</p>
+<p>2）  已存在可复用测试用例的功能变更后，需维护已存的测试用例。 </p>
+<p>3）  测试用例/测试点由指定测试审核人审核并通过。</p>
+<h2 id="43-----测试准备">4.3     测试准备</h2>
+<p>² <strong>输入</strong>：测试计划、开发提交的待测软件、冒烟测试用例。</p>
+<p>² <strong>输出</strong>：物理的测试环境、可接受测试版软件。</p>
+<p>² <strong>输出准则：</strong></p>
+<p>1）  待测版软件冒烟测试不通过则退回（具体见“5.冒烟测试准则”）。</p>
+<p>2）  出现测试退回时，在工作项中留下对应的“退回记录”。 </p>
+<p>3）  出现2次及以上退回的，上报测试组长。</p>
+<h2 id="44-----测试执行">4.4     测试执行</h2>
+<p>² <strong>输入</strong>：测试计划、测试用例、可供测试执行的软件。</p>
+<p>² <strong>输出</strong>：测试执行记录、TFS Bug工作项。 </p>
+<p>² <strong>输出准则：</strong></p>
+<p>1）  发布版软件测试，追加《通用测试》执行（具体见“6. 通用测试制定原则”）。</p>
+<p>2）  所有缺陷按“一个Bug一个工作项”的原则提交到TFS服务器。</p>
+<p>3）  每完成一次测试执行，在工作项中均对应有“测试情况说明”。具体内容参见《工作项测试记录（模板）.txt》。</p>
+<p>4）  对自己提交的Bug，定期跟踪直到Bug关闭。</p>
+<p>5）  整个任务测试执行结束，提交《测试执行记录表》等待审核，除非任务项指派时有备注说明。</p>
+<h2 id="45-----测试评估">4.5     测试评估</h2>
+<p>² <strong>输入</strong>：测试执行记录、缺陷记录、测试通过的软件。</p>
+<p>² <strong>输出</strong>：审核记录（填写在TFS工作项中）。</p>
+<p>² <strong>输出准则：</strong></p>
+<p>1）  每个任务工作项均指定测试审核人（审核内容包括但不限于测试用例、工作项填写、相关Bug的处理）。</p>
+<p>2）  审核结束，在工作项中提交“审核记录”。具体内容参见《审核记录（模板）.txt》。</p>
+<p>3）  审核不通过，需修订后再次提交审核，直到通过。</p>
+<h2 id="46-----测试结束">4.6     测试结束</h2>
+<p>² <strong>输入</strong>：测试执行记录。</p>
+<p>² <strong>输出</strong>：外发版软件、可复用测试用例。</p>
+<p>² <strong>输出准则：</strong></p>
+<p>1）  计划用例100%测试执行完成。</p>
+<p>2）  已解决Bug均回归测试并通过。</p>
+<p>3）  若需借助客户现场环境完成测试的，需产品经理同意，并在TFS中留下记录。</p>
+<p>4）  遗留Bug的处理经测试组长、总工或经理评审并同意。</p>
+<p>5）  可复用测试用例符合《软件测试用例设计指导书.doc》。</p>
+<p>6）  可复用测试用例或共享步骤已提交至服务器指定位置：<a href="file:///\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\08.测试指南">\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\08.测试指南</a> 下的各组文件夹下。</p>
+<p>7）  项目类型的测试任务，提交测试总结报告。参见《测试总结报告(XXX)-模板-Rn.dot》。</p>
+<p>8）  测试中存在的其他资料如典型刀路、测试工具、新增或变动的操作口令的，已完成归档（各组指定的服务器位置）。</p>
+<h1 id="5---冒烟测试准则">5   冒烟测试准则</h1>
+<p>此处主要规定测试在接收测试版和发布版软件时，冒烟测试的准入、准出准则。各测试团队可以在不违背本准则的前提下，细化本团队的冒烟测试准则。</p>
+<h2 id="51--测试版">5.1  测试版</h2>
+<p>\1)    准入准则：开发已完成自测并提交自测记录到工作项（自测记录的形式视组内要求而定）。</p>
+<p>\2)  准出准则：功能正常实现的关键参数、端口配置符合需求。</p>
+<p>\3)  准出准则：功能基本流程实现符合需求。</p>
+<p>\4)    准出准则：冒烟测试过程中，未发现Block性或重大隐患Bug比如崩溃、卡死。</p>
+<p>\5)    符合组内制定的其他基本准则。</p>
+<h2 id="52--发布版">5.2  发布版</h2>
+<p>\1)         准入准则：在指定发行机上发行的Release版本（以保证源码正确合并发行库）。</p>
+<p>\2)         符合测试版准则。</p>
+<h1 id="6---通用测试制定原则">6   通用测试制定原则</h1>
+<p>各测试团队需结合本团队测试对象或测试项目的特点，参照《软件通用必测项-Rn》，制定适合本团队的《通用测试》要求。</p>
+<p>《通用测试》制定原则如下：</p>
+<p>\1)    以客户视角，也即从操作应用的角度制定通用测试范围和通过标准。</p>
+<p>\2)    需考虑对客户目标正常实现有重大影响的、核心功能的正向操作和典型异常操作。</p>
+<p>\3)    需考虑客户目标正常实现过程中，必定使用功能的正向操作和典型异常操作。</p>
+<p>\4)    需考虑客户目标正常实现过程中，频繁使用功能的正向操作。</p>
+<p>\5)    需考虑近期维护的通用Bug或通用需求。</p>
+<p>\6)    需考虑通用测试执行时长，原则上无配置区分的软件控制在30-60分钟之内，多配置软件控制在90分钟之内。</p>
+<p>\7)    原则上需对测试项按主次划分优先级（在紧急情况下便于筛选）。</p>
+<p>\8)    《通用测试》需根据团队情况进行适时更新，原则上一个季度做一次更新检查。</p>
+<h1 id="7---附录">7   附录</h1>
+<p>1） 测试用例库的位置为：172.16.10.116\TestManager\TCM。</p>
+<p>2） 本文档见：<a href="file:///\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\00.组内管理\01.制度&amp;要求">\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\00.组内管理\01.制度&amp;要求</a> 。（内网访问）</p>
+<p>3） 测试文档模板：<a href="file:///\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\00.组内管理\00.测试专用模板">\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\00.组内管理\00.测试专用模板</a> 。（内网访问）【建议按给定模板样式使用，自制模板时，包含的内容项不得少于给定的模板】</p>
+<p>4） 测试指导书见：<a href="file:///\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\00.组内管理\03.测试指导书">\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\00.组内管理\03.测试指导书</a> 。（内网访问）    </p>
+<p><strong>编制：</strong>    <strong>汪腾霞</strong>                <strong>审核：张艳丽</strong>                               </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/&#36719;&#20214;&#27979;&#35797;&#27969;&#31243;&amp;&#36807;&#31243;&#35268;&#33539;-R2.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

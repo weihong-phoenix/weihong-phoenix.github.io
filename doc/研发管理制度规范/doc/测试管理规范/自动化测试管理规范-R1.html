@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#33258;&#21160;&#21270;&#27979;&#35797;&#31649;&#29702;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#33258;&#21160;&#21270;&#27979;&#35797;&#31649;&#29702;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="自动化测试管理规范">自动化测试管理规范</h1>
+
+<blockquote><p>版次：2022年1月5日　第1版
+类型：技术文件
+部门：软件部
+上层文件:《软件测试用例设计规范》
+上海维宏电子科技股份有限公司　版权所有</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>文件版本</th>
+<th>修改前文件版本</th>
+<th>主要修订内容和原因</th>
+<th>修订人</th>
+<th>修订日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td></td>
+<td></td>
+<td>余晓霞</td>
+<td>2022/1/5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-目的">1 目的</h2>
+<p>在团队协同工作环境下，让自动化测试可以更好的并行开发和实施。通过脚本的编码规范，达到增强脚本可读性、健壮性和可维护性的目的，并减少项目组中人为造成的损失。通过脚本质量规范，提高自动化测试执行的准确率，减少人工干预成本。</p>
+<h2 id="2-适用范围">2 适用范围</h2>
+<p>软件平台及各产品线团队。</p>
+<h2 id="3-术语和定义">3 术语和定义</h2>
+<p>下列术语和定义适用于本规范。 </p>
+<ul>
+<li><strong>规则：</strong> 必须遵守的约定。</li>
+<li><strong>原则：</strong> 指导性的约定。 </li>
+<li><strong>说明：</strong> 对此规则或原则的必要解释。 </li>
+<li><strong>正例：</strong> 对此规则或原则给出的正确例子。 </li>
+<li><strong>反例：</strong> 对此规则或原则给出的反面例子。 </li>
+<li><strong>例外：</strong> 对此规则或原则给出例外的说明。</li>
+<li><strong>代码片段：</strong> 在代码区域出现中括号中带中文字的及符号…， 如：[代码片段]或…， 则一般表示代码片段。</li>
+</ul>
+<h2 id="4-编程规范">4 编程规范</h2>
+<p>编程规范遵循软件部的<a href="http://www.wiki.org:81/%E7%BB%B4%E5%AE%8F%E7%A0%94%E5%8F%91/%E7%BC%96%E7%A0%81%E9%98%B6%E6%AE%B5/%E5%88%B6%E5%BA%A6%E8%A7%84%E8%8C%83/%E8%BD%AF%E4%BB%B6%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83.pdf">软件编程规范（内网）</a></p>
+<h2 id="5-用例组织">5 用例组织</h2>
+<p><strong>【规则1-1】</strong>用例的标题描述、标签和优先级可参考《软件测试用例设计规范》。</p>
+<p><strong>【规则1-2】</strong>测试用例必须有断言（即预期结果），没有断言的用例，不属于完整的用例。</p>
+<p>​   <strong>例外：</strong>性能测试用例和稳定性测试用例可以不遵循此规则</p>
+<p><strong>【原则1-3】</strong>UI 自动化必须使用分层的思想，即把UI界面的对象属性和对象操作抽取到脚本的上层；禁止在测试用例里直接使用元素定位和操作元素。以下正反例是基于RobotFramework框架的代码片段。</p>
+<p>​   <strong>反例</strong>：</p>
+<pre><code class="lang-python">*** Test Cases ***
+TC001_验证按钮可用
+    click   //Button[@AutomationId=&#39;1&#39;]
+    [代码片段]
+</code></pre><p>​   <strong>正例：</strong> </p>
+<pre><code class="lang-python">*** Variables ***
+//UI对象库
+button1_xpath=&quot;//Button[@AutomationId=&#39;1&#39;]&quot;;
+
+*** Keywords ***
+//元素所在页面的文件（或类文件）内容
+ClickButton     
+    click   button1_xpath
+
+*** Test Cases ***
+TC001_验证按钮可用
+    ClickButton
+    [代码片段]
+</code></pre><p><strong>【原则1-4】</strong>遵循业务场景与应用操作分离的原则，即测试场景是由上层的应用操作组合而成。如下范例所示，范例是基于RobotFramework框架的代码片段。</p>
+<pre><code class="lang-python">*** Keywords ***
+所有轴机械回零 
+    [代码片段]
+
+自动模式启动加工        
+    [代码片段]
+
+获取绿灯状态      
+    [代码片段]
+    return green_status
+
+*** Test Cases ***
+TC001_验证自动模式启动加工
+    所有轴机械回零
+    自动模式启动加工
+    Should Be True  获取绿灯状态
+    [代码片段]
+</code></pre><p><strong>【原则1-5】</strong>UI 自动化测试，当有对话框或页面非系统首页时，必须有后置处理模块把对话框关闭或返回系统首页。以下正反例是基于 RobotFramework 框架的代码片段。</p>
+<p><strong>例外：</strong> 在各种异常或执行失败发生时，能把对话框关闭，避免未关闭的对话框，影响后面的用例执行。</p>
+<p><strong>正例:</strong></p>
+<pre><code class="lang-python">*** Settings ***
+Suite Teardown      退出日志列表页
+
+*** Keywords ***    
+退出日志列表页
+    ${is_LS6000}    is 6000 UI
+    run keyword if    ${is_LS6000}    进入绘图页
+    run keyword if    ${is_LS6000} == ${False}    LS3000关闭日志列表对话框
+</code></pre><h2 id="6-运行">6 运行</h2>
+<p><strong>【规则2-1】</strong>冒烟测试和回归测试（通用必测项回归测试）必须执行自动化测试。</p>
+<p>​   <strong>例外：</strong> 自动化测试覆盖率不高，或自动化执行体系不健全，可不遵守此规则。</p>
+<p><strong>【规则2-2】</strong> 保证提交服务器的代码无语法错误。</p>
+<p><strong>【原则2-3】</strong>脚本上传服务器之后，必须在持续集成上手动构建，并关注构建的结果，只有构建成功并且执行测试通过才可用于测试。</p>
+<p><strong>【原则2-4】</strong>搭建持续集成环境来执行自动化测试。自动化测试负责人负责持续执行环境的搭建和维护。</p>
+<p><strong>【原则2-5】</strong>当持续集成执行的自动化测试，执行失败时，应24小时内定位问题，如果是脚本问题，则应在24小时内修复。</p>
+<p><strong>【原则2-6】</strong>当测试用例超过500个，或修改影响的范围较广时，不可在用于真实测试的代码分支上进行修改，必须在开发分支上进行修改。</p>
+<p>​   <strong>例外：</strong>紧急问题修复可不遵守此原则。</p>
+<p><strong>【原则2-7】</strong>已实现自动化测试的功能，当其功能规格发生变更时，功能测试负责人须告知相关的自动化测试人员。</p>
+<p><strong>【原则2-8】</strong>功能测试人员必须关注自动化测试执行结果。执行失败时或自动化测试执行结果与手工测试执行结果不一致时，必须告知自动化测试人员。</p>
+<p> 编制：余晓霞                          审核：                                批准：</p>
+<p>  审批链接：</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/&#27979;&#35797;&#31649;&#29702;&#35268;&#33539;/&#33258;&#21160;&#21270;&#27979;&#35797;&#31649;&#29702;&#35268;&#33539;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

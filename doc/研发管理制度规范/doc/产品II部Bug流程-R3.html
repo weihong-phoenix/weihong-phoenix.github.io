@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20135;&#21697; II &#37096; Bug &#22788;&#29702;&#27969;&#31243; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20135;&#21697; II &#37096; Bug &#22788;&#29702;&#27969;&#31243; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="产品-ii-部-bug-处理流程">产品 II 部 Bug 处理流程</h1>
+
+<p>版次： 2021年07月28日   第2版</p>
+<p>文件类型：程序文件</p>
+<p>上海维宏电子科技股份有限公司 版权所有</p>
+<table>
+<thead>
+<tr>
+<th>修改历史</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文件版本</td>
+<td>修改前文件 版本</td>
+<td>主要修订内容和原因</td>
+<td>修订人</td>
+<td>修订日期</td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>唐涛</td>
+<td>2021-7-13</td>
+</tr>
+<tr>
+<td>R2</td>
+<td></td>
+<td>增加软件发行、发行测试 删除文档整理</td>
+<td>唐涛</td>
+<td>2021-7-28</td>
+</tr>
+<tr>
+<td>R3</td>
+<td></td>
+<td>添加重现步骤描述、自测要求、缺陷分析详细要求、测试准入准出详细要求。</td>
+<td>骆玲</td>
+<td>2021-8-18</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-引言">1 引言</h2>
+<h3 id="11-编写目的">1.1 编写目的</h3>
+<p>为指导和规范产品 II 部在处理内部或外部反馈 bug，特编写此流程。</p>
+<p>此文档不适用于以下情况：</p>
+<ul>
+<li>工作项衍生出来的 Bug 工作项</li>
+<li>没有开发任务的纯测试工作项</li>
+</ul>
+<h3 id="12-读者对象">1.2 读者对象</h3>
+<p>产品 II 部开发、测试、应用。</p>
+<h3 id="13-参考文档">1.3 参考文档</h3>
+<p>《TFS 工作项命名规范》</p>
+<p>《TFS 工作项填写规范》</p>
+<p>《长沙 Wiki 使用指南.md》</p>
+<h3 id="14-用语">1.4 用语</h3>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>用语</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>外部 bug</td>
+<td>由客户提出的 Bug</td>
+</tr>
+<tr>
+<td>2</td>
+<td>工作项 bug</td>
+<td>工作项发行过程中出现的 bug</td>
+</tr>
+<tr>
+<td>3</td>
+<td>独立 Bug</td>
+<td>与当前在测试工作项无关 bug</td>
+</tr>
+<tr>
+<td>4</td>
+<td>研发</td>
+<td>完成客户产品需求的生产过程，包括需求分析、设计、实现、测试</td>
+</tr>
+<tr>
+<td>5</td>
+<td>开发</td>
+<td>专指开发工程师编写代码、 自测、发行软件过程</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-bug-处理流程">2 Bug 处理流程</h2>
+<p>根据软件研发和实际工作，研发流程分为如下阶段：</p>
+<p>1） Bug 信息收集</p>
+<p>2） Bug 复现</p>
+<p>3） 原因分析</p>
+<p>4） 解决&amp;自测</p>
+<p>5） 代码评审</p>
+<p>6） 测试&amp;回归</p>
+<p>7） 分支合并</p>
+<p>8） 软件发行</p>
+<p>9） 发行测试</p>
+<h3 id="21-流程图">2.1 流程图</h3>
+<p><img src="\images\企业微信截图_16514105494473.png" alt="img"></p>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_1651411027142-16514111235481.png" alt="img"></p>
+<h3 id="22-流程详解">2.2 流程详解</h3>
+<h4 id="221-bug-信息收集">2.2.1 Bug 信息收集</h4>
+<ul>
+<li>外部反馈 bug</li>
+</ul>
+<p>针对客户提出的问题，确定问题现象，操作方式， 出现概率， 软件版本，客户信息， 现场日志
+等第一手信息收集回来，整理并创建 TFS Bug 项</p>
+<p>Bug 项创建完成后，通知研发经理(研发组长)分配开发工程师跟进</p>
+<p>Bug 在收集信息过程中，也伴随着 bug 的复现和反复沟通， 现场情况渐进明细；相关的信息补
+充到 Bug 项说明中。</p>
+<ul>
+<li>工作项 Bug<ul>
+<li>测试工程师测试过程中直接创建</li>
+<li>不确定的现象，先跟开发、应用沟通再创建 bug</li>
+<li>有争议的现场，可直接创建 bug， 有结论后再根据实际情况关闭</li>
+<li>工作项 bug，需要链接到 Task 项，链接方式【Tests】</li>
+</ul>
+</li>
+<li>独立 Bug<ul>
+<li>测试工程师测试过程中直接创建</li>
+<li>不确定的现象，先跟开发、应用沟通再创建 bug</li>
+<li>有争议的现场，可直接创建 bug，有结论后再根据实际情况关闭</li>
+<li>工作项 bug，需要链接到 Task 项，链接方式【Related】</li>
+</ul>
+</li>
+</ul>
+<p>Bug 项的创建，需要判断 Bug 影响的范围，如果是多款软件都存在的，需要在 Bug 项中增加【Tag】</p>
+<p>“未合并”</p>
+<p>Bug 项命名规范，请参考《产品 II 部 TFS 工作项命名规范.md》</p>
+<p>Bug 项重现步骤要求如下：</p>
+<p>【测试环境】软件环境和硬件环境</p>
+<p>【Bug 步骤】</p>
+<p>1./<em>描述 Bug 重现的详细步骤，尽量保证每步仅做一个操作</em>/；</p>
+<p>2.……</p>
+<p>说明：操作对象有特定刀路，刀路名称描述在操作步骤里面</p>
+<p>【Bug 概率】百分百出现时缺省</p>
+<p>【实际结果】描述清楚操作后的现象</p>
+<p>【期望结果】实际结果对应的期望结果</p>
+<p>【测试复现】外部 BUG 填写，测试复现情况，已复现或者未复现</p>
+<p>【现场情况】外部 BUG 填写，描述客户现场的情况，发生的时间，发生的概率，是否有临时处理方案，紧迫性如何</p>
+<h3 id="222-bug-复现">2.2.2 Bug 复现</h3>
+<p>工作项 Bug、独立 Bug 本来就是测试工程师测试的，问题复现相对简单； 外部反馈 Bug 非本人操作出来，复现难度较大。</p>
+<p>Bug 复现主要是为了后续确定 Bug、定位 Bug、修复 Bug、验证 Bug 是否解决。这个过程很重要，主要测试工程师负责，但对于偶发 bug，需要开发工程师给出复现思路，甚至修改软件提高复现概率。</p>
+<h3 id="223-原因分析">2.2.3 原因分析</h3>
+<p>Bug 原因分析由开发工程师或系统工程师完成； 分析 bug 产生的直接原因、根本原因；并将分析过程和分析结论写入 TFS Bug 项【Analysis and Correction】</p>
+<p>Bug 原因分析完成， 追溯 Bug 具体核实产生，确定引入人和引入的版本，评估影响范围；需要填
+写 Bug 项中【Imported By】、【Bug Type】</p>
+<p>Bug 原因分析完成，即可确定 Bug 归属的团队，需要将 Bug 项中【Team】改为引入者对应团队；</p>
+<p>注意： Bug 引入人非 Bug 解决人，则需要通知引入人，并得到引入人的确认才可以。</p>
+<h3 id="224-解决方案">2.2.4 解决方案</h3>
+<p>大部分 Bug 原因明确之后，就可以直接得到解决方案，此时只需要将解决方案给出，相关开发、
+测试、应用讨论即可；无需为了形式写文档评审。</p>
+<p>对于涉及系统架构、底层原理方面的 Bug，则需要正经写出原因分析和解决办法进行方案评审。</p>
+<h3 id="225-解决方案评审">2.2.5 解决方案评审</h3>
+<p>解决方案评审： 由产品总工负责，系统工程师、开发工程师参与</p>
+<ol>
+<li>首先按照《技术文档写作指南_内容-R1.1.md》对文档书写内容进行规范化</li>
+<li>确定评审相关的人员，并组织评审会议</li>
+<li>评审完成， 将评审记录，写入方案设计最后一章：评审记录中</li>
+<li>根据评审会议结果修改设计文档</li>
+<li>评审决议要求复评，准备下一次评审</li>
+</ol>
+<h3 id="226-实现自测">2.2.6 实现、自测</h3>
+<ol>
+<li><p>根据 Bug 解决方案进行实现，并按照复现环境和方法验证 Bug 是否解决</p>
+</li>
+<li><p>需要对修改的每一行代码进行调试</p>
+</li>
+<li><p>自测阶段，要保证基本流正确</p>
+</li>
+<li><p>如果功能涉及硬件，必须上机床测试</p>
+</li>
+<li><p>转测试之前， 需要在 TFS 正确填写必填字段，特别是引入者， 找不到引入者，需要把原因写在 Analysis And Correction 里面， 原因分析和解决措施需要写得清晰易懂， 写自测说明。</p>
+<p>Analysis And Correction 示例：
+【原因分析】：
+【解决方案】：
+【预防措施】： 无预防措施则填无
+【引入者说明】：没有具体的引入者需要写这一条</p>
+<p>自测说明示例：
+【自测说明】
+是否自测：是
+测试方法：手工\自动化、以及其他测试方法
+测试范围： BUG 项需要描述详细的自测范围
+建议测试范围：此处填写工作项影响范围，请根据代码修改情况充分评估影响范围，要求测试范围具体、准确，比如，影响哪些功能的哪些部分。</p>
+</li>
+</ol>
+<h3 id="227-代码审核">2.2.7 代码审核</h3>
+<p>代码审核原则：</p>
+<ol>
+<li>每一行代码都必须评审</li>
+<li>签入的每一行代码都必须通过编码规范审核</li>
+</ol>
+<p>代码审核制度：</p>
+<ol>
+<li>凡是代码签入，必须要经过评审；审核通过才能签入</li>
+<li>审核发现三处编码规范问题，可直接退回，修改后重新提交评审；因此而产生的工作项延期，由被审核人承担</li>
+<li>代码审核提交后，截图以 RTX 通知审核者</li>
+<li>代码审核完成之后，截图以 RTX 通知申请人</li>
+<li>多个审核人，有一个审核通过即可签入代码</li>
+</ol>
+<p>以上所说的代码，指的是非 Dev 分支代码。</p>
+<h3 id="228-搁置集测试">2.2.8 搁置集测试</h3>
+<ul>
+<li>测试工程师根据 Bug 的现象，复现步骤，对软件进行测试；</li>
+<li>也要根据自测记录，思考会影响的功能进行测试。</li>
+<li>测试通过后 State=已关闭， Activity=待合并。</li>
+</ul>
+<h3 id="229-分支合并">2.2.9 分支合并</h3>
+<p>分支合并由开发工程师负责：</p>
+<ol>
+<li>开发工程师根据工作项的范围，确定要合并到的插件 or 集成项目分支</li>
+<li>判断本次合并的范围，如果合并有较高风险，需要与测试沟通，发合并任务测试</li>
+<li>所有合并完成之后， 激光管切 Activity=空，激光平面 Activity=待 beta 验收。</li>
+</ol>
+<p>注意： 合并的质量由开发工程师保证</p>
+<h3 id="2210-软件发行">2.2.10 软件发行</h3>
+<p>Bug 的解决，尤其是外部 Bug，解决 Bug 的软件客户真正使用上才能算 Bug 完整的解决；软件
+发行时，将上个版本到本次发行的 Bug 加入发行项中，并在发行软件转测试时，开发验证 Bug 已经
+合并。</p>
+<h3 id="2211发行测试">2.2.11发行测试</h3>
+<p>测试必须严格准入：</p>
+<ul>
+<li>开发提供详细的自测说明，无自测说明，测试范围不可收敛，不可测，拒绝测试。</li>
+<li>测试必须检查引入者和 Analysis And Correction，没有填写具体的引入者需要在 Analysis And
+Correction 特殊说明， Analysis And Correction，清晰易懂，测试必须理解。</li>
+</ul>
+<p>测试必须严格准出： 测试记录格式如下：</p>
+<p>第*次测试情况说明：</p>
+<p>测试结论：（通过） /（不通过）</p>
+<p>测试环境：</p>
+<p>测试版本：</p>
+<p>测试范围：</p>
+<p>是否检查开发缺陷分析：</p>
+<p>是否检查开发自测说明：</p>
+<p>测试资料是否归档：归档了写地址，未归档写待归档，不需要写不需要原因</p>
+<p>激光管切： 发行项测试时，需要将已经合并的 Bug 验证，保证发行出去的软件一定是解决了此
+Bug。</p>
+<p>激光平面： 发行 beta 软件，需要把所有待 beta 验收的 Bug 都验收掉， Activity=待 release 验收。</p>
+<p>发行 release 软件，需要把所有待 beta 验收和待 release 验收的 BUG 验收掉， Activity=验收完成。</p>
+<p>说明：发行 release 软件时， beta 还未验收，就直接验收 release 这种情况，我们认为 release 是由
+beta 合并而来， release 没有问题， beta 就没有问题。</p>
+<h2 id="3-附录">3 附录</h2>
+<p>产品技术架构设计： <a href="http://172.16.1.7:9999/#!维宏研发/DesignPhase.md">http://172.16.1.7:9999/#!维宏研发/DesignPhase.md</a>
+长沙 Wiki 使用指南： <a href="http://172.16.1.7:85/#!ChangSha_tm/00.使用指南/Wiki">http://172.16.1.7:85/#!ChangSha_tm/00.使用指南/Wiki</a> 使用指南.md</p>
+<p>编制： 唐涛                 审核：                  批准：</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/&#20135;&#21697;II&#37096;Bug&#27969;&#31243;-R3.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

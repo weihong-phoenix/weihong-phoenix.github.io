@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CNC &#24179;&#21488;-&#36719;&#20214;&#27979;&#35797;&#27969;&#31243;&amp;&#36807;&#31243;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CNC &#24179;&#21488;-&#36719;&#20214;&#27979;&#35797;&#27969;&#31243;&amp;&#36807;&#31243;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cnc-平台-软件测试流程过程规范">CNC 平台-软件测试流程&amp;过程规范</h1>
+
+<p>版次：2021年08月23日　第3版</p>
+<p>类型：程序文件</p>
+<p>上海维宏电子科技股份有限公司    版权所有</p>
+<table>
+<thead>
+<tr>
+<th><strong>修改历史</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件版本</strong></td>
+<td><strong>修改前文件版本</strong></td>
+<td><strong>主要修订内容和原因</strong></td>
+<td><strong>修订人</strong></td>
+<td><strong>修订日期</strong></td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>汪腾霞</td>
+<td>2017-07-10</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>1） 加入测试任务提前审核的相关要求； 2） 准入、准出准则直接放在各活动后面， 冒 烟测试准出单独定义； 3） 对部分要求过细的规则，进行修调或删减， 以便更合理实施。 4） 增加“通用测试制定原则”章节。</td>
+<td>汪腾霞</td>
+<td>2018-12-23</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>R2</td>
+<td>5） 基于软件部之前定义的版本， 在此基础上 更新了 CNC 平台当前的流程及要求。</td>
+<td>祁彩云</td>
+<td>2021-08-23</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-引言">1 引言</h2>
+<h3 id="11-编写目的">1.1 编写目的</h3>
+<p>测试作为公司产品开发的重要环节， 明确的测试过程、 规范的测试行为， 可以提高软件开发工作
+的质量和效率。</p>
+<h3 id="12-读者对象">1.2 读者对象</h3>
+<p>CNC 软件平台的测试团队。</p>
+<h2 id="2-术语定义">2 术语/定义</h2>
+<p>为了统一认识，此处给出公司内部关于测试过程中的相关术语的定义。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>名称</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>测试流程</td>
+<td>从接收任务到任务测试结束经历的一系列有序的测试活动，即为测试流程。 包括测试需求分析&amp;计划、 测试设计、测试准备、测试执行、测试评估、测 试结束，部分活动可能会交替、反复。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>测试执行阶段</td>
+<td>指在成型的产品上， 按一定的输入/操作要求进行执行，以比对实际结果与预 期结果是否一致的过程。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>输入</td>
+<td>开展特定测试活动需要的程序、文档、数据、软件、硬件。</td>
+</tr>
+<tr>
+<td>4</td>
+<td>输出</td>
+<td>某一测试活动结束需提供的产出。</td>
+</tr>
+<tr>
+<td>5</td>
+<td>输入准则</td>
+<td>测试活动的输入， 需满足的条件。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>输出准则</td>
+<td>标记特定测试活动完成的条件。</td>
+</tr>
+<tr>
+<td>7</td>
+<td>测试点</td>
+<td>根据测试范围以相对抽象的形式描述测试思路和预期。 不要求提供详细的操 作步骤或操作细节。常以 Excel 表格的形式呈现。</td>
+</tr>
+<tr>
+<td>8</td>
+<td>测试用例</td>
+<td>如果说测试点比较抽象， 那测试用例就明确规定了测试的前提条件、操作步 骤、 输入数据以及预期结果。 不同的人根据同一测试用例执行结果应该能达 到 80%的相同效果。</td>
+</tr>
+<tr>
+<td>9</td>
+<td>测试执行记录</td>
+<td>测试用例/测试点在实际的软件上执行的结果记录。</td>
+</tr>
+<tr>
+<td>10</td>
+<td>通用测试</td>
+<td>即软件中常用/基本业务功能的正向操作测试，或典型异常操作测试，通常外 发类软件版本都需要进行此项测试。</td>
+</tr>
+<tr>
+<td>11</td>
+<td>用户情景</td>
+<td>TFS 里面的一个模板，团队内容用来管理版本范围。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-测试流程">3 测试流程</h2>
+<h3 id="31-流程图">3.1 流程图</h3>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16513752408419.png" alt="img"></p>
+<p>3.2 过程详解</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>过程名</th>
+<th>描述</th>
+<th>负责人</th>
+<th>审核人</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>测试计划 &amp; 需 求 分 析</td>
+<td>1. 根据 CNC 客户月度发布计划与 优先级清单，协同开发规划组 件发布版本，并在 TFS 内创建 [用户情景]进行版本的范围管 理。 2. 测试计划主要基于组件发布计 划、组件复杂度、当前资源情 况、人员能力、设备等各方面 综合进行测试资源安排和时间 计划， 并更新到[月度资源看 板]。 3. 测试需求分析需根据用户原始 需求和开发提供的规格文档， 澄清&amp;挖掘需求和应用场景，输 出测试需求分析&amp;设计思维导 图。</td>
+<td>测试计划： 测试主管 测 试 需 求 分 析： 测试工程师</td>
+<td>-</td>
+<td>测试需求分析 见《软件测试 需求分解指导 书-R1.doc》</td>
+</tr>
+<tr>
+<td>2</td>
+<td>测试设计</td>
+<td>1. 根据测试需求分析&amp;设计思维 导图进行测试点编写或测试用 例设计。 2. 完成后提交测试评审，评审参 与人包括相关开发、测试，必 要情况下邀请产线需求或者验 收人员参与。</td>
+<td>测试工程师</td>
+<td>测试主管</td>
+<td>详见《软件测 试用例设计指 导书-R1.doc》</td>
+</tr>
+<tr>
+<td>3</td>
+<td>测试准备</td>
+<td>1. 搭建测试环境， 尽可能模拟真 实工作环境。 2. 对开发提交的待测软件进行冒 烟测试。</td>
+<td>测试工程师</td>
+<td>测试责任人</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>测试执行</td>
+<td>1. 提测需满足提测准入准则，已 经在 TFS Checklist 落实。 2. 所有提测版本必须先进行冒烟 测试(Phx 组件同步执行自动化 测试)。 3. 所有 Bug 一律通过 TFS 中 Bug 工作项进行跟踪。</td>
+<td>测试工程师</td>
+<td>测试责任人</td>
+<td>提测准入准则 参见 Wiki Bug 提交跟踪 详见《缺陷跟踪流程-R1 .doc》</td>
+</tr>
+<tr>
+<td>5</td>
+<td>测试评估</td>
+<td>1. 测试完毕后提交质量评估表，评 审通过后方可发布。 2. 评审不通过需补充测试，或者按 照评审要求修订后再次评审。</td>
+<td>测试主管</td>
+<td>-</td>
+<td>平台质量保证- 组件质量评估 表 （ 模 板 ） -R1.0.xlsx</td>
+</tr>
+<tr>
+<td>6</td>
+<td>测试结束</td>
+<td>1. 评估通过，则测试任务完成。 2. 归档本次测试相关资料，以便 后续查证或使用，相关准出已经在 TFS Checklist 落实。 3. 对测试环境进行检查和必要复位。</td>
+<td>测试工程师</td>
+<td>-</td>
+<td>归档路径</td>
+</tr>
+</tbody>
+</table>
+<p>表格 1 测试过程释义</p>
+<h2 id="4-测试过程规范细则">4 测试过程规范细则</h2>
+<h3 id="41-测试需求分析计划">4.1 测试需求分析&amp;计划</h3>
+<p> 输入： CNC 客户月度发布计划与优先级清单 、 TFS[用户情景]管理的版本范围清单、 TFS 工
+作项、 用户/开发需求分析（/+规格书、 /+设计方案、 /+修改说明） 等。
+ 输出： 测试需求分析&amp;设计思维导图、 月度资源看板。
+ 输出准则：
+1） 项目类型的测试任务， 需提供测试方案&amp;测试计划，可参见《测试计划&amp;方案-项目名-
+模板-R1.doc》。
+2） TFS 中标记需要测试评审的工作项需组织测试设计评审。</p>
+<h3 id="42-测试设计">4.2 测试设计</h3>
+<p> 输入： 测试需求分析&amp;设计思维导图。
+ 输出： 测试用例/测试点。
+ 输出准则：
+1） 本次新增功能，需提供可复用测试用例。
+2） 已存在可复用测试用例的功能变更后，需维护已存的测试用例。
+3） TFS 中标记需要测试评审的工作项需组织测试用例评审。</p>
+<h3 id="43-测试准备">4.3 测试准备</h3>
+<p> 输入： 开发提交的待测组件/固件、 冒烟测试用例。
+ 输出： 测试环境（手工+自动化测试环境）、 冒烟测试通过的组件/固件。
+ 输出准则：
+1） 待测版软件冒烟测试不通过则退回。
+2） 冒烟测试不通过的 Bug 标记为低级 Bug。</p>
+<h3 id="44-测试执行">4.4 测试执行</h3>
+<p> 输入：测试用例、 冒烟测试通过的组件/固件。
+ 输出： 测试执行记录、 TFS 中的工作项记录。
+ 输出准则：
+1） 按照 发布准出完成执行工作（TFS 准出 Checklist）。
+2） 按照 CNC-发布标准完成执行工作。</p>
+<h3 id="45-测试评估">4.5 测试评估</h3>
+<p> 输入： 测试执行记录、缺陷记录、 测试通过的软件、组件发布质量评估表、发布公告。
+ 输出： 固件发布质量评估表、发布准则符合度评估。（固件有缺失，目前开发负责发布）
+ 输出准则： 组件发布质量评估表通过测试主管评审。</p>
+<h3 id="46-测试结束">4.6 测试结束</h3>
+<p> 输入： 所有过程文档。
+ 输出： 发布公告通知、过程文档归档。</p>
+<p>编制： 祁彩云 审核： CNC 测试团队  </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/CNC&#24179;&#21488;-&#36719;&#20214;&#27979;&#35797;&#27969;&#31243;&amp;&#36807;&#31243;&#35268;&#33539;-R3.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

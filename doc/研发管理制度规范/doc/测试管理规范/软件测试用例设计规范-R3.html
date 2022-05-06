@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#36719;&#20214;&#27979;&#35797;&#29992;&#20363;&#35774;&#35745;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#36719;&#20214;&#27979;&#35797;&#29992;&#20363;&#35774;&#35745;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="软件测试用例设计规范">软件测试用例设计规范</h1>
+
+<blockquote><p>版次：2021年12月27日　第3版
+类型：技术文件
+部门：软件部
+上层文件:《软件测试流程&amp;过程规范》
+上海维宏电子科技股份有限公司　版权所有</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>文件版本</th>
+<th>修改前文件版本</th>
+<th>主要修订内容和原因</th>
+<th>修订人</th>
+<th>修订日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>祁彩云、汪腾霞</td>
+<td>2017.08.10</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>预置条件并入到操作步骤中</td>
+<td>汪腾霞</td>
+<td>2019.07.23</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>R2</td>
+<td>1、把word文档转换成markdown格式<br>2、第3章用例基本要素添加“标签”，“前置条件”；更新用例标题规则；修改“优先级”释义<br>3、第4.2章节添加标签详细解释；更新用例标题的内容；<br>修改title 为软件测试用例设计规范<br>4、重定义用例优先级<br>5、用例设计总原则加第8条</td>
+<td>余晓霞、祁彩云</td>
+<td>2021.12.27</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-目的">1 目的</h2>
+<p>测试用例作为指导测试执行的重要依据，合理的设计，可以采用最少的用例，发现更多的问题，从执行效率和保证质量上达到双重目的。而合理的设计，也可以保证测试的复用，节省整体的测试时间。因此，特制定软件测试用例设计规范，规范用例设计和编写。</p>
+<h2 id="2--适用范围">2  适用范围</h2>
+<p>软件平台及各产品线团队。</p>
+<h2 id="3-术语和定义">3 术语和定义</h2>
+<p>下列术语和定义适用于本规范。 </p>
+<ul>
+<li><strong>规则：</strong> 必须遵守的约定。</li>
+<li><strong>原则：</strong> 指导性的约定。 </li>
+<li><strong>说明：</strong> 对此规则或原则的必要解释。 </li>
+<li><strong>正例：</strong> 对此规则或原则给出的正确例子。 </li>
+<li><strong>反例：</strong> 对此规则或原则给出的反面例子。 </li>
+<li><strong>例外：</strong> 对此规则或原则给出例外的说明。</li>
+</ul>
+<h2 id="4-用例设计总则">4 用例设计总则</h2>
+<ol>
+<li>可以作为独立功能的需求，需编写基于该功能的测试用例。若一个需求里面包含多个功能，可以分解为多个功能，针对每个功能设计相关用例。</li>
+<li>设计优先考虑功能性、其次是可靠性、易用性和其它特性。其中功能性优先考虑正向测试（功能正常）、其次是负向测试（功能异常）。</li>
+<li>功能相关用例不仅仅考虑单一功能，也需要考虑功能和功能之间的交互影响。</li>
+<li>每条测试用例粒度合理，测试目的唯一，如：该条用例不能够既包含正向测试又包含负向测试；或者既包含功能测试，又包含可靠性测试。原则上测试点唯一，或者根据优先级别和执行步骤、执行顺序，可以酌情合并和拆分。</li>
+<li>测试用例设计方法优先推荐场景分析法(基本流、备选流)，优先保证默认或者常用参数、条件的正确性，再基于等价类、边界值等方法考虑多组数据的组合。</li>
+<li>测试步骤/预期结果具有普遍适应性，需考虑先设计“共享用例”，再引用。</li>
+<li>功能的界面测试与业务逻辑测试分离设计。</li>
+<li>每个用例可独立运行，用例间无依赖关系。</li>
+</ol>
+<h2 id="5-用例基本要素">5 用例基本要素</h2>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>要素</strong></th>
+<th><strong>释义</strong></th>
+<th><strong>规则</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>用例标题</td>
+<td>简单概要的描述该用例的归属和测试目的。</td>
+<td><strong>格式：[用例编号]_测试标题描述</strong>    用例标题应体现测试的范围和目的。其中，用例编号在功能范围内唯一，建议使用字母和数字组合，以字母开头。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>前置条件</td>
+<td>是测试用例执行的前置准备，如果不满足这些条件，则无法进行执行测试。</td>
+<td>非必要的用例基本要素，当没有前置条件时，可忽略此要素。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>测试步骤</td>
+<td>人工或者机器执行的一系列操作。</td>
+<td>一条用例的测试步骤一般不超过15条</td>
+</tr>
+<tr>
+<td>4</td>
+<td>测试数据</td>
+<td>测试步骤操作过程中使用的输入数据。</td>
+<td>1)  测试数据要具体。  <br>2)  多数据变量时，可以采用等价类、边界值和正交分析等方法，选取尽量少的组合达到最大覆盖。</td>
+</tr>
+<tr>
+<td>5</td>
+<td>预期结果</td>
+<td>在指定条件下，测试数据和测试步骤执行后，程序表现出的在开始处理、处理中和处理后的效果。</td>
+<td>1)  一般一个测试步骤对应一个或多个预期结果。  <br>2)  预期结果要尽量具体、明确。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>优先级</td>
+<td>优先级即用例在该功能模块中的重要级别，通过功能的重要性和用户实际使用频率的两个维度阐述用例的重要级别 。</td>
+<td>目前定义为四个等级：P1 ~ P4，具体定义见6.3 章用例优先级。</td>
+</tr>
+<tr>
+<td>7</td>
+<td>标签</td>
+<td>标签为用例管理提供了一种灵活的管理方式，便于用例查找和复用。</td>
+<td>一个测试用例可以包含多个标签，团队也可根据项目的实际情况自行定制。</td>
+</tr>
+</tbody>
+</table>
+<p>​                                                                                                  表格1 用例基本要素</p>
+<h2 id="6-用例关键要素详析">6 用例关键要素详析</h2>
+<h3 id="61--用例标题">6.1  用例标题</h3>
+<p>用例标题应体现测试的范围和目的。一个简单、清晰、有针对性的标题，能让人快速理解设计人的测试思路，从标题即可知道测试点及预期结果，也能方便后续使用人对用例的检索。</p>
+<p><strong>【规则1-1】</strong>用例标题格式：[用例编号]_测试标题描述</p>
+<p> <strong>说明：</strong>用例编号：用例编号在功能范围内唯一，建议使用字母和数字组合，以字母“TC”开头，用例编号中禁止包含下划线“_”。</p>
+<p> <strong>正例：直排换刀功能</strong></p>
+<p>​           TC001_验证换刀功能基本流程正确（<strong>功能正确性验证</strong>）</p>
+<p>​           TC002_换刀时未检测到相关到位信号，换刀停止（<strong>功能异常处理/异常测试</strong>）</p>
+<p>​           TC003_验证非空闲状态，换刀操作无效（<strong>异常测试</strong>） </p>
+<h3 id="62--用例主体">6.2  用例主体</h3>
+<p>用例主体由前置条件、操作步骤、测试数据和预期结果组成。在描述用语原则：</p>
+<p><strong>【原则2-1】</strong>描述使用的专有名词或术语尽可能与相关使用说明文档（例如：功能规格说明书）中的保持一致。</p>
+<p><strong>【原则2-2】</strong>描述用词尽量规范、明确、量化、无二义性，避免口语化的描述。</p>
+<h4 id="621-前置条件">6.2.1 前置条件</h4>
+<p>前置条件属于测试用例的可选元素，是测试用例执行的前置准备，如果不满足这些条件，则无法进行执行测试；例如执行所需的硬件环境或软件环境等。</p>
+<p><strong>【原则3-1】</strong>在团队内（或业务领域内）约定的默认前置条件，无需填写到前置条件。</p>
+<p> <strong>正例:</strong></p>
+<p>​   数控系统（NcStudio）约定以下内容为默认条件(不仅限于此默认条件，根据项目的实际情况而定)，无需填写到前置条件：</p>
+<ol>
+<li><p>启动NcStudio软件</p>
+</li>
+<li><p>系统空闲状态</p>
+</li>
+<li><p>软件未回机械原点</p>
+</li>
+<li><p>参数设置为默认值</p>
+</li>
+<li><p>仿真软件 </p>
+</li>
+</ol>
+<h4 id="622-测试步骤">6.2.2 测试步骤</h4>
+<p><strong>【原则4-1】</strong>测试步骤即是实际的操作，应避免将预期结果放在步骤里。</p>
+<p><strong>【原则4-2】</strong>测试数据和测试步骤要分离，步骤里面不要编写测试数据。</p>
+<p><strong>【原则4-3】</strong>若存在共享步骤，则可直接引用共享步骤。</p>
+<p>  <strong>说明</strong>：共享步骤即重复使用率高和通用性较强测试步骤，使用范围不受项目的限制。例如文本框的输入验证、参数默认值的验证、参数设置权限验证等。</p>
+<p><strong>【原则4-4】</strong>单个步骤描述时避免包含多个不同类型的操作。</p>
+<p>  <strong>反例：</strong></p>
+<p>​   装载刀路，打开图层设置对话框，切割参数-特殊工艺中勾选“无感穿孔”勾选项，设置穿孔类型为类型3，穿孔高度10 mm</p>
+<p>  <strong>正例：</strong></p>
+<p>​   1、装载刀路</p>
+<p>​   2、打开图层设置对话框</p>
+<p>​   3、切割参数-特殊工艺中勾选“无感穿孔”勾选项</p>
+<p>​   4、设置穿孔类型为类型3，穿孔高度10 mm</p>
+<h4 id="623-测试数据">6.2.3 测试数据</h4>
+<p>相同的操作只是因为进入前的状态或输入的数据不同，导致测试覆盖的路径不同，此时即可将其提取作为测试数据，按不同的测试目的进行组织，简化阅读并缩减后期维护工作量。</p>
+<ol>
+<li><p>测试数据要具体，比如具体刀路文件、具体偏置设置值。</p>
+</li>
+<li><p>若不同前置置条件、不同的输入数据对于软件功能的影响不同，设计数据可以和前置条件进行组合设计。</p>
+</li>
+<li><p>测试数据可以不是一个实际的参数，比如可以将系统的不同状态作为测试数据、或将功能的不同入口作为测试数据。</p>
+</li>
+</ol>
+<h4 id="624-预期结果">6.2.4 预期结果</h4>
+<p>书写时要和测试步骤相对应并且具体。</p>
+<ul>
+<li><p>一个步骤可能对应一个或多个预期结果。</p>
+</li>
+<li><p>为简化阅读和执行，保证结果的一致性，预期结果应尽可能具体，特别是针对坐标、速度、状态和正确/错误信息的描述。</p>
+</li>
+</ul>
+<blockquote><p><strong>范例：</strong>回机械原点功能——Z轴回机械原点检测到精定位信号后，预期结果描述如下：</p>
+<ol>
+<li><p>操作信息提示栏提示:Z轴粗定位信号与精定位信号之间的距离是***（单位是直线或者角度标准单位）；</p>
+</li>
+<li><p>Z轴以200 mm/min的速度回退-2 mm后运动停止；</p>
+</li>
+<li><p>Z轴运动结束后，操作状态为空闲，操作状态附加信息为正常结束；</p>
+</li>
+<li><p>坐标显示区Z轴名称前出现机械原点标志，Z轴机械坐标为0，Z轴工件坐标为0（前置条件是所有偏置设置为0）</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="625-标签">6.2.5 标签</h4>
+<p>标签为用例管理提供了一种灵活的管理方式。便于用例查找和复用。一个用例可以包含多个标签，团队也可根据项目的实际情况自行定制。</p>
+<p><strong>已定义的标签类型说明如下：</strong></p>
+<ol>
+<li>用例优先级标签（<strong>必选</strong>）：P1~P4；优先级定义说明见《6.3  用例优先级》；例如：P1。</li>
+<li>测试类型标签（<strong>必选</strong>），主要包括：功能、易用、性能、可靠、兼容；例如：测试类型=功能。</li>
+<li>功能使用范围标签（可选），主要包括：通用功能、XXX客户定制功能。</li>
+<li>通用必测标签（可选），若用例属于通用必测，则添加标签：通用必测。</li>
+<li>执行方式标签（可选），若实现自动化，可以添加标签：Auto。</li>
+<li>机型标签（可选），例如：机型=十轴链式刀盘。</li>
+<li>环境标签（可选），例如：环境=Lambda21B。</li>
+</ol>
+<p><strong>【规则5-1】</strong> 必选的标签，必须在用例的标签处标上。</p>
+<h3 id="63--用例优先级">6.3  用例优先级</h3>
+<p>测试用例优先级作为测试各个阶段明确测试范围的重要依据，包括<strong>开发自测、冒烟测试、全面测试（包括功能和非功能性测试）、回归测试、自动化覆盖</strong>等，特对优先级别进行定义。目前定义四个等级 P1 ~ P4 具体见表格</p>
+<table>
+<thead>
+<tr>
+<th>**优先级                      **</th>
+<th>**覆盖用例                                                       **</th>
+<th><strong>优先级和测试范围关系</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P1</strong></td>
+<td>用例覆盖主要的业务功能性和用户常用的业务场景<br>  ——一般是基本流</td>
+<td>1）核心功能的该等级则作为<strong>开发自测、冒烟测试必测项</strong>； <br>2）一般为<strong>通用必测</strong><br>3） 一般为<strong>兼容性测试必测项</strong>；<br><strong>4）自动化测试优先覆盖。</strong></td>
+</tr>
+<tr>
+<td><strong>P2</strong></td>
+<td>用例覆盖主要的业务功能交互和用户不常用的业务场景 <br>——一般是备选流、边界用例、常见的反向用例</td>
+<td><strong>1)</strong> <strong>修改影响的功能回归测试必测项；</strong>  <br>2）兼容性、性能&amp;可靠性测试按需覆盖；  <br>3）自动化测试优先覆盖。</td>
+</tr>
+<tr>
+<td><strong>P3</strong></td>
+<td>用例覆盖次要的业务功能，界面 ，和用户几乎不用的业务场景<br> ——一般是不常见的非法操作、异常场景</td>
+<td><strong>1)</strong> <strong>新功能或功能重构必测项；</strong>  <br>2）兼容性、性能&amp;可靠性测试按需覆盖；  <br>3）自动化测试根据情况覆盖。</td>
+</tr>
+<tr>
+<td><strong>P4</strong></td>
+<td>用例覆盖功能相关的易用性、性能、可靠性等</td>
+<td><strong>1)</strong> <strong>新功能或功能重构必测项；</strong>  <br>2）兼容性、性能&amp;可靠性测试按需覆盖。  <br>3）自动化测试根据情况覆盖。</td>
+</tr>
+</tbody>
+</table>
+<p>​                                                                                                               表格2 用例优先级定义</p>
+<p><strong>说明：</strong></p>
+<ol>
+<li>为了保证测试策略执行的正确性，因此需要明确用例的优先级别。如果写用例的时间有限，请先设计优先级别高的测试用例。</li>
+<li>优先级可以视质量需求和维护情况进行调整。</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/&#27979;&#35797;&#31649;&#29702;&#35268;&#33539;/&#36719;&#20214;&#27979;&#35797;&#29992;&#20363;&#35774;&#35745;&#35268;&#33539;-R3.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

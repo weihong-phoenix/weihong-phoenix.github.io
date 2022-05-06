@@ -1,0 +1,1678 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/management/management",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "0fb1ifSbIyG0EM+ri6y+mY85GT3Xqr7YJYin2IHsuBs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/Bug严重级别处理规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/Bug严重级别处理规范.html",
+          "hash": "Ba/yVZheyhNEdsr35nKbpVv0iz02arkh/l4DMgT1+t8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/Bug基本属性定义-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/Bug基本属性定义-R1.html",
+          "hash": "hb3Ooj8ZeJ0LA6oBOHtvlvvzcFqw2KZFUuZEZzRw3es="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/CAD迭代工作流程.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/CAD迭代工作流程.html",
+          "hash": "t87X/oeX7cORd55sEPL25uq5mt7lFIbLrhB8bUhIU5A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/CNC平台-缺陷跟踪流程&过程规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/CNC平台-缺陷跟踪流程&过程规范-R1.html",
+          "hash": "w7El8CdBXTyxo+bNoyJROtR9FPIq4+s0FLsTEcdS8pE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/CNC平台-软件测试流程&过程规范-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/CNC平台-软件测试流程&过程规范-R3.html",
+          "hash": "y4NCfZDoX9+ODTYA8ez0HPlFFEYnvVj/m8sJJw7LWYo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/Commit message 编写规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/Commit message 编写规范-R1.html",
+          "hash": "Ag58L5S7o83tMkHKXkOQPY0NllKSB7g+N6T3CoJCAgE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/Phoenix 源码分支工作流-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/Phoenix 源码分支工作流-R2.html",
+          "hash": "wY+b8K5xdbB64i3JSjcrEuFRtjQLgWMHcTgujZyINYM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "doc/Phoenix 组件发行工作流.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/Phoenix 组件发行工作流.html",
+          "hash": "ddfqMc/d5nmqtvxx/5J5nC7zf++ohNzhSZJMUlWCLVw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/Phoenix 组件版本管理规则.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/Phoenix 组件版本管理规则.html",
+          "hash": "ERqmxma70sUcsXdStja40Ta889p/ewFfeWARFTNKPho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/docfx.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/docfx.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.css",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/docfx.vendor.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.multi.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.multi.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.stemmer.support.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.stemmer.support.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/lunr.zhcn.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/lunr.zhcn.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/main.css",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/main.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/mermaid.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/mermaid.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/mermaid.min.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/mermaid.min.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/require.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/require.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/search-worker.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/search-worker.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/docfx_templates/custom_template/styles/tinyseg.js",
+      "output": {
+        "resource": {
+          "relative_path": "doc/docfx_templates/custom_template/styles/tinyseg.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/MSDN-SendMessage-FunctionInformation.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/MSDN-SendMessage-FunctionInformation.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/MSDN-SetEvent-Requirements.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/MSDN-SetEvent-Requirements.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/MSDN-__forceinline.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/MSDN-__forceinline.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/MSDN-__super.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/MSDN-__super.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/NuGet-Feed-Linux.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/NuGet-Feed-Linux.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/NuGet-JogIssuer.1.401.0.0-Linux2.nupkg-Files.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/NuGet-JogIssuer.1.401.0.0-Linux2.nupkg-Files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/NuGet-JogIssuer.1.401.0.0.nupkg-Files.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/NuGet-JogIssuer.1.401.0.0.nupkg-Files.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/clip_image002-16514843066001.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/clip_image002-16514843066001.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/clip_image002-16514849124841.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/clip_image002-16514849124841.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/clip_image002-16514855017311.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/clip_image002-16514855017311.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/clip_image002.gif",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/clip_image002.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/component-version-001.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/component-version-001.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/component-version-002.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/component-version-002.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/component-version-003.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/component-version-003.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/component-version-004.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/component-version-004.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/cross-dev-property.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/cross-dev-property.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/cross-dev-struct.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/cross-dev-struct.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-01-overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-01-overview.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-02-history.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-02-history.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-03-feature.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-03-feature.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-04-bugfix.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-04-bugfix.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-05-release.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-05-release.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-06-release-fix.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-06-release-fix.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-07-step1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-07-step1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-multi-master.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-multi-master.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-release-cycle-8maryprepsrelease.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-release-cycle-8maryprepsrelease.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/git-workflow-svn-clone.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/git-workflow-svn-clone.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/history-example.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/history-example.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/history-incompatible.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/history-incompatible.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/history-item.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/history-item.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/history-terms.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/history-terms.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/ldoc-config-desc.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/ldoc-config-desc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/ldoc-effect.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/ldoc-effect.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/ldoc-tags.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/ldoc-tags.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/publish-component-workflow.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/publish-component-workflow.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-01.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-01.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-02.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-02.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-03.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-03.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-04.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-04.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-05.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-05.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-06.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-06.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-07.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-07.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/tag-08.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/tag-08.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16513731056531.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16513731056531.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16513752408419.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16513752408419.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514079899140.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514079899140.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514105494473.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514105494473.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_1651411027142-16514111235481.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_1651411027142-16514111235481.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_1651411027142.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_1651411027142.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514709215050.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514709215050.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514710079300.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514710079300.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514756929295.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514756929295.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514758928709.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514758928709.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514761324766.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514761324766.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514770282104.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514770282104.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514809474140.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514809474140.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514811037957.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514811037957.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/企业微信截图_16514838942691.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/企业微信截图_16514838942691.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/includes/设计中.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/includes/设计中.html",
+          "hash": "wQ/xTjGMcsqdwgKZOU9c1v+kAConhKVyqqKeQPflvf4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/index.html",
+          "hash": "82LFWpRqTb2QPdQQwOWdK/6HttOL4yVqsRvZc8pWw3A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "doc/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "doc/toc.html",
+          "hash": "J1ijEQfgDHcuMwDsMMXXdAYSv8tCY0XGMVryEa15bnM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品II部Bug流程-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品II部Bug流程-R3.html",
+          "hash": "L6ynewGiktIZZmP0GOG0eHW56j8qImEoVn8e9xR1EOo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品II部TFS工作项命名规范-R5.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品II部TFS工作项命名规范-R5.html",
+          "hash": "1cYkA0OrMTVRMKvoItQKCbNlXPpoGh7IZmmvT4ko47Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品II部研发流程-R2.1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品II部研发流程-R2.1.html",
+          "hash": "BK9npD5eYoKUde66irKT6b+MDwn11YSTtnwf4ffOexs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品Ⅰ部运维工作流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品Ⅰ部运维工作流程-R1.html",
+          "hash": "jV940umVY1GoxdPw9sq70kjMlRHTdIXzVV6YUUcOZ8w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/产品研发管理制度/MSF评审_Checklist-R1.xls",
+      "output": {
+        "resource": {
+          "relative_path": "doc/产品研发管理制度/MSF评审_Checklist-R1.xls"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品研发管理制度/MSF详细活动指导-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品研发管理制度/MSF详细活动指导-R1.html",
+          "hash": "7tQfjX7qC1cRDNi9gXXyVrPGWPhr4FCi5Tv+YdDGd8g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/产品研发管理制度/MSF详细活动指导-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/产品研发管理制度/MSF详细活动指导-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/产品研发管理制度/images/fig4-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/产品研发管理制度/images/fig4-1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品研发管理制度/产品研发术语.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品研发管理制度/产品研发术语.html",
+          "hash": "6DpYDjZuw9sKA8Jw6BVQX/y7MdVpkjCdJHTP0oOlmK8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品研发管理制度/产品研发管理制度.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品研发管理制度/产品研发管理制度.html",
+          "hash": "uWAOjXIHs7HGVqFDvrzyAO3jXloY/rsHJikLWbaz5h8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/产品研发管理制度/产品研发管理制度指导书.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/产品研发管理制度/产品研发管理制度指导书.html",
+          "hash": "I+AgsudgrBRMO5mlJakmfjom+3DTXPQAQOAjoKHz8rw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/关于平台软件兼容性问题例外活动流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/关于平台软件兼容性问题例外活动流程-R1.html",
+          "hash": "+rkU4VE/mT2pK8AlIUHdkqMjZZYxMPNKG2Vwo5X1o9g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/功能规格设计活动流程&规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/功能规格设计活动流程&规范-R1.html",
+          "hash": "jnNaCZdYHve80jHhvzQ4LiAcDMhFkNYBM9LoNJ4MTgM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/包历史记录填写规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/包历史记录填写规范-R1.html",
+          "hash": "4JiemA8KdNXHKXPNxnLfz/9bREffsXAz+jUlNGS7U4s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/子产品管理制度（试行）-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/子产品管理制度（试行）-R2.html",
+          "hash": "3DO53srFMWumGcPyrKuiGn+lBxq+AvUv826J7xsKFDE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/平台软件发布规范-R3（试用）.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/平台软件发布规范-R3（试用）.html",
+          "hash": "Zb+f91wYOZbROwkfXMt8ocsraUv/U5osO7dNDNsNBfI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/插件管理规范-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/插件管理规范-R2.html",
+          "hash": "YqKynr7JRt15EFN2NmfxVIUJoFaIlNzYGtGo59YFkrc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/方案设计汇报和评审指导书/images/fig1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/方案设计汇报和评审指导书/images/fig1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/方案设计汇报和评审指导书/方案设计汇报和评审指导书-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/方案设计汇报和评审指导书/方案设计汇报和评审指导书-R1.html",
+          "hash": "yiI1klD0Iw/GyI+TdmP9b2BpywxJHTYMyDsbXlvNP8E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/方案设计汇报和评审流程/images/fig1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/方案设计汇报和评审流程/images/fig1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/方案设计汇报和评审流程/方案设计汇报和评审流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/方案设计汇报和评审流程/方案设计汇报和评审流程-R1.html",
+          "hash": "qqX0cyZwG8VPIqmhLqZ3AtJGY3snkkPYc+TonkQPlyE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/木工&广告产品线代码审核要求-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/木工&广告产品线代码审核要求-R2.html",
+          "hash": "XZJoPoJfc2rHuTv4JKeHUC+UGONs3IYGpoG18kXZb5M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/木工&广告产品线开发评审制度-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/木工&广告产品线开发评审制度-R1.html",
+          "hash": "zjNJeFbw/NH2ZGh/MKMfnSfe8RF+vJehSUrj8cskQUY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/测试管理规范/RobotFramework自动化测试框架使用指导书-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/测试管理规范/RobotFramework自动化测试框架使用指导书-R1.html",
+          "hash": "5Lzikn+xnU3aj19jgr4giXsrF4BvM/ow8OIdx6qDGYw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20211227195350513.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20211227195350513.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20211228164448499.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20211228164448499.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105144707179.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105144707179.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105174302160.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105174302160.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105180137494.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105180137494.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105181711655.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105181711655.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105183208811.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105183208811.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105183944760.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105183944760.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105185618186.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105185618186.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105190618036.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105190618036.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220105190722487.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220105190722487.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220106110358935.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220106110358935.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220106111135212.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220106111135212.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image-20220112142600127.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image-20220112142600127.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/images/image2021-8-18_16-22-19.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/images/image2021-8-18_16-22-19.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/~作废文件/RobotFramework自动化测试框架使用指导书-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/~作废文件/RobotFramework自动化测试框架使用指导书-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/~作废文件/手工测试用例编写指导书-基于RobotFramework-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/~作废文件/手工测试用例编写指导书-基于RobotFramework-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/~作废文件/自动化测试管理规范-R1.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/~作废文件/自动化测试管理规范-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/测试管理规范/~作废文件/软件测试用例设计规范-R3.pdf",
+      "output": {
+        "resource": {
+          "relative_path": "doc/测试管理规范/~作废文件/软件测试用例设计规范-R3.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/测试管理规范/手工测试用例编写指导书-基于RobotFramework-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/测试管理规范/手工测试用例编写指导书-基于RobotFramework-R1.html",
+          "hash": "scL/yxY7PnQviZB9KFdo8JfJDMTx+RAROqMlLMvrFXM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/测试管理规范/模板文件/测试计划(模板)-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/测试管理规范/模板文件/测试计划(模板)-R1.html",
+          "hash": "tOwZLRn3dkM5aTCeVpBE9TGRBcreGf4gX8MZ6SKLxS0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/测试管理规范/自动化测试管理规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/测试管理规范/自动化测试管理规范-R1.html",
+          "hash": "pywJK8n4UXVTlXUu+MD4i6ubTsdCIaFtQkGCooW2ovM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/测试管理规范/软件测试流程&过程规范-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/测试管理规范/软件测试流程&过程规范-R3.html",
+          "hash": "moyaE+QxoD09zv4R78zqRI3k95njaGy/UmK7zmP8WRA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/测试管理规范/软件测试用例设计规范-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/测试管理规范/软件测试用例设计规范-R3.html",
+          "hash": "xRtWLBbcptjceOAB4Xvk9V/es1U6GEh9REO9D1NiVnk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/测试管理规范/软件测试规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/测试管理规范/软件测试规范.html",
+          "hash": "5UbCPAZXmE00svGQ2v4anQgZyx5rSQBpmOR7+eBvRWE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/激光线软件发行规定-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/激光线软件发行规定-R3.html",
+          "hash": "mkfNJ97tBTljB/dximFq3FPrVj8mCs3rWQT7T0YWndc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发部产品方案汇报与处理流程-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发部产品方案汇报与处理流程-R1.html",
+          "hash": "cNCgCRNnGCynYKpN4AbV6rXY4oIMEKZ5JqAtmLT3ytc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/缺陷跟踪流程-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/缺陷跟踪流程-R2.html",
+          "hash": "EakKD3FJyLQCnoXTOZ4Id85Sua5Suj99bN91deZLzus="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/软件命名及版本方案说明-R3.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/软件命名及版本方案说明-R3.html",
+          "hash": "qQo/JBbASpllmpTyTjMDgc2EnKYfrPjSpMKpu1BXlDA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/软件平台-遗留缺陷发布标准-R1.2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/软件平台-遗留缺陷发布标准-R1.2.html",
+          "hash": "ULBNg9+1ZSKqiIsrrLXjsoTEz855LGxX7ZasyT9Pe38="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/软件测试流程&过程规范-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/软件测试流程&过程规范-R2.html",
+          "hash": "cPGOb7DJC23bnVXQW7mFYQHfnb49fydUVC3KYyKhnyU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/软件测试需求分解指导书-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/软件测试需求分解指导书-R2.html",
+          "hash": "odtq1UdBMV/ITZQKpouzgV+4O817qhUR5Zzbrzir2NQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/软件编程规范-R5.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/软件编程规范-R5.html",
+          "hash": "OtLfN0EzH+rfasec1HfEqgg5RDQaxNAEWp823VxshQw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/软件项目目录与文件管理规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/软件项目目录与文件管理规范.html",
+          "hash": "AIWhpPBIsI6+iPUE9IeCE3owVnpHnrIkXimpRCPN+is="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 46,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

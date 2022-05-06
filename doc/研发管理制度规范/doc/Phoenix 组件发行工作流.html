@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Phoenix &#32452;&#20214;&#21457;&#34892;&#24037;&#20316;&#27969; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Phoenix &#32452;&#20214;&#21457;&#34892;&#24037;&#20316;&#27969; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="phoenix-组件发行工作流">Phoenix 组件发行工作流</h1>
+
+<pre><code>版次：2016年9月5日　第1.0版
+类型：技术文件
+作者：Phoenix 架构平台 
+上海维宏电子科技股份有限公司 版权所有
+</code></pre><p>此文档是帮助大家做好组件的发布工作，避免出现一些由于发行而给产品或后期维护带来的严重问题。</p>
+<h2 id="1-发行工作流程图">1. 发行工作流程图</h2>
+<p><img src="images/publish-component-workflow.png" alt="工作流总览"></p>
+<h2 id="2-发行检查清单">2. 发行检查清单</h2>
+<ul>
+<li>是否是在分支修改或添加的功能？</li>
+<li>是否把代码全部上传到服务器？</li>
+<li>是否覆盖了单元测试？</li>
+<li>是否把单元测试上传到服务器？</li>
+<li>是否填写的单元测试覆盖表？</li>
+<li>单元测试是否全部通过？</li>
+<li>发布的组件的版本号升级是否符合？[《Phoenix 组件版本管理规则》](Phoenix 组件版本管理规则.md)</li>
+<li>是否将此次发布的记录填写到 history.md？<a href="component-history-guide.md">《Phoenix项目记录规范》</a></li>
+<li>填写的发布内容格式是否标准？</li>
+<li>是否是在服务器生成的组件包？</li>
+<li>发行的代码是否进行加密？</li>
+<li>histroy.md 是否包含在组件包里？</li>
+<li>是否将生成的组件包经过集成测试且测试通过？</li>
+<li>功能集成测试是否符合测试用例？</li>
+<li>是否将 API 使用说明书（md）上传至 TFS？</li>
+<li>是否更新发行记录到 markdown上？</li>
+<li>是否将发行不兼容版本组件的使用条件和限制更新到发行记录（markdown）上？</li>
+<li>是否从服务器将发布的组件包上传至 51 服务器？</li>
+<li>是否将源码打标签？</li>
+<li>源码标签是否符合？<a href="sourcecode-tag-guide.md">《Phoenix 源代码标签使用规则》</a></li>
+<li>是否发布了发布公告？</li>
+<li>组件的依赖关系是否合理？</li>
+</ul>
+<h2 id="版本信息">版本信息</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>修改人</th>
+<th>修改内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2016/9/5</td>
+<td>Phoenix 架构平台</td>
+<td>初版建立</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/Phoenix &#32452;&#20214;&#21457;&#34892;&#24037;&#20316;&#27969;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

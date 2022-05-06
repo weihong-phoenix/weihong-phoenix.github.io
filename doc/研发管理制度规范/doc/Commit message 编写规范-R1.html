@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Commit message &#32534;&#20889;&#25351;&#21335;&#65288;TFS &#29256;&#65289; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Commit message &#32534;&#20889;&#25351;&#21335;&#65288;TFS &#29256;&#65289; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="commit-message-编写指南tfs-版">Commit message 编写指南（TFS 版）</h1>
+
+<pre><code>版次：2020年2月15日 第1.0版
+类型：程序文件
+作者：Phoenix 架构平台
+上海维宏电子科技股份有限公司　版权所有
+</code></pre><p>《软件开发过程要求》规定，每次往服务器上提交代码时，必须填写“提交注释”（以下使用 “Commit message” 表示），否则不允许提交代码。对于 Commit massage 的格式并没有统一的规范，因此大家填写的内容很凌乱。</p>
+<p>通常，Commit message 应该清晰明了，说明本次提交代码的目的。目前，社区有多种  Commit message  的写法规范。本文参考 <code>Angular 规范</code>（目前使用最广的规范），针对 Phoenix 开发过程定义标准的  Commit message  编写指南。</p>
+<h2 id="1-commit-message-的作用">1. Commit message 的作用</h2>
+<p>格式化的 Commit message 有几个好处：</p>
+<ol>
+<li><strong>提供更多的历史信息，方便快速浏览。</strong> 对于遵循编写规范的 Commit message， 只需要看首行，就知道某次 Commit 的目的。</li>
+<li><p><strong>可以过滤某些 Commit （比如文档改动），便于快速查找信息。</strong> 比如，可以通过对提交信息过滤显示本次发布新增加的功能。</p>
+</li>
+<li><p><strong>可以直接从 Commit 生成 Change log。</strong> Change log 是发布新版本时，用来说明与上一个版本差异的文档，详见后文。</p>
+</li>
+</ol>
+<h2 id="2-commit-message-的格式">2. Commit message 的格式</h2>
+<p>每次提交，Commit message 都包括三个部分： Header、Body 和 Footer。</p>
+<pre><code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
+// 空一行
+&lt;body&gt;
+// 空一行
+&lt;footer&gt;
+</code></pre><p>其中，<strong>Header 是必需的</strong>，Body 和 Footer 可以省略。
+为了避免自动换行影响美观，要求每一行的字符数<strong>不超过72个</strong>。</p>
+<h3 id="21-header">2.1 Header</h3>
+<p>Header 部分只有一行，包括三个字段： <code>type</code> （必需）、 <code>scope</code> （可选）和 <code>subject</code> （必需）。</p>
+<p><strong>（1）type</strong></p>
+<p><code>type</code> 用于说明 Commit 的类别，只允许使用下面7个标识：</p>
+<pre><code>- feat: 新功能 （feature）
+- fix: 修补 bug
+- docs: 文档（documentation）
+- style: 格式（不影响代码运行的变动）
+- refactor: 重构（即不是新增功能，也不是修改 bug 的代码变动）
+- test: 增加测试
+- chore: 构建过程或辅助工具的变动
+</code></pre><p>如果 <code>type</code> 为 <code>feat</code> 和 <code>fix</code>，则该 Commit 将肯定出现在 Change log 之中。其他情况（<code>docs</code>、<code>chore</code>、<code>style</code>、<code>refactor</code>、<code>test</code>）则由提交人决定是否放入 Change log中；建议不要放入。</p>
+<p><strong>（2）scope</strong></p>
+<p><code>scope</code> 用于说明 Commit 影响的范围，比如数据层、控制层、视图层等，视项目不同而不同。</p>
+<p><strong>（3）subject</strong></p>
+<p><code>subject</code> 是 Commit 目的的简短描述，不超过50个字符。</p>
+<blockquote><ul>
+<li>以动词开头，使用第一人称现在时，比如 <code>change</code>，而不是 <code>changed</code> 或 <code>changes</code></li>
+<li>第一个字母小写</li>
+<li>结尾不加句号（<code>.</code>）</li>
+</ul>
+</blockquote>
+<h3 id="22-body">2.2 Body</h3>
+<p>Body 部分是对本次 Commit 的详细描述，可以分成多行。下面是一个范例。</p>
+<pre><code>More detailed explanatory text, if necessary.  Wrap it to 
+about 72 characters or so. 
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+- Use a hanging indent
+</code></pre><p>有两个注意点：</p>
+<p>（1）使用第一人称现在时，比如使用 <code>change</code> 而不是 <code>changed</code> 或 <code>changes</code>。</p>
+<p>（2）应该说明代码变动的动机，以及与以前行为的对比。 </p>
+<h3 id="23-footer">2.3 Footer</h3>
+<p>Footer 部分只用于两种情况：</p>
+<p><strong>（1）不兼容变动</strong></p>
+<p>如果当前代码与上一个版本不兼容，则 Footer 部分以 <code>BREAKING CHANGE</code> 开头，后面是对变动的描述、以及变动理由和迁移方法。</p>
+<pre><code>BREAKING CHANGE: 修改过期的 scope bindings 定义.
+
+    请参照以下示例要迁移代码：
+
+    Before:
+
+    scope: {
+      myAttr: &#39;attribute&#39;,
+    }
+
+    After:
+
+    scope: {
+      myAttr: &#39;@&#39;,
+    }
+
+    移除的属性值已经不在有效，因此不应有代码使用它。
+</code></pre><p><strong>（2）关闭 BUG</strong></p>
+<p>如果当前 Commit 是针对某个 bug，那么可以在 Footer 部分关闭这个 bug。</p>
+<pre><code>Closes #234
+</code></pre><p>也可以一次关闭多个 bug。</p>
+<pre><code>Closes #123, #245, #992
+</code></pre><h3 id="24-revert">2.4 Revert</h3>
+<p>还有一种特殊情况，如果当前 Commit 用于撤销以前的 Commit，则必须以 <code>revert</code> 开头，后面跟被撤销 Commit 的 Header。</p>
+<pre><code>revert: feat(pencil): add &#39;graphiteWidth&#39; option
+
+reverts Commit 11212
+</code></pre><p>Body 部分的格式是固定的，必须写成 <code>reverts Commit &lt;变更集号&gt;.</code>。</p>
+<p>如果当前 Commit 与被撤销的 Commit，在同一个发布 （release） 里面，那么它们都不会出现在 Change log 里面。如果两者在不同的发布，那么当前 Commit，会出现在 Change log 的 <code>Reverts</code> 小标题下面。</p>
+<h3 id="25-案例">2.5 案例</h3>
+<p><strong>feat 案例：</strong> 在案例 body 的序列中有用到 <code>-</code>或<code>*</code>， 目前不做限制。</p>
+<pre><code>feat(CsvExproter): print &#39;0&#39; instead of &#39;-&#39; in the CSV report
+
+- CsvExporter now prints &#39;0&#39; instead of &#39;-&#39; in the report
+
+- Add PrintZeroValuesInContent option in SummaryStyle to control it (by default it is false)
+
+- Add tests to cover changed behavior
+
+Closes #1168
+</code></pre><pre><code>feat: resolve xref recursively (#4314)
+
+* resolve xref recursively
+
+* fix test. ParentNode doesn&#39;t work as expected...
+</code></pre><p><strong>chore 案例：</strong></p>
+<pre><code>chore: cleanup docs/architecture (#15489)
+
+Autocleanup of MD022 and MD009
+</code></pre><pre><code>chore: clenaup docs/fsharp (#15585)
+
+Ran `markdownlint --fix &quot;docs/fsharp/**/*.md&quot;` to fix MD009 and MD022
+</code></pre><p><strong>Breaking changes 案例：</strong>  这个案例没有描述迁移方案，目前待定。</p>
+<pre><code>Breaking changes： improvements (#16613)
+
+* move winforms breaking changes to compatibility section
+
+* update core toc; add link to unsupported apis
+
+* add more bookmarks; change title on some include files
+
+* fix typo; add horizontal line; toc title change; add contextual toc link to unavailable techs
+</code></pre><p><strong>revert 案例：</strong></p>
+<pre><code>revert &quot;Improve call counting mechanism (#1457)&quot; (#30105)
+
+* Revert &quot;Revert &quot;Disable test based on #129 (#130)&quot; (#2310)&quot;
+
+This reverts commit 427cd91.
+
+* Revert &quot;Fail FuncEval if slot backpatching lock is held by any thread (#2380)&quot;
+
+This reverts commit fc06054.
+
+* Revert &quot;Improve call counting mechanism (#1457)&quot;
+
+This reverts commit 3a457cb.
+</code></pre><p><strong>test 案例：</strong></p>
+<pre><code>test: add missing test cases for ensure and is-ignored (#987) 
+
+* test(esnure): add tests for untested code paths
+
+* test(is-ignored): add test case for untested code path
+</code></pre><p><strong>doc 案例：</strong></p>
+<pre><code>docs(angular.copy): fix `getter`/`setter` formatting 
+
+Fix the formatting of `getter`/`setter` in the known limitations section
+of the `angular.copy()` docs.
+</code></pre><p><strong>refactor 案例：</strong></p>
+<pre><code>refactor: use builtin Object.values instead of lodash/values (#968) 
+
+* refactor: use builtin Object.values instead of lodash
+</code></pre><h2 id="3-关于-commit-message-工具">3. 关于 Commit message 工具</h2>
+<p>git 世界中有不少撰写合格 Commit message 的工具，如： <a href="https://github.com/commitizen/cz-cli">Commitizen</a>。 但是，基于 TFS 的辅助工具少之又少，所以在此次编写指南中不建议使用工具，而是需要记住该规范中的内容，作为开发人员编写提交信息的基本能力。</p>
+<p>关于 Commit message 内容的校验，前期以人工检查为主，后期会参考行业工具 <a href="https://github.com/kentcdodds/validate-commit-msg">validate-commit-msg</a> 来定制检查工具。</p>
+<h2 id="4-生成-change-log">4. 生成 Change log</h2>
+<p>如果所有 Commit massage 都符合 Angular 格式，那么发布新版本时，Change log 就可以用脚本自动生成（需要设计脚本）。</p>
+<p>生成的文档包括以下三个部分：</p>
+<ul>
+<li>New features</li>
+<li>Bug fixes</li>
+<li>Breaking changes</li>
+</ul>
+<p>每个部分都会罗列相关的 Commit， 并且有指向这些 Commit 的链接。当然，生成的文档允许手动修改，所以发布前，还可以添加其他内容。</p>
+<p>例如：</p>
+<h3 id="310httpsgithubcomkarma-runnerkarmacomparev300v310-2018-10-22"><a href="https://github.com/karma-runner/karma/compare/v3.0.0...v3.1.0">3.1.0</a> (2018-10-22)</h3>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li>work around broken console methods (<a href="https://github.com/karma-runner/karma/Commit/873e4f9">873e4f9</a>), closes <a href="https://github.com//github.com/angular/angular.js/pull/16644/issues/issuecomment-407680658">/github.com/angular/angular.js/pull/16644#issuecomment-407680658</a></li>
+<li><strong>browser:</strong> emit &#39;browsers_change&#39; in collection (<a href="https://github.com/karma-runner/karma/issues/3183">#3183</a>) (<a href="https://github.com/karma-runner/karma/Commit/7634e71">7634e71</a>)</li>
+<li><strong>config:</strong> remove phantomjs in favor of chrome headless (<a href="https://github.com/karma-runner/karma/issues/3175">#3175</a>) (<a href="https://github.com/karma-runner/karma/Commit/0f8b2b1">0f8b2b1</a>)</li>
+<li><strong>init:</strong> Support ChromeHeadless in <code>validateBrowser</code> (<a href="https://github.com/karma-runner/karma/issues/3110">#3110</a>) (<a href="https://github.com/karma-runner/karma/Commit/eeadcf2">eeadcf2</a>)</li>
+<li><strong>middleware:</strong> simplify stripHost. (<a href="https://github.com/karma-runner/karma/issues/3115">#3115</a>) (<a href="https://github.com/karma-runner/karma/Commit/d65e911">d65e911</a>)</li>
+<li><strong>runner:</strong> Do not persist grep option across runs (<a href="https://github.com/karma-runner/karma/issues/3121">#3121</a>) (<a href="https://github.com/karma-runner/karma/Commit/c91cb81">c91cb81</a>)</li>
+<li><strong>runner:</strong> Make exit code configurable when tests are failing (<a href="https://github.com/karma-runner/karma/issues/3116">#3116</a>) (<a href="https://github.com/karma-runner/karma/Commit/74da748">74da748</a>), closes <a href="https://github.com/karma-runner/karma/issues/1300">#1300</a></li>
+<li><strong>test/client:</strong> revert const/let changes. (<a href="https://github.com/karma-runner/karma/Commit/c097ecf">c097ecf</a>)</li>
+</ul>
+<h4 id="features">Features</h4>
+<ul>
+<li><strong>config:</strong> Add config option for browser socket timeout (<a href="https://github.com/karma-runner/karma/issues/3102">#3102</a>) (<a href="https://github.com/karma-runner/karma/Commit/11e3a9d">11e3a9d</a>), closes <a href="https://github.com/karma-runner/karma/issues/2927">#2927</a></li>
+<li><strong>config:</strong> add support for ES modules (<a href="https://github.com/karma-runner/karma/Commit/e811adb">e811adb</a>)</li>
+<li><strong>frameworks:</strong> report start() errors back to server. (<a href="https://github.com/karma-runner/karma/issues/3126">#3126</a>) (<a href="https://github.com/karma-runner/karma/Commit/8257375">8257375</a>)</li>
+<li><strong>server:</strong> .dom files include HTML tags in page. (<a href="https://github.com/karma-runner/karma/issues/3178">#3178</a>) (<a href="https://github.com/karma-runner/karma/Commit/4651524">4651524</a>)</li>
+<li><strong>server:</strong> Add public API to force a file refresh (<a href="https://github.com/karma-runner/karma/Commit/dab8a82">dab8a82</a>)</li>
+<li><strong>server:</strong> Add stop method (<a href="https://github.com/karma-runner/karma/issues/3153">#3153</a>) (<a href="https://github.com/karma-runner/karma/Commit/6d96d8e">6d96d8e</a>), closes <a href="https://github.com/karma-runner/karma/issues/3149">#3149</a></li>
+<li><strong>server:</strong> Add support for encoded source files (<a href="https://github.com/karma-runner/karma/issues/3123">#3123</a>) (<a href="https://github.com/karma-runner/karma/Commit/68b37d3">68b37d3</a>)</li>
+</ul>
+<h3 id="300httpsgithubcomkarma-runnerkarmacomparev205v300-2018-08-09"><a href="https://github.com/karma-runner/karma/compare/v2.0.5...v3.0.0">3.0.0</a> (2018-08-09)</h3>
+<h4 id="bug-fixes-1">Bug Fixes</h4>
+<ul>
+<li><strong>config:</strong> wait 20s for browser activity. (<a href="https://github.com/karma-runner/karma/issues/3087">#3087</a>) (<a href="https://github.com/karma-runner/karma/Commit/88b977f">88b977f</a>)</li>
+<li><strong>config:</strong> Wait 30s for browser activity per Travis. (<a href="https://github.com/karma-runner/karma/issues/3091">#3091</a>) (<a href="https://github.com/karma-runner/karma/Commit/f6d2f0e">f6d2f0e</a>)</li>
+<li><strong>init:</strong> add &quot;ChromeHeadless&quot; to the browsers&#39; options (<a href="https://github.com/karma-runner/karma/issues/3096">#3096</a>) (<a href="https://github.com/karma-runner/karma/Commit/56fda53">56fda53</a>)</li>
+<li><strong>server:</strong> Exit clean on unhandledRejections. (<a href="https://github.com/karma-runner/karma/issues/3092">#3092</a>) (<a href="https://github.com/karma-runner/karma/Commit/02f54c6">02f54c6</a>), closes <a href="https://github.com/karma-runner/karma/issues/3064">#3064</a></li>
+<li><strong>travis:</strong> Up the socket timeout 2-&gt;20s. (<a href="https://github.com/karma-runner/karma/issues/3103">#3103</a>) (<a href="https://github.com/karma-runner/karma/Commit/732396a">732396a</a>), closes <a href="https://github.com/karma-runner/karma/issues/3102">#3102</a></li>
+<li><strong>travis:</strong> use the value not the key name. (<a href="https://github.com/karma-runner/karma/issues/3097">#3097</a>) (<a href="https://github.com/karma-runner/karma/Commit/90f5546">90f5546</a>)</li>
+<li><strong>travis:</strong> validate TRAVIS_Commit if TRAVIS_PULL_REQUEST_SHA is not set. (<a href="https://github.com/karma-runner/karma/issues/3094">#3094</a>) (<a href="https://github.com/karma-runner/karma/Commit/fba5d36">fba5d36</a>)</li>
+<li><strong>travis:</strong> Validate TRAVIS_PULL_REQUEST_SHA rather than TRAVIS_Commit. (<a href="https://github.com/karma-runner/karma/issues/3093">#3093</a>) (<a href="https://github.com/karma-runner/karma/Commit/a58fa45">a58fa45</a>)</li>
+</ul>
+<h4 id="breaking-changes">BREAKING CHANGES</h4>
+<ul>
+<li>Drop Support for Nodejs4 (<a href="https://github.com/karma-runner/karma/pull/3082">#3082</a>)</li>
+</ul>
+<h2 id="5-相关文件">5. 相关文件</h2>
+<ul>
+<li>《<a href="http://wiki.weihong.com/pages/viewpage.action?pageId=8880235&amp;preview=%2F8880235%2F8880237%2F%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD%E8%A7%84%E6%A0%BC%E8%AE%BE%E8%AE%A1%E6%B4%BB%E5%8A%A8%E6%B5%81%E7%A8%8B%26%E8%A7%84%E8%8C%83-R1.pdf">软件开发过程要求</a>》</li>
+</ul>
+<h2 id="版本信息">版本信息</h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>修改人</th>
+<th>修改内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2020/2/15</td>
+<td>Phoenix 架构平台</td>
+<td>初版建立</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/Commit message &#32534;&#20889;&#35268;&#33539;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

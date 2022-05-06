@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#36719;&#20214;&#27979;&#35797;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#36719;&#20214;&#27979;&#35797;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="软件测试规范">软件测试规范</h1>
+
+<blockquote><p>版次：2022年3月1日　第1版
+类型：程序文件
+部门：软件部
+上海维宏电子科技股份有限公司　版权所有</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>文件版本</th>
+<th>修改前文件版本</th>
+<th>主要修订内容和原因</th>
+<th>修订人</th>
+<th>修订日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>余晓霞</td>
+<td>2022.03.1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-目的和范围">1 目的和范围</h2>
+<p>本规范就公司的软件项目的测试活动、测试用例设计、自动化测试管理做出规定和指导。</p>
+<h2 id="2-术语和定义">2 术语和定义</h2>
+<p>为了统一认识，此处给出公司内部关于测试过程中的相关术语的定义。 </p>
+<ul>
+<li><strong>HotFix ：</strong> 也称为快速修复工程  ，是软件开发人员或程序员对已发布软件出现的 Bug 需进行紧急修复的术语。</li>
+<li><strong>项目测试：</strong> 新产品研发或被定义为项目类型的任务的测试，称为项目测试。</li>
+<li><strong>维护测试：</strong> 产品发布或交付之后，因修改（产品计划的特性改善（例如产品迭代计划发布）、纠正和紧急变更、操作环境的变更、软件升级以及缺陷和漏洞的补丁等）、迁移、退役而引起的测试，称为维护测试。</li>
+<li><strong>正例：</strong> 对此规则或原则给出的正确例子。 </li>
+<li><strong>反例：</strong> 对此规则或原则给出的反面例子。 </li>
+<li><strong>说明：</strong> 对活动、输入、输出、规则和原则等做必要的说明。</li>
+<li><strong>测试点：</strong> 根据测试范围以相对抽象的形式描述测试思路和预期。通常只有测试用例的标题，不要求提供详细的操作步骤或操作细节。</li>
+<li><strong>测试用例（Test Case)：</strong> 为了特定的目的（证明软件存在某问题）而设计的一组由测试输入、执行条件、预期结果构成的文档。它通常包含测试标题、优先级、前置条件、测试步骤、预期输出、测试数据、标签等七个基本要素。</li>
+<li><strong>测试执行记录：</strong> 在被测对象上执行测试用例/测试点的结果记录，记录测试用例/测试点的执行情况（例如：准备运行、通过、失败、阻塞、故意跳过等）。</li>
+<li><strong>测试版本：</strong> 当被测对象是在非发布分支打包的组件/软件，称为测试版本。 </li>
+<li><strong>发布版本：</strong> 当被测对象是在发布分支打包的组件/软件，称为发布版本。 </li>
+<li><strong>通用必测：</strong> 即软件中常用/基本业务功能的正向操作测试，或典型异常操作测试，通常外发类软件版本都需要进行此类测试。 </li>
+<li><strong>代码片段：</strong> 在代码区域出现中括号中带中文字的及符号…， 如：[代码片段]或…， 则一般表示代码片段。
+## 3 测试活动规范
+### 3.1 测试分析
+必须对需求规格规格说明书或其它测试依据进行测试需求分析，解决需求疑问（例如：需求表述存在歧义或错误、缺少用户故事等），明确“测试什么”。
+### 3.2 测试计划</li>
+<li>必须输出测试计划文档，文档的评审人可以是程序经理或项目内测试经验丰富的测试。测试计划文档应该包含内容，但不仅限于如下：<ul>
+<li>确定测试的范围、目标和风险。</li>
+<li>决定使用的质量度量指标和如何测量。</li>
+<li>安排测试分析、设计、执行和评估活动的进度表，可以按特定日期安排（例如，在顺序开发中）或以每次迭代的周境安排（例如，在迭代开发中）。</li>
+<li>确定相关交付成果和测试文档的详细程度和结构（例如，通过提供模板或示例文档）。</li>
+</ul>
+</li>
+<li>项目测试的测试过程应该进行测试计划活动。维护测试的测试过程应根据变更内容的风险程度和影响范围或其它实际情况决定是否需要进行测试计划活动；通常情况下 HotFix 的测试过程不进行测试计划活动。
+### 3.3 测试设计</li>
+<li>测试设计活动必须输出测试用例或测试点。内网研发的项目测试，必须输出测试用例。</li>
+<li>维护测试的测试设计活动应根据变更内容的风险程度、影响范围、是否已存在历史用例、和实际情况，决定是否输出用例。若变更内容属于通用必测、内网开发的产品或已存在历史用例，则必须输出新增或完善后的测试用例；若变更内容是客户定制类、配置类或外网开发类需求，则可输出测试点。</li>
+<li>在测试过程中，可不进行测试设计活动的情形有：产品从一个平台迁移到另一个平台、产品已退役、或 HotFix 。</li>
+<li>测试用例编制或完善之后，必须进行用例评审活动，评审人应该包含，但不仅限于：产品管理、开发、项目内经验丰富的测试、架构师。评审方式不做限制，可以是正式评审或非正式评审，对应影响范围广、难度高和测试要求高的项目，宜进行正式评审活动。
+### 3.4 测试执行</li>
+<li>在产品提测前，应该创建测试执行所需的用例集。例如：冒烟测试用例集、功能测试用例集、回归测试用例集等。</li>
+<li>产品首次提测之后，必须48小时内进行冒烟测试，并给出冒烟测试结论。</li>
+<li>发布版本测试必须进行通用必测。</li>
+<li>当产品发布流程为：测试版本 -&gt; 发布版本时，在发布版本应该对测试版本产生的严重级别为“致命”的 Bug 进行回归测试。</li>
+<li>冒烟测试和通用必测必须执行自动化测试。</li>
+<li>发布版本测试宜进行交叉测试（即测试之间相互交互测试）。</li>
+<li>Bug 记录和跟踪必须按《缺陷跟踪流程》执行。</li>
+<li>测试执行过程必须做测试执行记录。
+### 3.5 测试结束</li>
+<li>检查测试用例是否 100% 执行，已解决的 Bug 是否都已关闭，未解决的 Bug 是否都已正确处理，若均回答“是”，则输出测试总结报告。</li>
+<li>必须对测试过程中产生的测试件进行归档，例如：把完善后的测试用例上传代码管理服务器（Git/TFS），测试报告、测试记录或测试点以附件形式或备注形式附在对应的工作项或问题上。</li>
+<li>应该进行测试总结与改进，纳入测试团队知识库，从而推动测试工作的不断优化与改进。
+### 3.6 测试监督和控制</li>
+<li>测试结束之后，必须进行测试评估活动，确定是否满足产品准出准则，若满足，则评估通过，发布产品。测试评估活动包括但不限于：用例执行完整性、缺陷处理合理性、测试记录规范性、测试的度量标准。评估人由程序经理或项目内经验丰富的测试负责。</li>
+<li>测试过程中，当测试实际进度与计划的进展差异较大，或存在其它风险时，宜向利益相关方发送测试进度报告。
+## 4 测试用例设计规范
+### 4.1 测试用例设计总则</li>
+<li>可以作为独立功能的需求，需编写基于该功能的测试用例。若一个需求里面包含多个功能，可以分解为多个功能，针对每个功能设计相关用例。</li>
+<li>设计应该优先考虑功能性、其次是可靠性、易用性和其它特性。其中功能性优先考虑正向测试（功能正常）、其次是负向测试（功能异常）。</li>
+<li>功能相关用例不仅仅考虑单一功能，也应该考虑功能和功能之间的交互影响。</li>
+<li>每条测试用例粒度合理，测试目的应该唯一，如：该条用例不能够既包含正向测试又包含负向测试；或者既包含功能测试，又包含可靠性测试。原则上测试点唯一，或者根据优先级别和执行步骤、执行顺序，可以酌情合并和拆分。</li>
+<li>测试用例设计方法优先推荐场景分析法(基本流、备选流)，优先保证默认或者常用参数、条件的正确性，再基于等价类、边界值等方法考虑多组数据的组合。</li>
+<li>测试步骤/预期结果具有普遍适应性，宜考虑先设计“共享用例”，再引用。</li>
+<li>功能的界面测试与业务逻辑测试应该分离设计。</li>
+<li>每个用例必须独立运行，用例间无依赖关系。</li>
+<li>描述使用的专有名词或术语应该与相关使用说明文档（例如：需求规格说明书）中的保持一致，用词应该规范、明确、量化、无二义性。
+### 4.2 测试用例基本要素
+#### 4.2.1 用例标题
+概述测试用例的主要内容，明确测试用例的意图。一个简单、清晰、有针对性的标题，能让人快速理解设计人的测试思路，从标题即可知道测试点及预期结果，也能方便后续使用人对用例的检索。</li>
+</ul>
+<p><strong>规范：</strong></p>
+<ul>
+<li><p>用例标题必须使用格式：<strong>[用例编号]_测试标题描述</strong>。  其中，用例编号在功能范围内必须唯一，必须使用字母和数字组合，以字母“TC”开头，用例编号中禁止包含下划线“_”。
+<strong>正例：</strong> 直排换刀功能</p>
+<pre><code>TC001_验证换刀功能基本流程正确（**功能正确性验证**）
+TC002_换刀时未检测到相关到位信号，换刀停止（**功能异常处理/异常测试**）
+TC003_验证非空闲状态，换刀操作无效（**异常测试**）
+</code></pre><h4 id="422-前置条件">4.2.2 前置条件</h4>
+<p>测试用例执行的前提条件，如果不满足这些条件，则无法进行执行测试。</p>
+</li>
+</ul>
+<p><strong>规范：</strong></p>
+<ul>
+<li>非必要的用例基本要素，当没有前置条件时，可忽略此要素。</li>
+<li>在团队内（或业务领域内）约定的默认前置条件，无需填写到前置条件。
+<strong>正例：</strong>数控系统（NcStudio）约定以下内容为默认前置条件
+<code>启动NcStudio应用程序
+系统空闲状态
+软件未回机械原点
+参数设置为默认值
+仿真环境</code></li>
+</ul>
+<h4 id="423-测试步骤">4.2.3 测试步骤</h4>
+<p>如何执行这个测试用例，每步的操作是什么。</p>
+<p><strong>规范：</strong></p>
+<ul>
+<li>一条用例的测试步骤不宜超过15条。</li>
+<li>测试数据和测试步骤要分离，步骤里面不应编写测试数据。</li>
+<li>若存在共享步骤（重复使用率高和通用性较强的测试步骤，使用范围不受项目的限制。例如文本框的输入验证、参数默认值的验证、参数设置权限验证等），则应该直接引用共享步骤。</li>
+<li><p>单个步骤描述时禁止包含多个不同类型的操作。</p>
+<p><strong>反例：</strong></p>
+</li>
+</ul>
+<pre><code>  装载刀路，打开图层设置对话框，切割参数-特殊工艺中勾选“无感穿孔”勾选项，设置穿孔类型为类型3，穿孔高度10 mm
+</code></pre><p>  <strong>正例：</strong></p>
+<pre><code>step1: 装载刀路
+step2: 打开图层设置对话框
+step3: 切割参数-特殊工艺中勾选“无感穿孔”勾选项
+step4: 设置穿孔类型为类型3，穿孔高度10 mm
+</code></pre><h4 id="424-预期结果">4.2.4 预期结果</h4>
+<p>预期结果是和测试步骤对应起来，操作后希望程序或系统返回或特征。</p>
+<p><strong>规范：</strong></p>
+<ul>
+<li><p>为简化阅读和执行，保证结果的一致性，预期结果应尽可能具体和明确，特别是针对坐标、速度、状态和正确/错误信息的描述。</p>
+<p><strong>正例:</strong> 回机械原点功能——Z轴回机械原点检测到精定位信号后，预期结果描述如下：</p>
+<pre><code>1. 操作信息提示栏提示:Z轴粗定位信号与精定位信号之间的距离是***（单位是直线或者角度标准单位）；
+2. Z轴以200 mm/min的速度回退-2 mm后运动停止；
+3. Z轴运动结束后，操作状态为空闲，操作状态附加信息为正常结束；
+4. 坐标显示区Z轴名称前出现机械原点标志，Z轴机械坐标为0，Z轴工件坐标为0（前置条件是所有偏置设置为0）
+</code></pre></li>
+</ul>
+<h4 id="425-测试数据">4.2.5 测试数据</h4>
+<p>测试时使用的测试数据。</p>
+<p><strong>规范：</strong></p>
+<ul>
+<li>测试数据要具体，比如具体刀路文件、具体偏置设置值。</li>
+<li>若不同前置置条件、不同的输入数据对于软件功能的影响不同，设计数据可以和前置条件进行组合设计。</li>
+<li>测试数据可以不是一个实际的参数，例如：系统的状态、功能入口。</li>
+<li>测试过程中使用的刀路文件，如客户刀路、特殊刀路等，归档至：
+<code>\\172.16.10.123\01.安全内网文件夹\01.研发部文件\02.受限文件\01.软件部\03.测试\03.刀路文件</code></li>
+</ul>
+<h4 id="426-标签">4.2.6 标签</h4>
+<p>标签为用例管理提供了一种灵活的管理方式，便于用例查找和复用。个用例可以包含多个标签，团队也可根据项目的实际情况自行定制。</p>
+<p><strong>规范：</strong></p>
+<ul>
+<li>用例优先级标签（<strong>必须</strong>）：P1~P4；优先级定义说明参考 4.2.7 章的用例优先级。</li>
+<li>测试类型标签（<strong>必须</strong>），主要包括：功能、易用、性能、可靠、兼容；编写正例：测试类型=功能。</li>
+<li>功能使用范围标签（可选），主要包括：通用功能、XXX客户定制功能。</li>
+<li>通用必测标签（可选），若用例属于通用必测，则添加标签：通用必测。</li>
+<li>执行方式标签（可选），若实现自动化，可以添加标签：Auto。</li>
+<li>机型标签（可选），例如：机型=十轴链式刀盘。</li>
+<li>环境标签（可选），例如：环境=Lambda21B。</li>
+</ul>
+<p><strong>说明：</strong>“必须” 的标签，必须在测试用例的标签出标记有。</p>
+<h4 id="427-用例优先级">4.2.7 用例优先级</h4>
+<p>优先级即用例在该功能模块中的重要级别，通过功能的重要性和用户实际使用频率两个维度阐述用例的重要级别。用例优先级可以作为明确不同测试类型（开发自测、冒烟测试、全面测试（包括功能和非功能性测试）、回归测试、自动化覆盖等）的测试范围的重要依据。优先级定义四个等级 P1 ~ P4 具体详述如下。</p>
+<ol>
+<li><strong>P1</strong> ： 覆盖功能或业务的重要点部分，用户使用频繁。通常为关键业务流，此用例通常可以确认此版本是否可测。
+<strong>优先级和测试类型的关系：</strong> <ul>
+<li>开发自测必测</li>
+<li>冒烟测试必测</li>
+<li>若功能属于通用功能，则其属于通用必测</li>
+<li>自动化测试应该覆盖</li>
+<li>版本兼容性测试应该执行此用例</li>
+</ul>
+</li>
+<li><strong>P2</strong> ： 覆盖功能或业务的次要部分，用户偶尔使用。一般为备选业务流、边界用例、常见的反向用例。
+<strong>优先级和测试类型的关系：</strong> <ul>
+<li>单功能回归测试时必测</li>
+<li>自动化测试应该覆盖</li>
+</ul>
+</li>
+<li><strong>P3</strong>： 覆盖功能或业务的次要部分，用户几乎不使用。一般为不常见的非法操作、异常场景。
+<strong>优先级和测试类型的关系：</strong> <ul>
+<li>单功能回归测试时必测</li>
+<li>自动化测试应该覆盖</li>
+<li>可靠性测试应该覆盖</li>
+</ul>
+</li>
+<li><strong>P4</strong> ： 覆盖功能或业务的次要部分，用户不会如此操作。通常覆盖功能相关的易用性、性能、可靠性。
+<strong>优先级和测试类型的关系：</strong> <ul>
+<li>性能测试或稳定性测试覆盖。 
+### 4.3 测试用例管理规范</li>
+</ul>
+</li>
+<li>必须使用代码的方式管理测试用例（使用指导应参考《手工测试用例编写指导书-基于RobotFramework》），测试用例存放在版本管理服务器（Git/TFS）。</li>
+<li>当手工用例完全转换成自动化用例之后，应该作废手工用例或删除手工用例。</li>
+<li>当手工用例只有部分可以转换成自动化用例时，应该把此用例按照手工和自动化进行拆分。</li>
+<li>完善用例时，必须先确认是否已存在相同的用例，若已存在相同的用例，则完善用例，否则新增用例。若是自动化用例，则更新自动化脚本。
+## 5 自动化测试管理规范</li>
+<li>编程规范宜遵循软件部的<a href="http://www.wiki.org:81/%E7%BB%B4%E5%AE%8F%E7%A0%94%E5%8F%91/%E7%BC%96%E7%A0%81%E9%98%B6%E6%AE%B5/%E5%88%B6%E5%BA%A6%E8%A7%84%E8%8C%83/%E8%BD%AF%E4%BB%B6%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83.pdf">软件编程规范（内网）</a> 。</li>
+<li>基于 RobotFramework 框架的自动化应按照《RobotFramework 自动化测试框架使用指导书》实施。</li>
+<li>UI 变化频繁的产品不宜实施 UI 自动化。功能逻辑变更频繁或尚不稳定的产品不宜实施自动化。
+### 5.1 用例组织规范</li>
+<li>用例设计规范应遵守第 4 章的测试用例设计规范。</li>
+<li>功能性的自动化测试用例必须包含有断言（即预期结果），否则属于无效用例。</li>
+<li><p>UI 自动化测试脚本设计应该使用分层的思想，即把 UI 页面控件的获取和操作封装成函数，供组织用例时调用；不应在测试用例里直接引用页面元素的定位和操作。以下正反例是基于 RobotFramework 框架的代码片段。</p>
+<p><strong>反例：</strong>
+用例文件</p>
+<pre><code class="lang-python">*** Test Cases ***
+TC001_验证按钮可用   #用例标题
+ click   //Button[@AutomationId=&#39;1&#39;]     #单击xpath=//Button[@AutomationId=&#39;1&#39;] 的页面元素
+    [代码片段]
+</code></pre><p><strong>正例：</strong></p>
+<p>1、先把 UI 页面控件的获取和操作，在文件 A 里定义。</p>
+<pre><code class="lang-python">*** Variables ***
+button_xpath=&quot;//Button[@AutomationId=&#39;1&#39;]&quot;;      #Xpath 地址
+
+*** Keywords ***
+ClickButton                          #定义单击按钮的关键字（函数）
+ click   ${button1_xpath}        #单击 xpath 等于变量 ${button_xpath} 的页面元素
+</code></pre><p>2、用例文件使用文件 A 已定义的操作按业务流组成用例。 </p>
+<pre><code class="lang-python">*** Settings ***
+Resource A       #载入 UI 页面控件的获取和操作文件 A
+
+*** Test Cases ***
+TC001_验证按钮可用 #用例标签
+ ClickButton     #调用UI 页面控件的获取和操作文件 A 里定义的单击按钮的关键字（函数） ClickButton
+    [代码片段]
+</code></pre></li>
+<li><p>UI 自动化测试，当有对话框弹出或进入非首次进入的默认页时，必须在后置处理模块把对话框关闭或返回首次进入的默认页。避免在出现异常或执行失败时，影响后续用例的执行。</p>
+</li>
+<li><p>UI 对象的 xpath 应该使用相对路径。</p>
+</li>
+</ol>
+<h3 id="52-自动化版本管理规范">5.2 自动化版本管理规范</h3>
+<ol>
+<li>测试工具或测试库的版本管理应遵循如下规范：<ul>
+<li>非 Hotfix 的修复禁止在主分支上直接修改，必须在开发分支上进行维护开发，，待测试（维护人负责测试）通过之后，通知相关方（软件部），待其验收通过之后，才可合并到主分支上。</li>
+<li>开发分支合并主分支后，应该在其中一台测试执行机上进行发布测试（由变更人进行测试，软件部验收）通过之后，才可发布到各个测试执行机。</li>
+</ul>
+</li>
+<li>提交或合并到主分支的测试脚本，必须经过自测，自测检查列表如下，但不仅限于：<ul>
+<li>无语法错误。</li>
+<li>单个测试套件执行通过。</li>
+<li>持续集成环境执行通过，且不影响其他用例的执行。</li>
+</ul>
+</li>
+<li>当自动化用例体量较大，或参与开发人员较多时，宜规划分支管理策略（团队内的自动化测试负责人），不宜主分支上维护。</li>
+</ol>
+<h3 id="53-持续集成管理规范">5.3 持续集成管理规范</h3>
+<ol>
+<li><p>Jenkins Job 名称或 TFS 生成定义的名称命名格式：部门名称_[产品名称]_测试环境_[其它标识或描述]，中括号“[ ]”的字段选填。</p>
+<p><strong>正例：</strong></p>
+<pre><code>金属切屑_TZ820_NC300CX_RobotFramework
+金属切屑_TZ820_NC300CX_Lua
+激光加工_仿真环境(win10)_发版前回归测试
+</code></pre></li>
+<li>必须保证自动化持续集成环境的稳定性，禁止出现5天以上的不可用情况。
+### 5.4 自动化运行规范</li>
+<li>在持续集成环境，使用自动化测试，执行失败之后，如果是脚本问题，或无法定位的问题类型时，应该告知相关人员（脚本编写人或自动化维护人员）尽快对问题进行定位分析和修复。</li>
+<li>当自动化持续集成环境不可用时，可在测试环境上离线执行自动化测试。
+## 6 参考文献</li>
+<li>国际软件测试委员会的大纲《ISTQB 认证测试工程师_FL大纲-2018版_V3_1》。</li>
+<li>《微软软件研发的奥秘 MSF 精髓》。</li>
+<li>软件产品质量模型标准 GB/T 16260 。</li>
+</ol>
+<p><strong>编制：</strong> 余晓霞                                 <strong>审核：</strong>                                      <strong>批准：</strong></p>
+<p><strong>审批链接：</strong></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/&#27979;&#35797;&#31649;&#29702;&#35268;&#33539;/&#36719;&#20214;&#27979;&#35797;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

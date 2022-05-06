@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CNC &#24179;&#21488;&#32570;&#38519;&#36319;&#36394;&#27969;&#31243; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CNC &#24179;&#21488;&#32570;&#38519;&#36319;&#36394;&#27969;&#31243; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cnc-平台缺陷跟踪流程">CNC 平台缺陷跟踪流程</h1>
+
+<p>版次：2021年11月16日　第1版</p>
+<p>类型：程序文件</p>
+<p>上海维宏电子科技股份有限公司    版权所有</p>
+<table>
+<thead>
+<tr>
+<th><strong>修改历史</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件版本</strong></td>
+<td><strong>修改前文件版本</strong></td>
+<td><strong>主要修订内容和原因</strong></td>
+<td><strong>修订人</strong></td>
+<td><strong>修订日期</strong></td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>李艳</td>
+<td>2021.11.16</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-引言">1 引言</h2>
+<h3 id="11-编写目的">1.1 编写目的</h3>
+<p>为规范 CNC 平台缺陷的提交和跟踪过程， 特制定此流程。</p>
+<h3 id="12-读者对象">1.2 读者对象</h3>
+<p>维宏电子科技股份有限公司 CNC 平台从事产品软件测试及相关人员。</p>
+<h3 id="13-引用标准">1.3 引用标准</h3>
+<p>无。</p>
+<h2 id="2-术语定义">2 术语/定义</h2>
+<h3 id="21-缺陷术语解析">2.1 缺陷术语解析</h3>
+<p>为了统一认识，此处给出公司关于测试过程中， 相关术语的定义。</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>名称</th>
+<th>定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>缺陷</td>
+<td>所谓缺陷，就是产品（包含程序、数据、文档、 硬件） 中不符合用户需求 的问题，通常又叫 Bug。 经过一步或多步操作后，软件实际运行结果与预期结果不符合，即定义为 一个 Bug。若已知不同 Bug 现象产生的本质原因相同可归类为一个 Bug。</td>
+</tr>
+<tr>
+<td>2</td>
+<td>缺陷跟踪</td>
+<td>从缺陷提交至缺陷关闭的整个过程的跟踪，包括缺陷提交、评估、指派、 修复、 验证、关闭。</td>
+</tr>
+<tr>
+<td>3</td>
+<td>外部缺陷</td>
+<td>非 CNC 平台人员在使用过程中发现的 Bug，称之为外部缺陷或外部 Bug。</td>
+</tr>
+</tbody>
+</table>
+<p>表格 1 缺陷术语</p>
+<h3 id="22-缺陷基本属性解析">2.2 缺陷基本属性解析</h3>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>解释</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标题</td>
+<td>Bug 一般分为外部 Bug 以 及内部 Bug，主要包括 Bug 现象、存在范围的简述， 如哪个产线、功能， Bug 主要现象等。 外部反馈的 缺陷需要记录反馈人。</td>
+<td>外部缺陷格式： 外部反馈-【产线】 -【Jira 编号】 -Bug 简 述-反馈人 例：外部反馈-【产品 I 部】 -【CNC-3352】 -通道 1 自动 化运行至手动连续脚本过程中偶现崩溃-李荣楠 内部缺陷格式： 测试类型-【功能名】 -Bug 简述 测试类型：组件测试/固件测试/集成测试/自动化测试 例： 组件测试-【动态调整加加速度】 -动态调整开关对限 速曲线动态加加速度调整不生效 通用 Bug 和历史 Bug 怎么体现-在标记中体现</td>
+</tr>
+<tr>
+<td>Bug 类型</td>
+<td>Bug 所属类型。</td>
+<td>1. 需求-需求变更： 因需求的获取、转换、变更导致的 缺陷 2. 需求-需求缺陷： 因需求的理解、设计不全或错误导 致的缺陷 3. 方案-功能模块设计缺陷： 需求正确，因功能模块设 计方案不足或错误导致的缺陷 4. 方案-兼容性设计缺陷： 需求正确，因兼容性设计方 案不足或错误导致的缺陷 5. 方案-算法设计缺陷： 需求正确，因算法设计方案不 足或错误导致的缺陷 6. 方案-约束性设计缺陷： 需求正确， 因约束性设计方 案不足或错误导致的缺陷 7. 规格-非功能规格缺陷： 需求正确，因兼容性/性能/ 可靠性/本地化等功能规格缺失/错误导致的缺陷 8. 规格-功能规格缺陷： 需求正确，因功能性规格缺失/ 错误导致的缺陷 9. 编码/集成-编码错误： 需求、方案正确，因编码错误 导致的缺陷 10. 编码/集成-第三方库问题： 需求、方案正确，因第三 方库局限性或者错误导致的缺陷 11. 编码/集成-自测问题： 需求、方案正确，因未自测导 致的缺陷 12. 发行-编译/发行问题： 需求、方案、编码正确，因编译/发行错误导致的问题 13. 发行-代码签入问题： 需求、方案、编码正确，因代 码签入遗漏、多签或错误导致的缺陷</td>
+</tr>
+<tr>
+<td>严重级别</td>
+<td>Bug 严重级别（Severity）是指该Bug 在多大程度等级，从高到低依次为：Bug 的严重级别分为四个致命、严重、一般、建议。原则：所有bug的严重等上影响产品的正常使用。级判断都是从高到低判断，优先匹配高等级。</td>
+<td>1.致命输入正确的数据，无法完成功能，如：软件异常关闭、无法正常加工和非临时数据损坏或丢加工时出现乱跑现象。偏位等造成加工轨迹不正确。导致客户无法正常加工。如：件自身运行的依赖文件及用户加工依赖的文件，正常加工时频繁出现的机床震动。统死机、蓝屏等。导致非临时数据损坏或丢失。非临时数据是指软权操作等。校平分中Z轴上台不够导致撞切割头。无效、抱闸无效、主轴开启/关闭不受控制、越对外提供的函数、接口不可用或实现错误，保存失败。文件被损坏和丢失。2.严重操作正常，无法完成功能，如：操作系统崩溃，例如：被测软件导致操作系软件崩溃、卡死（不可恢复正常使用）等。获取不到obj对象。导致人员安全和软件信息安全的问题，如：紧停由于偏位，造成设备损坏。例如：通过平台函数失。导致设备（横梁、刀具、切割头等）损坏。如：导致软件异常关闭。如：【要求】该类Bug 需立即安排修复。【范例】【要求】该类Bug 需排在高优先级修复。输入有效的数据，无法完成功能，例如：滤波输入的数据类型是正整数，输入5，提交【定义】该类Bug 可能导致安全问题、设备损坏、数据正确的情况下）、动态数据损坏或丢失。固件升级之后，Z轴异常下扎。如：端口配置文件、lua 脚本、用户加工文件等【定义】该类Bug 导致无法完成功能（操作和输入【范例】access.TryGetOwnerObject(out object obj)，设备通信问题，例如：软件正常重启或断电重启之后，设备连接不上。错误；或加工工件数量被清零。操作正常，出现性能问题，如：研发评审会确认）。【要求】该类Bug建议在正式发布版前修复。错，例如：软件连续重启2661次后，重启当端口映射表中存在错误或无效、空端口被某杀毒软件拦截。苛刻或极端的特定条件下，造成软件功能出【定义】该类Bug 在非常规操作或输入数据不正确低于之前版本的性能（除非该性能指标通过能问题严重影响用户使用软件的。出，例如：加工过程出现卡顿，之后可以自行过程中产生的数据，这里的动态数据仅限于客如：重启之后，加工任务列表中的加工任务状态输入数据不正确，导致功能失效，如：失败。当加工期间，由于过程结果不符合预期，即恢复。户关心的数据和恢复正常加工的必需数据。例3.一般无功能规格及无之前版本情况下，由于性加工操作时或加工过程，直接抛出代码异常抛出代码异常信息。不影响功能的显示性缺陷，如：信息，例如：操作开始、停止或断点继续时，功能的完成需要长时间处理，而期间未给【范例】使最后可完成加工，也可称之为错误的输非常规操作，导致功能失效，如：时导致功能失效或不影响功能的显示性缺陷。时，在拓扑配置中替换朗达控制器会产生未件功能失效。例如：客户安装过程过程，界面出现不影响功能的界面设计类问题，例禁止暂停抬刀功能失效。作控件定位不准确等。无法完成业务功能。例如：完成对刀过程，低于功能规格中约定的性能。由于用户特定操作系统等环境因素导致软处理的异常。导致动态数据损坏或丢失。动态数据是指软件运如：样式差异、错别字、显示值不统一、操出合理提示。4.建议提示信息优化，更加友好且有指导性；例如：对【定义】该类Bug 是对产品功能提出的建议或意见，使其向更加良好、积极的方向发展。于复杂的功能操作，每一步都有明确的提示信息。【要求】该建议可根据组内安排进行优化。【范例】产品功能设计不易于测试人员和开发人员测试。</td>
+</tr>
+<tr>
+<td>优先级</td>
+<td>结合严重级别、 风险等级、 复现概率等给出的修复优 先级</td>
+<td>优先级 1： 1 为最高优先级  严重级别为致命或严重；风险等级为高或中；复 现概率较高的 Bug 优先级 2： 2 为中等优先级  严重级别为致命或严重；风险等级为中或低； 复 现概率较低的 Bug  严重级别为一般；风险等级为中或低； 复现概率 高或必现的 Bug 优先级 3： 3 为最低优先级  严重级别为一般；风险等级为低， 复现概率低的 Bug  严重级别为建议的 Bug 以上仅供参考，具体看版本规划以及资源情况</td>
+</tr>
+<tr>
+<td>发现版本</td>
+<td>Bug 所属组件版本号</td>
+<td>发现 Bug 的组件版本号。 例： App 2.712.0.0_alpha5</td>
+</tr>
+<tr>
+<td>功能归属</td>
+<td>Bug 所属功能模块</td>
+<td>Bug 所属功能模块，可与 Bug 标题中的功能名保持一致。</td>
+</tr>
+<tr>
+<td>源码仓库</td>
+<td>该功能所属源码仓库</td>
+<td>一个 Bug 修改多个组件的情况下只填写最为主要或者导 致该问题根本原因的源码仓库。</td>
+</tr>
+<tr>
+<td>复现概率</td>
+<td>Bug 的复现概率</td>
+<td>分为必现/概率复现/仅一次，包含尝试次数以及复现次数。 描述 Bug 时可通过复现概率/尝试次数/复习次数来量化表 示该 Bug 的出现频率。</td>
+</tr>
+<tr>
+<td>Bug 描述</td>
+<td>记录 Bug 现象、 Bug 重现 步骤、期望结果、测试环 境及分析建议， 若 Bug 非 每次出现，可补充说明出 现的概率。</td>
+<td>===格式要求============== 【测试环境】 【Bug 步骤】 1. /<em>描述 Bug 重现的详细步骤，尽量保证每步仅做一个 操作</em>/； 2.„„ 【实际结果】 【预期结果】 ====完毕================</td>
+</tr>
+<tr>
+<td>开发分析</td>
+<td>通过引入者、引入版本、 Bug 类型、原因分析、纠 正措施、预防措施来分析 该 Bug 产生的原因。</td>
+<td>引入者： 通过代码分析以及代码的签入者来判断引入者。 引入版本： 通过代码分析以及代码签入时间来判断引入版 本。 Bug 类型： 见上方 Bug 类型详解。 原因分析： 分为直接原因分析以及根本原因分析。 直接原因为导致该 Bug 产生的直接技术原因。 根本原因需要结合开发生命周期，使用鱼骨图进行人为/ 外界原因的探究，详见\172.16.10.88\02.各部门受限\13. 软件平台测试\E.质量改进\01.缺陷分析\缺陷分析文档\培 训-缺陷分析-内训-软件平台_R3.1.pptx 纠正措施： 修复该 Bug 的技术方案。 预防措施： 结合引入原因、流出原因、开发生命周期以及 Bug 类型综合考虑可以预防的手段。</td>
+</tr>
+<tr>
+<td>测试分析</td>
+<td>通过漏测者、漏测原因、 漏测分析、 纠正措施、预 防措施来分析该 Bug 漏测 的原因。</td>
+<td>漏测者：原本测试该功能的人员，不知道的情况下随意填 写。 漏测原因： 01. 需求了解不透彻 02. 用户场景测试设计遗漏 03. 用例粗犷，描述不清晰 04. 黑盒测试难以覆盖 05. 未按用例执行 06. 回归测试策略问题 07. 测试环境未能模拟真实环境 08. 测试资源限制，导致场景未覆盖 09. 内部 Bug 未处理 10. 未进测试流程 11. 历史 Bug 12. 第三方库引入 漏测分析：结合漏测原因描述具体情况。 纠正措施： 完善导致该 Bug 流出的主要原因。 预防措施：结合引入原因、流出原因、开发生命周期以及Bug 类型综合考虑可以预防的手段。</td>
+</tr>
+</tbody>
+</table>
+<p>表格 2 缺陷基本属性</p>
+<h2 id="3-bug-跟踪流程">3 Bug 跟踪流程</h2>
+<p>结合公司的测试过程， 缺陷跟踪流程分为如下阶段：
+1） 缺陷提交
+2） 缺陷评估
+3） 缺陷指派
+4） 缺陷修复
+5） 缺陷验证
+6） 缺陷关闭  </p>
+<h3 id="31-流程图">3.1 流程图</h3>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16513731056531.png" alt="img"></p>
+<h3 id="32-流程详解">3.2 流程详解</h3>
+<h4 id="321-缺陷提交">3.2.1 缺陷提交</h4>
+<p>在内部测试、使用、调试、销售产品过程中，对发现的问题在指定缺陷管理系统中进行记录，以
+上报给相关人。
+\1. Bug 提交分为：新建 Bug 与激活已有 Bug。
+ Bug 新建： Bug 在 Bug 库中不存在， 则新建 Bug。
+ Bug 激活： Bug 在 Bug 库中已经存在且为非活动状态， 则重新激活该 Bug， 并确定是
+否需要关联相关任务项。 </p>
+<p>\2. Bug 以 Bug 工作项形式提交。 具体填写要求可参照具体的项目管理工具，如《TFS 工具使用
+指导书-Rn.doc》
+\3. 一个 Bug 一个工作项。
+\4. Bug 版本数需要累计填写
+ 比如该 Bug 在多个组件版本或者集成版本出现，则累计填写。
+\5. Bug 描述时需要精确，可从以下几个角度方面：
+ 语言尽量简洁，太过冗长时建议分段描述。
+ 尽量量化，使用数字描述。
+ 语言描述不清的内容建议使用截图、录屏等方式。
+ 可以尝试对测试中的变量进行控制分析，记录测试结果。
+\6. 提交 Bug 时，如果为难复现 Bug，或者步骤复杂的 Bug，建议提供以下内容帮助开发分析：
+ 错误弹窗截图
+ 应用程序日志： NcStudio\ActiveConfig\ncstudio.log
+ Windows 事件中心日志：计算机管理\系统工具\Windows 日志\应用程序
+ 当前进程的 dump 文件
+ C:\Windows\Minidump 下 dump 文件
+\7. 在工作项测试过程中发现的问题，直接在当前工作项的“链接”页面新建 Bug 工作项（链接
+类型可以视情况选择，一般为“测试方”）； 随机测试发现的 Bug，在对应区域创建 Bug 工作
+项。</p>
+<h4 id="322-缺陷评估">3.2.2 缺陷评估</h4>
+<p>提交至缺陷管理系统中的缺陷， 需评定其后续的处理措施。
+\1. 若为外部 Bug， Bug 提交后由测试组长安排人员进行 Bug 重现并记录重现结果。 根据重现结
+果由产品总工进行评估。
+\2. Bug 提交后，若为当前任务项测试出的 Bug，由开发责任人进行评估，否则由产品总工进行
+评估。
+\3. 经评估后，在缺陷管理系统中给出该缺陷的处理措施。</p>
+<h4 id="323-缺陷指派">3.2.3 缺陷指派</h4>
+<p>缺陷评估后若需要进行调查、处理，则分配相应人员进入缺陷修复过程。
+若为当前任务项测试出的 Bug，则直接由当前开发负责人修复，当前测试人员进行回归，否则由
+产品总工指派开发负责人，测试组长指派测试负责人。</p>
+<h4 id="324-缺陷修复">3.2.4 缺陷修复</h4>
+<p>由指派的开发责任人对缺陷进行定位分析、修复处理。
+\1. Bug 修复后开发人员需进行自测，确保缺陷得以修复。
+\2. Bug 修复后开发人员需提交原因分析及处理说明。
+\3. 缺陷定位分析过程中，发现 Bug 难以修复或影响范围太大，综合 Bug 修改成本、影响程度
+等原因评估不处理的，重新修改 Bug 处理意见为不处理，进入缺陷关闭阶段。
+\4. 缺陷定位分析过程中，发现 Bug 修改比较复杂，综合 Bug 影响程度等原因评估暂缓处理的，
+重新修改 Bug 处理意见为暂缓处理。</p>
+<h4 id="325-缺陷验证">3.2.5 缺陷验证</h4>
+<p>对状态为“已修复”的 Bug 进行回归测试  </p>
+<p>\1. 经验证， 当前 Bug 不存在，且未引入新的 Bug，则认为验证通过。</p>
+<p>\2. 经验证，若原有 Bug 仍然存在，则激活本 Bug；
+\3. 经验证，原有 Bug 不存在，但引入了新的 Bug，则提交新的 Bug。
+\4. 回归测试通过后，需确保 Bug 对应用例已更新至对应功能的测试用例中。</p>
+<h4 id="326-缺陷关闭">3.2.6 缺陷关闭</h4>
+<p>经分析， 不需处理或已修复且验证通过的 Bug 可关闭。
+\1. 不管缺陷如何处理，缺陷关闭需由测试工程师验证后关闭；
+\2. 若已指派测试工程师则由当前指派的测试工程师负责，若未指派则由测试组长负责。</p>
+<p>编制： 李艳 审核： 祁彩云   </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/CNC&#24179;&#21488;-&#32570;&#38519;&#36319;&#36394;&#27969;&#31243;&amp;&#36807;&#31243;&#35268;&#33539;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>

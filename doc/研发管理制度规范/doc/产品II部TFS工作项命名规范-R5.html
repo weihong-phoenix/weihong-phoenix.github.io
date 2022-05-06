@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20135;&#21697;II&#37096;TFS&#24037;&#20316;&#39033;&#21629;&#21517;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20135;&#21697;II&#37096;TFS&#24037;&#20316;&#39033;&#21629;&#21517;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="产品ii部tfs工作项命名规范">产品II部TFS工作项命名规范</h1>
+
+<p>版次：2021年8月11日 第5版</p>
+<p>类型：规范文件</p>
+<p>作者：产品II部-长沙研发</p>
+<p>上海维宏电子科技股份有限公司 版权所有</p>
+<h2 id="1-命名定义">1. 命名定义</h2>
+<pre><code>Task命名：
+【产品型号*】-【型号说明】-【创建团队*】-【功能模块】-【功能名称*】-【客户名】
+
+Bug命名：
+【Bug来源*】-【创建团队*】-【产品型号*】-【功能模块】-【型号说明】-【Bug描述*】-【客户名】
+
+发行工作项命名：
+软件发行-【产品型号*】-【客户名】-【软件版本*】-【发行日期*】
+
+*：必须项
+【型号说明】与【功能模块】一般情况是互斥的  
+</code></pre><h3 id="11-产品型号">1.1 产品型号*</h3>
+<ul>
+<li>通用型号定义</li>
+</ul>
+<p>以产品系列为基础进行划分；在细分的产品系列又分为平面、管切、板管一体三种类型，具体如下：</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Laser</td>
+<td>激光通用，包括平面、管切、板管一体</td>
+</tr>
+<tr>
+<td>LS</td>
+<td>平面专用，此类标题的任务不用考虑管切</td>
+</tr>
+<tr>
+<td>TU</td>
+<td>管切专用，此类标题的任务不用考虑平面</td>
+</tr>
+<tr>
+<td>LT</td>
+<td>板管一体专用，此类标题一般都是板管才会有的任务</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>专用型号定义</li>
+</ul>
+<p>一般以产品系列名称作为定义；如果有多个产品型号都需要的，以 \ 作为区分；</p>
+<p>例：
+TU3500\TU5500M-CS-电动卡盘增加水平垂直延时-邦德</p>
+<ul>
+<li>型号分类图</li>
+</ul>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16514709215050.png" alt="img"></p>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16514710079300.png" alt="img"></p>
+<h3 id="12-型号说明">1.2 型号说明</h3>
+<p>可选项，用于对型号进行补充说明：包括但不限于以下几个方面：</p>
+<ul>
+<li>通用型号强调： Laser - 通用</li>
+<li>板管一体型号细化：LT - Tube/Plane</li>
+<li>客户定制功能：TU3700M - 定制</li>
+</ul>
+<h3 id="13-功能名称bug描述">1.3 功能名称/Bug描述*</h3>
+<p>功能名称、Bug简述：都是名词，概况性描述任务内容。</p>
+<h3 id="14-创建团队">1.4 创建团队*</h3>
+<table>
+<thead>
+<tr>
+<th>简写</th>
+<th>团队名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LH</td>
+<td>上海激光</td>
+</tr>
+<tr>
+<td>CS</td>
+<td>长沙研发</td>
+</tr>
+<tr>
+<td>WC</td>
+<td>水切割</td>
+</tr>
+</tbody>
+</table>
+<h3 id="15-客户名">1.5 客户名</h3>
+<p>外部反馈：客户名称 或 技术销售姓名</p>
+<p>内部需求\Bug：提出者姓名</p>
+<h3 id="16-bug来源">1.6 Bug来源*</h3>
+<p>客户反馈：由客户或销售人员反馈的bug</p>
+<p>内部测试：由测试人员发现的bug</p>
+<p>研发测试：研发人员在自测或使用过程中发现的其他bug</p>
+<h3 id="17-功能模块">1.7 功能模块</h3>
+<p>在做功能增强时，功能所属的大模块。</p>
+<pre><code>TU-CS-管顶料-增加纯伺服管顶料-迅镭
+Laser-LH-焦点控制-增加普雷调焦
+</code></pre><h3 id="18-软件版本">1.8 软件版本</h3>
+<pre><code>Alpha:未经过内部完整测试的版本
+Beta:在上一版本上增加了新功能，发给客户公测的版本
+Release:稳定版本
+</code></pre><h3 id="19-发行日期">1.9 发行日期</h3>
+<pre><code>年.月.日
+2021.04.22  
+</code></pre><h2 id="2-案例">2. 案例</h2>
+<ul>
+<li>管切平面通用需求</li>
+</ul>
+<pre><code>Laser-通用-摄像头启用状态保存-邦德
+【产品型号】-【型号说明】-【功能名称】-【客户名】
+邦德提出的需求，内部判断是激光通用功能；所以工作项为激光通用
+
+Laser-通用-修改极性添加制造商权限
+【产品型号】-【型号说明】-【功能名称】
+</code></pre><ul>
+<li>专管功能</li>
+</ul>
+<pre><code>TU-CS-管顶料-增加纯伺服管顶料-迅镭
+【产品型号】-【创建团队*】-【功能模块】-【功能名称】-【客户名】
+
+TU-通用-CS-暂停减速加速度分轴设置
+【产品型号】-【创建团队*】-【功能名称】-【客户名】
+</code></pre><ul>
+<li>板管一体功能</li>
+</ul>
+<pre><code>通用：LT-通用-安装、参数路径修改
+管切：LT-Tube-增加激光DA校正
+平面：LT-Plane-增加CE认证
+</code></pre><ul>
+<li>某个产品系列通用功能</li>
+</ul>
+<pre><code>LS6000-通用-LH-增加五级穿孔-宏山
+【产品型号】-【型号说明】-【创建团队*】-【功能名称】-【客户名】
+</code></pre><ul>
+<li>客户单个产品定制功能</li>
+</ul>
+<pre><code>TU3700M-定制-CS-迅镭双卡下料需求-定制-迅镭
+【产品型号】-定制-【创建团队*】-【功能名称】-【客户名】
+</code></pre><ul>
+<li>客户多个产品定制功能</li>
+</ul>
+<pre><code>TU3000\TU1000-定制-CS-特殊拉料功能-江门安德
+</code></pre><ul>
+<li>软件发行</li>
+</ul>
+<pre><code>软件发行-TU3700M-迅镭-2021.04.15
+</code></pre><h2 id="3-其他说明">3. 其他说明</h2>
+<h1 id="修改记录">修改记录</h1>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>版本</th>
+<th>修订人</th>
+<th>日期</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>R1.0</td>
+<td>唐涛</td>
+<td>2021-4-13</td>
+<td>初版建立</td>
+</tr>
+<tr>
+<td>2</td>
+<td>R2.0</td>
+<td>唐涛</td>
+<td>2021-4-22</td>
+<td>增加发行日期规则，修改Bug来源：外部反馈 -&gt; 客户反馈</td>
+</tr>
+<tr>
+<td>3</td>
+<td>R3.0</td>
+<td>唐涛</td>
+<td>2021-5-24</td>
+<td>修改部分文字错误；增加定制字段</td>
+</tr>
+<tr>
+<td>4</td>
+<td>R4.0</td>
+<td>唐涛</td>
+<td>2021-7-13</td>
+<td>增加bug中的创建团队</td>
+</tr>
+<tr>
+<td>5</td>
+<td>R5.0</td>
+<td>唐涛</td>
+<td>2021-8-11</td>
+<td>增加Task中的团队缩写</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/&#20135;&#21697;II&#37096;TFS&#24037;&#20316;&#39033;&#21629;&#21517;&#35268;&#33539;-R5.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+    
+      </body>
+</html>
