@@ -50,11 +50,22 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/CAD迭代工作流程.md",
+      "source_relative_path": "doc/CAD平台/CAD迭代工作流程.md",
       "output": {
         ".html": {
-          "relative_path": "doc/CAD迭代工作流程.html",
-          "hash": "t87X/oeX7cORd55sEPL25uq5mt7lFIbLrhB8bUhIU5A="
+          "relative_path": "doc/CAD平台/CAD迭代工作流程.html",
+          "hash": "95r11B7f/n8HwVgFHOXt366zPiPaJnmijkrj4kXf2jI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/CAD平台/images/企业微信截图_16515630701990.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/CAD平台/images/企业微信截图_16515630701990.png"
         }
       },
       "is_incremental": false,
@@ -941,12 +952,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/toc.html",
-          "hash": "uCS5qmxXe+kOFqNm/dy1AbsderFEA9sltX4boIZaJdY="
+          "hash": "G9Gad/QkynTAq5vRKdyeffnD1rclLLcyvYVykiI67BU="
         }
       },
       "is_incremental": false,

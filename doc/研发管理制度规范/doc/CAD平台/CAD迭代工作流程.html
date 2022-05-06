@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CAD&#36845;&#20195;&#24037;&#20316;&#27969;&#31243; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="CAD&#36845;&#20195;&#24037;&#20316;&#27969;&#31243; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="cad迭代工作流程">CAD迭代工作流程</h1>
+
+<p>版次：2021年11月01日　第5版</p>
+<p>类型：程序文件</p>
+<p>作者：CAD组</p>
+<p>上海维宏电子科技股份有限公司</p>
+<table>
+<thead>
+<tr>
+<th><strong>修改历史</strong></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件版本</strong></td>
+<td><strong>修改前文件版本</strong></td>
+<td><strong>主要修订内容和原因</strong></td>
+<td><strong>修订人</strong></td>
+<td><strong>修订日期</strong></td>
+</tr>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新增文档</td>
+<td>CADCAM组</td>
+<td>2013-3-5</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>R1</td>
+<td>修改完善迭代会议安排</td>
+<td>朱延晓</td>
+<td>2019-7-2</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>R2</td>
+<td>按照最新代码管理方式更新部分开发过程以及调整文件格式</td>
+<td>朱延晓</td>
+<td>2019-9-19</td>
+</tr>
+<tr>
+<td>R3.3</td>
+<td>R3</td>
+<td>变更迭代周期，同时增加要求</td>
+<td>张艳丽</td>
+<td>2021-1-29</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>R3.3</td>
+<td>添加发布准出条件，更新迭代变更内容注意事项（已标为红色）</td>
+<td>杨梅</td>
+<td>2021-11-1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1---目的">1   目的</h2>
+<p>为规范CAD组成员在迭代开发工作中的行为，明确各个环节实施人员的相应责任，提高研发产品质量，特制订本工作流程。</p>
+<p>CAD组实行敏捷开发的方式，每月为一个迭代周期（紧急BUG除外），每个周期的关键活动又分为一些子活动和具体要求，大致包含以下内容：</p>
+<ul>
+<li><p>迭代负责人确定。</p>
+</li>
+<li><p>迭代范围和目标的确认。</p>
+</li>
+<li><p>迭代计划制定（每月计划表）。</p>
+</li>
+<li><p>迭代方案评审（个人评审+团队评审）。</p>
+</li>
+<li><p>编码及代码审核。</p>
+</li>
+<li><p>迭代测试、代码合并和迭代验收。</p>
+</li>
+<li><p>迭代计划跟进（迭代开始前会议以及每周一次例会）。</p>
+</li>
+<li><p>迭代发布。</p>
+</li>
+<li><p>迭代变更。</p>
+</li>
+<li><p>迭代回顾总结会议。</p>
+</li>
+</ul>
+<h2 id="2---迭代负责人选定">2   迭代负责人选定</h2>
+<p><strong>每次迭代开始前首先确定迭代负责人</strong>（在月度计划时指定迭代负责人）。</p>
+<p>迭代负责人采用轮流制，主要的职责有：</p>
+<ul>
+<li><p>迭代前的准备，内容包括：</p>
+<ul>
+<li>检查迭代周期的工作内容是否已经创建了工作项（由工作项的开发人员或是质量保证团队责任人创建），并且工作项能够在当前迭代周期检索到。</li>
+</ul>
+</li>
+<li><p>迭代开发分支的确定（原则是减少迭代分支，解决发布版本过多的问题。）</p>
+</li>
+</ul>
+<p>关于分支确定的原则：</p>
+<ol>
+<li>原则上新增功能在独立分支上开发；</li>
+<li>一个迭代周期的BUG在同一个分支上解决，目前一般为DEV1分支专门用来解决BUG（如果BUG导致代码变的多且复杂，则需单独在另外一个分支上解决）；</li>
+<li>新增功能和BUG需要在分支上验证通过后再签入主干验证，但并不是所有的分支修改都需要提交测试版本；</li>
+<li>代码评审人员和迭代负责人评估确定是否需要发布分支版；</li>
+<li>开发人员要对自己的代码以及功能负责，充分自测验证以及进行自动化测试，不要仅仅为了心里安慰而所有分支功能都发给质量保证团队测试。</li>
+</ol>
+<ul>
+<li><p>迭代计划的跟进，每周组织一次迭代例会，当进度和质量出现问题时，及时组织评审。</p>
+</li>
+<li><p>迭代计划测试版和正式版的发行时间确定和跟进</p>
+</li>
+<li><p>迭代验收后问题的跟进。</p>
+</li>
+<li><p>迭代回顾与总结等</p>
+</li>
+</ul>
+<h2 id="3---迭代范围和目标的确认">3   迭代范围和目标的确认</h2>
+<h3 id="31--迭代范围确认前期准备">3.1  迭代范围确认前期准备</h3>
+<p><strong>迭代负责人：</strong></p>
+<ul>
+<li>检查本迭代周期计划解决的事情，是否都按要求创建了Task或Bug；</li>
+</ul>
+<p><strong>注意：</strong>工作项的难度、开发人员的能力、工作项的优先级等，特别是优先级的定义要明确。优先级划分建议如下：P1为迭代必须发布的；P2为根据后期的开发进度评估是否可以在本次迭代发布的；P3为可以从本次迭代移除的。</p>
+<p>根据优先级以及工作的饱和情况，修改TFS对应的Iteration以及优先级字段，详细的填写要求见《CADCAM组工作流程简述.docx》以及《CADCAM组TFS填写规范.docx》。</p>
+<ul>
+<li>确定迭代目标，一般有以下几类：</li>
+</ul>
+<ol>
+<li><strong>调研任务：</strong>调研类的产出是调研报告（调研报告需要进行竞品分析，现在主要参考柏楚、FastCam、大族激光、Camworks或其他）；</li>
+<li><strong>方案预研：</strong>方案预研的需要有方案分析报告或是总结；</li>
+<li><strong>规格文档：</strong>需要按照规格模板，输出规格文档。<strong>所有任务或BUG</strong>都必须有规格文档，对于BUG工作项，在维护代码的同时，开发人员需要同步维护规格文档，不能出现代码维护了，但规格文档未维护的问题。</li>
+<li>方案设计：<strong>按照方案设计文档的模板，输出方案设计文档（必须明确设计目标）。</strong>所有的Task必须有方案设计文档，BUG超过2天编码工作量的，必须上报评审（以沟通清楚方案为主要目的，不需要出具具体的方案设计文档）；BUG解决工作量超过5天的，必须有设计方案文档；外部BUG解决方案必须上报评审。</li>
+<li>发行软件：<strong>紧急</strong>的或是优先级高的，需要在本次迭代发行软件。</li>
+</ol>
+<p>组内发行软件时，针对功能和优先级不高的Bug，原则上一月一个迭代发行，特殊情况时，需要迭代负责人说明原因，避免中间紧急发行软件的情况。</p>
+<h3 id="32--召开迭代范围确认会议">3.2  召开迭代范围确认会议</h3>
+<p>主要内容为对已筛选的Task和bug进行确认。</p>
+<ul>
+<li><p>迭代负责人提前一天进行会议安排（需要有投影仪的会议室以及能够连接TFS），并通知相关人员；主要目的是明确任务安排。</p>
+</li>
+<li><p>迭代会议参与人：开发人员、质量保证团队，必要时邀请业务线相关人员等。</p>
+</li>
+</ul>
+<h2 id="4---迭代计划制定">4   迭代计划制定</h2>
+<p>每月月初前3个工作日内，各组负责人完成迭代计划表的编制。迭代计划中包括开发任务以及测试相关任务。</p>
+<p>迭代范围确认会议后，各工作项负责人在迭代确认会议第二日下班前，填写 TFS工作项中的时间安排（工作项对应的开发人员为工作项的责任人，需要主动找测试协商测试时间，必须发行软件的，需要有明确的测试版发行时间、代码合并时间、正式版交付时间）。</p>
+<ul>
+<li>计划时间安排填写要求有：</li>
+</ul>
+<ol>
+<li>开发需要与CAD组测试负责人沟通测试时间；</li>
+<li>本次迭代发布软件的工作计划需包含需求分析、需求审核、方案审核、编码、自测、代码审核、测试版发行、测试、代码合并、回归测试、正式版发行；</li>
+<li>最大颗粒度：2天，超过两天的工作量需要拆分，工期计量单位以天计算；</li>
+<li>预留10%的时间作为风险时间。</li>
+<li>如根据业务线要求以及总工评估后，需要变更迭代范围，则应及时告知相关责任人修改迭代计划。</li>
+</ol>
+<ul>
+<li>迭代周期内，迭代负责人根据上述计划安排，确定迭代周期内的测试版发行要求：</li>
+</ul>
+<ol>
+<li>为保证验收的及时性，原则上5天左右发布一个测试版，控制发布分支测试版在3个；</li>
+<li>并不是所有的分支修改都需要提交测试版本。代码评审人员可以和迭代负责人员评估确定是否需要发布分支版；</li>
+<li>制定迭代测试版发行计划时，可以初步确定分支发布的日期，包含以下内容：</li>
+</ol>
+<p>如迭代周期：7.15~7.26</p>
+<p>日期  分支提测版本   计划包含内容</p>
+<p>7.18   dev-xxxx      Task-xxxxxxxxxx</p>
+<p>7.23   </p>
+<p>7.26   </p>
+<ol>
+<li>软件发行由迭代负责人指定专门人员发行，并填写相关信息，解决发行人员过多，发行信息混乱，遗漏问题。</li>
+</ol>
+<p>原则上采取每5天发布一个测试版的方法，避免内部版本数太多。代负责人根据迭代计划中大家给出的发布软件时间，跟进发布测试版的情况。</p>
+<ul>
+<li><strong>迭代结束前</strong>5天，<strong>dev</strong>签入代码锁定，不允许再签入到<strong>dev</strong>（可放到下个迭代开始时签入）（除特殊情况外，比如业务线已经明确答应客户，或是P1级的工作，但是特殊情况不允许成为例行）</li>
+</ul>
+<h2 id="5---迭代规格方案设计测试方案与评审">5   迭代规格、方案设计、测试方案与评审</h2>
+<p>Task和BUG工作项必须有规格文档、方案设计文档、自测报告（规格中的所有内容需要验证、需要补充自动化测试的，自动化编码必须完成，已有自动化测试的，自动化测试必须通过）、Checklist完成文档。</p>
+<p><strong>测试要求：单功能测试必须覆盖测试模板和标准测试方案中的测试点。</strong></p>
+<p><strong>凡是工作量超过</strong>5天的任务和BUG，必须召开团队评审，团队对规格、设计方案、测试方案进行评审，由任务负责人主动安排。如果编码工作量超过3周的，在方案确定后的第一周，需对代码进行团队评审。</p>
+<h2 id="6---编码及代码审核">6   编码及代码审核</h2>
+<p>因为CAD组使用分支方式管理代码，所以要求做到尽可能早的审核代码，保证代码及时审核，及时发现问题，及时修正，最晚审核时间为软件发测试之前。代码审核需要通过代码审核工具，并留下审核意见。没有代码审核记录的，质量保证团队拒绝测试，特殊情况需要上报对应负责人。</p>
+<p>为统一大家代码审核的标准，CAD组每月会举行1~2次代码评审分享（团队评审时分享）。</p>
+<p>代码评审要求包括：</p>
+<ol>
+<li>编码过程中需要代码互评，并将评审记录保留；</li>
+<li>审核人员需要同时审核测试范围是否存在问题；</li>
+<li>已有库需要保证通过cppcheck以及编译器的检查，无任何error和warning，并且通过库的功能自动化测试；编译器的output无内存泄露相关提示（若存在但并非自己模块的请及时通知相关模块负责人以及总工）；如果是新增加的库，必须有对应的自动化测试模块。计算类的库，必须进行相关性能测试（自动化）。</li>
+</ol>
+<p><strong>凡是编码工作量超过</strong>5天的，需每周评审一次（个人评审），便于及时发现问题，进行修正。</p>
+<h2 id="7---代码合并和迭代验收">7   代码合并和迭代验收</h2>
+<p><strong>代码管理的要求：</strong></p>
+<ul>
+<li><strong>代码与变更集关联的相关性和独立性</strong></li>
+</ul>
+<ol>
+<li>每个变更集必须与特定的BUG工作项或对应Task关联；</li>
+<li>如果代码是解决BUG的，此时变更集需要同时关联Task和BUG工作项，不能只与Task关联或是与不相关工作项关联，且需要每个变更集对应单独的BUG，不能几个BUG修改后签入在一个变更集中。</li>
+</ol>
+<ul>
+<li><strong>分支和主干的关系</strong></li>
+</ul>
+<ol>
+<li>修改NcEditor的代码，默认情况采用分支上开发，经过验证后再合并到主干的方式，且在发布测试版本前，必须经过代码审核；</li>
+<li>Libs下的各个库因为修改频率较低，且不存在同时多人修改的情况，所以不采用分支的方式开发，但如果修改周期大于10天，采用分支开发的方式。</li>
+</ol>
+<ul>
+<li><strong>分支和主干的同步、合并操作</strong></li>
+</ul>
+<ol>
+<li>每次迭代开始前以及分支发行测试版本时，分支代码需要将Dev代码同步至开发分支代码(Dev-&gt;Devx)；</li>
+<li>分支测试版本通过后，发行正式版时，需进行分支-&gt;主干的合并操作，合并需要在本地解决冲突（冲突手工解决，不可以自动解决冲突）、再提交服务器，然后发行正式版。</li>
+</ol>
+<p>代码签入时，请先签入代码，再签入readme或publish.log，保证签入变更集与填写内容一致。</p>
+<p>迭代验收分为两个部分，一是分支测试版本的测试，二是主干正式版的验收。开发在发行测试版本时，需要按照发行要求填写。</p>
+<p><strong>测试准入条件：</strong></p>
+<ol>
+<li>开发自测必须覆盖功能基本场景、典型异常场景以及边界等情景，需提供开发自测报告，<strong>详见测试报告模板，路径：</strong>$/cadcam/V15/Doc/01规范制度/02开发工作流程与规范；</li>
+<li>符合《软件测试流程&amp;过程规范》中给出的准入条件；</li>
+</ol>
+<h2 id="8---迭代发布">8   迭代发布</h2>
+<p>迭代发布日期一旦确定，必须在迭代发布日期前（含发布日期）发布，如发现无法准时发布，迭代负责人需及时上报。</p>
+<p>测试环节验收时，如发现严重问题，可能会影响发布，需及时反馈。</p>
+<p>迭代验收通过后，由质量保证团队进行发布通知的填写，将发布记录上传Wiki，并发布通知，同时通知到业务线。</p>
+<p>现在业务线修改的CAD所属功能必须由CAM组验收，质量保证团队需要对这部分工作项增加发布说明以及影响范围。详细信息见：<a href="http://172.16.10.17:86/%23!CamTest/05发布说明">http://172.16.10.17:86/#!CamTest/05发布说明</a></p>
+<p><strong>发布准出条件：</strong></p>
+<ol>
+<li>所有的task均验收测试通过，所有用例执行通过，task下不存在未处理的bug，拖迟处理的必须开发调查过，并与<strong>质量保证团队负责人</strong>确认可以延后处理。</li>
+<li>发布之前所有功能的自动化测试全部测试通过。</li>
+<li>如果是手工打包，需要保证人工测试界面上所有功能的基本流测试通过。</li>
+<li>软件系统测试必须测试通过，测试范围见对应项目的系统测试方案。</li>
+<li>发布当天，测试迭代负责人，需要再梳理一遍Bug，严重的bug必须全部解决，确保修复的Bug均验收通过。</li>
+</ol>
+<p>以上若在发布日期之前达不到，则必须向上反馈。</p>
+<p>开发工作流程图如下：</p>
+<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16515630701990.png" alt="企业微信截图_16515630701990"></p>
+<p>详细流程图具体路径为：<a href="file:///\172.16.10.66\NWfile02\01.安全内网文件夹\01.研发部文件\01.各组文件\20.CADCAM组\01.cadcam组开发过程">\file01.weihong.com\02.各部门受限\12.CAD平台\20.CADCAM组\01.cadcam组开发过程\ CADCAM开发流程图-R1.2.vsd</a></p>
+<p>迭代发布之后，开发人员和质量保证团队进行相关文档的整理，并将文档上传至168服务器CAM源代码管理：Dev\Doc目录。</p>
+<p>持续集成与包管理注意事项的相关内容见以下路径：[\file01.weihong.com\02.各部门受限\12.CAD平台\20.CADCAM组\01.cadcam组开发过程\ NcEditor开发注意事项-R2.docx](file:///\172.16.10.66\NWfile02\01.安全内网文件夹\01.研发部文件\01.各组文件\20.CADCAM组\01.cadcam组开发过程\ NcEditor开发注意事项-R2.docx)。</p>
+<h2 id="9---迭代插入和变更">9   迭代插入和变更</h2>
+<p>原则上迭代范围确认后，不再变更，但对于<strong>严重或致命</strong>Bug<strong>（包括外部反馈以及内部测试发现的发布版本存在的），严重影响客户使用的，需及时响应和修复</strong>，并向质量团队负责人和迭代负责人汇报，<strong>质量负责人须要第一时间通知相关各业务线，</strong>明确告知影响范围以及需要业务线暂停止当前的发行，等待问题修复后再继续发行。<strong>由质量保证团队触发对应Release</strong>版本和开发迭代负责人<strong>确定发布Release</strong>时间，并更新SDK发版计划告知业务线。</p>
+<p>根据问题发现的版本，修复有几种情况，但是原则为：优先修复发现问题版本，再同步至其他版本。</p>
+<ol>
+<li>如果问题发现在Release版，则最先修复Release版，然后再同步至Beta分支，紧接着从Beta分支同步至Dev分支。</li>
+<li>如果问题发现在Beta版，则最先修复Beta版，然后再同步至Release分支，紧接着从Beta分支同步至Dev分支。</li>
+<li>如果问题发现在Dev版，常规情况下：最先修复Beta版，然后再同步至Release分支，紧接着从Beta分支同步至Release分支。此时根据影响程度决定，版本修复的顺序。</li>
+</ol>
+<h2 id="10-迭代回顾总结会议">10 迭代回顾总结会议</h2>
+<p>迭代周期结束后，<strong>质量保证团队</strong>发起开展回顾会议，回顾会议主要讨论迭代过程中存在的问题（低级Bug、严重Bug、代码评审执行情况、开发和测试过程中可以改进的点等），其中：</p>
+<ul>
+<li><p>回顾会议召开之前，开发人员和质量保证团队梳理Bug的出现原因，并在回顾会时统一分享，需要按照纠正预防的方式进行总结，从人、机、料、环、法、测几方面分析，确保措施的可执行性；</p>
+</li>
+<li><p>每次迭代会议时对本次迭代中有突出表现的人员进行表扬和奖励。</p>
+</li>
+<li><p>回顾会议之后，对于总结措施具体实施要求。</p>
+</li>
+</ul>
+<h2 id="11-工作项的填写要求">11 工作项的填写要求</h2>
+<p>详见CADCAM组TFS填写要求-R4.doc，工作项的具体填写要求参照以下路径：$/cadcam/V15/Doc/01规范制度/03测试工作流程与规范</p>
+<h2 id="12-原则和约束">12 原则和约束</h2>
+<p>1、     本次迭代安排的任务引出的Bug，需要在本次迭代完成，若本次不修改的，需及时通知负责人，并由负责人决定放在延迟处理或者下个迭代。新创建的BUG原则上都要处理，如果调查后任务解决复杂度高，或是影响不大，认为可以不处理的，<strong>需要找负责人沟通，不可以擅自决定不处理，由相关责任人标记是否处理。</strong>如发现开发人员擅自决定不处理BUG，将根据BUG实际造成的影响对开发人员进行惩罚。</p>
+<p>2、     <strong>迭代版本发行之日，所有迭代相关开发人员、迭代负责人需待版本发行之后，才能下班</strong>，有特殊情况时，需向迭代负责人请假说明，如出现未请假而提前离开的情况，由提前离开人员，在总结会议时表演一节目。</p>
+<p>3、     严格执行checklist的检查条目，仔细阅读，对于内容不确定时及时沟通。如checklist未执行到位，视具体情况进行相关惩罚。</p>
+<p>4、     冒烟测试不通过，视具体情况进行相应的处罚。</p>
+<p><strong>5、</strong>     <strong>出现外部反馈因未按用例执行反馈的Bug</strong>，视具体情况进行处罚。</p>
+<p><strong>6、</strong>     <strong>出现外部反馈因未覆盖测试模板中和标准测试中测试点的Bug</strong>，视具体情况进行处罚。</p>
+<p>7、     原则上影响客户加工的外部问题处理优先级最高，迭代计划中的工作优先级高，对内的需求优先级低，如果不能确定事情的优先级，及时找相关负责人进行确认。</p>
+<p>8、     开发人员需尽可能的帮助质量保证团队复现一些不能稳定复现的Bug；</p>
+<p>9、     如果出现崩溃、蓝屏、死机的问题，开发必须优先解决；</p>
+<p>10、   Bug的原因尽量描述清楚，可以使用业务语言和代码原因两种描述方式；</p>
+<p>11、   变更集跟着Bug走，checklist跟着工作项走。所有Task和BUG必须都要有checklist检查表。</p>
+<p>12、   当工作项关闭之后，新增需求不在之前的需求单之内的继续维护，需要重建工作项；</p>
+<p>13、   若因需求、时间、方案变更，或发现任务时间预估不够，需要走变更流程。变更流程为：申请人向对应负责人提出申请，同时将变更记录登记在TFS工作项中； </p>
+<p>14、   关于迭代任务里的Bug，如果确实需要延期，需经迭代负责人和质量保证团队负责人同意批准；</p>
+<p>15、   Task引入的Bug原则上必须解决，才可以签到DEV，否则不允许签入DEV，如需签入需上报总工审批；</p>
+<p>16、   如果工作方案不确定，或者对代码不了解，可以通过调研，晚些给出工作计划。</p>
+<h2 id="13-其他">13 其他</h2>
+<p>非迭代任务的开发流程，开发要求与迭代开发流程要求一致。</p>
+<p><strong>编制：CAD组</strong>            <strong>审核：张艳丽</strong>              <strong>批准：陈豫</strong></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/management/blob/main/doc/CAD&#24179;&#21488;/CAD&#36845;&#20195;&#24037;&#20316;&#27969;&#31243;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>
