@@ -180,12 +180,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/md文件格式/增强可读性语法.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/md文件格式/增强可读性语法.html",
-          "hash": "a1yKFxRQBc/nkXbPtY6dvYWiJHYiPqNbAA3R4ovlVUA="
+          "hash": "NPehwcb9Cb/vx9chRJyn/TKEbmySfSvojv59DPmNojM="
         }
       },
       "is_incremental": false,
