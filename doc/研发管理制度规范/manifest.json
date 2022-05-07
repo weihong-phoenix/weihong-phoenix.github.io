@@ -50,22 +50,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/CAD平台/CAD迭代工作流程.md",
+      "source_relative_path": "doc/CAD迭代工作流程.md",
       "output": {
         ".html": {
-          "relative_path": "doc/CAD平台/CAD迭代工作流程.html",
-          "hash": "NppWTgHMQDw9020YtdabQk/S9t7RA6rhq3MdTTCcGHc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/CAD平台/images/企业微信截图_16515630701990.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/CAD平台/images/企业微信截图_16515630701990.png"
+          "relative_path": "doc/CAD迭代工作流程.html",
+          "hash": "x51D9tSK7pJRusaNztMO/UmVFbr+jUT8bR3ULPju3fg="
         }
       },
       "is_incremental": false,
@@ -77,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/CNC平台-缺陷跟踪流程&过程规范-R1.html",
-          "hash": "oL01NM8JKAXj3vNmbTq0JO5DchkyUXm9rbLEC5c8nyU="
+          "hash": "6hrnsASaEOEXWJ9HSKrZ1uNgENnl1bDd1N2gWi8h1ws="
         }
       },
       "is_incremental": false,
@@ -284,6 +273,28 @@
       "output": {
         "resource": {
           "relative_path": "doc/docfx_templates/custom_template/styles/tinyseg.js"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/CAD开发工作流程.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/CAD开发工作流程.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/images/CNC-bug跟踪流程图.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/images/CNC-bug跟踪流程图.png"
         }
       },
       "is_incremental": false,
@@ -952,15 +963,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/toc.html",
-          "hash": "LLSScawvHxKMD+qxkbZb1/eUz6svODVAWcpA+1HeVQc="
+          "hash": "ZfNn9Ahs9GbFXpYuRIeh01L93cZajTTqJjyd7cJiwEs="
         }
       },
       "is_incremental": false,
