@@ -2,7 +2,7 @@
   "doc/研发文档编写指南/md文件格式/基本语法.html": {
     "href": "doc/研发文档编写指南/md文件格式/基本语法.html",
     "title": "基本.md语法",
-    "keywords": "基本.md语法 markdown语法 Markdown，这是一种简单易用的标记语言，您可以使用它来格式化几乎任何文档。 见链接 https://www.markdownguide.org/ DFM DocFX 支持DocFX Flavored Markdown，又名 DFM。它支持所有GitHub Flavored Markdown语法并与 CommonMark 兼容。此外，DFM 添加了新语法以支持其他功能，包括交叉引用和文件包含。 见链接： https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html"
+    "keywords": "基本.md语法 markdown语法 Markdown，这是一种简单易用的标记语言，您可以使用它来格式化几乎任何文档。 见链接 https://www.markdownguide.org/ 基本语法 github 链接： https://github.com/mattcone/markdown-guide/tree/master/_basic-syntax 扩展语法 github 链接： https://github.com/mattcone/markdown-guide/tree/master/_extended-syntax DFM DocFX 支持DocFX Flavored Markdown，又名 DFM。它支持所有GitHub Flavored Markdown语法并与 CommonMark 兼容。此外，DFM 添加了新语法以支持其他功能，包括交叉引用和文件包含。 见链接： https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html"
   },
   "doc/研发文档编写指南/md文件格式/增强可读性语法.html": {
     "href": "doc/研发文档编写指南/md文件格式/增强可读性语法.html",
