@@ -475,11 +475,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/目录的组织.md",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/目录组织.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/目录结构及命名/目录的组织.html",
-          "hash": "pzX9O+xk+z2njoKiPshA30+39p/zbuA+UnChARuQqrM="
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/目录组织.html",
+          "hash": "FgCA/+Zqp7SuTpi4zDb1wb4TNzpwXfd2rRE5wV/ePTE="
         }
       },
       "is_incremental": false,
