@@ -109,12 +109,12 @@
     {
         _logger.LogInformation(message);
     }
-</code></pre><h2 id="尖括号">尖括号</h2>
-<p>如果在文件中的文本里使用尖括号（例如要表示占位符），则需要对尖括号手动编码。 否则，Markdown 会认为它们是一个 HTML 标记。</p>
-<pre><code class="lang-html">例如，将 &lt;script name&gt; 编码为 &amp;lt;script name&amp;gt; 或 \&lt;script name&gt;。
-
-尖括号无需在格式为内联代码的文本中或在代码块中进行转义。
-</code></pre><h2 id="高亮">高亮</h2>
+</code></pre><h2 id="反斜杠转义">反斜杠转义</h2>
+<p>有些字符本身就是markdown的标签，如果文档中需要正常显示该字符，而并非作为标签使用，则可以用反斜杠“\”来转义该字符。</p>
+<pre><code class="lang-html">以下尖括号无需在格式为内联代码的文本中或在代码块中进行转义。使用 \&lt;script name&gt;，或者 将 &lt;script name&gt; 编码为 &amp;lt;script name&amp;gt;     
+</code></pre><p><strong>以下字符可以通过反斜杠进行转义</strong>
+\；`；*；_；{ } ；[ ]；&lt; &gt;；( )；#；+；-；.；!；|</p>
+<h2 id="高亮">高亮</h2>
 <pre><code>没有哪一种深度工作习惯上绝对正确的—— ==一种习惯是否合适取决于个人，同时也取决于从事的项目类型。==
 </code></pre><p>没有哪一种深度工作习惯上绝对正确的—— ==一种习惯是否合适取决于个人，同时也取决于从事的项目类型。==</p>
 <blockquote><p>遗留问题：高亮显示为啥不正常？评审时间：2022-5-7 责任人：祁彩云</p>
