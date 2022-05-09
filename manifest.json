@@ -619,6 +619,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.html",
+          "hash": "nRWwl6w+1t32CXHX52WZT3tOCdh13NmR5n9vRiBtVNE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/Phoenix 源码分支工作流-R2.md",
       "output": {
         ".html": {
@@ -1477,7 +1489,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "ZfNn9Ahs9GbFXpYuRIeh01L93cZajTTqJjyd7cJiwEs="
+          "hash": "+RlULfXfpocAdO33ydfvG30RuTtp3McPNJn139pthZk="
         }
       },
       "is_incremental": false,
@@ -2188,7 +2200,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 67,
+          "total_file_count": 68,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
