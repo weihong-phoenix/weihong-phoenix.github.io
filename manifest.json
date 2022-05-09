@@ -1535,15 +1535,23 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF评审_Checklist-R1.xls",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF评审_Checklist-R1.xls"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.html",
-          "hash": "AJAMzkFFqbYYSxbyREgSWHp6J0bI3qiDtktpXE2p7sQ="
+          "hash": "K3yLgNmZ8z/rxR/cOpU8+2Lie52nXwM9tU0W4WJsTvg="
         }
       },
       "is_incremental": false,
@@ -1964,6 +1972,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试流程&过程规范-R2.doc",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试流程&过程规范-R2.doc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试用例设计规范-R3.pdf",
       "output": {
         "resource": {
@@ -1992,6 +2011,17 @@
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/模板文件/测试计划(模板)-R1.html",
           "hash": "Y4+9uKd5rKuP+0W6vq7hvNnpkT8FccAoMfKCum5qN2Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/测试流程和规范培训.pptx",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/测试流程和规范培训.pptx"
         }
       },
       "is_incremental": false,
