@@ -195,12 +195,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "EtZmU52+xJ8til+hyYjJ6gwz80wQPzfC7WwwIareq8s="
+          "hash": "shPsykkVV5hUcFHV+0SL4Qe4hw5b1BPQDBTBqmS5UGw="
         }
       },
       "is_incremental": false,
@@ -492,18 +495,6 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/目录规范.html",
           "hash": "6rZu4V0w5EjfUC4/cwsL9kK3ve3tfMQHdPVilvhPlSs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/章节顺序.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/目录结构及命名/章节顺序.html",
-          "hash": "Rsok/yKdOAIC0GNU6zsdw0096ogL1+GE7KmdgXBuBTY="
         }
       },
       "is_incremental": false,
@@ -2200,7 +2191,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 68,
+          "total_file_count": 67,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
