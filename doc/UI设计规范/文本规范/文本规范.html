@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#25991;&#26412;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#25991;&#26412;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="文本规范">文本规范</h1>
+
+<h2 id="参数命名与描述">参数命名与描述</h2>
+<h3 id="bool型">BOOL型</h3>
+<p>表示True/False的参数应使用BOOL型格式</p>
+<p><strong>【规则】：</strong> 参数名称中不可出现“是否”。</p>
+<p><strong>【原则】：</strong> 标点符号的使用（如图）：</p>
+<blockquote><p>这里为什么描述标点符号，是否应该在后面描述比较好？</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_cs_bool_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_cs_bool_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>【规则】：</strong> 选择应使用单选按钮列举选项。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_cs_bool_2.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_cs_bool_2.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="值枚举型">值枚举型</h3>
+<p>列举多个选项时应使用值枚举型格式。</p>
+<p><strong>【规则】：</strong> 选项与对应的数值之间用冒号“：”，不得使用“表示/为/是”等字眼。</p>
+<p><strong>【规则】：</strong> 相邻选项之间用分号“；”隔开。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_cs_mj_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_cs_mj_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="标点符号">标点符号</h2>
+<p><strong>【原则】：</strong> 一般情况下，中文标点符号可直接使用，英文标点符号输入后需加一个空格。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="冒号">冒号</h2>
+<p><strong>【规则】：</strong> 冒号必须使用英文半角模式下的“冒号”。</p>
+<p><strong>【原则】：</strong> 如果冒号与后面的内容在同一个控件上，需在冒号后加一个空格。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_mh_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_mh_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="引号">引号</h2>
+<p>表示引用的文本需使用引号。</p>
+<p><strong>【规则】：</strong> 中文版本使用中文半角引号，英文版本使用英文半角引号加空格。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_yh_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_yh_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="括号">括号</h2>
+<p>表示补充说明、快捷键或数值范围的文本需使用括号。</p>
+<p><strong>【规则】：</strong> 中英文版本均使用英文半角括号。</p>
+<p><strong>【规则】：</strong> 表示范围时，如果临界值可以取到，需用英文半角中括号：</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_kh_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_kh_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="单书名号">单书名号</h2>
+<p><strong>【原则】：</strong> 引用某个参数或按键上的名称时，应使用单书名号，使用规范同“括号”。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_smh_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_smh_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="加载符号">加载符号</h2>
+<p><strong>【规则】：</strong> 表示加载或进程的文本末需用3个循环出现的点作为后缀，如“软件启动中…”、“正在调机…”等。</p>
+<p><strong>【规则】：</strong> 中英文版本均使用英文半角句号或数字键盘中的点“.”。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_jz_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_bd_jz_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="英文大小写规范">英文大小写规范</h2>
+<h3 id="句首字母大写">句首字母大写</h3>
+<p><strong>【原则】：</strong> 告警或提示符号的首字母必须大写。如：Error，Warnning，Tips等。</p>
+<p><strong>【原则】：</strong> 完整句子首个单词首字母必须大写。如：状态栏弹出提示、操作提示或说明、参数解释或描述等。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_js_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_js_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>【原则】：</strong> 列表中的描述性信息首字母必须大写。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_js_2.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_js_2.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="单词首字母大写">单词首字母大写</h3>
+<p><strong>【规则】：</strong> 单个词语或短语中的每个单词首字母必须大写。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_1.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_1.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>【规则】：</strong> 单选或复选的选项为一个完整的句子时，仅句首字母大写。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_2.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_2.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>【规则】：</strong> 标识为常显状态或模式的文字首字母必须大写。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_3.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_3.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>【规则】：</strong> 菜单及菜单选项的首字母必须大写。</p>
+<table>
+<thead>
+<tr>
+<th>&lt;img src=<a href="https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_4.png">https://github.com/weihong-phoenix/UI_DesignRules/blob/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83/images/wb_yw_cs_4.png</a> /&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="全部大写">全部大写</h2>
+<p>全部大写是指每个字母都使用大写。一般适用于以下情况：通用缩写，文件格式（或类型），坐标轴等。</p>
+<p><strong>【规则】：</strong> 坐标轴都需要大写：X，Y，Z，……</p>
+<p><strong>【原则】：</strong> 一般通用缩写都需要大写：IO（Input/Output） ，MFR（Multi-frequency Receiver），HW（Hand Wheel），USB（Universal Serial Bus），……</p>
+<p><strong>【原则】：</strong> 一般文件格式描述都需要大写：PLT，DXF，ENG，……</p>
+<h3 id="小写">小写</h3>
+<p><strong>【原则】：</strong> 控件上的短语中，介词（如of，by，to，in，on，at，for，as等）或连词（如and，or，with等）一般需小写，如“Set as Default”中“as”需小写。</p>
+<p><strong>【原则】：</strong> 通用短语“Save As…（存储为…）”中的“As”首字母需要大写。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/UI&#35774;&#35745;&#35268;&#33539;/&#25991;&#26412;&#35268;&#33539;/&#25991;&#26412;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    
+      </body>
+</html>
