@@ -1649,11 +1649,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/信息输入类UI元素规范/信息输入类UI元素规范.md",
+      "source_relative_path": "doc/UI设计规范/信息输入类UI元素规范/信息输入.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/信息输入类UI元素规范/信息输入类UI元素规范.html",
-          "hash": "m8r6WRJS3n2xMQgBwfcvcsRFO7AFuaD1aFfGcOuO+WU="
+          "relative_path": "doc/UI设计规范/信息输入类UI元素规范/信息输入.html",
+          "hash": "ZlaPWLwfkbvt3Vv8MNJ68oqVKqqyeoMS2ygciH3XKzE="
         }
       },
       "is_incremental": false,
