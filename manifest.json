@@ -1629,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "HtdG5/teCpaM86P9BYedbdKkm6cxn2ItfBBUwDF+CuY="
+          "hash": "fUT4dQlFq2W+UD4Hcn3C5uPxGpVWcdnXskCpIfxy4gU="
         }
       },
       "is_incremental": false,
@@ -1697,11 +1697,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮元素规范.md",
+      "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮元素.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/通用类元素规范/按钮元素规范.html",
-          "hash": "IjhCxyeK8hXUGNhF+6d67J/OfCrvtCEgk1/R42j/dhs="
+          "relative_path": "doc/UI设计规范/通用类元素规范/按钮元素.html",
+          "hash": "PDBnGnF9Kf7uigdhil4hTdCS+of/8e5kM47qGMKxAko="
         }
       },
       "is_incremental": false,
