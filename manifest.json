@@ -1697,6 +1697,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/UI设计规范/通用类元素规范/字体.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/UI设计规范/通用类元素规范/字体.html",
+          "hash": "2s6dTDVYHm0qhIYNDQjUQV2UMPCQaT4/uLahZYpvQho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮元素.md",
       "output": {
         ".html": {
@@ -3904,7 +3916,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 74,
+          "total_file_count": 75,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
