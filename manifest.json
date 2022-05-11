@@ -1629,7 +1629,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "b7JrAnZIxHs7qR1BVBDmgcm+7W9Jg01pY8K7iYMNpcM="
+          "hash": "HtdG5/teCpaM86P9BYedbdKkm6cxn2ItfBBUwDF+CuY="
         }
       },
       "is_incremental": false,
@@ -1637,11 +1637,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/信息展示类UI元素规范/信息展示类UI元素规范.md",
+      "source_relative_path": "doc/UI设计规范/信息展示类UI元素规范/信息展示.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/信息展示类UI元素规范/信息展示类UI元素规范.html",
-          "hash": "OuLVQH6Rtgv0+5gKSPFFaiqzt2qa2or06rDVx1A4Q3I="
+          "relative_path": "doc/UI设计规范/信息展示类UI元素规范/信息展示.html",
+          "hash": "w7XB0x2H9tuGPKdmyg6lM9fOa2SCYxDDDEvUvJdRzNU="
         }
       },
       "is_incremental": false,
