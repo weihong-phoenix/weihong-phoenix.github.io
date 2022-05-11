@@ -1644,6 +1644,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt1_hz_pt1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt1_hz_pt1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/zt2_zwqd_pt1.jpg",
       "output": {
         "resource": {
@@ -1817,12 +1828,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/通用类元素规范/字体.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/字体.html",
-          "hash": "2s6dTDVYHm0qhIYNDQjUQV2UMPCQaT4/uLahZYpvQho="
+          "hash": "lsuM3X0YKEXt5aF0D/qplORvR9HPgopVWEU7Bybrv+k="
         }
       },
       "is_incremental": false,
