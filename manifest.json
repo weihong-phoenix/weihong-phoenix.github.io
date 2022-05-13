@@ -1761,7 +1761,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "fUT4dQlFq2W+UD4Hcn3C5uPxGpVWcdnXskCpIfxy4gU="
+          "hash": "5Ar5V/EJw6b0bQ2TaQDbToPmN3HZVGM/mHhIyRnuHd8="
         }
       },
       "is_incremental": false,
@@ -1769,11 +1769,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/信息展示类UI元素规范/信息展示.md",
+      "source_relative_path": "doc/UI设计规范/信息展示.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/信息展示类UI元素规范/信息展示.html",
-          "hash": "w7XB0x2H9tuGPKdmyg6lM9fOa2SCYxDDDEvUvJdRzNU="
+          "relative_path": "doc/UI设计规范/信息展示.html",
+          "hash": "TkGQPRCqw6ZzGS//oLJ34CnujfL+MtvVA8jvKfgldnY="
         }
       },
       "is_incremental": false,
@@ -1781,11 +1781,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/信息输入类UI元素规范/信息输入.md",
+      "source_relative_path": "doc/UI设计规范/信息输入.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/信息输入类UI元素规范/信息输入.html",
-          "hash": "ZlaPWLwfkbvt3Vv8MNJ68oqVKqqyeoMS2ygciH3XKzE="
+          "relative_path": "doc/UI设计规范/信息输入.html",
+          "hash": "8f9au2oVHpBR1JtfHjbd6saSpOTcJAgjO6pv/nz6kcI="
         }
       },
       "is_incremental": false,
@@ -1793,11 +1793,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/布局规范/布局规范.md",
+      "source_relative_path": "doc/UI设计规范/布局规范.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/布局规范/布局规范.html",
-          "hash": "G3qp+pAxyusImVXqzjUqwgZk5MCftx5k2YSFPb1DZoM="
+          "relative_path": "doc/UI设计规范/布局规范.html",
+          "hash": "z95hkn+tZ8jhDnHr3sexnwwSD9lmOnCICiWAYK4bRU4="
         }
       },
       "is_incremental": false,
@@ -1816,12 +1816,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/文本规范/文本规范.md",
+      "source_relative_path": "doc/UI设计规范/文本规范.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/文本规范/文本规范.html",
-          "hash": "s903AiicvNDQfEW1aznxXNwsI4g2ykuak2bJhCavlbs="
+          "relative_path": "doc/UI设计规范/文本规范.html",
+          "hash": "d4dM9Zsbk+9TW6JwGpLwy+f/7t1QL+HmOh+9NOt/1i8="
         }
       },
       "is_incremental": false,
