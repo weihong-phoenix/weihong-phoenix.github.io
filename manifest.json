@@ -1816,15 +1816,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/文本规范.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/文本规范.html",
-          "hash": "d4dM9Zsbk+9TW6JwGpLwy+f/7t1QL+HmOh+9NOt/1i8="
+          "hash": "tz3r0tjSq6wsxgrZNrjHxbgawmohaq400TOfOzhleQo="
         }
       },
       "is_incremental": false,
