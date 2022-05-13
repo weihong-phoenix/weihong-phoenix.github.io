@@ -2697,6 +2697,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/MSF开发模式.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/MSF开发模式.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/NuGet-Feed-Linux.png",
       "output": {
         "resource": {
