@@ -1773,7 +1773,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/信息展示.html",
-          "hash": "TkGQPRCqw6ZzGS//oLJ34CnujfL+MtvVA8jvKfgldnY="
+          "hash": "4ILndxIMbT4BiBwbEZ7eYNDhptCjZGHOo/mZrEXMNUw="
         }
       },
       "is_incremental": false,
@@ -3293,6 +3293,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/维宏敏捷开发.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/维宏敏捷开发.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/includes/设计中.md",
       "output": {
@@ -3305,12 +3316,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/index.html",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/index.html"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "+RlULfXfpocAdO33ydfvG30RuTtp3McPNJn139pthZk="
+          "hash": "tsyji2Wcvfg84J70zPENq6EsZOh0xtbrHwNMOhykFxk="
         }
       },
       "is_incremental": false,
@@ -3455,6 +3477,18 @@
         ".html": {
           "relative_path": "doc/研发管理制度规范/关于平台软件兼容性问题例外活动流程-R1.html",
           "hash": "cZkAgJ+L7Y7MmvgdxvDV9QCu1oIlNKg4JwRlAlZNo7Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/函数体设计最佳实践.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/函数体设计最佳实践.html",
+          "hash": "7Y2JOjOwJRMU6PNyRlU0+jkb5g8KSORFJ7lANo05LgY="
         }
       },
       "is_incremental": false,
@@ -3812,6 +3846,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试流程&过程规范-R2.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试流程&过程规范-R2.html",
+          "hash": "2Z8XuOsec70dWlD8IzcLNfW2XOHivVfDDAuw98QoahY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试用例设计规范-R3.pdf",
       "output": {
@@ -3967,18 +4013,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/软件测试流程&过程规范-R2.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发管理制度规范/软件测试流程&过程规范-R2.html",
-          "hash": "hqLh1uZMr70ISDuHcRVB0G/cM1xkMKymlW5WWge7y8k="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/软件测试需求分解指导书-R2.md",
       "output": {
         ".html": {
@@ -4008,6 +4042,29 @@
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.html",
           "hash": "WhgLfJ1A2zzByQgfnUuBWk4wTUUCokVNSE5wA7jrwCU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/需求台账-模板.xlsx",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/需求台账-模板.xlsx"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/需求台账.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/需求台账.html",
+          "hash": "9nk6O7X4sSS/16s0XA3HYb41cL/OV9MLZlxDqlVJbOo="
         }
       },
       "is_incremental": false,
@@ -4051,7 +4108,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 75,
+          "total_file_count": 77,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

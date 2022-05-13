@@ -1,0 +1,681 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20989;&#25968;&#20307;&#35774;&#35745;&#26368;&#20339;&#23454;&#36341;-&#33609;&#26696; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20989;&#25968;&#20307;&#35774;&#35745;&#26368;&#20339;&#23454;&#36341;-&#33609;&#26696; ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="函数体设计最佳实践-草案">函数体设计最佳实践-草案</h1>
+
+<h2 id="概述">概述</h2>
+<p>本文档介绍了函数体设计过程中的最佳实践。 函数体的设计实践可以看做是整个软件设计实践的一部分，建议开发过程遵循这些设计实践。</p>
+<p>本文档的愿景是能够指导大家写出高效、高质量的代码出来。 整理最佳实践的过程参考了很多经典的设计书籍，站在巨人的肩上将优秀的设计理念归纳总结出来。 为了让开发人员能够真正的理解这些实践，除了描述规则之外还通过注释或案例的方式向你表述了分析的过程，以便做到知其所以然。 </p>
+<p>因为是最佳实践，所以一些设计准则应该在实践过程中打磨在提炼，最终通过集体的智慧来完善它。</p>
+<p>本文档描述的实践内容以C#作为目标语言，在具体的条目中涉及到了.NET API 的使用， 所以本文档主要面向 .NET 开发人员。</p>
+<h2 id="术语">术语</h2>
+<ul>
+<li><strong>Pascal命名法：</strong> 将标识符的首字母和后面连接的每个单词的首字母都大写。例如： BackColor。</li>
+<li><strong>Camel命名法：</strong> 标识符的首字母小写，而每个后面连接的单词的首字母都大写。例如：backColor。</li>
+<li><strong>监管程序：</strong> 一般的指相对于库程序的应用程序，从调用堆栈上也指一般API的调用方。</li>
+</ul>
+<h2 id="函数体命名准则">函数体命名准则</h2>
+<ul>
+<li><p><strong>要</strong>在命名方法时使用 Pascal 大小写风格。</p>
+</li>
+<li><p><strong>要</strong>在命名参数时使用 Camel 大小写风格。</p>
+</li>
+<li><p>要用动词或动词词组来命名方法。</p>
+<pre><code class="lang-csharp">public class String {
+    public int CompareTo(...);
+    public string[] Split(...);
+    public string Trim();
+}
+</code></pre><p>因为方法是用来执行操作的，因此设计准则要求方法名必须是<strong>动词或动词词组</strong>。它还用来把方法同属性和类型名区分开，属性和类型名是名词或形容词词组。</p>
+</li>
+<li><p>要使用具有描述性的名字来描述函数或参数。</p>
+<p>函数/参数名 应该具备足够的描述性，使得在大多数情况下，用户根据参数的名字和类型就能确定它的意思，不要担心长名称，长而清晰的名字要比短而令人费解的名字好得多。 </p>
+<p>一个好的名字甚至能够表达出函数的设计目标和设计思路，所以起名字是一个很专业很有挑战性的设计工作。</p>
+<blockquote><p>虽然从技术上看 长度不是问题，但是要节制， 把名字写成了句子就太糟糕了。</p>
+</blockquote>
+</li>
+<li><p>考虑根据参数的意思而不是参数的类型来命名参数。</p>
+<p>这里主要是强调不应该在.NET中使用匈牙利命名法， 强调了参数的语义而不是类型，因为现在的开发工具已经可以很高效的提示类型了。</p>
+</li>
+<li><p>不要使用缩写或缩写词作为标识符名称的一部分。</p>
+<p>例如，使用 <code>GetWindow</code> 而不是 <code>GetWin</code>。</p>
+</li>
+<li><p>不要使用未被广泛接受的任何首字母缩写词，仅在必要时才使用.</p>
+<p>例如，HTML 是 Hypertext Markup Language 的首字母缩写，它是被广泛接受的。 </p>
+<p>如果想创造一个缩写词，请保证在整体系统下定义它，并在各个地方保持一致。</p>
+</li>
+</ul>
+<h2 id="构造函数设计准则">构造函数设计准则</h2>
+<p>.NET 有两种类型的构造函数：<strong>类型构造函数</strong>和<strong>实例构造函数</strong>。</p>
+<pre><code class="lang-csharp">public class Customer{
+    static Customer() { ... }  // 类型构造函数
+    public Customer() { ... }  // 实例构造函数
+}
+</code></pre><p>类型构造函数是静态的，CLR会在使用该类型之前运行它。 实例构造函数在创建类型实例时运行； </p>
+<p>类型构造函数不能带任何参数，实例构造函数可以。 不带任何参数的实例构造函数通常称为默认构造函数。</p>
+<ul>
+<li><p>考虑提供最简单的构造函数， 最好是默认构造函数。</p>
+<p>简单的构造函数有很少的参数，所有参数都是基本类型， 简单构造函数能增强框架的易用性。</p>
+<p>如果一个类型对另一个类型有依赖关系，也就是说，如果没有后一个类型的实例，前一个类型实例将无法正常工作，那么应该将后一个类型作为构造函数的参数传递给前一个类型。 因此可以把这类构造函数参数列表看作是一个<strong>依赖关系表</strong>， 在构造函数上定义依赖可以更好的阻止依赖关系的蔓延。 </p>
+<p>与此同时再定义一个默认构造函数，并为那些必要的依赖关系提供默认值也是一种很好的做法。</p>
+<blockquote><p>扩展阅读： <a href="https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-6.0">ASP.NET Core 依赖注入</a></p>
+</blockquote>
+</li>
+<li><p>要在构造函数中做最少的工作。</p>
+<p>除了把构造函数中的参数保存下来之外，构造函数不应该执行太多的操作。其他的处理操作应该推迟到真正需要的时候。</p>
+<p>两个原因：</p>
+<ol>
+<li>不要在执行构造函数时耗费太多时间。</li>
+<li>太多的逻辑代表着更大的复杂性，那么如果执行终止，要花精力保证释放代码的的可靠性，否则系统可能会处于不完整的状态。</li>
+</ol>
+</li>
+<li><p>要谨慎的在构造函数中抛出异常。</p>
+<p>和C++编译器相反，在C#构造函数中抛出异常，析构函数是会得到执行的。 因为在CLR中对象执行构造函数之前已经构建完成并被GC监管起来。  所以即便构造函数异常退出，GC后的析构函数还是会被执行。</p>
+<p>即便能调用析构函数，在构造函数中抛出异常也要非常谨慎，要非常小心的处理引用对象和非托管资源（在析构函数和dispose函数中不要做任何假设，严格做好资源状态检查）</p>
+</li>
+<li><p>不要从静态构造函数中抛出异常。</p>
+<p>除非整个系统数据被破坏或引发安全问题，否则不要在静态构造函数中引发异常。因为他会在应用程序域的上下文中引发异常。</p>
+<p>抛出异常意味着在当前应用程序域中禁用此类型，且抛出的 [TypeInitializationException]异常，必须通过InnerException才能够拿到错误信息。</p>
+<p>所以要避免在静态构造函数中出现任何异常（自定义的和系统的），这个时候在代码块中插入 <code>try-catch</code>块是必要的。</p>
+</li>
+<li><p>如果需要无参数构造函数，请务必在类中显式声明此类构造函数。</p>
+<p>如果未显式声明任何构造函数，CLR将自动生成一个默认构造函数。</p>
+<p><strong>但是！！！：</strong>一旦给类型添加了带参的构造函数，<strong>默认构造将不再自动生成</strong>。 这就可能造成了兼容性危害， 在反射的应用场景下容易出现兼容性BUG。</p>
+</li>
+<li><p>避免在构造函数内部调用虚成员。</p>
+<pre><code class="lang-csharp">public abstract class Base{
+    public Base(){
+        Method();
+    }
+    public abstract void Method();
+}
+
+public class SubClass : Base{
+    private string value;
+    public Derived(){
+        value = &quot;sub class&quot;;
+    }
+    public override void Method(){
+            Console.WriteLine(value);
+        }
+    }
+}
+</code></pre><p>这个案例中，构建 SubClass 实例时会抛出空引用异常，因为基类构造函数执行 Method 虚函数的时候 派生类的构造尚未完成(value尚未设置)。 但是这个结果在 SubClass 的角度是不可理解的。</p>
+</li>
+</ul>
+<h2 id="参数设计准则">参数设计准则</h2>
+<ul>
+<li><p>要用类层次结构中最接近基类的类型来作为参数的类型，同时保证该类型能够提供成员所需要的功能</p>
+<p>例如： 设计一个方法遍历集合并打印到控制台。 这样的方法应该以 IEnumerable为参数，而不应该以其他类型（比如：ArrayList、IList）为参数。</p>
+<pre><code class="lang-csharp">public void WriteItemsToConsole(IEnumerable collection){
+    foreach (var item in collection){
+        Console.WriteLine(itme.ToString());
+    }
+}
+</code></pre><p>由于方法内部并不需要使用 IList 的任何一个特定成员，因此用 IEunmerable 作为参数的类型使得用户能够传递只实现了IEnumerable但未实现IList的集合。</p>
+<blockquote><p>注意：这里并不是绝对的，具体设计上还要根据实际的需求来决定使用哪个类型，如果方法需要一些与线程或安全相关的特性，这些特性需要子类来提供，那么一定在参数类型中反映出这一点。否则功能不能使用就毫无意义。</p>
+</blockquote>
+</li>
+<li><p>不要使用保留参数。</p>
+<p>如果将来需要更多参数，那么可以增加一个重载成员。</p>
+<p>反例：</p>
+<p><code>public void Method(SomeOption option, object reserved);</code></p>
+<p>更好的做法是，按需给今后的版本增加一个参数：</p>
+<pre><code class="lang-csharp">public void Method(SomeOption option);
+public void Method(SomeOption option, string path);
+</code></pre></li>
+</ul>
+<h3 id="枚举or布尔">枚举or布尔</h3>
+<ul>
+<li><p>如果参数中包含两个或两个以上的布尔类型，那么请使用枚举。</p>
+<pre><code class="lang-csharp">Stream stream = File.Open(&quot;foo.txt&quot;, ture, false);
+
+// // 这个方法调用没有为代码阅读者提供任何信息来理解true和false背后隐藏的意义。 如果使用枚举的化会容易理解的多。
+Stream stream = File.Open(&quot;foo.txt&quot;, CasingOptions.CaseSensitive, FileMode.Open)
+</code></pre><p>如果函数中有多个布尔参数，如果开发人员不小心将参数搞反，编译器和静态分析工具对此是爱莫能助的。现代编辑环境中提供了智能提示和导航能够一定程度的解决提示问题。</p>
+<blockquote><p>思考：数值常量和布尔常量</p>
+<p>因为开发人员不希望使用魔数（magic number），所以会用数值常量或变量来传递数据， 但是却在忽视对布尔类型的使用， 大多数情况下他是作为 字面常量来传递的。</p>
+</blockquote>
+</li>
+<li><p>不要使用布尔型参数，除非你完全确信永远不需要两个以上的值。</p>
+<p>枚举型让你有空间将来扩展值，但你应了解向枚举添加值所带来的全部影响（比如会有兼容性的风险）。</p>
+</li>
+</ul>
+<h3 id="参数的验证">参数的验证</h3>
+<ul>
+<li><p>请验证传递到公共、受保护的函数的参数。 如果验证失败应引发 [System.ArgumentException] 或其子类异常。</p>
+<pre><code class="lang-csharp">public class StringCollection:IList{
+  int IList.Add(object item){
+      string str = item as string;
+      if (str == null)
+         throw new ArgumentNullException(...);
+      return Add(str)
+  }
+}
+</code></pre></li>
+</ul>
+<p>​        注意，并非一定要在公共函数或受保护函数中实现验证逻辑，也可以放在更低层的私有函数中。 要点在于所有直接暴漏给最终用户的函数都应该验证参数。</p>
+<ul>
+<li><p>不要忽略枚举参数，请验证它！</p>
+<p>不要认为用户传入的枚举参数一定会在枚举定义的范围内。CLR 允许将任何整数值强制转换为枚举值，即使值未在枚举中定义。</p>
+<pre><code class="lang-csharp">public void PickColor(Color color){
+    if (color &gt; Color.Black || color &lt; Color.White){
+        throw new ArgumentOutOfRangeException{....};
+    }
+    ......
+}
+</code></pre></li>
+</ul>
+<p>​       为什么强调这一点？ 因为CLR支持数值类型向枚举的转换，所以超出枚举范围的数值是有机会转换为枚举进行传递的，通常不会被报错。</p>
+<ul>
+<li><p>请谨慎将 Enum.IsDefined 用于枚举范围检查。</p>
+<p>因为它的开销很大。</p>
+</li>
+</ul>
+<h3 id="参数的传递">参数的传递</h3>
+<ul>
+<li><p>不要以引用的方式（ref）传递引用类型。</p>
+<p>只有有限的几种情况例外，比如交换引用的方法。</p>
+<pre><code class="lang-csharp">public void Swap&lt;T&gt;(ref T obj1, ref T obj2){
+    T temp = obj1;
+    obj1 = obj2;
+    obj2 = temp;
+}
+</code></pre><p>但是，这中例外情况几乎没有看到有价值的应用场景。</p>
+</li>
+<li><p>对性能极度敏感的 API 中，请谨慎使用 params 关键字，而是提供特定参数的重载。</p>
+<p>从实现的角度看 params关键字会将不定参数转换成临时数组的形式，换言之他只是对数组参数包了一层语法糖而已。</p>
+<pre><code class="lang-csharp">public static string Format(string format, object[] parameters);
+public static string Format(string format, params object[] parameters);
+
+// 以上的定义在编译后的结果是一样的， 下面在调用时享受到了语法糖带来的简单。
+String.Format(&quot;File {0} not found in {1}&quot;,new object[]{filename,directory});
+String.Format(&quot;File {0} not found in {1}&quot;,filename,directory);
+</code></pre></li>
+</ul>
+<p>​        对哪些非常低层的函数来说创建临时数组和验证数组的开销会成为很大的负担。 因此要尽可能在调用栈的高处使用params， 也就是说在那些大一些的，做更  多工作的函数中。</p>
+<ul>
+<li><p>如果需要在函数中对不定参数进行修改，请不要使用params关键字。</p>
+<p>因为编译器会在调用点将params参数放到一个临时数组中，因此数组可能只是一个临时对象，任何对它的修改都会丢失。</p>
+</li>
+<li><p>要注意传入的params数组参数可能是null</p>
+<p>应该在处理之前验证数组不为null。</p>
+<pre><code class="lang-csharp">static void Main(){
+    Sum(1, 2, 3, 4, 5); // result: 15
+    Sum(null);
+}
+
+static int Sum(params int[] values){
+    if (values == null) 
+        throw AugumentNullException(...);
+    int sum = 0;
+    foreach(var v in values){
+        sum += v;
+    }
+    return sum;
+}
+</code></pre></li>
+</ul>
+<h3 id="指针参数">指针参数</h3>
+<p>一般来说，在精心设计的托管代码中不应该出现指针。大多数情况下应该对指针进行封装。 但是在某些情况下，为了支持与其他系统的互操作，使用指针是合适的。</p>
+<ul>
+<li><p>请为任何以指针为参数的函数提供一个替补函数，因为指针不符合CLS规范。</p>
+<pre><code class="lang-csharp">[CLSCompliant(false)]
+public unsafe int GetBytes(char* chars, int charCount, byte* bytes, int byteCount);
+
+public int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, int byteIndex, int byteCount);
+</code></pre><p>请参考研究 <code>Encoding</code>成员函数的定义。</p>
+</li>
+</ul>
+<h2 id="方法or属性">方法or属性</h2>
+<p>我们在编写C#代码的时候最常面临的选择是把成员设计成属性还是方法？</p>
+<p>.NET 团队定义属性的初衷是想提供一个<strong>智能字段</strong>， 其智能体现在：</p>
+<ol>
+<li>能控制访问限制</li>
+<li>能够封装字段（面向对象的封装原则，永远不要公开对象的状态-字段）</li>
+<li>能够做安全校验</li>
+<li>能够灵活的传递状态变更</li>
+<li><p>能够共享内存等等</p>
+<p>所以属性还是为了包装字段而存在的，但是往往对属性的使用泛滥了。</p>
+</li>
+</ol>
+<p>一个经验法则：<strong>方法应该表示操作，属性应该表示数据</strong>。</p>
+<blockquote><p>属性造成了大量的误解，看似字段不是字段，如果是我参与.NET 以及编译器的设计，我根本不会提供属性，相反我会让程序老老实实的实现GetXxx 和 SetXxx方法  --Jeffrey Richter</p>
+</blockquote>
+<ul>
+<li><p>如果该成员表示类型的一种逻辑特性。考虑使用属性。</p>
+<p>例如：Button.Color 是属性，因为颜色是按钮的一种属性。</p>
+<blockquote><p>在.NET框架设计的早期，微软尝试把所有的Get<name>方法都改成了属性，如：Type.GetName-&gt;Type.Name;   但是在Guid类中却并非如此，有一个按顺序产生下一个Guid的方法 Guid.GetNext() 被改成Guid.Next后又被改回了方法，因为<strong>Guid天生并没有下一个值这样的属性</strong>。<p>
+</name></blockquote>
+</li>
+<li><p>如果属性的值存储在内存中，且提供属性的目的仅仅是为了访问该值，请使用属性而不是方法。</p>
+</li>
+<li><p>要在下列情况中考虑使用方法而不是属性</p>
+<ul>
+<li><p>该操作比字段访问要慢几个数量级。为了避免线程阻塞，你甚至考虑为此提供一个异步的版本。特别是访问网络或文件系统的操作时（在初始化时只执行一次的除外）。</p>
+</li>
+<li><p>该操作是转换操作。如：Object.ToString()方法。</p>
+</li>
+<li><p>该操作在每次调用时返回不同的结果，即使传入的参数不变。如：Guid.NewGuid()； </p>
+<blockquote><p> DateTime.Now 就应该设计为函数  -- Jeffrey Richter</p>
+</blockquote>
+</li>
+<li><p>该操作具有严重的、显而易见的副作用。 </p>
+</li>
+<li><p>该操作会返回内部状态的一个副本（不包括栈上值类型的对象副本）</p>
+</li>
+<li><p>该操作返回一个数组。  </p>
+<p>这条规格对我们的冲击比较大。 因为大多数情况下我们会很自然的定义数组属性。</p>
+<p>那么.NET提供属性的目的是啥： <strong>设计数组的初衷是为了满足面向对象的封装性</strong>，不把内部数据暴露出去（字段）。  而数组属性破坏了这一原则，从经验上看在数组属性中对字段的更新也是无法控制的，以至于我们设计了ArrayData属性来代替数组属性。</p>
+<p>如果在不破坏封装性的情况下数组属性可以返回一个副本, 如下，那么在循环逻辑中这又会造成大量的GC垃圾</p>
+<pre><code class="lang-csharp">public int[] DataArray
+{
+    get{  
+        int[] copy = new int[dataArray.Length];
+        Array.Copy(intArray, copy, dataArray.Length);
+        return copy;
+    }
+}
+private int[] dataArray= new int[32]{0};
+</code></pre><p>两个方法解决以上问题：</p>
+<ol>
+<li><p>把属性改为函数，通过函数的方式能够让调用方很轻易的识别出这是数据的副本 <code>GetDataArray()</code>。</p>
+</li>
+<li><p>将数组属性改为只读集合 ReadOnlyCollection<t>，以只读的形式访问数据。<p>
+<pre><code class="lang-csharp">public ReadOnlyCollection&lt;string&gt; DataCollection
+{
+  get{ return dataCollection; }
+}
+private List&lt;int&gt; data = new List&lt;int&gt;();         
+private ReadOnlyCollection&lt;int&gt; dataCollection = new ReadOnlyCollection&lt;int&gt;(data);
+</code></pre><p>注意：其实ReadOnlyCollection 并不是绝对的只读，其只能保证对集合增删的保护，通过索引的方式可以更新dataCollection内部元素，好在这个更新过程可以像属性一个被监控。</p>
+<blockquote><p>这个条目讨论到这里，也并没有完全理清楚对于数组属性的态度， 还需要继续做工作...-- konglinglei.</p>
+</blockquote>
+</t></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="防御式编程">防御式编程</h2>
+<p>防御式编程的主要思想是：函数体应该不因传入错误数据而被破坏，哪怕是由其他子程序产生的错误数据。更一般的说，其核心想法是要承认程序都会有问题，这些问题都需要被修正，聪明的程序员应该根据这一点来编程。<code>[代码大全2.0]</code></p>
+<p>防御式编程的目的是面对不可靠的外部世界，通过各种防御手段避免代码中引入不可控的错误，使系统更加的安全和健壮。 </p>
+<h3 id="编程中的错误">编程中的错误</h3>
+<p>如果要保护我们的程序免遭破坏，就需要对编程中的错误做出反应。以下对编程中的可能出现的错误归纳分类，然后通过一些关键方法的定义和应用实践来防御。</p>
+<ol>
+<li><strong>外部非法输入错误：</strong>  外部接口调用（文档、网络、数据库等读写接口）时，通过参数传入的输入错误。</li>
+<li><strong>系统异常：</strong> 直接或间接触发的操作系统级别异常（如堆栈异常、磁盘异常、网络异常等等）。</li>
+<li><strong>编码BUG：</strong>  设计错误或编码错误导致的和预期不一致的输出。</li>
+</ol>
+<h3 id="防御技术概述">防御技术概述</h3>
+<p>借助防御式编程技术可以让错误更容易发现和修改、减少错误对产品代码的破坏。 本章节试图讲清楚什么是断言，什么错误处理，什么是异常，以及他们之间的关系，同时提供一些基本的设计原则。</p>
+<h4 id="断言技术">断言技术</h4>
+<p>断言是指在<strong>开发和维护期间</strong>使用的，让程序在运行时根据假定<strong>自检的代码</strong>。  用断言来处理绝不应该发生的状况，这些状况通常是<strong>编程中的BUG</strong>， 因为是开发维护阶段，所以一旦发生了断言，应该修正代码并重新编译。</p>
+<blockquote><p>总结：断言 在开发阶段 防御 编程的BUG。</p>
+<p>扩展探讨： 断言技术在.NET中并不是开发和维护阶段特有的， 调试版本提供了Debug.Assert，发行版本提供了 Trace.Assert；  而且从契约式编程的一些技术手段上也看到通过 发行版本的Assert进行契约描述的场景。 所以本节讲到的断言技术的定位是比较常规的实践。  在不打破这种常规时间的情况下可以好好思考断言的其他应用场景。</p>
+</blockquote>
+<h4 id="错误处理技术">错误处理技术</h4>
+<p>这是一个比较笼统的名字， 除去编码BUG之外的所有错误（外部非法输入、系统异常）的处理都归类到错误处理技术中。错误处理是在<strong>生产环境下</strong>用来处理那些<strong>预料中</strong>可能要发生的错误。并对其做出响应。</p>
+<p>错误处理技术遵循一个原则：<strong>优先用最稳妥的方式在局部处理错误， 在局部没有能力处理时，将控制权交给调用方。</strong></p>
+<p>局部处理错误的场景比较复杂，往往是函数功能规格设计的一部分，类似【接口契约】</p>
+<pre><code>比如遇到错误的输入时：
+* 返回中立值
+* 换用下一个正确的数据
+* 返回前次相同的值
+* 返回最近有效值
+* 记录日志或警告
+* 关闭程序
+...
+</code></pre><p>当函数没有能力处理错误时，通过以下方式将控制权转交给调用方：</p>
+<pre><code>* 返回错误码
+* 抛出异常
+</code></pre><p><strong>选择抛出异常 还是返回错误码？</strong>----  在面型对象的语言中，如果你决定让高层次代码（调用方）来处理错误，低层次代码只需要简单报告错误，那么就要确保<strong>高层次代码真的处理了错误</strong>！  千万不要忽略错误信息。  防御式编程的重点就在于防御哪些你未曾预料到的错误。 但是实际的情况是错误码很容易被忽略，所以除非有针对性的设计规范，否则优先抛出异常。</p>
+<blockquote><p> 错误码：技术上可被忽略的错误反馈，所以经常被忽略！</p>
+</blockquote>
+<h4 id="隔栏">隔栏</h4>
+<p><strong>隔栏</strong>并不是处理错误的手段而是以防御式编程为目的而进行隔离的一种<strong>设计方法</strong>。 其把某些<strong>接口</strong>作为<strong>安全区域</strong>的边界，对穿越安全边界的数据进行合法性校验，当数据非法时做出敏锐反应，与此同时其私有方法可以假定数据都是安全的了。</p>
+<p><strong>隔栏的使用使断言和错误处理有了清晰的区分。</strong>  隔栏外部的程序应使用错误处理技术，在那里假定任何数据都是不安全的；隔栏内部的程序就应该使用断言技术，因为传进来的数据应该已经在通过隔栏时被清理过了。  如果隔栏内部的某个函数检测到了错误的数据，那么这应该是编程的错误（BUG）而不是数据的错误。</p>
+<blockquote><p> 隔栏内部检测到了输入错误，说明这是一个 编程 BUG！</p>
+</blockquote>
+<h4 id="健壮性和正确性">健壮性和正确性</h4>
+<p>正确性意味着永不返回不准确的结果，哪怕不返回结果也要比返回不准确的结果好；健壮性意味着要不断尝试采取某些措施，以保证软件可以持续的运转下去，哪怕有时做出一些不够准确的结果。</p>
+<p>人身安全攸关的软件往往更注重正确性而非健壮性。不返回结果也比返回错误的结果要好。 比如一些医疗器械软件就是体现这一原则的好例子。消费类应用软件往往更注重健壮性而非正确性。通常返回一些结果要比软件停止运行要强。比如表格处理软件。</p>
+<h3 id="防御式编程最佳实践">防御式编程最佳实践</h3>
+<h4 id="没有完美的代码">没有完美的代码</h4>
+<ul>
+<li>要承认没有完美的代码，所以需要务实的心态，主动对错误进行防御。</li>
+</ul>
+<h4 id="用断言检查编程bug">用断言检查编程BUG</h4>
+<ul>
+<li>用错误处理来处理预期会发生的状况，用断言来处理绝不应该发生的状况。</li>
+</ul>
+<p>​       错误处理通常用来检查有害的输入，而断言用来检查代码中的 BUG。  所以当程序员喜欢讲&quot;这件事绝不会发生。。。时，请用断言来覆盖它。 </p>
+<ul>
+<li><p>避免把需要执行的代码放入断言中。</p>
+<p>将可以在生产环境下执行的函数或逻辑放入到断言中， 会造成很严重的副作用。因为当你关闭断言时，逻辑就不完整了。</p>
+<pre><code class="lang-csharp">// 在发行后，Debug不生效，要确保不会造成逻辑上的不一致。
+Debug.Assert (meas(i) != 0 );
+
+// 消除副作用的办法可能只需要一个临时变量。
+temp = meas( i );
+Debug.Assert ( temp != 0 );
+</code></pre></li>
+<li><p>使用断言来注解并验证前置条件和后置条件。</p>
+<p>在符合<strong>契约式设计</strong>的设计中， 断言时代替契约注释的比较好的手段。 但是断言优先关注私有函数的契约，公开函数的契约通过错误处理的手段来检查。</p>
+<blockquote><p>契约式设计是独立于 防御式编程的另外一套设计方法，其目的是通过契约的方式约束客户和供应商的权利和责任，实施好的契约式编程同样达到了防御的目的，错误处理和断言也是其手段。  所以我感觉 契约式编程也是防御式编程的一种设计方法。</p>
+<p>在.NET中提供了发布时的断言接口  Trace.Assert  来解决在在生产环境下对关键的输入进行断言跟踪的需求， 因为断言是有性能成本的，所以这个接口的使用要谨慎。 那么哪些情况下在生产环境使用断言？ 是否要出一个设计准则？ </p>
+</blockquote>
+</li>
+</ul>
+<h4 id="异常or错误码">异常or错误码</h4>
+<ul>
+<li><p>尽量不要返回错误码， 特别是在框架层面异常是用来报告错误的主要方式。</p>
+<p>往往异常会传递到 <strong>监管程序</strong>掌控， 错误码是在技术上允许被忽视的方法，所以非常不可靠。</p>
+</li>
+<li><p>要通过抛出异常的方式来报告<strong>操作失败</strong>。</p>
+<p>如果一个函数无法成功完成它名字语义上支持的任务，那么应该认为是操作失败并抛出异常，因为除了抛出异常你不知道该如何处理这个结果。</p>
+<pre><code>例如一个名为 ReadByte 的方法，在流程没有数据可读时，应该抛出异常。
+同时一个名为 ReadChar 的方法在相同的情况下却不应该抛出异常，这是因为EOF是一个有效的字符，在这种情况下可以作为返回值。这样，方法就能够完成他的名字所对应的任务。
+</code></pre></li>
+<li><p>不能用异常来推卸责任。</p>
+<p>如果某种错误的情况可以在局部处理掉，那就再局部处理掉它。不要把本来可以局部处理的错误或流程当作未捕获的异常抛出去。</p>
+<p>例如，用来调用某个成员之前检查前置条件，这样用户编写的代码就不会引发异常。</p>
+<pre><code class="lang-csharp">ICollection&lt;int&gt; collection= ...
+if (!collection.IsReadOnly){
+    collection.Add(additionalNumber);
+}
+</code></pre><blockquote><p>这属于 tester-doer模式，如果此模式开销高可以考虑 Try-Parse 模式。 </p>
+<p>优先稳妥的在局部处理所有错误  局部处理的实践指导需要给出.</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="抛出异常">抛出异常</h4>
+<ul>
+<li><p>在恰当的抽象层次抛出异常。</p>
+<p>抛出的异常也是接口的一部分，所以决定将异常传递给调用方时，要确保异常的抽象层次和函数接口的抽象层次一致。</p>
+<pre><code class="lang-csharp">// 反例：
+class Employee{
+    public  TaxID GetTaxId(){
+        throw new EOFException();
+    }
+}
+
+// 正例：
+class Employee{
+    public TaxId GetTaxId(){
+        throw new EmployeeDataNotAvailable(); 
+    }
+}
+</code></pre><p>GetTaxId()把更低层次的 EOFException（文件结束）异常返回给他的调用方，它本身并不拥有这一异常，这会使调用方和更低层次的异常代码耦合，破坏了封装性。 与之相反，代码应抛回一个与其所在类接口相一致的异常，这中封装既没有暴漏实现细节，也充分的保持了接口的抽象性。</p>
+</li>
+</ul>
+<p>​        在框架设计层面，这个指导会要求框架设计人员要对异常的定义有一个整体的一致性的规范，并文档化。</p>
+<ul>
+<li><p>避免在构造函数或析构函数中抛出异常，除非你在同一个地方将他们捕获。</p>
+<p>在构造中抛出异常会让处理异常的规则变得复杂，而且中断的构造函数在处理后也无法调用析构，会造成潜在的资源泄露。 在析构函数中抛出异常也有类似问题。</p>
+<blockquote><p>注意： 在C++语言下这一条比较合适的，托管程序中对象的构建是在构造函数之前完成的，所以析构会得到执行，不过同样要确保对资源状态和依赖关系的检查。 相关的讨论在构造函数设计准则下也有。</p>
+</blockquote>
+</li>
+<li><p>如果在公开函数中因为违反了契约而抛出异常，请为所有的异常撰写接口文档。（契约式设计）</p>
+<p>如果异常是契约的一部分，那么他们不应该随版本而变化（也就是说，要具备兼容性，既不应该改变异常的类型，也不应该增加新的异常）。</p>
+<blockquote><p>API规格或许应该就是契约的描述？ --konglinglei</p>
+</blockquote>
+</li>
+<li><p>必要时，终止进程而不是抛出异常</p>
+<p>考虑在代码遇到了严重问题且无法继续安全的执行时，通过调用System.Environment.FaiFat来终止进程，而不要抛出异常。系统失败是无法由调用者处理，在这种情况下，关闭进程的最佳方式是调用Environment.FailFast，他会将系统状态记录下来，这对诊断问题非常有帮助。</p>
+</li>
+</ul>
+<h4 id="处理异常">处理异常</h4>
+<blockquote><p> <strong>对异常处理：</strong>  如果 catch 代码块来捕获某个特定异常的异常，并完全理解 catch 代码块之后继续执行对应用程序来说意味着什么，那么我们说这种情况是对异常的处理。 例如：试图打开一个配置文件时，如果文件不存在，那么可以捕获 FileNotFoundException，并在这种情况下使用默认的配置文件。</p>
+<p><strong>把异常吞了：</strong>如果捕获的异常具体类型不确定（通常都是如此），并在不完全理解失败的原因或没有对失败做出反应的情况下让应用程序继续执行，那么我们把这种情况称为把异常吞了。</p>
+</blockquote>
+<ul>
+<li><p>不要在<strong>框架代码</strong>中捕获具体类型不确定的异常（比如：System.Exception、System.SystemException等等）时把异常吞了。</p>
+<pre><code class="lang-csharp">try{
+    File.Open( ... );
+}catch(Exception e){
+  // 在不知道异常原因的情况下，吞掉了所有异常，不要这样做。    
+}
+</code></pre><p><strong>如果需要把异常转移到另一个线程，那么可以捕获具体类型不确定的异常。 很多时候会发生这种问题(比如  异步编程时，线程池操作时)， 如果把异常转移到另一个线程，这么做就不能算是把异常吞了。</strong></p>
+<p><strong>切记：在线程间转移异常时，必须保证已经做好了响应的防护，不会发生把异常漏掉的情况。例如：如果捕获了一个异常并将它放入一个列表中，但却没有别的线程对这个列表检查，那么这等于是把异常吞了。其后果和忽略错误码的后果一样糟糕。</strong></p>
+</li>
+<li><p>不要在<strong>应用程序</strong>代码中，捕获具体类型不确定的异常（system.exception\systemexception等等）时，把异常吞了。</p>
+<p>作为框架代码的监管程序，如果要把异常吞掉，继续执行程序，意味着要冒状态不一致的风险。 </p>
+<p>权衡这种风险可以关注以下两点：</p>
+<ol>
+<li>哪个组件抛出的异常，契约是什么（通过契约来约束调用程序）。</li>
+<li>异常的抛出点和捕获点之间有完全的调用栈，并且你确定栈中的每个方法已经在返回之前适当的清理了全局状态。</li>
+</ol>
+<p>如果不知道以上两点，那么你就不知道一些全局状态是否已经处于<code>半修改</code>状态，在这种情况下让程序继续运行可能会导致奇怪的错误。</p>
+<p>如：OutOfMemoryException、StackOverFlowException、或ThreadAbortException，他们可能会发生在许多地方。</p>
+</li>
+<li><p>不要捕获不应该捕获的异常。通常应该允许异常沿着调用栈向上游传递。</p>
+<p><strong>这一点怎么强调都不过分</strong>。 这种案例太多，开发人员捕获了不该捕获的异常，而使第一现场缺陷更难以发现。 所以不要随便捕获异常，应该把缺陷都暴露出来。由有能力的监管程序来处理。</p>
+<p>又如何来权衡哪？ 根据前面的原则，能够在局部处理的错误要局部处理掉，没有能力处理的要交给调用者，所以不要捕获不应该捕获的异常。</p>
+</li>
+<li><p>要在捕获并重新抛出异常时使用空的throw语句。这是保持异常调用栈不变的最好方法。</p>
+<pre><code class="lang-csharp">public void DoSometing(FileStream file){
+    long position = file.Position;
+    try{
+        ... // 一些读操作
+    }catch{
+        file.Position = position;  // 必要的恢复操作
+        throw;  // 重新抛出异常
+    }      
+}
+</code></pre><p><strong>注意：抛出一个新的异常（与重新抛出原来的异常相比）相当于报告了一个不同的错误， 而不是实际发生的错误。这会妨碍调试应用程序。因此，应该优先抛出原来的异常，而不要抛出新的异常。 最好是完全避免捕获和（重新）抛出异常。</strong></p>
+</li>
+<li><p>要在对异常进行重新封装时为其指定内部异常（inner exception）。</p>
+<p>这一点再怎么强调也不过分。如果拿不定主意，就不要封装异常。 </p>
+<blockquote><p> 我们知道CLR反射就是这样的例子，当通过反射来调用一个方法是，如果该方法抛出了异常，那么CLR会捕获并抛出新的TargetInvoctionException ，这实在让人恼火，因为他隐藏了实际存在问题的方法和发生问题的位置。正是由于反射封装了异常，使我们在调试自己代码是浪费了很多时间（因为要去寻找InnerException）。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="参考说明">参考说明</h2>
+<h3 id="test-doer模式">Test-Doer模式</h3>
+<p>有时候，可以把抛出异常的成员分解为两个成员，这样就能够提高该成员的性能。让我们来看看ICollection<t>接口的 Add方法。<p>
+<pre><code class="lang-csharp">ICollection&lt;int&gt; numbers = ...
+numbers.Add(1);
+</code></pre><p>如果集合是只读的，那么Add方法会抛出异常。在Add方法经常会失败的场景中，这可能会引起性能问题。缓解问题的方法之一就是在试图调用Add方法前，检查集合是否可写。</p>
+<pre><code class="lang-csharp">ICollection&lt;int&gt; numbers = ...
+...
+if (!numbers.IsReadOnly){
+    numbers.Add(1);
+}
+</code></pre><p>用来测试条件的成员成为tester，在前面例子中就是IsReadOnly。用来执行实际的操作并可能会抛出异常的成员成为doer， 在前面的例子中就是Add方法。</p>
+<blockquote><p>使用这种模式无比小心，如果该方法设计为线程安全的方法时，要考虑竟态条件，在线程不安全的方法中，需要用户来保证。</p>
+</blockquote>
+<h3 id="try-parse模式">Try-Parse模式</h3>
+<p>该模式对成员的名字进行调整， 是函数语义中包含一个预先定义好的tester。 例如，DataTime定义了一个Parse方法，如果解析失败会抛出异常，同时他还定义了与之对应的TryParsef方法，它会试图解析，但在解析失败时会返回false，而在解析成功时则通过一个输出参数来返回结果。</p>
+<pre><code class="lang-csharp">public struct DateTime{
+    public static DateTime Parse(string dateTime){
+        ...
+    }
+
+    public static bool TryParse(string dateTime, out DateTime result){
+        ...
+    }
+}
+</code></pre><p>在使用这个模式时，非常重要的一点是要严格定义try操作。如果因为try操作之外的原因而导致成员失败，那么成员也仍旧应该抛出异常。</p>
+<p>在实现Try-Parse模式时使用<strong>Try</strong>前缀，并用布尔类型作为方法的返回类型。 要为每个使用Try-Parse模式的方法提供一个会抛出异常的而对应成员。</p>
+<h3 id="契约式编程">契约式编程</h3>
+<p>契约式编程允许函数接口和调用方之间建立契约关系， 这个契约允许双方在不同的API之间表达需求和承诺。 其核心思想是通过技术的手段将API的需求和承诺与实现相分离（不是绝对的分离）， 在契约式编程之前 契约关系是沟通注释说明来表示的。</p>
+<p>契约式编程允许代码中指定前置条件、后置条件和对象的固定条件。 前置条件是输入方法或属性时必须满足的要求。 后置条件描述在方法或属性代码退出时的预期。 对象固定条件描述处于良好状态的类的预期状态。</p>
+<pre><code class="lang-csharp">public int CountWhitespace(string text)
+{
+    Contract.Requires(text != null, &quot;text&quot;);
+    Contract.Ensures(Contract.Result&lt;int&gt;() &gt;= 0);
+    return text.Count(char.IsWhiteSpace);
+}
+</code></pre><blockquote><p>.NET4版本上微软提供了契约式编程能力（代码协定）， 但是从.NET5开始，微软过期并移除了这个库的支持。</p>
+<p>从老版本的使用上看，Framework 内置的契约式编程 在实现和维护上是有些麻烦的，其实现的机理远远超出了基础语言的范畴，要配合语法糖编译、工具才能够理解， 所以我感觉面向接口的契约式规格的意义大于契约式编码的实现... -- konglinglei </p>
+</blockquote>
+<h3 id="标准类型异常">标准类型异常</h3>
+<p>本节描述了框架提供的部分标准异常以及他们的使用参考，具体请参阅MSDN</p>
+<ul>
+<li><p>Exception 与 SystemException</p>
+<ul>
+<li>不要抛出 System.Exception 或 System.SystemException 异常。</li>
+<li>不要在框架性质的代码中捕获 System.Exception 或 System.SystemException 异常， 除非打算重新抛出，或在顶层处理模块中。</li>
+</ul>
+</li>
+<li><p>ApplicationException</p>
+<ul>
+<li>不要抛出 ApplicationException或从它派生的新类。</li>
+</ul>
+</li>
+<li><p>InvalidOperationException</p>
+<ul>
+<li>要抛出InvalidOperationException异常--如果对象处于不正确的状态。</li>
+</ul>
+</li>
+<li>如果无法根据对象当前状态设置对象某个属性或调用某个方法，那么应该抛出此异常。例如：往只读的FileStream写入数据就应该抛出此异常。</li>
+<li>ArgumentException\ArgumentNullException\ArgumentOutOfRangeException <ul>
+<li>需要的时候可以直接抛出这些异常。</li>
+</ul>
+</li>
+<li><p>NullReferenceException\IndexOutRangeException\AccessViolationException</p>
+<ul>
+<li>不要让公共API显式或隐式的抛出这三类异常。这些异常是专门留给执行引擎来抛出的，大多数情况下他们表示代码存在缺陷。要仔细检查参数，避免抛出这些异常。抛出这些异常会暴露方法的实现细节，而实现细节可能会随着时间而改变。</li>
+</ul>
+</li>
+<li>ComException\SEHException\ExecutionEngineException: 不要显式抛出以上异常，只有CLR才能抛出。</li>
+</ul>
+<h2 id="参考资料">参考资料</h2>
+<pre><code>[^1]: NET设计规范：约定、惯用法与模式(第2版)
+[^2]: 代码整洁之道
+[^3]: 代码大全2
+[^4]: 程序员修炼之道
+[^5]: 托管代码分析警告(MSDN)
+</code></pre><h2 id="待办事项">待办事项</h2>
+<pre><code>*  函数的单一职责
+     只做一件事情
+     同一个抽象层次
+     临时变量的单一职责
+     高内聚
+*  函数可重入性
+*  函数的可测试性
+*  函数体其他设计
+     switch语句
+     循环策略
+     长度短小
+     快速退出（深层嵌套）
+     最小变量作用域
+     提炼子方法原则
+</code></pre></t></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#20989;&#25968;&#20307;&#35774;&#35745;&#26368;&#20339;&#23454;&#36341;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>
