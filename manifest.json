@@ -1840,12 +1840,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
-          "hash": "7BfgPOkK9R0YY9b/c+Zlr78HeP8aWm5CejKH5t6geFI="
+          "hash": "ywDwYycBBHnuRRG4ObZZ9qdAKy5EJKkX2foJ1Hm6LJo="
         }
       },
       "is_incremental": false,
