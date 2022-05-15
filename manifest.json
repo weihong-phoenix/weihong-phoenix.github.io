@@ -775,6 +775,149 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_jg.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_jg.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_jx.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_jx.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_ks.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_ks.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_pt1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt2.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_pt2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt3.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_pt3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt4.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_pt4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_tz.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_tz.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_jc_zt.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_jc_zt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_zx_bj.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_zx_bj.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_zx_bk.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_zx_bk.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_zx_fg.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_zx_fg.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_zx_zt.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_zx_zt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sr1_srk1_f1.jpg",
       "output": {
         "resource": {
@@ -1849,6 +1992,18 @@
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
           "hash": "ywDwYycBBHnuRRG4ObZZ9qdAKy5EJKkX2foJ1Hm6LJo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/UI设计规范/通用类元素规范/色彩.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/UI设计规范/通用类元素规范/色彩.html",
+          "hash": "mql5MCG4IqbR4K9mxt406RU6Fx+4BfzDsBRPtilJO2w="
         }
       },
       "is_incremental": false,
@@ -4119,7 +4274,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 77,
+          "total_file_count": 78,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
