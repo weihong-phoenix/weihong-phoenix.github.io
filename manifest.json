@@ -1983,15 +1983,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
-          "hash": "ywDwYycBBHnuRRG4ObZZ9qdAKy5EJKkX2foJ1Hm6LJo="
+          "hash": "W45nbxcHTqfk+9LVDY7jTfP1rohI2mhkvzP68vrVzBI="
         }
       },
       "is_incremental": false,
