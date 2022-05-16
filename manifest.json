@@ -1932,15 +1932,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/布局规范.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/布局规范.html",
-          "hash": "aAOQqCsiMShiY0cWBtviqx0jQ3XgjyrCEU3Ukc469YQ="
+          "hash": "XZvmZfHiYKGAriwE3Wcw9B23fTjswP8GgXbGMY9wgIg="
         }
       },
       "is_incremental": false,
