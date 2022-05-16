@@ -1920,12 +1920,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/信息输入.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/信息输入.html",
-          "hash": "Z7gLq+vHRONV3/5/mOG2j0M7GGpQiCOe0hkuT5rGHlQ="
+          "hash": "14WtPEJrVjgz+sRXgnRQJnoj6xR0Hl8I9rSvuiFLN4s="
         }
       },
       "is_incremental": false,
