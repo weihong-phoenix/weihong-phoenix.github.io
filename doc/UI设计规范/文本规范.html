@@ -86,13 +86,13 @@
 <li><p>参数命名及描述</p>
 <ul>
 <li>BOOL型，参数类型为BOOL型的，选项只有两种情况。比如圆弧限速，选项仅为是/否的情况。</li>
-<li>值枚型，参数类型为枚举型，选项有多种情况。比如速度算法，选项有加速度梯形算法、</li>
+<li>值枚型，参数类型为枚举型，选项有多种情况。比如插补算法，选项有加速度直线型、加速度三角形、加速度梯形、高速梯形、LSC、HSS。</li>
 </ul>
 </li>
 <li><p>标点符号</p>
 <ul>
 <li>冒号</li>
-<li>引号</li>
+<li>引号，表示引用的文本需使用引号。</li>
 <li>括号</li>
 <li>单书名号</li>
 <li>加载符号</li>
@@ -102,24 +102,22 @@
 <ul>
 <li>首句字母大写</li>
 <li>独立词语首字母大写</li>
-<li>全部大写</li>
+<li>全部大写，全部大写是指每个字母都使用大写。一般适用于以下情况：通用缩写，文件格式（或类型），坐标轴等。</li>
 <li>小写</li>
 </ul>
 </li>
 </ul>
+<h2 id="详细设计">详细设计</h2>
 <h3 id="参数命名与描述">参数命名与描述</h3>
 <h4 id="bool型">BOOL型</h4>
-<p>表示True/False的参数应使用BOOL型格式</p>
-<p><strong>【规则】：</strong> 参数名称中不可出现“是否”。</p>
-<p><strong>【原则】：</strong> 标点符号的使用（如图）：</p>
-<blockquote><p>这里为什么描述标点符号，是否应该在后面描述比较好？</p>
-</blockquote>
-<p><img src="images/wb_cs_bool_1.png" alt="img"></p>
-<p><strong>【规则】：</strong> 选择应使用单选按钮列举选项。</p>
+<p><strong>必须遵守</strong></p>
+<ul>
+<li>参数名称中不可出现“是否”。</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th><img src="images/wb_cs_bool_2.png" alt="img"></th>
+<th>｜<img src="images/wb_cs_bool_1.png" alt="img">｜</th>
 </tr>
 </thead>
 <tbody>
@@ -128,10 +126,29 @@
 </tr>
 </tbody>
 </table>
-<h3 id="值枚举型">值枚举型</h3>
-<p>列举多个选项时应使用值枚举型格式。</p>
-<p><strong>【规则】：</strong> 选项与对应的数值之间用冒号“：”，不得使用“表示/为/是”等字眼。</p>
-<p><strong>【规则】：</strong> 相邻选项之间用分号“；”隔开。</p>
+<ul>
+<li>选择应使用单选按钮列举选项。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>｜<img src="images/wb_cs_bool_2.png" alt="img">｜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="值枚举型">值枚举型</h4>
+<p><strong>必须遵守</strong></p>
+<ul>
+<li><p>选项与对应的数值之间用冒号“：”，不得使用“表示/为/是”等字眼。</p>
+</li>
+<li><p>相邻选项之间用分号“；”隔开。</p>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -144,8 +161,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="标点符号">标点符号</h2>
-<p><strong>【原则】：</strong> 一般情况下，中文标点符号可直接使用，英文标点符号输入后需加一个空格。</p>
+<h3 id="标点符号">标点符号</h3>
+<p><strong>必须遵守</strong> </p>
+<p>中文标点符号可直接使用，英文标点符号输入后需加一个空格。</p>
 <table>
 <thead>
 <tr>
@@ -158,9 +176,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="冒号">冒号</h2>
-<p><strong>【规则】：</strong> 冒号必须使用英文半角模式下的“冒号”。</p>
-<p><strong>【原则】：</strong> 如果冒号与后面的内容在同一个控件上，需在冒号后加一个空格。</p>
+<h4 id="冒号">冒号</h4>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li><p>冒号必须使用英文半角模式下的“冒号”。</p>
+</li>
+<li><p>如果冒号与后面的内容在同一个控件上，需在冒号后加一个空格。</p>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -173,9 +196,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="引号">引号</h2>
-<p>表示引用的文本需使用引号。</p>
-<p><strong>【规则】：</strong> 中文版本使用中文半角引号，英文版本使用英文半角引号加空格。</p>
+<h4 id="引号">引号</h4>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li>中文版本使用中文半角引号，英文版本使用英文半角引号加空格。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -188,10 +213,15 @@
 </tr>
 </tbody>
 </table>
-<h2 id="括号">括号</h2>
+<h4 id="括号">括号</h4>
 <p>表示补充说明、快捷键或数值范围的文本需使用括号。</p>
-<p><strong>【规则】：</strong> 中英文版本均使用英文半角括号。</p>
-<p><strong>【规则】：</strong> 表示范围时，如果临界值可以取到，需用英文半角中括号：</p>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li><p>中英文版本均使用英文半角括号。</p>
+</li>
+<li><p>表示范围时，如果临界值可以取到，需用英文半角中括号：</p>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -204,8 +234,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="单书名号">单书名号</h2>
-<p><strong>【原则】：</strong> 引用某个参数或按键上的名称时，应使用单书名号，使用规范同“括号”。</p>
+<h4 id="单书名号">单书名号</h4>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li>引用某个参数或按键上的名称时，应使用单书名号，使用规范同“括号”。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -218,9 +251,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="加载符号">加载符号</h2>
-<p><strong>【规则】：</strong> 表示加载或进程的文本末需用3个循环出现的点作为后缀，如“软件启动中…”、“正在调机…”等。</p>
-<p><strong>【规则】：</strong> 中英文版本均使用英文半角句号或数字键盘中的点“.”。</p>
+<h4 id="加载符号">加载符号</h4>
+<p>表示加载或进程的文本末需用3个循环出现的点作为后缀，如“软件启动中…”、“正在调机…”等。</p>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li>中英文版本均使用英文半角句号或数字键盘中的点“.”。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -233,10 +269,15 @@
 </tr>
 </tbody>
 </table>
-<h2 id="英文大小写规范">英文大小写规范</h2>
-<h3 id="句首字母大写">句首字母大写</h3>
-<p><strong>【原则】：</strong> 告警或提示符号的首字母必须大写。如：Error，Warnning，Tips等。</p>
-<p><strong>【原则】：</strong> 完整句子首个单词首字母必须大写。如：状态栏弹出提示、操作提示或说明、参数解释或描述等。</p>
+<h3 id="英文大小写规范">英文大小写规范</h3>
+<h4 id="句首字母大写">句首字母大写</h4>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li><p>告警或提示符号的首字母必须大写。如：Error，Warnning，Tips等。</p>
+</li>
+<li><p>完整句子首个单词首字母必须大写。如：状态栏弹出提示、操作提示或说明、参数解释或描述等。</p>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -249,7 +290,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>【原则】：</strong> 列表中的描述性信息首字母必须大写。</p>
+<ul>
+<li>列表中的描述性信息首字母必须大写。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -262,8 +305,11 @@
 </tr>
 </tbody>
 </table>
-<h3 id="单词首字母大写">单词首字母大写</h3>
-<p><strong>【规则】：</strong> 单个词语或短语中的每个单词首字母必须大写。</p>
+<h4 id="单词首字母大写">单词首字母大写</h4>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li>单个词语或短语中的每个单词首字母必须大写。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -276,7 +322,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>【规则】：</strong> 单选或复选的选项为一个完整的句子时，仅句首字母大写。</p>
+<ul>
+<li>单选或复选的选项为一个完整的句子时，仅句首字母大写。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -289,7 +337,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>【规则】：</strong> 标识为常显状态或模式的文字首字母必须大写。</p>
+<ul>
+<li>标识为常显状态或模式的文字首字母必须大写。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -302,7 +352,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>【规则】：</strong> 菜单及菜单选项的首字母必须大写。</p>
+<ul>
+<li>菜单及菜单选项的首字母必须大写。</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -315,14 +367,24 @@
 </tr>
 </tbody>
 </table>
-<h2 id="全部大写">全部大写</h2>
-<p>全部大写是指每个字母都使用大写。一般适用于以下情况：通用缩写，文件格式（或类型），坐标轴等。</p>
-<p><strong>【规则】：</strong> 坐标轴都需要大写：X，Y，Z，……</p>
-<p><strong>【原则】：</strong> 一般通用缩写都需要大写：IO（Input/Output） ，MFR（Multi-frequency Receiver），HW（Hand Wheel），USB（Universal Serial Bus），……</p>
-<p><strong>【原则】：</strong> 一般文件格式描述都需要大写：PLT，DXF，ENG，……</p>
-<h3 id="小写">小写</h3>
-<p><strong>【原则】：</strong> 控件上的短语中，介词（如of，by，to，in，on，at，for，as等）或连词（如and，or，with等）一般需小写，如“Set as Default”中“as”需小写。</p>
-<p><strong>【原则】：</strong> 通用短语“Save As…（存储为…）”中的“As”首字母需要大写。</p>
+<h4 id="全部大写">全部大写</h4>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li><p>坐标轴都需要大写：X，Y，Z，……</p>
+</li>
+<li><p>通用缩写都需要大写：IO（Input/Output） ，MFR（Multi-frequency Receiver），HW（Hand Wheel），USB（Universal Serial Bus），……</p>
+</li>
+<li><p>文件格式描述都需要大写：PLT，DXF，ENG，……</p>
+</li>
+</ul>
+<h4 id="小写">小写</h4>
+<p><strong>必须遵守</strong> </p>
+<ul>
+<li><p>控件上的短语中，介词（如of，by，to，in，on，at，for，as等）或连词（如and，or，with等）一般需小写，如“Set as Default”中“as”需小写。</p>
+</li>
+<li><p>通用短语“Save As…（存储为…）”中的“As”首字母需要大写。</p>
+</li>
+</ul>
 </article>
           </div>
           
