@@ -1028,17 +1028,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sr1_srk3_ pt1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sr1_srk3_ pt1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sr1_srk3_f1.jpg",
       "output": {
         "resource": {
