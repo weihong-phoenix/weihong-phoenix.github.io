@@ -1901,7 +1901,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "Bk/xsw8BIj3jRo6V3lPt8Sxo5gFpvLmpLJeE15F9Dm4="
+          "hash": "4wiqAMGxNqZ/sxbFoC2h8inDolCVxCHduhoM0tIxIKo="
         }
       },
       "is_incremental": false,
@@ -1957,11 +1957,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/文本规范.md",
+      "source_relative_path": "doc/UI设计规范/文案规范.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/文本规范.html",
-          "hash": "2k9EiWlvngN5Y4ED3ARnLVOfsdtlrSa/6wkkZET08wU="
+          "relative_path": "doc/UI设计规范/文案规范.html",
+          "hash": "xQtan5qmLP4c28VpDjdQRmI0Hz/YEv8TNuba1Xj3FZU="
         }
       },
       "is_incremental": false,
