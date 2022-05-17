@@ -1896,15 +1896,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/UI设计规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "J+tqfM7VRH88/AUW1DZiz9lWIeLmkLfQuRlsqKznm3A="
+          "hash": "Bk/xsw8BIj3jRo6V3lPt8Sxo5gFpvLmpLJeE15F9Dm4="
         }
       },
       "is_incremental": false,
@@ -1972,11 +1969,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/通用类元素规范/字体.md",
+      "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/通用类元素规范/字体.html",
-          "hash": "53kmFM7WlNF3WrenRuM0BYXOSAr7iQZPs4Uwm3Y+p8g="
+          "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
+          "hash": "W45nbxcHTqfk+9LVDY7jTfP1rohI2mhkvzP68vrVzBI="
         }
       },
       "is_incremental": false,
@@ -1984,11 +1981,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮.md",
+      "source_relative_path": "doc/UI设计规范/通用类元素规范/文字.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
-          "hash": "W45nbxcHTqfk+9LVDY7jTfP1rohI2mhkvzP68vrVzBI="
+          "relative_path": "doc/UI设计规范/通用类元素规范/文字.html",
+          "hash": "DhtTko2Hbfh7Xvn8qUmwulnRM28g+Tk/R380oGHx2is="
         }
       },
       "is_incremental": false,
