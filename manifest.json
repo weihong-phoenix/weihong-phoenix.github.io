@@ -1896,12 +1896,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/UI设计规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "Aanox7tSSds8ZRvRcIG+o7cPdJL4L/+aU94uKsKqtVs="
+          "hash": "J+tqfM7VRH88/AUW1DZiz9lWIeLmkLfQuRlsqKznm3A="
         }
       },
       "is_incremental": false,
