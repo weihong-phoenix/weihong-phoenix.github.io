@@ -1050,6 +1050,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sr1_srk3_pt1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sr1_srk3_pt1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sr1_srk3_z1.jpg",
       "output": {
         "resource": {
@@ -1142,6 +1153,17 @@
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/sr3_hd_f2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sr3_hd_pt1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sr3_hd_pt1.jpg"
         }
       },
       "is_incremental": false,
@@ -1898,9 +1920,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/信息输入.md",
       "output": {
