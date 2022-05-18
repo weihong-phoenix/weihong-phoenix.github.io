@@ -2224,12 +2224,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/通用类元素规范/按钮.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
-          "hash": "W45nbxcHTqfk+9LVDY7jTfP1rohI2mhkvzP68vrVzBI="
+          "hash": "kH83aMsXdk+xguRIEt7fY4K7m1QCOy0t8YeKqrkzSx4="
         }
       },
       "is_incremental": false,
