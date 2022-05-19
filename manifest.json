@@ -126,6 +126,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/an11_tb_pt4.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/an11_tb_pt4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/an1_yb_f1.png",
       "output": {
         "resource": {
@@ -812,6 +823,17 @@
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/an9_tb2_z2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/an9_tb_pt1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/an9_tb_pt1.png"
         }
       },
       "is_incremental": false,
@@ -2243,7 +2265,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
-          "hash": "o41j441/JRz11CdBh3uzTuaqoV3vem8bH6LAAQSOGkw="
+          "hash": "kkKmDaTNq8Redtw5WV4ub8BriKo4GKI5uv35B0HxL7M="
         }
       },
       "is_incremental": false,
