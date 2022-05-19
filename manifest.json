@@ -126,17 +126,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an11_tb_pt4.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an11_tb_pt4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/an1_yb_f1.png",
       "output": {
         "resource": {
