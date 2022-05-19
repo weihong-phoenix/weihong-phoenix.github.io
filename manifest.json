@@ -71,6 +71,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/an10_tb3_pt1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/an10_tb3_pt1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/an10_tb3_z1.png",
       "output": {
         "resource": {
