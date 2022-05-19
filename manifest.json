@@ -731,6 +731,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/an8_tb_pt1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/an8_tb_pt1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/an8_tb_z1.png",
       "output": {
         "resource": {
@@ -2232,7 +2243,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
-          "hash": "kH83aMsXdk+xguRIEt7fY4K7m1QCOy0t8YeKqrkzSx4="
+          "hash": "o41j441/JRz11CdBh3uzTuaqoV3vem8bH6LAAQSOGkw="
         }
       },
       "is_incremental": false,
