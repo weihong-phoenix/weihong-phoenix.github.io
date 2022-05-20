@@ -1369,6 +1369,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sr1_srk4_pt1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sr1_srk4_pt1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sr1_srk4_z1.png",
       "output": {
         "resource": {
@@ -2228,9 +2239,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/信息输入.md",
       "output": {
