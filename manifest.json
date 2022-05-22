@@ -4117,6 +4117,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/TFS工具使用指导书-R11.doc",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/测试管理规范/TFS工具使用指导书-R11.doc"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/测试管理规范/images/image-20211227195350513.png",
       "output": {
         "resource": {
