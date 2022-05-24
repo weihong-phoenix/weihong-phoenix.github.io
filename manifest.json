@@ -3611,6 +3611,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/weipan.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/weipan.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16513731056531.png",
       "output": {
         "resource": {
