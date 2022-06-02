@@ -2937,11 +2937,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/CAD迭代工作流程.md",
+      "source_relative_path": "doc/研发管理制度规范/CAD迭代工作流程-R4.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/CAD迭代工作流程.html",
-          "hash": "KB8rwa9CnRp6xcMDzS/QhhM9HnOqe9d/do9XIaB5EA8="
+          "relative_path": "doc/研发管理制度规范/CAD迭代工作流程-R4.html",
+          "hash": "kmlq3vwJnHomop8qhTqAa0JqvJW96924QfkzFopeuT0="
         }
       },
       "is_incremental": false,
@@ -2949,11 +2949,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程&过程规范-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程-R1.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程&过程规范-R1.html",
-          "hash": "jN4GHbxEN7uzfrjnh3WOxzeTrSYRo2o4wvaSV7jkHYw="
+          "relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程-R1.html",
+          "hash": "aKGf+hxsPPcS3vfe40XcpgRfcUhsaxhooA4FXFBmOJ0="
         }
       },
       "is_incremental": false,
@@ -2965,7 +2965,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/CNC平台-软件测试流程&过程规范-R3.html",
-          "hash": "yV3EY+6bSUYdCymrp78gbolga7IQbxrvV2e7QK3dGF8="
+          "hash": "itqFDCoY7WjXGM8HnVotV6Dduh6JP44O+gaw2urmXCE="
         }
       },
       "is_incremental": false,
@@ -2973,11 +2973,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Commit message 编写规范-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/Commit message 编写指南-R1.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/Commit message 编写规范-R1.html",
-          "hash": "AstySXh6H/a5eKr3IDAxco8bclDmwYFv0yaujCXLYtw="
+          "relative_path": "doc/研发管理制度规范/Commit message 编写指南-R1.html",
+          "hash": "IYfgJgJv3aKem5Nc23JohO8qxwrKE65RuTcYEu9Vx9U="
         }
       },
       "is_incremental": false,
@@ -3001,7 +3001,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Phoenix 源码分支工作流-R2.html",
-          "hash": "zIgALpoifrzCdp3RUk7rzH5SXbP8uAb81KkYWEmAANo="
+          "hash": "BnbIuZ2R2yc2QbZZ8RnMNcrgj/ERfC2RCAhrv2owBXE="
         }
       },
       "is_incremental": false,
@@ -3194,6 +3194,17 @@
       "output": {
         "resource": {
           "relative_path": "doc/研发管理制度规范/images/CNC-bug跟踪流程图.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/CNC-软件测试流程图.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/CNC-软件测试流程图.png"
         }
       },
       "is_incremental": false,
@@ -3707,17 +3718,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16513752408419.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16513752408419.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16514079899140.png",
       "output": {
         "resource": {
@@ -3894,12 +3894,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "tsyji2Wcvfg84J70zPENq6EsZOh0xtbrHwNMOhykFxk="
+          "hash": "LoaL3YIYCykoSjY36ylc7YtHYBwjpZO6xBZ+q85FdDo="
         }
       },
       "is_incremental": false,
@@ -4583,7 +4586,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件平台-遗留缺陷发布标准-R1.2.html",
-          "hash": "293vVpNLJxmUEUNfMJV8269X2HgOESGgfII/yrjXHq4="
+          "hash": "bEcqTFxg1OFCHdFjKVbOrz6vo0jWSfk97vG5sEt4SkE="
         }
       },
       "is_incremental": false,
