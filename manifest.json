@@ -2949,6 +2949,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程&过程规范-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程&过程规范-R1.html",
+          "hash": "sf4c3ymrwRmrjKLCprhyQGhOL5eQQ95e0yBOpe0jfAY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程-R1.md",
       "output": {
         ".html": {
@@ -3902,7 +3914,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "LoaL3YIYCykoSjY36ylc7YtHYBwjpZO6xBZ+q85FdDo="
+          "hash": "UAG9b+7RD2FoErzSrd2N6amto09OT4oM3nIU6XngAWM="
         }
       },
       "is_incremental": false,
@@ -4689,7 +4701,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 78,
+          "total_file_count": 79,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
