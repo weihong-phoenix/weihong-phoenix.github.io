@@ -79,12 +79,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="激光线软件发行规定">激光线软件发行规定</h1>
 
-<pre><code>版次：2021年7月2日  第3版
-作者：产品II部
-上海维宏电子科技股份有限公司  版权所有
+<pre><code>版次：2021年7月2日 第3版
+作者：激光加工产品部
+上海维宏电子科技股份有限公司 版权所有
 </code></pre><h2 id="1-目的">1 目的</h2>
-<p>为进一步提升软件质量，保证始终给前方一个稳定可靠的软件版本， 即时起激光线发布 Release
-版本与 Beta 版本。</p>
+<p>为进一步提升软件质量，保证始终给前方一个稳定可靠的软件版本， 即时起激光线发布 Release 版本与 Beta 版本。</p>
 <h2 id="2-适用范围">2 适用范围</h2>
 <p>适用于激光产品生命周期所有发行软件，如：
 V12 通用软件（通用 LH、通用 LS、通用 LA、通用 LT、通用 TB）；
@@ -92,11 +91,11 @@ V12 定制软件（邦德 LH、邦德 LT、得马 LH 等）；
 Phoenix 通用/定制软件（LS1500， LS3000， LS3500， LS6000 等）</p>
 <h2 id="3-phoenix-发行规定">3 Phoenix 发行规定</h2>
 <h3 id="31-软件版本命名说明">3.1 软件版本命名说明：</h3>
-<p>SetUp-客户缩写-产品型号-写号类型-15.主版本号.子版本号_/Beta/Release.exe
-例如：
-SetUp-Bodor-LS6000M-LE-15.016.1_Beta/Release.exe
-SetUp_Gen_LS3000-LS-15.016.2_Beta/Release.exe
-关于版本号：</p>
+<p><strong><em>SetUp-客户缩写-产品型号-写号类型-15.主版本号.子版本号_/Beta/Release.exe</em></strong></p>
+<p>例如：</p>
+<p>SetUp-Bodor-LS6000M-LE-15.016.1_Beta/Release.exe</p>
+<p>SetUp_Gen_LS3000-LS-15.016.2_Beta/Release.exe</p>
+<p><strong>关于版本号：</strong></p>
 <ul>
 <li>Beta 版和 Release 版软件共用，主版本号从 016 开始（016~999），子版本号从 1 开始（1~999）；</li>
 <li>主版本号： Beta 分支每隔三个月，合并一次到 Release 分支后，主版本+1；</li>
@@ -109,33 +108,33 @@ SetUp_Gen_LS3000-LS-15.016.2_Beta/Release.exe
 </ul>
 <h2 id="4-v12-发行规定">4 V12 发行规定</h2>
 <h3 id="41-软件版本命名说明">4.1 软件版本命名说明：</h3>
-<p>Release 版本说明： 软件后缀带 Release，版本号全部为 10 整数倍；</p>
-<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16514756929295.png" alt="img"></p>
+<p><strong>Release 版本说明：</strong> 软件后缀带 Release，版本号全部为 10 整数倍；</p>
+<p>![激光线软件发行规定-Realease 版本说明](.\images\激光线软件发行规定-Realease 版本说明.png)</p>
 <p>例如：
 V12.1000.4_LaserHFiber5E_Release（通用 Release LH-V12.1000 版本，修复 4 个 Bug）
 V12.1000.4_JiNanBangDeLaserTFiber5S_Release （邦德 Release -LT-V12.1000 版本，修复 4 个 Bug）
 V12.1020.2_DeMaLaserHFiber5E_Release（得马 Release- LH-V12.1020 版本，修复 2 个 Bug）
 V12.1020.3_LaserHFiber5E_Release（通用 Release -LH-V12.1020 版本，修复 3 个 Bug）</p>
-<p>Beta 版本说明：</p>
-<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16514758928709.png" alt="img"></p>
+<p><strong>Beta 版本说明：</strong></p>
+<p>![激光线软件发行规定-Beta 版本说明](.\images\激光线软件发行规定-Beta 版本说明.png)</p>
 <p>例如：
 Setup_NcEditor_V12.1001_JiNanBangDeLaserHFiber5E
 Setup_NcEditor_V12.1002_DeMaLaserHFiber5E
 Setup_NcEditor_V12.1005_LaserSFiber5E</p>
 <h3 id="42-软件发行">4.2 软件发行</h3>
-<p><img src="images/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16514761324766.png" alt="img">
+<p><img src="images/%E6%BF%80%E5%85%89%E7%BA%BF%E8%BD%AF%E4%BB%B6%E5%8F%91%E8%A1%8C%E8%A7%84%E5%AE%9A-%E8%BD%AF%E4%BB%B6%E5%8F%91%E8%A1%8C.png" alt="激光线软件发行规定-软件发行">
 注意：
-1： 软件版本号升级到1000；
-2： Release版本打包需要有Release后缀；
-3： Release版本号为三位， 并注意和打包版本号区分；
-4： Release版本号为10的整数倍， Bate版本跳过为10整数倍版本
-5： Release发行的第三位版本号根据BugFix数量确定第三位版本号， 其他版本号保持一致性；
-6： 需求创建Release分支工作项
-7： Bug修复是否合并到Release需在Bug项中说明并由开发发行Release验收， Bug修复尽量提交完整变更集， 以防止漏合并</p>
+1：软件版本号升级到 1000；
+2：Release 版本打包需要有 Release 后缀；
+3：Release 版本号为三位，并注意和打包版本号区分；
+4：Release 版本号为 10 的整数倍，Bate 版本跳过为 10 整数倍版本
+5：Release 发行的第三位版本号根据 Bug Fix 数量确定第三位版本号，其他版本号保持一致性；
+6： 需求创建 Release 分支工作项
+7： Bug 修复是否合并到 Release 需在 Bug 项中说明并由开发发行 Release 验收， Bug 修复尽量提交完整变更集，以防止漏合并</p>
 <h2 id="5-软件放置说明">5 软件放置说明</h2>
 <ul>
-<li>V15(Phoenix)软件放置目录： \172.16.10.88\06.NcStudio\产品Ⅱ部\05.激光切割\LaserCutting(V15)</li>
-<li>V12 软件放置目录： \172.16.10.88\06.NcStudio\产品Ⅱ部\05.激光切割\LaserCutting</li>
+<li>V15(Phoenix)软件放置目录： <a href="">\\172.16.10.88\06.NcStudio\产品Ⅱ部\05.激光切割\LaserCutting(V15)</a></li>
+<li>V12 软件放置目录： <a href="">\\172.16.10.88\06.NcStudio\产品Ⅱ部\05.激光切割\LaserCutting</a></li>
 </ul>
 </article>
           </div>
