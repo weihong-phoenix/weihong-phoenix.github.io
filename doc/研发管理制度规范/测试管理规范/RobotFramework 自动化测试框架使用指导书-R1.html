@@ -79,13 +79,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="robotframework-自动化测试框架使用指导书">RobotFramework 自动化测试框架使用指导书</h1>
 
-<blockquote><p>版次：2021年12月27日　第1版
+<pre><code>版次：2021年12月27日 第1版
 类型：技术文件
 部门：软件部
 上层文件: 软件测试规范
-上海维宏电子科技股份有限公司　版权所有</p>
-</blockquote>
-<table>
+上海维宏电子科技股份有限公司 版权所有
+</code></pre><table>
 <thead>
 <tr>
 <th>文件版本</th>
@@ -111,7 +110,7 @@
 <h3 id="21-自动化测试介绍">2.1 自动化测试介绍</h3>
 <p>自动化测试是相对于手工测试而存在的，主要是通过所开发的软件测试工具、脚本等来实现模拟手工操作。具有良好的可操作行、可重复性和高效性等特点。自动化测试是软件测试中提高测试效率、覆盖率和可靠性的重要测试手段。</p>
 <h3 id="22-robotframework-介绍">2.2 RobotFramework 介绍</h3>
-<p>RobotFramework 是一个开源的，基于Python的，可扩展的关键字驱动的测试自动化框架，用于端到端验收测试和验收测试驱动开发（ATDD），在自动化测试领域被广泛应用。</p>
+<p>RobotFramework 是一个开源的，基于 Python 的，可扩展的关键字驱动的测试自动化框架，用于端到端验收测试和验收测试驱动开发（ATDD），在自动化测试领域被广泛应用。</p>
 <h2 id="3-自动化测试框架">3 自动化测试框架</h2>
 <h3 id="31-自动化测试框架设计思想">3.1 自动化测试框架设计思想</h3>
 <p>自动化测试框架以统一的自动化工作模式、测试资产库的不断积累为设计思想。</p>
@@ -128,12 +127,12 @@
 <p><img src="images/image-20220105144707179.png" alt="image-20220105144707179"></p>
 <blockquote><p><strong>图（1）说明：</strong></p>
 <ul>
-<li><strong>Robot Resources</strong>：基于RobotFramework语法定义的关键字或资源</li>
+<li><strong>Robot Resources</strong>：基于 RobotFramework 语法定义的关键字或资源</li>
 <li><strong>Python Resources</strong>：使用 python 定义的关键字资源。</li>
-<li><strong>Custom Keyworks</strong>：自定义的关键字，例如：业务通用关键字、工具类关键字、UI操作关键字。</li>
+<li><strong>Custom Keyworks</strong>：自定义的关键字，例如：业务通用关键字、工具类关键字、UI 操作关键字。</li>
 <li><strong>UI 对象库</strong>：存储 GUI 对象的 Xpath 信息；</li>
-<li><strong>Stadard Library</strong>：与 RobotFramework 一起分发的测试库，例如：BuiltIn、String、OperatingSystem等。</li>
-<li><strong>WeihongLibrary</strong>：根据公司产品特点定义的第三方类库。例如：FlaUILibrary，里面包含的功能有：GUI的操作、Phoenix 软件的通信、Phoenix 软件日志的查询等。</li>
+<li><strong>Stadard Library</strong>：与 RobotFramework 一起分发的测试库，例如：BuiltIn、String、OperatingSystem 等。</li>
+<li><strong>WeihongLibrary</strong>：根据公司产品特点定义的第三方类库。例如：FlaUILibrary，里面包含的功能有：GUI 的操作、Phoenix 软件的通信、Phoenix 软件日志的查询等。</li>
 </ul>
 </blockquote>
 <h3 id="33-自动化测试框架使用指导">3.3 自动化测试框架使用指导</h3>
@@ -206,10 +205,10 @@
 <p><img src="images/image-20220105180137494.png" alt="image-20220105180137494"></p>
 <p>图（4）</p>
 <h2 id="4-自动化测试用例组织指导">4 自动化测试用例组织指导</h2>
-<h3 id="41gui-自动化测试范例">4.1GUI 自动化测试范例</h3>
+<h3 id="41-gui-自动化测试范例">4.1 GUI 自动化测试范例</h3>
 <h4 id="411-维护对象库">4.1.1 维护对象库</h4>
-<p>在应用程序（子项目）的GUI模块里维护对象库，例如：安装项目 UI 对象的 xpath 维护在 <strong>action\Installer\GUI\页面元素.robot</strong> 文件文件中。如下所示：</p>
-<blockquote><p>xpath 可通过 FlaUInspect.exe(不仅限于工具) 获取；工具可在<a href="http://wiki.weihong.com/pages/viewpage.action?pageId=27728089">内外wiki</a>下载。</p>
+<p>在应用程序（子项目）的 GUI 模块里维护对象库，例如：安装项目 UI 对象的 xpath 维护在 <strong>action\Installer\GUI\页面元素.robot</strong> 文件文件中。如下所示：</p>
+<blockquote><p>xpath 可通过 FlaUInspect.exe (不仅限于工具) 获取；工具可在<a href="http://wiki.weihong.com/pages/viewpage.action?pageId=27728089">内外 wiki</a> 下载。</p>
 </blockquote>
 <pre><code class="lang-python">*** Variables ***
 ######################选择安装语言
@@ -281,9 +280,9 @@ TC001_安装软件_验证按默认选项安装            #用例标题
 <ul>
 <li><p>Test_安装_UI.robot ： 是一个测试套件文件，包含有若干测试用例的集合文件。文件的命名格式为：文件命名格式：Test_[功能模块]_功能_[其它]，其中中括号“[ ]” 里的内容为可选项。</p>
 </li>
-<li><p>Setting 模块：是RobotFramework测试套件文件的设置模块，适用范围为此测试套件文件，例如：引入资源和第三方库、声明Setup或Teardown等；</p>
+<li><p>Setting 模块：是 RobotFramework 测试套件文件的设置模块，适用范围为此测试套件文件，例如：引入资源和第三方库、声明Setup或Teardown等；</p>
 </li>
-<li>Variable 模块：是RobotFramework测试套件文件的变量声明模块，适用范围为此测试套件文件。</li>
+<li>Variable 模块：是 RobotFramework 测试套件文件的变量声明模块，适用范围为此测试套件文件。</li>
 <li>测试用例模块：*** Test Case *** 分隔线下的模块属于测试用例模块。用例标题格式和用例标签定义遵循《软件测试用例设计规范》 。</li>
 <li>关键字模块：*** Keywords *** 分隔线下的模块属于关键字模块，此处定义的关键字使用范围为此测试套件文件。</li>
 </ul>
@@ -381,13 +380,13 @@ TC001_验证导入不同格式文件功能正确    #用例标签
     鸿基.plt                        公制单位       5
 </code></pre><h2 id="5-工具介绍">5 工具介绍</h2>
 <h3 id="51-集成开发工具---robotframework-ride">5.1 集成开发工具 - RobotFramework-ride</h3>
-<p>RobotFramework-ride 是 RobotFramework 提供的集成开发工具，属于开源项目，可使用ride 编写测试用例和执行测试用例，其中编写用例提供了GUI页面编写和文本模式编写两种方式。优点支持关键字自动补全和语法检测、执行用例、新手入门快等，缺点是没有集成版本管理工具（例如：git、TFS等）和不适用 Python 的开发和调试。</p>
-<p>对于 RobotFramework-ride 的使用手册可在<a href="http://wiki.weihong.com/pages/viewpage.action?pageId=27728089">wiki(内网) 《测试工具集》</a>获取。网上也有很多关于ride 的使用指导，这里不再对其的使用指导做介绍。</p>
+<p>RobotFramework-ride 是 RobotFramework 提供的集成开发工具，属于开源项目，可使用 ride 编写测试用例和执行测试用例，其中编写用例提供了 GUI 页面编写和文本模式编写两种方式。优点支持关键字自动补全和语法检测、执行用例、新手入门快等，缺点是没有集成版本管理工具（例如： git 、TFS 等）和不适用 Python 的开发和调试。</p>
+<p>对于 RobotFramework-ride 的使用手册可在 <a href="http://wiki.weihong.com/pages/viewpage.action?pageId=27728089">wiki (内网) 《测试工具集》</a>获取。网上也有很多关于 ride 的使用指导，这里不再对其的使用指导做介绍。</p>
 <h3 id="52-集成开发工具---pycharm">5.2 集成开发工具 - PyCharm</h3>
-<p>PyCharm 是 Python 的集成开发环境。PyCharm 安装包，及支持RobotFramework 用例的执行的插件 intelllibot.jar 的安装指导，可在<a href="http://wiki.weihong.com/pages/viewpage.action?pageId=27728089">wiki（内网）《测试工具集》</a>获取。</p>
+<p>PyCharm 是 Python 的集成开发环境。PyCharm 安装包，及支持 RobotFramework  用例的执行的插件 intelllibot.jar 的安装指导，可在 <a href="http://wiki.weihong.com/pages/viewpage.action?pageId=27728089">wiki（内网）《测试工具集》</a>获取。</p>
 <h2 id="6-执行测试">6 执行测试</h2>
 <h3 id="61-命令行执行">6.1 命令行执行</h3>
-<p>在命令执行RobotFramework测试用例，可使用robot命令。如下只对其常用的命令做说明，其它命令选项说明可使用帮助命令“robot -h”查看。</p>
+<p>在命令执行 RobotFramework 测试用例，可使用 robot 命令。如下只对其常用的命令做说明，其它命令选项说明可使用帮助命令“ robot -h ”查看。</p>
 <ol>
 <li><p>执行一个用例</p>
 <pre><code class="lang-bash">robot -t &quot;测试用例名称&quot; 测试套件文件.robot
@@ -398,7 +397,7 @@ TC001_验证导入不同格式文件功能正确    #用例标签
 <li><p>执行目录下的所有用例</p>
 <pre><code class="lang-bash">robot 测试套件文件目录
 </code></pre></li>
-<li><p>按tag执行用例</p>
+<li><p>按 tag 执行用例</p>
 <pre><code class="lang-bash">robot -i P1ANDSmoking -e SkipORLS3000 测试套件文件目录
 </code></pre><blockquote><p>-i :  表示包含；</p>
 <p>-e：表示排除；</p>
@@ -412,7 +411,7 @@ TC001_验证导入不同格式文件功能正确    #用例标签
 </code></pre></li>
 </ol>
 <h3 id="22-ci-执行">2.2 CI 执行</h3>
-<p>CI 是基于Jenkins 实现的。Jenkins 地址：<a href="http://172.16.10.40:8080/；使用域账号登录。操作步骤如下：">http://172.16.10.40:8080/；使用域账号登录。操作步骤如下：</a></p>
+<p>CI 是基于 Jenkins 实现的。Jenkins 地址：<a href="http://172.16.10.40:8080/；使用域账号登录。操作步骤如下：">http://172.16.10.40:8080/；使用域账号登录。操作步骤如下：</a></p>
 <p>1、在任务（job）列表单击任务名称，进入任务详情页；</p>
 <p>2、单击左侧导航栏的【Build whith parameters】，右侧展示构建参数信息</p>
 <p>3、录入构建参数信息，单击【开始构建】按钮，若执行机空闲，则立即开始执行自动化测试，否则等待到执行机空闲之后才开始执行自动化测试。</p>
@@ -435,7 +434,7 @@ TC001_验证导入不同格式文件功能正确    #用例标签
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#27979;&#35797;&#31649;&#29702;&#35268;&#33539;/RobotFramework&#33258;&#21160;&#21270;&#27979;&#35797;&#26694;&#26550;&#20351;&#29992;&#25351;&#23548;&#20070;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#27979;&#35797;&#31649;&#29702;&#35268;&#33539;/RobotFramework &#33258;&#21160;&#21270;&#27979;&#35797;&#26694;&#26550;&#20351;&#29992;&#25351;&#23548;&#20070;-R1.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
