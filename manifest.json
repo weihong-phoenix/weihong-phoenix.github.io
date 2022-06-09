@@ -2913,26 +2913,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Bug 严重级别处理规范.md",
+      "source_relative_path": "doc/研发管理制度规范/Bug严重级别处理规范.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/Bug 严重级别处理规范.html",
-          "hash": "HEmCoOIim0qVuU0zZ+Z7YQx78ZSFNx71yWMt638DJmk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Bug 基本属性定义-R1.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发管理制度规范/Bug 基本属性定义-R1.html",
-          "hash": "zixiNe3+kvhZeFAPhEn+1oykLEu+iB1xyVSYWlHoIJs="
+          "relative_path": "doc/研发管理制度规范/Bug严重级别处理规范.html",
+          "hash": "kCvz+U7HxqtHFchEMOBcrJdc326ZVDIO7GsIuwOGgAk="
         }
       },
       "is_incremental": false,
@@ -2940,11 +2925,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/CAD 迭代工作流程-R4.md",
+      "source_relative_path": "doc/研发管理制度规范/Bug基本属性定义-R1.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/CAD 迭代工作流程-R4.html",
-          "hash": "FIK7fAUCeJS/tDW0PYqNZHMzr+PlV8h7NFeBE0wtktE="
+          "relative_path": "doc/研发管理制度规范/Bug基本属性定义-R1.html",
+          "hash": "YLuTqrkfa6ElSnRwlAzZJBlaR6bjIrzjMzmE59P+FSQ="
         }
       },
       "is_incremental": false,
@@ -2952,11 +2937,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/CNC 平台-缺陷跟踪流程-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/CAD迭代工作流程-R4.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/CNC 平台-缺陷跟踪流程-R1.html",
-          "hash": "hsUw17kbcQjOeTE2JvVbinBPtzQA4+n2kHwNFCePMek="
+          "relative_path": "doc/研发管理制度规范/CAD迭代工作流程-R4.html",
+          "hash": "Gd+z0mF0N9y/Qxp4Iwcszx1IwpWVVuR4PD3M896zseg="
         }
       },
       "is_incremental": false,
@@ -2964,11 +2949,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/CNC 平台-软件测试流程&过程规范-R3.md",
+      "source_relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程-R1.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/CNC 平台-软件测试流程&过程规范-R3.html",
-          "hash": "ksNQpyd89zEZMqrgUQn/50NAGlV7BpAzqUgDE2ymLrI="
+          "relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程-R1.html",
+          "hash": "hjH31aE9crVwRK8Fkzks2vhB/8TPZEIwUNfqdhdSnNk="
         }
       },
       "is_incremental": false,
@@ -2976,11 +2961,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Code Review 指南.md",
+      "source_relative_path": "doc/研发管理制度规范/CNC平台-软件测试流程&过程规范-R3.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/Code Review 指南.html",
-          "hash": "rMcmt9y7jscLOlNnDfvE27i9VAVOckDCU3/OYYkiObU="
+          "relative_path": "doc/研发管理制度规范/CNC平台-软件测试流程&过程规范-R3.html",
+          "hash": "itqFDCoY7WjXGM8HnVotV6Dduh6JP44O+gaw2urmXCE="
         }
       },
       "is_incremental": false,
@@ -2988,11 +2973,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Commit message 编写指南-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/CodeReview指南.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/Commit message 编写指南-R1.html",
-          "hash": "IYfgJgJv3aKem5Nc23JohO8qxwrKE65RuTcYEu9Vx9U="
+          "relative_path": "doc/研发管理制度规范/CodeReview指南.html",
+          "hash": "thxmY5sy1wfhGO5996UvYwOL2O1X51rmaqy+NnrdCKg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Commitmessage编写指南-R1.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Commitmessage编写指南-R1.html",
+          "hash": "sy9gEUnhAsPmJIywQQH9R8039rT4fBAJeKnECgP3AsM="
         }
       },
       "is_incremental": false,
@@ -3007,7 +3004,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.html",
-          "hash": "5M4YBRTd3TIEdPnHqEAXEWlP2T2Yga5Qc7+Qhlq6p10="
+          "hash": "27xQPdp/kukm+UCnU+AunMRNLahIgh0Poy+PeFu60tU="
         }
       },
       "is_incremental": false,
@@ -3015,11 +3012,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Phoenix 源码分支工作流-R2.md",
+      "source_relative_path": "doc/研发管理制度规范/Phoenix源码分支工作流-R2.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/Phoenix 源码分支工作流-R2.html",
-          "hash": "ELXCrceETjoLHWhNreJEeTqqSQ1Zuj/17oCLVlpiw7c="
+          "relative_path": "doc/研发管理制度规范/Phoenix源码分支工作流-R2.html",
+          "hash": "rZYobpJdxdmIVSJCp2wstdfzaxJlAWp6zV/ExKEM12E="
         }
       },
       "is_incremental": false,
@@ -3030,11 +3027,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Phoenix 组件发行工作流.md",
+      "source_relative_path": "doc/研发管理制度规范/Phoenix组件发行工作流.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/Phoenix 组件发行工作流.html",
-          "hash": "DgQVLMMr9GPe6/iERayxJp3m3HQeU3TBlZq7S7MfeWQ="
+          "relative_path": "doc/研发管理制度规范/Phoenix组件发行工作流.html",
+          "hash": "y3VhKF48Lazz2kckW0NUEjRsJ6aSwF1AAtC+4dgUnIE="
         }
       },
       "is_incremental": false,
@@ -3042,11 +3039,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/Phoenix 组件版本管理规则.md",
+      "source_relative_path": "doc/研发管理制度规范/Phoenix组件版本管理规则.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/Phoenix 组件版本管理规则.html",
-          "hash": "M5Lfu0VpDUEyNIzZLUT8sfXOEu5Wfgam7jSamtNLxj4="
+          "relative_path": "doc/研发管理制度规范/Phoenix组件版本管理规则.html",
+          "hash": "T350PODkiQQA1gDLZtfhiZUwloQyi7rOD7Fyu6s2VMU="
         }
       },
       "is_incremental": false,
@@ -3725,28 +3722,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_16513731056531.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/研发管理制度规范/images/企业微信截图_16513731056531.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/images/企业微信截图_1651411027142.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/研发管理制度规范/images/企业微信截图_1651411027142.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/关于平台软件兼容问题例外活动流程.png",
       "output": {
         "resource": {
@@ -3931,7 +3906,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "apQ7EpWkkP8CfGQSZc6Ze5Z/2Jk3ZU1DG8XmNxXy4Bo="
+          "hash": "Jp4kPeA/zhLyQjqAbcaDCzi9PxDOLtAYKd01fWxyDBo="
         }
       },
       "is_incremental": false,
@@ -3939,25 +3914,22 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF 评审_Checklist-R1.xls",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF评审_Checklist-R1.xls",
       "output": {
         "resource": {
-          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF 评审_Checklist-R1.xls"
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF评审_Checklist-R1.xls"
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF 详细活动指导-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF 详细活动指导-R1.html",
-          "hash": "td3IEjI+SAGkgV5veKGJ8JwBYutZPzSJpIRFSSTnbbY="
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.html",
+          "hash": "191juVQX4CCcNmxPvCz8PrJlCDJ1yh03drmqRT9qh4I="
         }
       },
       "is_incremental": false,
@@ -3965,10 +3937,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF 详细活动指导-R1.pdf",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.pdf",
       "output": {
         "resource": {
-          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF 详细活动指导-R1.pdf"
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.pdf"
         }
       },
       "is_incremental": false,
@@ -4180,11 +4152,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/测试管理规范/RobotFramework 自动化测试框架使用指导书-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/RobotFramework自动化测试框架使用指导书-R1.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/测试管理规范/RobotFramework 自动化测试框架使用指导书-R1.html",
-          "hash": "DOiioRWwGUvCHHsktsX/b9bg0TiOzJMjWwvlQqd03l8="
+          "relative_path": "doc/研发管理制度规范/测试管理规范/RobotFramework自动化测试框架使用指导书-R1.html",
+          "hash": "jn1qtOiD2NYaWtSIdgjFZvqBfYoHLYMpdm9sWNcjhzk="
         }
       },
       "is_incremental": false,
@@ -4435,11 +4407,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework 框架-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework框架-R1.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework 框架-R1.html",
-          "hash": "/pDzR8ja4rU6Jn11p2vMZDrBde0+jX2ij5rRrgW60Hk="
+          "relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework框架-R1.html",
+          "hash": "13kqW8Lv5FMJvVwgAWA81pr2RM0kV8kgHc6KqVdvfUM="
         }
       },
       "is_incremental": false,
@@ -4518,11 +4490,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/激光加工产品部 Bug 处理流程-R3.md",
+      "source_relative_path": "doc/研发管理制度规范/激光加工产品部Bug处理流程-R3.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/激光加工产品部 Bug 处理流程-R3.html",
-          "hash": "E+cnxRMSK3jqzSlF/qGOvHRuqhrK36XabuqEjt1HwZs="
+          "relative_path": "doc/研发管理制度规范/激光加工产品部Bug处理流程-R3.html",
+          "hash": "2SZMcHChFXAKMLA4infKKHh3llILPE25Mftn4iy/2xs="
         }
       },
       "is_incremental": false,
@@ -4530,11 +4502,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/激光加工产品部 TFS 工作项命名规范-R5.md",
+      "source_relative_path": "doc/研发管理制度规范/激光加工产品部TFS工作项命名规范-R5.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/激光加工产品部 TFS 工作项命名规范-R5.html",
-          "hash": "wPaU7ITDCuEmAFztvKX8Cb3oy09PPAU9uj1++E7ZDJI="
+          "relative_path": "doc/研发管理制度规范/激光加工产品部TFS工作项命名规范-R5.html",
+          "hash": "swvxjuJUsbBHT2MuN4/GpqMsv2i/pJ734hpVmGYEYhg="
         }
       },
       "is_incremental": false,
