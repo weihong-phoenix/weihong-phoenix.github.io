@@ -2570,15 +2570,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "shPsykkVV5hUcFHV+0SL4Qe4hw5b1BPQDBTBqmS5UGw="
+          "hash": "cJeLYpki70Jb2gHwZIsCMR3pv0gUcpzq8Hr/h/75+7U="
         }
       },
       "is_incremental": false,
