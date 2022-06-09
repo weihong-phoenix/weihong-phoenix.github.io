@@ -3898,15 +3898,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "Jp4kPeA/zhLyQjqAbcaDCzi9PxDOLtAYKd01fWxyDBo="
+          "hash": "CTT/m4eu9RVz/joxL+ooE7HdM4NkvcDjGNA3HefIzLg="
         }
       },
       "is_incremental": false,
