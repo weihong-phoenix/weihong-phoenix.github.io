@@ -2685,11 +2685,59 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/README-编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/README-编写指导.html",
+          "hash": "SbLVR3KNjrcY5kaqQK6gDw7mzBaBiXYaX0dzEGigL7M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/SRS-编写指导.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/SRS-编写指导.html",
           "hash": "WY4bL2I4oSyitYFRHOBe+Yvrpst7RthjGL4yYwWxgPk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/risk-编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/risk-编写指导.html",
+          "hash": "FdsMwdsTafqt1Sfk/+RovfxBA6GrkdGXtdpJ3qy7FeI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/roles-编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/roles-编写指导.html",
+          "hash": "TvKhdZVJwc8InScbaOwCBWSxfHaj9l3i1gJWesGgtWE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/stakeholder-编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/stakeholder-编写指导.html",
+          "hash": "8pMVNbCge0Fm9seg64URx9cHe/91i64ssavwGoh+V6I="
         }
       },
       "is_incremental": false,
@@ -4693,7 +4741,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 80,
+          "total_file_count": 84,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
