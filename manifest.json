@@ -2647,15 +2647,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "VV810wou84lXc2KYxYJP2cV+/r5Cyr63h9H/2OEIMeQ="
+          "hash": "AYA+Otrcs5Yxeu9JvdXW8uijevk50Dys7NhO6vqGFA4="
         }
       },
       "is_incremental": false,
@@ -2805,7 +2802,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/roles-编写指导.html",
-          "hash": "hyKTVq/ibW5HwrbLrb/GZBVozQnDTUa2+NjpENzpy50="
+          "hash": "antTWOTgY20GHvr/k31Gkd6UDwYVu3IKMU2VEVMEGAY="
         }
       },
       "is_incremental": false,
@@ -2825,11 +2822,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体章节编写参考/SRS-编写指导.md",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/技术方案编写指导.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/具体章节编写参考/SRS-编写指导.html",
-          "hash": "bnbcpNbbS8w1h0/jvJghLvLz5i5UePeIKoC6DJwOLAg="
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/技术方案编写指导.html",
+          "hash": "Oh0i8Sztxrwt/uy/5KJyeDgT+MJssWk89Au6oE2sAhw="
         }
       },
       "is_incremental": false,
@@ -2837,23 +2834,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体章节编写参考/技术方案编写指导.md",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/用户手册编写指导.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/具体章节编写参考/技术方案编写指导.html",
-          "hash": "iBIAJLB57pddR83W4e+I9ANw5dBAVeJ2wHxUsWsApT0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体章节编写参考/用户手册编写指导.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/具体章节编写参考/用户手册编写指导.html",
-          "hash": "FSH/sRWClCmT3IcSOQhxtP3NQB1jev/Of+BVyUwsy6s="
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/用户手册编写指导.html",
+          "hash": "TIU8zQ90lcdJGT88vKxDacWxckSL20w7u05DcKpWjWk="
         }
       },
       "is_incremental": false,
@@ -4821,7 +4806,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 84,
+          "total_file_count": 83,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
