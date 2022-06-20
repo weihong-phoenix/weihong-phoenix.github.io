@@ -148,149 +148,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an12_zk_f1.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an12_zk_f1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an12_zk_f2.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an12_zk_f2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an12_zk_f3.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an12_zk_f3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an12_zk_pt1.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an12_zk_pt1.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an12_zk_z1.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an12_zk_z1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an12_zk_z2.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an12_zk_z2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an12_zk_z3.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an12_zk_z3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an13_zt_f1.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an13_zt_f1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an13_zt_f2.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an13_zt_f2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an13_zt_f3.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an13_zt_f3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an13_zt_z1.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an13_zt_z1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an13_zt_z2.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an13_zt_z2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/an13_zt_z3.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/an13_zt_z3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/an1_yb_f1.png",
       "output": {
         "resource": {
@@ -2476,7 +2333,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/布局规范.html",
-          "hash": "4avpd9ixMZTxCyT1tWlCsrs46PFc4QLou+UhlPL3C5M="
+          "hash": "zVoMlwi+Ik8RmNYDqu4hSxgTo0trFW0koyxpHt/Em10="
         }
       },
       "is_incremental": false,
@@ -2512,7 +2369,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/按钮.html",
-          "hash": "pWQT4owhj5hjv8M7C1K9gr1JsGT+wXpBGTSmPOKG/fo="
+          "hash": "q0Brp7yYY/6+DCEAepD6JG5ByinCvr95lvHuC01ljsQ="
         }
       },
       "is_incremental": false,
@@ -2536,7 +2393,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/色彩.html",
-          "hash": "0G94vBUaae29SKvJjkF1Trs91nfIJNp6VkRA3g0Kejo="
+          "hash": "8SW5TWMWexCetb9prLMK6NS2fw/xLyHvYlxS2lpPg60="
         }
       },
       "is_incremental": false,
