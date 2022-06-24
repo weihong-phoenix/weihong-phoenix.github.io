@@ -3184,15 +3184,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.html",
-          "hash": "n1Ht3Dn0+VXqjjitks9jzL39+p+1y99tQI8dYU46y/w="
+          "hash": "FI8YqmhU8YeBoYHk2L8H4ykclH+04H5EjpnZk7RC8y4="
         }
       },
       "is_incremental": false,
@@ -4086,15 +4083,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "QN8qQhFd8CWCeTELtOYVg8jvlBC5ozbUpsUDWVJrtaM="
+          "hash": "3v13b1G0vCdK7JAxajZTUT4zEt4kKlGj5ioF2VlsdrI="
         }
       },
       "is_incremental": false,
