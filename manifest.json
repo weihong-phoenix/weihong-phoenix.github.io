@@ -3184,12 +3184,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.html",
-          "hash": "rrElQ3oxPWhWZz4ue7W1XEPY08CrQEWw3xkG8B2Aof0="
+          "hash": "n1Ht3Dn0+VXqjjitks9jzL39+p+1y99tQI8dYU46y/w="
         }
       },
       "is_incremental": false,
@@ -4083,12 +4086,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "CTT/m4eu9RVz/joxL+ooE7HdM4NkvcDjGNA3HefIzLg="
+          "hash": "QN8qQhFd8CWCeTELtOYVg8jvlBC5ozbUpsUDWVJrtaM="
         }
       },
       "is_incremental": false,
@@ -4789,11 +4795,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范-R1.html",
-          "hash": "OwdSdO+NUGDH6pfE2JhaiXzV+qd6Im4km4uyDq8WcW8="
+          "relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.html",
+          "hash": "g6apVMtl2vKcI6YtQaJbtzRaPChvyg0vZ7/COqvmYkQ="
         }
       },
       "is_incremental": false,
