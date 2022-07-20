@@ -83,7 +83,7 @@
 <p>本文档介绍了函数体设计过程中的最佳实践。 函数体的设计实践可以看做是整个软件设计实践的一部分，建议开发过程遵循这些设计实践。</p>
 <p>本文档的愿景是能够指导大家写出高效、高质量的代码出来。 整理最佳实践的过程参考了很多经典的设计书籍，站在巨人的肩上将优秀的设计理念归纳总结出来。 为了让开发人员能够真正的理解这些实践，除了描述规则之外还通过注释或案例的方式向你表述了分析的过程，以便做到知其所以然。 </p>
 <p>因为是最佳实践，所以一些设计准则应该在实践过程中打磨在提炼，最终通过集体的智慧来完善它。</p>
-<p>本文档描述的实践内容以C#作为目标语言，在具体的条目中涉及到了.NET API 的使用， 所以本文档主要面向 .NET 开发人员。</p>
+<p>本文档描述的实践内容以 C# 作为目标语言，在具体的条目中涉及到了.NET API 的使用， 所以本文档主要面向 .NET 开发人员。</p>
 <h2 id="术语">术语</h2>
 <ul>
 <li><strong>Pascal 命名法：</strong> 将标识符的首字母和后面连接的每个单词的首字母都大写。例如： BackColor。</li>
@@ -176,7 +176,7 @@ public class SubClass : Base{
         }
     }
 }
-</code></pre><p>这个案例中，构建 SubClass 实例时会抛出空引用异常，因为基类构造函数执行 Method 虚函数的时候 派生类的构造尚未完成( value 尚未设置)。 但是这个结果在 SubClass 的角度是不可理解的。</p>
+</code></pre><p>这个案例中，构建 SubClass 实例时会抛出空引用异常，因为基类构造函数执行 Method 虚函数的时候 派生类的构造尚未完成（value 尚未设置）。但是这个结果在 SubClass 的角度是不可理解的。</p>
 </li>
 </ul>
 <h2 id="参数设计准则">参数设计准则</h2>
@@ -219,7 +219,7 @@ Stream stream = File.Open(&quot;foo.txt&quot;, CasingOptions.CaseSensitive, File
 </ul>
 <h3 id="参数的验证">参数的验证</h3>
 <ul>
-<li><p>请验证传递到公共、受保护的函数的参数。 如果验证失败应引发 [System.ArgumentException] 或其子类异常。</p>
+<li><p>请验证传递到公共、受保护的函数的参数。如果验证失败应引发 [System.ArgumentException] 或其子类异常。</p>
 <pre><code class="lang-csharp">public class StringCollection:IList{
   int IList.Add(object item){
       string str = item as string;
@@ -230,7 +230,7 @@ Stream stream = File.Open(&quot;foo.txt&quot;, CasingOptions.CaseSensitive, File
 }
 </code></pre></li>
 </ul>
-<p>​        注意，并非一定要在公共函数或受保护函数中实现验证逻辑，也可以放在更低层的私有函数中。 要点在于所有直接暴漏给最终用户的函数都应该验证参数。</p>
+<p>​        注意，并非一定要在公共函数或受保护函数中实现验证逻辑，也可以放在更低层的私有函数中。要点在于所有直接暴漏给最终用户的函数都应该验证参数。</p>
 <ul>
 <li><p>不要忽略枚举参数，请验证它！</p>
 <p>不要认为用户传入的枚举参数一定会在枚举定义的范围内。CLR 允许将任何整数值强制转换为枚举值，即使值未在枚举中定义。</p>
@@ -242,7 +242,7 @@ Stream stream = File.Open(&quot;foo.txt&quot;, CasingOptions.CaseSensitive, File
 }
 </code></pre></li>
 </ul>
-<p>​       为什么强调这一点？ 因为CLR支持数值类型向枚举的转换，所以超出枚举范围的数值是有机会转换为枚举进行传递的，通常不会被报错。</p>
+<p>​       为什么强调这一点？ 因为 CLR 支持数值类型向枚举的转换，所以超出枚举范围的数值是有机会转换为枚举进行传递的，通常不会被报错。</p>
 <ul>
 <li><p>请谨慎将 Enum.IsDefined 用于枚举范围检查。</p>
 <p>因为它的开销很大。</p>
@@ -269,10 +269,10 @@ String.Format(&quot;File {0} not found in {1}&quot;,new object[]{filename,direct
 String.Format(&quot;File {0} not found in {1}&quot;,filename,directory);
 </code></pre></li>
 </ul>
-<p>​        对哪些非常低层的函数来说创建临时数组和验证数组的开销会成为很大的负担。 因此要尽可能在调用栈的高处使用params， 也就是说在那些大一些的，做更  多工作的函数中。</p>
+<p>​        对哪些非常低层的函数来说创建临时数组和验证数组的开销会成为很大的负担。 因此要尽可能在调用栈的高处使用 params， 也就是说在那些大一些的，做更多工作的函数中。</p>
 <ul>
 <li><p>如果需要在函数中对不定参数进行修改，请不要使用 params 关键字。</p>
-<p>因为编译器会在调用点将params参数放到一个临时数组中，因此数组可能只是一个临时对象，任何对它的修改都会丢失。</p>
+<p>因为编译器会在调用点将 params 参数放到一个临时数组中，因此数组可能只是一个临时对象，任何对它的修改都会丢失。</p>
 </li>
 <li><p>要注意传入的 params 数组参数可能是 null</p>
 <p>应该在处理之前验证数组不为 null 。</p>
@@ -321,7 +321,7 @@ public int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, in
 <ul>
 <li><p>如果该成员表示类型的一种逻辑特性。考虑使用属性。</p>
 <p>例如：Button.Color 是属性，因为颜色是按钮的一种属性。</p>
-<blockquote><p>在.NET框架设计的早期，微软尝试把所有的 Get<name> 方法都改成了属性，如：Type.GetName-&gt;Type.Name ;   但是在 Guid 类中却并非如此，有一个按顺序产生下一个 Guid 的方法 Guid.GetNext() 被改成 Guid.Next 后又被改回了方法，因为 <strong>Guid 天生并没有下一个值这样的属性</strong>。<p>
+<blockquote><p>在 .NET 框架设计的早期，微软尝试把所有的 Get<name> 方法都改成了属性，如：Type.GetName-&gt;Type.Name ;   但是在 Guid 类中却并非如此，有一个按顺序产生下一个 Guid 的方法 Guid.GetNext() 被改成 Guid.Next 后又被改回了方法，因为 <strong>Guid 天生并没有下一个值这样的属性</strong>。<p>
 </name></blockquote>
 </li>
 <li><p>如果属性的值存储在内存中，且提供属性的目的仅仅是为了访问该值，请使用属性而不是方法。</p>
@@ -342,7 +342,7 @@ public int GetBytes(char[] chars, int charIndex, int charCount, byte[] bytes, in
 </li>
 <li><p>该操作返回一个数组。  </p>
 <p>这条规格对我们的冲击比较大。 因为大多数情况下我们会很自然的定义数组属性。</p>
-<p>那么 .NET 提供属性的目的是啥：<strong>设计数组的初衷是为了满足面向对象的封装性</strong>，不把内部数据暴露出去（字段）。 而数组属性破坏了这一原则，从经验上看在数组属性中对字段的更新也是无法控制的，以至于我们设计了 ArrayData 属性来代替数组属性。</p>
+<p>那么 .NET 提供属性的目的是啥：<strong>设计数组的初衷是为了满足面向对象的封装性</strong>，不把内部数据暴露出去（字段）。而数组属性破坏了这一原则，从经验上看在数组属性中对字段的更新也是无法控制的，以至于我们设计了 ArrayData 属性来代替数组属性。</p>
 <p>如果在不破坏封装性的情况下数组属性可以返回一个副本，如下，那么在循环逻辑中这又会造成大量的 GC 垃圾</p>
 <pre><code class="lang-csharp">public int[] DataArray
 {
@@ -379,9 +379,9 @@ private ReadOnlyCollection&lt;int&gt; dataCollection = new ReadOnlyCollection&lt
 <h3 id="编程中的错误">编程中的错误</h3>
 <p>如果要保护我们的程序免遭破坏，就需要对编程中的错误做出反应。以下对编程中的可能出现的错误归纳分类，然后通过一些关键方法的定义和应用实践来防御。</p>
 <ol>
-<li><strong>外部非法输入错误：</strong>  外部接口调用（文档、网络、数据库等读写接口）时，通过参数传入的输入错误。</li>
-<li><strong>系统异常：</strong> 直接或间接触发的操作系统级别异常（如堆栈异常、磁盘异常、网络异常等等）。</li>
-<li><strong>编码 BUG：</strong>  设计错误或编码错误导致的和预期不一致的输出。</li>
+<li><strong>外部非法输入错误：</strong>外部接口调用（文档、网络、数据库等读写接口）时，通过参数传入的输入错误。</li>
+<li><strong>系统异常：</strong>直接或间接触发的操作系统级别异常（如堆栈异常、磁盘异常、网络异常等等）。</li>
+<li><strong>编码 BUG：</strong>设计错误或编码错误导致的和预期不一致的输出。</li>
 </ol>
 <h3 id="防御技术概述">防御技术概述</h3>
 <p>借助防御式编程技术可以让错误更容易发现和修改、减少错误对产品代码的破坏。本章节试图讲清楚什么是断言，什么错误处理，什么是异常，以及他们之间的关系，同时提供一些基本的设计原则。</p>
@@ -482,14 +482,14 @@ class Employee{
         throw new EmployeeDataNotAvailable(); 
     }
 }
-</code></pre><p>GetTaxId() 把更低层次的 EOFException（文件结束）异常返回给他的调用方，它本身并不拥有这一异常，这会使调用方和更低层次的异常代码耦合，破坏了封装性。 与之相反，代码应抛回一个与其所在类接口相一致的异常，这中封装既没有暴漏实现细节，也充分的保持了接口的抽象性。</p>
+</code></pre><p>GetTaxId() 把更低层次的 EOFException（文件结束）异常返回给他的调用方，它本身并不拥有这一异常，这会使调用方和更低层次的异常代码耦合，破坏了封装性。与之相反，代码应抛回一个与其所在类接口相一致的异常，这中封装既没有暴漏实现细节，也充分的保持了接口的抽象性。</p>
 </li>
 </ul>
 <p>​        在框架设计层面，这个指导会要求框架设计人员要对异常的定义有一个整体的一致性的规范，并文档化。</p>
 <ul>
 <li><p>避免在构造函数或析构函数中抛出异常，除非你在同一个地方将他们捕获。</p>
 <p>在构造中抛出异常会让处理异常的规则变得复杂，而且中断的构造函数在处理后也无法调用析构，会造成潜在的资源泄露。在析构函数中抛出异常也有类似问题。</p>
-<blockquote><p>注意： 在 C++ 语言下这一条比较合适的，托管程序中对象的构建是在构造函数之前完成的，所以析构会得到执行，不过同样要确保对资源状态和依赖关系的检查。相关的讨论在构造函数设计准则下也有。</p>
+<blockquote><p>注意：在 C++ 语言下这一条比较合适的，托管程序中对象的构建是在构造函数之前完成的，所以析构会得到执行，不过同样要确保对资源状态和依赖关系的检查。相关的讨论在构造函数设计准则下也有。</p>
 </blockquote>
 </li>
 <li><p>如果在公开函数中因为违反了契约而抛出异常，请为所有的异常撰写接口文档。（契约式设计）</p>
@@ -506,7 +506,7 @@ class Employee{
 <p><strong>把异常吞了：</strong>如果捕获的异常具体类型不确定（通常都是如此），并在不完全理解失败的原因或没有对失败做出反应的情况下让应用程序继续执行，那么我们把这种情况称为把异常吞了。</p>
 </blockquote>
 <ul>
-<li><p>不要在<strong>框架代码</strong>中捕获具体类型不确定的异常（比如：System.Exception 、System.SystemException 等等）时把异常吞了。</p>
+<li><p>不要在<strong>框架代码</strong>中捕获具体类型不确定的异常（比如：System.Exception、System.SystemException 等等）时把异常吞了。</p>
 <pre><code class="lang-csharp">try{
     File.Open( ... );
 }catch(Exception e){
@@ -558,11 +558,11 @@ numbers.Add(1);
 if (!numbers.IsReadOnly){
     numbers.Add(1);
 }
-</code></pre><p>用来测试条件的成员成为 tester ，在前面例子中就是 IsReadOnly 。用来执行实际的操作并可能会抛出异常的成员成为 doer ，在前面的例子中就是 Add 方法。</p>
+</code></pre><p>用来测试条件的成员成为 tester ，在前面例子中就是 IsReadOnly 。用来执行实际的操作并可能会抛出异常的成员成为 doer，在前面的例子中就是 Add 方法。</p>
 <blockquote><p>使用这种模式无比小心，如果该方法设计为线程安全的方法时，要考虑竟态条件，在线程不安全的方法中，需要用户来保证。</p>
 </blockquote>
 <h3 id="try-parse-模式">Try-Parse 模式</h3>
-<p>该模式对成员的名字进行调整， 是函数语义中包含一个预先定义好的 tester 。例如， DataTime 定义了一个 Parse 方法，如果解析失败会抛出异常，同时他还定义了与之对应的 TryParsef 方法，它会试图解析，但在解析失败时会返回 false ，而在解析成功时则通过一个输出参数来返回结果。</p>
+<p>该模式对成员的名字进行调整， 是函数语义中包含一个预先定义好的 tester。例如，DataTime 定义了一个 Parse 方法，如果解析失败会抛出异常，同时他还定义了与之对应的 TryParsef 方法，它会试图解析，但在解析失败时会返回 false，而在解析成功时则通过一个输出参数来返回结果。</p>
 <pre><code class="lang-csharp">public struct DateTime{
     public static DateTime Parse(string dateTime){
         ...
@@ -583,7 +583,7 @@ if (!numbers.IsReadOnly){
     Contract.Ensures(Contract.Result&lt;int&gt;() &gt;= 0);
     return text.Count(char.IsWhiteSpace);
 }
-</code></pre><blockquote><p>.NET4 版本上微软提供了契约式编程能力（代码协定）， 但是从 .NET5 开始，微软过期并移除了这个库的支持。</p>
+</code></pre><blockquote><p>.NET4 版本上微软提供了契约式编程能力（代码协定），但是从 .NET5 开始，微软过期并移除了这个库的支持。</p>
 <p>从老版本的使用上看，Framework 内置的契约式编程在实现和维护上是有些麻烦的，其实现的机理远远超出了基础语言的范畴，要配合语法糖编译、工具才能够理解， 所以我感觉面向接口的契约式规格的意义大于契约式编码的实现... -- konglinglei </p>
 </blockquote>
 <h3 id="标准类型异常">标准类型异常</h3>

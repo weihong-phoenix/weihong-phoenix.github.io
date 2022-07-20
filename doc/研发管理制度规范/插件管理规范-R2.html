@@ -94,49 +94,49 @@
 <table>
 <thead>
 <tr>
-<th>序号</th>
+<th style="text-align:center">序号</th>
 <th>用语</th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td style="text-align:center">1</td>
 <td>插件</td>
 <td></td>
 </tr>
 <tr>
-<td>2</td>
+<td style="text-align:center">2</td>
 <td>插件包</td>
 <td>插件编译、打包的产物；给集成项目使用。</td>
 </tr>
 <tr>
-<td>3</td>
+<td style="text-align:center">3</td>
 <td>集成项目</td>
 <td></td>
 </tr>
 <tr>
-<td>4</td>
+<td style="text-align:center">4</td>
 <td>软件</td>
 <td>集成项目编译、打包出的产物；可销售的软件产品。</td>
 </tr>
 <tr>
-<td>5</td>
+<td style="text-align:center">5</td>
 <td>主动维护</td>
 <td>由维宏主动发现 bug，解决 bug，发布 Fix 软件或补丁包的过程。</td>
 </tr>
 <tr>
-<td>6</td>
+<td style="text-align:center">6</td>
 <td>被动维护</td>
 <td>在软件停止主动维护后，客户反馈有严重 bug 时修复 bug 的过程。</td>
 </tr>
 <tr>
-<td>7</td>
+<td style="text-align:center">7</td>
 <td>软件生命周期</td>
 <td>软件的某个版本发布后到停止主动维护的时间段。<br>对于 Release 版本，生命周期为发布之日起到下一 Release 版本发布时截止；<br>对于 Beta 版本不主动维护。</td>
 </tr>
 <tr>
-<td>8</td>
+<td style="text-align:center">8</td>
 <td>插件生命周期</td>
 <td>插件版本发布后到所有带这个版本的软件生命周期终止时的这个时间段。</td>
 </tr>
@@ -151,39 +151,39 @@
 <table>
 <thead>
 <tr>
-<th>序号</th>
+<th style="text-align:center">序号</th>
 <th>区段</th>
 <th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td style="text-align:center">1</td>
 <td>p</td>
 <td>主版本号，必填，从 1 开始，无上限</td>
 </tr>
 <tr>
-<td>2</td>
+<td style="text-align:center">2</td>
 <td>s</td>
 <td>子版本号，必填，从 1 开始到 9</td>
 </tr>
 <tr>
-<td>3</td>
+<td style="text-align:center">3</td>
 <td>nn</td>
 <td>子版本序号，必填，从 00 开始到 99</td>
 </tr>
 <tr>
-<td>4</td>
+<td style="text-align:center">4</td>
 <td>f</td>
 <td>beta 修订版本号，必填，从 0~99：分支修订版本号</td>
 </tr>
 <tr>
-<td>5</td>
+<td style="text-align:center">5</td>
 <td>rf</td>
 <td>Fix 修订版本号，必填，从 0~99；Beta 分支发出来的版本，rf 都是 0</td>
 </tr>
 <tr>
-<td>6</td>
+<td style="text-align:center">6</td>
 <td>suffix</td>
 <td>先行版本号，可选，由工作项 id 、后缀和序号组成，序号从 1 开始， eg： -12345-alpha1</td>
 </tr>
@@ -208,7 +208,7 @@
 <table>
 <thead>
 <tr>
-<th>序号</th>
+<th style="text-align:center">序号</th>
 <th>目录名</th>
 <th>路径</th>
 <th>规则</th>
@@ -216,19 +216,19 @@
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td style="text-align:center">1</td>
 <td>本地</td>
 <td>开发人员本地 Public 或其他路径</td>
 <td>1. 只能用于自测<br>2. 带先行版本后缀</td>
 </tr>
 <tr>
-<td>2</td>
+<td style="text-align:center">2</td>
 <td>Public 目录</td>
 <td>$/Laser/_Public</td>
 <td>1. 可以是未经过测试的版本<br>2. 多人协同开发使用<br>3. 带先行版本后缀</td>
 </tr>
 <tr>
-<td>3</td>
+<td style="text-align:center">3</td>
 <td>包服务器</td>
 <td><a href="http://phoenix.weihong.com:8088/feeds/Laser">http://phoenix.weihong.com:8088/feeds/Laser</a></td>
 <td>1. 必须是测试通过的<br>2. 不带先行版本后缀</td>
@@ -240,27 +240,27 @@
 <table>
 <thead>
 <tr>
-<th>序 号</th>
-<th>目录 名</th>
+<th style="text-align:center">序号</th>
+<th>目录名</th>
 <th>描述</th>
 <th>备注</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td style="text-align:center">1</td>
 <td>Beta</td>
 <td>主分支目录：<br>1. 测试通过后才允许提交到此目录<br>2. 一个插件在 Beta 目录仅有一个分支<br>3. 签入此目录代码必须通过代码评审</td>
 <td>重点管理</td>
 </tr>
 <tr>
-<td>2</td>
+<td style="text-align:center">2</td>
 <td>Dev</td>
 <td>开发分支目录：<br>1. 开发工作项时从Beta分支过来，测试验收通过后合并到 Beta 并删除 Dev 下分支<br>2. 多人合作开分支<br>3. 一个插件在本目录可以有多个分支</td>
 <td></td>
 </tr>
 <tr>
-<td>3</td>
+<td style="text-align:center">3</td>
 <td>Fix</td>
 <td>修复Bug分支目录：<br>1. 在修复外部反馈 bug 时从 Beta 分支出来，停止主动维护后删除<br>2. 测试通过后才允许提交到此目录<br>3. 签入此目录代码必须通过代码评审<br>4. 一个插件在本目录可以有多个分支</td>
 <td>重点管理</td>
@@ -275,13 +275,13 @@
 <li>在 Dev 下新建插件；</li>
 <li>开发功能，开发迭代过程插件包，版本号为 1.100.0.0-Task ID-alphaN，放置路径：<strong>本地</strong> 或 <strong>Public 目录</strong></li>
 <li>测试验收通过后，代码提交到 Beta，同时删除 Dev 下代码；</li>
-<li>给 Beta 下本次提交的变更集打 Tag  【插件名-1.100.0.0】；</li>
+<li>给 Beta 下本次提交的变更集打 Tag【插件名-1.100.0.0】；</li>
 <li>编译正式版插件包，版本号为 1.100.0.0，上传到包服务器；</li>
 <li>合并功能到 Beta 目录下其它集成项目分支。</li>
 </ol>
 <h4 id="322-增加功能插件">3.2.2 增加功能插件</h4>
 <ol>
-<li>从 Beta 下分支到 Dev （加上分支时 Beta 下版本号【1.101.1.0】）， 此处允许保留搁置集开发的方式，但必须是测试通过才能发行 ；</li>
+<li>从 Beta 下分支到 Dev （加上分支时 Beta 下版本号【1.101.1.0】），此处允许保留搁置集开发的方式，但必须是测试通过才能发行 ；</li>
 <li>开发迭代，过程中版本号带后缀【1.101.1.0-Task ID-alphaN】；</li>
 <li>开发过程，最终测试版本需要将 Beta 下最新代码合并到 Dev，并解决冲突发出测试版本；</li>
 <li>测试验收通过后，代码合并到 Beta，同时删除 Dev 下代码；</li>
@@ -309,33 +309,33 @@
 <table>
 <thead>
 <tr>
-<th>序 号</th>
+<th style="text-align:center">序号</th>
 <th>版本</th>
-<th>修订 人</th>
+<th>修订人</th>
 <th>日期</th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td style="text-align:center">1</td>
 <td>R0.1</td>
-<td>陈百 旺</td>
-<td>2021/06/30</td>
+<td>陈百旺</td>
+<td>2021/6/30</td>
 <td>初始草案</td>
 </tr>
 <tr>
-<td>2</td>
+<td style="text-align:center">2</td>
 <td>R1</td>
 <td>唐涛</td>
-<td>2021/07/02</td>
-<td>1. 修改分支管理示意图<br>2. 修改 Fix 目录分支规则<br>3. 增加 Beta 、Fix 下分支的搁置集开发方式<br>4. 3.2.3 Bug 处理流程修改<br>5. 增加插件包路径</td>
+<td>2021/7/2</td>
+<td>1. 修改分支管理示意图<br>2. 修改 Fix 目录分支规则<br>3. 增加 Beta、Fix 下分支的搁置集开发方式<br>4. 3.2.3 Bug 处理流程修改<br>5. 增加插件包路径</td>
 </tr>
 <tr>
-<td>3</td>
+<td style="text-align:center">3</td>
 <td>R2</td>
 <td>唐涛</td>
-<td>2021-8-31</td>
+<td>2021/8/31</td>
 <td>1. 插件版本号 f.f 改为 f.r 定义 Beta/Release 分支下插件包修复 bug 修改的字段</td>
 </tr>
 </tbody>

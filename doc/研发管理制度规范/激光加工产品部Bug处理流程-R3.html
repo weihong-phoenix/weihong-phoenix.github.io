@@ -141,34 +141,34 @@
 <table>
 <thead>
 <tr>
-<th>序号</th>
+<th style="text-align:center">序号</th>
 <th>用语</th>
 <th>描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
+<td style="text-align:center">1</td>
 <td>外部 bug</td>
 <td>由客户提出的 Bug</td>
 </tr>
 <tr>
-<td>2</td>
+<td style="text-align:center">2</td>
 <td>工作项 bug</td>
 <td>工作项发行过程中出现的 bug</td>
 </tr>
 <tr>
-<td>3</td>
+<td style="text-align:center">3</td>
 <td>独立 Bug</td>
 <td>与当前在测试工作项无关 bug</td>
 </tr>
 <tr>
-<td>4</td>
+<td style="text-align:center">4</td>
 <td>研发</td>
 <td>完成客户产品需求的生产过程，包括需求分析、设计、实现、测试</td>
 </tr>
 <tr>
-<td>5</td>
+<td style="text-align:center">5</td>
 <td>开发</td>
 <td>专指开发工程师编写代码、自测、发行软件过程</td>
 </tr>
@@ -232,7 +232,7 @@
 <p>工作项 Bug、独立 Bug 本来就是测试工程师测试的，问题复现相对简单；外部反馈 Bug 非本人操作出来，复现难度较大。</p>
 <p>Bug 复现主要是为了后续确定 Bug 、定位 Bug 、修复 Bug 、验证 Bug 是否解决。这个过程很重要，主要测试工程师负责，但对于偶发 bug，需要开发工程师给出复现思路，甚至修改软件提高复现概率。</p>
 <h4 id="223-原因分析">2.2.3 原因分析</h4>
-<p>Bug 原因分析由开发工程师或系统工程师完成； 分析 bug 产生的直接原因、根本原因；并将分析过程和分析结论写入 TFS Bug 项【Analysis and Correction】</p>
+<p>Bug 原因分析由开发工程师或系统工程师完成；分析 bug 产生的直接原因、根本原因；并将分析过程和分析结论写入 TFS Bug 项【Analysis and Correction】</p>
 <p>Bug 原因分析完成， 追溯 Bug 具体核实产生，确定引入人和引入的版本，评估影响范围；需要填写 Bug 项中【Imported By】、【Bug Type】</p>
 <p>Bug 原因分析完成，即可确定 Bug 归属的团队，需要将 Bug 项中【Team】改为引入者对应团队；</p>
 <p><em>注意： Bug 引入人非 Bug 解决人，则需要通知引入人，并得到引入人的确认才可以。</em></p>
@@ -244,7 +244,7 @@
 <ol>
 <li>首先按照《技术文档写作指南_内容-R1.1.md》对文档书写内容进行规范化</li>
 <li>确定评审相关的人员，并组织评审会议</li>
-<li>评审完成， <strong>将评审记录，写入方案设计最后一章：评审记录中</strong></li>
+<li>评审完成，<strong>将评审记录，写入方案设计最后一章：评审记录中</strong></li>
 <li>根据评审会议结果修改设计文档</li>
 <li>评审决议要求复评，准备下一次评审</li>
 </ol>
@@ -319,7 +319,7 @@ Correction 特殊说明， Analysis And Correction，清晰易懂，测试必须
 <p>是否检查开发缺陷分析：</p>
 <p>是否检查开发自测说明：</p>
 <p>测试资料是否归档：归档了写地址，未归档写待归档，不需要写不需要原因</p>
-<p>激光管切： 发行项测试时，需要将已经合并的 Bug 验证，保证发行出去的软件一定是解决了此Bug。</p>
+<p>激光管切： 发行项测试时，需要将已经合并的 Bug 验证，保证发行出去的软件一定是解决了此 Bug。</p>
 <p>激光平面： 发行 beta 软件，需要把所有待 beta 验收的 Bug 都验收掉，Activity =待 release 验收。</p>
 <p>发行 release 软件，需要把所有待 beta 验收和待 release 验收的 BUG 验收掉，Activity =验收完成。</p>
 <p>说明：发行 release 软件时， beta 还未验收，就直接验收 release 这种情况，我们认为 release 是由 beta 合并而来，release 没有问题，beta 就没有问题。</p>
