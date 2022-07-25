@@ -2304,6 +2304,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt1_9_1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt1_9_1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt1_9_2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt1_9_2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/zt1_bt1_pt1.jpg",
       "output": {
         "resource": {
@@ -2337,6 +2359,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt2_12_1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt2_12_1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt2_12_2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt2_12_2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/zt2_zwqd_pt1.jpg",
       "output": {
         "resource": {
@@ -2352,6 +2396,28 @@
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/zt2_zwqd_pt2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt3_14_1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt3_14_1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt3_4_2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt3_4_2.jpg"
         }
       },
       "is_incremental": false,
@@ -2381,6 +2447,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt4_14_bd_1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt4_14_bd_1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt4_14_bd_2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt4_14_bd_2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt4_14_bd_3.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt4_14_bd_3.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/zt4_zwcj_pt1.jpg",
       "output": {
         "resource": {
@@ -2403,10 +2502,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt5_16_bd_1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt5_16_bd_1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt5_16_bd_2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt5_16_bd_2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/zt5_tsbt_pt1.jpg",
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/zt5_tsbt_pt1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt6_20_bd_1.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt6_20_bd_1.jpg"
         }
       },
       "is_incremental": false,
@@ -2429,6 +2561,17 @@
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/zt7_wban_pt1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/zt_jh.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/zt_jh.png"
         }
       },
       "is_incremental": false,
@@ -3189,7 +3332,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.html",
-          "hash": "P+6QEg5rdlXrwILtg20Pmc13QN0+RnhL9BHCZOyTtYk="
+          "hash": "jGGnZvXgDT1QpR0DwlDTtFT69zzc+HyNv7K1wEGG+X4="
         }
       },
       "is_incremental": false,
@@ -4111,7 +4254,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.html",
-          "hash": "qwXp765Otj3po0jLCkOxaRuAGsQKSKyHQRUz7FEt3g4="
+          "hash": "qj67+xeW8wjLCdOWug+h4xX9kvj/3ItY1jjbS39WaSI="
         }
       },
       "is_incremental": false,
@@ -4157,7 +4300,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度.html",
-          "hash": "9su0W89IzdRdsvJATrm5cD6luZdnQ8C7aNp3SToli7g="
+          "hash": "/6Y3t7momlu30CpQ0xBZYMySToBh2866aDhpdBNqrKU="
         }
       },
       "is_incremental": false,
@@ -4169,7 +4312,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度指导书.html",
-          "hash": "o6JNgDjlK4SVxeIqfJvbT4UF/45uN43+tCwBeDzBY0s="
+          "hash": "gLR+EMLdGwcqkzv3iIq3yksOvACL0iRaZ18SeoMzFyc="
         }
       },
       "is_incremental": false,
@@ -4229,7 +4372,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/子产品管理制度（试行）-R2.html",
-          "hash": "Nca8DPKpSHFTp0cs1z4dQkLRKYpkAuiiRdeUqFCy85g="
+          "hash": "SKmpZGJmNRSYQRk6CZIlLDooQNZ7gq+Wm+EaxZEJDPw="
         }
       },
       "is_incremental": false,
@@ -4265,7 +4408,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/平台软件发布规范-R3（试用）.html",
-          "hash": "ePuxCRuy9DKFn2QVmSjcKY+ZBfafls5+5yiOxBLXyPk="
+          "hash": "ddfKCNqNiY81TnzTw1vGcn2l+rtdjw45dDplu7diTu8="
         }
       },
       "is_incremental": false,
@@ -4300,7 +4443,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/方案设计汇报和评审指导书/方案设计汇报和评审指导书-R1.html",
-          "hash": "RxNAIUJjIAblfSAOZexkzXIcRszuZHOf73L5fqERSms="
+          "hash": "0uEBeRMnaJjSSKNd7qYpv/EWft1NWpR9IEgJwu6taMY="
         }
       },
       "is_incremental": false,
@@ -4323,7 +4466,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/方案设计汇报和评审流程/方案设计汇报和评审流程-R1.html",
-          "hash": "g451Y5J6WN4SatEHQdacpJEcFkYzWA3yIUcbaQi2TNA="
+          "hash": "Z3BnSfzUf7rIs2d32QtUnU2L1j8WCYrXrp3MXQXpn3s="
         }
       },
       "is_incremental": false,
@@ -4335,7 +4478,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/RobotFramework自动化测试框架使用指导书-R1.html",
-          "hash": "tTmRB1twAYlLheqn3ZHnJ5MGoU6d/BCLTmXnz9ZiU0I="
+          "hash": "5b96blLcTFE4UuMeyY25YQIpm559XqMiT2EYB5/SQSU="
         }
       },
       "is_incremental": false,
@@ -4590,7 +4733,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework框架-R1.html",
-          "hash": "NdRQ5cNg6wlrvbsBNFf1uQxaAVNW/T818OhyVupJOTo="
+          "hash": "C/PgPGQg+zUnJciCvkZk+BODBQjRSAsCKfCcgbPWkjc="
         }
       },
       "is_incremental": false,
@@ -4602,7 +4745,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/模板文件/测试计划(模板)-R1.html",
-          "hash": "0l2IG76lAVYiqR7bJ5BQ7QGIog4v+R2f6E1TNsqcvnY="
+          "hash": "TLiAwDUXK9CVQzmU74PESjzl2oVzgBLBwT+1vUnWz+I="
         }
       },
       "is_incremental": false,
@@ -4625,7 +4768,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/自动化测试管理规范-R1.html",
-          "hash": "GqbiTU78l85pQr3zvc7Hpfz/2gMOkXfQxtVbrvRNDHA="
+          "hash": "KqcskMEQovWAwscwgLuakDmcRUpGRrc4hozv/1DvhYM="
         }
       },
       "is_incremental": false,
@@ -4637,7 +4780,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试流程&过程规范-R3.html",
-          "hash": "b5HJFQKYFMqiJrBJl7TqHQsulTpttu1nDJeRMfH2LIA="
+          "hash": "hWe9ReQZNGwqfa68SfMSM62/07AKfUHO+q7i8HLeG5s="
         }
       },
       "is_incremental": false,
@@ -4649,7 +4792,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试用例设计规范-R3.html",
-          "hash": "fAaprXRJiCiWpB5K4gRXD0AGUMKd6RW2mdhsTfCQrr8="
+          "hash": "wx+uk8zQQexIK9PY+HwRR8va9RThHoQwBLJiHtlf4f4="
         }
       },
       "is_incremental": false,
@@ -4661,7 +4804,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试规范.html",
-          "hash": "Jg9YO2aXHgnvCY3WDW1XzAM+LB/CiWbcXrZY4U5jM5c="
+          "hash": "wQvC86H0yDA47/4DxPS75eVFqczKcIhrhDZZDXHU/X4="
         }
       },
       "is_incremental": false,
@@ -4721,7 +4864,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/研发部产品方案汇报与处理流程-R1.html",
-          "hash": "etgo5gjo7f/06FIOCBCLfTAHayZ/FMFpKJy8ilVphIk="
+          "hash": "+4/2/64EBO/9csCyytm7eTaagj0mx0UKebmveqSCkcM="
         }
       },
       "is_incremental": false,
@@ -4733,7 +4876,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/缺陷跟踪流程-R2.html",
-          "hash": "gxgjHyoEkbvSnB+y6qDFDILAu8n521cvw9LcJvEt1Zg="
+          "hash": "OI3Vu3yEg4koZd2k4lq3qDmHVpU/VDU/txWnLPJld4E="
         }
       },
       "is_incremental": false,
@@ -4745,7 +4888,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件命名及版本方案说明-R3.html",
-          "hash": "seDj6jpIaudoRk7z0OrGdoiJuR4zVPaWDLmDLjdASQc="
+          "hash": "IT5H6WxAAA+yY5vFyo0ODbo8icpFJhiQgonNnRBV1nQ="
         }
       },
       "is_incremental": false,
@@ -4757,7 +4900,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件平台-遗留缺陷发布标准-R1.2.html",
-          "hash": "Kv0TYMAM8flSkuzKPpdAJf+2wFG3MO2UGUiyCUEAGxs="
+          "hash": "0nlFJpUpQg38be26l8eIQrBvVHnbwhzPN3K/HHfbEaY="
         }
       },
       "is_incremental": false,
@@ -4769,7 +4912,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件测试需求分解指导书-R2.html",
-          "hash": "maIIjUyT5ZVrDoF0G0F+9ZqZwMRoNPMYTdAW93hoBoE="
+          "hash": "OFfIgyu7Pf2g9R+fGjOYUoM0NSz9SrzyTJjPVXL9LDU="
         }
       },
       "is_incremental": false,
@@ -4781,7 +4924,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件编程规范-R5.html",
-          "hash": "MKuhlk1JR2SfUYxBalI+24eJLaE07oAKqALxS54q0Hs="
+          "hash": "yqCeRTbXHMgBp7MoYqBMVL4J28DxUyFQki0xpFa9168="
         }
       },
       "is_incremental": false,
@@ -4793,7 +4936,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.html",
-          "hash": "WCEUTi+srK769gpEzJUazyJOsUI0k+qRRT3V4aqZ5R8="
+          "hash": "i0eKG4C7wqkApbnNmhBYqltz0MUERtDXUohF8F8W2xk="
         }
       },
       "is_incremental": false,
@@ -4828,7 +4971,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/需求台账.html",
-          "hash": "Y8Fp7fAKQhICvvbfsX8ZFngsxtq7k5SQfHx/syjLqdA="
+          "hash": "VF6yPwWEmpZE2ufKt50O/oVYsJmkRvmAWkNNh12GKUM="
         }
       },
       "is_incremental": false,

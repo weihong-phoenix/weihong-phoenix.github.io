@@ -86,7 +86,7 @@
 </code></pre><h2 id="1-目的">1 目的</h2>
 <p>编写本规范的目的是为了统一公司软件编程风格，提高软件代码的可读性、可维护性，从而提高软件的质量。</p>
 <blockquote><p>现代软件架构的复杂性需要协同开发完成，如何高效地协同呢？无规矩不成方圆，无规范难以协同，比如，制订交通法规表面上是要限制行车权，实际上是保障公众的人身安全，试想如果没有限速，没有红绿灯，谁还敢上路行驶？对软件来说，适当的规范和标准绝不是消灭代码内容的创造性、优雅性，而是限制过度个性化，以一种普遍认可的统一方式一起做事，提升协作效率，降低沟通成本。代码的字里行间流淌的是软件系统的血液，质量的提升是尽可能少踩坑，杜绝踩重复的坑，切实提升系统稳定性，提高质量。</p>
-<p>​                                                          --摘自阿里的《java开发手册》泰山版</p>
+<p>​                                                                                                             --摘自阿里的《java开发手册》泰山版</p>
 </blockquote>
 <h2 id="2-适用范围">2 适用范围</h2>
 <p>本规范适用于公司所有产品的软件代码。自本规范实施之日起，以后新编写或修改的代码均应执行本规范。</p>
@@ -111,11 +111,11 @@
 <li><p><strong>例外</strong>：</p>
 <p>对此规则或原则给出例外的说明。</p>
 </li>
-<li><p><strong>Pascal命名法：</strong>
-将标识符的首字母和后面连接的每个单词的首字母都大写。可以对三字符或更多字符的标识符使用Pascal 大小写。
-例如： BackColor  </p>
+<li><p><strong>Pascal 命名法：</strong>
+将标识符的首字母和后面连接的每个单词的首字母都大写。可以对三字符或更多字符的标识符使用 Pascal 大小写。
+例如：BackColor  </p>
 </li>
-<li><p><strong>Camel命名法：</strong> 
+<li><p><strong>Camel 命名法：</strong> 
 标识符的首字母小写，而每个后面连接的单词的首字母都大写。
 例如：backColor</p>
 </li>
@@ -138,15 +138,15 @@
 <li><p><strong>高内聚低耦合</strong></p>
 <p>高内聚低耦合是从事编程来一直的要求， 但过于宽泛；</p>
 <p>一般的编程设计原则中：</p>
-<blockquote><p>DRY(Don&#39;t Repeat Yourself) ：编程过程中不写重复代码。</p>
-<p>KISS(Keep It Simple,Stupid) ：让代码简单直接。不过早优化代码， 不过度设计， 不复杂化代码。</p>
+<blockquote><p>DRY（Don&#39;t Repeat Yourself）：编程过程中不写重复代码。</p>
+<p>KISS（Keep It Simple,Stupid）：让代码简单直接。不过早优化代码， 不过度设计， 不复杂化代码。</p>
 </blockquote>
 <p>而面向对象设计原则中更是提出了SOLID设计原则，即：</p>
-<blockquote><p>单一职责原则 SRP (Single Responsibility Principle)</p>
-<p>开放封闭原则 OCP (The Open-Close Principle)</p>
-<p>里氏替换原则 LSP (Liskov Substitution Principle)</p>
-<p>接口隔离原则 ISP (Interface Segregation Principle)</p>
-<p>依赖倒置原则 DIP (Dependence Inversion Principle)</p>
+<blockquote><p>单一职责原则 SRP（Single Responsibility Principle）</p>
+<p>开放封闭原则 OCP（The Open-Close Principle）</p>
+<p>里氏替换原则 LSP（Liskov Substitution Principle）</p>
+<p>接口隔离原则 ISP（Interface Segregation Principle）</p>
+<p>依赖倒置原则 DIP（Dependence Inversion Principle）</p>
 </blockquote>
 </li>
 <li><p><strong>可读性</strong></p>
@@ -166,12 +166,12 @@
 <p>​     过长的函数解释能力、共享能力、选择能力都较差，也不易维护。</p>
 <p>​     过大的类代表了类做了很多事情，也常常有过多的重复代码。</p>
 <p>​     参数过长，不易理解，调用时也容易出错。</p>
-<p><strong>发散式变化、霰弹式修改、依恋情结</strong>：
-​      如果一个类不是单一职责的，则不同的变化可能都需要修改这个类，说明存在发散式变化，应考虑将不同的变化分离开。</p>
-<p>如果某个变化需要修改多个类的方法，则说明存在霰弹式修改，应考虑将这些需要修改的方法放入同一个类。</p>
-<p>如果函数对于某个类的兴趣高于了自己所处的类，说明存在依恋情结，应考虑将函数转移到他应有的类中。</p>
+<p><strong>发散式变化、霰弹式修改、依恋情结</strong>：</p>
+<p>​        如果一个类不是单一职责的，则不同的变化可能都需要修改这个类，说明存在发散式变化，应考虑将不同的变化分离开。</p>
+<p>​        如果某个变化需要修改多个类的方法，则说明存在霰弹式修改，应考虑将这些需要修改的方法放入同一个类。</p>
+<p>​        如果函数对于某个类的兴趣高于了自己所处的类，说明存在依恋情结，应考虑将函数转移到他应有的类中。</p>
 <p><strong>数据泥团</strong>：</p>
-<p>有时候会发现三四个相同的字段，在多个类和函数中均出现，这时候说明有必要给这一组字段建立一个类，将其封装起来。</p>
+<p>​        有时候会发现三四个相同的字段，在多个类和函数中均出现，这时候说明有必要给这一组字段建立一个类，将其封装起来。</p>
 </blockquote>
 <p><strong>【原则 0-1】</strong>尽可能避免重新造轮子。</p>
 <p><strong>说明</strong>：选择可复用的代码，对其修改优化以达到自身要求。</p>
@@ -211,7 +211,7 @@
 </blockquote>
 <p><strong>【规则 1-1】</strong>标识符要采用英文单词或其组合，便于记忆和阅读，切忌使用汉语拼音来命名（客户名称相关除外）。</p>
 <p><strong>说明</strong>：标识符应当直观且可以拼读，可望文知义，避免使人产生误解。程序中的英文单词一般不要太复杂，用词应当准确。考虑到软件中有客户定制的情况，为便于识别，客户相关的名称可以使用汉语拼音命名；除非必要，不要用数字或无明确指向意义的字符来定义标识符。</p>
-<p><strong>例外</strong>：习惯用法中的短生命周期的临时变量可以不遵守该规则， 如迭代过程中的临时变量。</p>
+<p><strong>例外</strong>：习惯用法中的短生命周期的临时变量可以不遵守该规则，如迭代过程中的临时变量。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c++">for (int i = 0; i &lt; fileNum; i++)
 {
@@ -318,7 +318,7 @@ public class ResourceObserver;</p>
 <tbody>
 <tr>
 <td>n</td>
-<td>用于一般情况下的各种整数、浮点数、枚举类型，包括：(unsigned  int), (unsigned long)，和一些派生类型：UINT，ULONG，WORD，DWORD 等</td>
+<td>用于一般情况下的各种整数、浮点数、枚举类型，包括：(unsigned  int)，(unsigned long)，和一些派生类型：UINT，ULONG，WORD，DWORD 等</td>
 </tr>
 <tr>
 <td>b</td>
@@ -338,7 +338,7 @@ public class ResourceObserver;</p>
 </tr>
 <tr>
 <td>sz</td>
-<td>char 或者TCHAR 类型的数组或者字符串常量</td>
+<td>char 或者 TCHAR 类型的数组或者字符串常量</td>
 </tr>
 <tr>
 <td>str</td>
@@ -389,7 +389,7 @@ for (int i = 0; i &lt; _countof(_szBuffer); i++)
 <pre><code class="lang-c++">CWinApp g_Application;
 int g_nVersion;
 HINSTANCE g_hInstance;
-</code></pre><p>静态变量使用作用域前缀’s_’。 局部静态变量使用前缀&#39;_s_’。例如：</p>
+</code></pre><p>静态变量使用作用域前缀’s_’。 局部静态变量使用前缀 &#39;_s_’。例如：</p>
 <pre><code class="lang-c++">static CNcWinApp s_App;
 static int s_nVersion = 0;
 static HINSTANCE s_hInst;
@@ -443,7 +443,7 @@ int Func(int nCounter_, int* pnSize_) //参数变量
     DBLZ_Z2,
     DBLZ_Z1Z2,
 };
-</code></pre><p><strong>【规则 1-1-6】</strong>宏都要使用大写字母, 用下划线‘_’分割单词。</p>
+</code></pre><p><strong>【规则 1-1-6】</strong>宏都要使用大写字母, 用下划线 ‘_’ 分割单词。</p>
 <p><strong>正例</strong>：</p>
 <pre><code>如 DISP_BUF_SIZE、MIN_VALUE、MAX_VALUE 等等。
 </code></pre><p><strong>说明：</strong>#define 定义的常数要求用大写字母和下划线混合命名，但是并不强制要求在每个单词之间插入下划线。</p>
@@ -480,7 +480,7 @@ public MemberAccessor(object instance,
 // 赋值语句的续行应缩进
 totalBill = totalBill + customerPurchases[id]
             + salesTax(customerPurchases[id]);
-</code></pre><p><strong>【规则 2-2】</strong>在 switch 语句中，每个case分支需要有结束标志 break 或者 return ，如果有不满足 case 枚举条件的值，需要包含一个default。</p>
+</code></pre><p><strong>【规则 2-2】</strong>在 switch 语句中，每个 case 分支需要有结束标志 break 或者 return ，如果有不满足 case 枚举条件的值，需要包含一个 default。</p>
 <p><strong>说明</strong>：在 switch 语句中，每一个 case 分支和 default 要用{ }括起来，{ }中的内容需要缩进，若是 break ，要放在{ }外，这样可以使程序可读性更好，也可以定义局部变量。有时候 case 分支中的语句较少时，可以不使用{}，但是推荐使用{}。对于多个分支相同处理的情况可以共用一个 break ，但是要用注释加以说明。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c#">switch (code)
@@ -531,7 +531,7 @@ width = 5;
 
 width = 5;
 </code></pre><p><strong>【规则 2-5】</strong>不同逻辑程序块之间要使用空行分隔。</p>
-<p><strong>说明</strong>：空行起着分隔程序段落的作用。适当的空行可以使程序的布局更加清晰。函数后要有空行；for 循环后要有空行；if语句后要有空行；switch 中每个 case 处理后要有空行。</p>
+<p><strong>说明</strong>：空行起着分隔程序段落的作用。适当的空行可以使程序的布局更加清晰。函数后要有空行；for 循环后要有空行；if 语句后要有空行；switch 中每个 case 处理后要有空行。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c++">void Hey()
 {
@@ -558,7 +558,7 @@ void Edit()
 <pre><code class="lang-c++">value = oldValue;
 total + value;
 number += 2;
-</code></pre><p><strong>【规则 2-7】</strong>代码使用制表符缩进，制表符宽度为4。</p>
+</code></pre><p><strong>【规则 2-7】</strong>代码使用制表符缩进，制表符宽度为 4。</p>
 <p><strong>说明</strong>：消除不同编辑器对TAB处理的差异，有的代码编辑器可以设置用空格代替 TAB 键。</p>
 <p><strong>【规则 2-8】</strong>结构型的数组、多维的数组如果在定义时初始化，按照数组的矩阵结构分行书写。</p>
 <p><strong>正例</strong>（C++）1：</p>
@@ -577,7 +577,7 @@ int numbers[4][3] =
     {3, 9, 27},
     {4, 16, 64}
 };
-</code></pre><p><strong>正例</strong>(C#)2：</p>
+</code></pre><p><strong>正例</strong>（C#）2：</p>
 <pre><code class="lang-c#">int [,] a = new int [3,4] 
 {
     {0, 1, 2, 3},   
@@ -616,7 +616,7 @@ int numbers[4][3] =
 }
 </code></pre><h3 id="53-注释">5.3 注释</h3>
 <p>注释对保证代码可读性至为重要，下面的规则描述了应该注释什么、注释在哪儿。当然也要记住，注释的确很重要，但最好的代码本身就是文档，类型和变量命名意义明确要比通过注释解释模糊的命名好得多。注释是为别人（下一个需要理解你的代码的人）而写的，为了便于自己和别人快速理解代码，所以一定要认真对待。<strong>有效的注释是指在代码的功能、意图层次上进行注释，提供有用、额外的信息，而不是代码表面意义的简单重复</strong>。</p>
-<p><strong>【规则 3-1】</strong>一般情况下，代码中有效注释量不少于代码量的 20% ，最低不得少于代码量的 10% 。</p>
+<p><strong>【规则 3-1】</strong>一般情况下，代码中有效注释量不少于代码量的 20%，最低不得少于代码量的 10%。</p>
 <p><strong>说明</strong>：注释的原则是有助于对程序的阅读理解，注释不宜太多也不能太少，注释语言必须准确、易懂、简洁。有效的注释是指在代码的功能、意图层次上进行注释，提供有用、额外的信息。</p>
 <p><strong>【规则 3-2】</strong>注释使用中文。</p>
 <p><strong>说明</strong>：对于特殊要求的可以使用英文注释，如工具不支持中文或国际化版本时。</p>
@@ -655,7 +655,7 @@ private void SetLabelIndex(List&lt;LabelInfo&gt; labelInfoList)
     }
 }
 </code></pre><p><strong>【规则 3-6】</strong>签入主干的代码不能存在临时的调试代码以及大段被注释掉的代码。</p>
-<p><strong>说明</strong>：调试代码从排版、注释上（比如临时的调试代码可以采用首行对齐的方式，而不是缩进的方式）注意需要明确区分，这样在做清理时，可以快速识别。</p>
+<p><strong>说明：</strong>调试代码从排版、注释上（比如临时的调试代码可以采用首行对齐的方式，而不是缩进的方式）注意需要明确区分，这样在做清理时，可以快速识别。</p>
 <p>在代码签入主干时需要删除大段被注释的代码，如果需要事后查看，可以通过源代码版本进行比对。</p>
 <p><strong>【规则 3-7】</strong>代码和注释要同步维护，不再有用的注释及时删除，特别是错误的注释一定要删除。</p>
 <p><strong>说明：</strong>注释的内容要清晰明了，含义准确，防止注释二义性。错误的注释不但无益反而有害。</p>
@@ -664,7 +664,7 @@ private void SetLabelIndex(List&lt;LabelInfo&gt; labelInfoList)
 <p>代码永远是主体。通过对函数或过程、变量、结构等正确的命名以及合理地组织代码结构，使代码成为自注释的。清晰准确的函数、变量命名，可增加代码的可读性，减少不必要的注释。</p>
 <p>提倡大段的功能性的注释，只要把实现的主要思想和流程写清楚就可以，没有必要每一句都加上注释。大段的功能性的注释更有利于对功能的理解。</p>
 <p><strong>【规则 3-9】</strong>注释应与其描述的代码相近，对代码的注释可放在其上方位置，需与其上面的代码用空行隔开；也可与代码同行，但不可放在代码的下方。</p>
-<p>说明：在使用缩写时之前，应对缩写进行必要的说明。</p>
+<p><strong>说明：</strong>在使用缩写时之前，应对缩写进行必要的说明。</p>
 <p><strong>正例</strong>： </p>
 <p>如下书写比较结构清晰</p>
 <pre><code class="lang-c++">// 获得子系统索引
@@ -694,7 +694,7 @@ _nSubSysIndex = _nData[_nIndex].nSysIndex;
 // 代码段2注释
 [ 一行代码2 ]
 </code></pre><p><strong>【规则 3-10】</strong>注释与所描述内容进行同样的缩进。</p>
-<p><strong>说明</strong>：可使程序排版整齐，并方便注释的阅读与理解。</p>
+<p><strong>说明：</strong>可使程序排版整齐，并方便注释的阅读与理解。</p>
 <p><strong>正例</strong>：</p>
 <p>如下注释结构比较清晰。</p>
 <pre><code class="lang-c++">int DoSomething()
@@ -717,7 +717,7 @@ _nSubSysIndex = _nData[_nIndex].nSysIndex;
 
 }
 </code></pre><p><strong>【原则 3-11】</strong>维护已有代码时， 注释时要写上作者姓名和日期。（名字一律写全拼或汉字，不要写英文名字或代号缩写）。</p>
-<p><strong>说明</strong>：拷贝或移植的代码要特别注意，不要将原始代码的作者也进行了拷贝。对于一些变量、函数接口的简单注释可以不写姓名和日期。</p>
+<p><strong>说明：</strong>拷贝或移植的代码要特别注意，不要将原始代码的作者也进行了拷贝。对于一些变量、函数接口的简单注释可以不写姓名和日期。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c++">// 这里写你的注释  add by zhangsan 20100929
 // 这里写你的注释  修改者：张三 2010-09-29
@@ -752,7 +752,7 @@ void OnBlowStart(); // 吹气开
     }
 }
 </code></pre><p><strong>【规则 4-5】</strong>不能使用过时的类或方法。</p>
-<p><strong>说明</strong>：接口提供方既然明确是过时接口， 那么有义务同时提供新的接口；作为调用方来说，有义务去考证过时方法的新实现是什么。C#会通过特性[Obsolete(过时原因及替换方式)]标注。</p>
+<p><strong>说明</strong>：接口提供方既然明确是过时接口， 那么有义务同时提供新的接口；作为调用方来说，有义务去考证过时方法的新实现是什么。C# 会通过特性 [Obsolete(过时原因及替换方式)] 标注。</p>
 <p><strong>正例</strong>（c#）：</p>
 <p>以下标明了该属性已过时， 不能使用。</p>
 <pre><code class="lang-c#">/// &lt;summary&gt;
@@ -797,12 +797,12 @@ public int DefaultBlowType
 <li>保持一定的函数体结构；如上函数一般结构。</li>
 <li>相关操作尽量放在一起；</li>
 <li>尽量减少代码嵌套；</li>
-<li>尽量保证函数只有一个return。</li>
+<li>尽量保证函数只有一个 return。</li>
 </ol>
 </li>
 </ul>
 <p><strong>【规则 5-1】</strong>一个函数仅完成一件功能。</p>
-<p><strong>说明</strong>：一个函数实现多个功能给开发、使用、维护都带来很大的困难。 将没有关联或者关联很弱的语句放到同一函数中，会导致函数职责不明确，难以理解，难以测试和改动。</p>
+<p><strong>说明：</strong>一个函数实现多个功能给开发、使用、维护都带来很大的困难。 将没有关联或者关联很弱的语句放到同一函数中，会导致函数职责不明确，难以理解，难以测试和改动。</p>
 <p><strong>【规则 5-2】</strong>请保持函数的一般结构，  public 函数应首先校验参数的合理性。</p>
 <p><strong>说明：</strong>函数一般结构如下：</p>
 <pre><code class="lang-c#">/// &lt;summary&gt;
@@ -818,7 +818,7 @@ public int DefaultBlowType
 }
 </code></pre><p>相关操作尽量放在一起，尽量保证函数只有一个 return 。</p>
 <p><strong>【规则 5-3】</strong>函数名用大写字母开头的单词组合而成，且应当使用 “动词”或者“动词＋名词”（动宾词组）的形式命名。</p>
-<p><strong>说明</strong>：函数名通常是指令性的,力求清晰、明了，通过函数名就能够判断函数的主要功能。函数名中不同意义字段之间不要用下划线连接，而要把每个字段的首字母大写以示区分。函数命名采用大小写字母结合的形式。</p>
+<p><strong>说明：</strong>函数名通常是指令性的,力求清晰、明了，通过函数名就能够判断函数的主要功能。函数名中不同意义字段之间不要用下划线连接，而要把每个字段的首字母大写以示区分。函数命名采用大小写字母结合的形式。</p>
 <p>很多开发人员会采用一个比较宽泛的动词来为函数命名。为求函数名的准确， 关键还是靠单词的积累，多阅读优秀源码。下面是整理的一些常用动词，可以参考使用：</p>
 <pre><code>add/remove        increment/decrement                open/close
 begin/end         insert/delete                      show/hide
@@ -864,11 +864,11 @@ public HardwareInfo QueryHardWareInfo(out string cpuName) // 返回值与out参�
     ...
 }
 </code></pre><p><strong>【规则 5-7】</strong>避免函数过长，新增函数不超过 200 行（非空非注释行）。</p>
-<p><strong>说明</strong>：过长的函数往往意味着函数功能不单一，过于复杂。 函数的有效代码行数，即非空非注释行应当在[1，200]区间。 
+<p><strong>说明</strong>：过长的函数往往意味着函数功能不单一，过于复杂。函数的有效代码行数，即非空非注释行应当在 [1，200] 区间。 
 <strong>例外</strong>：某些实现算法的函数，由于算法的聚合性与功能的全面性，可能会超过 200 行。</p>
-<p><strong>【规则 5-8】</strong>对于函数体，嵌套的层次不超过4层。</p>
+<p><strong>【规则 5-8】</strong>对于函数体，嵌套的层次不超过 4 层。</p>
 <p><strong>说明</strong>：仅对新增函数做要求，对已有的代码建议不增加嵌套层次。</p>
-<p>函数的代码块嵌套深度指的是函数中的代码控制块（例如：if、for、while、switch等）之间互相包含的深度。每级嵌套都会增加阅读代码时的脑力消耗，因为需要在脑子里维护一个“栈”（比如，进入条件语句、进入循环……）。应该做进一步的功能分解，从而避免使代码的阅读者一次记住太多的上下文。</p>
+<p>函数的代码块嵌套深度指的是函数中的代码控制块（例如：if、for、while、switch 等）之间互相包含的深度。每级嵌套都会增加阅读代码时的脑力消耗，因为需要在脑子里维护一个“栈”（比如，进入条件语句、进入循环……）。应该做进一步的功能分解，从而避免使代码的阅读者一次记住太多的上下文。</p>
 <p><strong>反例</strong>：</p>
 <pre><code class="lang-c++">for (condition)
 {
@@ -893,7 +893,7 @@ public HardwareInfo QueryHardWareInfo(out string cpuName) // 返回值与out参�
 <pre><code class="lang-c++">int GetStrLen(const char* pcString_);
 
 int GetStrLen(const int&amp; nValue_);
-</code></pre><p><strong>例外说明：</strong>在实际编码时，为了避免只读形参被更改，但又不想增加代码编写的额外负担，可以使用下列方式，通过在函数内部声明一个常变量的方式，而不是函数形参直接用const。</p>
+</code></pre><p><strong>例外说明：</strong>在实际编码时，为了避免只读形参被更改，但又不想增加代码编写的额外负担，可以使用下列方式，通过在函数内部声明一个常变量的方式，而不是函数形参直接用 const。</p>
 <pre><code class="lang-c++">void SetValue(int* pnData_)
 {
     const int* _pnValue = pnData _; 
@@ -906,7 +906,7 @@ int GetStrLen(const int&amp; nValue_);
 <h3 id="56-表达式与语句">5.6 表达式与语句</h3>
 <p>表达式是语句的一部分，它们是不可分割的。表达式和语句虽然看起来比较简单，但使用时隐患比较多。本章归纳了正确使用表达式和 if、for、while、switch 等基本语句的一些规则与建议。在写表达式和语句的时候要注意运算符的优先级。</p>
 <p><strong>【规则 6-1】</strong>一行仅声明一个变量。</p>
-<p><strong>说明</strong>：复杂的语句阅读起来，难于理解，并容易隐含错误。变量定义时，一行只定义一个变量。对于一些数学计算相关的除外。</p>
+<p><strong>说明：</strong>复杂的语句阅读起来，难于理解，并容易隐含错误。变量定义时，一行只定义一个变量。对于一些数学计算相关的除外。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c++">int quantity = 0;
 int customerNum = 0;
@@ -915,7 +915,7 @@ int currentNum = 0;
 <pre><code class="lang-c++">// 一行定义多个变量
 int quantity, customerNum;
 </code></pre><p><strong>【规则6-2】</strong>一个变量有且只有一个功能，不能把一个变量用作多种用途。</p>
-<p><strong>说明</strong>：一个变量只用来表示一个特定功能，不能把一个变量作多种用途，即同一变量取值不同时，其代表的意义也不同。</p>
+<p><strong>说明：</strong>一个变量只用来表示一个特定功能，不能把一个变量作多种用途，即同一变量取值不同时，其代表的意义也不同。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c#">void Init()
 {
@@ -935,7 +935,7 @@ int quantity, customerNum;
     ...
 }
 </code></pre><p> <strong>【规则6-3】</strong>能放在循环体外的变量声明、条件判断、函数调用和计算等，不要放在循环体内。</p>
-<p><strong>说明</strong>：如果变量是一个对象，每次进入作用域都要调用其构造函数，每次退出作用域都要调用其析构函数。见正例 1和反例 1。 </p>
+<p><strong>说明：</strong>如果变量是一个对象，每次进入作用域都要调用其构造函数，每次退出作用域都要调用其析构函数。见正例 1 和反例 1。 </p>
 <p>下面两个示例中，反例 2 比**正例 **2 多执行了 loopNum-1 次逻辑判断。并且由于前者总要进行逻辑判断，使得编译器不能对循环进行优化处理，降低了效率。如果 loopNum 值大到一定程度，采用正例的写法，可以提高效率。</p>
 <pre><code class="lang-c#">const int loopNum = 100000;
 </code></pre><p>**正例 **1:</p>
@@ -980,8 +980,8 @@ else
     }
 }
 </code></pre><h4 id="561-c">5.6.1 C++</h4>
-<p><strong>【规则 6-1-1】</strong>不可将大布尔变量 BOOL 逻辑表达式直接与1进行比较。</p>
-<p><strong>说明</strong>：根据 BOOL 布尔类型的语义，零值为“假”（记为 FALSE），任何非零值都是“真”（记为 TRUE）。TRUE的值究竟是什么并没有统一的标准。例如 Visual C++ 将 TRUE 定义为 1，而 Visual Basic 则将TRUE定义为  -1。</p>
+<p><strong>【规则 6-1-1】</strong>不可将大布尔变量 BOOL 逻辑表达式直接与 1 进行比较。</p>
+<p><strong>说明</strong>：根据 BOOL 布尔类型的语义，零值为“假”（记为 FALSE），任何非零值都是“真”（记为 TRUE）。TRUE的值究竟是什么并没有统一的标准。例如 Visual C++ 将 TRUE 定义为 1，而 Visual Basic 则将TRUE定义为 -1。</p>
 <p><strong>注意：</strong>对于 bool 变量，也使用下列正例的写法。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c++">BOOL _bFlag = TRUE;
@@ -998,7 +998,7 @@ if (!_bRet)  // 表示_bRet为false
 if (_bFlag == 1)
 </code></pre><p><strong>【规则 6-1-2】</strong>在条件判断语句中，当整型变量与 0 比较时，不可模仿布尔变量的风格，应当将整型变量用“==”或“!=”直接与 0 比较。</p>
 <p><strong>正例</strong>：</p>
-<p>假设整型变量的名字为_nValue，它与零值比较的标准，if语句如下：</p>
+<p>假设整型变量的名字为_nValue，它与零值比较的标准，if 语句如下：</p>
 <pre><code class="lang-c++">if (_nValue == 0)
 if (_nValue != 0)
 </code></pre><p><strong>反例</strong>：</p>
@@ -1007,8 +1007,8 @@ if (_nValue)
 if (!_nValue) 
 </code></pre><p><strong>【规则6-1-3】</strong>禁用目前系统中大于、大于等于、小于、小于等于相关浮点数比较宏，仅仅保留约等于浮点数宏（由于计算机浮点数的表示和计算有一定的精度损失）。</p>
 <p><strong>说明：</strong>仅保留：**DOUBLE_EQU、DOUBLE_EQU_ZERO、FLOAT_EQU、FLOAT_EQU_ZERO **四个宏或是系统中其他与这四个宏功能类似的宏或函数，且这四个宏仅限于约等于的情况，其他情况下：大于比较，使用&gt;、大于等于比较，使用&gt;=、小于比较，使用&lt;、小于等于比较，使用&lt;=。</p>
-<p>具体原因以 DOUBLE_GE 说明：DOUBLE_GE(a, b)的定义包含两个语义a &gt; b 或 a ≈ b，其中a ≈ b表示的是在一定的正负误差范围内，a,b两个数相等。比如本来希望通过DOUBLE_GE(a, b)来判定a &gt;= b，但是可能会出现a实际比b稍小一点点(在误差范围内)，但是因为使用了宏 DOUBLE_GE，误认为满足条件 a &gt;= b 的情况，导致后续各种代码异常。DOUBLE_GE_ZERO 也同样存在上述 DOUBLE_GE 问题。具体见下示例代码。</p>
-<p>实际代码原本需要判断的Y_一定是大于等于 0 （处于一、二象限的情况），但是因为使用了 DOUBLE_GE_ZERO 宏定义，当 Y_的值是稍稍小于 0 的一个值时，因为宏中的等于判断对于待比较数进行了取绝对值操作，所以会出现误判的情况。实际修改时将 if (DOUBLE_GE_ZERO(Y_)) 修改为 if (Y_ &gt;= 0)。</p>
+<p>具体原因以 DOUBLE_GE 说明：DOUBLE_GE(a, b) 的定义包含两个语义 a &gt; b 或 a ≈ b，其中 a ≈ b 表示的是在一定的正负误差范围内，a,b 两个数相等。比如本来希望通过 DOUBLE_GE(a, b) 来判定 a &gt;= b，但是可能会出现 a 实际比 b 稍小一点点(在误差范围内)，但是因为使用了宏 DOUBLE_GE，误认为满足条件 a &gt;= b 的情况，导致后续各种代码异常。DOUBLE_GE_ZERO 也同样存在上述 DOUBLE_GE 问题。具体见下示例代码。</p>
+<p>实际代码原本需要判断的 Y <em>一定是大于等于 0 （处于一、二象限的情况），但是因为使用了 DOUBLE_GE_ZERO 宏定义，当 Y</em> 的值是稍稍小于 0 的一个值时，因为宏中的等于判断对于待比较数进行了取绝对值操作，所以会出现误判的情况。实际修改时将 if (DOUBLE_GE_ZERO(Y_)) 修改为 if (Y_ &gt;= 0)。</p>
 <p><strong>反例：</strong></p>
 <pre><code class="lang-c++">//计算矢量与X轴正方向的角度
 double _compute_angle(double X_, double Y_)
@@ -1029,13 +1029,13 @@ double _compute_angle(double X_, double Y_)
     // 当Y为负值，即在第三、第四象限时
     return 2.0 * c_nPIE - _nAngle; 
 } 
-</code></pre><p><strong>备注:</strong>特殊情况下,如若要使用以上禁用的宏,必须要邮件上报研发总监和软件部经理。</p>
+</code></pre><p><strong>备注：</strong>特殊情况下，如若要使用以上禁用的宏，必须要邮件上报研发总监和软件部经理。</p>
 <h4 id="562-c">5.6.2 C#</h4>
 <p><strong>【原则 6-2-1】</strong>避免使用 ToUpper(), ToLower() 转换后比较字符串， 字符串比较请使用 String.Compare。  </p>
-<p><strong>【原则 6-2-2】</strong>超过5个字符串拼接， 请使用 StringBuilder。  </p>
-<p><strong>说明</strong>：String 的值是不可变的，这就导致每次对String的操作都会生成新的 String 对象，不仅效率低下，而且浪费大量无用的内存空间。</p>
+<p><strong>【原则 6-2-2】</strong>超过 5 个字符串拼接， 请使用 StringBuilder。  </p>
+<p><strong>说明</strong>：String 的值是不可变的，这就导致每次对 String 的操作都会生成新的 String 对象，不仅效率低下，而且浪费大量无用的内存空间。</p>
 <p><strong>【原则 6-2-3】</strong>涉及到版本号比较， 避免使用字符串比较， 请使用类 System.Version。</p>
-<p><strong>说明</strong>：在版本号比较时， 不能通过字符串比较来得到哪个版本更新。</p>
+<p><strong>说明</strong>：在版本号比较时，不能通过字符串比较来得到哪个版本更新。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c#">Version oldVersion = Version.Parse(&quot;1.1.2&quot;); //通过读取配置获取
 Version newVersion = Version.Parse(&quot;1.1.13&quot;); // 通过读取配置获取
@@ -1053,13 +1053,13 @@ if (newVersion &gt; oldVersion)  // 这里为false， 字符串比较逻辑
     // 更新操作
 }
 </code></pre><p><strong>【规则 6-2-4】</strong>三目运算符禁止嵌套使用。</p>
-<p><strong>说明：</strong>三目运算符在阅读时就需要思考。 若嵌套使用， 增加了阅读难度。 </p>
-<p><strong>反例：</strong></p>
+<p><strong>说明：</strong>三目运算符在阅读时就需要思考。若嵌套使用，增加了阅读难度。 </p>
+<p><strong>反例</strong>：</p>
 <pre><code class="lang-c#">string fileRangeFromStr = isContinueMachine ? string.Format(&quot;第{0}行&quot;, currentLineNo) :
                 from &lt;= 1 ? &quot;文件开始&quot; : string.Format(&quot;第{0}行&quot;, from);
 </code></pre><h3 id="57-变量常量与类型">5.7 变量、常量与类型</h3>
 <p><strong>【规则 7-1】</strong>局部变量尽可能置于最小作用域内，并在声明变量时将其初始化。</p>
-<p><strong>说明</strong>：提倡在尽可能小的作用域中声明变量，离第一次使用越近越好。这使得代码易于阅读，易于定位变量的声明位置、变量类型和初始值。特别是，应使用初始化代替声明+赋值的方式。</p>
+<p><strong>说明：</strong>提倡在尽可能小的作用域中声明变量，离第一次使用越近越好。这使得代码易于阅读，易于定位变量的声明位置、变量类型和初始值。特别是，应使用初始化代替声明+赋值的方式。</p>
 <h4 id="571-c">5.7.1 C++</h4>
 <p><strong>【规则 7-1-1】</strong>已经定义了枚举类型的变量，要直接使用枚举类型变量，而不要出现枚举类型变量与常数混用的情况。</p>
 <pre><code class="lang-c++">enum dblz_t
@@ -1095,7 +1095,7 @@ void SetDblzMode(dblz_t nDblzType_)
 </code></pre><p><strong>反例</strong>：</p>
 <pre><code class="lang-c++">#define HANDLE(A, B) (A / B)
 </code></pre><h3 id="58-断言和错误处理">5.8 断言和错误处理</h3>
-<p>断言是对某种不应该发生的条件进行检查,它可以快速发现并定位软件问题，同时对系统错误进行自动报警。断言可以对在系统中隐藏很深，用其它手段极难发现的问题进行定位，从而缩短软件问题定位时间，提高系统的可测性。在实际应用时，可根据具体情况灵活地设计断言。</p>
+<p>断言是对某种不应该发生的条件进行检查，它可以快速发现并定位软件问题，同时对系统错误进行自动报警。断言可以对在系统中隐藏很深，用其它手段极难发现的问题进行定位，从而缩短软件问题定位时间，提高系统的可测性。在实际应用时，可根据具体情况灵活地设计断言。</p>
 <p>错误处理需注意以下几点：</p>
 <ul>
 <li><strong>错误处理很重要，但不能搞乱代码逻辑</strong></li>
@@ -1183,7 +1183,7 @@ MatchedGroups::MatchedGroups()
 </code></pre><h4 id="582-c">5.8.2 C#</h4>
 <p>System.Diagnostics 命名空间提供 Debug 和 Trace 两个类，分别用于代码调试和代码跟踪。Debug.Assert(bool condition) 仅在 Debug 版本下有效，在 Release 版本下无效。可以用 Debugview 工具对 Release 版本中的 Trace 信息进行跟踪。</p>
 <p><strong>【原则 8-2-1】</strong>优先考虑使用 System 命名空间中已有的异常，而不是自己创建新的异常类型。  </p>
-<p><strong>说明</strong>：要使用最合理，最具针对性的异常。例如，对参数为空，应抛出System.ArgutmentNullException，而不是 System.ArgutmentException</p>
+<p><strong>说明</strong>：要使用最合理，最具针对性的异常。例如，对参数为空，应抛出 System.ArgutmentNullException，而不是 System.ArgutmentException</p>
 <p><strong>【规则 8-2-2】</strong>不要抛出异常基类 Exception 。  </p>
 <p><strong>说明</strong>：Exception 是一个非常抽象的异常类，捕获这类异常通常会产生很多负面影响。通常情况下应该定义我们自己的异常类，并且需要区分系统（framework）抛出的异常和我们自己抛出的异常。</p>
 <p><strong>【原则 8-2-3】</strong>自定义异常类型需以 Exception 结尾，并标记为 Serializable 。  </p>
@@ -1192,8 +1192,8 @@ MatchedGroups::MatchedGroups()
 <p><strong>特别说明：</strong></p>
 <p>上面给了断言和错误处理的原则，但是并不是每一个地方都需要进行相关断言处理，否则断言和异常处理太多，一是会影响代码的可阅读性，同时也会增加很多不必要的预防成本。可以把某些接口选定为安全区域的边界（模块或是 dll 提供的外部接口），对穿越安全区域边界的数据进行合法性校验，并当数据异常时做出错处理。模块外部传入的数据，必须对输入数据的合法性进行检测，一旦数据通过了合法性检测，进入模块内部，可以假定数据的正确性，此时不需要重复去做一些数据合法性检测。同理，对于一个模块输出给外部模块使用的数据，必须对输出数据的合法性进行检测，但是如果这个输出数据只在内部使用，可以只做一些有必要的检测。</p>
 <p>在类的层次也可以采用这个方法，类的公用方法假定数据是不安全的，他们负责检查数据并进行处理，一旦公用方法接收了数据，那么类的私有方法就可以假定数据是安全的。</p>
-<p><strong>编制：胡凯烽</strong>                            <strong>审核：陈豫</strong>                                    <strong>批准：郑之开</strong>
-审批链接：<a href="http://172.16.1.166:85/workflow/request/ViewRequest.jsp?requestid=284024&amp;_workflowid=564&amp;_workflowtype=&amp;isovertime=0">http://172.16.1.166:85/workflow/request/ViewRequest.jsp?requestid=284024&_workflowid=564&_workflowtype=&isovertime=0</a></p>
+<p><strong>编制：胡凯烽</strong>                            <strong>审核：陈豫</strong>                                    <strong>批准：郑之开</strong></p>
+<p>审批链接：<a href="http://172.16.1.166:85/workflow/request/ViewRequest.jsp?requestid=284024&amp;_workflowid=564&amp;_workflowtype=&amp;isovertime=0">http://172.16.1.166:85/workflow/request/ViewRequest.jsp?requestid=284024&_workflowid=564&_workflowtype=&isovertime=0</a></p>
 </article>
           </div>
           
