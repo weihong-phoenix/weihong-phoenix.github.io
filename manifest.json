@@ -2662,12 +2662,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/通用类元素规范/文字.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/通用类元素规范/文字.html",
-          "hash": "5SB/a56QsHtbNW0aZrHd6IPQ8jhurMebePusU/J9DxA="
+          "hash": "ZIs7Nhdm81xBYYWX2cB1XXj2MCraTNEUwGmX+OwpwsE="
         }
       },
       "is_incremental": false,
