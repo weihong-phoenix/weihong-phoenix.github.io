@@ -120,7 +120,7 @@
 例如：backColor</p>
 </li>
 <li><p><strong>代码片段：</strong></p>
-<p>在代码区域出现中括号中带中文字的及符号…， 如：[代码片段]或…， 则一般表示代码片段。 </p>
+<p>在代码区域出现中括号中带中文字的及符号…，如：[代码片段]或…，则一般表示代码片段。 </p>
 </li>
 </ul>
 <h2 id="4-基本原则">4 基本原则</h2>
@@ -130,18 +130,18 @@
 可维护性
 可扩展性</p>
 </blockquote>
-<p>可读性高：代码的写法应当使别人理解它所需要的时间最小化。 相对于追求最小化代码行数，更好的提高可读性的方法是：最小化人们理解代码所需要的时间。</p>
-<p>可维护性高：功能或系统出现问题后， 能恢复正常功能所需要的时间最小化。包括对问题的诊断、定位、修复所花的时间。</p>
-<p>可扩展性高：当出现需求变更时， 能响应需求实现所需要的时间最小化。 </p>
+<p>可读性高：代码的写法应当使别人理解它所需要的时间最小化。相对于追求最小化代码行数，更好的提高可读性的方法是：最小化人们理解代码所需要的时间。</p>
+<p>可维护性高：功能或系统出现问题后，能恢复正常功能所需要的时间最小化。包括对问题的诊断、定位、修复所花的时间。</p>
+<p>可扩展性高：当出现需求变更时，能响应需求实现所需要的时间最小化。 </p>
 <p>那如何做到高质量的代码呢？高质量的代码一定是整洁的，整洁是好代码的必要条件。整洁的代码一定是高内聚低耦合的，也一定是可读性强、易维护的。</p>
 <ul>
 <li><p><strong>高内聚低耦合</strong></p>
-<p>高内聚低耦合是从事编程来一直的要求， 但过于宽泛；</p>
+<p>高内聚低耦合是从事编程来一直的要求，但过于宽泛；</p>
 <p>一般的编程设计原则中：</p>
 <blockquote><p>DRY（Don&#39;t Repeat Yourself）：编程过程中不写重复代码。</p>
-<p>KISS（Keep It Simple,Stupid）：让代码简单直接。不过早优化代码， 不过度设计， 不复杂化代码。</p>
+<p>KISS（Keep It Simple,Stupid）：让代码简单直接。不过早优化代码，不过度设计，不复杂化代码。</p>
 </blockquote>
-<p>而面向对象设计原则中更是提出了SOLID设计原则，即：</p>
+<p>而面向对象设计原则中更是提出了 SOLID 设计原则，即：</p>
 <blockquote><p>单一职责原则 SRP（Single Responsibility Principle）</p>
 <p>开放封闭原则 OCP（The Open-Close Principle）</p>
 <p>里氏替换原则 LSP（Liskov Substitution Principle）</p>
@@ -183,13 +183,13 @@
 ​       调试时需要监控每个变量、执行数据以及动作的变化，监控其行为是否与预期一致。
 ​       对于对象变量，除监控其本身变量外，还需要监控其内部数据的变化，如果有多级继承和派生时，必要时还需要逐一展开监控，关注其内存布局的变化或是对象对齐等问题。
 ​       对于 C++ ,  涉及 STL 中的代码，需要对常用的 List 、vector 的内存布局理解清晰，便于调试代码时监控其存储值的变化。调试时可能会涉及人为修改变量使其进入期望调试代码段的情况，此时可以使用重置代码段 PC 指针的方式提高代码调试的效果。</p>
-<p><strong>【原则 0-3】</strong>以代码仓库为单位， 保证与原有的代码风格的一致性。</p>
+<p><strong>【原则 0-3】</strong>以代码仓库为单位，保证与原有的代码风格的一致性。</p>
 <p>代码仓库是 Git 代码管理中的代码存储单位，也可以等同理解为解决方案（微软定义的 sln）。一般以存储文件目录为单位。 </p>
 <h2 id="5-编程规范">5 编程规范</h2>
 <p>编程规范主要可以分为两大类：风格类与编程实践类。</p>
 <p>风格类规范包括标识符的命名、布局以及注释风格等。此类规范引导开发团队使用统一的代码风格进行开发。一致的编码习惯与风格，会使代码更容易阅读、理解，也更容易维护。需要注意的是，对于开源项目，如果在代码风格类上有冲突，原则上遵从开源项目原本的代码风格要求。</p>
 <p>编程实践类包含编程语言特性相关的条款，比如 OOP 规范、函数、表达式与语句、变量、常量与数据类型的使用、以及错误处理等。</p>
-<p>本章分为 9 小节（5.1~5.9）， 小节内的内容适合所有语言， 小节的下级节点为各语言的规范； 若有冲突， 请以各语言的规范为准。 如命名章节中【规则 1-4】与【规则 1-1-1】冲突， 以【规则 1-1-1】为准。</p>
+<p>本章分为 9 小节（5.1~5.9），小节内的内容适合所有语言， 小节的下级节点为各语言的规范； 若有冲突， 请以各语言的规范为准。 如命名章节中【规则 1-4】与【规则 1-1-1】冲突， 以【规则 1-1-1】为准。</p>
 <h3 id="51-命名">5.1 命名</h3>
 <p>好的命名规则能极大地增加可读性和可维护性。同时，对于团队项目来说，统一命名约定也是一项必不可少的内容。</p>
 <blockquote><p>好的命名具有如下几个特点：</p>
@@ -221,16 +221,16 @@
 <p><strong>反例</strong>：wh, BiaoqianRenwu(标签任务), 标签任务</p>
 <p><strong>【规则 1-2】</strong>杜绝完全不规范的缩写，避免望文不知义。</p>
 <p><strong>反例</strong>：AbstractClass “缩写”命名成 AbsClass；condition “缩写”命名成 condi，此类随意缩写严重降低了代码的可阅读性。</p>
-<p><strong>【规则 1-3】</strong>命名空间、类名、方法名使用Pascal命名法。</p>
+<p><strong>【规则 1-3】</strong>命名空间、类名、方法名使用 Pascal 命名法。</p>
 <p><strong>正例</strong>：Weihong,  LabelTaskLoader</p>
 <p><strong>反例</strong>：wh, BiaoqianRenwu(标签任务), 标签任务</p>
 <p><strong>【规则 1-4】</strong>参数名、成员变量、局部变量都统一使用 Camel 命名法。</p>
 <p><strong>正例</strong>：taskListManager,  labelTaskLoader</p>
 <p><strong>【规则 1-5】</strong>不要使用大小写区分不同的命名标识。</p>
 <p><strong>说明</strong>：通过大小写来区分标识，  很容易让人记忆负担。 </p>
-<p><strong>例外</strong>：C# 中属性与成员变量之间可以按照习惯用法。 如属性 BackColor 往往对应成员变量 backColor。</p>
+<p><strong>例外</strong>：C# 中属性与成员变量之间可以按照习惯用法。 如属性 BackColor 往往对应成员变量 backColor 。</p>
 <p><strong>【规则 1-6】</strong>抽象类命名使用 Abstract 或 Base 开头；异常类命名使用 Exception  结尾；测试类
-命名使用 Test_开头, 以它要测试的类的名称结尾。</p>
+命名使用 Test_开头，以它要测试的类的名称结尾。</p>
 <p><strong>【规则 1-7】</strong>避免在子父类的成员变量之间、 或者不同代码块的局部变量之间采用完全相同的命名，
 使可读性降低。</p>
 <p><strong>说明</strong>：子类、父类成员变量名相同，即使是 public 类型的变量也是能够通过编译，而局部变量在同一方法
@@ -372,10 +372,10 @@ TCHAR _szTempDir[MAX_PATH] = {0};
 <pre><code class="lang-c++">CPerson _Jonson; // 局部变量
 CPerson Jonson_; // 函数形参
 struct DateTime _DateTime;
-</code></pre><p>函数的参数变量要求由后下划线结尾（见变量作用域前缀一节）。在一些纯数学函数中，也可省去数值类型前缀n，其它类型前缀不能省略。例如：</p>
+</code></pre><p>函数的参数变量要求由后下划线结尾（见变量作用域前缀一节）。在一些纯数学函数中，也可省去数值类型前缀 n，其它类型前缀不能省略。例如：</p>
 <pre><code class="lang-c++">bool Create(PCTSTR pszPathName_);
 double Add(double a_, double b_); // 值类型前缀省略
-</code></pre><p>局部变量由前下划线开头。在纯数学函数中，简短的上下文中，或是变量的声明周期较短的情况下，也可省去数值类型前缀n和下划线(_)，其它类型前缀不能省略。例如：</p>
+</code></pre><p>局部变量由前下划线开头。在纯数学函数中，简短的上下文中，或是变量的声明周期较短的情况下，也可省去数值类型前缀 n 和下划线 (_)，其它类型前缀不能省略。例如：</p>
 <pre><code class="lang-c++">bool _bRet = false;
 char _szBuffer[_MAX_PATH] = {0};
 
@@ -385,11 +385,11 @@ for (int i = 0; i &lt; _countof(_szBuffer); i++)
 { 
     float a;  // a的作用域很短
 }
-</code></pre><p>全局变量使用作用域前缀’g_’。全局变量因为作用域很大，所以命名一定要规范。名称的主体部分必须能清晰说明变量的意义。例如：</p>
+</code></pre><p>全局变量使用作用域前缀 ’g_’ 。全局变量因为作用域很大，所以命名一定要规范。名称的主体部分必须能清晰说明变量的意义。例如：</p>
 <pre><code class="lang-c++">CWinApp g_Application;
 int g_nVersion;
 HINSTANCE g_hInstance;
-</code></pre><p>静态变量使用作用域前缀’s_’。 局部静态变量使用前缀 &#39;_s_’。例如：</p>
+</code></pre><p>静态变量使用作用域前缀 ’s_’ 。 局部静态变量使用前缀 &#39;_s_’ 。例如：</p>
 <pre><code class="lang-c++">static CNcWinApp s_App;
 static int s_nVersion = 0;
 static HINSTANCE s_hInst;
@@ -480,8 +480,8 @@ public MemberAccessor(object instance,
 // 赋值语句的续行应缩进
 totalBill = totalBill + customerPurchases[id]
             + salesTax(customerPurchases[id]);
-</code></pre><p><strong>【规则 2-2】</strong>在 switch 语句中，每个 case 分支需要有结束标志 break 或者 return ，如果有不满足 case 枚举条件的值，需要包含一个 default。</p>
-<p><strong>说明</strong>：在 switch 语句中，每一个 case 分支和 default 要用{ }括起来，{ }中的内容需要缩进，若是 break ，要放在{ }外，这样可以使程序可读性更好，也可以定义局部变量。有时候 case 分支中的语句较少时，可以不使用{}，但是推荐使用{}。对于多个分支相同处理的情况可以共用一个 break ，但是要用注释加以说明。</p>
+</code></pre><p><strong>【规则 2-2】</strong>在 switch 语句中，每个 case 分支需要有结束标志 break 或者 return，如果有不满足 case 枚举条件的值，需要包含一个 default 。</p>
+<p><strong>说明</strong>：在 switch 语句中，每一个 case 分支和 default 要用 { } 括起来，{ } 中的内容需要缩进，若是 break ，要放在 { } 外，这样可以使程序可读性更好，也可以定义局部变量。有时候 case 分支中的语句较少时，可以不使用 {}，但是推荐使用 {} 。对于多个分支相同处理的情况可以共用一个 break，但是要用注释加以说明。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c#">switch (code)
 {
@@ -558,8 +558,8 @@ void Edit()
 <pre><code class="lang-c++">value = oldValue;
 total + value;
 number += 2;
-</code></pre><p><strong>【规则 2-7】</strong>代码使用制表符缩进，制表符宽度为 4。</p>
-<p><strong>说明</strong>：消除不同编辑器对TAB处理的差异，有的代码编辑器可以设置用空格代替 TAB 键。</p>
+</code></pre><p><strong>【规则 2-7】</strong>代码使用制表符缩进，制表符宽度为 4 。</p>
+<p><strong>说明</strong>：消除不同编辑器对 TAB 处理的差异，有的代码编辑器可以设置用空格代替 TAB 键。</p>
 <p><strong>【规则 2-8】</strong>结构型的数组、多维的数组如果在定义时初始化，按照数组的矩阵结构分行书写。</p>
 <p><strong>正例</strong>（C++）1：</p>
 <pre><code class="lang-c++">int numbers[4][3] =
@@ -616,7 +616,7 @@ int numbers[4][3] =
 }
 </code></pre><h3 id="53-注释">5.3 注释</h3>
 <p>注释对保证代码可读性至为重要，下面的规则描述了应该注释什么、注释在哪儿。当然也要记住，注释的确很重要，但最好的代码本身就是文档，类型和变量命名意义明确要比通过注释解释模糊的命名好得多。注释是为别人（下一个需要理解你的代码的人）而写的，为了便于自己和别人快速理解代码，所以一定要认真对待。<strong>有效的注释是指在代码的功能、意图层次上进行注释，提供有用、额外的信息，而不是代码表面意义的简单重复</strong>。</p>
-<p><strong>【规则 3-1】</strong>一般情况下，代码中有效注释量不少于代码量的 20%，最低不得少于代码量的 10%。</p>
+<p><strong>【规则 3-1】</strong>一般情况下，代码中有效注释量不少于代码量的 20%，最低不得少于代码量的 10% 。</p>
 <p><strong>说明</strong>：注释的原则是有助于对程序的阅读理解，注释不宜太多也不能太少，注释语言必须准确、易懂、简洁。有效的注释是指在代码的功能、意图层次上进行注释，提供有用、额外的信息。</p>
 <p><strong>【规则 3-2】</strong>注释使用中文。</p>
 <p><strong>说明</strong>：对于特殊要求的可以使用英文注释，如工具不支持中文或国际化版本时。</p>
@@ -716,7 +716,7 @@ _nSubSysIndex = _nData[_nIndex].nSysIndex;
     [ 代码段2 ]
 
 }
-</code></pre><p><strong>【原则 3-11】</strong>维护已有代码时， 注释时要写上作者姓名和日期。（名字一律写全拼或汉字，不要写英文名字或代号缩写）。</p>
+</code></pre><p><strong>【原则 3-11】</strong>维护已有代码时，注释时要写上作者姓名和日期。（名字一律写全拼或汉字，不要写英文名字或代号缩写）。</p>
 <p><strong>说明：</strong>拷贝或移植的代码要特别注意，不要将原始代码的作者也进行了拷贝。对于一些变量、函数接口的简单注释可以不写姓名和日期。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c++">// 这里写你的注释  add by zhangsan 20100929
@@ -729,11 +729,10 @@ void OnBlowStart(); // 吹气开
 // 这里写你的注释  add by mill 20100929
 // 这里写你的注释  修改者：小李 20100929
 </code></pre><h3 id="54-oop-规范">5.4 OOP 规范</h3>
-<p>在程序设计领域， SOLID（单一功能、开闭原则、里氏替换、接口分离以及依赖反转）是由罗伯特· C ·马丁在21世纪早期引入，指代了面向对象编程和面向对象设计的五个基本原则。当这些原则被一起应用时，它们使得一个程序员开发一个容易进行软件维护和扩展的系统变得更加可能。</p>
+<p>在程序设计领域， SOLID（单一功能、开闭原则、里氏替换、接口分离以及依赖反转）是由罗伯特·C·马丁在21世纪早期引入，指代了面向对象编程和面向对象设计的五个基本原则。当这些原则被一起应用时，它们使得一个程序员开发一个容易进行软件维护和扩展的系统变得更加可能。</p>
 <p><strong>【规则 4-1】</strong>避免申明类的成员变量为 public 。</p>
-<p><strong>例外</strong>：static readonly 成员变量和 const 成员变量例外。若非继承类需要使用，则默认申明为 private。</p>
-<p><strong>【规则 4-2】</strong>避免通过一个类的对象引用访问此类的静态变量或静态方法，无谓增加编译器解析成
-本，直接用类名来访问即可。</p>
+<p><strong>例外</strong>：static readonly 成员变量和 const 成员变量例外。若非继承类需要使用，则默认申明为 private 。</p>
+<p><strong>【规则 4-2】</strong>避免通过一个类的对象引用访问此类的静态变量或静态方法，无谓增加编译器解析成本，直接用类名来访问即可。</p>
 <p><strong>【规则 4-3】</strong>类的继承请符合里氏替换原则。 </p>
 <p><strong>说明</strong>： 里氏替换原则（LSP）声明：“所有引用基类的地方必须能透明地使用其子类的对象”。</p>
 <p><strong>【规则 4-4】</strong>所有重载（overload）方法的相同变量应该都保持同样的目的和相同的表现。</p>
@@ -752,7 +751,7 @@ void OnBlowStart(); // 吹气开
     }
 }
 </code></pre><p><strong>【规则 4-5】</strong>不能使用过时的类或方法。</p>
-<p><strong>说明</strong>：接口提供方既然明确是过时接口， 那么有义务同时提供新的接口；作为调用方来说，有义务去考证过时方法的新实现是什么。C# 会通过特性 [Obsolete(过时原因及替换方式)] 标注。</p>
+<p><strong>说明</strong>：接口提供方既然明确是过时接口， 那么有义务同时提供新的接口；作为调用方来说，有义务去考证过时方法的新实现是什么。C# 会通过特性 [Obsolete（过时原因及替换方式）] 标注。</p>
 <p><strong>正例</strong>（c#）：</p>
 <p>以下标明了该属性已过时， 不能使用。</p>
 <pre><code class="lang-c#">/// &lt;summary&gt;
@@ -779,16 +778,16 @@ public int DefaultBlowType
 
     // 函数返回
 }
-</code></pre><p>如何写好一个函数, 关键是以下四个方面：</p>
+</code></pre><p>如何写好一个函数，关键是以下四个方面：</p>
 <ul>
-<li><p>函数仅完成一件功能。 限制函数的体量， 容易理解函数功能。</p>
+<li><p>函数仅完成一件功能。限制函数的体量，容易理解函数功能。</p>
 </li>
 <li><p>函数名的命名：命名是提高可读性的第一步。</p>
 </li>
 <li><p>函数的参数：</p>
 <ol>
 <li>保证尽可能少的参数。毫无疑问，函数参数越多，函数的易用性就越差。</li>
-<li>不要修改输入参数。如果输入参数在函数内被修改了，很有可能造成潜在的bug，而且使用者不知道调用函数后居然会修改函数参数。如果不可避免地要修改，一定要在注释中说明。</li>
+<li>不要修改输入参数。如果输入参数在函数内被修改了，很有可能造成潜在的 bug，而且使用者不知道调用函数后居然会修改函数参数。如果不可避免地要修改，一定要在注释中说明。</li>
 <li>尽量不要使用输出参数替代返回值。使用输出参数说明这个函数不只做了一件事情，而且使用者使用的时候可能还会感到困惑。</li>
 </ol>
 </li>
@@ -797,13 +796,13 @@ public int DefaultBlowType
 <li>保持一定的函数体结构；如上函数一般结构。</li>
 <li>相关操作尽量放在一起；</li>
 <li>尽量减少代码嵌套；</li>
-<li>尽量保证函数只有一个 return。</li>
+<li>尽量保证函数只有一个 return 。</li>
 </ol>
 </li>
 </ul>
 <p><strong>【规则 5-1】</strong>一个函数仅完成一件功能。</p>
-<p><strong>说明：</strong>一个函数实现多个功能给开发、使用、维护都带来很大的困难。 将没有关联或者关联很弱的语句放到同一函数中，会导致函数职责不明确，难以理解，难以测试和改动。</p>
-<p><strong>【规则 5-2】</strong>请保持函数的一般结构，  public 函数应首先校验参数的合理性。</p>
+<p><strong>说明：</strong>一个函数实现多个功能给开发、使用、维护都带来很大的困难。将没有关联或者关联很弱的语句放到同一函数中，会导致函数职责不明确，难以理解，难以测试和改动。</p>
+<p><strong>【规则 5-2】</strong>请保持函数的一般结构，public 函数应首先校验参数的合理性。</p>
 <p><strong>说明：</strong>函数一般结构如下：</p>
 <pre><code class="lang-c#">/// &lt;summary&gt;
 /// 函数注释
@@ -818,8 +817,8 @@ public int DefaultBlowType
 }
 </code></pre><p>相关操作尽量放在一起，尽量保证函数只有一个 return 。</p>
 <p><strong>【规则 5-3】</strong>函数名用大写字母开头的单词组合而成，且应当使用 “动词”或者“动词＋名词”（动宾词组）的形式命名。</p>
-<p><strong>说明：</strong>函数名通常是指令性的,力求清晰、明了，通过函数名就能够判断函数的主要功能。函数名中不同意义字段之间不要用下划线连接，而要把每个字段的首字母大写以示区分。函数命名采用大小写字母结合的形式。</p>
-<p>很多开发人员会采用一个比较宽泛的动词来为函数命名。为求函数名的准确， 关键还是靠单词的积累，多阅读优秀源码。下面是整理的一些常用动词，可以参考使用：</p>
+<p><strong>说明：</strong>函数名通常是指令性的，力求清晰、明了，通过函数名就能够判断函数的主要功能。函数名中不同意义字段之间不要用下划线连接，而要把每个字段的首字母大写以示区分。函数命名采用大小写字母结合的形式。</p>
+<p>很多开发人员会采用一个比较宽泛的动词来为函数命名。为求函数名的准确，关键还是靠单词的积累，多阅读优秀源码。下面是整理的一些常用动词，可以参考使用：</p>
 <pre><code>add/remove        increment/decrement                open/close
 begin/end         insert/delete                      show/hide
 create/destory    lock/unlock                        start/stop
@@ -841,12 +840,12 @@ int NetReceive();
 int get_last_error();  //全小写，不推荐
 
 int FileOpen();   // 非动宾结构，不推荐
-</code></pre><p><strong>【原则5-4】</strong>保证尽可能少的参数。</p>
+</code></pre><p><strong>【原则 5-4】</strong>保证尽可能少的参数。</p>
 <p><strong>说明：</strong>毫无疑问，函数参数越多，函数的易用性就越差。</p>
 <p><strong>【原则 5-5】</strong>尽量不要修改参数。</p>
-<p><strong>说明：</strong>如果参数在函数内被修改了，很有可能造成潜在的bug，而且使用者不知道调用函数后居然会修改函数参数。如果不可避免地要修改，一定要在注释中说明。</p>
+<p><strong>说明：</strong>如果参数在函数内被修改了，很有可能造成潜在的 bug，而且使用者不知道调用函数后居然会修改函数参数。如果不可避免地要修改，一定要在注释中说明。</p>
 <p><strong>【原则 5-6】</strong>尽量不要使用参数代替返回值。</p>
-<p><strong>说明：</strong>使用输出参数说明这个函数不只做了一件事情，而且使用者使用的时候可能还会感到困惑。 除非返回值已经被定义， 并且该参数需要返回的跟返回值不属于同一类。</p>
+<p><strong>说明：</strong>使用输出参数说明这个函数不只做了一件事情，而且使用者使用的时候可能还会感到困惑。除非返回值已经被定义，并且该参数需要返回的跟返回值不属于同一类。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c#">public static bool TryParse(string s, out DateTime result)
 {
@@ -893,7 +892,7 @@ public HardwareInfo QueryHardWareInfo(out string cpuName) // 返回值与out参�
 <pre><code class="lang-c++">int GetStrLen(const char* pcString_);
 
 int GetStrLen(const int&amp; nValue_);
-</code></pre><p><strong>例外说明：</strong>在实际编码时，为了避免只读形参被更改，但又不想增加代码编写的额外负担，可以使用下列方式，通过在函数内部声明一个常变量的方式，而不是函数形参直接用 const。</p>
+</code></pre><p><strong>例外说明：</strong>在实际编码时，为了避免只读形参被更改，但又不想增加代码编写的额外负担，可以使用下列方式，通过在函数内部声明一个常变量的方式，而不是函数形参直接用 const 。</p>
 <pre><code class="lang-c++">void SetValue(int* pnData_)
 {
     const int* _pnValue = pnData _; 
@@ -914,7 +913,7 @@ int currentNum = 0;
 </code></pre><p><strong>反例</strong>：</p>
 <pre><code class="lang-c++">// 一行定义多个变量
 int quantity, customerNum;
-</code></pre><p><strong>【规则6-2】</strong>一个变量有且只有一个功能，不能把一个变量用作多种用途。</p>
+</code></pre><p><strong>【规则 6-2】</strong>一个变量有且只有一个功能，不能把一个变量用作多种用途。</p>
 <p><strong>说明：</strong>一个变量只用来表示一个特定功能，不能把一个变量作多种用途，即同一变量取值不同时，其代表的意义也不同。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c#">void Init()
@@ -934,9 +933,9 @@ int quantity, customerNum;
     SetArea(length);
     ...
 }
-</code></pre><p> <strong>【规则6-3】</strong>能放在循环体外的变量声明、条件判断、函数调用和计算等，不要放在循环体内。</p>
-<p><strong>说明：</strong>如果变量是一个对象，每次进入作用域都要调用其构造函数，每次退出作用域都要调用其析构函数。见正例 1 和反例 1。 </p>
-<p>下面两个示例中，反例 2 比**正例 **2 多执行了 loopNum-1 次逻辑判断。并且由于前者总要进行逻辑判断，使得编译器不能对循环进行优化处理，降低了效率。如果 loopNum 值大到一定程度，采用正例的写法，可以提高效率。</p>
+</code></pre><p> <strong>【规则 6-3】</strong>能放在循环体外的变量声明、条件判断、函数调用和计算等，不要放在循环体内。</p>
+<p><strong>说明：</strong>如果变量是一个对象，每次进入作用域都要调用其构造函数，每次退出作用域都要调用其析构函数。见 <strong>正例</strong> 1 和 <strong>反例</strong> 1 。 </p>
+<p>下面两个示例中，<strong>反例</strong> 2 比 **正例 **2 多执行了 loopNum-1 次逻辑判断。并且由于前者总要进行逻辑判断，使得编译器不能对循环进行优化处理，降低了效率。如果 loopNum 值大到一定程度，采用正例的写法，可以提高效率。</p>
 <pre><code class="lang-c#">const int loopNum = 100000;
 </code></pre><p>**正例 **1:</p>
 <pre><code class="lang-c#">// 类似变量放到循环作用域外面声明要高效的多：
@@ -981,7 +980,7 @@ else
 }
 </code></pre><h4 id="561-c">5.6.1 C++</h4>
 <p><strong>【规则 6-1-1】</strong>不可将大布尔变量 BOOL 逻辑表达式直接与 1 进行比较。</p>
-<p><strong>说明</strong>：根据 BOOL 布尔类型的语义，零值为“假”（记为 FALSE），任何非零值都是“真”（记为 TRUE）。TRUE的值究竟是什么并没有统一的标准。例如 Visual C++ 将 TRUE 定义为 1，而 Visual Basic 则将TRUE定义为 -1。</p>
+<p><strong>说明</strong>：根据 BOOL 布尔类型的语义，零值为“假”（记为 FALSE），任何非零值都是“真”（记为 TRUE）。TRUE 的值究竟是什么并没有统一的标准。例如 Visual C++ 将 TRUE 定义为 1，而 Visual Basic 则将TRUE定义为 -1 。</p>
 <p><strong>注意：</strong>对于 bool 变量，也使用下列正例的写法。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c++">BOOL _bFlag = TRUE;
@@ -996,19 +995,19 @@ if (!_bRet)  // 表示_bRet为false
 </code></pre><p><strong>反例</strong>：</p>
 <pre><code class="lang-c++">// 设_bFlag 是BOOL布尔类型的变量
 if (_bFlag == 1)
-</code></pre><p><strong>【规则 6-1-2】</strong>在条件判断语句中，当整型变量与 0 比较时，不可模仿布尔变量的风格，应当将整型变量用“==”或“!=”直接与 0 比较。</p>
+</code></pre><p><strong>【规则 6-1-2】</strong>在条件判断语句中，当整型变量与 0 比较时，不可模仿布尔变量的风格，应当将整型变量用 “==” 或 “!=” 直接与 0 比较。</p>
 <p><strong>正例</strong>：</p>
-<p>假设整型变量的名字为_nValue，它与零值比较的标准，if 语句如下：</p>
+<p>假设整型变量的名字为 _nValue，它与零值比较的标准，if 语句如下：</p>
 <pre><code class="lang-c++">if (_nValue == 0)
 if (_nValue != 0)
 </code></pre><p><strong>反例</strong>：</p>
 <pre><code class="lang-c++">//不可模仿布尔变量的风格而写成下面示例。 会让人误解 nValue是布尔变量
 if (_nValue)
 if (!_nValue) 
-</code></pre><p><strong>【规则6-1-3】</strong>禁用目前系统中大于、大于等于、小于、小于等于相关浮点数比较宏，仅仅保留约等于浮点数宏（由于计算机浮点数的表示和计算有一定的精度损失）。</p>
+</code></pre><p><strong>【规则 6-1-3】</strong>禁用目前系统中大于、大于等于、小于、小于等于相关浮点数比较宏，仅仅保留约等于浮点数宏（由于计算机浮点数的表示和计算有一定的精度损失）。</p>
 <p><strong>说明：</strong>仅保留：**DOUBLE_EQU、DOUBLE_EQU_ZERO、FLOAT_EQU、FLOAT_EQU_ZERO **四个宏或是系统中其他与这四个宏功能类似的宏或函数，且这四个宏仅限于约等于的情况，其他情况下：大于比较，使用&gt;、大于等于比较，使用&gt;=、小于比较，使用&lt;、小于等于比较，使用&lt;=。</p>
 <p>具体原因以 DOUBLE_GE 说明：DOUBLE_GE(a, b) 的定义包含两个语义 a &gt; b 或 a ≈ b，其中 a ≈ b 表示的是在一定的正负误差范围内，a,b 两个数相等。比如本来希望通过 DOUBLE_GE(a, b) 来判定 a &gt;= b，但是可能会出现 a 实际比 b 稍小一点点(在误差范围内)，但是因为使用了宏 DOUBLE_GE，误认为满足条件 a &gt;= b 的情况，导致后续各种代码异常。DOUBLE_GE_ZERO 也同样存在上述 DOUBLE_GE 问题。具体见下示例代码。</p>
-<p>实际代码原本需要判断的 Y <em>一定是大于等于 0 （处于一、二象限的情况），但是因为使用了 DOUBLE_GE_ZERO 宏定义，当 Y</em> 的值是稍稍小于 0 的一个值时，因为宏中的等于判断对于待比较数进行了取绝对值操作，所以会出现误判的情况。实际修改时将 if (DOUBLE_GE_ZERO(Y_)) 修改为 if (Y_ &gt;= 0)。</p>
+<p>实际代码原本需要判断的 Y <em>一定是大于等于 0 （处于一、二象限的情况），但是因为使用了 DOUBLE_GE_ZERO 宏定义，当 Y</em> 的值是稍稍小于 0 的一个值时，因为宏中的等于判断对于待比较数进行了取绝对值操作，所以会出现误判的情况。实际修改时将 if (DOUBLE_GE_ZERO(Y_)) 修改为 if (Y_ &gt;= 0) 。</p>
 <p><strong>反例：</strong></p>
 <pre><code class="lang-c++">//计算矢量与X轴正方向的角度
 double _compute_angle(double X_, double Y_)
@@ -1031,10 +1030,10 @@ double _compute_angle(double X_, double Y_)
 } 
 </code></pre><p><strong>备注：</strong>特殊情况下，如若要使用以上禁用的宏，必须要邮件上报研发总监和软件部经理。</p>
 <h4 id="562-c">5.6.2 C#</h4>
-<p><strong>【原则 6-2-1】</strong>避免使用 ToUpper(), ToLower() 转换后比较字符串， 字符串比较请使用 String.Compare。  </p>
-<p><strong>【原则 6-2-2】</strong>超过 5 个字符串拼接， 请使用 StringBuilder。  </p>
+<p><strong>【原则 6-2-1】</strong>避免使用 ToUpper()，ToLower() 转换后比较字符串，字符串比较请使用 String.Compare 。  </p>
+<p><strong>【原则 6-2-2】</strong>超过 5 个字符串拼接， 请使用 StringBuilder 。  </p>
 <p><strong>说明</strong>：String 的值是不可变的，这就导致每次对 String 的操作都会生成新的 String 对象，不仅效率低下，而且浪费大量无用的内存空间。</p>
-<p><strong>【原则 6-2-3】</strong>涉及到版本号比较， 避免使用字符串比较， 请使用类 System.Version。</p>
+<p><strong>【原则 6-2-3】</strong>涉及到版本号比较，避免使用字符串比较，请使用类 System.Version 。</p>
 <p><strong>说明</strong>：在版本号比较时，不能通过字符串比较来得到哪个版本更新。</p>
 <p><strong>正例</strong>：</p>
 <pre><code class="lang-c#">Version oldVersion = Version.Parse(&quot;1.1.2&quot;); //通过读取配置获取
@@ -1106,7 +1105,7 @@ void SetDblzMode(dblz_t nDblzType_)
 </ul>
 <p>异常抛出时最好将执行的类名，关键数据，环境信息等均抛出，此时自定义的异常类就派上用场了，通过统一的一层处理异常，可以方便快速地定位到问题。</p>
 <p><strong>【原则 8-1】</strong>整个软件系统应该采用统一的断言，使用断言捕捉不应该发生的非法情况。不要混淆非法情况与错误情况之间的区别，后者是必然存在的并且是一定要作处理的。  </p>
-<p>说明：断言是用来处理不应该发生的错误情况的，通常用于捕获程序内部不可能发生的错误，而外部可能会产生的错误通常用异常处理方式，不能用断言来实现。</p>
+<p><strong>说明：</strong>断言是用来处理不应该发生的错误情况的，通常用于捕获程序内部不可能发生的错误，而外部可能会产生的错误通常用异常处理方式，不能用断言来实现。</p>
 <p>**正例 **1：</p>
 <pre><code class="lang-c#">/// &lt;summary&gt;
 /// 开始调机
@@ -1188,7 +1187,7 @@ MatchedGroups::MatchedGroups()
 <p><strong>说明</strong>：Exception 是一个非常抽象的异常类，捕获这类异常通常会产生很多负面影响。通常情况下应该定义我们自己的异常类，并且需要区分系统（framework）抛出的异常和我们自己抛出的异常。</p>
 <p><strong>【原则 8-2-3】</strong>自定义异常类型需以 Exception 结尾，并标记为 Serializable 。  </p>
 <p><strong>【原则 8-2-4】</strong>要捕获具体的异常，并记录日志。  </p>
-<p>说明：请尽可能的捕获具体异常（而非 Exception ， 除非故意忽略）；记录日志不要只记录 Exception.Message 的值，还需要记录 Exception.ToString() 。</p>
+<p><strong>说明：</strong>请尽可能的捕获具体异常（而非 Exception，除非故意忽略）；记录日志不要只记录 Exception.Message 的值，还需要记录 Exception.ToString() 。</p>
 <p><strong>特别说明：</strong></p>
 <p>上面给了断言和错误处理的原则，但是并不是每一个地方都需要进行相关断言处理，否则断言和异常处理太多，一是会影响代码的可阅读性，同时也会增加很多不必要的预防成本。可以把某些接口选定为安全区域的边界（模块或是 dll 提供的外部接口），对穿越安全区域边界的数据进行合法性校验，并当数据异常时做出错处理。模块外部传入的数据，必须对输入数据的合法性进行检测，一旦数据通过了合法性检测，进入模块内部，可以假定数据的正确性，此时不需要重复去做一些数据合法性检测。同理，对于一个模块输出给外部模块使用的数据，必须对输出数据的合法性进行检测，但是如果这个输出数据只在内部使用，可以只做一些有必要的检测。</p>
 <p>在类的层次也可以采用这个方法，类的公用方法假定数据是不安全的，他们负责检查数据并进行处理，一旦公用方法接收了数据，那么类的私有方法就可以假定数据是安全的。</p>
