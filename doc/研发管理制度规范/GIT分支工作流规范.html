@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GIT&#20998;&#25903;&#24037;&#20316;&#27969;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GIT&#20998;&#25903;&#24037;&#20316;&#27969;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="git分支工作流规范">GIT分支工作流规范</h1>
+
+<pre><code>版次：2022年8月17日　第1.0版
+类型：程序文件
+作者：软件部
+上海维宏电子科技股份有限公司 版权所有
+</code></pre><h2 id="1-目的">1 目的</h2>
+<p>编写本规范的目的是为了完善公司git分支工作流程，改进项目流程管理，统一开发协同约定、从而提高软件开发效率与规范。</p>
+<h2 id="2-适用范围">2 适用范围</h2>
+<p>本规范适用于公司所有产品的软件代码。自本规范实施之日起，git分支管理均应执行本规范。</p>
+<h2 id="3-git工作流程图">3 GIT工作流程图</h2>
+<p><img src="images/git-workflow-01-overview.png" alt="工作流总览"></p>
+<p>该工作流定义了一个围绕着项目发布的严格分支模型。提供了用于一个健壮的管理项目的框架。该工作流为不同的分支分配一个很明确的角色，并定义分支之间如何和什么时候进行交互。</p>
+<h2 id="4-工作方式">4 工作方式</h2>
+<p>工作流仍然以主分支作为交互中心。衍生出开发分支进行开发、发行分支进行测试发行、修复分支进行 bug 修复，一切都围绕着控制一个稳定的主分支并持续改进为本。</p>
+<h3 id="41-开发分支">4.1 开发分支</h3>
+<p>开发新功能与修复Bug时，开发人员从 <code>master</code> 分支上创建 <code>feature</code> 或 <code>bugfix</code> 分支。
+在对应的分支上做所有的开发工作，一旦分支完成 <code>feature</code> 或 <code>bugfix</code> 分支再和 <code>master</code> 交互。</p>
+<p><code>feature</code> 分支</p>
+<p><img src="images/git-workflow-03-feature.png" alt=""></p>
+<p><code>bugfix</code> 分支</p>
+<p><img src="images/git-workflow-04-bugfix.png" alt=""></p>
+<p>分支约定：</p>
+<ul>
+<li>feature 分支的命名为<code>feature/*-workitem</code>）</li>
+<li>bugfix 分支的命名为<code>bugfix/*-workitem</code>）<ul>
+<li><code>*</code> 代表工作项编号（可选）</li>
+<li><code>workitem</code> 代表工作简短描述（英文）</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-发布分支">4.2 发布分支</h3>
+<p><img src="images/git-workflow-05-release.png" alt=""></p>
+<p>一旦 <code>master</code> 分支上做一次发布，就从 <code>master</code>分支上拉出一个 <code>release</code> 分支。新建的分支用于开始发布循环，发布分支仅用于发布，不会提交任何代码修改（版本号，历史记录等，视为分支的配置而不是代码内容，可以在发布分支上提交），也不允许出现 <code>master</code> 与 <code>release</code> 分支之间的合并。</p>
+<p>测试只需要对 <code>release</code> 分支进行验证，当测试版本出现bug，或者必须有添加的功能时。需要重新从 <code>master</code> 分支上拉取工作分支进行开发，开发完成后合并到 <code>master</code> 分支，然后再从 <code>master</code> 分支挑拣 <code>cherry-pick</code> 到 <code>release</code> 分支上。</p>
+<p>*注：挑拣(cherry-pick) 与 合并(merge) 并不是一个功能，<code>git</code> 提供了特定针对修改集的 <code>cherry-pick</code> 能力，详细请参考 <code>git</code> 或者 <code>vs</code> 手册。</p>
+<p>使用一个用于发布准备的专门分支，使得一个团队可以在完善当前的发布版本的同时，另一个团队可以继续开发下个版本的功能。</p>
+<p>分支约定：</p>
+<ul>
+<li>从 <code>master</code> 拉出 <code>release</code> 分支。</li>
+<li>分支的命名为<code>release/release-*</code>，<code>*</code> 代表版本号。</li>
+<li>所有正式发布的版本，必须有相应的 <code>release</code> 分支对应。</li>
+</ul>
+<h3 id="43-发布-fix-版本">4.3 发布 fix 版本</h3>
+<p>当某个已发布的版本发现问题，由于新版本不兼容，或者变更太大无法升级时，需要在原发布分支的基础上进行修正。</p>
+<p><img src="images/git-workflow-06-release-fix.png" alt=""></p>
+<p>分支约定：</p>
+<ul>
+<li>从 <code>release</code> 拉出 <code>release-fix</code> 分支。</li>
+<li>分支的命名为<code>release/release-fix-*</code>，<code>*</code> 代表版本号。</li>
+<li>所有正式发布的fix版本，必须有相应的 <code>release-fix</code> 分支对应。</li>
+</ul>
+<h3 id="44-历史分支">4.4 历史分支</h3>
+<p>该工作流通过多个 <code>release</code> 分支记录项目的历史。</p>
+<p><img src="images/git-workflow-02-history.png" alt=""></p>
+<p>分支约定：</p>
+<ul>
+<li>从 <code>master</code> 拉出 <code>release</code> 分支。</li>
+<li>分支的命名为<code>release/*</code>，<code>*</code> 代表版本号。</li>
+</ul>
+<h2 id="45-拉取请求pr可选">4.5 拉取请求PR（可选）</h2>
+<p>为了保证master分支的稳定性，其他分支需要合并到master的内容不能直接合并操作，需要通过PR评审通过后再进行合并。</p>
+<p><img src="images/git-workflow-03-feature-pr.png" alt=""></p>
+<p>PR一般建议开启如下限制</p>
+<ul>
+<li>需要最少数量的审阅者：1（不允许用户审批自己的更改）</li>
+<li>查看链接工作项：必需</li>
+<li>检查注释解析：必需</li>
+<li>强制执行合并战略：Squash合并（合并多个提交，使提交记录线性）</li>
+<li>必需审阅者：必须通过某人批准后可以通过审核</li>
+</ul>
+<h2 id="5-示例">5 示例</h2>
+<p>下面的示例演示本工作流如何用于管理单个发布循环。假设你已经创建了一个主分支项目。</p>
+<h3 id="51-准备主分支">5.1 准备主分支</h3>
+<p><img src="images/git-workflow-07-step1.png" alt=""></p>
+<p>第一步由仓库管理员初始化 <code>master</code> 分支，以后这个分支将会包含了项目的全部历史。</p>
+<h3 id="52-大家开发新功能">5.2 大家开发新功能</h3>
+<p><img src="images/git-workflow-multi-master.png" alt=""></p>
+<h3 id="53-mary开始准备发布">5.3 Mary开始准备发布</h3>
+<p><img src="images/git-workflow-release-cycle-8maryprepsrelease.png" alt=""></p>
+<p>这个时候Bill正在实现他的功能，Mary开始准备她的第一个项目正式发布。像功能开发一样，她用一个新的分支来做发布准备。这一步也确定了发布的版本号，
+这个分支是清理发布、执行所有测试、更新文档和其它为下个发布做准备操作的地方，像是一个专门用于改善发布的功能分支。只要Mary创建这个 <code>release</code> 分支并通过测试组验证，这个发布就是功能冻结的。任何不在 <code>release</code> 分支中的新功能都推到下个发布循环中。</p>
+<h3 id="54-mary完成发布">5.4 Mary完成发布</h3>
+<p>一旦准备好了对外发布，Mary会通知发布团队已就绪，由发布团队集成软件与发布说明，完成发布。</p>
+<h3 id="55-最终用户发现-bug">5.5 最终用户发现 Bug</h3>
+<p><img src="images/git-workflow-04-bugfix.png" alt=""></p>
+<p>对外发布后，Mary回去和Bill一起做下个发布的新功能开发，直到有最终用户开了一个<code>Ticket</code>抱怨当前版本的一个 <code>Bug</code>。
+为了处理<code>Bug</code>，Mary（或Bill）从 <code>master</code> 分支上拉出了一个 <code>bugfix</code> 分支，提交修改以解决问题，然后直接合并回 <code>master</code> 分支。
+然后就可以安全地删除这个分支了。</p>
+<p>编制： 审核： 批准：</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/GIT&#20998;&#25903;&#24037;&#20316;&#27969;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

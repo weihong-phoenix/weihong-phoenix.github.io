@@ -3328,11 +3328,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/Commit message 编写规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/Commit message 编写规范.html",
+          "hash": "CmCMMTfqQDfrz1+SWkfT7B1GvwjStpbLwuq7vuPveJA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/Commitmessage编写指南-R1.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Commitmessage编写指南-R1.html",
           "hash": "3jNrTImK4KOzasVqIwZPw6N4uuHZc+vmg3cazpGMHs0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/GIT分支工作流规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/GIT分支工作流规范.html",
+          "hash": "bsgzGmDUr0eCDd4yxIUz58dYUHQjxLVGV/HrlZzHKoI="
         }
       },
       "is_incremental": false,
@@ -3780,6 +3804,17 @@
       "output": {
         "resource": {
           "relative_path": "doc/研发管理制度规范/images/git-workflow-02-history.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-03-feature-pr.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-03-feature-pr.png"
         }
       },
       "is_incremental": false,
@@ -5027,7 +5062,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 84,
+          "total_file_count": 86,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
