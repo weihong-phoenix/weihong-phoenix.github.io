@@ -4262,17 +4262,6 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/index.html",
-      "output": {
-        "resource": {
-          "relative_path": "doc/研发管理制度规范/index.html"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
@@ -5036,12 +5025,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "KOqpUxagwNGDtCwFDKTTpaC+dJ+k/isd+SIwOS/mKL8="
+          "hash": "7KoFHDhvFC985Hm/YzfYtqm3KcD5O6ymIEbwVCVjxhU="
         }
       },
       "is_incremental": false,
