@@ -111,12 +111,12 @@
 <p><code>type</code> 用于说明 Commit 的类别，只允许使用下面7个标识：</p>
 <pre><code>- feat: 新功能 （feature）
 - fix: 修补 bug
-- pr：拉取请求
+- pr: 拉取请求
 - docs: 文档（对文档进行了修改）
 - style: 格式（不影响代码运行的变动）
 - refactor: 重构（即不是新增功能，也不是修改 bug 的代码变动）
 - test: 增加测试
-- build：对构建系统或者外部依赖项，生成脚本配置进行了修改
+- build: 对构建系统或者外部依赖项，生成脚本配置进行了修改
 - chore: 其他杂项变动
 </code></pre><p><strong>（2）scope</strong></p>
 <p><code>scope</code> 用于说明 Commit 影响的范围，比如数据层、控制层、视图层等，视项目不同而不同。</p>
@@ -206,7 +206,7 @@ Ran `markdownlint --fix &quot;docs/fsharp/**/*.md&quot;` to fix MD009 and MD022
 
 * fix typo; add horizontal line; toc title change; add contextual toc link to unavailable techs
 </code></pre><p><strong>revert 案例：</strong></p>
-<pre><code>revert &quot;Improve call counting mechanism (#1457)&quot; (#30105)
+<pre><code>revert: &quot;Improve call counting mechanism (#1457)&quot; (#30105)
 
 * Revert &quot;Revert &quot;Disable test based on #129 (#130)&quot; (#2310)&quot;
 
@@ -225,7 +225,7 @@ This reverts commit 3a457cb.
 * test(esnure): add tests for untested code paths
 
 * test(is-ignored): add test case for untested code path
-</code></pre><p><strong>pr 案例：</strong></p>
+</code></pre><p>**pr 案例: **</p>
 <pre><code>pr: resolve xref recursively
 
 * resolve xref recursively
