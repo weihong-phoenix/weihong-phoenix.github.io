@@ -2578,15 +2578,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/UI设计规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "UOrLTN45tLcYE1frwFhUzjId9jbsrTVJOwoST66vDcU="
+          "hash": "yiNMfy1lS14R9qo4XnzccZLSC4+uivOGONa/CJ5RWN8="
         }
       },
       "is_incremental": false,
@@ -2635,18 +2632,6 @@
         ".html": {
           "relative_path": "doc/UI设计规范/引言.html",
           "hash": "gE5lkZlLRFugJnjhy/FncgUQp5OKGtqonITRNGvkamM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/引言/引言0.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/UI设计规范/引言/引言0.html",
-          "hash": "Cut1Q9Vsmxovf6WFGHBpfTukz26a4jYKeKchEPyaXFQ="
         }
       },
       "is_incremental": false,
@@ -5096,15 +5081,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "jTabU69Jm1k7khZ4y1mQccwp5i/ZhMMSFtJMnEqm1SY="
+          "hash": "15f4AAClzsptG7SieemfELA2o5GcrOhoik2LnGM1dDo="
         }
       },
       "is_incremental": false,
@@ -5125,7 +5107,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 90,
+          "total_file_count": 89,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
