@@ -2630,6 +2630,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/UI设计规范/引言.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/UI设计规范/引言.html",
+          "hash": "gE5lkZlLRFugJnjhy/FncgUQp5OKGtqonITRNGvkamM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/引言/引言0.md",
       "output": {
         ".html": {
@@ -2641,12 +2653,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/引言[1].md",
+      "source_relative_path": "doc/UI设计规范/按钮.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/引言[1].html",
-          "hash": "6mdrBsDL3F6H8GdwKNChF0Ig8sMgS6en5cSU1771EIE="
+          "relative_path": "doc/UI设计规范/按钮.html",
+          "hash": "1PZio3n8xbpVJRCdODlpQ7rlzez5B/uIl/fJO3WNNJI="
         }
       },
       "is_incremental": false,
@@ -2657,26 +2672,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/按钮[1].md",
+      "source_relative_path": "doc/UI设计规范/文字.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/按钮[1].html",
-          "hash": "NINqhLatPzcwfYTF2UV2qJWuBwu5WBUIUqHNNmDZjRY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/文字[1].md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/UI设计规范/文字[1].html",
-          "hash": "8cFwTMZxg+EosbFLZfIyhGUwhtY+Vclpvtw9i0+iz9k="
+          "relative_path": "doc/UI设计规范/文字.html",
+          "hash": "T1TjAST7oU0ExP9bP7Eem5wCRPJizk7hl2YyaWvViB4="
         }
       },
       "is_incremental": false,
