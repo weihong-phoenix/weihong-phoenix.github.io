@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#24341;&#35328; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#24341;&#35328; ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="引言">引言</h1>
+
+<h2 id="目的">目的</h2>
+<p>首先，为更好的保证软件产品界面视觉质量及其一致性，并确保产品在后期的升级、迭代过程中维持统一的视觉标准，提升用户体验。</p>
+<p>其次，沉淀设计规范及组件设计资产，避免重复造轮子，保证设计质量的前提下，减少设计成本，提高测试效率。</p>
+<p>同时通过明确规范，也可以降低不同设计师、开发工程师、测试工程师之间的沟通成本，提高协同工作效率。</p>
+<p><strong>本文档阅读者及阅读建议</strong></p>
+<ul>
+<li>开发工程师</li>
+</ul>
+<p>通过该规范文档，可以查阅通用组件规格和样式（包含且不限于：色彩、字体、按钮、分割线、通用图标等），正确套用组件规格和样式，可以保证产品最终视觉效果的同时，也可以进一步减轻开发工作负荷。</p>
+<ul>
+<li>UI设计师/产品经理</li>
+</ul>
+<p>UI设计师通过优化以往界面、日常设计总结等方式，收集可通用的设计元素，形成设计组件集合，利用该组件集合归纳和编写设计规范，形成设计源文件。源文件将通过转发和在线文件形式，方便其他设计师和开发查阅文件内容。</p>
+<ul>
+<li>测试工程师</li>
+</ul>
+<p>参考该规范进行UI测试用例设计及用户验收测试。</p>
+<h2 id="适用范围">适用范围</h2>
+<p>本规范适用于公司研发体系和产品体系PC端产品的UI设计，自本规范实施之日起，以后新的UI设计或者UI调整均应执行本规范。</p>
+<p>本规范主要关注UI元素设计，包括以下几个方面：</p>
+<ul>
+<li><p>通用元素规范，主要包括按钮、字体、色彩相关规范和设计原则。</p>
+</li>
+<li><p>布局规范，主要定义了主要界面布局及其规格。</p>
+</li>
+<li><p>信息输入，主要定义了信息输入的各种控件使用场景及规格，包括常规输入框、列表、单复选框等。</p>
+</li>
+<li><p>信息展示，主要定义了信息展示的各种形式，包括TAB、表格、分页等。</p>
+</li>
+</ul>
+<blockquote><p>目前包括如上内容，后续会持续优化，批注日期：2022-5</p>
+</blockquote>
+<h2 id="使用原则">使用原则</h2>
+<p>本规范针对各种UI元素的规范分为必须遵守和可自定义两个等级，具体要求如下：</p>
+<ul>
+<li>必须遵守</li>
+</ul>
+<p>UI设计有一个基本的原则，少即是多(less is more)，用尽可能少的样式来实现设计目标，例如按钮提供三种尺寸即可，在适应不同场景需求的同时保证体验的一致性；另一方面，保持克制的设计规范可以进一步减少设计师的决策时间，提高设计效率。UI设计规范里面标识<strong>必须遵守</strong>的规范，即对特定的控件及其部分规格进行严格的要求，该规格不可随意修改，测试工程师将按照该控件规范进行UI层面的验收测试。</p>
+<blockquote><p>若实施过程出现和规范不一致且无法按照规范执行的情况，可提交软件部UI设计团队进行评审。</p>
+</blockquote>
+<ul>
+<li>可自定义</li>
+</ul>
+<p>可根据界面整体设计进行自定义。</p>
+<h2 id="反馈及建议">反馈及建议</h2>
+<p>如果在使用过程中有任何的建议和意见，欢迎积极反馈。也可以直接提交到github资源库。
+链接：<a href="https://github.com/weihong-phoenix/UI_DesignRules/tree/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83">https://github.com/weihong-phoenix/UI_DesignRules/tree/main/doc/UI%E8%AE%BE%E8%AE%A1%E8%A7%84%E8%8C%83</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/UI&#35774;&#35745;&#35268;&#33539;/&#24341;&#35328;[1].md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>

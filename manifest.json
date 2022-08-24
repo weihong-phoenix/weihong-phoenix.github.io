@@ -2586,7 +2586,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "sg8q2PDj9nBsDO5DZm40tzm2012hAgJEPykxMsV9F+c="
+          "hash": "UOrLTN45tLcYE1frwFhUzjId9jbsrTVJOwoST66vDcU="
         }
       },
       "is_incremental": false,
@@ -2630,11 +2630,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/引言/引言.md",
+      "source_relative_path": "doc/UI设计规范/引言/引言0.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/引言/引言.html",
-          "hash": "dZEnprfo6vombrl4+b7rGbIH8bPzskCVaidGgBlTBgs="
+          "relative_path": "doc/UI设计规范/引言/引言0.html",
+          "hash": "Cut1Q9Vsmxovf6WFGHBpfTukz26a4jYKeKchEPyaXFQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/UI设计规范/引言[1].md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/UI设计规范/引言[1].html",
+          "hash": "6mdrBsDL3F6H8GdwKNChF0Ig8sMgS6en5cSU1771EIE="
         }
       },
       "is_incremental": false,
@@ -2735,11 +2747,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/通用类元素规范/色彩.md",
+      "source_relative_path": "doc/UI设计规范/通用类元素规范/色彩0.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/通用类元素规范/色彩.html",
-          "hash": "zNN9Lf29Ha1pyYr0NRTGVNKsvL038YZa3eV15SGtExY="
+          "relative_path": "doc/UI设计规范/通用类元素规范/色彩0.html",
+          "hash": "g86nQ/NTdDD5wQZRULeHfrEXcHxrJz224d/MNcw+lEo="
         }
       },
       "is_incremental": false,
@@ -5084,12 +5096,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "KOqpUxagwNGDtCwFDKTTpaC+dJ+k/isd+SIwOS/mKL8="
+          "hash": "jTabU69Jm1k7khZ4y1mQccwp5i/ZhMMSFtJMnEqm1SY="
         }
       },
       "is_incremental": false,
@@ -5110,7 +5125,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 89,
+          "total_file_count": 90,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
