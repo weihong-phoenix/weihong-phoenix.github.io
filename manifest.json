@@ -2699,11 +2699,11 @@
         "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "doc/UI设计规范/色彩[1].md",
+      "source_relative_path": "doc/UI设计规范/色彩.md",
       "output": {
         ".html": {
-          "relative_path": "doc/UI设计规范/色彩[1].html",
-          "hash": "KOP5Fu6nDprUog0ZONKezBB7mbqJ1mm3vjoJ853sEWs="
+          "relative_path": "doc/UI设计规范/色彩.html",
+          "hash": "osaocB0Xp1Q4JxH6Ciyzmumjgt5cKh+sMSLpHMa+jyQ="
         }
       },
       "is_incremental": false,
