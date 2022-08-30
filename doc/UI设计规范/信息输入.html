@@ -109,9 +109,9 @@
 </li>
 <li><p>双列选择表，通过在一列选择，另外一列取消进行单项或者多项输入的选择，比如XXX。</p>
 </li>
-</ul>
-</li>
 <li><p>文件上传，通过文件输入窗口选择文件或者图片，比如文件加载、文件导入、图片上传等。</p>
+</li>
+</ul>
 </li>
 </ul>
 <h2 id="设计原则">设计原则</h2>
@@ -280,8 +280,98 @@
 </table>
 <h4 id="组件库链接-2">组件库链接</h4>
 <p>待更新</p>
-<h3 id="下拉选项框">下拉选项框</h3>
+<h3 id="单选框">单选框</h3>
 <h4 id="必须遵守-3">必须遵守</h4>
+<ul>
+<li><p>单选框使用频率比较高。</p>
+</li>
+<li><p>单选框仅边框及“选中”内部内容与边距必须按照组件库设计，不可随意修改，若需要修改需要提交软件部UI设计评审。</p>
+<blockquote><p>边框：1px；“选中”内部内容与边距需留固定间距：2px。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="可自定义-3">可自定义</h4>
+<ul>
+<li>选中/未选中两种颜色需有强烈反差，可根据界面整体设计自定义。</li>
+</ul>
+<h4 id="正反例应用场景-3">正/反例&amp;应用场景</h4>
+<table>
+<thead>
+<tr>
+<th>正例【必须使用】</th>
+<th>反例【禁止使用】</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.默认规格：<br><img src="images/sr5_dx_z1.jpg" alt="img"></td>
+<td>1.颜色反差太小：<br><img src="images/sr5_dx_f1.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>2.间距规则：<br><img src="images/sr5_dx_z2.jpg" alt="img"></td>
+<td>2.固定间距错误：<br><img src="images/sr5_dx_f2.jpg" alt="img"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>界面内应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/sr5_dx_pt1.jpg" alt="img"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="复选框">复选框</h3>
+<h4 id="必须遵守-4">必须遵守</h4>
+<ul>
+<li><p>复选框使用频率比较高。</p>
+</li>
+<li><p>复选框边框及“选中”内容与边距必须按照组件库设计，不可随意修改，若需要修改需要提交软件部UI设计评审。</p>
+<blockquote><p>未选中”边框1px/“选中”无边框；“选中”内部内容与边距需留固定间距：2px。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="可自定义-4">可自定义</h4>
+<ul>
+<li>选中/未选中两种颜色需有强烈反差，可根据界面整体设计自定义。</li>
+</ul>
+<h4 id="正反例应用场景-4">正/反例&amp;应用场景</h4>
+<table>
+<thead>
+<tr>
+<th>正例【必须使用】</th>
+<th>反例【禁止使用】</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.默认规格：<br><img src="images/sr4_fx_z1.jpg" alt="img"></td>
+<td>1.颜色反差太小：<br><img src="images/sr4_fx_f1.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>2.间距规则：<br><img src="images/sr4_fx_z2.jpg" alt="img"></td>
+<td>2.间距错误，文字与控件两端未对齐：<br><img src="images/sr4_fx_f2.jpg" alt="img"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>界面内应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="images/sr4_fx_pt1.jpg" alt="img"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="下拉选项框">下拉选项框</h3>
+<h4 id="必须遵守-5">必须遵守</h4>
 <ul>
 <li><p>需要根据用户意愿直接输入信息反馈给系统的，必须使用常规输入框或前后缀文本输入框，比如文字搜索、设置机床各种参数值等情况。</p>
 </li>
@@ -290,7 +380,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="可自定义-3">可自定义</h4>
+<h4 id="可自定义-5">可自定义</h4>
 <ul>
 <li><p>文字大小和颜色根据软件整体布局和页面设计进行自定义，推荐普通版文字大小：14pt。自定义输入框尺寸较大时，可以增大字号。</p>
 </li>
@@ -299,7 +389,7 @@
 <li><p>遵守最小间距的前提下，可以自定义宽高。</p>
 </li>
 </ul>
-<h4 id="正反例应用场景-3">正/反例&amp;应用场景</h4>
+<h4 id="正反例应用场景-5">正/反例&amp;应用场景</h4>
 <table>
 <thead>
 <tr>
@@ -332,8 +422,8 @@
 </table>
 <h4 id="组件库链接-3">组件库链接</h4>
 <p>待更新</p>
-<h3 id="开关">开关</h3>
-<h4 id="必须遵守-4">必须遵守</h4>
+<h3 id="状态开关">状态开关</h3>
+<h4 id="必须遵守-6">必须遵守</h4>
 <ul>
 <li><p>需要根据当前功能及其工艺需要，由用户选择性开启。必须有一种选择，且确保默认选择为最安全或用户默认需要的情况。</p>
 </li>
@@ -342,7 +432,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="可自定义-4">可自定义</h4>
+<h4 id="可自定义-6">可自定义</h4>
 <ul>
 <li><p>打开/关闭状态的底色和字体颜色不同，推荐字号：12px，也可根据界面整体设计自定义。</p>
 </li>
@@ -351,7 +441,7 @@
 <li><p>开关圆角可根据高度取最大值。</p>
 </li>
 </ul>
-<h4 id="正反例应用场景-4">正/反例&amp;应用场景</h4>
+<h4 id="正反例应用场景-6">正/反例&amp;应用场景</h4>
 <table>
 <thead>
 <tr>
@@ -385,7 +475,7 @@
 <h4 id="组件库链接-4">组件库链接</h4>
 <p>待更新。</p>
 <h3 id="数值滑动条">数值滑动条</h3>
-<h4 id="必须遵守-5">必须遵守</h4>
+<h4 id="必须遵守-7">必须遵守</h4>
 <ul>
 <li><p>数值滚动条使用场景比较少，目前仅倍率控制使用该控件。</p>
 </li>
@@ -394,7 +484,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="可自定义-5">可自定义</h4>
+<h4 id="可自定义-7">可自定义</h4>
 <ul>
 <li><p>滚动条已进程/未进程颜色需有强烈反差，可根据界面整体设计自定义。</p>
 </li>
@@ -407,7 +497,7 @@
 </blockquote>
 </li>
 </ul>
-<h4 id="正反例应用场景-5">正/反例&amp;应用场景</h4>
+<h4 id="正反例应用场景-7">正/反例&amp;应用场景</h4>
 <table>
 <thead>
 <tr>
@@ -440,96 +530,7 @@
 </table>
 <h4 id="组件库链接-5">组件库链接</h4>
 <p>待更新。</p>
-<h3 id="复选框">复选框</h3>
-<h4 id="必须遵守-6">必须遵守</h4>
-<ul>
-<li><p>复选框使用频率比较高。</p>
-</li>
-<li><p>复选框边框及“选中”内容与边距必须按照组件库设计，不可随意修改，若需要修改需要提交软件部UI设计评审。</p>
-<blockquote><p>未选中”边框1px/“选中”无边框；“选中”内部内容与边距需留固定间距：2px。</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="可自定义-6">可自定义</h4>
-<ul>
-<li>选中/未选中两种颜色需有强烈反差，可根据界面整体设计自定义。</li>
-</ul>
-<h4 id="正反例应用场景-6">正/反例&amp;应用场景</h4>
-<table>
-<thead>
-<tr>
-<th>正例【必须使用】</th>
-<th>反例【禁止使用】</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.默认规格：<br><img src="images/sr4_fx_z1.jpg" alt="img"></td>
-<td>1.颜色反差太小：<br><img src="images/sr4_fx_f1.jpg" alt="img"></td>
-</tr>
-<tr>
-<td>2.间距规则：<br><img src="images/sr4_fx_z2.jpg" alt="img"></td>
-<td>2.间距错误，文字与控件两端未对齐：<br><img src="images/sr4_fx_f2.jpg" alt="img"></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>界面内应用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="images/sr4_fx_pt1.jpg" alt="img"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="单选框">单选框</h3>
-<h4 id="必须遵守-7">必须遵守</h4>
-<ul>
-<li><p>单选框使用频率比较高。</p>
-</li>
-<li><p>单选框仅边框及“选中”内部内容与边距必须按照组件库设计，不可随意修改，若需要修改需要提交软件部UI设计评审。</p>
-<blockquote><p>边框：1px；“选中”内部内容与边距需留固定间距：2px。</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="可自定义-7">可自定义</h4>
-<ul>
-<li>选中/未选中两种颜色需有强烈反差，可根据界面整体设计自定义。</li>
-</ul>
-<h4 id="正反例应用场景-7">正/反例&amp;应用场景</h4>
-<table>
-<thead>
-<tr>
-<th>正例【必须使用】</th>
-<th>反例【禁止使用】</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.默认规格：<br><img src="images/sr5_dx_z1.jpg" alt="img"></td>
-<td>1.颜色反差太小：<br><img src="images/sr5_dx_f1.jpg" alt="img"></td>
-</tr>
-<tr>
-<td>2.间距规则：<br><img src="images/sr5_dx_z2.jpg" alt="img"></td>
-<td>2.固定间距错误：<br><img src="images/sr5_dx_f2.jpg" alt="img"></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>界面内应用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="images/sr5_dx_pt1.jpg" alt="img"></td>
-</tr>
-</tbody>
-</table>
+<h3 id="日期控件选择">日期控件选择</h3>
 <blockquote><p>下面应该还有很多</p>
 <ul>
 <li>下拉列表</li>
