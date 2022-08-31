@@ -4282,12 +4282,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "VdV7BMtI/RnarhRsEiADmQzv8Lj0X8yjXLuIy9SgA5A="
+          "hash": "DqEAlsE1GX/GYWAGgItc2QFLQC/ojUmRMH9TxogS7RA="
         }
       },
       "is_incremental": false,
@@ -4785,11 +4788,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework框架-R1.md",
+      "source_relative_path": "doc/研发管理制度规范/测试管理规范/代码化测试用例管理指导书.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发管理制度规范/测试管理规范/手工测试用例编写指导书-基于RobotFramework框架-R1.html",
-          "hash": "C/PgPGQg+zUnJciCvkZk+BODBQjRSAsCKfCcgbPWkjc="
+          "relative_path": "doc/研发管理制度规范/测试管理规范/代码化测试用例管理指导书.html",
+          "hash": "GpXlt/QX9aGVA9kIo0lTfKe7/cErgCk+X3waMzmR2X8="
         }
       },
       "is_incremental": false,
