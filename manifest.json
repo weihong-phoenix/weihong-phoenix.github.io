@@ -2631,19 +2631,22 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/引言.html",
-          "hash": "uCnZ7OzNBceUzrRa/q+oLDYCqcYZLqDXwkua3LcIDJ4="
+          "hash": "BLM2REAsKhA/FMuuNYxom21B1Fd5Ok5hRbMHzbuwQFo="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/按钮.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/按钮.html",
-          "hash": "qWtM2VovqUDTIPmr/7PCU33HcWLyu7rbWjquzGJZhjk="
+          "hash": "qgpxT+l22mdyTx6V7WyIFKcTEPqrG0lrLwzI86w8FZE="
         }
       },
       "is_incremental": false,
