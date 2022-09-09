@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "8iu7fb5PqZvnbp3SEdnylIbUQNVr7aRtBNRnc6Fwcoc="
+          "hash": "t9ErTKSGoA7aNqmQ0dzK5apUthVJInmY3NIwcnvMWXc="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/UI元素使用规范.html",
-          "hash": "dpw5e2Q3Ewym406ecGH4jbPI12fG4R2HP1RevX3xzQQ="
+          "hash": "fqs0fZtJaKB0FOXHoywHbSriznR4cvLUhqwHk1y0xMs="
         }
       },
       "is_incremental": false,
@@ -2595,7 +2595,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/信息展示.html",
-          "hash": "GunkCX+5VX/PV+N1ujVzvX7o0HhbqZy4VtDPF56EDPk="
+          "hash": "KkoUdPz1F0/1hH5d2AcITPfa93xbaINrXxzWQFbdAmU="
         }
       },
       "is_incremental": false,
@@ -2607,7 +2607,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/信息输入.html",
-          "hash": "ApJqEuaalwk3dPhhTRxz8ppb0BPagfHIX+0uSmEh/vI="
+          "hash": "aHrubgNbDl9jPzdAYVzCM+nvsK1it1sK7g+tIbsP8GE="
         }
       },
       "is_incremental": false,
@@ -2619,7 +2619,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/布局规范.html",
-          "hash": "nU5doc+6WireR8d8C3N0KojPK6f2lFb+VT42E71s3oU="
+          "hash": "pTLclj+dA3lVoVY9m1nARl9aVlQxPgKEK92Z/MWcHj0="
         }
       },
       "is_incremental": false,
@@ -2631,22 +2631,19 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/引言.html",
-          "hash": "bzxYLJPsoYulCwrlqBNkljDXdhP5NnT9lih17EoNf4E="
+          "hash": "uCnZ7OzNBceUzrRa/q+oLDYCqcYZLqDXwkua3LcIDJ4="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/按钮.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/按钮.html",
-          "hash": "E4JW7/LBG/0Lr7+XAZAEg5G6Vcc8RfZhTBerniERYoU="
+          "hash": "qWtM2VovqUDTIPmr/7PCU33HcWLyu7rbWjquzGJZhjk="
         }
       },
       "is_incremental": false,
@@ -2661,7 +2658,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/文字.html",
-          "hash": "T1TjAST7oU0ExP9bP7Eem5wCRPJizk7hl2YyaWvViB4="
+          "hash": "7vxODgO7P+zjJ4cCy+vFnuB16cRYQQuBFHGO9ORhB0Y="
         }
       },
       "is_incremental": false,
@@ -2673,7 +2670,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/文案规范.html",
-          "hash": "inaH7VV6E5OuB9ViOwIssvHwR/sX33AFRsn7mTCJTOA="
+          "hash": "F1jKQyDajoMeG84s1SJN4FRvuTYnb/l/BrHH9Tr3Jzw="
         }
       },
       "is_incremental": false,
@@ -2688,7 +2685,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/色彩.html",
-          "hash": "osaocB0Xp1Q4JxH6Ciyzmumjgt5cKh+sMSLpHMa+jyQ="
+          "hash": "G+zpIgLdtv5Lk3MRAIgki3pdADrtAmVSoIxD6oT0C/M="
         }
       },
       "is_incremental": false,
@@ -2700,7 +2697,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/设计图地址.html",
-          "hash": "BO7KGbZZ954MwAbhLP0cBBo8T6BHBjHu2c6QwnvX8eM="
+          "hash": "Louua3Z8sYbdbnDmhfAWOZ7+1WFYobH0ZXer0oVF8RM="
         }
       },
       "is_incremental": false,
@@ -2855,7 +2852,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/md文件格式/基本语法.html",
-          "hash": "9McH+jQ0ewceswJK6+RKQRuHVw0hkT8n8ladfMDO+X4="
+          "hash": "IxM67nRrGbvNItXotTmaYJHJg88VVcOwmV/MTqR9+Ps="
         }
       },
       "is_incremental": false,
@@ -2870,7 +2867,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/md文件格式/增强可读性语法.html",
-          "hash": "Uk8YDAOnD4+C/0oEWxsTJMvYSdIWmnUweDbxPV4tIoA="
+          "hash": "NFGw776512T7WmzFPe+lwmDc9fMtp8gmoRlFkrHqmXE="
         }
       },
       "is_incremental": false,
@@ -2894,7 +2891,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/Docfx.html",
-          "hash": "CU1qYvECGeFzNBJf3cQLVXlDvuiAVjrd6t9B/lxPqJw="
+          "hash": "fDN4WBpn8ExZYkrG4uMb4KNKmd4xHTt/cktr5Fg92c4="
         }
       },
       "is_incremental": false,
@@ -2906,7 +2903,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.html",
-          "hash": "V4CWgPeZYbjlxGVChTCzW0gR9V+g/bzxkz+UoOVlAH8="
+          "hash": "5wF7rSpfuZjeAHHHsj/jpcwB5Tz75s9ok7zYBgamsic="
         }
       },
       "is_incremental": false,
@@ -2918,7 +2915,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/git&github.html",
-          "hash": "gCujKKwThKIUtrjwnegeZ7jRROcrtdEP1pVUUoVCxzY="
+          "hash": "0N+pBv2H3sUoARjKEbJs2hCG7CZ6RAff01MqNmcLs1Q="
         }
       },
       "is_incremental": false,
@@ -2996,7 +2993,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/README-编写指导.html",
-          "hash": "Lu/ep+YQfbgx+9zc0YgLU/B3WPszfKNVZlQOIBk3wYE="
+          "hash": "y83e8P/MxCvZR1z93qlpvUYC1UfwL2gVChI8l5Q22kU="
         }
       },
       "is_incremental": false,
@@ -3008,7 +3005,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/SRS-编写指导.html",
-          "hash": "+7wPnrXdG4g+jQ67Wm0PgoKBpsMqZGRx4uboIK25JwM="
+          "hash": "RQBOBVqdxsl/WNO0Tw5xh6WNAAEw2IdxeNsFLqp0ZHA="
         }
       },
       "is_incremental": false,
@@ -3020,7 +3017,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/risk-编写指导.html",
-          "hash": "ELUU2PP0XosF7Wgdgy5B0tEUB4BJSFy62DRHQhQF8w8="
+          "hash": "WMJJMrr3+U6T2SiaGQCBlNYgPl5T7u4J9oiq83XK4/8="
         }
       },
       "is_incremental": false,
@@ -3032,7 +3029,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/roles-编写指导.html",
-          "hash": "+uL23beqjVSZgtcCaMt3pKFDRV7SeAMRaLN2v9KH8vA="
+          "hash": "Ln3ner8Vf1yUK2DBk/r3D7QubhsFifXDJhlkKUEbE5U="
         }
       },
       "is_incremental": false,
@@ -3044,7 +3041,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/stakeholder-编写指导.html",
-          "hash": "3mwpIAsBIlxxhhPD0OQ6Uz7TGnrxppqC94qaAPbH7/M="
+          "hash": "s332qRuYfOgssYGpGmJEwRrPlCxdk2FhSqp9mAeBLcE="
         }
       },
       "is_incremental": false,
@@ -3056,7 +3053,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/技术方案编写指导.html",
-          "hash": "KzY6743JnlQRSsPT4+DPwBBZ2Di7koC0MU3fPKQTSQc="
+          "hash": "yO8uY/VxATbUpVoXN6O1NenvKNz5CcyzjQqX8SUkSv4="
         }
       },
       "is_incremental": false,
@@ -3068,7 +3065,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/用户手册编写指导.html",
-          "hash": "O1GHk2rc+aAUGHsJn0znFk4HAzQL5HtlgIBt6NwtjRo="
+          "hash": "e+qo4VMsbNDCpwVTjRRVfC+0C3ofBQAOk17VYFZI31U="
         }
       },
       "is_incremental": false,
@@ -3080,7 +3077,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/布局及格式/元数据.html",
-          "hash": "3woce2V1kR65itmQv2FmoVYS6lnyaf5a6V3mm2SlX30="
+          "hash": "ycuRQQ7iJUN/NbSMOeu3ZtzG8K+qVdHWs9lM2tKPiSA="
         }
       },
       "is_incremental": false,
@@ -3092,7 +3089,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/布局及格式/标题.html",
-          "hash": "W5yRdtS77pJuibhs6WJbiiRNvlYRztColFWY1TBP5Jw="
+          "hash": "b4HBe+i9gdyns7IFBb7Ry2E+wkBJDHbZ2jak0c0FBVg="
         }
       },
       "is_incremental": false,
@@ -3104,7 +3101,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/布局及格式/正文格式.html",
-          "hash": "zK9CJxaJq3YbHwrzQFuX01d11dL06lDTkezPDK2TgVQ="
+          "hash": "gUhL2yTP/FJW3eqqxFjo8CdAl2r4dekcXcfWUtPRqkw="
         }
       },
       "is_incremental": false,
@@ -3116,7 +3113,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/布局及格式/过程批注.html",
-          "hash": "97ASMJz9/L6Yv9sELAFPTlYvJTSK5sIe8rkE0IdXxzs="
+          "hash": "REgAPu7iufdAkmWGyO/SWFiLJjiyZLLgxfQuiKV3VkU="
         }
       },
       "is_incremental": false,
@@ -3128,7 +3125,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/引言/用词说明.html",
-          "hash": "zzuGZgrTzYayMSwP7RIrytqdrFexJV/IVn2R6KEKUFk="
+          "hash": "1yRxS1Tl7HEhA0G7lbm//NLbhP4yBqFj+Le1pXUFY/Y="
         }
       },
       "is_incremental": false,
@@ -3140,7 +3137,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/引言/目的.html",
-          "hash": "Pqn4+PwJBdJjXna2Fy8Mz+bp02GtFqg3FgkN3rMAj30="
+          "hash": "lnlOKJJPJxdjigaK75l1/cF+yZB+AXvUiyK4Jhu/AUo="
         }
       },
       "is_incremental": false,
@@ -3152,7 +3149,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/引言/范围.html",
-          "hash": "HV4ZQ8jqfpSNcgCJ3tk6qx9SopM7tvO4yXuPCbstObg="
+          "hash": "Nt9agIW+8nEHxQLPIIbAnj6jWPDVyRYr9ZrhUB5SlEU="
         }
       },
       "is_incremental": false,
@@ -3197,7 +3194,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/目录命名.html",
-          "hash": "sZ1vlfYZ3FtD+RyX/xSb83oN5hpDtZV7uM4SyMfjdq4="
+          "hash": "S/A+Ccl8xUftdrHeg6x78llM90m7UEfXiex+7D2vbo8="
         }
       },
       "is_incremental": false,
@@ -3209,7 +3206,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/目录组织.html",
-          "hash": "oktU3gziaEdM6eWeU73jFMhPAVDI6ReBHCXm3cXWSsw="
+          "hash": "rLYryXwS0iIsyaJsW/Qeb+Rbl9P2zQO8B9PABfuGzxw="
         }
       },
       "is_incremental": false,
@@ -3221,7 +3218,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/目录规范.html",
-          "hash": "/nkZ8pPPojXAEOy/zql4tkHrZvklQ/gnUNwMJ6jCPdQ="
+          "hash": "6BHNDlu7RdVnF/ua+BYsD7aPQsD/qHCToPQbDgA50wQ="
         }
       },
       "is_incremental": false,
@@ -3233,7 +3230,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/研发文档编写规范.html",
-          "hash": "JF5WnqV1yUPg7NqvXCQLRiKcvTATrRn5mPS8mlMZ2OA="
+          "hash": "0pIYK7BndeITTQdBNsQUPuuutfHd/4rP4lkfgjfQ0Hw="
         }
       },
       "is_incremental": false,
@@ -3245,7 +3242,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/表达风格/注意细节.html",
-          "hash": "BEtOHF86iI0FL/WDa1Za+qlFLYysZ+Lur8MNyA5zdAQ="
+          "hash": "VN9WjYCMxu0nWCKQmA/3WhX5V8gX1NSMMUk6/zxq9FQ="
         }
       },
       "is_incremental": false,
@@ -3257,7 +3254,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/表达风格/表达原则.html",
-          "hash": "+qXOGbJLSDzZ+ArTPbSsXrXogeRq0Q0ak6RkrX429fg="
+          "hash": "39IdleTLNtFxAUQjd1mLz77UJgQffzDmncUN34QP5HU="
         }
       },
       "is_incremental": false,
@@ -3269,7 +3266,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Bug严重级别处理规范.html",
-          "hash": "+7TsABlXx0a8D7rwN8mEiWHjY9zM25GkwHA7kexha+A="
+          "hash": "HwP9obZQmRbpvnc4mkUeKEX8jmN6KYM2IMmupN0YSuA="
         }
       },
       "is_incremental": false,
@@ -3281,7 +3278,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Bug基本属性定义-R1.html",
-          "hash": "sKHIijzXSnjuCClhpsjnKd/qM8PfjN6251Yv1I2KaMA="
+          "hash": "NIWc5FKGdEWgXhf1Ze9lmZDo1xUpdeQEkFr2pcywnR8="
         }
       },
       "is_incremental": false,
@@ -3293,7 +3290,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/CAD迭代工作流程-R4.html",
-          "hash": "PxnPhLeyYy6kRMy0UoRjwJnSJITbc2FV5OEAK4McaQc="
+          "hash": "g+hJxjfzhf1mqYNJEE+k6v58d8CnKH1pIN1E3ZDWhxQ="
         }
       },
       "is_incremental": false,
@@ -3305,7 +3302,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/CNC平台-缺陷跟踪流程-R1.html",
-          "hash": "fxp05ymj2ASCQ7wkGM6vv1ZRNkUJfykZC5dtlJlfG/4="
+          "hash": "zm/8rTXQXe5DS8NmV+T8bHfR3EmAG4sLNfWwwmh01ak="
         }
       },
       "is_incremental": false,
@@ -3317,7 +3314,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/CNC平台-软件测试流程&过程规范-R3.html",
-          "hash": "9NV6sHlXXAIO/veYJMu/aGm4u5DDTr+QIN1sOfprfT8="
+          "hash": "fGudlFBvwnPaM3Xzn+7agXrfSHWYMqBNB/wtKryx+WE="
         }
       },
       "is_incremental": false,
@@ -3329,7 +3326,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/CodeReview指南.html",
-          "hash": "0LXVDusXgaoAPKGWuD0/27yumAJnbLXli2AASwJC120="
+          "hash": "vtDkHrtYhSlqmtKlMxcUsshQhcjJelauaRqgtlGoHPw="
         }
       },
       "is_incremental": false,
@@ -3341,7 +3338,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Commit message 编写规范.html",
-          "hash": "e5bgblF0Z6Md6/msv1QsN9GtJd9fdAHA0/Fq80+wxQk="
+          "hash": "i6AsK6au6MXK9/7G84Rgd7vZGDP4ogAcjnHsKXGsEzQ="
         }
       },
       "is_incremental": false,
@@ -3353,7 +3350,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Commitmessage编写指南-R1.html",
-          "hash": "3jNrTImK4KOzasVqIwZPw6N4uuHZc+vmg3cazpGMHs0="
+          "hash": "DCU+3AayvnRSniknsexTdZBlyhe/aJ+GzES6irGDzYs="
         }
       },
       "is_incremental": false,
@@ -3365,7 +3362,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/GIT分支工作流规范.html",
-          "hash": "Z7XjKXQtXVqF/88OTRxLEjWwDbpRu6kenBjQixNAKIE="
+          "hash": "exPIKbyjnZ1umucq/qQVmjDsvoKHIn0XSy/6Et6dc8E="
         }
       },
       "is_incremental": false,
@@ -3377,7 +3374,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.html",
-          "hash": "jGGnZvXgDT1QpR0DwlDTtFT69zzc+HyNv7K1wEGG+X4="
+          "hash": "yghwtTRFDqdcEEQbGDOc2FzT5ITi+AnlypyRI1LO5fU="
         }
       },
       "is_incremental": false,
@@ -3389,7 +3386,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Phoenix源码分支工作流-R2.html",
-          "hash": "SooWFQaQO9tB9Tyd07FQTIR8hWykCncY7+/4x3oP/ds="
+          "hash": "HxErAX70KQy2oGJdgIW9El4OhyHDMDUU531X336xHi4="
         }
       },
       "is_incremental": false,
@@ -3404,7 +3401,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Phoenix组件发行工作流.html",
-          "hash": "b/xfZVGB79HH3dYn1tgTr5aFsP58o2huCBi3eY4fiEs="
+          "hash": "ZheaucV4guSmBC6gGCXNV926CPHetsnh41Mfa7aVuZk="
         }
       },
       "is_incremental": false,
@@ -3416,7 +3413,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Phoenix组件版本管理规则.html",
-          "hash": "IVXrH4Nj34RCmPMe4JJsd25upNeh7BxjfSdn2VciEZg="
+          "hash": "3Z+a67fAo2SRwVSCkkRtfUhaVPE/UZttKYO5WNigTgY="
         }
       },
       "is_incremental": false,
@@ -4264,7 +4261,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/includes/设计中.html",
-          "hash": "vz+muzmXG2FY1vq/A1NzHymODSjoC/JuXf8UzYwVtYk="
+          "hash": "ljvcuqHun8dzIEeMkdcJO9ESoDpbMlPDgskbl/lGJDs="
         }
       },
       "is_incremental": false,
@@ -4313,7 +4310,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.html",
-          "hash": "qj67+xeW8wjLCdOWug+h4xX9kvj/3ItY1jjbS39WaSI="
+          "hash": "Y40LuvorYvVyX1GKHvIup5ex/Q/01wyPjsalQc7Swyk="
         }
       },
       "is_incremental": false,
@@ -4347,7 +4344,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发术语.html",
-          "hash": "8L72bCQMTXxxlyYSKvF+lcxJQIFVtS6+a/WQwrAA3PA="
+          "hash": "GOUCBLhtuQDLhvgNkYztTSskcjFzlMUFiyRS3h4/WY8="
         }
       },
       "is_incremental": false,
@@ -4359,7 +4356,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度.html",
-          "hash": "/6Y3t7momlu30CpQ0xBZYMySToBh2866aDhpdBNqrKU="
+          "hash": "w3hfHMv7xyWHwi1NQJQWZNBVJtbAw/DDn08oz4POS28="
         }
       },
       "is_incremental": false,
@@ -4371,7 +4368,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/产品研发管理制度指导书.html",
-          "hash": "gLR+EMLdGwcqkzv3iIq3yksOvACL0iRaZ18SeoMzFyc="
+          "hash": "J8TZGBt9vvD2sw8BsrDDCO1sFL4W8xDXgt3aUaOOeRc="
         }
       },
       "is_incremental": false,
@@ -4383,7 +4380,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/关于平台软件兼容性问题例外活动流程-R1.html",
-          "hash": "X6pSXVVssOYJFUfZeZWBtLocKded5rbjcRl6z+HzZ4w="
+          "hash": "QO8JTd4DwT2/SQjw49y5u/Uk7F18HjgNHManI9cjL5I="
         }
       },
       "is_incremental": false,
@@ -4395,7 +4392,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/函数体设计最佳实践.html",
-          "hash": "bFAj+sJs9hmg7wYIaUZfF5d0LfV2pTBgLKEZ+Gc+Z7E="
+          "hash": "lH6g9JZO1bWg+RN6MLOsF93oCL2E6dk/XqzbLcnW1eQ="
         }
       },
       "is_incremental": false,
@@ -4407,7 +4404,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/功能规格设计活动流程&规范-R1.html",
-          "hash": "/1vqpD0k9mF57NSJ2qOqXUqwH0ZZ9bFtsoLHeU3OM7A="
+          "hash": "K4fFXOReecpkVa0U53AuwQpzvcMfKeAEzglSvFuOf4w="
         }
       },
       "is_incremental": false,
@@ -4419,7 +4416,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/包历史记录填写规范-R1.html",
-          "hash": "hLa8Kke7WRBMsH8MoHPKzEJV9pJySha+FI8eeIyg+Y4="
+          "hash": "DxHUNbiLGHmqwF2gvhRTUSaGZnU3X5dNRhYYOLN0elg="
         }
       },
       "is_incremental": false,
@@ -4431,7 +4428,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/子产品管理制度（试行）-R2.html",
-          "hash": "SKmpZGJmNRSYQRk6CZIlLDooQNZ7gq+Wm+EaxZEJDPw="
+          "hash": "byKeNjJx5SJ5MROUA5heY6lKJWwnd6cmgkP+zYwS5Qw="
         }
       },
       "is_incremental": false,
@@ -4443,7 +4440,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/家装制造产品部代码审核要求-R2.html",
-          "hash": "yBR4k2nCwYBsIUnZlps5c4ZBDF6r+3IlxA9npUhq72M="
+          "hash": "AojJdUzjlC76Jgf+kO7yrPzkFo8VrkBRjUbzoG6ZHAU="
         }
       },
       "is_incremental": false,
@@ -4455,7 +4452,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/家装制造产品部开发评审制度-R1.html",
-          "hash": "YKrNqdEtDsf1xxR2qpVqrK7pcSzhuKn29tmp5AG0Bxo="
+          "hash": "hMYQ6v9QyuQMgBA4QluMZEZszHb8VmTDUsalvwkybpw="
         }
       },
       "is_incremental": false,
@@ -4467,7 +4464,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/平台软件发布规范-R3（试用）.html",
-          "hash": "ddfKCNqNiY81TnzTw1vGcn2l+rtdjw45dDplu7diTu8="
+          "hash": "Z5/UKL/+dUSXtOhXJ0yMMyHQV3DPKThxxbeewG52KgA="
         }
       },
       "is_incremental": false,
@@ -4479,7 +4476,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/插件管理规范-R2.html",
-          "hash": "vfDiWzFskT02OpVsilVRQgEWFDJr94eXzrr5dnY+B9E="
+          "hash": "RKcQus7uSfNVFplTLvH0oIS1SP64whGVYB6fInB/fxw="
         }
       },
       "is_incremental": false,
@@ -4502,7 +4499,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/方案设计汇报和评审指导书/方案设计汇报和评审指导书-R1.html",
-          "hash": "0uEBeRMnaJjSSKNd7qYpv/EWft1NWpR9IEgJwu6taMY="
+          "hash": "9O141A+yIcVfywcIZdfE5RywhwtsTc1gN9XrLy19LpQ="
         }
       },
       "is_incremental": false,
@@ -4525,7 +4522,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/方案设计汇报和评审流程/方案设计汇报和评审流程-R1.html",
-          "hash": "Z3BnSfzUf7rIs2d32QtUnU2L1j8WCYrXrp3MXQXpn3s="
+          "hash": "H4EOIjusqD1erACJBNF/oREt0o4YguPPV6Nz5qyPRVo="
         }
       },
       "is_incremental": false,
@@ -4537,7 +4534,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/Robot Framework 自动化测试框架使用指导书.html",
-          "hash": "t5D+STYxdnFRC1yLwHQuKPzMabHeO6VmQ3/cf8TRlNg="
+          "hash": "6n0N/EIpHvHoBpjGDBAA1C0IL5GKxJpUgZHGps2dDeA="
         }
       },
       "is_incremental": false,
@@ -4769,7 +4766,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/~作废文件/软件测试流程&过程规范-R2.html",
-          "hash": "W+7+gtHia9G55IhAPT29OwWlthjyLkoXoXaMv3FjbEI="
+          "hash": "0gzPO0kVJr42foLcGQHep7ldJIiJt2Dse2HzL7fwN/w="
         }
       },
       "is_incremental": false,
@@ -4792,7 +4789,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/代码化测试用例管理指导书.html",
-          "hash": "GpXlt/QX9aGVA9kIo0lTfKe7/cErgCk+X3waMzmR2X8="
+          "hash": "FuSulMHCQyQhNyzN1xqHbFvlTePVQiqC/4WBB13TZ7E="
         }
       },
       "is_incremental": false,
@@ -4804,7 +4801,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/模板文件/测试计划(模板)-R1.html",
-          "hash": "TLiAwDUXK9CVQzmU74PESjzl2oVzgBLBwT+1vUnWz+I="
+          "hash": "/K1s3zdffLfDBw+EqVSIw7tDRFkQvb5c6etDiRf47zY="
         }
       },
       "is_incremental": false,
@@ -4827,7 +4824,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/自动化测试管理规范-R1.html",
-          "hash": "KqcskMEQovWAwscwgLuakDmcRUpGRrc4hozv/1DvhYM="
+          "hash": "XJcNu1kOBz1+X6L3P4nFF2tZzh1jddSaMr9kF2AJA2Q="
         }
       },
       "is_incremental": false,
@@ -4839,7 +4836,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试流程&过程规范-R3.html",
-          "hash": "hWe9ReQZNGwqfa68SfMSM62/07AKfUHO+q7i8HLeG5s="
+          "hash": "IPsj0rK9cojZn4RmPY0y/RXAYMD3QOQWoTr3cLu9UlM="
         }
       },
       "is_incremental": false,
@@ -4851,7 +4848,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试用例设计规范-R3.html",
-          "hash": "wx+uk8zQQexIK9PY+HwRR8va9RThHoQwBLJiHtlf4f4="
+          "hash": "cY3iJGjFOUmNPwLUNOieOdra04ZJtDZwqGCuOKbWns0="
         }
       },
       "is_incremental": false,
@@ -4863,7 +4860,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/测试管理规范/软件测试规范.html",
-          "hash": "wQvC86H0yDA47/4DxPS75eVFqczKcIhrhDZZDXHU/X4="
+          "hash": "Pl5tO+jnuJR/DbfT2Ln95Fk7mqrIoKI9PYb375rE0HE="
         }
       },
       "is_incremental": false,
@@ -4875,7 +4872,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/激光加工产品部Bug处理流程-R3.html",
-          "hash": "Zo40ytO2ONtjw1pzuEuQDvGtiynTxVDFLFSYwMNqdSA="
+          "hash": "jM3R7oIi4wgUsYXvOvhsTBROvSY7/DwPWBGwxzbqaPc="
         }
       },
       "is_incremental": false,
@@ -4887,7 +4884,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/激光加工产品部TFS工作项命名规范-R5.html",
-          "hash": "ada5Gyye6k46y6Y88eeSQwdHrJL2JgYQN0MU3ovTL8I="
+          "hash": "GivWpwQC5Yi3D9XWAsYLRqbjcrcUc//4GmdjvmxnjJc="
         }
       },
       "is_incremental": false,
@@ -4899,7 +4896,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/激光加工产品部研发流程-R2.1.html",
-          "hash": "1smsEO18rpodYkVC59vWDAd6+Xg1tBBdtEYP+38RiVI="
+          "hash": "+k8JMNkw5ylsolkXpU209SuZBuUmLCclUPbIneON4oY="
         }
       },
       "is_incremental": false,
@@ -4911,7 +4908,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/激光线软件发行规定-R3.html",
-          "hash": "AA9Ge7IneyENLNgzBWLkiV4lWLhLRyZKWLhhC0miYE4="
+          "hash": "2ePoDM/zJBPkjXCxGFpxwEukaOvwwr1Hl8FuXxOs9Xw="
         }
       },
       "is_incremental": false,
@@ -4923,7 +4920,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/研发部产品方案汇报与处理流程-R1.html",
-          "hash": "+4/2/64EBO/9csCyytm7eTaagj0mx0UKebmveqSCkcM="
+          "hash": "7483TSS1L6mVP0Pq2yosp1t5VsK5+dPqfhtBzZPRlbc="
         }
       },
       "is_incremental": false,
@@ -4935,7 +4932,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/缺陷跟踪流程-R2.html",
-          "hash": "Urj9Hdtk8p8u/LC0DVgvdu17A8fSgMWFSysuO5zr3hQ="
+          "hash": "Yh6W4TIiIhRUIBOuyLw6gp/jsBAGwMq8eg4R94Wd0Ys="
         }
       },
       "is_incremental": false,
@@ -4947,7 +4944,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件命名及版本方案说明-R3.html",
-          "hash": "IT5H6WxAAA+yY5vFyo0ODbo8icpFJhiQgonNnRBV1nQ="
+          "hash": "2j+WkRI0DNaxLw+WJVYJTqZdNUm6NM5hsrgKSRmANk4="
         }
       },
       "is_incremental": false,
@@ -4959,7 +4956,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件平台-遗留缺陷发布标准-R1.2.html",
-          "hash": "0nlFJpUpQg38be26l8eIQrBvVHnbwhzPN3K/HHfbEaY="
+          "hash": "c51nEW3yHADNiRfB28lklwokMreXkfnpBTz+N7UT76Y="
         }
       },
       "is_incremental": false,
@@ -4971,7 +4968,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件测试需求分解指导书-R2.html",
-          "hash": "OFfIgyu7Pf2g9R+fGjOYUoM0NSz9SrzyTJjPVXL9LDU="
+          "hash": "BUuA4QUB60phmLdBRI4nDSU56VSds5d9rfQdR6+TFhI="
         }
       },
       "is_incremental": false,
@@ -4983,7 +4980,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件编程规范-R5.html",
-          "hash": "Gsq5ka6PUGKP+WDcPpu+wrZQFvjXfuvMqsVmJ8iPORk="
+          "hash": "QdKX8SOvEVTi4qBIvUSf9tuxYjoelof8HbzwSDfCNHU="
         }
       },
       "is_incremental": false,
@@ -4995,7 +4992,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.html",
-          "hash": "i0eKG4C7wqkApbnNmhBYqltz0MUERtDXUohF8F8W2xk="
+          "hash": "qWC7Gk+z5q/MkmcMpmOTSpbZfKH2rjBFOcDLfqyMSuI="
         }
       },
       "is_incremental": false,
@@ -5007,7 +5004,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/金属切削产品部运维工作流程-R1.html",
-          "hash": "8m71rrOUxy0yhnpTl9ok9kAgeWQVVE2Yw1EoVMGpcdg="
+          "hash": "LqUUedO2vBT/bFu8/h2acohGozL9FWGoKwcQOmIMCXk="
         }
       },
       "is_incremental": false,
@@ -5030,7 +5027,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/需求台账.html",
-          "hash": "VF6yPwWEmpZE2ufKt50O/oVYsJmkRvmAWkNNh12GKUM="
+          "hash": "gLEWCGeP1cAq9UrvMTKmJbKLj6E/yDQO+nxNR/BPztc="
         }
       },
       "is_incremental": false,
