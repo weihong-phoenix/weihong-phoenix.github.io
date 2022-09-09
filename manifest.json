@@ -2677,15 +2677,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/色彩.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/色彩.html",
-          "hash": "G+zpIgLdtv5Lk3MRAIgki3pdADrtAmVSoIxD6oT0C/M="
+          "hash": "6kb7qflon2xR60W/QMQoHw8NVlOOb5doewFyxzfbvg8="
         }
       },
       "is_incremental": false,
