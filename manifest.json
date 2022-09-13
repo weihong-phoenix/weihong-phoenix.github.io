@@ -4291,15 +4291,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "DqEAlsE1GX/GYWAGgItc2QFLQC/ojUmRMH9TxogS7RA="
+          "hash": "WJIrsdmneaL+QRWmmZvsf2JQZqdRwr5++p4ep1AtQhs="
         }
       },
       "is_incremental": false,
