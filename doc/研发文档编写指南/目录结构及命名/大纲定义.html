@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#30446;&#24405;&#21629;&#21517; </title>
+    <title>&#22823;&#32434;&#23450;&#20041; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#30446;&#24405;&#21629;&#21517; ">
+    <meta name="title" content="&#22823;&#32434;&#23450;&#20041; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,9 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="目录命名">目录命名</h1>
+<h1 id="大纲定义">大纲定义</h1>
 
-<p>不同文档的目录命名不尽相同，当前主要对SRS的目录结构进行约束，后续其它文档诸如用户手册、技术方案等文档待明确后，再根据情况进行说明。</p>
+<p>不同文档的大纲定义不尽相同，当前主要对不同文档（包括SRS、产品手册、技术方案）的大纲进行定义，对其各个章节的.md文件目录结构进行约束。</p>
 <h2 id="srs第12章节">SRS第1&amp;2章节</h2>
 <p>SRS的前面两个章节，完全和国标的SRS保持一致。每个章节都有独立的.md文件。</p>
 <pre><code class="lang-html">  +-- 引言/                               
@@ -103,10 +103,30 @@
 <li>NK310M第3&amp;后续章节完全参考竞品Funac的连接说明书。</li>
 </ol>
 </blockquote>
-<h2 id="用户手册">用户手册</h2>
-<blockquote><p>本章节暂未提供内容，时间暂不确定。</p>
-</blockquote>
-<h2 id="技术方案">技术方案</h2>
+<h2 id="产品手册">产品手册</h2>
+<p>产品手册包括厂商手册、用户手册和编程手册，官网当前主要展示的是厂商和用户手册。</p>
+<pre><code class="lang-html">  +-- XXX产品/                                
+    +-- 前言.md                               
+    +-- 概述.md                                
+  +-- 厂商手册/                                                         
+    +-- 接线.md                           
+    +-- 系统调试.md
+    +-- 快速开始.md
+    +-- 系统操作.md
+    +-- 系统维护.md
+    +-- 常见问题.md
+  +-- 用户手册/                                                         
+    +-- 软件安装.md                         
+    +-- 主界面.md
+    +-- 快速上手.md
+    +-- XXX功能.md
+    +-- XXX功能.md
+    +-- XXX功能.md
+    +-- XXX功能.md
+    +-- 常见问题.md
+  +-- 法律文件
+    +-- 法律声明.md
+</code></pre><h2 id="技术方案">技术方案</h2>
 <blockquote><p>本章节暂未提供内容，时间暂不确定。</p>
 </blockquote>
 </article>
