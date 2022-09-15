@@ -2879,7 +2879,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "KuiHr6GzU9b8Lgn0d6pPvqzis9CjORgizRS16PWWnwE="
+          "hash": "f9JxtXe/+rdaAmf+N8Kk//Bgy6Tuze1WRU6mXJm9aHM="
         }
       },
       "is_incremental": false,
@@ -3073,11 +3073,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/布局及格式/元数据.md",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/元数据.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/布局及格式/元数据.html",
-          "hash": "ycuRQQ7iJUN/NbSMOeu3ZtzG8K+qVdHWs9lM2tKPiSA="
+          "relative_path": "doc/研发文档编写指南/内容及格式/元数据.html",
+          "hash": "ZFEj23ev5KYO1Kxd36Vnlwq7gj0s9787bH1r29e5HeE="
         }
       },
       "is_incremental": false,
@@ -3085,11 +3085,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/布局及格式/标题.md",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/插图.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/布局及格式/标题.html",
-          "hash": "ZogDmZ9n7FkNKdJyeaxP1x2zshIoA1FD2CjWAZZsfws="
+          "relative_path": "doc/研发文档编写指南/内容及格式/插图.html",
+          "hash": "GdWzCouwB2AyUU2ahb7amOMHkkxFUBJqHdBnCdztyAw="
         }
       },
       "is_incremental": false,
@@ -3097,11 +3097,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/布局及格式/正文格式.md",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/标题.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/布局及格式/正文格式.html",
-          "hash": "gUhL2yTP/FJW3eqqxFjo8CdAl2r4dekcXcfWUtPRqkw="
+          "relative_path": "doc/研发文档编写指南/内容及格式/标题.html",
+          "hash": "N2UyF+7fUrY1fyZwqVop4wJuaVBwyeuNa5rrZBwBq4Y="
         }
       },
       "is_incremental": false,
@@ -3109,11 +3109,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/布局及格式/过程批注.md",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/正文格式.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/布局及格式/过程批注.html",
-          "hash": "REgAPu7iufdAkmWGyO/SWFiLJjiyZLLgxfQuiKV3VkU="
+          "relative_path": "doc/研发文档编写指南/内容及格式/正文格式.html",
+          "hash": "jrhN4xlbRyghZqvFjn6hj0G9CSot62Ng0wuccSg8H3Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/过程批注.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/内容及格式/过程批注.html",
+          "hash": "SABiAWz/gXgCSJn3JaACjh7zr+Zjgo1n01/aDjxyAZI="
         }
       },
       "is_incremental": false,
@@ -5080,7 +5092,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 87,
+          "total_file_count": 88,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
