@@ -2878,6 +2878,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/不同表达方式.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/不同表达方式.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/示意图反例1.png",
       "output": {
         "resource": {
@@ -2893,6 +2904,17 @@
       "output": {
         "resource": {
           "relative_path": "doc/研发文档编写指南/img/示意图正例1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/箭头.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/箭头.png"
         }
       },
       "is_incremental": false,
@@ -2934,7 +2956,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "82s2crz9majsrZzqTSkkHnFVTXoqgSp5EhOqfTLRW/U="
+          "hash": "/3FROlrVqe1rMtJEH5CfpdRIkqbEoW4Zn/rpvENO0IY="
         }
       },
       "is_incremental": false,
@@ -3044,11 +3066,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/README-编写指导.md",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/README(远景范围文件)-编写指导.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写参考/README-编写指导.html",
-          "hash": "y83e8P/MxCvZR1z93qlpvUYC1UfwL2gVChI8l5Q22kU="
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/README(远景范围文件)-编写指导.html",
+          "hash": "+iMUcCsY4dzSrBt+BZxi15ES+Dhi88w8D+Nyv7oYBQY="
         }
       },
       "is_incremental": false,
@@ -3056,11 +3078,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/SRS-编写指导.md",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/SRS(需求规格说明书)-编写指导.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写参考/SRS-编写指导.html",
-          "hash": "RQBOBVqdxsl/WNO0Tw5xh6WNAAEw2IdxeNsFLqp0ZHA="
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/SRS(需求规格说明书)-编写指导.html",
+          "hash": "rXW7lw6gk2nG0bknx6unWDlkhu9krAB6qeLbHUNXWzY="
         }
       },
       "is_incremental": false,
@@ -3068,11 +3090,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/risk-编写指导.md",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/risk(风险评估文件)-编写指导.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写参考/risk-编写指导.html",
-          "hash": "WMJJMrr3+U6T2SiaGQCBlNYgPl5T7u4J9oiq83XK4/8="
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/risk(风险评估文件)-编写指导.html",
+          "hash": "GlsEjvUF+imSevjogKouxFlxPkugz9b2v1qZwCVgIh4="
         }
       },
       "is_incremental": false,
@@ -3080,11 +3102,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/roles-编写指导.md",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/roles(项目结构文件)-编写指导.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写参考/roles-编写指导.html",
-          "hash": "Ln3ner8Vf1yUK2DBk/r3D7QubhsFifXDJhlkKUEbE5U="
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/roles(项目结构文件)-编写指导.html",
+          "hash": "xwj5PizxB/ewn3htLxBm3VNLeskUTsEFXdD3I5xrzo0="
         }
       },
       "is_incremental": false,
@@ -3092,11 +3114,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/stakeholder-编写指导.md",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/stakeholder(利益相关人)-编写指导.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写参考/stakeholder-编写指导.html",
-          "hash": "s332qRuYfOgssYGpGmJEwRrPlCxdk2FhSqp9mAeBLcE="
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/stakeholder(利益相关人)-编写指导.html",
+          "hash": "gGZ/2+wFbWhQUC1oD9SO45ZK8r1Qj+H8I1qxrhKnUaQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/厂商手册-编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/厂商手册-编写指导.html",
+          "hash": "wtoA8B6+BqQsEKLhajSU/+s3u1aWW14i9IUmai3Py8s="
         }
       },
       "is_incremental": false,
@@ -3109,6 +3143,18 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写参考/技术方案编写指导.html",
           "hash": "yO8uY/VxATbUpVoXN6O1NenvKNz5CcyzjQqX8SUkSv4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写参考/用户手册-编写指导.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写参考/用户手册-编写指导.html",
+          "hash": "jhXZOMdJRUane6FgDH8dgszkdE82UJCtrHa1H1KZZ44="
         }
       },
       "is_incremental": false,
@@ -3139,15 +3185,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/内容及格式/插图.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/插图.html",
-          "hash": "7JmymstmH/4402MZwkBBA5VqQkiDODJiVjsNzSClmdQ="
+          "hash": "QS/BiDJKm2h70eAddgyQXgd1RBVv1eb7r6gSdGsReCA="
         }
       },
       "is_incremental": false,
@@ -5150,7 +5193,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 88,
+          "total_file_count": 90,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
