@@ -2845,6 +2845,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/1章节.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/1章节.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/2章节.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/2章节.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/toc.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/toc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/示意图反例1.png",
       "output": {
         "resource": {
@@ -2901,7 +2934,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "f9JxtXe/+rdaAmf+N8Kk//Bgy6Tuze1WRU6mXJm9aHM="
+          "hash": "82s2crz9majsrZzqTSkkHnFVTXoqgSp5EhOqfTLRW/U="
         }
       },
       "is_incremental": false,
