@@ -2844,6 +2844,28 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/示意图反例1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/示意图反例1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/示意图正例1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/示意图正例1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/md文件格式/基本语法.md",
       "output": {
@@ -3084,12 +3106,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/内容及格式/插图.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/插图.html",
-          "hash": "GdWzCouwB2AyUU2ahb7amOMHkkxFUBJqHdBnCdztyAw="
+          "hash": "7JmymstmH/4402MZwkBBA5VqQkiDODJiVjsNzSClmdQ="
         }
       },
       "is_incremental": false,
