@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="标题">标题</h1>
 
-<p>文档的标题作为文档的内容分类， 可以很好的提示读者。</p>
+<p>文档的标题作为文档内容分类， 可以很好的提示读者。</p>
 <h2 id="标题层级">标题层级</h2>
 <p>文档中的标题层级严禁<strong>超过四级</strong>。所有文档的标题都必须从<strong>一级标题</strong>开始，逐级递增使用，禁止跳级。</p>
 <!--所谓跳级，比如：直接从二级标题开始；一级标题下面直接用三级标题等情况。-->
@@ -114,41 +114,106 @@
 &gt; 反例：“1 引言； 1.1 目的；1.2 范围”。</li>
 </ul>
 <h2 id="标题描述">标题描述</h2>
-<h3 id="下级标题不重复上级标题内容">下级标题不重复上级标题内容。</h3>
-<blockquote><p>正例：</p>
+<h3 id="长度限制">长度限制</h3>
+<p>中文标题长度不得超过24个中文字符（包括英文半角字符和空格）。</p>
+<blockquote><p>说明：一个英文半角字符或空格，当作半个中文字符对待。</p>
 </blockquote>
-<pre><code class="lang-csharp">&gt; # 回机械原点
-&gt; ## 原理介绍
-&gt; ## 参数说明
-&gt; ## 常见问题及调整
-
-&gt; 反例:
-&gt; # 回机械原点
-&gt; ## 回机械原点原理介绍
-&gt; ## 回机械原点参数说明
-&gt; ## 回机械原点常见问题及调整
-</code></pre><h3 id="用不同的结构体现标题类型相同级别相同类型的标题结构保持一致">用不同的结构体现标题类型,相同级别、相同类型的标题结构保持一致。</h3>
-<h4 id="描述类的标题采用名词性的结构">描述类的标题采用名词性的结构。</h4>
-<pre><code class="lang-csharp">&gt; 正例：
-&gt; NcStudio简介
-
-&gt; 反例：
-&gt; 介绍NcStudio
-</code></pre><h4 id="过程类的标题采用动宾结构">过程类的标题采用动宾结构。</h4>
-<pre><code class="lang-csharp">&gt; 正例：
-&gt; 安装运动控制卡
-
-&gt; 反例：
-&gt; 运动控制卡的安装
-</code></pre><h3 id="标题不需要上下文就能准确识别其含义概括反映章节的中心内容尽量简洁不引起歧义的情况下去掉标题中不必要的词">标题不需要上下文就能准确识别其含义，概括反映章节的中心内容，尽量简洁，不引起歧义的情况下，去掉标题中不必要的词。</h3>
+<h3 id="不重复">不重复</h3>
+<p>下级标题不重复上级标题已经包含的内容。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td># 回机械原点<br>## 原理介绍<br>## 参数说明<br>## 常见问题及调整</td>
+<td># 回机械原点<br>## 回机械原点原理介绍<br>## 回机械原点参数说明<br>## 回机械原点常见问题及调整</td>
+</tr>
+</tbody>
+</table>
+<h3 id="不同结构">不同结构</h3>
+<p>用不同的结构体现标题类型,相同级别、相同类型的标题结构保持一致。</p>
+<ul>
+<li>描述类的标题采用名词性结构</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NcStudio简介</td>
+<td>介绍NcStudio</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>过程类的标题采用动宾结构</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安装运动控制卡</td>
+<td>运动控制卡的安装</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>标题不需要上下文就能准确识别其含义，概括反映章节的中心内容，尽量简洁，不引起歧义的情况下，去掉标题中不必要的词。</p>
 <blockquote><p>比如：产品名称不作为标题的一部分。</p>
 </blockquote>
-<h3 id="标题的设计要从读者的角度出发直接回答一个用户关心的问题">标题的设计要从读者的角度出发，直接回答一个用户关心的问题。</h3>
-<h3 id="troubleshooting的标题必须包含故障现象">Troubleshooting的标题必须包含故障现象。</h3>
-<h3 id="用户场景类标题如安装配置等采用任务风格基于用户真实的任务场景">用户场景类标题（如安装、配置等）采用任务风格，基于用户真实的任务场景。</h3>
-<h3 id="标题中关于符号的约束">标题中关于符号的约束</h3>
+</li>
+</ul>
+<h3 id="面向用户">面向用户</h3>
+<p>标题的设计要从读者的角度出发，直接回答一个用户关心的问题。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>安装NcStudio</td>
+<td>如何安装NcStudio？</td>
+</tr>
+<tr>
+<td>调整轴方向</td>
+<td>如何调整轴方向？</td>
+</tr>
+</tbody>
+</table>
+<h3 id="符号约束">符号约束</h3>
+<p>标题中关于符号的约束：</p>
 <ul>
 <li><p>标题中直接使用缩略语，不包含带括号的缩写词全称。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP on Top of IpoE</td>
+<td>IP on Top of IpoE (IP over Ethernet)</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li><p>标题不以句号、问号等表示句子意思结束的标点结尾。（不适用FAQ、案例标题）</p>
 </li>
@@ -157,10 +222,42 @@
 <li><p>禁止在标题中用“&amp;”表示并列；中文要使用“和”或“与”，英文要使用“and”或“or”表并列。</p>
 </li>
 <li><p>禁止在标题中用“/”表示“与”和“或”的关系；应明确使用“与”、“或”、“and”、“or”表示两者之间的关系。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Introducing the PM63A/62A</td>
+<td>Introduction to PM62A and PM63A</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li><p>若标题中出现界面元素、命令字、商标、产品名称、专有名词、术语等，可以不受符号规则的约束。</p>
 </li>
 <li><p>禁止在标题中用连字符或en dash表示补充说明；应使用冒号或小括号表示。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modify Operator (MOD OP)</td>
+<td>Modify Operator --MOD OP</td>
+</tr>
+<tr>
+<td>1.3.6.1.4.1.2011.5.2.2.2.0.3: Failing to Set the QOS Template of the Users</td>
+<td>1.3.6.1.4.1.2011.5.2.2.2.0.3-- Failing to Set the QOS Template of the Users</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li><p>标题禁止直接编号，若需要编号，可以在配置文件toc.yml中编辑name标签，而内容顺序同样通过toc进行配置即可。</p>
 </li>
@@ -172,9 +269,11 @@ Installing the System (Command Line)
 Installing the System (GUI)
 Installing the System (Web Browser)</p>
 </blockquote>
-<h3 id="中文标题长度不得超过24个中文字符包括英文半角字符和空格">中文标题长度不得超过24个中文字符（包括英文半角字符和空格）。</h3>
-<blockquote><p>说明：一个英文半角字符或空格，当作半个中文字符对待。</p>
-</blockquote>
+<h3 id="特殊类型">特殊类型</h3>
+<ul>
+<li>故障的定位、处理和解决相关对标题必须包含故障现象。</li>
+<li>用户场景类标题（如安装、配置等）采用任务风格，基于用户真实的任务场景。</li>
+</ul>
 </article>
           </div>
           
