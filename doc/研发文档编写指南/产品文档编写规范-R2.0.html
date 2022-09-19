@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#20135;&#21697;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#20135;&#21697;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="产品文档编写规范">产品文档编写规范</h1>
+
+<pre><code>版次：2022年09月09日　第14版
+类型：程序文件
+部门：软件部
+上海维宏电子科技股份有限公司　版权所有
+</code></pre><table>
+<thead>
+<tr>
+<th>文件版本</th>
+<th>修改前文件版本</th>
+<th>主要修订内容</th>
+<th>修订人</th>
+<th>修订日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R12</td>
+<td>-</td>
+<td>新建</td>
+<td>产品支持部</td>
+<td>2020-01-11</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>R12</td>
+<td>- 新增功能手册的内容要求。<br>- 新增由研发人员或应用工程师编写功能手册的规范要求，融合到现有规范中。<br>- 更改手册命名规则。<br>- 根据实际情况修改审核流程和存放路径。</td>
+<td>产品应用测试部</td>
+<td>2020-04-01</td>
+</tr>
+<tr>
+<td>R13.1</td>
+<td>R13</td>
+<td>更新文档存放路径</td>
+<td>产品应用测试部</td>
+<td>2022-08-29</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>R13.1</td>
+<td>- 重构，调整文档结构。<br>- 修改各个章节内容。</td>
+<td>软件部，祁彩云</td>
+<td>2022-09-09</td>
+</tr>
+</tbody>
+</table>
+<h2 id="目的">目的</h2>
+<p>控制产品文档的编写、审核、存放、印刷过程，使文档的管理规范化。</p>
+<h2 id="范围">范围</h2>
+<p>本规范适用于以下中英文产品文档：</p>
+<ul>
+<li>厂商手册</li>
+<li>用户手册</li>
+<li>快速上手指南</li>
+<li>功能手册</li>
+<li>编程手册</li>
+<li>维宏百问</li>
+</ul>
+<h2 id="命名规则">命名规则</h2>
+<p>对于产品文档面向的对象及专业技能的要求不同，产品的用户文档分为不同的类型，以下为各种类型文档的定义。</p>
+<p>【规则】：</p>
+<ul>
+<li><p>厂商手册，<strong>面向机床厂商的调机技术人员</strong>，内容主要关注软件支持的工控机型号、硬件连接及软硬系统调机。分为以下厂商手册：</p>
+<ul>
+<li><p>运动控制卡系列</p>
+<p>运动控制卡型号+系统名称+“数控系统厂商手册”+Rn，例如：PM95A玻璃切割数控系统厂商手册-R1</p>
+</li>
+<li><p>工业计算机系列</p>
+<p>工业计算机型号+系统名称+“数控系统厂商手册”+Rn，例如：NC60A义齿机数控系统厂商手册-R1</p>
+</li>
+<li><p>一体机系列：一体机型号+系统名称+“集成数控系统厂商手册”+ Rn，例如：NK280B外圆磨床集成数控系统厂商手册- R1</p>
+</li>
+</ul>
+</li>
+<li><p>用户手册,<strong>面向机床加工操作人员</strong>，内容主要关注数控软件的功能操作步骤、驱动器参数介绍及其调试。一般包括软件用户手册和驱动器软件及参数用户手册。</p>
+<ul>
+<li><p>控制系统类软件：软件名称+系统名称+ “控制系统用户手册”，例如： NcStudio Phoenix石材加工中心控制系统</p>
+</li>
+<li><p>驱动器：维智WSDA系列直线伺服驱动器用户手册（脉冲型）-R1；iMotion操作手册-R3</p>
+</li>
+</ul>
+</li>
+<li><p>快速上手指南</p>
+<ul>
+<li><p>厂商手册快速上手指南
+根据厂商手册的命名规格命名后，将“厂商手册”改成“快速上手指南”。</p>
+<ul>
+<li>户手册快速上手指南
+根据用户手册的命名规格命名后，将“用户手册”改成“快速上手指南”。例如：NK300BX集成数控系统快速上手指南- R1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>功能手册，待更新
+功能名称+“使用说明”+“-Rn”</p>
+<blockquote><p>例如：侧挂式圆盘刀库调试使用说明-R1 </p>
+<p>问题：功能手册和用户手册的差别在哪里？为什么不把功能手册放到用户手册的某个功能里面。</p>
+</blockquote>
+</li>
+<li><p>编程手册，待更新
+软件名称+“编程手册”+ Rn </p>
+<blockquote><p>例如：NcStudio 编程手册-R1</p>
+</blockquote>
+</li>
+<li><p>维宏百问：
+“维宏数控系统百问”+“厂商\用户手册”+ Rn 
+例如：维宏数控系统百问厂商\用户手册-R1</p>
+</li>
+</ul>
+<h2 id="文档内容">文档内容</h2>
+<p>基于不同类型的文档，其结构、内容和表达风格不尽相同。</p>
+<h3 id="表达风格">表达风格</h3>
+<p>参考产品研发文档编写指南。</p>
+<h3 id="文档架构">文档架构</h3>
+<ul>
+<li><p>所有文档必须包括目的、范围、术语定义。</p>
+</li>
+<li><p>所有产品文档必须包括产品简介。包括产品定位及特点。可以通过示意图或列表方式介绍。</p>
+</li>
+<li><p>所有文档涉及到操作步骤的必须通过图示和文字综合表达的方式陈述。</p>
+</li>
+<li><p>所有文档必须有常见问题，必须包括现象、原因、处理方法。</p>
+</li>
+</ul>
+<h3 id="不同类型文档及内容">不同类型文档及内容</h3>
+<p>文档内容必须准确无误(主要针对中文文档)，表达无歧义，包括内容的正确，相应图片的正确和更新。
+英文翻译须遵守语法规则，内容准确无误。
+对于需要印刷的文档最后一章需加上“用户安装软件许可声明”。</p>
+<h4 id="厂商手册">厂商手册</h4>
+<p>厂商手册包含但不限于以下内容：</p>
+<ul>
+<li>接线：介绍端子板和接线方法等。</li>
+<li>操作：按照功能分模块介绍软件。每个模块大概从概念及原理、操作过程、参数三个方面介绍，在操作过程中要设置哪些参数、遇到问题时应该怎样调整参数、参数之间有什么联系。</li>
+<li>调试与维护：介绍操作系统恢复、Ncstudio安装与打包、列表说明每种报警的产生原因、解决办法、常见故障处理。</li>
+<li>驱动器：主要介绍与机床连接相关的参数、驱动器与端子板接线图。</li>
+<li>参数一览：列表说明所有参数，其中详细说明见“操作”章节介绍，“操作”中没有涉及到的参数在此做简要说明。
+除了以上必须要包含的内容，不同板卡的厂商手册可以针对板卡特有的功能进行介绍。</li>
+</ul>
+<h4 id="用户手册">用户手册</h4>
+<p>用户手册中包含但不限于以下内容：</p>
+<ul>
+<li>概述：说明软件特性</li>
+<li>系统安装：说明系统的基本配置和安装方法、硬件更新驱动步骤</li>
+<li>Ncstudio基本概念</li>
+<li>软件操作界面</li>
+<li>软件菜单系统</li>
+<li>软件参数介绍</li>
+<li>带有NcEditor的软件介绍NcEditor的功能和特点</li>
+</ul>
+<h4 id="快速上手指南">快速上手指南</h4>
+<p>快速上手指南必须包含但不限于以下内容：</p>
+<ul>
+<li>系统简介：说明系统功能、组成、软件布局等。</li>
+<li>快速开始：说明系统快速运行的流程，及每个流程的具体操作。</li>
+<li>常见问题：列出运行过程常见问题的原因及解决方法。</li>
+</ul>
+<h4 id="功能手册">功能手册</h4>
+<p>功能手册的内容包含但不限于以下内容：</p>
+<ul>
+<li>引言：说明文档的描述对象、内容及作用。</li>
+<li>功能简介：描述功能对象是什么、有什么特点、在什么情况下能用到。</li>
+<li>操作指导：功能手册的主体内容，基于使用场景，生成任务型的小节。</li>
+<li>常见问题处理：不是必写项，对在以上设置、操作过程中遇见的常见问题进行说明。</li>
+</ul>
+<p>各项内容的详细说明及写作风格参见《功能手册模板》。</p>
+<h4 id="编程手册">编程手册</h4>
+<p>编程手册必须包含但不限于以下内容：</p>
+<ul>
+<li>数控编程概述</li>
+<li>零件程序的结构</li>
+<li>编程指令体系</li>
+<li>自定义扩充M指令</li>
+<li>PLT支持、DXF支持</li>
+</ul>
+<h4 id="维宏百问">维宏百问</h4>
+<p>维宏百问手册必须包含但不限于以下内容：</p>
+<ul>
+<li>标题必须写明可以解决的问题是什么。</li>
+<li>每个标题下的正文，解答问题产生的原因、影响及如何解决问题。</li>
+</ul>
+<blockquote><p>模板</p>
+</blockquote>
+<h2 id="文档格式">文档格式</h2>
+<h3 id="统一md格式">统一.md格式</h3>
+<p>和所有其它研发资产文件一样，文档统一采用.md格式编写。</p>
+<h3 id="布局及格式">布局及格式</h3>
+<p>和研发文档编写规范统一。</p>
+<h2 id="文档存储">文档存储</h2>
+<p>文档工程师编写的文档存放路径：</p>
+<ul>
+<li>发布前服务器：TBD</li>
+<li>发布后服务器：TBD</li>
+</ul>
+<blockquote><p>每个产品文档文件夹下都有《XXXX文档发布记录表.xls》，这个文件中填写编写依据的软件版本及每次修改的内容等，并注上修改时间和姓名。</p>
+</blockquote>
+<p>编制：                     审核：                     批准：                 </p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20135;&#21697;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539;-R2.0.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>
