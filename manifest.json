@@ -2889,6 +2889,83 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/公式.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/公式.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/分图转换.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/分图转换.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/对话框内部标注.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/对话框内部标注.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/对话框内部框选.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/对话框内部框选.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/截图拼接.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/截图拼接.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/标注1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/标注1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/标注2.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/标注2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/示意图反例1.png",
       "output": {
         "resource": {
@@ -2915,6 +2992,28 @@
       "output": {
         "resource": {
           "relative_path": "doc/研发文档编写指南/img/箭头.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/透明对话框.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/透明对话框.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/透明对话框反.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/透明对话框反.png"
         }
       },
       "is_incremental": false,
@@ -2956,7 +3055,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "xgQsG84IvyI7NdeCrWF25EdtwHfUC1UjKfTD1wkB/eU="
+          "hash": "iEns87kwTdTI1r0/HBCP/n/rIh4qUc14DQ5Oowr5HZ4="
         }
       },
       "is_incremental": false,
@@ -3226,7 +3325,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/插图.html",
-          "hash": "dDV8u8RbBXlK25fEmnMMV3Ph9VRqwGfSLbByCQ/rH0w="
+          "hash": "GUfUwXK9Ijj1xW/sw/7vkgkep4BeKPPQxfNo0f+Juu4="
         }
       },
       "is_incremental": false,
