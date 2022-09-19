@@ -3321,6 +3321,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/提示警告.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/内容及格式/提示警告.html",
+          "hash": "mjcdGSXF0jLYQurSIpXt25YykMtLKT3WT4OqPIjGaXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/内容及格式/插图.md",
       "output": {
         ".html": {
@@ -5340,7 +5352,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 94,
+          "total_file_count": 95,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
