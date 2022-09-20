@@ -3052,7 +3052,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "li9SIwp3fnuHy55jqJ5PExyX+tJozpXSXjJNLmkMUTg="
+          "hash": "290BVZ8sWl6Fmbxp+gvL6JKIPcBvj5ylJIK3hLGB7jw="
         }
       },
       "is_incremental": false,
@@ -3266,6 +3266,18 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/厂商手册.html",
           "hash": "LRRWjzTTPQ5MdOg1PmHEhBQxD1ow11mxaje4FOOUoAg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/技术设计方案.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写指导/技术设计方案.html",
+          "hash": "8xUmNSz9/nnPl/mvIm+4oYffTapa8uMn5ajUECan/Z8="
         }
       },
       "is_incremental": false,
@@ -5364,7 +5376,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 96,
+          "total_file_count": 97,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
