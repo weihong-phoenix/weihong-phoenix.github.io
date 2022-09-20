@@ -3052,7 +3052,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "290BVZ8sWl6Fmbxp+gvL6JKIPcBvj5ylJIK3hLGB7jw="
+          "hash": "li9SIwp3fnuHy55jqJ5PExyX+tJozpXSXjJNLmkMUTg="
         }
       },
       "is_incremental": false,
@@ -3209,6 +3209,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/design(技术设计方案).md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写指导/design(技术设计方案).html",
+          "hash": "WfpPdx3YJaCNqreBkEh2JghM4RbBdMIUp+BkvO3Hiaw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/risk(风险评估文件).md",
       "output": {
@@ -3251,18 +3266,6 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/厂商手册.html",
           "hash": "LRRWjzTTPQ5MdOg1PmHEhBQxD1ow11mxaje4FOOUoAg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/技术设计方案.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写指导/技术设计方案.html",
-          "hash": "8xUmNSz9/nnPl/mvIm+4oYffTapa8uMn5ajUECan/Z8="
         }
       },
       "is_incremental": false,
