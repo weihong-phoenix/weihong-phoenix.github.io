@@ -87,7 +87,7 @@
   "doc/研发文档编写指南/具体文档编写指导/design(技术设计方案).html": {
     "href": "doc/研发文档编写指南/具体文档编写指导/design(技术设计方案).html",
     "title": "XXX方案设计",
-    "keywords": "XXX方案设计 文档版本：Rn 背景 用语 编号 用语 描述 1 2 设计原理 基本设计 核心问题 框架图 接口设计 XXX数据接口 Name Type Attribute Default Value Unit Description Script接口 Name Description API1 API1(par) Declaration API1(par1,pare2) Return Parameters Type Name Unit Description par1 par2 Remarks 平台接口 Name Description API2 API2(par) Declaration API2(par1,par2) Parameters Type Name Unit Description par1 par2 Return Remarks Example -- 示例 协作说明 功能协作说明 非功能协作说明 设计补充说明 附录 修改记录 序号 版本 修订人 日期 描述 1 R1.0 初版建立 点击下载： [团队名称]-[XXX方案设计]-模板"
+    "keywords": "XXX方案设计 文档版本：Rn 背景 用语 编号 用语 描述 1 2 设计原理 基本设计 核心问题 框架图 接口设计 XXX数据接口 Name Type Attribute Default Value Unit Description Script接口 Name Description API1 API1(par) Declaration API1(par1,pare2) Return Parameters Type Name Unit Description par1 par2 Remarks 平台接口 Name Description API2 API2(par) Declaration API2(par1,par2) Parameters Type Name Unit Description par1 par2 Return Remarks Example -- 示例 协作说明 功能协作说明 非功能协作说明 设计补充说明 附录 修改记录 序号 版本 修订人 日期 描述 1 R1.0 初版建立 点击下载："
   },
   "doc/研发文档编写指南/具体文档编写指导/README(远景范围文件).html": {
     "href": "doc/研发文档编写指南/具体文档编写指导/README(远景范围文件).html",
@@ -119,11 +119,6 @@
     "title": "XXX-XXX-厂商手册",
     "keywords": "XXX-XXX-厂商手册 前言 说明： 标准感谢语：首先感谢您选择***软件！ 阅读建议 符号约定 修订历史 官网上用户手册和编程手册该部分内容保留一个即可。 概述 官网上用户手册和编程手册该部分内容保留一个即可。 接线 介绍机床结构、端子板及接线方法等。 主要介绍与机床连接相关的参数、驱动器与端子板接线图。 参数一览：列表说明所有参数，其中详细说明见“操作”章节介绍，“操作”中没有涉及到的参数在此做简要说明。 除了以上必须要包含的内容，不同板卡的厂商手册可以针对板卡特有的功能进行介绍。 系统调试 介绍操作系统恢复、Ncstudio安装与打包、列表说明每种报警的产生原因、解决办法、常见故障处理。 快速开始 按照功能分模块介绍软件。每个模块大概从概念及原理、操作过程、参数三个方面介绍，在操作过程中要设置哪些参数、遇到问题时应该怎样调整参数、参数之间有什么联系。 系统操作 系统维护 常见问题 参数设置、操作过程中遇见的常见问题进行说明。 法律声明 和用户手册一致，官网保留一个即可。"
   },
-  "doc/研发文档编写指南/具体文档编写指导/技术设计方案.html": {
-    "href": "doc/研发文档编写指南/具体文档编写指导/技术设计方案.html",
-    "title": "",
-    "keywords": "TODO"
-  },
   "doc/研发文档编写指南/具体文档编写指导/用户手册.html": {
     "href": "doc/研发文档编写指南/具体文档编写指导/用户手册.html",
     "title": "XXX-XXX-用户手册",
@@ -132,7 +127,7 @@
   "doc/研发文档编写指南/具体文档编写指导/用户验收报告.html": {
     "href": "doc/研发文档编写指南/具体文档编写指导/用户验收报告.html",
     "title": "用户验收报告",
-    "keywords": "用户验收报告 基本信息 验收原因 说明： 按照计划对外发布版本。 验收时间 说明： 验收开始时间至结束时间。 2022-8-19~2022-9-30 验收责任人 说明： 验收负责人或者其代理工程师。 祁彩云 验收版本 说明： 验收版本，可能会有多个验收版本。 LS6500A-Dual Channel-LD-15.017.74_Beta 验收环境 说明： 平台及操作系统+控制器型号及版本+驱动器型号及版本+其它相关设备。 PC机+LD21E-04+汇川驱动器+随动台。 验收范围及结论 说明： 验收版本可能有多个。 UE除了做些执行验收，还需要对测试的文档进行验收。 版本 范围 结论 发现Bug LS6500A-Dual Channel-LD-15.017.74_Beta 1. 全面测试执行报告； 2. 自动化测试报告； 3. 用户手册； 4. 基本功能 失败 5⃣️ LS6500A-Dual Channel-LD-15.017.75_Beta 1.Bug修复 通过 1. dd 遗留Bug及处理 Bug-TFS# Bug描述 遗留原因 处理措施 影响范围小 延期下一个版本修改。 修改成本高，有规避措施 出现问题，可以通过修改XXXX解决，后期版本计划处理。 用户文档 说明： 厂商手册、用户手册、编程手册等文档路径"
+    "keywords": "用户验收报告 基本信息 验收原因 案例： 按照计划对外发布版本。 验收时间 案例： 2022-8-19~2022-9-30 验收责任人 案例： 祁彩云 验收版本 案例： LS6500A-Dual Channel-LD-15.017.74_Beta 验收环境 案例： PC机+LD21E-04+汇川驱动器+随动台。 验收范围及结论 版本 范围 结论 发现Bug LS6500A-Dual Channel-LD-15.017.74_Beta 1. 全面测试执行报告； 2. 自动化测试报告； 3. 用户手册； 4. 基本功能 失败 5⃣️ LS6500A-Dual Channel-LD-15.017.75_Beta 1.Bug修复 通过 1. dd 遗留Bug及处理 Bug-TFS# Bug描述 遗留原因 处理措施 影响范围小 延期下一个版本修改。 修改成本高，有规避措施 出现问题，可以通过修改XXXX解决，后期版本计划处理。 用户文档"
   },
   "doc/研发文档编写指南/具体文档编写指导/编程手册.html": {
     "href": "doc/研发文档编写指南/具体文档编写指导/编程手册.html",

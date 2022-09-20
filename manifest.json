@@ -3052,7 +3052,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "290BVZ8sWl6Fmbxp+gvL6JKIPcBvj5ylJIK3hLGB7jw="
+          "hash": "li9SIwp3fnuHy55jqJ5PExyX+tJozpXSXjJNLmkMUTg="
         }
       },
       "is_incremental": false,
@@ -3209,15 +3209,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/design(技术设计方案).md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/design(技术设计方案).html",
-          "hash": "WfpPdx3YJaCNqreBkEh2JghM4RbBdMIUp+BkvO3Hiaw="
+          "hash": "4iVkqfyS12lXBFrZ1db9nhwBU+Yp5GfoaP6C2DB/2Ps="
         }
       },
       "is_incremental": false,
@@ -3273,18 +3270,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/技术设计方案.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写指导/技术设计方案.html",
-          "hash": "8xUmNSz9/nnPl/mvIm+4oYffTapa8uMn5ajUECan/Z8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/用户手册.md",
       "output": {
         ".html": {
@@ -3301,7 +3286,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/用户验收报告.html",
-          "hash": "PV58DwkQBoAqX1Txf80KPhlH6jX+0HLLwmWKqPwhcR8="
+          "hash": "5SnrMRbp0FcyIDenoZGRxXKYQ5h1LHVxvwI6I5/KkU8="
         }
       },
       "is_incremental": false,
@@ -5376,7 +5361,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 97,
+          "total_file_count": 96,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
