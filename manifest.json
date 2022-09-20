@@ -3047,15 +3047,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "25yHoma7OLLwn8oIA+c+Zm6eTa6Jste1qTCsmeQUCt8="
+          "hash": "H8gfY5n+tV3GKFSM/xUpIAS5eKH0TlE/bA6K55nT1ZE="
         }
       },
       "is_incremental": false,
@@ -3079,7 +3076,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/产品文档编写规范-R2.0.html",
-          "hash": "ntMp4/RtEAMQUzpgdT8NcurGZ7TuJW4gvkYvqVLHOkE="
+          "hash": "cQn/Otw5cnG3W5yq7uGqFJ7EvBV6Hk6BBnmN+6STpxY="
         }
       },
       "is_incremental": false,
@@ -3491,6 +3488,18 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/文档版本.html",
           "hash": "4QabEa2cittcDHhlaNaXsLHR+WrVk8TDlGkX4wSKd9Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/目录结构及命名/文档类型.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/目录结构及命名/文档类型.html",
+          "hash": "5mwjAmf0/TP50F/LKEm+V+0EHAn+FGJVSrH9zIYEAMs="
         }
       },
       "is_incremental": false,
@@ -5352,7 +5361,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 95,
+          "total_file_count": 96,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
