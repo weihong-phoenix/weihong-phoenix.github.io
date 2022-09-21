@@ -79,11 +79,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="xxx方案设计">XXX方案设计</h1>
 
-<hr>
-<p>文档版本：Rn</p>
-<hr>
 <h2 id="背景">背景</h2>
-<h2 id="用语">用语</h2>
+<blockquote><p>说明：简述系统或功能背景，包括但不限于：简述需求、规格、核心问题。</p>
+</blockquote>
+<h2 id="术语和定义">术语和定义</h2>
+<blockquote><p>说明: 需要时添加。对文中出现的比较专业、难以理解的词语进行解释。注意用语的一致性。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -106,10 +107,16 @@
 </tbody>
 </table>
 <h2 id="设计原理">设计原理</h2>
+<blockquote><p>说明: 描述该方案要解决的核心问题和基本设计（重点是核心问题），通过描述让读者明白为什么这样设计。</p>
+</blockquote>
 <h3 id="基本设计">基本设计</h3>
 <h3 id="核心问题">核心问题</h3>
 <h2 id="框架图">框架图</h2>
+<blockquote><p>说明: 基本需要。需要通过框架图让读者明白框架发生了哪些改变（变动的模块或接口可用红色标注），以及本次设计主要通过哪些模块解决了问题。框架图都需要基于《CNC基础框图》进行绘制。</p>
+</blockquote>
 <h2 id="接口设计">接口设计</h2>
+<blockquote><p>说明:  本章节说明接口相关内容：数据接口、Script接口、跨团队接口（CNC平台接口、CAD平台接口等）。需描述接口名称、类型、属性、默认值、单位、描述等内容。</p>
+</blockquote>
 <h3 id="xxx数据接口">XXX数据接口</h3>
 <table>
 <thead>
@@ -142,6 +149,8 @@
 </tbody>
 </table>
 <h3 id="script接口">Script接口</h3>
+<blockquote><p>说明:基本需要。本章节描述Script接口，先整体介绍涉及到的接口，每个接口的具体信息在子章节中进行介绍，并做对应的链接，方便查看。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -161,10 +170,16 @@
 </tbody>
 </table>
 <h4 id="api1par">API1(par)</h4>
+<blockquote><p>说明: 函数功能简述。</p>
+</blockquote>
 <p><strong>Declaration</strong></p>
 <pre><code>API1(par1,pare2)
 </code></pre><p><strong>Return</strong></p>
+<blockquote><p>说明: 根据需要添加。说明函数返回值。</p>
+</blockquote>
 <p><strong>Parameters</strong></p>
+<blockquote><p>说明: 根据需要添加。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -190,7 +205,11 @@
 </tbody>
 </table>
 <p><strong>Remarks</strong></p>
+<blockquote><p>说明:基本需要。进一步说明函数的使用场景。</p>
+</blockquote>
 <h3 id="平台接口">平台接口</h3>
+<blockquote><p>说明: 根据需要添加。若产品线需要软件平台提供接口，需要明确指出。编写格式同Script接口。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -210,9 +229,13 @@
 </tbody>
 </table>
 <h4 id="api2par">API2(par)</h4>
+<blockquote><p>说明: 函数功能说明。</p>
+</blockquote>
 <p><strong>Declaration</strong></p>
 <pre><code>API2(par1,par2)
 </code></pre><p><strong>Parameters</strong></p>
+<blockquote><p>说明: 根据需要添加。</p>
+</blockquote>
 <table>
 <thead>
 <tr>
@@ -238,43 +261,33 @@
 </tbody>
 </table>
 <p><strong>Return</strong></p>
+<blockquote><p>说明: 根据需要添加。</p>
+</blockquote>
 <p><strong>Remarks</strong></p>
+<blockquote><p>说明: 基本需要。进一步说明函数的使用场景,以及要求。</p>
+</blockquote>
 <p><strong>Example</strong></p>
+<blockquote><p>说明:根据需要添加。给出函数使用的示例。</p>
+</blockquote>
 <pre><code>-- 示例
 </code></pre><h2 id="协作说明">协作说明</h2>
+<blockquote><p>说明: 需要说明各模块间是如何协作完成功能，可以使用时序图或协作图。时序图和协作图语义上是等价的，时序图多了时间维度，协作图只有顺序，此外协作图强调空间结构（模块间的上下关系）。</p>
+</blockquote>
 <h3 id="功能协作说明">功能协作说明</h3>
+<blockquote><p>说明: 协作功能说明应与该系统的规格或功能规格书中的规格项对应，例如规格中有两项功能，则至少需要两项协作说明。下例中人可以是软件模块，消息可以是函数调用。
+说明: 协作过程中的异常情况可用单独的时序或协作图表示，功能协作要体现异常情况。时序图使用mermaid语言编制。</p>
+</blockquote>
 <h3 id="非功能协作说明">非功能协作说明</h3>
+<blockquote><p>说明: 需要说明各模块间是如何协作达成某些非功能性指标，例如性能、资源限制的解决。</p>
+</blockquote>
 <h2 id="设计补充说明">设计补充说明</h2>
-<h2 id="附录">附录</h2>
-<h1 id="修改记录">修改记录</h1>
-<table>
-<thead>
-<tr>
-<th>序号</th>
-<th>版本</th>
-<th>修订人</th>
-<th>日期</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>R1.0</td>
-<td></td>
-<td></td>
-<td>初版建立</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>点击下载：</p>
+<blockquote><p>说明: 需要对系统的设计兼容性做说明。
+说明: 需要对系统的复用性做说明，例如计划复用哪个系统的哪个模块。
+说明: 需要对系统的可扩展性做说明。</p>
+</blockquote>
+<h2 id="案例及模版">案例及模版</h2>
+<p>典型案例：
+模版下载：</p>
 </article>
           </div>
           
