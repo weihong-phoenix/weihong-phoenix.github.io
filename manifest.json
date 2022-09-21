@@ -2966,6 +2966,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/流程图.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/流程图.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/示意图反例1.png",
       "output": {
         "resource": {
@@ -3518,6 +3529,17 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/过程批注.html",
           "hash": "SABiAWz/gXgCSJn3JaACjh7zr+Zjgo1n01/aDjxyAZI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/发布流程图.doc",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/发布流程图.doc"
         }
       },
       "is_incremental": false,
