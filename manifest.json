@@ -3295,6 +3295,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/[团队名称]-[产品名称]-risk-模版-Rn.md.zip",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/具体文档编写指导/[团队名称]-[产品名称]-risk-模版-Rn.md.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/[团队名称]-[产品名称]-roles-模版-Rn.md",
       "output": {
@@ -3384,7 +3395,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/roles(项目结构文件).html",
-          "hash": "SOqMzhCq5FjWpIDubCYHJJoVsS6PJfCsle6uBZg8lqc="
+          "hash": "2t7dcbWDPgnF/y+QXtc/ERRfh8ZURObRbLcIhN7u9Oc="
         }
       },
       "is_incremental": false,
