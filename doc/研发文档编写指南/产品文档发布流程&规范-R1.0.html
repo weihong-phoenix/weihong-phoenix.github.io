@@ -126,65 +126,53 @@
 <h3 id="流程图">流程图</h3>
 <p><img src="img/%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="img"></p>
 <h3 id="流程解释">流程解释</h3>
-<h4 id="编写内审">编写&amp;内审</h4>
+<h4 id="发布申请">发布申请</h4>
 <p><strong>任务&amp;责任人</strong></p>
 <ol>
-<li>编写产品文档（手册），必须包括厂商手册、用户手册和编程手册或NcEditor用户手册，UE工程师。</li>
-<li>内部审核产品文档，产品经理。</li>
+<li>准备待发布产品文档（手册）UE工程师。</li>
+<li>通过Jira提交发布申请。</li>
 </ol>
+<p><strong>输入</strong>：</p>
+<ol>
+<li>待发布产品文档，必须包括厂商手册、用户手册和编程手册。</li>
+<li>文档必须和其它资产文件一样存储在仓库，通过docfx工具自动生成到官网的测试服务器。</li>
+</ol>
+<blockquote><p>源代码服务器和测试服务器会通过持续集成进行每日同步。
+比如，一般存储在NK310-&gt;doc-&gt;user下面。（待讨论）</p>
+</blockquote>
 <p><strong>输出</strong>：</p>
 <ol>
-<li>产品文档，包括厂商手册、用户手册和编程手册。</li>
-<li>《XX产品手册发布记录表》</li>
-<li>OA发布审核申请（《产品手册发布审批流程》）</li>
+<li>发布审核申请</li>
 </ol>
-<p><strong>【规则】</strong>：UE编写产品文档需先学习《研发文档编写指南》，并通过软件部考试。</p>
-<blockquote><p>是否需要学习考试，有待确认。</p>
-</blockquote>
-<p><strong>【规则】</strong>：OA申请单由UE提交，转由产品经理批复，批复后转到软件部UE。</p>
-<blockquote><p>说明：
-产品文档提交软件部审核前必须通过产品经理审核签字。可以在OA上进行流程控制。</p>
-</blockquote>
+<p><strong>【原则】</strong>：UE编写产品文档需先学习并熟悉《产品研发文档编写指南》及《产品研发文档编写规范》。
+<strong>【规则】</strong>：必须通过Jira定义的模版提交发布申请。</p>
 <h4 id="审核">审核</h4>
 <p><strong>任务</strong></p>
 <ol>
-<li>审核待发布的产品文档，软件部UE</li>
-</ol>
-<p><strong>输入</strong></p>
-<ol>
-<li>OA发布审核申请</li>
-<li>待<strong>审核</strong>产品文档，包括厂商手册、用户手册、编程手册及发布记录表</li>
+<li>审核待发布的产品文档，产品经理</li>
 </ol>
 <p><strong>输出</strong></p>
 <ol>
-<li>待<strong>发布</strong>产品文档，包括厂商手册、用户手册、编程手册及发布记录表</li>
-<li>《审核项及记录表》</li>
+<li>发布审核通过</li>
 </ol>
-<p><strong>【规则】</strong>：软件部UE审核后，通过OA申请单转由软件部经理批复，批复后转到产品线UE工程师。</p>
-<blockquote><p>需要确定审核项（checklist）</p>
-</blockquote>
+<p><strong>【规则】</strong>：必须通过Jira定义的模版提交发布审核。</p>
 <h4 id="发布">发布</h4>
 <p><strong>任务</strong></p>
 <ol>
-<li>完成产品文档发布流程，软件部UE</li>
-</ol>
-<p><strong>输入</strong></p>
-<ol>
-<li>OA发布审核通过</li>
+<li>完成产品文档发布流程</li>
+<li>官网验证产品文档上线，软件部配置管理</li>
 </ol>
 <p><strong>输出</strong></p>
 <ol>
-<li><p>OA发布审核归档</p>
-</li>
-<li><p>文档归档及官网上线</p>
-</li>
+<li>发布审核归档</li>
+<li>官网正式发布</li>
 </ol>
-<p><strong>【规则】</strong>：OA申请单必须包括正确、完整的产品文档路径。</p>
-<blockquote><p>OA申请单必填内容和格式需要定义。</p>
-</blockquote>
+<p><strong>【规则】</strong>：必须通过Jira定义的模版提交发布归档，并触发持续集成自动从官网测试服务器发布到线上服务器。</p>
 <h2 id="文档存储">文档存储</h2>
-<p>文档发布前存储在服务器：</p>
-<p>文档发布后通过持续集成工具发布到外网服务器：</p>
+<p><strong>源代码服务器</strong>： 文档开始编写到申请发布都会保存在源代码服务器。
+<strong>官网测试服务器</strong>：官网测试服务器和源代码服务器内容基本保持一致，通过持续集成进行同步设置（每天同步一次？）。
+<strong>官网线上服务器</strong>：发布归档后文档自动集成到官网线上服务器。</p>
+<p><strong>【规则】</strong>：仅文档开始创建时需要人工保存到源代码服务器，其它所有的存储全部通过自动化的形式进行触发。</p>
 <p>编制： 祁彩云                 审核：胡凯烽                      批准：                 </p>
 </article>
           </div>
