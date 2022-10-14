@@ -3055,12 +3055,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "aXEurGjFEPsEO7Zed/vTykgvt9zproB2d1Jxcgs+660="
+          "hash": "PnYOKLJpxXenxp/L7OXedqkRrdJhxlJNbYxIJLhKKnI="
         }
       },
       "is_incremental": false,
@@ -3068,11 +3071,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/产品文档发布流程&规范-R1.0.md",
+      "source_relative_path": "doc/研发文档编写指南/产品文档发布指南-R1.0.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/产品文档发布流程&规范-R1.0.html",
-          "hash": "Ids0G8kWwIzvmoLIbQpIHql/OBLe+EUmUNfT3g3I094="
+          "relative_path": "doc/研发文档编写指南/产品文档发布指南-R1.0.html",
+          "hash": "+znVzW1WmKGUMNxfI1YGYss9I/mnvSLvsqkXWE1Oigw="
         }
       },
       "is_incremental": false,
@@ -3199,6 +3202,21 @@
       "output": {
         "resource": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/vscode-快捷键.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/用户文档官网发布.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/用户文档官网发布.html",
+          "hash": "eVpys5sBaz60y4j94Rv6Kg7xzKhrc1Ftp0XP0OS/V5Y="
         }
       },
       "is_incremental": false,
@@ -3416,7 +3434,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/厂商手册.html",
-          "hash": "SfEJ21figcJUZp00h/cGrsRJAiFcAyz+Rn4bRrBY/F0="
+          "hash": "ZWXokTr1goDuKd6J1pzTNsyWi5/u/84Lff8vSNaMb38="
         }
       },
       "is_incremental": false,
@@ -3628,7 +3646,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/大纲定义.html",
-          "hash": "xBTXDgv8Ygog1mKDL2APGNrI/rj+SgioRFbxHJ8C51E="
+          "hash": "/yCSQ/feIZgduUTOnEgfktzxB4b0HgrFJlVsTwnbPmo="
         }
       },
       "is_incremental": false,
@@ -3652,7 +3670,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/文档版本.html",
-          "hash": "4QabEa2cittcDHhlaNaXsLHR+WrVk8TDlGkX4wSKd9Y="
+          "hash": "Z1aO1U40eBpMuEah/4PZGdddVpWnw/fe7xpb9T+og4Y="
         }
       },
       "is_incremental": false,
@@ -3676,7 +3694,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/目录结构及命名/目录规范.html",
-          "hash": "6BHNDlu7RdVnF/ua+BYsD7aPQsD/qHCToPQbDgA50wQ="
+          "hash": "4omx8UZ2k2Zle2GgdbvGnHPlpO3HItgs3qNjy7WquUI="
         }
       },
       "is_incremental": false,
@@ -5526,7 +5544,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 107,
+          "total_file_count": 108,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

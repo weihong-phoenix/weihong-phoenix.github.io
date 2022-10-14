@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#30446;&#24405;&#35268;&#33539; </title>
+    <title>&#29992;&#25143;&#25991;&#26723;&#23448;&#32593;&#21457;&#24067; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#30446;&#24405;&#35268;&#33539; ">
+    <meta name="title" content="&#29992;&#25143;&#25991;&#26723;&#23448;&#32593;&#21457;&#24067; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,36 +77,33 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="目录规范">目录规范</h1>
+<h1 id="用户文档官网发布">用户文档官网发布</h1>
 
-<p>参考文档《软件项目目录与文件管理规范-R3.1》的【目录结构】章节。要求如下：</p>
-<p>仓库必须符合本节要求的目录结构</p>
-<h2 id="原则">原则</h2>
-<ul>
-<li>宜采用浅的目录结构，或者称为扁平的目录结构。</li>
-<li>可选文件和目录，应等到需要的时候再去建立。</li>
-<li>目录和文件名应尽可能采用英文。</li>
-<li>请注意，目录和文件名的大小写必须符合规定。这是因为考虑到linux平台的可移植性。</li>
-</ul>
-<h2 id="git-服务器端的目录和文件结构">git 服务器端的目录和文件结构</h2>
-<pre><code class="lang-csharp">&lt;project-name&gt;/                     ; project root dir                       
-    +-- doc/                                    
-        +-- srs/                     ; 产品的srs
-        +-- design/                  ; 产品的设计文档
-        +-- usermanual/             ; 产品的用户文档
-    +-- pm/                             
-        +-- risk.md                             
-        +-- roles.md                            
-        +-- stakeholder.md
-    +-- src/                                
-    +-- test/                               
-    +-- .editorconfig               ; or `.clang-format`                   
-    +-- .gitattributes
-    +-- .gitignore                      
-    +-- README.md                       
-    +-- &lt;project-name&gt;.sln          
-</code></pre><div class="NOTE"><h5>Note</h5><p>《软件项目目录与文件管理规范-R3.1》文档由软件部维护和发布，请参考当前最新版本。</p>
-</div>
+<p>产品的用户文档需要按需、及时、自动同步到官方网站的【产品文档】栏目下。</p>
+<h2 id="存储">存储</h2>
+<h3 id="源文件">源文件</h3>
+<p>所有的用户文档和其它资产文件一样，存储到代码仓库，具体目录参考本文档的【目录结构及命名】-&gt;【目录规范】章节。</p>
+<blockquote><p>说明：</p>
+<ol>
+<li>MSF项目严格按照目录结构及命名的要求。非MSF项目文档目录由产品线自行设计。</li>
+<li>原官网的文件服务器将不再维护，即其文件保持只读不写的状态。</li>
+<li>原官网的产品文档若需要维护，则迁移到相应的【代码库】维护。</li>
+<li>产品线需登记【代码库】地址到软件部wiki（confluence网站：软件部-用户体验-文档管理-产品文档发布-官网）。</li>
+</ol>
+</blockquote>
+<h3 id="发布文件">发布文件</h3>
+<p>官网文件服务器的文件目录按照行业分类，和官网主页保持一致，具体目录参考本文档【目录结构及命名】-&gt;【大纲定义】章节。</p>
+<h2 id="发布过程">发布过程</h2>
+<ol>
+<li><p>产品文档编辑人员仅需要在代码仓库编辑用户文档。</p>
+</li>
+<li><p>文档签入后会通过持续集成自动同步到官网测试网站。</p>
+</li>
+<li><p>官网测试网站到正式上线通过持续集成同步。（通过签入时标记的<strong>doc release</strong>标签进行同步。）</p>
+</li>
+</ol>
+<p>附录：草稿图片
+<img src="../img/docrelease.jpeg" alt="参考图"></p>
 </article>
           </div>
           
@@ -115,7 +112,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#30446;&#24405;&#32467;&#26500;&#21450;&#21629;&#21517;/&#30446;&#24405;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20179;&#24211;&#21450;&#21457;&#24067;&#24037;&#20855;/&#29992;&#25143;&#25991;&#26723;&#23448;&#32593;&#21457;&#24067;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
