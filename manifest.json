@@ -4901,15 +4901,14 @@
     },
     {
       "log_codes": [
-        "InvalidFileLink",
-        "EmptyTocItemName"
+        "InvalidFileLink"
       ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/toc.html",
-          "hash": "YH1diTSgb6yXHQAyLTv3ixDsvOPbtfazTtjU1GAfYuM="
+          "hash": "JNViyA3LbHDpjOcHQ9TozTNysOMjn9K9Jy1Q6+E2dZo="
         }
       },
       "is_incremental": false,
