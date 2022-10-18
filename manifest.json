@@ -4780,6 +4780,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/skxt.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/skxt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/xt.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/xt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/测试需要懂开发.png",
       "output": {
         "resource": {
@@ -4956,7 +4978,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第一章从业务开始/业务学习资料.html",
-          "hash": "rllotJ9Q9cM7uTAiumLNeyGUe6+4fEkmLxF0qp0cUk4="
+          "hash": "3H0la6M/hSbr9wrL4jAYhhqP5+ciRJTlAoNIelAqs4U="
         }
       },
       "is_incremental": false,
@@ -4980,7 +5002,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第一章从业务开始/认识数控系统.html",
-          "hash": "6/hJNceNfYo0ah+e4g7s3gSmKSw0ycphhJv1Gfajlho="
+          "hash": "G8rbWLu5ymh+dIpMGzm9amfVHoIJqcUyngT1Ca7QRxE="
         }
       },
       "is_incremental": false,
