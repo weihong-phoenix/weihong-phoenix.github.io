@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#36136;&#37327;&#27169;&#22411;&#12289;&#27979;&#35797;&#31867;&#22411;&#21644;&#27979;&#35797;&#26041;&#27861; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#36136;&#37327;&#27169;&#22411;&#12289;&#27979;&#35797;&#31867;&#22411;&#21644;&#27979;&#35797;&#26041;&#27861; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" class="svg" src="../../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="质量模型测试类型和测试方法">质量模型、测试类型和测试方法</h1>
+
+<p>我们在掌握质量模型章节，明白了质量模型和测试类型的逻辑关系，而我们经常说的测试方法，和测试类型又是什么的关系呢？底层逻辑搞搞清楚，才不会被很多概念或者不专业的说法忽悠。</p>
+<p>这里我把测试方法分为两大类，一种是测试分析方法，一种是测试用例设计方法，两者有先后顺序，且终极目标不同。</p>
+<h4 id="逻辑关系">逻辑关系</h4>
+<p>从质量模型的质量特性，确定测试类型，是从不同质量特性的不同维度对测试对象进行验证。其终极目标是：确定针对系统或功能，要做哪些类型的测试，比如功能测试、性能测试、可靠性测试。</p>
+<p>这是第一层的测试分析。</p>
+<p>确定了功能测试、性能测试和可靠性测试等等。</p>
+<p>下面进行第二层的分析。</p>
+<p>如果该功能属于流程类型的，那么我们采用流程分析法，确定测试该功能需要多少条测试路径进行覆盖。</p>
+<p>当然很多功能可以采用多种分析方法，达到殊途同归的效果，比如也可以采用场景分析法。</p>
+<p>第二层分析，确定了测试路径，或者有多少测试项、测试子项对该功能进行验证。</p>
+<p>确定路径之后，还并不是最终对测试用例，一个路径需要多个操作步骤，而每个操作步骤都有相应的输入或者条件，这些输入不同的人输入不同的数据，那么我们讲需要设计不同的数据对其进行测试。</p>
+<p>测试数据的设计是第三层的测试，我们通常用的等价类、边界值重点是用例的设计。</p>
+<p>我们可以把第一层和第二层的分析，称为测试分析，那么其采用的方法就是测试分析方法。第三层的方法称为测试用例设计方法。</p>
+<p>当然这个也可以定义为第一层是测试分析方法，第二层和第三层是测试用例设计方法，把测试路径做完测试用例的维度也不是不可以。</p>
+<p>但是如何称呼，如何定义都需要了解底层的逻辑，逻辑清晰了，叫什么名字，其实不是很重要了。但是团队内部要建立同样的认知，否则会存在沟通上的偏差。</p>
+<p>为了统一思想，我们按照第一种定义，就是第一层和第二层的测试，统称为测试分析方法。那么得出结论，我们本书覆盖的这些方法就可以定义如下：</p>
+<p>测试分析方法包括：质量模型分析法、场景分析法、流程分析法。</p>
+<p>测试用例设计方法包括：等价类、边界值法。</p>
+<p>不同层次的测试方法不同，相同层次的需要进行的覆盖也不同，比如我们会花大部分的精力在功能测试，功能测试的测试方法也是最多的，可以用下图形象的表示：</p>
+<p>画一张图，形象有点像金字塔，姑且称为产品/系统级测试等金字塔模型。和测试行业的提到的金字塔模型并不相同。有兴趣的同学可以网上搜索对比一下。</p>
+<h2 id="测试分析方法">测试分析方法</h2>
+<h4 id="最终目标">最终目标</h4>
+<ul>
+<li>确定从哪些维度（功能、性能和可靠性）进行测试设计。</li>
+<li>确定功能、性能和可靠性测试维度。</li>
+</ul>
+<h4 id="功能测试方法">功能测试方法</h4>
+<p>大部分的用例设计方法主要是为功能测试设计的，因此都可以应用在功能测试。</p>
+<h4 id="可靠性测试方法">可靠性测试方法</h4>
+<p>在功能的基础之上才可以做性能测试，其实是基于测试对象的用户不同、运行环境不同，因此需要站在不同的场景之下进行测试的设计。《软件测试架构师修炼之道》里面提出的多、并、复、异四个点不仅容易记忆而且比较实用。</p>
+<ul>
+<li>多</li>
+<li>并</li>
+<li>复</li>
+<li>异</li>
+</ul>
+<h4 id="易用性测试">易用性测试</h4>
+<h4 id="性能测试">性能测试</h4>
+<h3 id="测试用例设计方法">测试用例设计方法</h3>
+<h4 id="方法对比">方法对比</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="最终目标-1">最终目标</h4>
+<ul>
+<li>确定测试路径。（一个路径可以设计成多条测试用例，如果从自动化的角度，一个路径是一个重复的步骤，可以编写一个脚本，覆盖一组测试数据）</li>
+<li><p>确定一条条测试用例。（一条用例一个数据）</p>
+</li>
+<li><p>测试数据的设计</p>
+</li>
+<li>测试覆盖率的概念</li>
+</ul>
+<h1 id="测试方法对比">测试方法对比</h1>
+<p>什么是测试方法？测试方法的分类。</p>
+<p>按照不同角度分，测试方法的名称不同。</p>
+<p>按照测试阶段，测试分为单元测试、集成测试、系统测试和用户验收测试。</p>
+<p>按照是否需要知道被测对象的内部逻辑，测试分为白盒、灰盒和黑盒测试。</p>
+<p>按照测试类型，测试分为功能测试、性能测试、易用性测试、可靠性测试、兼容性测试等。</p>
+<p>按照是否需要运行被测对象，测试分为静态测试、动态测试。</p>
+<blockquote><p>回答以下问题验证你是否理解测试方法。</p>
+<ol>
+<li><p>自动化测试是采用的白盒测试方法，对吗？为什么？</p>
+<p>自动测试工具包括黑盒测试工具，白盒测试工具，性能测试工具等等。
+不能说自动化测试属于哪一种测试，而是要看使用的是哪种测试工具。
+就是说不管是黑盒或者白盒测试，都有手动测试和自动化测试。</p>
+</li>
+</ol>
+</blockquote>
+<p>名称、来源、优势、不足、常用场景。</p>
+<p>1、等价类划分，将无限测试变成有限测试，这是减少工作量和提高测试效率最有效的方法；</p>
+<p>2、在任何情况下都必须使用边界值分析方法，用这种方法发现的程序错误能力最强；</p>
+<p>3、业务流清晰的系统，可用场景法贯穿整个测试案例过程，在案例中综合使用各种测试方法；</p>
+<h3 id="-"></h3>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/whtest-whitepapers/&#31532;&#20116;&#31456;&#31934;&#36890;&#27979;&#35797;&#26041;&#27861;/&#27979;&#35797;&#31867;&#22411;&#21644;&#27979;&#35797;&#26041;&#27861;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    
+      </body>
+</html>
