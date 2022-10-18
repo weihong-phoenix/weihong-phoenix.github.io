@@ -4824,6 +4824,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/阿军.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/阿军.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/阿娟.png",
       "output": {
         "resource": {
