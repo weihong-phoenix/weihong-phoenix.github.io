@@ -4780,6 +4780,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/ajun.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/ajun.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/skxt.png",
       "output": {
         "resource": {
@@ -4965,7 +4976,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/前言/整体架构.html",
-          "hash": "8bBMdnkl7N5e/v3yWw20BnLtm2G9ungTF7kNu0XJQhE="
+          "hash": "3/DVryfiZGMioi/M2iyu8SccoGDnLfCZGxjLTq38n5c="
         }
       },
       "is_incremental": false,
