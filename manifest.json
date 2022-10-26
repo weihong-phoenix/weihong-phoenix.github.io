@@ -5019,12 +5019,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/第一章从业务开始/认识数控系统.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第一章从业务开始/认识数控系统.html",
-          "hash": "1jutrlajtLlGX9YBrkKCIRQkJrt0KPY9YE+ZvchGWHk="
+          "hash": "B5t16aEq5pCzQX45JwcOXH+a7z1Iyhh6KdVdguYauEQ="
         }
       },
       "is_incremental": false,
@@ -5288,7 +5291,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/质量模型分析数控功能.html",
-          "hash": "jvrscwp7R44YToHBxlvvh0cpGz+z1pJ6Vmie3+b61Xg="
+          "hash": "4g8q8g8fsExasLOl0bzI9VisdUvld8SIaenKp83xeqQ="
         }
       },
       "is_incremental": false,
