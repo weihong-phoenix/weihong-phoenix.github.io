@@ -4813,6 +4813,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/zlmxu.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/zlmxu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/images/测试需要懂开发.png",
       "output": {
         "resource": {
