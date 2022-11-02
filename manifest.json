@@ -5297,12 +5297,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/质量模型分析数控功能.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/质量模型分析数控功能.html",
-          "hash": "4g8q8g8fsExasLOl0bzI9VisdUvld8SIaenKp83xeqQ="
+          "hash": "nTvMvdb+XfTXLIDwRJ59iFt/qkqgaR3em2PXOPiwZKE="
         }
       },
       "is_incremental": false,
