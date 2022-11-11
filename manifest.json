@@ -3055,15 +3055,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "iHUlA4SkCHMXlT8CAUI54Amvza25Sk7VEuN/76jV1GY="
+          "hash": "drHm3sLnkwLN/Rmi91HExzNc7CNfAqtYiUlDNYiQ0wE="
         }
       },
       "is_incremental": false,
@@ -6128,7 +6125,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "W7+DMmFzpEtJslb66vOvKHzvxWu+der3K/rA++xP5nc="
+          "hash": "4PD9wPsu9r4nzGKOFcGqKpmR3TZCa4/ZGoSRhlXpOgc="
         }
       },
       "is_incremental": false,
