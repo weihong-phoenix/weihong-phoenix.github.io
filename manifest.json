@@ -4972,7 +4972,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/toc.html",
-          "hash": "IJuOfSbe7LxqlbXx0YmPIRQk1wIy/73JTaz/FCXTkPc="
+          "hash": "BKTh/mlSxTGAGqkGadghXB9EXHHjMDjBlpjNzCMbmsU="
         }
       },
       "is_incremental": false,
@@ -5300,6 +5300,42 @@
         ".html": {
           "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第六章熟悉常用工具/常用工具.html",
           "hash": "6qRaAdco3moB+MHRD8usEoNknHZfZfDQGaIwk3H1poU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/案例-平台CNC安装功能质量模型分析.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/案例-平台CNC安装功能质量模型分析.html",
+          "hash": "/4FkoA6PPrs+/oXMnFib7uVfiH/MVNhQYqpzZO3+PGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/案例-激光平面CNCXXX功能质量模型分析.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/案例-激光平面CNCXXX功能质量模型分析.html",
+          "hash": "iPIlQQE6cTubkLin8ZY9TzEbkZIXX1+0fjWywpGt1W8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/案例-金属切削XXX功能质量模型分析.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/whtest-whitepapers/第四章掌握质量模型/案例-金属切削XXX功能质量模型分析.html",
+          "hash": "/HIfsQKs57NVQMxl9RZBq4Aj/Qk9tZMvK79tFpJ0pgs="
         }
       },
       "is_incremental": false,
@@ -6158,7 +6194,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 143,
+          "total_file_count": 146,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
