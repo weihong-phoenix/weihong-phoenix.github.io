@@ -231,46 +231,60 @@
 <h3 id="srs-文件">SRS 文件</h3>
 <p><strong>原则</strong></p>
 <ul>
-<li>SRS 文档存放在 /doc/srs/ 目录下，采用源代码方式管理。</li>
-<li>SRS 不是一个大文件，而是按照 SRS 标准中规定的结构拆分为三个章节，【引言】和【总体描述】分别为一个或多个文件，【详细描述】部分按照功能分类后独立成更小的文件，然后经过 <code>docfx</code> 工具拼起来。</li>
-<li>SRS 必须使用 markdown(.md) 格式，不得采用 WORD(.doc)，EXCEL(.xls) 等格式。</li>
-<li>SRS 的图片等资源文件，须放在文档同级目录的 ./images/ 或 ./media/ 目录下，也可统一存放在 /doc/srs/res/ 目录下。</li>
-<li>在 markdown 格式的文件里，不应编制大型表格。原因是这种大型表格编写和维护困难，并且难以进行版本比对。</li>
-<li>SRS 编写细节请参照相关标准及编写指导书，具体在【附录】章节，特别注意，第三章有多种写法，其具体格式不做要求，关键描述用户可以感知到的集合及非功能性规格。</li>
+<li><p>SRS文档存放在 /doc/srs/ 目录下，采用源代码方式管理。</p>
+</li>
+<li><p>SRS不是一个大文件，而是按照SRS标准中规定的结构拆分为三个章节，【引言】和【总体描述】分别为一个或多个文件，【详细描述】部分按照功能分类后独立成更小的文件，然后经过<code>docfx</code>工具拼起来。</p>
+</li>
+<li><p>SRS必须使用markdown(.md)格式，不得采用WORD(.doc), EXCEL(.xls)等格式。</p>
+</li>
+<li><p>SRS的图片等资源文件，须放在文档同级目录的./images/或./media/目录下， 也可统一存放在 /doc/srs/res/ 目录下。</p>
+</li>
+<li><p>在markdown格式的文件里，不应编制大型表格。原因是这种大型表格编写和维护困难，并且难以进行版本比对。</p>
+</li>
+<li><p>SRS编写细节请参照相关标准及编写指导书，具体在【附录】章节，特别注意，第三章有多种写法，其具体格式不做要求，关键描述用户可以感知到的集合及非功能性规格。</p>
+</li>
 </ul>
 <p><strong>目录</strong></p>
 <p>SRS 是多个子文件拼接起来的大文档，各个子文件的目录结构大致如下，该部分不做强制要求，符合目录结构<strong>尽量扁平</strong>的原则即可：</p>
 <pre><code>    +-- srs/                                
-        +--introduction.md                      
-        +--overallDESC.md                       
-        +--FunctionName/                            
-            +--FunctionName.md              
+        +--引言.md                        
+        +--总体描述.md                      
+        +--XXX功能或功能集合/                          
+            +--XXX功能或子功能.md             
 </code></pre><p><strong>解释</strong></p>
 <ul>
-<li><strong>introduction.md</strong> - 引言部分，可以是一个或拆分为多个 .md 文件。</li>
-<li><strong>overallDESC.md</strong> - 总体描述部分，可以是一个或拆分为多个 .md 文件。</li>
-<li><strong>FunctionName/</strong> - 详细描述部分的分类文件夹，不是必须，根据功能粒度自行选择创建。</li>
-<li><strong>FunctionName.md</strong> - srs 的功能分类下的子功能文件，文件名称只需要描述功能或子功能名称即可。</li>
+<li><p><strong>引言</strong> - 可以是一个或拆分为多个.md文件。</p>
+</li>
+<li><p><strong>总体描述</strong> - 可以是一个或拆分为多个.md文件。</p>
+</li>
+<li><p><strong>XXX功能或功能集合</strong> - 详细描述部分，功能集或功能分类文件夹，不是必须，根据功能粒度自行选择创建，功能分级一般不超过三级目录。</p>
+</li>
+<li><p><strong>XXX功能或子功能</strong> - srs的功能集或分类下的功能或子功能文件，通过该.md文档详细描述该功能。</p>
+</li>
 </ul>
 <h2 id="附录">附录</h2>
 <p>1 ） 微盘路径：软件部学习资料共享-&gt;需求分析参考书     </p>
 <ul>
 <li>SRS 标准 -《9385——2008 计算机软件需求规格说明书规范》       </li>
 </ul>
-<p>2 ） 微盘路径：软件部学习资料共享-&gt;MSF实践参考</p>
+<p>2 ） 软件项目目录与文件管理规范</p>
+<p>github 发布链接：<a href="https://weihong-phoenix.github.io/doc/研发管理制度规范/软件项目目录与文件管理规范-R1.html">https://weihong-phoenix.github.io/doc/研发管理制度规范/软件项目目录与文件管理规范-R1.html</a></p>
+<p>3 ） 文档编写指南&amp;规范</p>
 <ul>
-<li>SRS 编写指导 -《产品需求规格说明书（SRS）-编写指导-1.4》        </li>
-<li><strong>introduction.md</strong> - SRS【引言】章节大纲                                        </li>
-<li><strong>overallDESC.md</strong> - SRS【总体描述】章节大纲                                    </li>
-<li>README-XXXMSF项目样例.md（TODO）                                                             </li>
-<li>roles-XXXMSF项目样例.md（TODO）                                                                </li>
-<li>stakeholder-XXXMSF项目样例.md（TODO）                                                   </li>
-<li>risk-XXXMSF项目样例.md（TODO）                                                          </li>
+<li><p>文档编写规范：github 发布链接：<a href="https://weihong-phoenix.github.io/doc/研发文档编写指南/研发文档编写规范.html">https://weihong-phoenix.github.io/doc/研发文档编写指南/研发文档编写规范.html</a></p>
+</li>
+<li><p>SRS-编写指导（前面两大章节）</p>
+</li>
+<li><p>README-编写指导（ToDo）</p>
+</li>
+<li><p>roles-编写指导（ToDo）</p>
+</li>
+<li><p>stakeholder-编写指导（ToDo）</p>
+</li>
+<li><p>risk-编写指导（ToDo）                                           </p>
+</li>
 </ul>
-<p>​   </p>
-<p>​   </p>
-<p><strong>编制：                            审核：                                    批准：</strong></p>
-<p><strong>审批链接：</strong></p>
+<h4 id="编制----------------------------审核-------------------------批准-------------审批链接">编制：                            审核：                         批准：             审批链接：</h4>
 </article>
           </div>
           

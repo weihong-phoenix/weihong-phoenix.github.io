@@ -4769,7 +4769,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "T/oHRSAVO8cSYKdIB4yedJIeYAeb8ZRKpKTqhosZJwk="
+          "hash": "xMre58A9vbRPEE0dRq3VUmSBxrgOHhl57zvwEFxZq6s="
         }
       },
       "is_incremental": false,
@@ -5397,6 +5397,18 @@
       "output": {
         "resource": {
           "relative_path": "doc/研发管理制度规范/产品研发管理制度/MSF详细活动指导-R1.pdf"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/产品研发管理制度/UE详细活动指导-R1.0.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/产品研发管理制度/UE详细活动指导-R1.0.html",
+          "hash": "KVIAUR721Z+p2qUD7XyN8qGwoJGJNjWwLPgPM7KwzXs="
         }
       },
       "is_incremental": false,
@@ -6067,7 +6079,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件项目目录与文件管理规范.html",
-          "hash": "qWC7Gk+z5q/MkmcMpmOTSpbZfKH2rjBFOcDLfqyMSuI="
+          "hash": "KzAf8hfpFx7Xq7oTZ+FoTDqK12cvbg0ccnqvdPIFHNE="
         }
       },
       "is_incremental": false,
@@ -6146,7 +6158,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 142,
+          "total_file_count": 143,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
