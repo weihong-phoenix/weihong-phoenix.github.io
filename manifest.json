@@ -2875,6 +2875,72 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/wb_yw_cs_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/wb_yw_cs_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/wb_yw_cs_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/wb_yw_cs_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/wb_yw_cs_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/wb_yw_cs_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/wb_yw_cs_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/wb_yw_cs_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/wb_yw_js_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/wb_yw_js_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/wb_yw_js_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/wb_yw_js_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/不同表达方式.png",
       "output": {
         "resource": {
@@ -3525,12 +3591,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/内容及格式/文本字体.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/文本字体.html",
-          "hash": "8u5KooduwHyL5oCCZ/oTssCXctJD5yO+ZbZd05gh4zw="
+          "hash": "jr6eZWW7K9OsqAvbLpjq5EEyWLGjEkFM+zMsf8OBkVM="
         }
       },
       "is_incremental": false,
