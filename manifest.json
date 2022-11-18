@@ -3121,15 +3121,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "mPtTMTf11itxJz3FeFNbXdtiZeefGXGHjhFChj6+oL8="
+          "hash": "0eoQJF6/ZF05D9VrhMJBM6wfd6XGlbtqf/CN2nq9C6Q="
         }
       },
       "is_incremental": false,
