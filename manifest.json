@@ -3591,15 +3591,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/内容及格式/文本字体.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/文本字体.html",
-          "hash": "jr6eZWW7K9OsqAvbLpjq5EEyWLGjEkFM+zMsf8OBkVM="
+          "hash": "nyqtYQ/W8MWuA33Jr41uypuBHWUp7t4GaQBz2SeVlDc="
         }
       },
       "is_incremental": false,
@@ -3659,7 +3656,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/正文段落.html",
-          "hash": "64/H1AavpX31mUMRYUpA4Bi+O+EbCegoRER+Oo4ET50="
+          "hash": "oTMcLpATt5UUaac4ZEGC3isnggRAuKbdf3H+/eHyAl0="
         }
       },
       "is_incremental": false,
@@ -3742,7 +3739,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/基本原则/注意细节-准备删除.html",
-          "hash": "VnxpwaTBXZ4GThAr3w4hfMsfuFYBjLScVn8/Kipppng="
+          "hash": "D3yOWncY64yZ7qD0KNDFi8FBi0dMOn6MsYBawRkePlk="
         }
       },
       "is_incremental": false,
