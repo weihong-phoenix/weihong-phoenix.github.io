@@ -4294,7 +4294,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/MSFLearning/doc/toc.html",
-          "hash": "QZZpqBY4ySKZei2ce7VXj5Y8tzfwSi14jAT1rx15tkE="
+          "hash": "bzraYpWMRc9Tzl4XBYAO05bc6jc21TXdDquK5hPjWUU="
         }
       },
       "is_incremental": false,
@@ -5211,15 +5211,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "U0ydmjhjOSPIhICvbo5QOwXj+pfOOhFgDmvZxe0ZNZo="
+          "hash": "0TWNwrO/t43INly06N+vSZSqsgkdxa9ugKrDbAKO/s4="
         }
       },
       "is_incremental": false,
