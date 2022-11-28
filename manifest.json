@@ -5211,12 +5211,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "34iIWUfovSKsMgxILIjEKr9RcHS7WpNdOKZ4j2cBouU="
+          "hash": "U0ydmjhjOSPIhICvbo5QOwXj+pfOOhFgDmvZxe0ZNZo="
         }
       },
       "is_incremental": false,
