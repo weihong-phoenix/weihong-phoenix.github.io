@@ -3993,6 +3993,315 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/README.en.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/README.en.html",
+          "hash": "ADJAP1KdarR7/6Rti5O7zX8Ojtgn7oQg4GTGWBH7Osw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/README.html",
+          "hash": "kmaHlvxOiPOsKDasM5BOjlgg0/S5kRrMm1frXbnCxhQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/HowMSF_execute.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/HowMSF_execute.html",
+          "hash": "xLHb7XrOh1cjajoabsYoa27n1GX7SjKyKIjg2Mx+LWo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/MSF_summary.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/MSF_summary.html",
+          "hash": "kzTWx8nA4T+Wwhi2PG9EZneOsHgAPVtIglZoYyVsPwY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhatMSF_principle.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhatMSF_principle.html",
+          "hash": "ZhSCmnSeifzK0QxgMkxRVnbLYQnOwsZ73fS9/RucnO0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhatMSF_processmodel.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhatMSF_processmodel.html",
+          "hash": "7vNvR0pSdFRGHbPjq983sc51gyj5vJ7RiUZZ08JtI58="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhatMSF_teammodel.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhatMSF_teammodel.html",
+          "hash": "hJUWVaKWwZcqUED69FwvHe3K+abYKxiDyu67joncS4k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhyMSF.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/WhyMSF.html",
+          "hash": "BhMGk+7eNhAfTLE0V398u6WqlizE7tn18y5dPpQ1Z10="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/3rtd.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/3rtd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/dd.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/dd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/ddjf.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/ddjf.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/ddjf1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/ddjf1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/dyq.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/dyq.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/dyqdb.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/dyqdb.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/gntd.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/gntd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/hb.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/hb.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/jszz.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/jszz.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/ml.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/ml.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/msfqy.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/msfqy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/tsgn.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/tsgn.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/tstd.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/tstd.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/whylc.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/whylc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/wrmlwt.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/wrmlwt.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/wrmlwt1.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/wrmlwt1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/yfgg.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/yfgg.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/yjfw.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/img/yjfw.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "doc/研发管理制度规范/MSFLearning/doc/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/MSFLearning/doc/toc.html",
+          "hash": "QZZpqBY4ySKZei2ce7VXj5Y8tzfwSi14jAT1rx15tkE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/MSF团队/MSF团队必读.md",
       "output": {
         ".html": {
@@ -6332,7 +6641,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 152,
+          "total_file_count": 160,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
