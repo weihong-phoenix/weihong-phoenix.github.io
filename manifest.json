@@ -2841,6 +2841,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/Untitled.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/Untitled.html",
+          "hash": "st8mvaNMp5O8ZEGek3WWw6XcvpL+iU8VI367wsup2ts="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/1章节.png",
       "output": {
@@ -3327,7 +3339,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/[XXX型号]-[系统名称]-用户手册-模版-Rn.html",
-          "hash": "RmL+rGHDFih9xf6Oc1DhesXyRImzxZxlyEuCeELJm3o="
+          "hash": "7j9JLLrVQb+VytkqJXTR+ie4/0JsWC/aC6IoCvtofPA="
         }
       },
       "is_incremental": false,
@@ -6638,7 +6650,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 160,
+          "total_file_count": 161,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
