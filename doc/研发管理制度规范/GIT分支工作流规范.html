@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="git分支工作流规范">GIT分支工作流规范</h1>
 
-<pre><code>版次：2022年8月17日　第1.1版
+<pre><code>版次：2023年1月11日　第1.2版
 类型：程序文件
 作者：软件部
 上海维宏电子科技股份有限公司 版权所有
@@ -93,21 +93,29 @@
 <h2 id="4-工作方式">4 工作方式</h2>
 <p>工作流仍然以主分支作为交互中心。衍生出开发分支进行开发、发行分支进行测试发行、修复分支进行 bug 修复，一切都围绕着控制一个稳定的主分支并持续改进为本。</p>
 <h3 id="41-开发分支">4.1 开发分支</h3>
-<p>开发新功能与修复Bug时，开发人员从 <code>master</code> 分支上创建 <code>feature</code> 或 <code>bugfix</code> 分支。
-在对应的分支上做所有的开发工作，一旦分支完成 <code>feature</code> 或 <code>bugfix</code> 分支再和 <code>master</code> 交互。</p>
-<p><code>feature</code> 分支</p>
-<p><img src="images/git-workflow-03-feature.png" alt=""></p>
-<p><code>bugfix</code> 分支</p>
-<p><img src="images/git-workflow-04-bugfix.png" alt=""></p>
-<p>分支约定：</p>
+<p>开发新功能与修复Bug时，开发人员从 <code>master</code> 分支上创建分支。</p>
+<p>分支目录名称约定：</p>
 <ul>
-<li>feature 分支的命名为<code>feature/*-workitem</code>）</li>
-<li>bugfix 分支的命名为<code>bugfix/*-workitem</code>）<ul>
+<li>feature: 新功能开发</li>
+<li>bugfix: 修补 bug</li>
+<li>docs: 文档（对文档进行了修改）</li>
+<li>refactor: 重构（即不是新增功能，也不是修改 bug 的代码变动）</li>
+<li>test: 增加测试</li>
+<li>build: 对构建系统或者外部依赖项，CI生成脚本配置进行了修改</li>
+<li>chore: 不符合上述任何类型的相关更改</li>
+</ul>
+<p>分支名约定：</p>
+<ul>
+<li>分支的命名为<code>[分支目录]/*-workitem</code>）</li>
 <li><code>*</code> 代表工作项编号（可选）</li>
 <li><code>workitem</code> 代表工作简短描述（英文）</li>
 </ul>
-</li>
-</ul>
+<p>在对应的分支上做所有的开发工作，一旦分支完成， 须及时PR并删除分支。</p>
+<p>如：
+<code>feature</code> 分支</p>
+<p><img src="images/git-workflow-03-feature.png" alt=""></p>
+<p><code>bugfix</code> 分支</p>
+<p><img src="images/git-workflow-04-bugfix.png" alt=""></p>
 <h3 id="42-发布分支">4.2 发布分支</h3>
 <p><img src="images/git-workflow-05-release.png" alt=""></p>
 <p>一旦 <code>master</code> 分支上做一次发布，就从 <code>master</code>分支上拉出一个 <code>release</code> 分支。新建的分支用于开始发布循环，发布分支仅用于发布，不会提交任何代码修改（版本号，历史记录等，视为分支的配置而不是代码内容，可以在发布分支上提交），也不允许出现 <code>master</code> 与 <code>release</code> 分支之间的合并。</p>
