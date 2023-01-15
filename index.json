@@ -317,7 +317,7 @@
   "doc/研发文档编写指南/目录结构及命名/目录规范.html": {
     "href": "doc/研发文档编写指南/目录结构及命名/目录规范.html",
     "title": "目录规范",
-    "keywords": "目录规范 参考文档《软件项目目录与文件管理规范-R3.1》的【目录结构】章节。要求如下： 仓库必须符合本节要求的目录结构 原则 宜采用浅的目录结构，或者称为扁平的目录结构。 可选文件和目录，应等到需要的时候再去建立。 目录和文件名应尽可能采用英文。 请注意，目录和文件名的大小写必须符合规定。这是因为考虑到linux平台的可移植性。 git 服务器端的目录和文件结构 <project-name>/ ; project root dir +-- doc/ +-- srs/ ; 产品的srs +-- design/ ; 产品的设计文档 +-- usermanual/ ; 产品的用户文档 +-- pm/ +-- risk.md +-- roles.md +-- stakeholder.md +-- src/ +-- test/ +-- .editorconfig ; or `.clang-format` +-- .gitattributes +-- .gitignore +-- README.md +-- <project-name>.sln Note 《软件项目目录与文件管理规范-R3.1》文档由软件部维护和发布，请参考当前最新版本。"
+    "keywords": "目录规范 参考文档《软件项目目录与文件管理规范-R3.1》的【目录结构】章节。要求如下： 仓库必须符合本节要求的目录结构 原则 宜采用浅的目录结构，或者称为扁平的目录结构。 可选文件和目录，应等到需要的时候再去建立。 目录和文件名应尽可能采用英文。 请注意，目录和文件名的大小写必须符合规定。这是因为考虑到linux平台的可移植性。 git 服务器端的目录和文件结构 <project-name>/ ; project root dir +-- doc/ +-- srs/ ; 产品的srs +-- design/ ; 产品的设计文档 +-- manual/ ; 产品的用户文档 +-- pm/ +-- risk.md +-- roles.md +-- stakeholder.md +-- src/ +-- test/ +-- .editorconfig ; or `.clang-format` +-- .gitattributes +-- .gitignore +-- README.md +-- <project-name>.sln Note 《软件项目目录与文件管理规范-R3.1》文档由软件部维护和发布，请参考当前最新版本。"
   },
   "doc/研发文档编写指南/研发文档编写规范.html": {
     "href": "doc/研发文档编写指南/研发文档编写规范.html",
