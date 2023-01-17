@@ -89,12 +89,12 @@
 <li>请注意，目录和文件名的大小写必须符合规定。这是因为考虑到linux平台的可移植性。</li>
 </ul>
 <h2 id="git-服务器端的目录和文件结构">git 服务器端的目录和文件结构</h2>
-<pre><code class="lang-csharp">&lt;project-name&gt;/                     ; project root dir                       
+<pre><code class="lang-csharp">&lt;project-name&gt;/                   ; project root dir                       
     +-- doc/                                    
-        +-- srs/                     ; 产品的srs
-        +-- design/                  ; 产品的设计文档
-        +-- manual/             ; 产品的用户文档
-    +-- pm/                             
+        +-- srs/                  ; 产品的srs
+        +-- design/               ; 产品的设计文档
+        +-- manual/               ; 产品的用户文档
+    +-- pm/                       ；管理相关文档   
         +-- risk.md                             
         +-- roles.md                            
         +-- stakeholder.md
@@ -105,7 +105,8 @@
     +-- .gitignore                      
     +-- README.md                       
     +-- &lt;project-name&gt;.sln          
-</code></pre><div class="NOTE"><h5>Note</h5><p>《软件项目目录与文件管理规范-R3.1》文档由软件部维护和发布，请参考当前最新版本。</p>
+</code></pre><div class="NOTE"><h5>Note</h5><p>《软件项目目录与文件管理规范-R3.1》文档由软件部维护和发布，请参考当前最新版本。
+另外：最近发现phx有code-guildlines文档，因考虑到该文档从研发阶段的产出考虑，属于编码阶段参考的文档，类似于srs，design，manual文档，可以直接放到doc下。</p>
 </div>
 </article>
           </div>
