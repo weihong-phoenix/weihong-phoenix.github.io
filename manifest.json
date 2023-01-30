@@ -3973,7 +3973,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/Commit message 编写规范.html",
-          "hash": "i6AsK6au6MXK9/7G84Rgd7vZGDP4ogAcjnHsKXGsEzQ="
+          "hash": "nQWjH6yCY8CtiujoH3OrhBHOg8MOR5VtIm23DAMCVp8="
         }
       },
       "is_incremental": false,
@@ -3997,7 +3997,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/GIT分支工作流规范.html",
-          "hash": "kNZd8sYvHlqAwndIzmQzpfbCCDgKSpddLbmy4/oKtxQ="
+          "hash": "4mEkQbwFC3BZFh0xgc+82h53X/V4KOBqdCBaAwG4kCA="
         }
       },
       "is_incremental": false,
@@ -4322,6 +4322,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/Phoenix源码分支工作流-R2.md",
       "output": {
@@ -4736,17 +4739,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-01-overview.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/研发管理制度规范/images/git-workflow-01-overview.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/git-workflow-02-history.png",
       "output": {
         "resource": {
@@ -4817,6 +4809,83 @@
       "output": {
         "resource": {
           "relative_path": "doc/研发管理制度规范/images/git-workflow-07-step1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-a.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-a.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-b.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-b.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-c.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-c.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-d.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-d.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-e.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-e.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-f.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-f.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-g.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/git-workflow-g.png"
         }
       },
       "is_incremental": false,
