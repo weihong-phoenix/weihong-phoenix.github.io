@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="git分支工作流规范">GIT分支工作流规范</h1>
 
-<pre><code>版次：2023年1月30日　第1.3版
+<pre><code>版次：2023年1月31日　第1.4版
 类型：程序文件
 作者：软件部
 上海维宏电子科技股份有限公司 版权所有
@@ -109,10 +109,11 @@
 <h2 id="4-术语和定义">4 术语和定义</h2>
 <p>为了确保对术语的一致性理解，此处定义本文档用到的术语：</p>
 <ul>
-<li>MSF： Microsoft Solution Framework 的缩写，是微软产品研发的方法论，2022 年起公司借鉴其方法论开展研发管理工作。</li>
-<li>GIT仓库：GIT是分布式版本控制系统。研发过程中的文档、代码、测试用例等文件存放在GIT版本控制的仓库中。</li>
-<li>开发分支：包含feature、doc、style、refactor、test、build，chore。</li>
-<li>PR：拉取请求功能，代码经过评审后合并到目标分支。</li>
+<li><strong>MSF</strong>： Microsoft Solution Framework 的缩写，是微软产品研发的方法论，2022 年起公司借鉴其方法论开展研发管理工作。</li>
+<li><strong>GIT仓库</strong>：GIT是分布式版本控制系统。研发过程中的文档、代码、测试用例等文件存放在GIT版本控制的仓库中。</li>
+<li><strong>开发分支</strong>：包含feature、doc、style、refactor、test、build，chore。</li>
+<li><strong>PR</strong>：拉取请求功能，代码经过评审后合并到目标分支。</li>
+<li><strong>软件发布</strong>：软件发布前为创建release分支提供给测试人员测试，软件未发布提供给客户，软件发布后为软件经过测试人员测试，软件已经发布提供给客户</li>
 </ul>
 <h2 id="5-git工作流程图">5 GIT工作流程图</h2>
 <p><img src="images/git-workflow-a.png" alt=""></p>
@@ -146,10 +147,6 @@
 <h3 id="62-发布分支">6.2 发布分支</h3>
 <p><img src="images/git-workflow-d.png" alt=""></p>
 <p>一旦 <code>master</code> 分支上做一次发布，就从 <code>master</code>分支上拉出一个 <code>release</code> 分支。新建的分支用于开始发布循环，发布分支仅用于发布，不会提交任何代码修改（版本号，历史记录等，视为分支的配置而不是代码内容，可以在发布分支上提交），严禁出现 <code>master</code> 与 <code>release</code> 分支之间的合并。</p>
-<p>测试只需要对 <code>release</code> 分支进行验证，当测试版本出现bug，或者必须有添加的功能时。应重新从 <code>master</code> 分支上拉取开发分支进行开发，开发完成后经过PR合并到 <code>master</code> 分支，然后再从 <code>master</code> 分支挑拣 <code>cherry-pick</code> 到 <code>release</code> 分支上。</p>
-<p>*注：挑拣(cherry-pick) 与 合并(merge) 并不是一个功能，<code>git</code> 提供了特定针对修改集的 <code>cherry-pick</code> 能力，详细请参考 <code>git</code> 或者 <code>vs</code> 手册。</p>
-<p>如：</p>
-<p><img src="images/git-workflow-e.png" alt=""></p>
 <p>使用一个用于发布准备的专门分支，使得一个团队可以在完善当前的发布版本的同时，另一个团队可以继续开发下个版本的功能。</p>
 <p>分支约定：</p>
 <ul>
@@ -157,8 +154,13 @@
 <li>分支的命名必须为<code>release/*</code>，<code>*</code> 代表版本号，如为了区分不同产品的版本发布，命名可为<code>release/产品名称-*</code></li>
 <li>所有正式发布的版本，必须有相应的 <code>release</code> 分支对应。</li>
 </ul>
-<h3 id="63-软件发布后-fix-版本">6.3 软件发布后 fix 版本</h3>
-<p>当某个已发布的版本发现问题，由于新版本不兼容，或者变更太大无法升级时，需要在原发布分支的基础上进行修正，如问题在master分支上同样存在需要修复，应使用fix分支修复后PR到master分支。</p>
+<h3 id="63-软件发布前-fix-版本">6.3 软件发布前 fix 版本</h3>
+<p>测试对 <code>release</code> 分支进行验证，当测试版本出现bug，或者必须有添加的功能时。应重新从 <code>master</code> 分支上拉取开发分支进行开发，开发完成后经过PR合并到 <code>master</code> 分支，然后再从 <code>master</code> 分支挑拣 <code>cherry-pick</code> 到 <code>release</code> 分支上。</p>
+<p>*注：挑拣(cherry-pick) 与 合并(merge) 并不是一个功能，<code>git</code> 提供了特定针对修改集的 <code>cherry-pick</code> 能力，详细请参考 <code>git</code> 或者 <code>vs</code> 手册。</p>
+<p>如：</p>
+<p><img src="images/git-workflow-e.png" alt=""></p>
+<h3 id="64-软件发布后-fix-版本">6.4 软件发布后 fix 版本</h3>
+<p>当某个已发布的版本发现问题，由于新版本不兼容，或者变更太大无法升级时，需要在原发布分支的基础上进行修正，如问题在master分支上同样存在需要修复，应使用fix分支修复后再PR到master分支。</p>
 <p><img src="images/git-workflow-f.png" alt=""></p>
 <p>分支约定：</p>
 <ul>
@@ -166,10 +168,10 @@
 <li>分支的命名必须为<code>release/修复概述-fix-*</code>，<code>*</code> 代表修复版本号。</li>
 <li>所有正式发布的fix版本，必须有相应的 <code>release</code> fix分支对应。</li>
 </ul>
-<h3 id="64-历史分支">6.4 历史分支</h3>
+<h3 id="65-历史分支">6.5 历史分支</h3>
 <p>历史分支通过多个 <code>release</code> 分支，记录项目的历史。</p>
 <p><img src="images/git-workflow-d.png" alt=""></p>
-<h3 id="65-拉取请求pr">6.5 拉取请求PR</h3>
+<h3 id="66-拉取请求pr">6.6 拉取请求PR</h3>
 <p>为了保证master分支的稳定性，其他分支合并到master的内容不能直接合并操作，必须通过PR评审通过后再进行合并。</p>
 <p><strong>PR必须开启如下限制</strong></p>
 <ul>
@@ -189,9 +191,10 @@
 </ul>
 <h2 id="7-示例">7 示例</h2>
 <p>下面的示例演示本工作流如何用于管理单个发布循环。假设你已经创建了一个主分支项目。</p>
+<p><strong>开发人员</strong>：Mary、Bill</p>
 <h3 id="71-准备主分支">7.1 准备主分支</h3>
-<p>由仓库管理员初始化 <code>master</code> 分支，以后这个分支将会包含了项目的全部历史提交。</p>
-<h3 id="72-大家开发新功能">7.2 大家开发新功能</h3>
+<p>由仓库管理员初始化 <code>master</code> 分支，此分支将会包含整个项目的全部历史提交。</p>
+<h3 id="72-marybill分别开发新功能">7.2 Mary、Bill分别开发新功能</h3>
 <p><img src="images/git-workflow-b.png" alt=""></p>
 <h3 id="73-mary开始准备发布">7.3 Mary开始准备发布</h3>
 <p><img src="images/git-workflow-d.png" alt=""></p>
