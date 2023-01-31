@@ -4541,6 +4541,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/Exe文件的属性.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/Exe文件的属性.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/MSDN-SendMessage-FunctionInformation.png",
       "output": {
         "resource": {
@@ -6575,15 +6586,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/维宏产品版权信息声明规范-R5.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/维宏产品版权信息声明规范-R5.html",
-          "hash": "q67lLdm47ldfO680sRAIozjQ9xjxDlOH57zOZ+WGo1M="
+          "hash": "PbDVNdahlgVI/Ky7KbXUTeq0d8yaIqSyyIyYI4Z/7zo="
         }
       },
       "is_incremental": false,
