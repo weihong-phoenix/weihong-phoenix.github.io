@@ -4992,6 +4992,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发管理制度规范/images/image-publish-flow2.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发管理制度规范/images/image-publish-flow2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/ldoc-config-desc.png",
       "output": {
         "resource": {
@@ -6669,15 +6680,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/软件迭代发布流程.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件迭代发布流程.html",
-          "hash": "eTjzSYPe2ZLLzpLSUg63yOZll/q80GTXXAu8UlBo+q4="
+          "hash": "fSrvaPLlDalluAMFkPTt4++77SaW58Dk0THgjiI7Q+Y="
         }
       },
       "is_incremental": false,
