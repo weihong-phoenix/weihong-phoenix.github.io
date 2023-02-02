@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#36719;&#20214;&#36845;&#20195;&#21457;&#24067;&#27969;&#31243; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#36719;&#20214;&#36845;&#20195;&#21457;&#24067;&#27969;&#31243; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="软件迭代发布流程">软件迭代发布流程</h1>
+
+<blockquote><p>版次：2022年9月26日　第1版
+类型：程序文件
+部门：软件部
+上海维宏电子科技股份有限公司　版权所有</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>文件版本</th>
+<th>修改前文件版本</th>
+<th>主要修订内容和原因</th>
+<th>修订人</th>
+<th>修订日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td></td>
+<td>新建</td>
+<td>余晓霞</td>
+<td>2022.9.26</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-目的">1 目的</h2>
+<ul>
+<li><p>规范和统一软件发布出口。</p>
+</li>
+<li><p>让软件发布有记录可溯源。</p>
+</li>
+</ul>
+<h2 id="2-适用范围">2 适用范围</h2>
+<p>产品线及软件平台研发团队</p>
+<h2 id="3-术语和定义">3 术语和定义</h2>
+<p>NuGet：软件包管理器。</p>
+<p>NuGet 包：一个扩展名为 .nupkg 的 ZIP 文件，其中包含了已编译代码( .dll )与该代码相关的其他文件，以及包版本号等信息的描述信息。</p>
+<h2 id="4-迭代发布流程">4 迭代发布流程</h2>
+<h3 id="41-流程图">4.1 流程图</h3>
+<p><img src="images/image-publish-flow1.png" alt="image-publish-flow1"></p>
+<h3 id="42-流程详解">4.2 流程详解</h3>
+<h4 id="421-申请发布软件">4.2.1 申请发布软件</h4>
+<p>申请人: 测试、UE。</p>
+<p>申请触发条件：测试和验收完成。</p>
+<p>申请表单须包含如下内容：</p>
+<p>（1）描述信息须包含内容：测试结论、遗留问题说明、变更范围。</p>
+<p>（2）发布资源信息：</p>
+<ul>
+<li>发布类型：软件、NuGet 包。</li>
+<li>当发布类型是软件时，需要录入如下信息：测试通过的软件存放地址、及其名称。</li>
+<li>当发布类型是 NuGet 包时，需要录入如下信息：测试通过的 NuGet 包地址、及其名称和版本号；NuGet 包发布的目标地址。</li>
+</ul>
+<p>（3）发布关联性信息检查（选填），如下所示：</p>
+<ul>
+<li>是否涉及通用功能。</li>
+<li>是否涉及通用参数。</li>
+<li>是否涉及文档更新。</li>
+<li>是否涉及其它分支。</li>
+<li>是否涉及产品一览表。</li>
+<li>是否涉及注销及披露更新。</li>
+</ul>
+<p>（4）附件包含必须的输出物：</p>
+<ul>
+<li>测试报告文件。</li>
+</ul>
+<p>完成申请之后，须通知相关方。</p>
+<h4 id="422-审核">4.2.2 审核</h4>
+<p>审核流程的节点及其审核人可根据团队需求自定义；默认情况下只有一个审核节点，此审核节点要求如下：</p>
+<ul>
+<li>审核人：产品总工或程序经理。</li>
+<li>审核内容：各团队根据实际情况决定。</li>
+<li><p>审核不通过，须填写原因；允许重新提交申请。</p>
+</li>
+<li><p>审核通过之后自动化触发软件外发。</p>
+</li>
+<li><p>完成审核之后，须通知相关方。</p>
+</li>
+</ul>
+<h4 id="423-软件外发">4.2.3 软件外发</h4>
+<ul>
+<li>把外发的软件自动拷贝到外网指定的目录和维宏网盘。</li>
+<li>把 NuGet 包放置 NuGet 仓库。</li>
+</ul>
+<p>完成软件外发之后，须通知相关方。</p>
+<h2 id="5-迭代软件注销流程">5 迭代软件注销流程</h2>
+<h3 id="51-流程图">5.1 流程图</h3>
+<p><img src="images\image-publish-flow2.png" alt="image-publish-flow2"></p>
+<h3 id="52-流程详解">5.2 流程详解</h3>
+<p>已外发的软件，当客户验收不通过或使用出现问题，且部门内部评估需要对其注销时，可发起注销申请。</p>
+<h4 id="521-申请注销软件">5.2.1 申请注销软件</h4>
+<p>（1）申请人：产品经理、开发。</p>
+<p>（2）输入信息：须录入注销原因和注销的软件信息。</p>
+<p>完成申请之后，须通知相关方。</p>
+<h4 id="522-审核">5.2.2 审核</h4>
+<ul>
+<li>审核人：总工、程序经理。</li>
+<li>审核通过之后，进入处理注销软件节点，通知相关人员进行处理。</li>
+<li>审核不通过，须填写不通过原因；允许重新提交申请。</li>
+</ul>
+<h4 id="523-注销软件">5.2.3 注销软件</h4>
+<ul>
+<li>处理人：软件部、助理。</li>
+<li><p>相关人员线下手动进行注销软件相关操作。</p>
+</li>
+<li><p>完成处理之后，须通知相关方。</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#36719;&#20214;&#36845;&#20195;&#21457;&#24067;&#27969;&#31243;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    
+      </body>
+</html>
