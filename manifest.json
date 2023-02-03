@@ -3993,18 +3993,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发管理制度规范/GIT分支工作流规范.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发管理制度规范/GIT分支工作流规范.html",
-          "hash": "lTHVu16QWolaA8n73cDflR7OE8poxNFRz0kiUoU5djc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "doc/研发管理制度规范/MSFLearning/README.en.md",
       "output": {
         ".html": {
@@ -5322,12 +5310,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "dBNOK42fvObh07/2jKhiwujSGahkSKvKRv6/HrSi44s="
+          "hash": "nt74mrJ7TWDGjL56qQEa5dtpe+ezPTd+HUbBv23FhAQ="
         }
       },
       "is_incremental": false,
@@ -6686,6 +6677,18 @@
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件迭代发布流程.html",
           "hash": "fSrvaPLlDalluAMFkPTt4++77SaW58Dk0THgjiI7Q+Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发管理制度规范/软件迭代开发规范.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发管理制度规范/软件迭代开发规范.html",
+          "hash": "BnAEU/WmVYPgpUQEonKmyYwaA4FkOXSSI99GNJtTa8M="
         }
       },
       "is_incremental": false,

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>GIT&#20998;&#25903;&#24037;&#20316;&#27969;&#35268;&#33539; </title>
+    <title>&#36719;&#20214;&#36845;&#20195;&#24320;&#21457;&#35268;&#33539; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="GIT&#20998;&#25903;&#24037;&#20316;&#27969;&#35268;&#33539; ">
+    <meta name="title" content="&#36719;&#20214;&#36845;&#20195;&#24320;&#21457;&#35268;&#33539; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,14 +77,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="git分支工作流规范">GIT分支工作流规范</h1>
+<h1 id="软件迭代开发规范">软件迭代开发规范</h1>
 
 <pre><code>版次：2023年1月31日　第1.4版
 类型：程序文件
 作者：软件部
 上海维宏电子科技股份有限公司 版权所有
 </code></pre><h2 id="1-目的">1 目的</h2>
-<p>编写本规范的目的是为了完善公司GIT仓库分支工作流程，统一开发协同约定、从而提高软件开发效率与规范。</p>
+<p>编写本规范的目的是为了统一软件迭代开发协同约定、从而提高软件开发效率与规范。主要约定软件迭代版本号及git分支管理。</p>
 <h2 id="2-范围">2 范围</h2>
 <p>本规范适用于公司所有产品的GIT仓库代码。</p>
 <ul>
@@ -115,13 +115,53 @@
 <li><strong>PR</strong>：拉取请求功能，代码经过评审后合并到目标分支。</li>
 <li><strong>软件发布</strong>：软件发布前为创建release分支提供给测试人员测试，软件未发布提供给客户，软件发布后为软件经过测试人员测试，软件已经发布提供给客户</li>
 </ul>
-<h2 id="5-git工作流程图">5 GIT工作流程图</h2>
+<h2 id="5-版本号规约">5 版本号规约</h2>
+<p>遵循<a href="https://semver.org/">语义化版本2.0</a>进行定义， 格式为: 主版本号(major) .次版本号(minor).修订号(patch) 。</p>
+<p>标准的版本号必须（MUST）采用 X.Y.Z 的格式，其中 X、Y 和 Z 为非负的整数，且禁止（MUST NOT）在数字前方补零。X 是主版本号、Y 是次版本号、而 Z 为修订号。每个元素必须（MUST）以数值来递增。例如：1.9.1 -&gt; 1.10.0 -&gt; 1.11.0。</p>
+<h3 id="51-主版本号">5.1 主版本号</h3>
+<p>主版本号，也叫首位版本号、顶位版本号，即V后第一个版本号。除非大规模api不兼容、产品方向改变、底层架构升级等情况外不轻易更新。</p>
+<p>如：</p>
+<p>Phoenix 底层进行了重构升级，对应版本从V5.x 升级为V6.x。</p>
+<p>NcStudio V15.x依赖的Phoenix版本从V5.x升级为V6.x后， 对应软件会被升级为NcStudio V16.x。</p>
+<p>注意：产品线产品版本号和平台版本号可以是无关的。</p>
+<h3 id="52-次版本号"><strong>5.2 次版本号</strong></h3>
+<p>次版本号，也叫迭代号，一般代表某个迭代发布的功能集合（一个迭代发布会包含若干个功能更新）。</p>
+<p>次版本号在以下情形下会被更新：</p>
+<ul>
+<li>新的 API 被添加。</li>
+<li>新的功能被支持。</li>
+<li>重要依赖包的新版本被采用。</li>
+</ul>
+<p>如：Phoenix正式发布版本6.2.2后，若增加新功能，或增加公开API（包含寻址，ncprog及target公开函数清单），必须增加次版本号。</p>
+<p>NcStdio V16.0.0正式发布后， 如增加了新功能，或者从Phoenix 6.2升级为Phoenix6.3, 则必须增加次版本号。</p>
+<h3 id="53-修订号">5.3 修订号</h3>
+<p>修订号是为了某些小功能的临时上线，热修复的临时上线设置的小迭代，通常不包含大的功能性更新，常常是围绕某个功能点进行升级或者某个bug的修复进行上线。</p>
+<p>如：Phoenix正式发布版本6.2.2后， 产线发现bug后， 程序经理可以规划在6.2.3上修复。若需要紧急开发，可采用hotfix方式， 如版本6.2.2-hotfix1。</p>
+<p>NcStudio V16.0.0正式发布后， 客户发现bug后， 修复须增加修订号。</p>
+<h3 id="54-先行版本号">5.4 先行版本号</h3>
+<blockquote><p><a href="https://semver.org/lang/zh-CN/#spec-item-9">语义化版本2.0</a>中定义</p>
+<p>先行版本号可以（MAY）被标注在修订版之后，先加上一个连接号再加上一连串以句点分隔的标识符来修饰。标识符必须（MUST）由 ASCII 字母数字和连接号 [0-9A-Za-z-] 组成，且禁止（MUST NOT）留白。数字型的标识符禁止（MUST NOT）在前方补零。先行版的优先级低于相关联的标准版本。被标上先行版本号则表示这个版本并非稳定而且可能无法满足预期的兼容性需求。范例：1.0.0-alpha、1.0.0-alpha.1、1.0.0-0.3.7、1.0.0-x.7.z.92。</p>
+</blockquote>
+<p>约定只能出现alpha, beta, rc, hotfix。 如：6.2.2-alpha01， 6.2.2-beta01, 6.2.2-hotfix01, 6.2.2-rc。</p>
+<p>注意：alpha01采用01的方式， 根据语义化版本是为了符合版本升级规则。</p>
+<h4 id="alpha版本">alpha版本</h4>
+<p>此版本表示该软件在此阶段主要是以实现软件功能为主，通常只在发布团队内部交流，一般而言，该软件版本的Bug较多，需要继续修改，原则上alpha 版本携带的功能包含了本次发布的所有功能，但是在送代开发的情况下，可能会出现一些高优先级的功能优先发布内测的情况，这在软件开发的初期是比较常见的，这类情况的版本也有叫做(Pre-alpha)版本的，此情况下不同的alpha版本允许出现功能的确实和差异。
+在发布范围已固定的开发场景下，通过 release 分支发布 alpha版本。
+在开发过程中迭代测试的场景下，允许通过 master 分支发布alpha版本。</p>
+<h4 id="beta版本">beta版本</h4>
+<p>此版本是软件最早对外部公开的软件版本，相对于alpha版本有了很大的改进，消除了严重的错误，但是还存在一些已知问题和较轻微的BUG。bete版本在功能范围上已经固定，原则上只允许修正Bug,不允许增删变动，所以beta版本必须通过 Release 分支进行发布。</p>
+<h4 id="rcrelease-candidate版本">rc（Release Candidate）版本</h4>
+<p>此版本含义 是&quot;发布候选版&quot;，它不是最终的版本， 几乎就不会加入新的功能了，而主要着重于除错。</p>
+<p>rc版本必须通过 Release 分支进行发布。</p>
+<h4 id="hotfix版本">hotfix版本</h4>
+<p>此版本是专门用来解决紧急问题和安全漏洞的版本。</p>
+<p>hotfix版本必须通过 Release 分支进行发布。分支策略见[6.4](#6.4 软件发布后 fix 版本)。</p>
+<h2 id="6-git开发流程">6 GIT开发流程</h2>
 <p><img src="images/git-workflow-a.png" alt=""></p>
-<p>该工作流定义了一个围绕着项目发布的严格分支模型。提供了用于一个健壮的管理项目的框架。该工作流为不同的分支分配一个很明确的角色，并定义分支之间如何和什么时候进行交互。</p>
-<h2 id="6-工作方式">6 工作方式</h2>
-<p>工作流仍然以主分支作为交互中心。衍生出开发分支进行开发、发行分支进行测试发行、修复分支进行 bug 修复，一切都围绕着控制一个稳定的主分支并持续改进为本。</p>
+<p>该工作流基于<a href="https://trunkbaseddevelopment.com/">Trunk-based Development</a>,  定义了一个围绕着主分支开发的GIT开发流程模型。</p>
+<p>工作流以主分支作为交互中心。衍生出开发分支进行开发、发行分支进行测试发行、修复分支进行 bug 修复，一切都围绕着控制一个主分支并持续改进为本。</p>
 <h3 id="61-开发分支">6.1 开发分支</h3>
-<p>开发新功能与修复Bug时，开发人员从 <code>master</code> 分支上创建分支。</p>
+<p>开发新功能与修复Bug时，开发人员应从 <code>master</code> 分支上创建分支。</p>
 <p>分支目录名称约定：</p>
 <ul>
 <li>feature: 新功能开发</li>
@@ -135,12 +175,11 @@
 <p>分支名约定：</p>
 <ul>
 <li>分支的命名必须为<code>[分支目录]/*-workitem</code>）</li>
-<li><code>*</code> 代表工作项编号（可选）</li>
+<li><code>*</code> 代表工作项编号（可选， 若无，后面的-可忽略）</li>
 <li><code>workitem</code> 代表工作简短描述（英文）</li>
 </ul>
 <p>在对应的分支上做所有的开发工作，一旦分支开发完成， 必须及时PR到主分支并删除开发分支（如无需保留）。</p>
-<p>如：
-`开发分支</p>
+<p>如：开发分支</p>
 <p><img src="images/git-workflow-b.png" alt=""></p>
 <p><code>fix</code> 分支</p>
 <p><img src="images/git-workflow-c.png" alt=""></p>
@@ -156,6 +195,7 @@
 </ul>
 <h3 id="63-软件发布前-fix-版本">6.3 软件发布前 fix 版本</h3>
 <p>测试对 <code>release</code> 分支进行验证，当测试版本出现bug，或者必须有添加的功能时。应重新从 <code>master</code> 分支上拉取开发分支进行开发，开发完成后经过PR合并到 <code>master</code> 分支，然后再从 <code>master</code> 分支挑拣 <code>cherry-pick</code> 到 <code>release</code> 分支上。</p>
+<p><strong>例外</strong>： 若master分支上有重大重构，导致该release分支上的差异较大， 允许采用从release上分支后修复， 但一定要同时从master拉分支并修复该问题。</p>
 <p>*注：挑拣(cherry-pick) 与 合并(merge) 并不是一个功能，<code>git</code> 提供了特定针对修改集的 <code>cherry-pick</code> 能力，详细请参考 <code>git</code> 或者 <code>vs</code> 手册。</p>
 <p>如：</p>
 <p><img src="images/git-workflow-e.png" alt=""></p>
@@ -189,7 +229,7 @@
 <li><p>必需审阅者：必须通过某人批准后可以通过审核</p>
 </li>
 </ul>
-<h2 id="7-示例">7 示例</h2>
+<h2 id="7-分支管理示例">7 分支管理示例</h2>
 <p>下面的示例演示本工作流如何用于管理单个发布循环。假设你已经创建了一个主分支项目。</p>
 <p><strong>开发人员</strong>：Mary、Bill</p>
 <h3 id="71-准备主分支">7.1 准备主分支</h3>
@@ -207,7 +247,6 @@
 <p>对外发布后，Mary回去和Bill一起做下个发布的新功能开发，直到有最终用户开了一个<code>Ticket</code>抱怨当前版本的一个 <code>Bug</code>。
 为了处理<code>Bug</code>，Mary（或Bill）应从 <code>master</code> 分支上拉出了一个 <code>fix</code> 分支，提交修改以解决问题，然后PR合并回 <code>master</code> 分支。
 然后就可以安全地删除这个fix分支了。</p>
-<p><strong>编制：                           审核：                         批准：             审批链接：</strong></p>
 </article>
           </div>
           
@@ -216,7 +255,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/GIT&#20998;&#25903;&#24037;&#20316;&#27969;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#31649;&#29702;&#21046;&#24230;&#35268;&#33539;/&#36719;&#20214;&#36845;&#20195;&#24320;&#21457;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
