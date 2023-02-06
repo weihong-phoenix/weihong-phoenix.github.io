@@ -2583,7 +2583,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/toc.html",
-          "hash": "09wMU7quWu5Yrb6gC2/Kns4XuvvwlK40/qftkUzDqsM="
+          "hash": "gfQyUQPEST7A3ulEit2itZuASPHdnAlEPG69bOf1UkM="
         }
       },
       "is_incremental": false,
@@ -2619,7 +2619,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/布局规范.html",
-          "hash": "pTLclj+dA3lVoVY9m1nARl9aVlQxPgKEK92Z/MWcHj0="
+          "hash": "b0EtzdwqD96kl+Wd4T8/5+fQ7VlllNeP5CN48YHDgeY="
         }
       },
       "is_incremental": false,
@@ -2692,6 +2692,18 @@
         ".html": {
           "relative_path": "doc/UI设计规范/设计图地址.html",
           "hash": "Louua3Z8sYbdbnDmhfAWOZ7+1WFYobH0ZXer0oVF8RM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/UI设计规范/通用界面.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/UI设计规范/通用界面.html",
+          "hash": "8P1pmRLOa42vJcWeq378GsPjkQ3NQfQatMTXU2XvsLo="
         }
       },
       "is_incremental": false,
@@ -6779,7 +6791,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 163,
+          "total_file_count": 164,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
