@@ -162,6 +162,12 @@
 <p>工作流以主分支作为交互中心。衍生出开发分支进行开发、发行分支进行测试发行、修复分支进行 bug 修复，一切都围绕着控制一个主分支并持续改进为本。</p>
 <h3 id="61-开发分支">6.1 开发分支</h3>
 <p>开发新功能与修复Bug时，开发人员应从 <code>master</code> 分支上创建分支。</p>
+<p><strong>注意：</strong>所有开发分支合并后， 请删除原有分支。 **若要开发， 必须重新从 <code>master</code> 分支上创建分支；禁止PR成功后， 继续基于该分支开发，而应该重新从 <code>master</code>创建新分支。<a href="https://trunkbaseddevelopment.com/">Trunk-based Development</a>分支模型强调小步快跑， 频繁提交。 </p>
+<p>好处如下：</p>
+<ol>
+<li>团队均基于 <code>master</code> 开发， 减少后续的Merge冲突； </li>
+<li>利于团队利用持续集成，尽快编译， 测试代码。</li>
+</ol>
 <p>分支目录名称约定：</p>
 <ul>
 <li>feature: 新功能开发</li>
@@ -178,7 +184,7 @@
 <li><code>*</code> 代表工作项编号（可选， 若无，后面的-可忽略）</li>
 <li><code>workitem</code> 代表工作简短描述（英文）</li>
 </ul>
-<p>在对应的分支上做所有的开发工作，一旦分支开发完成， 必须及时PR到主分支并删除开发分支（如无需保留）。</p>
+<p>在对应的分支上做所有的开发工作，一旦分支开发完成， 必须及时PR到主分支并删除开发分支。</p>
 <p>如：开发分支</p>
 <p><img src="images/git-workflow-b.png" alt=""></p>
 <p><code>fix</code> 分支</p>
