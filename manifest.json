@@ -5322,15 +5322,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发管理制度规范/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/toc.html",
-          "hash": "dh9uPMulwg39IPddjDIOLeLdLFnP6kvPKWb501zsX6g="
+          "hash": "spXlQInUId2k4TT8oOU4Kt4WUKy3nwGY5kpB82tP/XI="
         }
       },
       "is_incremental": false,
