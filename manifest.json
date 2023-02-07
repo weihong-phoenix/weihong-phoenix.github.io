@@ -1028,10 +1028,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/bj2_bj_f2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/bj2_bj_f2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/bj2_bj_z1.jpg",
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/bj2_bj_z1.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/bj2_bj_z2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/bj2_bj_z2.jpg"
         }
       },
       "is_incremental": false,
