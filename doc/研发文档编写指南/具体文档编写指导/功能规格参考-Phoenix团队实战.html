@@ -223,49 +223,6 @@ fanuc_link_0i.chn
 <p>（1）术语和FANUC的区别</p>
 <p>（2）和 FANUC 的功能区别，要增加、改进</p>
 <p>（3）建议的改进</p>
-<h3 id="寻址的描述方式">寻址的描述方式</h3>
-<ol>
-<li><p>使用 # 开头</p>
-</li>
-<li><p>对于简单寻址，可以直接记录，例如：<code>#MCC.T</code></p>
-</li>
-<li><p>对于涉及到数组类型的寻址（一般为轴数组，通道数组）</p>
-<p>提供⼀组全局的占位符</p>
-<p><code>{AN}</code>：轴索引
-<code>{CN}</code>：通道索引</p>
-<p><code>{LN}</code>：通道中的逻辑轴索引</p>
-<p>例如：</p>
-<p><code>#Pmt.Ch0.Axis.Acc[0]</code> ==&gt; <code>#Pmt.Ch{CN}.Axis.ACC[{LN}]</code></p>
-<p><code>#Ch0.Auto.Start</code> ==&gt; <code>#Ch{CN}.Auto.Start</code></p>
-</li>
-<li><p>对于 Pmt 参数，请使用 <code>#Pmt.Ch{CN}.AA.BB</code> ，请不要使用 <code>#Pmts.AA_Ch{CN}.BB</code> 的方式</p>
-</li>
-<li><p>对于其他的自定义的数组，可以使用其他<code>{名词}</code>的方式进行记录，但是需要在备注详细说明</p>
-<p>例如：</p>
-<p><code>#Pmt.Ch0{CN}.RTCP.InitToolVec[{TOOL}]</code></p>
-<p>备注中说明： TOOL 表示初始刀具的索引号，取值范围是 [0, 2]</p>
-</li>
-<li><p>目前的轴、通道索引，有的是使用[]下标访问的，有的是直接使用名字访问的；目前保持和实际寻址一致，后续会做调整。</p>
-</li>
-</ol>
-<h3 id="警告注意和注释">警告、注意和注释</h3>
-<p>本说明书包括保证操作者人身安全以及防止机械损坏的有关安全的注意事项，并根据它们在安全方面的重要程度，在正文中以“警告”和“注意”来叙述。
-此外，为了记述补充说明，采用“注释”来叙述。
-请用户在使用之前，仔细阅读这些“警告”、“注意”和“注释”中记载的事项。</p>
-<p><strong>警告</strong></p>
-<div class="WARNING"><h5>Warning</h5><p>操作失误将会导致触发风险。（Dangerous certain consequences of an action.）</p>
-</div>
-<p><strong>注意</strong></p>
-<div class="CAUTION"><h5>Caution</h5><p>操作失误可能引起的潜在风险。（Negative potential consequences of an action.）</p>
-</div>
-<p><strong>注释</strong></p>
-<div class="NOTE"><h5>Note</h5><p>即使是略读也应该关注的特别信息。（Information the user should notice even if skimming.）</p>
-</div>
-<h3 id="其他">其他</h3>
-<ol>
-<li>文档中所出现的参数、寻址，请使用<code>引用</code>的方式描述。</li>
-<li>对于参数，建议按照<code>参数名称（#PHX.A.B.C）</code>的方式进行描述。</li>
-</ol>
 <hr>
 <h1 id="示例功能旋转轴指定">示例功能：旋转轴指定</h1>
 <p>（部分内容是杜撰的，作为格式的示例）</p>
