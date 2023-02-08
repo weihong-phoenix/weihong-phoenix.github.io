@@ -1,0 +1,624 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SRS &#32534;&#20889;&#21442;&#32771; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SRS &#32534;&#20889;&#21442;&#32771; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="srs-编写参考">SRS 编写参考</h1>
+
+<h2 id="说明">说明</h2>
+<p>本文旨在编写一个适用性广的 SRS 编写参考。以 FANUC 连接说明书作为参考编写。<strong>注意：本文是一个偏向于功能说明的编写建议，并非适应所有场景，所以请撰写者按需使用。</strong></p>
+<h3 id="文档的结构">文档的结构</h3>
+<pre><code>---
+uid:
+implementation:
+fanuc_link_0i.no:
+fanuc_link_0i.eng:
+fanuc_link_0i.chn
+---
+
+# 功能名称
+## 概述
+## 信号 【可选】
+## 参数 【可选】
+## 报警 【可选】
+## 诊断 【可选】
+## ⽰例 【可选】
+## 参考 【可选】
+## 竞品分析 【可选】
+</code></pre><p>文档主要由以下几部分组成：</p>
+<blockquote><p>front-matter</p>
+<p>这是为了方便文档电子化的一种 markdown 常见用法。通过 --- 记录了文档的一些特殊信息，可用于目录生成，文档检索，附录生成等。</p>
+</blockquote>
+<h4 id="必须uid">【必须】uid</h4>
+<p>文档的唯一标志名，使用英文名进行描述，使用下划线进行连接</p>
+<h4 id="必须implementation">【必须】implementation</h4>
+<p>是否已经实现，可选为 yes/no/uncertain/future</p>
+<h4 id="可选fanuclink0ino">【可选】fanuc_link_0i.no</h4>
+<p>FANUC-0i 的规格 ID，这部分在生成初版文档的时候已经批量生成</p>
+<h4 id="可选fanuclink0ieng">【可选】fanuc_link_0i.eng</h4>
+<p>FANUC 对应章节英文名称</p>
+<h4 id="可选fanuclink0ichn">【可选】fanuc_link_0i.chn</h4>
+<p>FANUC 对应章节的中文名称</p>
+<blockquote><p>正文部分</p>
+<p>要描述功能的具体说明。这部分我们参考的是 FANUC 的连接说明书，在编写文档的时候，更多从功能的角度出来来思考文档的提供方式，这里只是初步提供了一个建议的例子。</p>
+</blockquote>
+<h4 id="必须功能名称">【必须】功能名称</h4>
+<p>功能的名称，不需要上下文就能准确识别功能含义。</p>
+<h4 id="必须概述">【必须】概述</h4>
+<p>主要介绍该功能是什么，有什么用途、目的，介绍该功能执行的基本动作过程。一般先整体描述功能，然后再详细叙述。如果有需要的话，可以按照子功能的方式列举。</p>
+<p>除此之外可以选择性地介绍功能的背景、或者该功能相关的其他信息帮助读者理解。</p>
+<h4 id="可选信号">【可选】信号</h4>
+<p>这部分会对于其中的功能做详细的描述，以表格的方式记录。
+为了一致性，统一使用一样的表格，参数中不涉及的项，它的值写“-”。</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>访问方式，一般是以寻址的方式呈现</td>
+</tr>
+<tr>
+<td>名称</td>
+<td>信号名称</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>信号的功能描述，目的价值，使用方法。</td>
+</tr>
+<tr>
+<td>读写</td>
+<td>只读，只写，读写</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>信号的类型：bool, int, double, string</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>可以使用[],()来表示数字的范围<br>对于bool类型，需要说明<br>对于枚举类型，如果是 10 个以内，可以在表格中写下来，用<code>&lt;br&gt;</code>换行，超过 10 个的另外补充一个表格</td>
+</tr>
+<tr>
+<td>单位</td>
+<td>数字的单位</td>
+</tr>
+<tr>
+<td>精度</td>
+<td>参数的精度</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>参数的默认值</td>
+</tr>
+<tr>
+<td>权限</td>
+<td>用于指定参数权限，当前只有操作员和制造商</td>
+</tr>
+<tr>
+<td>分类</td>
+<td>用于指定参数是轴参数、加工参数、规划参数、补偿参数、刀具参数、其他参数。。。</td>
+</tr>
+<tr>
+<td>参数类别</td>
+<td>用于指定参数类别是 <strong>机床参数</strong> 还是 <strong>控制参数</strong></td>
+</tr>
+<tr>
+<td>备注</td>
+<td>一些补充的说明；比如说参数和其他有关联性；比如说一些特殊的用法等。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="可选参数">【可选】参数</h4>
+<p>格式和接口相同。</p>
+<p>参数和接口的区别：</p>
+<p>规格来定，从概念上区分；用户可以设定的，可以迁移。。。 接口：控制、状态</p>
+<h4 id="可选报警">【可选】报警</h4>
+<p>报警信息，以表格的方式记录</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>内容</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>报警码，现在可以填待补充</td>
+<td>错误/警告</td>
+<td>报警的内容</td>
+<td>产生原因：xxxxxx<br>解决办法：xxxxxx</td>
+</tr>
+</tbody>
+</table>
+<h4 id="可选诊断">【可选】诊断</h4>
+<p>格式和接口相同</p>
+<h4 id="可选示例">【可选】示例</h4>
+<p>举例前要有引导语，引导语是对举例的具体解释，引导语最后使用句号。</p>
+<p>结合实际的使用，给出一些用法。这部分尽可能简单明确，多图表少文字。</p>
+<h4 id="可选参考">【可选】参考</h4>
+<p>主要是 API 等相关链接，以及一些关联功能的描述。</p>
+<h4 id="可选分析">【可选】分析</h4>
+<p>这部分内容是对架构的需求。主要是作为一个非正式的竞品分析部分，方便后续的架构和开发人员了解更多信息。</p>
+<p>分析什么？</p>
+<p>（1）术语和FANUC的区别</p>
+<p>（2）和 FANUC 的功能区别，要增加、改进</p>
+<p>（3）建议的改进</p>
+<h3 id="寻址的描述方式">寻址的描述方式</h3>
+<ol>
+<li><p>使用 # 开头</p>
+</li>
+<li><p>对于简单寻址，可以直接记录，例如：<code>#MCC.T</code></p>
+</li>
+<li><p>对于涉及到数组类型的寻址（一般为轴数组，通道数组）</p>
+<p>提供⼀组全局的占位符</p>
+<p><code>{AN}</code>：轴索引
+<code>{CN}</code>：通道索引</p>
+<p><code>{LN}</code>：通道中的逻辑轴索引</p>
+<p>例如：</p>
+<p><code>#Pmt.Ch0.Axis.Acc[0]</code> ==&gt; <code>#Pmt.Ch{CN}.Axis.ACC[{LN}]</code></p>
+<p><code>#Ch0.Auto.Start</code> ==&gt; <code>#Ch{CN}.Auto.Start</code></p>
+</li>
+<li><p>对于 Pmt 参数，请使用 <code>#Pmt.Ch{CN}.AA.BB</code> ，请不要使用 <code>#Pmts.AA_Ch{CN}.BB</code> 的方式</p>
+</li>
+<li><p>对于其他的自定义的数组，可以使用其他<code>{名词}</code>的方式进行记录，但是需要在备注详细说明</p>
+<p>例如：</p>
+<p><code>#Pmt.Ch0{CN}.RTCP.InitToolVec[{TOOL}]</code></p>
+<p>备注中说明： TOOL 表示初始刀具的索引号，取值范围是 [0, 2]</p>
+</li>
+<li><p>目前的轴、通道索引，有的是使用[]下标访问的，有的是直接使用名字访问的；目前保持和实际寻址一致，后续会做调整。</p>
+</li>
+</ol>
+<h3 id="警告注意和注释">警告、注意和注释</h3>
+<p>本说明书包括保证操作者人身安全以及防止机械损坏的有关安全的注意事项，并根据它们在安全方面的重要程度，在正文中以“警告”和“注意”来叙述。
+此外，为了记述补充说明，采用“注释”来叙述。
+请用户在使用之前，仔细阅读这些“警告”、“注意”和“注释”中记载的事项。</p>
+<p><strong>警告</strong></p>
+<div class="WARNING"><h5>Warning</h5><p>操作失误将会导致触发风险。（Dangerous certain consequences of an action.）</p>
+</div>
+<p><strong>注意</strong></p>
+<div class="CAUTION"><h5>Caution</h5><p>操作失误可能引起的潜在风险。（Negative potential consequences of an action.）</p>
+</div>
+<p><strong>注释</strong></p>
+<div class="NOTE"><h5>Note</h5><p>即使是略读也应该关注的特别信息。（Information the user should notice even if skimming.）</p>
+</div>
+<h3 id="其他">其他</h3>
+<ol>
+<li>文档中所出现的参数、寻址，请使用<code>引用</code>的方式描述。</li>
+<li>对于参数，建议按照<code>参数名称（#PHX.A.B.C）</code>的方式进行描述。</li>
+</ol>
+<hr>
+<h1 id="示例功能旋转轴指定">示例功能：旋转轴指定</h1>
+<p>（部分内容是杜撰的，作为格式的示例）</p>
+<h2 id="概述">概述</h2>
+<p>可以通过参数，设定每个轴是直线轴还是旋转轴。旋转轴包括两种类型，可以通过参数设定为直线型旋转轴和旋转型旋转轴。</p>
+<blockquote><p>问题点：需求、场景、价值应该在这里体现吗？如果有的话，可以记录。因为很多时候我们只是描述功能，所以并不需要。</p>
+</blockquote>
+<p>通过 <code>#Axes{AN}.RotaryAxis</code> 参数设定，可以开启循环显示功能。使用循环功能时，可以设定每转动一圈的移动量，坐标值的显示值会显示在【0，360】范围内，可以防止旋转轴的坐标溢出。</p>
+<p>绝对指令的情况下，通过参数 <code>最短路径（#Pmt.Ch{CN}.Axis.RevShortPath[{LN}]）</code>，可以设定按照最短的移动方式移动到终点。</p>
+<p>绝对指令的情况下，通过参数 <code>符号决定方向（#Pmt.Ch{CN}.Axis.SignDeterminesDir[{LN}]）</code>，可以设定移动的方向与指令的正负号相同。</p>
+<p>最短路径和符号决定方向不可以同时开启，如果开启了，按照最短路径处理。</p>
+<p>如果使用增量指令，最短路径和符号决定方向都不会生效，按照实际的移动值进行移动。</p>
+<div class="NOTE"><h5>Note</h5><p>该功能只有在  <code>#Axes[{AN}].RotaryAxis</code>  开启后有效</p>
+</div>
+<h2 id="接口">接口</h2>
+<h3 id="是否循环显示中">是否循环显示中</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#Axes[{AN}].IsRotaryAxisDisp</td>
+</tr>
+<tr>
+<td>名称</td>
+<td>是否循环显示中</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>开启循环显示功能后，工件坐标值的显示范围在[0, 360) 之间。</td>
+</tr>
+<tr>
+<td>读写</td>
+<td>只读</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>true: 循环显示功能开启中；<br>false: 循环显示功能关闭中</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>false</td>
+</tr>
+<tr>
+<td>备注</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="参数">参数</h2>
+<h3 id="旋转轴循环显示">旋转轴循环显示</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#Axes[{AN}].RotaryAxis</td>
+</tr>
+<tr>
+<td>名称</td>
+<td>旋转轴循环显示</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>开启循环显示功能后，工件坐标值的显示范围在[0, 360) 之间。</td>
+</tr>
+<tr>
+<td>读写</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>true: 循环显示功能开启中；<br>false: 循环显示功能关闭中</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>false</td>
+</tr>
+<tr>
+<td>备注</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="最短路径">最短路径</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#Pmt.Ch{CN}.Axis.RevShortPath[{LN}]</td>
+</tr>
+<tr>
+<td>名称</td>
+<td>最短路径</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>按照最快移动到终点的方式进行移动，每次运动的距离不会超过 360°。</td>
+</tr>
+<tr>
+<td>读写</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>true: 启用；<br>false: 不启用</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>false</td>
+</tr>
+<tr>
+<td>备注</td>
+<td>该功能只有在<code>#Axes[{AN}].RotaryAxis</code>启用后有效。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="符号决定方向">符号决定方向</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#Pmt.Ch{CN}.Axis.SignDeterminesDir[{AN}]</td>
+</tr>
+<tr>
+<td>名称</td>
+<td>符号决定方向</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>按照最快移动到终点的方式进行移动，移动的方向和符号相同。正的时候按照顺时针移动，负的时候按照逆时针运动。每次运动的距离不会超过 360°。</td>
+</tr>
+<tr>
+<td>读写</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>true: 启用；<br>false: 不启用</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>false</td>
+</tr>
+<tr>
+<td>备注</td>
+<td>该功能只有在<code>#Axes[{AN}].RotaryAxis</code>启用后有效，并且如果<code>#Pmt.Ch{CN}.Axis.RevShortPath[{AN}]</code>启用，该功能无效。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="旋转轴一圈移动量">旋转轴一圈移动量</h3>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#Axes[{AN}].CycleDistance</td>
+</tr>
+<tr>
+<td>名称</td>
+<td>旋转轴一圈移动量</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>旋转轴每旋转一圈，移动的角度量。</td>
+</tr>
+<tr>
+<td>读写</td>
+<td>读写</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>[0, 999999]</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>360</td>
+</tr>
+<tr>
+<td>备注</td>
+<td>该功能只有在<code>#Axes[{AN}].RotaryAxis</code>启用后有效。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="报警">报警</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>内容</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10000</td>
+<td>警告</td>
+<td>加工过程中不可以设定最短路径</td>
+<td>原因分析：在加工过程中修改了最短路径。<br>解决办法：请在非加工状态下修改该参数。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="诊断">诊断</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#Axes[{AN}].RotaryHistory</td>
+</tr>
+<tr>
+<td>名称</td>
+<td>是否循环显示中诊断信息</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>记录了从开机到当前时间的旋转轴参数的修改次数。</td>
+</tr>
+<tr>
+<td>读写</td>
+<td>只读</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>[0, 99999]</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>0</td>
+</tr>
+<tr>
+<td>备注</td>
+<td>关机后自动清零。超过最大值后变为 0 。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="示例">示例</h2>
+<h3 id="旋转轴范围显示在-0--720">旋转轴范围显示在 0° ~ 720°</h3>
+<p>由于客户使用了放大机，所以旋转轴旋转 2 圈才会真正移动一圈，所以设定轴的显示范围在 0° ~ 720°。</p>
+<ol>
+<li>将 <code>#Axes[{AN}].RotaryAxis</code>设置为 true</li>
+<li>将 <code>#Axes[{AN}].CycleDistance</code>设置为 720</li>
+<li>将 <code>#Pmt.Ch{CN}.Axis.RevShortPath[{AN}]</code> 设置为 true</li>
+<li>执行刀路 X1080，最终顺时针旋转 1.5 圈，绝对坐标值为360°</li>
+</ol>
+<h2 id="参考">参考</h2>
+<ol>
+<li>旋转轴功能配置请参考《系统集成·轴和通道》</li>
+</ol>
+<h2 id="分析">分析</h2>
+<ol>
+<li>FANUC 有 XX 功能，可以实现 XX 能力，我们系统是 XXX 的。</li>
+</ol>
+<blockquote><p>这部分内容是对架构的需求。分析什么？</p>
+<p>（1）术语和FANUC的区别</p>
+<p>（2）和 FANUC 的功能区别，要增加、改进</p>
+<p>（3）建议的改进</p>
+</blockquote>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20855;&#20307;&#25991;&#26723;&#32534;&#20889;&#25351;&#23548;/&#21151;&#33021;&#35268;&#26684;&#21442;&#32771;-Phoenix&#22242;&#38431;&#23454;&#25112;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    
+      </body>
+</html>
