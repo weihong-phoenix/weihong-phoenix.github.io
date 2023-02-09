@@ -2910,6 +2910,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/ExtensionPack.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/ExtensionPack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/toc.png",
       "output": {
         "resource": {
@@ -3227,12 +3238,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.html",
-          "hash": "qh7LniKgvY7lMhNDQMViMno2xjaIEARAfW0Qgt1cGuE="
+          "hash": "I1PRnVVciqTfHBtZxkW55nzpgXCNllAx1/4OHM3pquY="
         }
       },
       "is_incremental": false,
