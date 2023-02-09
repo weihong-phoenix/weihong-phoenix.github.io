@@ -2653,7 +2653,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/引言.html",
-          "hash": "d6C/jqr/QT27W7ORDI7uGx21XjDyoROeN8O00gZT8wE="
+          "hash": "8nJ6V9Musmjs/2n6szzBsJIogQVqCFBi5ftm32+chcE="
         }
       },
       "is_incremental": false,
@@ -3167,12 +3167,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "MKEBN9JCaBPurNK3ZsuigyJQvyjUPAR4xlwnkkgJxZ0="
+          "hash": "Wo+jzWfIhz49Ja1NolrHoxXR9n0c4Je7a/STpTtfrDY="
         }
       },
       "is_incremental": false,
@@ -3658,11 +3661,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/内容及格式/文本字体.md",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/插图&表格.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/内容及格式/文本字体.html",
-          "hash": "G7DmFivCuF8kJ+hoqyGpOu1/9V45LYafdEJg0KUwQ6A="
+          "relative_path": "doc/研发文档编写指南/内容及格式/插图&表格.html",
+          "hash": "M+2S51b1Xt+zz8DajhrDQbZLIdSBjGN5ruVGSE6tbyo="
         }
       },
       "is_incremental": false,
@@ -3670,11 +3673,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/内容及格式/文本插图.md",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/文本字体.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/内容及格式/文本插图.html",
-          "hash": "3qn9mBZnhSTazqBoQPtS3gp7XjhJl3uwLDaJKgp4Cf0="
+          "relative_path": "doc/研发文档编写指南/内容及格式/文本字体.html",
+          "hash": "G7DmFivCuF8kJ+hoqyGpOu1/9V45LYafdEJg0KUwQ6A="
         }
       },
       "is_incremental": false,
