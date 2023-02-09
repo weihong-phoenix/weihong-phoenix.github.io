@@ -2910,6 +2910,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/tableafter.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/tableafter.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/img/tablebefore.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/img/tablebefore.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/toc.png",
       "output": {
         "resource": {
@@ -3665,7 +3687,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/插图&表格.html",
-          "hash": "M+2S51b1Xt+zz8DajhrDQbZLIdSBjGN5ruVGSE6tbyo="
+          "hash": "1yoIYVUX339a3Y+9d1luBYK7GmM54YGtslecoHoBNxY="
         }
       },
       "is_incremental": false,
