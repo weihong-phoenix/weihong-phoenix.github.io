@@ -2910,17 +2910,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/研发文档编写指南/img/ExtensionPack.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/研发文档编写指南/img/ExtensionPack.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/研发文档编写指南/img/toc.png",
       "output": {
         "resource": {
@@ -3238,15 +3227,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.html",
-          "hash": "fP5n/mXEms8omLt5CrBS6l9Zp8EwZqT4+peD5q8wFTs="
+          "hash": "9lP73g0Ed4aRsKUs6TxOfNBMnM0oXy1ANtaBO0mRviw="
         }
       },
       "is_incremental": false,
@@ -3259,6 +3245,17 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/git&github.html",
           "hash": "0N+pBv2H3sUoARjKEbJs2hCG7CZ6RAff01MqNmcLs1Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/images/ExtensionPack.png",
+      "output": {
+        "resource": {
+          "relative_path": "doc/研发文档编写指南/仓库及发布工具/images/ExtensionPack.png"
         }
       },
       "is_incremental": false,
