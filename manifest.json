@@ -3189,15 +3189,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "Wo+jzWfIhz49Ja1NolrHoxXR9n0c4Je7a/STpTtfrDY="
+          "hash": "CGR2X7jVbPfgj5WwT3nZrwUuws6hcQGrxmq+guaEJ6U="
         }
       },
       "is_incremental": false,
@@ -3683,11 +3680,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/内容及格式/插图&表格.md",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/插图表格.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/内容及格式/插图&表格.html",
-          "hash": "1yoIYVUX339a3Y+9d1luBYK7GmM54YGtslecoHoBNxY="
+          "relative_path": "doc/研发文档编写指南/内容及格式/插图表格.html",
+          "hash": "db4Ij3Ggvt/KycuQKqDtG0G81E3d+ocpjrHOVUzroBg="
         }
       },
       "is_incremental": false,
