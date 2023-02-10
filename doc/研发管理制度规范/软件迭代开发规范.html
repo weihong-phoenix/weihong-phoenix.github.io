@@ -160,9 +160,10 @@
 <p><img src="images/git-workflow-a.png" alt=""></p>
 <p>该工作流基于<a href="https://trunkbaseddevelopment.com/">Trunk-based Development</a>,  定义了一个围绕着主分支开发的GIT开发流程模型。</p>
 <p>工作流以主分支作为交互中心。衍生出开发分支进行开发、发行分支进行测试发行、修复分支进行 bug 修复，一切都围绕着控制一个主分支并持续改进为本。</p>
+<p><strong>注意：</strong>创建分支前， 请务必拉取下最新版本。</p>
 <h3 id="61-开发分支">6.1 开发分支</h3>
 <p>开发新功能与修复Bug时，开发人员应从 <code>master</code> 分支上创建分支。</p>
-<p><strong>注意：</strong>所有开发分支合并后， 请删除原有分支。 **若要开发， 必须重新从 <code>master</code> 分支上创建分支；禁止PR成功后， 继续基于该分支开发，而应该重新从 <code>master</code>创建新分支。<a href="https://trunkbaseddevelopment.com/">Trunk-based Development</a>分支模型强调小步快跑， 频繁提交。 </p>
+<p><strong>注意：</strong>所有开发分支合并后， 请删除原有分支。 若要开发， 必须重新从 <code>master</code> 分支上创建分支；禁止PR成功后， 继续基于该分支开发，而应该重新从 <code>master</code>创建新分支。<a href="https://trunkbaseddevelopment.com/">Trunk-based Development</a>分支模型强调小步快跑， 频繁提交。 </p>
 <p>好处如下：</p>
 <ol>
 <li>团队均基于 <code>master</code> 开发， 减少后续的Merge冲突； </li>
