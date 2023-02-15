@@ -3194,7 +3194,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "CGR2X7jVbPfgj5WwT3nZrwUuws6hcQGrxmq+guaEJ6U="
+          "hash": "pQxUrBu34IgDVjkx/Kqa/kAN9mo1ufudTDL6ZhqwpoA="
         }
       },
       "is_incremental": false,
@@ -3828,6 +3828,18 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/基本原则/注意细节-准备删除.html",
           "hash": "D3yOWncY64yZ7qD0KNDFi8FBi0dMOn6MsYBawRkePlk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/引言/版本变更.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/引言/版本变更.html",
+          "hash": "/A3l1Pujr4e9z5FACXnr0ZrRXzEhCJhb4Xy9awGyMeA="
         }
       },
       "is_incremental": false,
@@ -6855,7 +6867,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 165,
+          "total_file_count": 166,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
