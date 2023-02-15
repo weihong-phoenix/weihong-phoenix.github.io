@@ -1424,6 +1424,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "doc/UI设计规范/images/sc_pps.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "doc/UI设计规范/images/sc_pps.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sc_qs.jpg",
       "output": {
         "resource": {
@@ -2811,7 +2822,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/色彩.html",
-          "hash": "6kb7qflon2xR60W/QMQoHw8NVlOOb5doewFyxzfbvg8="
+          "hash": "PLy0k8bAa/fIXI45wkSrFUMhutH9PkFaZiTkteyKX6s="
         }
       },
       "is_incremental": false,
