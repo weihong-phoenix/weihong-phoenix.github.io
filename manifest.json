@@ -1204,17 +1204,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_fl_qs1_pt1.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_fl_qs1_pt1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sc_fl_qs2.png",
       "output": {
         "resource": {
