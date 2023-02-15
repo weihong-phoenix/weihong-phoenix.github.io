@@ -99,6 +99,12 @@
 <td>1. 规范文档格式。<br>2. 去除 SRS 模板，独立成文件。<br>3. 翻译注释为中文。<br>4. 修改 SRS 部分。</td>
 <td>祁彩云</td>
 </tr>
+<tr>
+<td>R3.2</td>
+<td>R3.1</td>
+<td>1. doc 下新增 manual 目录。<br>2. 修改目录的解释信息。</td>
+<td>祁彩云</td>
+</tr>
 </tbody>
 </table>
 <h2 id="目的和范围">目的和范围</h2>
@@ -163,7 +169,8 @@
 <pre><code>&lt;project-name&gt;/                     ; project root dir                       
     +-- doc/                                    
         +-- srs/
-        +-- design/                 
+        +-- design/
+        +-- manual                  
     +-- pm/                             
         +-- risk.md                             
         +-- roles.md                            
@@ -178,10 +185,10 @@
 </code></pre><p><strong>解释</strong></p>
 <ul>
 <li><strong>&lt;project-name&gt;/</strong> - 项目根目录。</li>
-<li><strong>doc/</strong> - 文档目录，包括 srs 及其它文件。</li>
+<li><strong>doc/</strong> - 资产类型的文件目录，包括 规格说明书（srs）、设计方案（design）、用户相关文档（manual）。</li>
 <li><strong>doc/srs/</strong> - SRS 文件</li>
 <li><strong>doc/design/</strong> - 设计方案文件</li>
-<li><strong>pm/</strong> - 项目文件目录，包括项目风险文件、利益相关人和项目结构文件。</li>
+<li><strong>pm/</strong> - 项目文件目录，主要是过程文档，包括项目风险文件、利益相关人和项目结构文件、会议纪要等。</li>
 <li><strong>src/</strong> - 源代代码文件夹。</li>
 <li><strong>test/</strong> - 测试用例文件夹。</li>
 <li><strong>.gitignore</strong> - 忽略文件配置清单。将会影响到如 <code>git add</code> 和 <code>git clean</code> 这样的命令。可以用 <code>gitignore.io</code> 生成一个干净有用的 .gitignore 文件。</li>
