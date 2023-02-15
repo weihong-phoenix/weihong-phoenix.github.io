@@ -1204,17 +1204,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_fl_qs1.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_fl_qs1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sc_fl_qs1_pt1.png",
       "output": {
         "resource": {
@@ -1274,72 +1263,6 @@
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/sc_fl_ss2_pt1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt1.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_pt1.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt2.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_pt2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt3.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_pt3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt4.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_pt4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_tz.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_tz.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_zt.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_zt.png"
         }
       },
       "is_incremental": false,
