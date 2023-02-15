@@ -1281,28 +1281,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt3.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_pt3.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_pt4.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_pt4.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sc_jc_tz.png",
       "output": {
         "resource": {
