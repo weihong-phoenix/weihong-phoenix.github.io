@@ -4884,17 +4884,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/研发管理制度规范/images/git-workflow-f.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/研发管理制度规范/images/git-workflow-f.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/研发管理制度规范/images/git-workflow-g.png",
       "output": {
         "resource": {
@@ -6699,7 +6688,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发管理制度规范/软件迭代开发规范.html",
-          "hash": "0geuhXShSWzfxJD/bsYrZ6p1uEnu4+9lf9gqTLQtgiU="
+          "hash": "lI8kvEEpAdgw8ZG8wMIXhanJNZrFo8Ej1prmUBSkHXA="
         }
       },
       "is_incremental": false,
