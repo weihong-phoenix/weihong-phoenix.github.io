@@ -1292,39 +1292,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_jg.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_jg.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_jx.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_jx.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_jc_ks.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_jc_ks.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "doc/UI设计规范/images/sc_jc_pt1.png",
       "output": {
         "resource": {
@@ -1406,17 +1373,6 @@
       "output": {
         "resource": {
           "relative_path": "doc/UI设计规范/images/sc_ml.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/sc_pp.png",
-      "output": {
-        "resource": {
-          "relative_path": "doc/UI设计规范/images/sc_pp.png"
         }
       },
       "is_incremental": false,
