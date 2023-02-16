@@ -201,11 +201,11 @@
 <li>所有正式发布的版本，必须有相应的 <code>release</code> 分支对应。</li>
 </ul>
 <h3 id="63-修复发布分支">6.3 修复发布分支</h3>
-<p>当测试或客户发现bug。应从 <code>release</code> 分支上拉出<code>fix</code>分支修复，修复完成后经过PR合并到 <code>release</code> 分支，并打tag标明修订版本，如master分支或最新release<code>分支（主版本号相同）也有此bug，应PR到相应分支。PR时如</code>fix`分支与目标分支差异较大无法合并，可以单独对相应分支进行修复。</p>
+<p>当测试或客户发现bug。应从 <code>release</code> 分支上拉出<code>fix</code>分支修复，修复完成后经过PR合并到 <code>release</code> 分支，并打tag标明修订版本，如master分支或最新<code>release</code> 分支也有此bug，应PR到相应分支。PR时如果<code>fix</code>分支与目标分支差异较大无法合并，可以单独对相应分支进行修复。</p>
 <p>分支约定：</p>
 <ul>
-<li>应从 <code>release</code> 分支拉出 <code>fix</code>分支。</li>
-<li><code>release</code> 分支修复后，应打tag标记修订版本</li>
+<li>应从 <code>release</code> 分支拉出 <code>fix</code>分支进行修复。</li>
+<li><code>release</code> 分支修复后，应打tag标记修订版本。</li>
 </ul>
 <p>如：</p>
 <p><img src="images/git-workflow-e.png" alt=""></p>
