@@ -1952,10 +1952,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/zs1_qh_f1.png",
+      "source_relative_path": "doc/UI设计规范/images/zs1_qh_f1.jpg",
       "output": {
         "resource": {
-          "relative_path": "doc/UI设计规范/images/zs1_qh_f1.png"
+          "relative_path": "doc/UI设计规范/images/zs1_qh_f1.jpg"
         }
       },
       "is_incremental": false,
@@ -1963,10 +1963,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/zs1_qh_f2.png",
+      "source_relative_path": "doc/UI设计规范/images/zs1_qh_f2.jpg",
       "output": {
         "resource": {
-          "relative_path": "doc/UI设计规范/images/zs1_qh_f2.png"
+          "relative_path": "doc/UI设计规范/images/zs1_qh_f2.jpg"
         }
       },
       "is_incremental": false,
@@ -1985,10 +1985,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/zs1_qh_z1.png",
+      "source_relative_path": "doc/UI设计规范/images/zs1_qh_z1.jpg",
       "output": {
         "resource": {
-          "relative_path": "doc/UI设计规范/images/zs1_qh_z1.png"
+          "relative_path": "doc/UI设计规范/images/zs1_qh_z1.jpg"
         }
       },
       "is_incremental": false,
@@ -1996,10 +1996,10 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "doc/UI设计规范/images/zs1_qh_z2.png",
+      "source_relative_path": "doc/UI设计规范/images/zs1_qh_z2.jpg",
       "output": {
         "resource": {
-          "relative_path": "doc/UI设计规范/images/zs1_qh_z2.png"
+          "relative_path": "doc/UI设计规范/images/zs1_qh_z2.jpg"
         }
       },
       "is_incremental": false,
@@ -2535,6 +2535,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/信息展示.md",
       "output": {
