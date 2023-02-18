@@ -2535,15 +2535,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "doc/UI设计规范/信息展示.md",
       "output": {
         ".html": {
           "relative_path": "doc/UI设计规范/信息展示.html",
-          "hash": "KkoUdPz1F0/1hH5d2AcITPfa93xbaINrXxzWQFbdAmU="
+          "hash": "dtQaShUmYm1oMY7KBTtL5PcKWtkzZQASkkAAlNDGp+4="
         }
       },
       "is_incremental": false,
