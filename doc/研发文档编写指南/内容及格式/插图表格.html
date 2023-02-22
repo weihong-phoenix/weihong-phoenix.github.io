@@ -218,8 +218,16 @@
 <blockquote><p>TODO</p>
 </blockquote>
 <h2 id="表格">表格</h2>
-<h3 id="参数信号表格">参数/信号表格</h3>
-<p>参数表格可以按照以下样式进行描述。</p>
+<h3 id="表格格式">表格格式</h3>
+<p>表格可以通过直接编辑标签或通过其它工具插入（如：typora），无论何种方式创建的表格，为了确保表格的一致性，要求通过 Learn Markdown 插件的功能进行格式化。</p>
+<p>具体使用参考章节：仓库及发布工具-&gt;VS Code-&gt;支持格式化表格。即通过插件里面的选项 <strong>Consolidate selected table</strong> 去除创建表格时额外多余的空格。  </p>
+<p>正例：（通过插件命令格式化后，去除额外空格）</p>
+<p><img src="../img/tableafter.png" alt="表格格式化"></p>
+<p>反例：（表格未格式化前有些多余的空格）</p>
+<p><img src="../img/tablebefore.png" alt="表格格式化"></p>
+<h3 id="表格应用">表格应用</h3>
+<h4 id="参数信号型">参数/信号型</h4>
+<p>参数/信号类型的表格可以按照以下样式进行描述。</p>
 <table>
 <thead>
 <tr>
@@ -317,15 +325,51 @@
 </tr>
 </tbody>
 </table>
-<p>表格修改后通过 Learn Markdown 插件的功能进行格式化，保持表格的一致性。参考章节：仓库及发布工具-&gt;VS Code-&gt;支持格式化表格。</p>
-<p>通过插件里面的选项 <strong>Consolidate selected table</strong> 去除创建表格时额外多余的空格。  </p>
-<p>正例：（通过插件命令格式化后，去除额外空格）</p>
-<p><img src="../img/tableafter.png" alt="表格格式化"></p>
-<p>反例：（表格未格式化前有些多余的空格）</p>
-<p><img src="../img/tablebefore.png" alt="表格格式化"></p>
-<h3 id="其它表格">其它表格</h3>
-<blockquote><p>TODO</p>
-</blockquote>
+<h4 id="报警型">报警型</h4>
+<p>报警类型的表格可以按照以下样式进行描述。</p>
+<ul>
+<li>编号，参数编号规则暂未定。</li>
+<li>类型，包括警告、错误、</li>
+<li>内容，报警提示信息。</li>
+<li>说明，根本原因及解决方法。</li>
+</ul>
+<p>正例：</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>类型</th>
+<th>内容</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10000</td>
+<td>警告</td>
+<td>加工过程中不可以设定最短路径</td>
+<td>原因分析：在加工过程中修改了最短路径。<br>解决办法：请在非加工状态下修改该参数。</td>
+</tr>
+<tr>
+<td>10001</td>
+<td>错误</td>
+<td>加工过程中不可以设定最短路径，XXXXX</td>
+<td>原因分析：在加工过程中修改了最短路径。<br>解决办法：请在非加工状态下修改该参数。</td>
+</tr>
+<tr>
+<td>10002</td>
+<td>警告</td>
+<td>XXXXXXXXXXXXX</td>
+<td>原因分析：在加工过程中修改了最短路径。<br>解决办法：请在非加工状态下修改该参数。</td>
+</tr>
+<tr>
+<td>10003</td>
+<td>警告</td>
+<td>XXXXXXX</td>
+<td>原因分析：在加工过程中修改了最短路径。<br>｜</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
