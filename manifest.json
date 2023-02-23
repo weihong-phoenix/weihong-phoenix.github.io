@@ -3758,11 +3758,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/审核参考/PR 批注 建议.md",
+      "source_relative_path": "doc/研发文档编写指南/审核参考/PR批注建议.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/审核参考/PR 批注 建议.html",
-          "hash": "rrC72ozDMJZb28jifE5n9SPaYcSxfetO2xFEnB5hGN8="
+          "relative_path": "doc/研发文档编写指南/审核参考/PR批注建议.html",
+          "hash": "oOj3+L2AfuezWju3NuDZy6b+/4QAav67eDTAM6tj0uU="
         }
       },
       "is_incremental": false,
@@ -3810,7 +3810,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/引言/版本变更.html",
-          "hash": "z7kUA4qM1ckM8WufjlGhXHxKQIJy51IcXiQDaLDfwLI="
+          "hash": "ZKms0CTtX7WXhbtSVFmGGPOlKDoZD5Fnaa1XmHdQlGs="
         }
       },
       "is_incremental": false,
