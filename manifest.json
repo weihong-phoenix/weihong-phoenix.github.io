@@ -3738,7 +3738,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/基本原则/基本原则.html",
-          "hash": "qgl3xkWJpsFfboNwomuosGbEmW2JUY/s4Tf/Y1GhBSE="
+          "hash": "iZpiEECktQUma2MwcIVlFdHbm/d3b0O0zyo5WoSnOY0="
         }
       },
       "is_incremental": false,
@@ -3751,6 +3751,54 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/基本原则/注意细节-准备删除.html",
           "hash": "D3yOWncY64yZ7qD0KNDFi8FBi0dMOn6MsYBawRkePlk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/审核参考/PR 批注 建议.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/审核参考/PR 批注 建议.html",
+          "hash": "rrC72ozDMJZb28jifE5n9SPaYcSxfetO2xFEnB5hGN8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/审核参考/审核角色.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/审核参考/审核角色.html",
+          "hash": "AcxDsO972j98SjbaDaNBK96kEZS2hqjmdeH6bUqR0+s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/审核参考/常见错误.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/审核参考/常见错误.html",
+          "hash": "fCKdM95zA/cxJfN/ir84yAuzRvf3DZin0Ps89aiQ/ig="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/审核参考/检查表.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/审核参考/检查表.html",
+          "hash": "0OFcQYHBQEdJc7QhxQpOmnpXmJikp2PwTg5qtjka8bs="
         }
       },
       "is_incremental": false,
@@ -6779,7 +6827,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 166,
+          "total_file_count": 170,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

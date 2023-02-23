@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#22522;&#26412;&#21407;&#21017; </title>
+    <title>&#23457;&#26680;&#26816;&#26597;&#34920; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#22522;&#26412;&#21407;&#21017; ">
+    <meta name="title" content="&#23457;&#26680;&#26816;&#26597;&#34920; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,50 +77,125 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="基本原则">基本原则</h1>
+<h1 id="审核检查表">审核检查表</h1>
 
-<h2 id="关注阅读者">关注阅读者</h2>
-<p>这篇文档谁会看？</p>
-<p>文档作者及评审人员都应该建立用户思维，站在文档使用者的角度去思考如何写出用户满意的文档。</p>
-<div class="NOTE"><h5>Note</h5><p>当这篇文档的用户会有不同的角色作为后续工作的输入的情况下，尤其需要重视。</p>
-</div>
-<p>建议从以下方面思考：</p>
-<ul>
-<li><p>文档的阅读者可能是不同的角色，不同角色对于文档的信息需求不同，不能够只是单一到考虑某个角色。</p>
-<blockquote><p>比如开发、测试、产品、UE。不同角色关注点不同，要让各个角色都可以在文档中找到需要的内容。</p>
-</blockquote>
-</li>
-<li><p>文档的阅读者的技术水平分布不同，对技术的理解深度不同，尽可能全面、清晰地将技术信息普及给阅读者。</p>
-</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>特别是 Phoenix 的 SRS 及其开发手册，不仅需要阅读者有一定的行业知识、开发经验，还需要对 Phoenix 的架构有一定的了解。</p>
-</div>
-<div class="NOTE"><h5>Note</h5><p>其次是 CNC 的用户手册，不仅要准确描述操作步骤，还应设身处地考虑用户可能面临的问题，提供进一步的详细信息。例如，对于需要输入的信息，提供输入格式等详细要求；对于报错信息，提供解决报错的可选操作；为方便用户排查错误，提供详细的错误码速查列表等等。</p>
-</div>
-<h2 id="语言简洁直达观点">语言简洁、直达观点</h2>
-<p>技术文档中应使用精练的语言。<strong>建议作者在完成初稿后再通篇读一遍文档</strong>，将文中所有对表达意思没有明显作用的字、词、句删去，在不影响表达效果的前提下把文案长度减到最短。具体要求有：</p>
-<ul>
-<li><p>禁止啰嗦冗长。</p>
-<p>正例：TODO</p>
-<p>反例：TODO</p>
-</li>
-<li><p>禁止逻辑混乱。</p>
-<p>正例：TODO</p>
-<p>反例：TODO</p>
-</li>
-<li><p>同一文档中勿重复表达同一事物。</p>
-</li>
-<li><p>尽量用<strong>主动时态</strong>，尤其要<strong>阐述清楚主语和宾语</strong>。</p>
-<p>正例：TODO</p>
-<p>反例：TODO</p>
-</li>
-</ul>
-<div class="NOTE"><h5>Note</h5><p>文档最好不需额外解释，如果文档呈现的内容还需要额外的解释才可以让阅读者理解，则该文档不符合要求，需要继续采用文字或者图形的方式进行描述说明。</p>
-</div>
-<h2 id="正确性">正确性</h2>
-<p>所有用户界面文本必须保证书写正确，无错别字。</p>
-<h2 id="一致性">一致性</h2>
-<p>同一个概念，在不同界面位置保证描述的一致性。</p>
+<h2 id="级别">级别</h2>
+<h2 id="检查表">检查表</h2>
+<h3 id="基本检查">基本检查</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>结论</th>
+<th>检查?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文档组织是否按照组内定义的模板？<br>&gt; 优于模板例外，模板也需要持续改进。</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>中英文之间、中文与数字之间是否缺失空格？</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>文件名称、功能名称是否一致？</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>概述内容是否回答了 Why 和 What ？</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>元数据是否遗漏？</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>文档中要求的其它必须项是否遗漏？（这里指 reference.md 文档)</td>
+<td>否</td>
+<td>√</td>
+</tr>
+</tbody>
+</table>
+<h3 id="高级检查">高级检查</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>审核人</th>
+<th>结论</th>
+<th>检查?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否有遗漏接口？（对照代码）</td>
+<td>开发</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>接口的每一项是否描述、完整且正确？</td>
+<td>开发</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>约束或限制是否描述、完整且正确？</td>
+<td>开发</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>异常处理或报警信息是否描述、完整且正确？</td>
+<td>开发</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>元数据定义是否合理且正确？（uid合适）</td>
+<td>测试</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>接口描述是否无歧义？</td>
+<td>测试</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>是否有未符合《编写规范》的其它情况？</td>
+<td>UE</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>开发手册关注的内容是否有遗漏的情况？</td>
+<td>UE</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>是否客户/用户关注的内容有遗留或描述模糊？</td>
+<td>产品</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -129,7 +204,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#22522;&#26412;&#21407;&#21017;/&#22522;&#26412;&#21407;&#21017;.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#23457;&#26680;&#21442;&#32771;/&#26816;&#26597;&#34920;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#24120;&#35265;&#38169;&#35823; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#24120;&#35265;&#38169;&#35823; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="常见错误">常见错误</h1>
+
+<h2 id="不符合内容完整性">不符合内容完整性</h2>
+<h3 id="信号参数等接口遗漏">信号、参数等接口遗漏</h3>
+<ul>
+<li>遗漏某个参数/信号</li>
+<li>遗漏参数/信号中的某个项，比如默认值、类型、返回值等。</li>
+</ul>
+<h3 id="参数约束或限制未描述">参数约束或限制未描述</h3>
+<ul>
+<li><p>参数受其它参数的约束未描述</p>
+</li>
+<li><p>信号的前置条件未描述</p>
+<blockquote><p>6827 问题：运动前检测条件缺失，手动等运动前提是 安全锁未锁定的情况下。</p>
+<p>6827 问题：锁定状态下不可以运动，但是可以执行其它操作，比如暂停、停止，这个要在规格里面体现。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="异常处理或报警信息未描述">异常处理或报警信息未描述</h3>
+<ul>
+<li><h3 id="未提供竞品信息">未提供竞品信息</h3>
+</li>
+<li><p>未明确和竞品不同之处，或遗漏问题未放到 <em>分析</em> 章节</p>
+</li>
+<li><p>未明确暂不实现及原因</p>
+</li>
+<li><p>未明确不计划实现或删除及原因。（reference.md 分析章节）</p>
+<blockquote><p>问题6875：加工统计。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="元数据遗漏">元数据遗漏</h3>
+<ul>
+<li>文档头部未提供元数据</li>
+</ul>
+<h3 id="提供信息但不完整">提供信息但不完整</h3>
+<ul>
+<li><p>提示说报错但未提供报错信息</p>
+</li>
+<li><p>明确了范围取值但未明确每个值的作用</p>
+</li>
+<li><p>PR 回复后未在文档里面更新。（可能觉得没有必要，既然有人提出来，就想办法通过某种方式避免第二个人质疑）</p>
+<blockquote><p>6822问题：持久化存储。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="不符合正确准确性">不符合正确/准确性</h2>
+<h3 id="使用限制多余或不正确">使用限制多余或不正确</h3>
+<blockquote><p>错误：G53指令中指定的IP是机械坐标，在有G50/G51、G50.1/G51.1 、G68.X/G69.X的情况下，也不会对坐标点进行比变换。</p>
+<p>纠正：G53指令中指定的IP是机械坐标，在有G50/G51、G50.1/G51.1 、G68/G69以及G68.2/G69.2的情况下，也不会对坐标点进行比变换。<br>(无G68.1和G69.1)</p>
+</blockquote>
+<h3 id="参数值错误">参数值错误</h3>
+<blockquote><p>6794问题：| 寻址 | #Ch[{CN}].Increase[{AN}].P(n) |</p>
+</blockquote>
+<h3 id="概念定义模糊">概念定义模糊</h3>
+<blockquote><p>说简单简单，说难有点难。定义要抓住概念的根本属性，可以采用类比的方式。</p>
+</blockquote>
+<h2 id="不符合简洁一致性编写规范">不符合简洁&amp;一致性（编写规范）</h2>
+<h3 id="多余的信息">多余的信息</h3>
+<ul>
+<li><p>指令格式包含多余信息</p>
+<blockquote><p>G53的例子</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="同类文档章节功能的组织功能名等形式不统一">同类文档、章节、功能的组织、功能名等形式不统一</h3>
+<ul>
+<li><p>功能名不一致</p>
+<blockquote><p>不同文档、同一个文档中的功能名不一致。（个人起码保证单个文档的一致性）</p>
+</blockquote>
+</li>
+<li><p>文件名称和#标题名称不一致</p>
+<blockquote><p>目前我们的 SRS 要保持一致。</p>
+<p>SRS。</p>
+</blockquote>
+</li>
+<li><p>术语或概念不一致</p>
+<blockquote><p>绝对坐标系和工件坐标系；机床坐标系和机械坐标系；指令和编码；等等。</p>
+</blockquote>
+</li>
+<li><p>指令格式不一致</p>
+</li>
+<li><p>各章节顺序不一致</p>
+</li>
+<li><p>元数据格式不一致</p>
+<blockquote><p>问题：有些文档 元数据中：Valid implementation options: yes/no/uncertain/future 本行都用的是一级标题，不合理。</p>
+</blockquote>
+</li>
+<li><p>寻址定义有不一致性</p>
+<blockquote><p>6875问题：#Channels[{CN}].Auto.Statistics.CurrentFileType </p>
+<p>规格上出现的是寻址，而不是引用。按目前的实现，寻址是 #Auto[n]</p>
+</blockquote>
+</li>
+<li><p>寻址里面同类型索引值不一致</p>
+<blockquote><p>6784问题：寻址 #Axes[{AN}].IsUpperSoftLimit ,有的地方用 Axes[{n}] </p>
+</blockquote>
+</li>
+<li><p>寻址类型不一致</p>
+<blockquote><p>6784-问题：#Channels[{CN}].State 寻址类型用输入、输出或者是读写？</p>
+<p>根据reference.md定义的格式，类型指返回的数据类型，读写是指权限。这里的寻址类型是输入还是输出，没有必要写，这个是业务层面的。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="接口名称描述不简洁">接口名称描述不简洁</h3>
+<ul>
+<li><p>参数/寻址名称</p>
+<blockquote><p>参数名称不带是否。</p>
+<p>参数描述简单概要，不和其它信息交织在一起。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="概述没有抓住重点">概述没有抓住重点</h3>
+<ul>
+<li>太过于简单，信息量少。(要描述Why+What)</li>
+<li>比较啰嗦，句子不通顺。（referenc.md 对此处的要求比较具体。）</li>
+</ul>
+<h4 id="备注信息的标识不一致">备注信息的标识不一致。</h4>
+<ul>
+<li>表格里面 <strong>备注</strong> 行或列和正文中的备注不需要一致。</li>
+<li>正文中的备注（提示、警告等信息）没有统一使用![NOTE]</li>
+</ul>
+<h3 id="中英文之间中文与数字之间无空格">中英文之间、中文与数字之间无空格</h3>
+<blockquote><p>有的写了，有的没有写，规范里面要求写，可以看看微软的官方文档。</p>
+</blockquote>
+<h3 id="强调-类型文本使用不一致"><em>强调</em> 类型文本使用不一致</h3>
+<blockquote><p>这里可能有争议。根据规范可以讨论下。</p>
+</blockquote>
+<h3 id="标题层级不符合规范">标题层级不符合规范</h3>
+<blockquote><p>参考规范-标题层级。</p>
+</blockquote>
+<h3 id="错别字">错别字</h3>
+<blockquote><p>出现概率不算高，也就那么固定的几个人。</p>
+</blockquote>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#23457;&#26680;&#21442;&#32771;/&#24120;&#35265;&#38169;&#35823;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    
+      </body>
+</html>
