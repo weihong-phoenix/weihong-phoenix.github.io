@@ -3120,7 +3120,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "oJKn5iypWR7GnthrdGIpISOL+UA9ZPf4LjRP1HiMzCs="
+          "hash": "SuIO9pd2MDCzgJXg5Ti5Jab5ViU2WjU1dhFv+0w4xzk="
         }
       },
       "is_incremental": false,
@@ -3986,11 +3986,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/综合应用/提示描述.md",
+      "source_relative_path": "doc/研发文档编写指南/综合应用/提示信息.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/综合应用/提示描述.html",
-          "hash": "R2sVi1aQPAoRkZx930BSGy4dI79m3h4WRKDf21/Wtt0="
+          "relative_path": "doc/研发文档编写指南/综合应用/提示信息.html",
+          "hash": "y5pnkBLVT5dyNIE3yA2r2dCpAv47Lody/zHzIsxF3s0="
         }
       },
       "is_incremental": false,
