@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#21442;&#25968;-&#26356;&#26032;ing&#65281;&#65281;&#65281; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#21442;&#25968;-&#26356;&#26032;ing&#65281;&#65281;&#65281; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="参数-更新ing">参数-更新ing！！！</h1>
+
+<h2 id="格式">格式</h2>
+<h3 id="分类">分类</h3>
+<p>根据参数含义、参数值类型等，主要分为以下几种类型：</p>
+<ul>
+<li>BOOL 型参数</li>
+<li>值枚举型参数</li>
+<li>与坐标相关的参数</li>
+<li>轴向参数</li>
+<li>与端口相关的参数</li>
+<li>延时参数</li>
+</ul>
+<h4 id="基本要求">基本要求</h4>
+<p>参数信息必须完整，必须包含有效的参数编号、参数描述。参数描述应对参数的作用、参数进行简单概要的描述。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>固定对刀仪位置 (N)的描述：<br> 固定对刀仪在 N 轴方向上的机械坐标值。</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>说明：参数名称不再使用。本例子为 更新时间：2023-2-25</p>
+</blockquote>
+<h4 id="一致性">一致性</h4>
+<p>使用统一的参数生效时间描述。</p>
+<p><strong>说明</strong>
+三种参数值修改生效方式及英文翻译为：</p>
+<table>
+<thead>
+<tr>
+<th>生效时间</th>
+<th>英文翻译</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>立即生效</td>
+<td>Immediately</td>
+<td>参数值修改后立即生效</td>
+</tr>
+<tr>
+<td>重启生效</td>
+<td>After Restart</td>
+<td>参数值修改后重启NcStudio软件后生效</td>
+</tr>
+<tr>
+<td>重新加载</td>
+<td>After Reload</td>
+<td>参数值修改后重新加载加工文件后生效</td>
+</tr>
+</tbody>
+</table>
+<h4 id="标点符号">标点符号</h4>
+<p>参数名称结尾处不使用标点符号；参数描述结尾处必须使用正确的、完整的标点。</p>
+<h3 id="不同参数类型要求不同">不同参数类型，要求不同</h3>
+<h4 id="值枚举型">值枚举型</h4>
+<p>参数描述中，需要枚举多个设置值含义时，使用统一的参数描述句型：参数简短描述。
+设置值1：XXXX；设置值2：XXXX；设置值3：XXXX。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>对刀类型选择。0：浮动对刀；1：固定对刀；2：第一次对刀/换刀后对刀。</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h4 id="轴向参数">轴向参数</h4>
+<p>使用统一的参数名称结构：参数名称(N)</p>
+<blockquote><p>此处括号不用区分中英文环境，统一使用英文、半角状态下的括号。 </p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>轴方向(X)<br>工作台行程上限 (X)</td>
+<td>X轴轴方向<br>X 轴工作台行程上限</td>
+</tr>
+</tbody>
+</table>
+<h4 id="坐标或位置相关参数">坐标或位置相关参数</h4>
+<p>使用统一参数名称结构：XXXX 位置；参数描述中具体说明是机械坐标值还是工件坐标值。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数名：固定对刀仪位置(N)<br>参数描述：固定对刀仪在N轴方向上的机械坐标值。</td>
+<td>参数名：固定对刀仪位置 (N)<br>参数描述：固定对刀仪在 N 轴方向上的坐标值。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="延时参数">延时参数</h4>
+<p>使用统一参数名称结构：XXXX 延时；参数描述结构：XXXX 的延迟时间</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参数名：主轴停止松刀延时<br>参数描述：主轴停止松刀后松刀输出的延迟时间。</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<h4 id="bool型参数">BOOL型参数</h4>
+<ul>
+<li>对于值为“是/否”或者 “True/False” 的参数，参数名称中去掉“是否”的字眼，在参数描述中使用“是否”进行说明。</li>
+<li>具体操作类的 BOOL 型参数，使用参数名称结构：动宾短语结构。</li>
+<li>启用某一功能、使用某一数据类的BOOL型参数，使用参数名称结构：XXXX 有效。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>检查工作台行程<br>过象限补偿有效<br>G28 指令有效</td>
+<td>检查工作台行程是否超限<br>过象限补偿是否有效<br>G28 指令是否有效</td>
+</tr>
+</tbody>
+</table>
+<h2 id="样例">样例</h2>
+<p>软件中公开的可供开发者或用户进行控制或修改的接口。参数信息包括：</p>
+<ul>
+<li>编号</li>
+<li>寻址</li>
+<li>描述</li>
+<li>类型</li>
+<li>单位</li>
+<li>范围</li>
+<li>精度</li>
+<li>默认值</li>
+</ul>
+<h3 id="参数描述使用">参数描述使用</h3>
+<ul>
+<li>参数描述内容结束统一使用全角 “。” 符号。</li>
+<li>参数描述的项目编号统一使用阿拉伯数字 0~9 标识，其它的根据情况使用，保持全文或整个软件格式统一。</li>
+<li>项目编号后统一使用 &quot;:&quot; 符号，中文后跟全角，数字后跟半角。</li>
+<li>不同项之间统一使用全角 “；” 符号。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标识当前刀具寿命状态。0. 不进行管理；1: 有效；2: 寿命耗尽；3: 刀具折损；<br>加工开始时，是否自动开启冷却装置。是：开启；否：不开启。</td>
+<td>当前刀具寿命状态，0: 不进行管理;1:有效;2:寿命耗尽;3:刀具折损;<br>加工开始时，是否自动开启冷却装置。是:开启；否:不开启。</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#32508;&#21512;&#24212;&#29992;/&#21442;&#25968;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    
+      </body>
+</html>
