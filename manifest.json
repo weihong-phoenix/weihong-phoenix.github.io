@@ -3120,7 +3120,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "SuIO9pd2MDCzgJXg5Ti5Jab5ViU2WjU1dhFv+0w4xzk="
+          "hash": "+Yyjn3cO0IdKcNqNS5ffN3ETNjwviBv7/OrZ4IEd7O0="
         }
       },
       "is_incremental": false,
@@ -3974,6 +3974,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/综合应用/信号.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/综合应用/信号.html",
+          "hash": "eA5f0Yi4cMly9DR890HDxridDP5r+KHRCyBvK92oV+4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/综合应用/参数.md",
       "output": {
         ".html": {
@@ -3986,11 +3998,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/综合应用/寻址.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/综合应用/寻址.html",
+          "hash": "4dZyUqdgkDAgyquJawEvuN5l7NVCne/1mNPNgAkwZwg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/综合应用/报警.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/综合应用/报警.html",
+          "hash": "kRCWk6H7dlKKJwJwEhmQiMalZBKu6S+BM5Tsyrj1aHk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/综合应用/提示信息.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/综合应用/提示信息.html",
-          "hash": "y5pnkBLVT5dyNIE3yA2r2dCpAv47Lody/zHzIsxF3s0="
+          "hash": "ez4DS91vscAupXQ5WOeLpsgkdIbLUarY0YWqyDUP/1k="
         }
       },
       "is_incremental": false,
@@ -4002,7 +4038,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/综合应用/概述.html",
-          "hash": "HM5sW8ujW4lapjZ/ZWR6eMylZdstYOLbW8CE3D3ItgY="
+          "hash": "OVeaiymAEnJFtA999jwGNuGHzF+CondMkCH0LUZoo5M="
         }
       },
       "is_incremental": false,
@@ -6878,7 +6914,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 174,
+          "total_file_count": 177,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#20851;&#20110;&#26412;&#31456;-&#27491;&#22312;&#26356;&#26032; </title>
+    <title>&#23547;&#22336;--&#27491;&#22312;&#26356;&#26032; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#20851;&#20110;&#26412;&#31456;-&#27491;&#22312;&#26356;&#26032; ">
+    <meta name="title" content="&#23547;&#22336;--&#27491;&#22312;&#26356;&#26032; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,26 +77,86 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="关于本章-正在更新">关于本章-正在更新</h1>
+<h1 id="寻址--正在更新">寻址--正在更新</h1>
 
-<p>基于公司产品的特性及架构特征，涉及到一些接口的描述，比如参数、信号、Target等，在文档编写时为确保一致性，特进行说明。</p>
-<h2 id="phoenix-子系统相关">Phoenix 子系统相关</h2>
-<p>也称为 Phoenix Runtime，是用于快速构建数控软件的运动控制开发平台，除了提供开箱即用的运动控制能力之外，还内建了插件机制和寻址系统，提供了自由度极高的扩展机制。</p>
-<h3 id="接口">接口</h3>
-<p>Phoenix 子系统提供的面向不同用户的可以进行数据交换的，统一称为接口。这些用户包括集成开发用户（如，产品线一次开发者）、扩展插件开发者（二次开发者）和终端用户（机床调试及操作人员）。接口针对不同的用户群体以及接口的表现行为的不同，分别采用参数、信号、Target 进行区分。</p>
-<h3 id="寻址">寻址</h3>
-<p>描述接口的方式，统一采用 <em>寻址</em>，<em>寻址</em> 是 Phoenix 子系统内的模块间和子系统和外部进行数据存储、访问的统一协议和规范。</p>
-<h3 id="参数">参数</h3>
-<p>参数是面向终端用户的，用户可以通过设置相关的参数控制加工的行为。</p>
-<h3 id="信号">信号</h3>
-<p>信号不可以被用户设置，是子系统根据内部的逻辑处理之后呈现的接口状态。</p>
-<h3 id="target">Target</h3>
-<p>Target 是一种函数，是面向开发者的接口，通过函数调用的方式访问 Phoenix 子系统内部的接口或扩展接口。</p>
-<h2 id="cnc-集成软件">CNC 集成软件</h2>
-<blockquote><p>TODO，时间：2023-3-31 责任人：祁彩云</p>
-</blockquote>
-<h2 id="cad-软件">CAD 软件</h2>
-<blockquote><p>TODO，时间：2023-3-31 责任人：祁彩云</p>
+<p><em>寻址</em> 是 Phoenix 子系统
+寻址包括哪些内容？</p>
+<h2 id="格式">格式</h2>
+<h2 id="内联样式-">内联样式 ``</h2>
+<p>正文的描述信息中，需要对某一类型的文本进行区分，并非想重点强调的，则可以用 <code>XXX</code> 进行弱强调。
+比较典型的案例是寻址名称，且前后各需一个空格隔开。</p>
+<p>但本身对该寻址的定义描述则不需要。比如信号、参数章节对该寻址则不需要 `` 。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>手轮设备可以通过 <code>#HandwheelDevice.Direction</code> 来控制手轮是正转还是反转。</td>
+<td>手轮设备可以通过 #HandwheelDevice.Direction 来控制手轮是正转还是反转。</td>
+</tr>
+</tbody>
+</table>
+<p>正例: </p>
+<p>手轮设备信号，<strong>脉冲计数</strong></p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>指</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#HandwheelDevice.PulseCount</td>
+</tr>
+<tr>
+<td>标题</td>
+<td>脉冲计数</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>手轮设备摇动所产生的脉冲计数。</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
+</tr>
+</tbody>
+</table>
+<p>反例：</p>
+<p>手轮设备信号，<strong>脉冲计数</strong></p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>指</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td><code>#HandwheelDevice.PulseCount</code></td>
+</tr>
+<tr>
+<td>标题</td>
+<td>脉冲计数</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>手轮设备摇动所产生的脉冲计数。</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>此处非正文信息的寻址引用，因此不需要另外加 `` 进行标识。</p>
 </blockquote>
 </article>
           </div>
@@ -106,7 +166,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#32508;&#21512;&#24212;&#29992;/&#27010;&#36848;.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#32508;&#21512;&#24212;&#29992;/&#23547;&#22336;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
