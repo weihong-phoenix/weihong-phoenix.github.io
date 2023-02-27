@@ -3579,6 +3579,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/字体.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/内容及格式/字体.html",
+          "hash": "NoBQkIPac8OVpLkA/f3Gzo970/M3RxhGJzabLUweebQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/内容及格式/字间空格.md",
       "output": {
         ".html": {
@@ -6851,7 +6863,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 172,
+          "total_file_count": 173,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
