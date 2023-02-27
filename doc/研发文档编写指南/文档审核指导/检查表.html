@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#23457;&#26680;&#35282;&#33394; </title>
+    <title>&#23457;&#26680;&#26816;&#26597;&#34920;-&#27491;&#22312;&#26356;&#26032; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#23457;&#26680;&#35282;&#33394; ">
+    <meta name="title" content="&#23457;&#26680;&#26816;&#26597;&#34920;-&#27491;&#22312;&#26356;&#26032; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,22 +77,125 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="审核角色">审核角色</h1>
+<h1 id="审核检查表-正在更新">审核检查表-正在更新</h1>
 
-<h2 id="定义">定义</h2>
-<p>即同一个代言群里面的角色。按照 MSF ，结合 Phoenix 产品，架构应该是 SRS 的第一责任人，当前 SRS 的责任人被下放到相应的开发人员，那么该开发人员提交的 PR 必定有一个指派的开发或者其汇报上级来评审。</p>
-<h2 id="侧重点">侧重点</h2>
-<h3 id="开发">开发</h3>
-<p>接口完整性，包括无遗漏接口、描述接口的每一项要完整、约束或限制要完整、异常处理或报警信息完整。</p>
-<h3 id="测试">测试</h3>
-<p>元数据完整且合理性、接口正确性、接口描述无歧义。</p>
-<h3 id="ue">UE</h3>
-<p>文档规范、开发手册关注的内容是否有明确。</p>
-<h3 id="产品">产品</h3>
-<p>客户/用户关注的内容</p>
-<blockquote><p>![NOTE]
-一般情况下，规格文档需要各个代言群的角色从不同维度进行评审，以满足不同使用者的需求。因不同角色对文档的关注侧重点不同，特别定义下，我们各个角色抓住自己审核的重点，但并不意味者不可以提出其他角色关注的问题。</p>
-</blockquote>
+<h2 id="级别">级别</h2>
+<h2 id="检查表">检查表</h2>
+<h3 id="基本检查">基本检查</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>结论</th>
+<th>检查?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文档组织是否按照组内定义的模板？<br>&gt; 优于模板例外，模板也需要持续改进。</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>中英文之间、中文与数字之间是否缺失空格？</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>文件名称、功能名称是否一致？</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>概述内容是否回答了 Why 和 What ？</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>元数据是否遗漏？</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>文档中要求的其它必须项是否遗漏？（这里指 reference.md 文档)</td>
+<td>否</td>
+<td>√</td>
+</tr>
+</tbody>
+</table>
+<h3 id="高级检查">高级检查</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>审核人</th>
+<th>结论</th>
+<th>检查?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否有遗漏接口？（对照代码）</td>
+<td>开发</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>接口的每一项是否描述、完整且正确？</td>
+<td>开发</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>约束或限制是否描述、完整且正确？</td>
+<td>开发</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>异常处理或报警信息是否描述、完整且正确？</td>
+<td>开发</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>元数据定义是否合理且正确？（uid合适）</td>
+<td>测试</td>
+<td>是</td>
+<td>√</td>
+</tr>
+<tr>
+<td>接口描述是否无歧义？</td>
+<td>测试</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>是否有未符合《编写规范》的其它情况？</td>
+<td>UE</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>开发手册关注的内容是否有遗漏的情况？</td>
+<td>UE</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td>是否客户/用户关注的内容有遗留或描述模糊？</td>
+<td>产品</td>
+<td>否</td>
+<td>√</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -101,7 +204,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#23457;&#26680;&#21442;&#32771;/&#23457;&#26680;&#35282;&#33394;.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#25991;&#26723;&#23457;&#26680;&#25351;&#23548;/&#26816;&#26597;&#34920;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

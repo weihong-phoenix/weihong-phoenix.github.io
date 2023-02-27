@@ -3120,7 +3120,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "+Yyjn3cO0IdKcNqNS5ffN3ETNjwviBv7/OrZ4IEd7O0="
+          "hash": "iH9xlnIuSAD6mfUojp5p6lCYwWcBR2Ugfvjq0AAwXew="
         }
       },
       "is_incremental": false,
@@ -3773,54 +3773,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/审核参考/PR批注建议.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/审核参考/PR批注建议.html",
-          "hash": "oOj3+L2AfuezWju3NuDZy6b+/4QAav67eDTAM6tj0uU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/审核参考/审核角色.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/审核参考/审核角色.html",
-          "hash": "AcxDsO972j98SjbaDaNBK96kEZS2hqjmdeH6bUqR0+s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/审核参考/常见错误.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/审核参考/常见错误.html",
-          "hash": "fCKdM95zA/cxJfN/ir84yAuzRvf3DZin0Ps89aiQ/ig="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/审核参考/检查表.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/审核参考/检查表.html",
-          "hash": "0OFcQYHBQEdJc7QhxQpOmnpXmJikp2PwTg5qtjka8bs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/引言/版本变更.md",
       "output": {
         ".html": {
@@ -3862,6 +3814,54 @@
         ".html": {
           "relative_path": "doc/研发文档编写指南/引言/范围.html",
           "hash": "QrAS3Qv/2wjEPZE+3J0Ye2opA25Q65MkDLE2MVB3S5g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/文档审核指导/PR批注建议.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/文档审核指导/PR批注建议.html",
+          "hash": "c3CVO8Au3CEgksLhlFFuPfiMx2h6dh54awgyhymek08="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/文档审核指导/审核角色.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/文档审核指导/审核角色.html",
+          "hash": "ne/Fau9GdXGHcf5ZXZd7ry1pNpkyt7LNwi0onys+Ywg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/文档审核指导/常见错误.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/文档审核指导/常见错误.html",
+          "hash": "X3P4Tf/JseZBo2z2LVLbRMzDgNMenbb2yyuHVNBHox8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/文档审核指导/检查表.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/文档审核指导/检查表.html",
+          "hash": "gpbxaEcmVo4YnfMtYY9oM4Lk1vMKclbfWZ7EEyZevzw="
         }
       },
       "is_incremental": false,
