@@ -3591,6 +3591,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "doc/研发文档编写指南/内容及格式/安全标识.md",
+      "output": {
+        ".html": {
+          "relative_path": "doc/研发文档编写指南/内容及格式/安全标识.html",
+          "hash": "H5aP7wo9rFPfGOmXFdNF+sqe8u9yvFS6hdtMuK26ol0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/内容及格式/提示告警.md",
       "output": {
         ".html": {
@@ -6839,7 +6851,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 171,
+          "total_file_count": 172,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
