@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539;1.0 </title>
+    <title>&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539;1.0 ">
+    <meta name="title" content="&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,9 +77,9 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="研发文档编写规范10">研发文档编写规范1.0</h1>
+<h1 id="研发文档编写规范">研发文档编写规范</h1>
 
-<pre><code>版次：2022年09月09日　第1版
+<pre><code class="lang-c">版次：2022年09月09日　第1版
 类型：程序文件
 部门：软件部
 上海维宏电子科技股份有限公司　版权所有
@@ -101,13 +101,27 @@
 <td>软件部</td>
 <td>2022-09-21</td>
 </tr>
+<tr>
+<td>R1.1</td>
+<td>R1.0</td>
+<td>1. 新增文档命名规则 2. 修改内容结构</td>
+<td>软件部</td>
+<td>2022-11-11</td>
+</tr>
+<tr>
+<td>R1.2</td>
+<td>R1.1</td>
+<td>1. 调整规范中的表格 2. 其它格式微调</td>
+<td>软件部</td>
+<td>2023-02-28</td>
+</tr>
 </tbody>
 </table>
 <h2 id="目的">目的</h2>
 <p>为了统一公司产品研发文档的编写风格，提高文档的可读性，减少不必要的沟通成本，特别是确保对外输出高质量的产品客户/用户文档，同时保证各个产线文档风格的一致性，为公司建立品牌提供支持。</p>
 <h2 id="范围">范围</h2>
-<p>适用于研发过程及发布输出的各类文档：</p>
-<p><strong>面向内部研发团队</strong></p>
+<p>适用于研发过程及发布输出的各类文档，整体分为 <strong>面向内部研发团队</strong> 和 <strong>面向客户/用户相关方</strong> 两大类文档。</p>
+<p><strong>面向内部研发团队的文档包括：</strong></p>
 <ul>
 <li>需求规格说明书，SRS（Software Requirement Specification）</li>
 <li>技术设计方案</li>
@@ -115,7 +129,7 @@
 <li>风险评估文件</li>
 <li>项目结构文件</li>
 </ul>
-<p><strong>面向客户/用户相关方</strong></p>
+<p><strong>面向客户/用户相关方的文档包括：</strong></p>
 <ul>
 <li>厂商手册</li>
 <li>用户手册</li>
@@ -123,11 +137,11 @@
 </ul>
 <h2 id="术语和定义">术语和定义</h2>
 <ul>
-<li>docfx: 微软公司推出的针对研发文档的组织软件。</li>
-<li>toc文件：指docfx中组织文档目录的配置文件。</li>
-<li>规则：进⾏文档编写时必须遵守的规定，文档内容不符合<strong>规则</strong>，则评审不通过。 </li>
-<li>原则：进行文档编写时应该遵守的基本要求，<strong>原则</strong>具备通用适应性，但是允许个案的特殊性。</li>
-<li>说明：对此规则或原则的必要解释，确保对于<strong>规则</strong>和<strong>原则</strong>的理解一致。</li>
+<li>DocFX: 微软公司推出的针对研发文档的组织软件。</li>
+<li>toc.yml 文件：指 DocFX 中组织文档目录的配置文件。</li>
+<li>规则：进⾏文档编写时必须遵守的规定，文档内容不符合 <strong>规则</strong>，则评审不通过。 </li>
+<li>原则：进行文档编写时应该遵守的基本要求，<strong>原则</strong> 具备通用适应性，但是允许个案的特殊性。</li>
+<li>说明：对此规则或原则的必要解释，确保对于 <strong>规则</strong> 和 <strong>原则</strong> 的理解一致。</li>
 <li>正例：对此规则给出正确例⼦。</li>
 <li>反例：对此规则给出反⾯例⼦。</li>
 <li>例外：对此规则给出例外的说明。</li>
@@ -135,7 +149,7 @@
 <h2 id="具体规范">具体规范</h2>
 <h3 id="文档命名">文档命名</h3>
 <p>对于产品文档面向的对象及专业技能的要求不同，产品的用户文档分为三大类型，厂商手册、用户手册和编程手册，以下为各种类型文档的定义。</p>
-<p>【规则】：<strong>厂商手册</strong>需按照 {XXX型号}+{系统名称}+数控系统厂商手册+Rn 格式命名。</p>
+<p>【规则】：<strong>厂商手册</strong> 需按照 {XXX型号}+{系统名称}+数控系统厂商手册+Rn 格式命名。</p>
 <blockquote><p>案例及说明：</p>
 <ul>
 <li>运动控制卡系列：运动控制卡型号+系统名称+“数控系统厂商手册”+Rn，例如：PM95A玻璃切割数控系统厂商手册-R1</li>
@@ -143,64 +157,43 @@
 <li>一体机系列：一体机型号+系统名称+“集成数控系统厂商手册”+ Rn，例如：NK280B外圆磨床集成数控系统厂商手册- R1</li>
 </ul>
 </blockquote>
-<p>【规则】：<strong>用户手册</strong>需按照 {软件名称}+{系统名称}+“控制系统用户手册”+Rn 格式命名。</p>
-<blockquote><p>案例及说明：用户手册<strong>面向机床加工操作人员</strong>，内容主要关注数控软件的功能操作步骤、驱动器参数介绍及其调试。一般包括软件用户手册和驱动器软件及参数用户手册。</p>
+<p>【规则】：<strong>用户手册</strong> 需按照 {软件名称}+{系统名称}+“控制系统用户手册”+Rn 格式命名。</p>
+<blockquote><p>案例及说明：用户手册 <strong>面向机床加工操作人员</strong> ，内容主要关注数控软件的功能操作步骤、驱动器参数介绍及其调试。一般包括软件用户手册和驱动器软件及参数用户手册。</p>
 <ul>
 <li><p>控制系统类软件：软件名称+系统名称+ “控制系统用户手册”，例如： NcStudio Phoenix石材加工中心控制系统</p>
 </li>
-<li><p>驱动器：维智WSDA系列直线伺服驱动器用户手册（脉冲型）-R1；iMotion操作手册-R3</p>
+<li><p>驱动器：维智 WSDA 系列直线伺服驱动器用户手册（脉冲型）-R1；iMotion 操作手册-R3</p>
 </li>
 </ul>
 </blockquote>
-<p>【规则】：<strong>编程手册</strong>需按照{软件名称}+“编程手册”+“-Rn”</p>
+<p>【规则】：<strong>编程手册</strong> 需按照{软件名称}+“编程手册”+“-Rn”</p>
 <blockquote><p>案例及说明：</p>
 <p>NcStudio 编程手册-R1</p>
 <p>其它类型的文档命名定义待讨论。</p>
 </blockquote>
 <h3 id="文档组织">文档组织</h3>
-<p><strong>【规则】</strong> 文档格式必须统一使用md（markdown）文件。</p>
-<blockquote><p>说明：markdown文档作为纯文本编辑格式，易读易写，其本质是让我们回归到内容本身，注重文章本身的结构，而不是样式，同时可以让文档像代码一样进行版本管理。</p>
+<p><strong>【规则】</strong> 文档格式必须统一使用 Markdown 文件。</p>
+<blockquote><p>说明：Markdown 文档作为纯文本编辑格式，易读易写，其本质是让我们回归到内容本身，注重文章本身的结构，而不是样式，同时可以让文档像代码一样进行版本管理。</p>
 </blockquote>
-<p><strong>【原则】</strong> 文档编辑工具建议使用<strong>vs code</strong>+插件<strong>Learn Authoring Pack</strong>。</p>
-<blockquote><p>说明：统一工具是为了保证团队工作环境的一致性，且该插件提供了markdown的检查机制，对于不符合格式要求的，则默认会有黄色波浪线提示。</p>
+<p><strong>【原则】</strong> 文档编辑工具原则上要使用 <strong>VS Code</strong> 工具，并确保安装插件 <strong>Learn Authoring Pack</strong>。</p>
+<blockquote><p>说明：统一工具是为了保证团队工作环境的一致性，且该插件提供了 Markdown 的检查机制，对于不符合格式要求的，则默认会有黄色波浪线提示。</p>
 </blockquote>
-<p><strong>【规则】</strong> 文档发布及展示必须统一使用docfx工具，文档目录结构组织统一由docfx的配置文件toc.yml进行控制，因此不对目录进行编号。 </p>
-<blockquote><p>说明：为了更好的保证文档的生成及展示，也为了帮助团队对文档形式上统一认识，避免产生在文档形式上的纠结，文档统一通过docfx工具发布及展示。</p>
+<p><strong>【规则】</strong> 文档发布及展示必须统一使用 DocFX 工具，文档目录结构组织统一由 DocFX 的配置文件 toc.yml 进行控制，因此不对目录进行编号。 </p>
+<blockquote><p>说明：为了更好的保证文档的生成及展示，也为了帮助团队对文档形式上统一认识，避免产生在文档形式上的纠结，文档统一通过 DocFX 工具发布及展示。</p>
 </blockquote>
 <h3 id="文档内容">文档内容</h3>
-<p><strong>【规则】</strong> 标题中禁止使用编号。</p>
-<blockquote><p>说明：编号可以在toc.yml文件中体现， 而无需在文档标题中表现。 文档中的标题已足够能体现文档的结构。</p>
+<p><strong>【规则】</strong> 标题中禁止使用编号，所有文档的标题都必须从一级标题开始，逐级递增使用，不允许跳级。</p>
+<blockquote><p>说明1：编号可以在toc.yml文件中体现， 而无需在文档标题中表现。 文档中的标题已足够能体现文档的结构。
+说明1：比如不能够直接二级标题开始；一级标题下面不能直接用三级标题。</p>
 </blockquote>
-<p><strong>【规则】</strong> 所有文档的标题都必须从一级标题开始，逐级递增使用，不允许跳级。</p>
-<blockquote><p>说明：比如不能够直接二级标题开始；一级标题下面不能直接用三级标题。</p>
-<ul>
-<li>一级标题：即本.md文档标题，和对应目录名称一致。</li>
-<li>二级标题：文档正文部分的标题。</li>
-<li>三级标题：二级标题下面一级的小标题。</li>
-<li>四级标题：三级标题下面一级的小标题。内文不超过<strong>四级</strong>标题。</li>
-</ul>
+<p><strong>【原则】</strong> 为了让读者对段落中的个别内容引起充分的重视，应该添加 <strong>安全标识</strong> 标签进行明示。</p>
+<blockquote><p>具体参考《研发文档编写指南》-&gt; 内容及格式 -&gt; 安全标识</p>
 </blockquote>
-<p><strong>【原则】</strong> 为了让读者对段落中的个别内容引起充分的重视，应该添加<strong>告警类</strong>标签进行明示，约定以下<strong>告警类</strong>标签。</p>
-<ul>
-<li>警告：适用于描述如果错误操作，则可能导致操作人员伤亡或设备损坏。</li>
-</ul>
-<pre><code class="lang-csharp">&gt; [!WARNING]
-&gt; 尚未建立机械坐标系的情况下，不能正确进行行程极限检查。请在通电后重新建立连接后，执行了回参考点的状态下执行高速程序检测。
-</code></pre><ul>
-<li>注意：适用于描述如果错误操作，则有可能导致操作无法完成。</li>
-</ul>
-<pre><code class="lang-csharp">&gt; [!CAUTION]
-&gt; 在向外部I/O装置存取期间，请勿切断CNC的电源或拆除外部I/O装置。否则将会损坏外部I/O装置。
-</code></pre><ul>
-<li>备注：适用于除警告和注意以外的补充说明。</li>
-</ul>
-<pre><code class="lang-csharp">&gt; [!NOTE]
-&gt; USB存储器的可用空间不多或者文件数量较多时，向USB存储器的文件输入/输出操作有时需要一定的时间。这种情况下，请删除USB存储器中不需要的文件后再度进行操作。
-</code></pre><p><strong>【规则】</strong> 符合<strong>告警类</strong>标签约定情况的正文内容应在文档中添加相关标签进行明示。</p>
-<blockquote><p>说明：根据上一原则对于告警类标签的定义，告警类特别是<strong>警告</strong>标签，如果不进行明示，则阅读者或者操作人员则容易忽略，忽略导致的后果比较严重，因此要求一定要通过告警类标签明示，以提示使用者进行重视。</p>
+<p><strong>【规则】</strong> 符合 <strong>告警类</strong> 标签约定情况的正文内容应在文档中添加相关标签进行明示。</p>
+<blockquote><p>说明：根据上一原则对于告警类标签的定义，告警类特别是 <strong>警告</strong> 标签，如果不进行明示，则阅读者或者操作人员则容易忽略，忽略导致的后果比较严重，因此要求一定要通过告警类标签明示，以提示使用者进行重视。</p>
 </blockquote>
 <p><strong>【原则】</strong> 对于图表类的展示， 宜采用mermaid编写。</p>
-<blockquote><p>说明：mermaid对各种图表支持较为丰富，并且从工具集的考量，目前<strong>vs code</strong>+插件<strong>Learn Authoring Pack</strong>对mermaid的支持较好。</p>
+<blockquote><p>说明：mermaid对各种图表支持较为丰富，并且从工具集的考量，目前 <strong>VS Code</strong> + 插件 <strong>Learn Authoring Pack</strong> 对 mermaid 的支持较好。</p>
 </blockquote>
 <p><strong>【原则】</strong>：如有涉及到的单个的功能手册、快速上手指南、维宏百问等文档原则上不作为独立的文档。</p>
 <blockquote><p>说明：功能手册、快速上手指南、维宏百问等文档内容分布在产品三大手册（厂商手册、用户手册和编程手册）中。</p>
@@ -208,17 +201,13 @@
 <p>A：功能手册内容理论上应该归属于用户手册，一般不做单独的文件。但不排除产品维护阶段，需要新增某个单独的功能，用户要求提供具体的功能的手册，可以提供。但也要确保功能及时更新到用户手册。</p>
 </blockquote>
 <p><strong>【原则】</strong>：文档内容必须和相应版本的软件保持一致，英文文档涉及到的术语需确保和遵守语料库一致。</p>
-<blockquote><p>说明：</p>
-<ul>
-<li><p>文档内容要保持及时更新，原则是每次软件升级，文档版本也应该进行升级。</p>
-</li>
-<li><p>英文文档和中文一样，语料库按需更新。</p>
-</li>
-</ul>
+<blockquote><p>说明：
+文档内容要保持及时更新，原则是每次软件升级，文档版本也应该进行升级。
+英文文档和中文一样，语料库按需更新。</p>
 </blockquote>
 <p><strong>【规则】</strong>：需要印刷的文档最后一章需加上“用户安装软件许可声明”。</p>
-<blockquote><p>说明：</p>
-<p>部分产线需要印刷文档。</p>
+<blockquote><p>说明：
+部分产线需要印刷文档。</p>
 </blockquote>
 </article>
           </div>
@@ -228,7 +217,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20135;&#21697;&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539;-R1.0.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20135;&#21697;&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#35268;&#33539;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

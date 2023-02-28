@@ -3120,7 +3120,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "xjo12Uz00OkX7b/5QlWw4RK8wivxMZjPpjvZV/nOIE4="
+          "hash": "BxGOsMWRBJ/ZnbKVPHVkNr/HJaD88ViaT+Qtk3x3oJ4="
         }
       },
       "is_incremental": false,
@@ -3152,11 +3152,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/产品研发文档编写规范-R1.0.md",
+      "source_relative_path": "doc/研发文档编写指南/产品研发文档编写规范.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/产品研发文档编写规范-R1.0.html",
-          "hash": "p140iaPoEBkP3J07Z5XBoR3oHK8788NWDFvRZxKMe3s="
+          "relative_path": "doc/研发文档编写指南/产品研发文档编写规范.html",
+          "hash": "03WFpQwnkuk6/MivlTmu7WgzZyxI6V0bIgdrUDMTwvY="
         }
       },
       "is_incremental": false,
