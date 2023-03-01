@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>&#23383;&#20307; </title>
+    <title>&#20195;&#30721;&#20803;&#32032; </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="&#23383;&#20307; ">
+    <meta name="title" content="&#20195;&#30721;&#20803;&#32032; ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,37 +77,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="字体">字体</h1>
+<h1 id="代码元素">代码元素</h1>
 
-<h2 id="默认字体">默认字体</h2>
-<p>.md 格式文档的默认正文字体。</p>
-<h2 id="粗体">粗体</h2>
-<p>粗体适用于描述界面元素的标题、正文中需要强调的内容，包括 <strong>菜单选项</strong> 、<strong>对话框名称</strong> 、<strong>输入框的 Label</strong> 、<strong>参数名称</strong>等，以及这些内容需要在正文中引用的情况。</p>
-<p>正文中若有其它非此类词语或句子需要重点强调，期望引起读者一定程度重视，也可以使用粗体。</p>
-<p>如果比粗体更加希望引起重视，则可以用 <strong>安全标识</strong> 章节的 <strong>注释</strong> 标签。</p>
-<table>
-<thead>
-<tr>
-<th>正例</th>
-<th>反例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>点击 <strong>开始</strong> 按钮， 启动自动加工。</td>
-<td>点击开始按钮， 启动自动加工。</td>
-</tr>
-</tbody>
-</table>
-<blockquote><p>另外，粗体前后是否需要空格，有争议，不做特别要求，一个文档内保持一致即可，从文档美观我个人比较推荐前后有空格，特别是 UI 界面的元素。</p>
+<p><em>代码元素</em> 指的是编程语言关键字、类名、方法、属性名称、变量等，<strong>寻址</strong> 则是我们产品中比较典型的代码元素。</p>
+<blockquote><p>说明：
+&quot;什么内容可以称为代码，并不总是显而易见。 例如，NuGet 包名称应被视为代码&quot;，引用自微软的文档指南。</p>
 </blockquote>
-<h2 id="斜体">斜体</h2>
-<p>斜体适用于描述以下内容：</p>
-<ul>
-<li>带有定义或解释的术语简介。</li>
-<li>文件名称、文件夹名称、路径。</li>
-<li>用户输入。</li>
-</ul>
+<h2 id="单个代码元素">单个代码元素</h2>
+<p>在文本中引用上下文代码块中的命名参数、变量、属性、方法、类和语言关键字时，一般是一行中的单个元素（单词），使用内联 `` 格式，且前后一个空格。</p>
 <table>
 <thead>
 <tr>
@@ -117,132 +94,78 @@
 </thead>
 <tbody>
 <tr>
-<td>将 <em>D:\Weihong\NcStudio\ActiveConfig</em> 复制到优盘中。</td>
-<td>将D:\Weihong\NcStudio\ActiveConfig复制到优盘中。</td>
-</tr>
-<tr>
-<td>通过 <em>CNC.json</em> 文件构建 <em>HandwheelDevice</em> 时可通过  <em>axescount</em> 指定控制轴的数量。</td>
-<td>通过<code>CNC.json</code>文件构建 <code>HandwheelDevice</code>时可通过 <code>axescount</code>指定控制轴的数量。</td>
-</tr>
-<tr>
-<td>输入 <em>排样_XXX</em> 作为文件名称，点击 <strong>保存</strong> 按钮。</td>
-<td>输入排样_XXX作为文件名称，点击 <strong>保存</strong> 按钮。</td>
+<td>手轮设备可以通过 <code>#HandwheelDevice.Direction</code> 来控制手轮是正转还是反转。</td>
+<td>手轮设备可以通过 #HandwheelDevice.Direction 来控制手轮是正转还是反转。</td>
 </tr>
 </tbody>
 </table>
-<h2 id="英文大小写">英文大小写</h2>
-<h3 id="句首字母大写">句首字母大写</h3>
-<ul>
-<li><p>告警或提示符号的首字母必须大写。如：Error，Warnning，Tips等。</p>
-</li>
-<li><p>完整句子首个单词首字母必须大写。如：状态栏弹出提示、操作提示或说明、参数解释或描述等。</p>
-</li>
-</ul>
+<div class="NOTE"><h5>Note</h5><p>对寻址本身的定义时则不需要。比如 Phoenix 子系统的 SRS 中定义信号、参数时，其寻址不需要使用 `` 。</p>
+</div>
+<p><strong>正例:</strong></p>
+<p>手轮设备信号，<strong>脉冲计数</strong></p>
 <table>
 <thead>
 <tr>
-<th><img src="../img/wb_yw_js_1.png" alt="img"></th>
+<th>项</th>
+<th>指</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>寻址</td>
+<td>#HandwheelDevice.PulseCount</td>
+</tr>
+<tr>
+<td>标题</td>
+<td>脉冲计数</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>手轮设备摇动所产生的脉冲计数。</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>列表中的描述性信息首字母必须大写。</li>
-</ul>
+<p><strong>反例：</strong></p>
+<p>手轮设备信号，<strong>脉冲计数</strong></p>
 <table>
 <thead>
 <tr>
-<th><img src="../img/wb_yw_js_2.png" alt="img"></th>
+<th>项</th>
+<th>指</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td></td>
+<td>寻址</td>
+<td><code>#HandwheelDevice.PulseCount</code></td>
+</tr>
+<tr>
+<td>标题</td>
+<td>脉冲计数</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>手轮设备摇动所产生的脉冲计数。</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
 </tr>
 </tbody>
 </table>
-<h3 id="单词首字母大写">单词首字母大写</h3>
-<ul>
-<li>单个词语或短语中的每个单词首字母必须大写。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><img src="../img/wb_yw_cs_1.png" alt="img"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>单选或复选的选项为一个完整的句子时，仅句首字母大写。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><img src="../img/wb_yw_cs_2.png" alt="img"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>标识为常显状态或模式的文字首字母必须大写。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><img src="../img/wb_yw_cs_3.png" alt="img"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>菜单及菜单选项的首字母必须大写。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th><img src="../img/wb_yw_cs_4.png" alt="img"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="坐标和通用缩写全部大写">坐标和通用缩写全部大写</h3>
-<ul>
-<li><p>坐标轴都需要大写：X，Y，Z，……</p>
-</li>
-<li><p>通用缩写都需要大写：IO（Input/Output） ，MFR（Multi-frequency Receiver），HW（Hand Wheel），USB（Universal Serial Bus），……</p>
-</li>
-<li><p>文件格式描述都需要大写：PLT，DXF，ENG，……</p>
-</li>
-</ul>
-<h3 id="小写的情况">小写的情况</h3>
-<ul>
-<li><p>控件上的短语中，介词（如of，by，to，in，on，at，for，as等）或连词（如and，or，with等）一般需小写，如“Set as Default”中“as”需小写。</p>
-</li>
-<li><p>通用短语 “Save As…（存储为…）” s中的 “As” 首字母需要大写。</p>
-</li>
-</ul>
-</article>
+<blockquote><p>说明：
+此处非正文中引用寻址，因此不需要另外加 `` 进行标识。</p>
+</blockquote>
+<h2 id="文档中的代码块">文档中的代码块</h2>
+<p>文档中需要引用大段代码时，使用代码块，示例如下：</p>
+<pre><code class="lang-csharp">var host = new NcStudioHost();
+host.CreateStandardBuilder(args);
+host.StandardBuild();
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -250,7 +173,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20869;&#23481;&#21450;&#26684;&#24335;/&#23383;&#20307;.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20869;&#23481;&#21450;&#26684;&#24335;/&#20195;&#30721;&#20803;&#32032;.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
