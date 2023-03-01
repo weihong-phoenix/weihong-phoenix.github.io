@@ -82,7 +82,9 @@
 <h2 id="默认字体">默认字体</h2>
 <p>.md 格式文档的默认正文字体。</p>
 <h2 id="粗体">粗体</h2>
-<p>粗体适用于描述界面的元素，包括：菜单选项、对话框名称和输入字段名称、参数名称等，以及部分词语或句子需要重点强调，引起读者一定程度重视的情况。</p>
+<p>粗体适用于描述界面元素的标题、正文中需要强调的内容，包括 <strong>菜单选项</strong> 、<strong>对话框名称</strong> 、<strong>输入框的 Label</strong> 、<strong>参数名称</strong>等，以及这些内容需要在正文中引用的情况。</p>
+<p>正文中若有其它非此类词语或句子需要重点强调，期望引起读者一定程度重视，也可以使用粗体。</p>
+<p>如果比粗体更加希望引起重视，则可以用 <strong>安全标识</strong> 章节的 <strong>注释</strong> 标签。</p>
 <table>
 <thead>
 <tr>
@@ -128,6 +130,82 @@
 </tr>
 </tbody>
 </table>
+<h2 id="内联样式-">内联样式 ``</h2>
+<p>正文的描述信息中，需要对某一类型的文本进行区分，并非想重点强调的，则可以用 <code>XXX</code> 进行弱强调。
+比较典型的案例是寻址名称、函数名称，且前后各需一个空格隔开。</p>
+<p>但本身对该寻址的定义描述则不需要。比如信号、参数章节对该寻址则不需要 `` 。</p>
+<table>
+<thead>
+<tr>
+<th>正例</th>
+<th>反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>手轮设备可以通过 <code>#HandwheelDevice.Direction</code> 来控制手轮是正转还是反转。</td>
+<td>手轮设备可以通过 #HandwheelDevice.Direction 来控制手轮是正转还是反转。</td>
+</tr>
+</tbody>
+</table>
+<p>正例: </p>
+<p>手轮设备信号，<strong>脉冲计数</strong></p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>指</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>#HandwheelDevice.PulseCount</td>
+</tr>
+<tr>
+<td>标题</td>
+<td>脉冲计数</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>手轮设备摇动所产生的脉冲计数。</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
+</tr>
+</tbody>
+</table>
+<p>反例：</p>
+<p>手轮设备信号，<strong>脉冲计数</strong></p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>指</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td><code>#HandwheelDevice.PulseCount</code></td>
+</tr>
+<tr>
+<td>标题</td>
+<td>脉冲计数</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>手轮设备摇动所产生的脉冲计数。</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>int</td>
+</tr>
+</tbody>
+</table>
+<blockquote><p>此处非正文信息的寻址引用，因此不需要另外加 `` 进行标识。</p>
+</blockquote>
 <h2 id="英文大小写">英文大小写</h2>
 <h3 id="句首字母大写">句首字母大写</h3>
 <ul>
