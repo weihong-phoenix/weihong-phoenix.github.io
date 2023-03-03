@@ -82,32 +82,32 @@
 <h2 id="目的">目的</h2>
 <p>为了统一公司文档风格，提高文档的可读性，减少不必要的沟通成本，提高文档的一致性和可复用性。</p>
 <h2 id="范围">范围</h2>
-<p>适用于研发过程中的资产性文档（如软件需求说明书SRS， 即Software Requirement Specification）。</p>
+<p>适用于研发过程中的资产性文档（如软件需求说明书 SRS， 即 Software Requirement Specification）。</p>
 <h2 id="术语和定义">术语和定义</h2>
 <ul>
-<li>docfx: 微软公司推出的针对研发文档的组织软件。</li>
-<li>toc文件：指docfx中组织文档目录的配置文件。</li>
-<li>规则：进⾏文档编写时必须遵守的规定，文档内容不符合<strong>规则</strong>，则评审不通过。 </li>
-<li>原则：进行文档编写时应该遵守的基本要求，<strong>原则</strong>具备通用适应性，但是允许个案的特殊性。</li>
-<li>说明：对此规则或原则的必要解释，确保对于<strong>规则</strong>和<strong>原则</strong>的理解一致。</li>
-<li>正例：对此规则给出正确例⼦。</li>
+<li>Docfx: 微软公司推出的针对研发文档的组织软件。</li>
+<li>toc文件：指 Docfx 中组织文档目录的配置文件。</li>
+<li>规则：进⾏文档编写时必须遵守的规定，文档内容不符合 <strong>规则</strong>，则评审不通过。  </li>
+<li>原则：进行文档编写时应该遵守的基本要求，<strong>原则</strong> 具备通用适应性，但是允许个案的特殊性。</li>
+<li>说明：对此规则或原则的必要解释，确保对于 <strong>规则</strong> 和 <strong>原则</strong> 的理解一致。</li>
+<li>正例：对此规则给出正确例⼦。  </li>
 <li>反例：对此规则给出反⾯例⼦。</li>
 <li>例外：对此规则给出例外的说明。</li>
 </ul>
 <h2 id="具体规范">具体规范</h2>
 <h3 id="文档组织">文档组织</h3>
-<p><strong>【规则】</strong> 文档格式必须统一使用md（markdown）文件。</p>
+<p><strong>【规则】</strong> 文档格式必须统一使用 Markdown 格式的文件。</p>
 <blockquote><p>说明：markdown文档作为纯文本编辑格式，易读易写，其本质是让我们回归到内容本身，注重文章本身的结构，而不是样式，同时可以让文档像代码一样进行版本管理。</p>
 </blockquote>
-<p><strong>【原则】</strong> 文档编辑工具建议使用<strong>vs code</strong>+插件<strong>Docs Authoring Pack</strong>。</p>
+<p><strong>【原则】</strong> 文档编辑工具建议使用 <strong>VS code</strong>+ 插件 <strong>Docs Authoring Pack</strong>。</p>
 <blockquote><p>说明：统一工具是为了保证团队工作环境的一致性，且该插件提供了markdown的检查机制，对于不符合格式要求的，则默认会有黄色波浪线提示。</p>
 </blockquote>
-<p><strong>【规则】</strong> 文档发布及展示必须统一使用docfx工具，文档目录结构组织统一由docfx的配置文件toc.yml进行控制，因此不对目录进行编号。 </p>
-<blockquote><p>说明：为了更好的保证文档的生成及展示，也为了帮助团队对文档形式上统一认识，避免产生在文档形式上的纠结，文档统一通过docfx工具发布及展示。</p>
+<p><strong>【规则】</strong> 文档发布及展示必须统一使用 Docfx 工具，文档目录结构组织统一由 Docfx 的配置文件 toc.yml 进行控制，因此不对目录进行编号。</p>
+<blockquote><p>说明：为了更好的保证文档的生成及展示，也为了帮助团队对文档形式上统一认识，避免产生在文档形式上的纠结，文档统一通过 Docfx 工具发布及展示。</p>
 </blockquote>
 <h3 id="文档内容">文档内容</h3>
 <p><strong>【规则】</strong> 标题中禁止使用编号。</p>
-<blockquote><p>说明：编号可以在toc.yml文件中体现， 而无需在文档标题中表现。 文档中的标题已足够能体现文档的结构。</p>
+<blockquote><p>说明：编号可以在 toc.yml文件中体现， 而无需在文档标题中表现。 文档中的标题已足够能体现文档的结构。</p>
 </blockquote>
 <p><strong>【规则】</strong> 所有文档的标题都必须从一级标题开始，逐级递增使用，不允许跳级。</p>
 <blockquote><p>说明：比如不能够直接二级标题开始；一级标题下面不能直接用三级标题。</p>
@@ -120,12 +120,12 @@
 </blockquote>
 <p><strong>【原则】</strong> 为了让读者对段落中的个别内容引起充分的重视，应该添加 <strong>安全标识</strong> 标签进行明示，约定以下 <strong>安全标识</strong> 标签。</p>
 <ul>
-<li><p>警告：适用于描述如果错误操作，则可能导致操作人员伤亡或设备损坏。</p>
+<li>警告：适用于描述如果错误操作，则可能导致操作人员伤亡或设备损坏。</li>
+</ul>
 <pre><code class="lang-csharp">&gt; [!WARNING]
 &gt; 尚未建立机械坐标系的情况下，不能正确进行行程极限检查。请在通电后重新建立连接后，执行了回参考点的状态下执行高速程序检测。
-</code></pre></li>
-<li><p>注意：适用于描述如果错误操作，则有可能导致操作无法完成。</p>
-</li>
+</code></pre><ul>
+<li>注意：适用于描述如果错误操作，则有可能导致操作无法完成。</li>
 </ul>
 <pre><code class="lang-csharp">&gt; [!CAUTION]
 &gt; 在向外部I/O装置存取期间，请勿切断CNC的电源或拆除外部I/O装置。否则将会损坏外部I/O装置。
@@ -138,7 +138,7 @@
 <blockquote><p>说明：根据上一原则对于安全标识的定义，安全标识特别是 <strong>警告</strong> 标签，如果不进行明示，则阅读者或者操作人员则容易忽略，忽略导致的后果比较严重，因此要求一定要通过告警类标签明示，以提示使用者进行重视。</p>
 </blockquote>
 <p><strong>【原则】</strong> 对于图表类的展示， 宜采用 Mermaid 编写。</p>
-<blockquote><p>说明：mermaid对各种图表支持较为丰富，并且从工具集的考量，目前 <strong>VS Code</strong>+ 插件 <strong>Docs Authoring Pack</strong> 对 Mermaid 的支持较好。</p>
+<blockquote><p>说明：Mermaid 对各种图表支持较为丰富，并且从工具集的考量，目前 <strong>VS Code</strong>+ 插件 <strong>Docs Authoring Pack</strong> 对 Mermaid 的支持较好。</p>
 </blockquote>
 </article>
           </div>
