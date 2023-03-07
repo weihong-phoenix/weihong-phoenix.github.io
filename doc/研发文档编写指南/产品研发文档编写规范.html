@@ -179,22 +179,21 @@
 <p><strong>【原则】</strong> 文档编辑工具原则上要使用 <strong>VS Code</strong> 工具，并确保安装插件 <strong>Learn Authoring Pack</strong>。</p>
 <blockquote><p>说明：统一工具是为了保证团队工作环境的一致性，且该插件提供了 Markdown 的检查机制，对于不符合格式要求的，则默认会有黄色波浪线提示。</p>
 </blockquote>
-<p><strong>【规则】</strong> 文档发布及展示必须统一使用 DocFX 工具，文档目录结构组织统一由 DocFX 的配置文件 toc.yml 进行控制，因此不对目录进行编号。 </p>
+<p><strong>【规则】</strong> 文档发布及展示必须统一使用 DocFX 工具，文档目录结构组织统一由 DocFX 的配置文件 toc.yml 进行控制，因此不对目录进行编号。</p>
 <blockquote><p>说明：为了更好的保证文档的生成及展示，也为了帮助团队对文档形式上统一认识，避免产生在文档形式上的纠结，文档统一通过 DocFX 工具发布及展示。</p>
 </blockquote>
 <h3 id="文档内容">文档内容</h3>
 <p><strong>【规则】</strong> 标题中禁止使用编号，所有文档的标题都必须从一级标题开始，逐级递增使用，不允许跳级。</p>
-<blockquote><p>说明1：编号可以在toc.yml文件中体现， 而无需在文档标题中表现。 文档中的标题已足够能体现文档的结构。
+<blockquote><p>说明1：编号可以在 toc.yml文件中体现， 而无需在文档标题中表现。 文档中的标题已足够能体现文档的结构。
 说明1：比如不能够直接二级标题开始；一级标题下面不能直接用三级标题。</p>
 </blockquote>
-<p><strong>【原则】</strong> 为了让读者对段落中的个别内容引起充分的重视，应该添加 <strong>安全标识</strong> 标签进行明示。</p>
-<blockquote><p>具体参考《研发文档编写指南》-&gt; 内容及格式 -&gt; 安全标识</p>
-</blockquote>
-<p><strong>【规则】</strong> 符合 <strong>告警类</strong> 标签约定情况的正文内容应在文档中添加相关标签进行明示。</p>
-<blockquote><p>说明：根据上一原则对于告警类标签的定义，告警类特别是 <strong>警告</strong> 标签，如果不进行明示，则阅读者或者操作人员则容易忽略，忽略导致的后果比较严重，因此要求一定要通过告警类标签明示，以提示使用者进行重视。</p>
+<p><strong>【规则】</strong> 符合 <strong>安全标识</strong> 约定情况的正文内容应在文档中添加相关标签进行明示。</p>
+<blockquote><p>说明：
+为了使阅读者对文中涉及到的安全相关信息或需要关注的信息进行重视，使用警告(WARNING)、注意(CAUTION)和注释(NOTE)等标签标识其在安全或关注方面的重要程度。
+详情参考《指南》-&gt; 内容及格式 -&gt; <em>安全标识</em> 章节。</p>
 </blockquote>
 <p><strong>【原则】</strong> 对于图表类的展示， 宜采用 Mermaid 编写。</p>
-<blockquote><p>说明：Mermaid 对各种图表支持较为丰富，并且从工具集的考量，目前 <strong>VS Code</strong> + 插件 <strong>Learn Authoring Pack</strong> 对 mermaid 的支持较好。</p>
+<blockquote><p>说明：Mermaid 对各种图表支持较为丰富，并且从工具集考量，目前 <strong>VS Code</strong> + 插件 <strong>Learn Authoring Pack</strong> 对 Mermaid 的支持较好。</p>
 </blockquote>
 <p><strong>【原则】</strong>：如有涉及到的单个的功能手册、快速上手指南、维宏百问等文档原则上不作为独立的文档。</p>
 <blockquote><p>说明：功能手册、快速上手指南、维宏百问等文档内容分布在产品三大手册（厂商手册、用户手册和编程手册）中。</p>
