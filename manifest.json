@@ -3610,7 +3610,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/内容及格式/安全标识.html",
-          "hash": "e5WtLey/n4O8bbKf20vEewt5EDavf1S1ViZhrtKpXns="
+          "hash": "WiESAyYtcn2/IWeO6fm7rFNzKJEJYbpxvw0JDMjB7Rs="
         }
       },
       "is_incremental": false,
@@ -3974,11 +3974,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/研发文档编写规范.md",
+      "source_relative_path": "doc/研发文档编写指南/研发文档编写规范-old.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/研发文档编写规范.html",
-          "hash": "zCqp3v1VLHr648Bspr/1N2d76NwFjBMKxwQfy14mGIY="
+          "relative_path": "doc/研发文档编写指南/研发文档编写规范-old.html",
+          "hash": "OY4waff/NSBkDXq/1dO6E22DKkKwIy1AoeHHnLRmBOc="
         }
       },
       "is_incremental": false,
