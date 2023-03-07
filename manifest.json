@@ -3120,7 +3120,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "e/ly2rMe5NH++3S0aKL8tFuVIHwU31F8GJK5Tb2ZE6E="
+          "hash": "Jb97dvxGOv2OWhF/InMiknXo0/AE2tSmlMDdffM0fbw="
         }
       },
       "is_incremental": false,
@@ -3986,35 +3986,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/综合应用/信号.md",
+      "source_relative_path": "doc/研发文档编写指南/综合应用/寻址接口.md",
       "output": {
         ".html": {
-          "relative_path": "doc/研发文档编写指南/综合应用/信号.html",
-          "hash": "eA5f0Yi4cMly9DR890HDxridDP5r+KHRCyBvK92oV+4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/综合应用/参数.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/综合应用/参数.html",
-          "hash": "lwpPnTmhAZk/ZyfuPNnT4DE0JE+T6GvpWsvS3OmFZK8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/综合应用/寻址.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/综合应用/寻址.html",
-          "hash": "+1XaWZa8vp1mnLqHpfxFfIWfy7lWfmCKoUF1EV+EBQc="
+          "relative_path": "doc/研发文档编写指南/综合应用/寻址接口.html",
+          "hash": "Cn9L2LpZbcFqLhGN8h99I/b/dPIjDmMhUdufz9uM/eQ="
         }
       },
       "is_incremental": false,
@@ -6926,7 +6902,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 178,
+          "total_file_count": 176,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
