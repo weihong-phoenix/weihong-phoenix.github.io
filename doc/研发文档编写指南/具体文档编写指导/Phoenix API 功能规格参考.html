@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SRS &#32534;&#20889;&#21442;&#32771; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="SRS &#32534;&#20889;&#21442;&#32771; ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="srs-编写参考">SRS 编写参考</h1>
+
+<h2 id="目的和范围">目的和范围</h2>
+<p>本文档以 FANUC 连接说明书作为参考，结合 Phoenix 接口的特征为书写SRS规格提供参考模板。</p>
+<p>本参考目前仅以 Phoenix-srs 作为设计目标。</p>
+<h2 id="文档的结构参考">文档的结构参考</h2>
+<p><strong>参考目录：</strong></p>
+<pre><code class="lang-cs">---
+markdown 元数据
+---
+# 功能名称【必须】
+## 概述【必须】
+## 功能分解介绍【可选】
+## 信号 【必须】
+## 参数【必须】
+## Target 【必须】
+## 报警【必须】
+## ⽰例【可选】
+## 补充说明 【可选】
+## 参考 【可选】
+## 分析 【可选】
+</code></pre><p><strong>解释：</strong>
+<strong>必须：</strong> SRS必须包含此章节。
+<strong>可选：</strong> SRS按照实际描述的需要按需包含。</p>
+<div class="NOTE"><h5>Note</h5><p><strong>必须的章节可以没有：</strong> 如果不存在信号/参数/Target/报警，则对应的章节可以没有，如果存在则必须包含。</p>
+</div>
+<h2 id="markdown元数据">markdown元数据</h2>
+<pre><code class="lang-cs">---
+uid:
+implementation:
+fanuc_link_0i.no:
+fanuc_link_0i.eng:
+fanuc_link_0i.chn
+---
+</code></pre><ul>
+<li><strong>【必须】uid:</strong>  文档的唯一标志名，使用英文名进行描述，使用下划线进行连接，需保证整个srs文档唯一。</li>
+<li><strong>【必须】implementation:</strong> 是否已经实现，可选为 yes/no/uncertain/future。</li>
+<li><strong>【可选】fanuc_link_0i.no:</strong> FANUC-0i 的规格 ID，这部分在生成初版文档的时候已经批量生成。</li>
+<li><strong>【可选】fanuc_link_0i.eng:</strong> FANUC 对应章节英文名称。</li>
+<li><strong>【可选】fanuc_link_0i.chn:</strong> FANUC 对应章节的中文名称。</li>
+</ul>
+<blockquote><p>如何组织uid?<br>优先考虑通过三级规格表英文名字进行组合, 如：（1级名字_2级别名字_3级名字）。 目前暂不做强制要求。</p>
+</blockquote>
+<h2 id="必须功能名称">【必须】功能名称</h2>
+<p>功能的名称往往是三级规格中，最后一级的规格名字。</p>
+<h2 id="必须概述">【必须】概述</h2>
+<p>概述不是背景，不是需求，不需要描述你为什么做它。  </p>
+<p>概述需要通过正向描述当前功能是什么？ 有什么用途？ 设计的目的是啥？  力求使读者通过概述能够清楚该功能整体作用和约束。</p>
+<p>我们推荐大篇幅的概述。 为了明确表达规格，可以在概述中应用参数、信号、Target以便能够前后关联。 如果需要强调这些接口时，可以使用 <code>`寻址` </code>  的形式强调它； 为了方便介绍规格的动作过程， 可以先整体描述功能，然后再详细叙述，有需要的话，可以按照子功能的方式列举。</p>
+<p>概述的描述应该多以陈述句为主，而不是在介绍功能的时候使用结构化语言。</p>
+<h2 id="功能分解介绍可选">功能分解介绍【可选】</h2>
+<p>这个章节不是必须的，但是当功能复杂到概述没法涵盖， 且需要细化描述时就需要分章节进行说明了， 特别是描述算法特征的时候。</p>
+<p>这个章节的名字按具体功能命名。</p>
+<h2 id="必须信号">【必须】信号</h2>
+<p>以表格的形式描述信号。 不涉及的项，它的值可写“-”。</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>寻址字符串</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>信号的描述</td>
+</tr>
+<tr>
+<td>方向</td>
+<td>输入或输出</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>五种类型之一：bool, int, double, long, string</td>
+</tr>
+<tr>
+<td>单位</td>
+<td>对于模拟量信号需要描述，比如：Position: mm</td>
+</tr>
+<tr>
+<td>备注（可选）</td>
+<td>补充性说明， 比如其他有接口关联性的说明或特殊约束等。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="必须参数">【必须】参数</h2>
+<p>以表格的形式描述参数。 不涉及的项，它的值可写“-”。</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>寻址字符串</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>参数的功能描述</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>五种类型之一：bool, int, double, long, string</td>
+</tr>
+<tr>
+<td>单位</td>
+<td>参数的单位</td>
+</tr>
+<tr>
+<td>精度</td>
+<td>参数的精度</td>
+</tr>
+<tr>
+<td>范围</td>
+<td>参数的取值范围</td>
+</tr>
+<tr>
+<td>默认值</td>
+<td>参数的默认值</td>
+</tr>
+<tr>
+<td>备注(可选)</td>
+<td>补充性说明， 比如其他有接口关联性的说明或特殊约束等。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="必须target">【必须】Target</h2>
+<p>以表格的形式描述Target。 不涉及的项，它的值可写“-”。</p>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址</td>
+<td>寻址字符串</td>
+</tr>
+<tr>
+<td>描述</td>
+<td>Target的功能描述</td>
+</tr>
+<tr>
+<td>参数</td>
+<td>按照命名参数的形式描述参数</td>
+</tr>
+<tr>
+<td>返回值</td>
+<td>介绍返回值的类型和意义</td>
+</tr>
+<tr>
+<td>备注（可选）</td>
+<td>补充性说明， 比如其他有接口关联性的说明或特殊约束等。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="关于接口描述的其他要求">关于接口描述的其他要求</h2>
+<h3 id="约束寻址的描述">约束寻址的描述</h3>
+<ol>
+<li>使用 <code>#</code> 开头</li>
+<li>对于涉及到数组类型的寻址（<em>一般为轴数组，通道数组</em>）
+提供⼀组全局的占位符<ul>
+<li><code>{AN}</code>：轴索引</li>
+<li><code>{CN}</code>：通道索引</li>
+</ul>
+</li>
+<li><code>{AN}``{CN}</code>作为全局性的占位符号存在，除此之外如果当前SRS文档中引入了其他占位符，必须在文档前面添加<strong>术语</strong> 章节中进行显式描述。</li>
+<li>文档叙述中需要强调的参数/寻址/Target接口，请使用 <code>`` </code> 引用标记包裹。</li>
+</ol>
+<p>以下是寻址占位的示例：</p>
+<pre><code class="lang-cs">#Axex[{AN}].Position 
+#Channels[{CN}].Auto.Start()
+</code></pre><h4 id="对寻址描述进行规范">对寻址描述进行规范</h4>
+<p>为了便于用户快速理解寻址，对描述的写法进行约束， 要求：</p>
+<ol>
+<li>优先使用短描述。（类似于之前的名称或Label）</li>
+<li>需要详细解释时，需要遵照：“ <code>短描述， 详细解释。</code> ” 的书写风格。</li>
+<li>对于Bool类型的接口，必须详细解释不同取值的意义， 如： &quot;<code>短描述， true:代表的含义； false:代表的含义。</code>&quot;</li>
+<li>对于Enum 特征的int类型， 必须详细枚举不同取值的意义： 如： “ <code>短描述， 1:意义； 2：意义 ; 3:意义。</code>”</li>
+</ol>
+<p>描述的示例：</p>
+<pre><code class="lang-cs">#Jog.ChannelIndex: 
+通道索引，手动连续功能所属通道的索引，在init.json中配置。
+
+#Jog.Turbo： 
+手动连续加速开关， true:手动连续进入高速模式； false:手动连续进入低速模式.
+
+#Channels[{CN}].Mode: 
+通道模式， 当前通道的加工模式， 0:Auto；1：Jog; 2:Inc; 3:HW; 4: Home; 5:MDI.
+
+```c
+&gt; [!NOTE]
+&gt; 描述并不是仅仅存在SRS中，规格落地后我们会在 PhoenixLeafMetadata 的 Description 中看到一致描述。
+
+### 对参数范围的描述进行规范
+
+参数范围的描述要求和PhoenixLeafMetadata中 Validation 的描述保持一致。
+
+如：
+```cs
+{LE=0} :  &gt;=0  
+{GE=10} : &lt;=10  
+{LE=0,GE=10} : &gt;=0 &amp;&amp; &lt;=10  
+{0,1,2,3}:  :  =0 or =1 or =2 or =3
+</code></pre><h2 id="必须报警">【必须】报警</h2>
+<p>上面章节的信号中，标记为报警的寻址必须在这个章节统一显式。
+此章节的目的是站在应用的角度对报警进行归类描述，辅以问题、解决方案的说明。</p>
+<p>参考表格为：</p>
+<table>
+<thead>
+<tr>
+<th>报警信号</th>
+<th>报警类型</th>
+<th>描述</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寻址名</td>
+<td>错误或警告</td>
+<td>报警的描述</td>
+<td>产生原因：xxxxxx<br>解决办法：xxxxxx</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE"><h5>Note</h5><p>这里的报警描述等价于信号章节的信号描述。</p>
+</div>
+<h2 id="可选示例">【可选】示例</h2>
+<p>示例章节不要求一定独立成章节，可以穿插在概述或其他功能的描述中。
+鼓励尽可能多的提供示例，特别是针对ncprog脚本应用的示例。</p>
+<h2 id="可选补充说明">【可选】补充说明</h2>
+<p>补充规格的约束、例外。
+通过各种场景详述当前规格的约束的要求和原因。</p>
+<h2 id="可选参考">【可选】参考</h2>
+<p>包含内部参考和外部参考，要求如下：</p>
+<ul>
+<li>如果参考内部srs章节，可以辅助 markdown 的<strong>相对路径</strong>来描述。</li>
+<li>如果参考外部网站， 可以辅助 url 地址来描述。</li>
+<li><strong>不允许在 srs 中添加超链接</strong>，因为随着结构的变动内外链接都可能会失效，如果导出只读文档（PDF）会丢失信息。</li>
+<li>格式上，参考独立成行可以通过 <strong>``</strong> 来包含； 多行参考需要通过 <strong>```</strong> 来包含。</li>
+</ul>
+<p>参考示例：</p>
+<pre><code class="lang-cs">[^1]: Tocs.json 规格 (srs/系统集成/插件开发 /tocs.md)
+[^2]: Phoenix大文档网站 (http://phoenix.weihong.com:9000/)
+</code></pre><h2 id="可选分析">【可选】分析</h2>
+<p>在规格设计的初期往往会有很大的不确定设计，这些设计包括功能的不确定性、接口的兼容说明、改进计划、竞品的分析、待办事项等等。 我们鼓励在规格没有最终归档之前添加分析章节（类似于待办一样）。</p>
+<p>分析和补充说明的区别是： 分析不是面向客户的章节，是一个临时章节。
+我们之前的规格设计中往往分不清<strong>用户</strong>， 导致规格的内容冗余了很多设计的想法，那就放到分析的章节中吧。</p>
+<p>可以添加不限于以下描述内容：</p>
+<ul>
+<li>术语和 FANUC 的区别</li>
+<li>和 FANUC 的功能区别，要增加、改进</li>
+<li>建议的改进等等</li>
+<li>可能的风险或待办事项。</li>
+</ul>
+<h2 id="警告注意和注释">警告、注意和注释</h2>
+<p>文档如果包括 保证操作者人身安全以及防止机械损坏的有关安全的注意事项，需要根据它们在安全方面的重要程度在正文中以<code>“警告 和 “注意”</code> 来叙述。</p>
+<p>文档中为了记述补充说明，采用<code>“注释”</code>来叙述。</p>
+<p>用户需要在使用之前，仔细阅读这些“警告”、“注意”和“注释”中记载的事项。</p>
+<p>具体规则见上层文件：
+<code>研发文档编写规范1.0(http://doc.weihong.com/github/doc/研发文档编写指南/研发文档编写规范.html)</code>。</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/weihong-phoenix/docfx_build/blob/main/doc/&#30740;&#21457;&#25991;&#26723;&#32534;&#20889;&#25351;&#21335;/&#20855;&#20307;&#25991;&#26723;&#32534;&#20889;&#25351;&#23548;/Phoenix API &#21151;&#33021;&#35268;&#26684;&#21442;&#32771;.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Shanghai Weihong Electronic Technology Co., Ltd.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    
+      </body>
+</html>
