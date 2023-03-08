@@ -3112,15 +3112,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "doc/研发文档编写指南/toc.yml",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/toc.html",
-          "hash": "Os6SukiYELBXcQYjJDnWTOC1IfiJty+OsKpRYv5EimY="
+          "hash": "/v2oqO2EuxZNNNoZa7x4e420WOxSfsYJcXX+redSXds="
         }
       },
       "is_incremental": false,
@@ -3156,7 +3153,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/产品研发文档编写规范.html",
-          "hash": "cy2X2cS7HPAResIoOXW2IO7jAuTkJUgbErcq7L/BCvU="
+          "hash": "lj1gzlkEd5I94ZG7wNGYUjqeqWpzoEvnICfRRvxypts="
         }
       },
       "is_incremental": false,
@@ -3296,7 +3293,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/Phoenix API 功能规格参考.html",
-          "hash": "BQ0MU7F9WSxM10dV0ijfNHjjBM5WPjlND98ygI93sTk="
+          "hash": "8WxroOnMqdKF4Qkh08QA2ApbpYJDOcNNMUjGb3UyKcU="
         }
       },
       "is_incremental": false,
