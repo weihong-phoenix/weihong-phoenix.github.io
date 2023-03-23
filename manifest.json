@@ -3289,23 +3289,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/Phoenix API 功能规格参考.md",
-      "output": {
-        ".html": {
-          "relative_path": "doc/研发文档编写指南/具体文档编写指导/Phoenix API 功能规格参考.html",
-          "hash": "8WxroOnMqdKF4Qkh08QA2ApbpYJDOcNNMUjGb3UyKcU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/具体文档编写指导/Phoenix 子系统功能规格编写指导.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/具体文档编写指导/Phoenix 子系统功能规格编写指导.html",
-          "hash": "QbVD+KwKZ3tLVRV+5/Zg/3oFKTdAnkR2ZFG2evvh3H0="
+          "hash": "BM5RhgL4TOSKx45xl3W/rV0VpYhPFzXB1IOyvH7CaeE="
         }
       },
       "is_incremental": false,
@@ -6983,7 +6971,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 183,
+          "total_file_count": 182,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
