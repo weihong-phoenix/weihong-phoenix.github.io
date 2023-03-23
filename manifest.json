@@ -3172,12 +3172,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.md",
       "output": {
         ".html": {
           "relative_path": "doc/研发文档编写指南/仓库及发布工具/VSCode.html",
-          "hash": "9lP73g0Ed4aRsKUs6TxOfNBMnM0oXy1ANtaBO0mRviw="
+          "hash": "8+t6eVJ6eVE+MoQRFyzDpZ/0LNzJxXPJb8KP1AHAE48="
         }
       },
       "is_incremental": false,
