@@ -80,7 +80,7 @@
 <h1 id="phoenix-功能规格编写指导">Phoenix 功能规格编写指导</h1>
 
 <h2 id="目的">目的</h2>
-<p>为保证 Phoenix 子系统功能规格的一致性和完整性， 从项目实践中归纳整理成该指导书，希望可以为 SRS 编写提供规范和指导，从而提升文档的质量和编写效率。</p>
+<p>为保证 Phoenix 子系统功能规格的一致性和完整性， 从项目实践中归纳整理成该指导书，希望可以为 SRS 提供结构和接口描述上编写规范和指导，从而提升文档的质量和编写效率。</p>
 <p>该文档依赖上层文件，即《产品研发文档编写规范》和《产品研发文档编写指南》。</p>
 <h2 id="范围">范围</h2>
 <p>本文档包括以下章节内容：</p>
@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td>范围（可选）</td>
-<td>参数的取值范围</td>
+<td>参数的取值范围，bool型则不需要描述范围</td>
 </tr>
 <tr>
 <td>生效时间（可选）</td>
@@ -252,7 +252,7 @@
 <td>寻址名</td>
 <td>错误或警告</td>
 <td>报警的描述</td>
-<td>产生原因：xxxxxx<br>解决办法：xxxxxx</td>
+<td>产生原因：xxxxxx <br> 解决办法：xxxxxx</td>
 </tr>
 </tbody>
 </table>
@@ -275,14 +275,16 @@
 提供⼀组全局的占位符<ul>
 <li><code>{AN}</code>：轴索引</li>
 <li><code>{CN}</code>：通道索引</li>
+<li><code>{CAN}</code>: 通道轴索引</li>
 </ul>
 </li>
-<li><code>{AN}``{CN}</code>作为全局性的占位符号存在，除此之外如果当前SRS文档中引入了其他占位符，必须在文档前面添加<strong>术语</strong> 章节中进行显式描述。</li>
+<li><code>{AN}</code>、<code>{CN}</code>、<code>{CAN}</code>作为全局性的占位符号存在，除此之外如果当前SRS文档中引入了其他占位符，必须在文档前面添加<strong>术语</strong> 章节中进行显式描述。</li>
 <li>文档叙述中需要强调的参数/寻址/Target接口，请使用 <code>`` </code> 引用标记包裹。</li>
 </ol>
 <p>以下是寻址占位的示例：</p>
 <pre><code class="lang-cs">#Axex[{AN}].Position 
 #Channels[{CN}].Auto.Start()
+#Channels[{CN}].Axes[{CAN}].WorkCoor
 </code></pre><h3 id="对寻址描述进行规范">对寻址描述进行规范</h3>
 <p>为了便于用户快速理解寻址，对描述的写法进行约束， 要求：</p>
 <ol>
@@ -303,12 +305,11 @@
 </code></pre><div class="NOTE"><h5>Note</h5><p>描述并不是仅仅存在SRS中，规格落地后我们会在 PhoenixLeafMetadata 的 Description 中看到一致描述。</p>
 </div>
 <h3 id="对参数范围的描述进行规范">对参数范围的描述进行规范</h3>
-<p>参数范围的描述要求和PhoenixLeafMetadata中 Validation 的描述保持一致。</p>
-<p>如：</p>
-<pre><code class="lang-cs">{LE=0} :  &gt;=0  
-{GE=10} : &lt;=10  
-{LE=0,GE=10} : &gt;=0 &amp;&amp; &lt;=10  
-{0,1,2,3}:  :  =0 or =1 or =2 or =3
+<p>参数范围的描述要求和PhoenixLeafMetadata中 Range 的描述保持一致。</p>
+<pre><code class="lang-c">[-99999, 99999] /* 范围：取值大于等于 -99999，小于等于 99999 */
+[, 99999]  /* 上限：取值小于等于 99999。 */
+[-99999,]  /* 下限：取值大于等于 -99999。 */
+{0,1,2,3}  /* 枚举：取值为 0，1，2，3 中的一个。 */
 </code></pre></article>
           </div>
           
